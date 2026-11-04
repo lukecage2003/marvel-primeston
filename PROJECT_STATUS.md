@@ -9,7 +9,8 @@ Dernière mise à jour : 2026-11-04 · Dépôt : `lukecage2003/marvel-primeston`
 - Constat principal : sur 225 fiches, 224 portent l'étiquette « canon », alors que pour 137 d'entre elles seule la première apparition a été vérifiée, sur un wiki communautaire. **Fiabilité documentaire = priorité n° 1.**
 - Mises à jour « pas reçues » : `data.js` et `images.js` ne sont pas versionnés (cache Pages de 10 min). Correctif prévu à l'étape 0 de la feuille de route.
 - Aucun code modifié pendant cette session d'audit. Branche poussée, `main` inchangée (pas de mise en ligne).
-- **Prochaine étape précise :** étape 0 de `ROADMAP.md` (versionnement du cache et requalification des fiches), puis les prototypes des cartes B et E.
+- Étape 0 faite (sur la branche) : versions `?v=` (`tools/stamp.js`) et 137 fiches passées à « À vérifier » (niveau `u`). Fiabilité : 87 canon, 1 déduit, 137 à vérifier. Tests : 26 réussis, 0 échoué.
+- **Prochaine étape précise :** mise en ligne de l'étape 0 (accord requis), puis étape 1 (5 niveaux et contrôle des 87 fiches « canon »).
 
 ## 1. Ce que contient le dépôt
 `marvel-primeston` est une **copie propre, sans historique**, de l'atlas. L'ancien dépôt `matthias` n'existe plus sous ce nom. Il contenait aussi Tech Shield, avec des secrets et des CV de tiers, `site v3/` et un PDF de 56 Mo ; rien de tout cela n'est repris ici.

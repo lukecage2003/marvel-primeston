@@ -3,11 +3,11 @@
 Légende : effort S, M ou L · ✋ = accord requis avant mise en ligne.
 
 ## Étape 0 — Correctifs immédiats (S)
-- [ ] Versionner `data.js` et `images.js` (`?v=` avec le hash) : fin des mises à jour « pas reçues ».
-- [ ] Requalifier les 137 fiches vérifiées uniquement sur le wiki communautaire : « à vérifier » au lieu de « canon ».
-- [ ] Documenter l'échelle du quiz (indicative, éditoriale).
+- [x] Versionner `data.js` et `images.js` (`?v=` avec le hash, `node tools/stamp.js`, vérifié par les tests).
+- [x] Requalifier les 137 fiches vérifiées uniquement sur le wiki communautaire : niveau `u` « À vérifier », avec la source du wiki indiquée en clair.
 
 ## Étape 1 — Fiabilité documentaire (M)
+- [ ] Contrôler les 87 fiches encore marquées « canon » (ajoutées lors de sessions antérieures, provenance des vérifications non tracée).
 - [ ] Passer aux 5 niveaux de fiabilité (`DATA_MODEL.md`) dans l'interface et les données.
 - [ ] Structurer les sources existantes en `Comic` (207 chaînes à analyser) et en `Evidence`.
 - [ ] Ajouter un crédit à chaque image ; remplacer `images.js` par des fichiers webp chargés à la demande.
