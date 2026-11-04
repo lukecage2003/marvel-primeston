@@ -1,0 +1,15 @@
+# Vérifie à chaque push et pull request que les données sont cohérentes, que les pages générées sont à jour
+# et que le site fonctionne (suite Playwright). N'effectue aucun déploiement : GitHub Pages publie main.
+name: Tests
+on: [push, pull_request]
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm install --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+      - run: node tools/comics.js --check && node tools/build.js --check
+      - run: npm test

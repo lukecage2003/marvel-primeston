@@ -4,10 +4,10 @@ Atlas interactif de la cosmologie Marvel par **Primestone**. Au-delà des héros
 
 En ligne : https://lukecage2003.github.io/marvel-primeston/
 
-- `index.html` : le site (cartes, Codex, vidéos, miniatures, exports)
-- `data.js` : la base encyclopédique (fiches, sources, niveaux de certitude, chronologie)
-- `images.js` : portraits découpés et logo Primestone
-- `og.png` : image d’aperçu pour le partage du lien
+- Pages : accueil, encyclopédie, fiches, Cosmos, structures, chronologies, archive, dossiers et recherche, générées par `node tools/build.js`.
+- `explorer.html` : l'atlas interactif (cartes, Codex, vidéos, miniatures, exports).
+- Données : `data.js` (fiches), `content/` (instantané et dossiers), `comics.json`, `img/` (portraits et crédits).
+- Architecture et chaîne de publication : `ARCHITECTURE.md`.
 - `tests/atlas/run.js` : suite de tests (`npm install` puis `npm test`, ou `npm run test:video`)
 - `PROJECT_STATUS.md` : état du projet, décisions et feuille de route
 

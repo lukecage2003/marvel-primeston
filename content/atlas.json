@@ -1,0 +1,5343 @@
+{
+ "maps": [
+  {
+   "name": "Les Cosmos",
+   "sub": "Du Premier au Huitième Cosmos"
+  },
+  {
+   "name": "L’Arbre",
+   "sub": "Le Mystère & la Qlippoth"
+  },
+  {
+   "name": "Les Axes",
+   "sub": "Les huit Ur-Diviseurs"
+  },
+  {
+   "name": "Les Firmaments",
+   "sub": "Neuf firmaments, un seul récit"
+  },
+  {
+   "name": "L’Omnivers",
+   "sub": "Coupe de la réalité Marvel"
+  },
+  {
+   "name": "La Hiérarchie",
+   "sub": "Qui domine le cosmos ?"
+  },
+  {
+   "name": "Le Réseau",
+   "sub": "Tout est lié"
+  },
+  {
+   "name": "La Chronologie",
+   "sub": "Soixante ans de cosmos"
+  }
+ ],
+ "cats": {
+  "cos": {
+   "name": "Cosmos et firmaments",
+   "color": "#ff6b5a"
+  },
+  "abs": {
+   "name": "Entités abstraites",
+   "color": "#FFE500"
+  },
+  "cel": {
+   "name": "Célestes et puissances",
+   "color": "#ffb21f"
+  },
+  "pow": {
+   "name": "Forces et énergies",
+   "color": "#ff7a3d"
+  },
+  "obj": {
+   "name": "Objets de pouvoir",
+   "color": "#b98bff"
+  },
+  "pla": {
+   "name": "Lieux et dimensions",
+   "color": "#7fe0a0"
+  },
+  "per": {
+   "name": "Personnages",
+   "color": "#f3ead2"
+  },
+  "grp": {
+   "name": "Groupes",
+   "color": "#ffa45c"
+  },
+  "dark": {
+   "name": "Ténèbres",
+   "color": "#a58bd8"
+  },
+  "evt": {
+   "name": "Événements",
+   "color": "#fff503"
+  }
+ },
+ "cert": {
+  "c": {
+   "name": "Canon",
+   "desc": "montré ou dit dans un comic, numéro et page vérifiés"
+  },
+  "o": {
+   "name": "Source officielle",
+   "desc": "guide ou manuel officiel Marvel"
+  },
+  "d": {
+   "name": "Interprétation",
+   "desc": "conclusion argumentée à partir de plusieurs comics"
+  },
+  "t": {
+   "name": "Théorie",
+   "desc": "hypothèse ou construction de fans, non officielle"
+  },
+  "x": {
+   "name": "Contesté",
+   "desc": "les sources se contredisent"
+  },
+  "u": {
+   "name": "À vérifier",
+   "desc": "première apparition relevée sur un wiki communautaire ; description pas encore confrontée aux comics"
+  }
+ },
+ "wiki": {
+  "x_mkraan": "M'kraan Crystal",
+  "x_darkforce": "Darkforce Dimension",
+  "x_nova": "Glossary:Nova Force",
+  "x_gamma": "Glossary:Gamma Radiation",
+  "x_quantum": "Quantum Bands",
+  "x_maker": "Reed Richards (Earth-1610)",
+  "x_defenders": "Defenders (Earth-616)",
+  "x_eson": "Eson (First Cosmos)",
+  "x_exitar": "Exitar (Multiverse)",
+  "x_gammenon": "Gammenon (First Cosmos)",
+  "x_jemiah": "Jemiah (First Cosmos)",
+  "x_nezarr": "Nezarr (First Cosmos)",
+  "x_ziran": "Ziran (First Cosmos)",
+  "x_oneg": "Oneg (First Cosmos)",
+  "x_fulcrum": "Fulcrum (Earth-616)",
+  "x_nemesis": "Nemesis (Cosmic Being) (First Cosmos)",
+  "x_epoch": "Epoch (Earth-616)",
+  "x_eon": "Eon (Earth-616)",
+  "x_mentor": "A'Lars (Earth-616)",
+  "x_proemial": "Proemial Gods",
+  "x_tva": "Time Variance Authority (Null-Time Zone)",
+  "x_sspace": "Space Stone",
+  "x_smind": "Mind Stone",
+  "x_sreal": "Reality Stone",
+  "x_spow": "Power Stone",
+  "x_stime": "Time Stone",
+  "x_ssoul": "Soul Stone",
+  "c1": "First Firmament",
+  "c2": "Second Cosmos (Multiverse)",
+  "c3": "Third Cosmos (Multiverse)",
+  "c4": "Queen of Nevers (Multiverse)",
+  "c5": "Fifth Cosmos (Multiverse)",
+  "c6": "Galan (Earth-616)",
+  "c7": "Victor von Doom (Earth-616)",
+  "bw": "Battleworld (Beyonder)",
+  "c8": "Multiverse",
+  "eternity": "Eternity (Earth-616)",
+  "infinity": "Infinity (Earth-616)",
+  "tribunal": "Living Tribunal (Multiverse)",
+  "oblivion": "Oblivion (Earth-616)",
+  "chaos": "Lord Chaos (Earth-616)",
+  "order": "Master Order (Earth-616)",
+  "powers": "The-Powers-That-Be (Earth-616)",
+  "natural": "The-Natural-Order-of-Things (Earth-616)",
+  "keter": "House of Ideas",
+  "daat": "Land of Couldn't-Be-Shouldn't-Be",
+  "gevurah": "City of Judgment",
+  "tiferet": "White Hot Room",
+  "netzach": "Well Beyond the Worlds",
+  "hod": "Overspace",
+  "yesod": "Beyond (Womb-Space)",
+  "lilith": "Limbo (Otherplace)",
+  "gamaliel": "Symbiote Hive-Mind",
+  "samael": "Underspace",
+  "tagiriron": "Shadow Kingdom",
+  "thaumiel": "Below-Place",
+  "h_oaa": "One Above All (Multiverse)",
+  "h_bey": "Beyonders",
+  "h_death": "Death (Earth-616)",
+  "h_phx": "Phoenix Force (Earth-616)",
+  "h_enigma": "Enigma Force (Earth-616)",
+  "h_uni": "Captain Universe",
+  "h_cel": "Celestials",
+  "h_asp": "Aspirants",
+  "h_gal": "Galan (Earth-616)",
+  "h_watch": "Watchers",
+  "h_anti": "Anti-All (Multiverse)",
+  "h_knull": "Knull (Earth-616)",
+  "h_oba": "One Below All (Multiverse)",
+  "god": "One Above All (Multiverse)",
+  "devil": "One Below All (Multiverse)",
+  "neg": "Negative Zone",
+  "beyond": "Beyonders",
+  "shore": "Oblivion Void",
+  "univ": "Earth-616",
+  "superflow": "Superflow",
+  "exo": "Exo-Space",
+  "micro": "Microverse",
+  "f0": "First Firmament",
+  "x_love": "Love",
+  "x_hate": "Sire Hate (Earth-616)",
+  "x_kronos": "Kronos (Earth-616)",
+  "x_inbetween": "In-Betweener (Earth-616)",
+  "x_entropy": "Entropy (Earth-616)",
+  "x_stranger": "Stranger (Cosmic Being) (Earth-616)",
+  "x_logos": "Logos (Cosmic Being) (Earth-616)",
+  "x_neverq": "Queen of Nevers (Multiverse)",
+  "x_omnimax": "Moridun (Earth-616)",
+  "x_arishem": "Arishem (First Cosmos)",
+  "x_progen": "Progenitor (Celestial) (Multiverse)",
+  "x_darkcel": "Dark Celestials (Horde)",
+  "x_tiamut": "Tiamut (Multiverse)",
+  "x_eternals": "Eternals (Homo immortalis)",
+  "x_deviants": "Deviants (Homo descendus)",
+  "x_elders": "Elders of the Universe (Earth-616)",
+  "x_grandm": "En Dwi Gast (Earth-616)",
+  "x_collector": "Taneleer Tivan (Earth-616)",
+  "x_uatu": "Uatu (Earth-616)",
+  "x_pcosmic": "Power Cosmic",
+  "x_symbiote": "Symbiotes",
+  "x_gems": "Infinity Stones",
+  "x_gauntlet": "Infinity Gauntlet",
+  "x_heart": "Heart of the Universe",
+  "x_cube": "Cosmic Cube",
+  "x_nullifier": "Ultimate Nullifier",
+  "x_allblack": "All-Black (Symbiote) (Earth-616)",
+  "x_quarry": "Quarry of Creation",
+  "x_darkdim": "Dark Dimension",
+  "x_yggdrasil": "Yggdrasill",
+  "x_mojo": "Mojoverse",
+  "x_dreams": "Dream Dimension",
+  "x_battle": "Battleworld (Beyonder)",
+  "x_thanos": "Thanos (Earth-616)",
+  "x_adam": "Adam Warlock (Earth-616)",
+  "x_silver": "Norrin Radd (Earth-616)",
+  "x_beyonder": "Beyonder (Earth-616)",
+  "x_molecule": "Owen Reece (Earth-616)",
+  "x_doom": "Victor von Doom (Earth-616)",
+  "x_rabum": "Victor von Doom (Earth-616)",
+  "x_reed": "Reed Richards (Earth-616)",
+  "x_franklin": "Franklin Richards (Earth-616)",
+  "x_strange": "Stephen Strange (Earth-616)",
+  "x_dormammu": "Dormammu (Earth-616)",
+  "x_jean": "Jean Grey (Earth-616)",
+  "x_banner": "Bruce Banner (Earth-616)",
+  "x_venom": "Edward Brock (Earth-616)",
+  "x_annihilus": "Annihilus (Earth-616)",
+  "x_mephisto": "Mephisto (Earth-616)",
+  "x_loki": "Loki Laufeyson (Earth-616)",
+  "x_blue": "Adam Brashear (Earth-616)",
+  "x_america": "America Chavez (Earth-616)",
+  "x_galan": "Galan (Earth-616)",
+  "x_taaia": "Taaia (Earth-616)",
+  "x_lifeb": "Lifebringer One (Multiverse)",
+  "x_illum": "Illuminati (Earth-616)",
+  "x_ultimates": "Ultimates (Earth-616)",
+  "x_omegac": "Omega Council (Multiverse)",
+  "x_ivory": "Beyonders",
+  "x_blackp": "Black Priests (Multiverse)",
+  "x_mapmak": "Mapmakers (Multiverse)",
+  "h_airwalker": "Gabriel Lan (Earth-616)",
+  "h_firelord": "Pyreus Kril (Earth-616)",
+  "h_terrax": "Tyros (Earth-616)",
+  "h_novaf": "Frankie Raye (Earth-616)",
+  "h_morg": "Morg (Earth-616)",
+  "h_stardust": "Lambda-Zero (Earth-616)",
+  "h_redshift": "Red Shift (Earth-616)",
+  "h_fallen": "Fallen One (Herald) (Earth-616)",
+  "h_thor": "Thor Odinson (Earth-616)",
+  "h_taa2": "Worldship (Taa II)",
+  "x_ashema": "Ashema (Multiverse)",
+  "x_devron": "Devron (Multiverse)",
+  "x_hargen": "Hargen (Multiverse)",
+  "x_tefral": "Tefral (First Cosmos)",
+  "x_scathan": "Scathan (Multiverse)",
+  "x_zgreb": "Zgreb (Multiverse)",
+  "x_gamiel": "Gamiel (Multiverse)",
+  "x_exnihilo": "Ex Nihilo (Earth-616)",
+  "x_abyss": "Abyss (Earth-616)",
+  "x_aleph": "Alephs",
+  "x_ego": "Egros (Earth-616)",
+  "x_mantis": "Mantis (Brandt) (Earth-616)",
+  "x_champion": "Tryco Slatterus (Earth-616)",
+  "x_runner": "Gilpetperdon (Earth-616)",
+  "x_gardener": "Ord Zyonz (Earth-616)",
+  "x_possessor": "Kamo Tharnn (Earth-616)",
+  "x_contemplator": "Tath Ki (Earth-616)",
+  "x_trader": "Cort Zo Tinnus (Earth-616)",
+  "x_astronomer": "Seginn Gallio (Earth-616)",
+  "x_abraxas": "Abraxas (Multiverse)",
+  "x_kubik": "Kubik (Earth-616)",
+  "x_tyrant": "Tyrant (Earth-616)",
+  "x_agamotto": "Agamotto (Earth-616)",
+  "x_oshtur": "Oshtur (Earth-616)",
+  "x_hoggoth": "Hoggoth (Earth-616)",
+  "x_cyttorak": "Cyttorak (Earth-616)",
+  "x_satannish": "Satannish (Earth-616)",
+  "x_umar": "Umar (Earth-616)",
+  "x_nightmare": "Nightmare (Earth-616)",
+  "x_zom": "Zom (Earth-616)",
+  "x_gaea": "Gaea (Earth-616)",
+  "x_magus": "Magus (Earth-7528)",
+  "x_unimind": "Uni-Mind (Earth-616)",
+  "x_starbrand": "Star Brand (Object)",
+  "x_magistrati": "Magistrati (Multiverse)",
+  "d_shuma": "Shuma-Gorath (Multiverse)",
+  "x_chthon": "Chthon (Earth-616)",
+  "d_mikaboshi": "Amatsu-Mikaboshi (Earth-616)",
+  "d_dweller": "Dweller-in-Darkness (Earth-616)",
+  "d_blackwinter": "Black Winter (Sixth Cosmos) (Multiverse)",
+  "d_manyangled": "Great Old Ones",
+  "x_gorr": "Gorr (Earth-616)",
+  "o_mjolnir": "Mjolnir",
+  "o_uru": "Uru",
+  "o_darkhold": "Darkhold",
+  "o_eye": "Eye of Agamotto (Knowledge)",
+  "o_twilight": "Twilight Sword (Surtur)",
+  "o_controlrod": "Cosmic Control Rod",
+  "o_serpent": "Serpent Crown",
+  "x_set": "Set (Earth-616)",
+  "o_watoomb": "Wand of Watoomb",
+  "p_knowhere": "Knowhere",
+  "p_kyln": "Kyln",
+  "p_sakaar": "Sakaar",
+  "p_titan": "Titan (Moon of Saturn)",
+  "p_hala": "Hala (Planet)",
+  "p_xandar": "Xandar",
+  "p_asgard": "Asgard (Realm)",
+  "p_bluearea": "Blue Area of the Moon",
+  "p_nexus": "Nexus of All Realities",
+  "p_crossroads": "Crossroads (Dimension)",
+  "p_otherworld": "Otherworld",
+  "p_weirdworld": "Weirdworld (Planet)",
+  "p_cancerverse": "Earth-10011",
+  "p_heven": "Heven",
+  "g_guardians": "Guardians of the Galaxy (Earth-616)",
+  "g_novacorps": "Nova Corps (Earth-616)",
+  "g_kree": "Kree",
+  "g_skrulls": "Deviant Skrulls",
+  "g_shiar": "Shi'ar",
+  "g_blackorder": "Black Order (Earth-616)",
+  "g_annwave": "Annihilation Wave (Earth-616)",
+  "g_timekeepers": "Time-Keepers",
+  "g_church": "Universal Church of Truth (Earth-616)",
+  "g_vishanti": "Vishanti (Earth-616)",
+  "g_cbcorps": "Captain Britain Corps (Multiverse)",
+  "g_reeds": "Interdimensional Council of Reeds (Multiverse)",
+  "g_builders": "Builders",
+  "g_infwatch": "Infinity Watch (Earth-616)",
+  "g_annihilators": "Annihilators (Earth-616)",
+  "g_phalanx": "Phalanx",
+  "x_quasar": "Wendell Vaughn (Earth-616)",
+  "x_ronan": "Ronan (Earth-616)",
+  "x_rider": "Richard Rider (Earth-616)",
+  "x_starlord": "Peter Quill (Earth-616)",
+  "x_gamora": "Gamora Zen Whoberi Ben Titan (Earth-7528)",
+  "x_drax": "Arthur Douglas (Earth-616)",
+  "x_marvell": "Mar-Vell (Earth-616)",
+  "x_genis": "Genis-Vell (Earth-616)",
+  "x_moondragon": "Heather Douglas (Earth-616)",
+  "x_nebula": "Nebula (Earth-616)",
+  "x_gladiator": "Kallark (Earth-616)",
+  "x_starfox": "Eros (Earth-616)",
+  "x_kang": "Nathaniel Richards (Kang) (Earth-6311)",
+  "x_immortus": "Nathaniel Richards (Immortus) (Earth-6311)",
+  "x_hwr": "He Who Remains (Null-Time Zone)",
+  "x_sentry": "Robert Reynolds (Earth-616)",
+  "x_odin": "Odin Borson (Earth-616)",
+  "x_hela": "Hela (Earth-616)",
+  "x_bill": "Beta Ray Bill (Earth-616)",
+  "x_ikaris": "Ikaris (Earth-616)",
+  "x_sersi": "Sersi (Earth-616)",
+  "x_zuras": "Zuras (Earth-616)",
+  "x_wiccan": "William Kaplan (Earth-616)",
+  "x_clea": "Clea (Earth-616)",
+  "x_korvac": "Michael Korvac (Earth-691)",
+  "e_kreeskrull": "Avengers Vol 1 89",
+  "e_madonna": "Giant-Size Avengers Vol 1 4",
+  "e_korvac": "Avengers Vol 1 167",
+  "e_deathmv": "Marvel Graphic Novel Vol 1 1: Death of Captain Marvel",
+  "e_contest": "Marvel Super Hero Contest of Champions Vol 1 1",
+  "e_trial": "Fantastic Four Vol 1 262",
+  "e_infwar": "Infinity War Vol 1 1",
+  "e_galstorm": "Captain America Vol 1 398",
+  "e_crusade": "Infinity Crusade Vol 1 1",
+  "e_forever": "Avengers Forever Vol 1 1",
+  "e_conquest": "Annihilation: Conquest Vol 1 1",
+  "e_secretinv": "Secret Invasion Vol 1 1",
+  "e_warkings": "War of Kings Vol 1 1",
+  "e_imperative": "Thanos Imperative Vol 1 1",
+  "e_avx": "Avengers vs. X-Men Vol 1 1",
+  "e_infinity": "Infinity Vol 1 1",
+  "e_hunger": "Hunger Vol 1 1",
+  "e_originsin": "Original Sin Vol 1 1",
+  "e_infwars": "Infinity Wars Vol 1 1",
+  "e_empyre": "Empyre Vol 1 1",
+  "e_judgment": "A.X.E.: Judgment Day Vol 1 1"
+ },
+ "img": {
+  "c1": "img/c1.webp",
+  "c2": "img/c2.webp",
+  "c3": "img/c3.webp",
+  "c4": "img/c4.webp",
+  "c5": "img/c5.webp",
+  "c6": "img/c6.webp",
+  "c7": "img/eternity.webp",
+  "bw": "img/bw.webp",
+  "keter": "img/keter.webp",
+  "daat": "img/daat.webp",
+  "gevurah": "img/gevurah.webp",
+  "tiferet": "img/tiferet.webp",
+  "netzach": "img/netzach.webp",
+  "hod": "img/hod.webp",
+  "yesod": "img/yesod.webp",
+  "lilith": "img/lilith.webp",
+  "gamaliel": "img/gamaliel.webp",
+  "samael": "img/samael.webp",
+  "tagiriron": "img/tagiriron.webp",
+  "thaumiel": "img/thaumiel.webp",
+  "eternity": "img/eternity.webp",
+  "powers": "img/powers.webp",
+  "order": "img/order.webp",
+  "chaos": "img/chaos.webp",
+  "tribunal": "img/tribunal.webp",
+  "infinity": "img/infinity.webp",
+  "natural": "img/natural.webp",
+  "oblivion": "img/oblivion.webp",
+  "f0": "img/f0.webp",
+  "f1": "img/f1.webp",
+  "f2": "img/f2.webp",
+  "f3": "img/f3.webp",
+  "f4": "img/f4.webp",
+  "f5": "img/f5.webp",
+  "f6": "img/f6.webp",
+  "f7": "img/f7.webp",
+  "f8": "img/f8.webp",
+  "beyond": "img/yesod.webp",
+  "h_trib": "img/tribunal.webp",
+  "h_eter": "img/eternity.webp",
+  "h_inf": "img/infinity.webp",
+  "h_obl": "img/oblivion.webp",
+  "h_chaos": "img/chaos.webp",
+  "h_order": "img/order.webp",
+  "h_anti": "img/anti.webp",
+  "h_oba": "img/thaumiel.webp"
+ },
+ "nodes": {
+  "c1": {
+   "map": 0,
+   "name": "Premier Cosmos",
+   "sub": "le premier firmament, l’univers originel",
+   "desc": "Berceau des Aspirants et des Célestes. Le Premier Cosmos s’est brisé en fragments, formant le premier multivers.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "Ultimates² (Al Ewing, 2016-17) · Defenders (2021)",
+   "fact": "La guerre entre Aspirants et Célestes a brisé le Premier Cosmos ; ses éclats ont formé le premier multivers.",
+   "rel": [
+    "e19",
+    "f0",
+    "h_asp",
+    "h_cel",
+    "shore",
+    "x_logos",
+    "x_nemesis",
+    "x_quarry"
+   ]
+  },
+  "c2": {
+   "map": 0,
+   "name": "Second Cosmos",
+   "sub": "le premier multivers, origine de la Force Oméga",
+   "desc": "Il s’est précipité pour connaître la « mort totale » ; ses restes sont devenus l’Au-delà (Beyond), siège des Beyonders.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "Ultimates² #6 (2017) · Defenders: Beyond #2 « Yesod » (2022)",
+   "fact": "Le premier multivers n’a vécu qu’un instant : il a tout misé sur l’expérience de la mort.",
+   "rel": [
+    "f1",
+    "h_bey",
+    "h_omega",
+    "yesod"
+   ]
+  },
+  "c3": {
+   "map": 0,
+   "name": "Troisième Cosmos",
+   "sub": "le commencement du récit, créateur de Lifebringer One",
+   "desc": "L’Anti-Tout (Anti-All) y est entré depuis les Terres-du-Dessous, le Below-Place de la Qlippoth.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "Ultimates² #6 (2017) · Defenders (2021) #4",
+   "fact": "Lifebringer One, le tout premier héros, y affronte l’Anti-Tout.",
+   "rel": [
+    "f2",
+    "h_anti",
+    "thaumiel",
+    "x_lifeb"
+   ]
+  },
+  "c4": {
+   "map": 0,
+   "name": "Quatrième Cosmos",
+   "sub": "le Pèlerin, habité par les archétypes",
+   "desc": "Il devint la Reine des Jamais (Never Queen) et partit vers le Mystère, au Da’at.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "Defenders (2021) · Ultimates²",
+   "fact": "La conscience de ce cosmos, le Pèlerin, devient la Reine des Jamais.",
+   "rel": [
+    "daat",
+    "e24",
+    "f3",
+    "x_neverq"
+   ]
+  },
+  "c5": {
+   "map": 0,
+   "name": "Cinquième Cosmos",
+   "sub": "faiseur de magie, tisserand des illusions",
+   "desc": "Créateur de la magie, tisserand des illusions du changement. La Magie apparaît : un point sur l’axe du pouvoir.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "Ultimates² #100 (2017) · Defenders (2021) #3 « Fifth Cosmos: The High Priestess »",
+   "fact": "Moridun, Sorcier Suprême du Cinquième Cosmos, réapparaît plus tard sous le nom d’Omnimax.",
+   "rel": [
+    "e24",
+    "f4",
+    "netzach",
+    "x_omnimax"
+   ]
+  },
+  "c6": {
+   "map": 0,
+   "name": "Sixième Cosmos",
+   "sub": "inventeur de la science, bâtisseur de la jonction",
+   "desc": "Bâtisseur de la Jonction vers Partout : ses restes forment l’Overspace (Hod), au-dessus du Macrovers.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "Super-Villain Classics #1 (1983) · Defenders (2021) #2 « Sixth Cosmos: Judgment! »",
+   "fact": "Galan de Taa et Taaia vivent dans ce cosmos avant que Galan ne devienne Galactus.",
+   "rel": [
+    "e24",
+    "f5",
+    "h_gal",
+    "hod",
+    "x_galan",
+    "x_taaia"
+   ]
+  },
+  "c7": {
+   "map": 0,
+   "name": "Septième Cosmos",
+   "sub": "Multivers Marvel 1961 – 2015",
+   "desc": "Le cube des axes est complet. Il s’acheva avec les Incursions, mais ses restes furent préservés par Rabum Alal.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "New Avengers & Avengers (Jonathan Hickman, 2013-15)",
+   "fact": "Rabum Alal, « le Dieu-Fatalité », n’est autre que Victor von Doom.",
+   "rel": [
+    "bw",
+    "e0",
+    "e16",
+    "f6",
+    "h_bey",
+    "x_blackp",
+    "x_illum",
+    "x_mapmak",
+    "x_rabum"
+   ]
+  },
+  "bw": {
+   "map": 0,
+   "name": "Battleworld",
+   "sub": "après les Secret Wars",
+   "desc": "Le Dieu-Empereur Doom rassemble les débris du multivers en un monde-patchwork. Le multivers est restauré comme Huitième Cosmos, continuation du Septième.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "Secret Wars (Hickman & Ribić, 2015) · Fantastic Four #1 (2018)",
+   "fact": "Reed Richards, Franklin et Molecule Man reconstruisent ensuite le multivers.",
+   "rel": [
+    "c7",
+    "c8",
+    "e17",
+    "f6",
+    "f7",
+    "h_bey",
+    "x_battle",
+    "x_doom",
+    "x_molecule"
+   ]
+  },
+  "c8": {
+   "map": 0,
+   "name": "Huitième Cosmos",
+   "sub": "Malkuth · 2015 – aujourd’hui",
+   "desc": "Les Axes de Tout (forme cubique), la Rive Lointaine / Ginnungagap (bord de tout), l’Exo-Espace (zone neutre), le Superflow (entre les univers) et les univers individuels comme Terre-616.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "Defenders (2021) #1 « Eighth Cosmos: The Magician »",
+   "fact": "Notre cosmos actuel : le seul à porter en lui les restes du précédent.",
+   "rel": [
+    "bw",
+    "e17",
+    "e24",
+    "e26",
+    "exo",
+    "f7",
+    "f8",
+    "malkuth",
+    "multi",
+    "shore",
+    "superflow",
+    "univ",
+    "x_defenders",
+    "x_franklin",
+    "x_reed"
+   ]
+  },
+  "keter": {
+   "map": 1,
+   "name": "Keter : Maison des Idées",
+   "sub": "Couronne de la Création",
+   "desc": "Demeure du Un-Au-Dessus-de-Tout (One-Above-All), sommet du Monde de l’Action.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Fantastic Four #511 (2004) · Defenders: Beyond #5 (2022)",
+   "fact": "La « Maison des Idées », c’est aussi le surnom de Marvel Comics.",
+   "rel": [
+    "e14",
+    "e25",
+    "god",
+    "h_oaa",
+    "x_loki"
+   ]
+  },
+  "daat": {
+   "map": 1,
+   "name": "Da’at : Ne-Pouvait-Être",
+   "sub": "Ni-Ici-Ni-Là · Pays du Peut-Être-Sera",
+   "desc": "Le Pays du Ne-Pouvait-Être-Ne-Devait-Être. Demeure de la Reine des Jamais : les archétypes du Quatrième Cosmos.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Silver Surfer (2014) #3 · Defenders (2021)",
+   "fact": "La sphère cachée de l’arbre : elle n’existe que si l’on y croit.",
+   "rel": [
+    "c4",
+    "f3",
+    "x_neverq"
+   ]
+  },
+  "gevurah": {
+   "map": 1,
+   "name": "Gevurah : Sphère du Jugement",
+   "sub": "la Cité Brisée",
+   "desc": "Là où la création est pesée et jugée : la Cité Brisée.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Resurrection of Magneto #1 (Al Ewing, 2024) · Defenders: Beyond (2022)",
+   "fact": "La Cité Brisée, où chaque chose est jugée.",
+   "rel": [
+    "malkuth",
+    "tagiriron"
+   ]
+  },
+  "tiferet": {
+   "map": 1,
+   "name": "Tiferet : Chambre Blanche Ardente",
+   "sub": "Cœur de toutes choses",
+   "desc": "La White Hot Room : feu et vie incarnés, demeure de la Force Phénix.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Classic X-Men #8 (1987) · Phoenix: Endsong (2005)",
+   "fact": "Toute vie y retourne avant de renaître, comme Jean Grey.",
+   "rel": [
+    "h_phx",
+    "x_jean",
+    "x_mkraan"
+   ]
+  },
+  "netzach": {
+   "map": 1,
+   "name": "Netzach : Bien Au-delà des Mondes",
+   "sub": "le jardin où pousse la magie",
+   "desc": "Héritage du Cinquième Cosmos, le jardin d’où vient toute magie.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Marvel Tarot #1 (2007) · Defenders: Beyond (2022)",
+   "fact": "La magie y pousse comme une plante avant d’atteindre les mondes.",
+   "rel": [
+    "c5",
+    "f4",
+    "x_omnimax"
+   ]
+  },
+  "hod": {
+   "map": 1,
+   "name": "Hod : Overspace",
+   "sub": "Jonction vers Partout",
+   "desc": "Au-dessus du Macrovers : la jonction bâtie par le Sixième Cosmos.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Defenders #92 (1981) · Ultimates² (2017)",
+   "fact": "La jonction vers partout : au-dessus du Macrovers.",
+   "rel": [
+    "c6",
+    "f5",
+    "overspace"
+   ]
+  },
+  "yesod": {
+   "map": 1,
+   "name": "Yesod : l’Au-delà",
+   "sub": "Salle des Machines",
+   "desc": "Moteurs de Concordance, restes du Second Cosmos. Demeure des Beyonders (Conseil Oméga, Rois d’Ivoire).",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Secret Wars #1 (1984) · Defenders: Beyond #2 « Yesod » (2022)",
+   "fact": "La salle des machines du cosmos, où siègent le Conseil Oméga et les Rois d’Ivoire.",
+   "rel": [
+    "beyond",
+    "c2",
+    "e25",
+    "f1",
+    "h_bey",
+    "h_omega",
+    "x_ivory",
+    "x_omegac"
+   ]
+  },
+  "malkuth": {
+   "map": 1,
+   "name": "Malkuth : Huitième Cosmos",
+   "sub": "Multivers Marvel · 2015 – présent",
+   "desc": "Le monde manifesté : les Axes de Tout, la Rive Lointaine, l’Exo-Espace, le Superflow et tous les univers individuels.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Defenders: Beyond (2022)",
+   "fact": "Malkuth, le Royaume : la seule sphère que nous habitons.",
+   "rel": [
+    "c8",
+    "f7",
+    "gevurah",
+    "multi",
+    "univ",
+    "x_quarry"
+   ]
+  },
+  "lilith": {
+   "map": 1,
+   "name": "Lilith : Limbes",
+   "sub": "Autre-Lieu · Royaume démoniaque",
+   "desc": "Le miroir sombre du monde, demeure de la Reine Gobeline.",
+   "cat": "pla",
+   "cert": "t",
+   "src": "Uncanny X-Men #160 (1982) · Inferno (1989)",
+   "fact": "Madelyne Pryor y devient la Reine Gobeline.",
+   "rel": [
+    "x_mephisto"
+   ]
+  },
+  "gamaliel": {
+   "map": 1,
+   "name": "Gamaliel : Non-Au-delà",
+   "sub": "Sous-Moteur · Trône d’Onyx",
+   "desc": "Le cœur de la Ruche, véritable demeure du Roi en Noir.",
+   "cat": "pla",
+   "cert": "t",
+   "src": "King in Black (Donny Cates & Ryan Stegman, 2020-21)",
+   "fact": "Le Trône d’Onyx : le siège de Knull au cœur de la Ruche.",
+   "rel": [
+    "e23",
+    "h_knull",
+    "x_symbiote",
+    "x_venom"
+   ]
+  },
+  "samael": {
+   "map": 1,
+   "name": "Samael : Underspace",
+   "sub": "sous le Microvers",
+   "desc": "La strate la plus profonde sous le Microvers et le Royaume Quantique.",
+   "cat": "pla",
+   "cert": "t",
+   "src": "Mighty Avengers #26 (2009)",
+   "rel": [
+    "micro",
+    "under"
+   ]
+  },
+  "tagiriron": {
+   "map": 1,
+   "name": "Tagiriron : Chambre Noire et Froide",
+   "sub": "Royaume des Ombres · Terre Sans Soleils",
+   "desc": "Au-delà de la portée des premières flammes. Demeure du Dieu-Tigre, de l’Adversaire, du Roi des Ombres et d’Annihilation.",
+   "cat": "pla",
+   "cert": "t",
+   "src": "Resurrection of Magneto #2 (Al Ewing, 2024)",
+   "fact": "Au-delà de la portée de la première flamme.",
+   "rel": [
+    "gevurah",
+    "x_darkforce"
+   ]
+  },
+  "thaumiel": {
+   "map": 1,
+   "name": "Thaumiel : le Dessous",
+   "sub": "Terres-du-Dessous · Royaume Gamma",
+   "desc": "L’enfer le plus profond, sous tout. Demeure du Un-En-Dessous-de-Tout (One-Below-All).",
+   "cat": "pla",
+   "cert": "t",
+   "src": "Immortal Hulk #10 (Al Ewing & Joe Bennett, 2018)",
+   "fact": "La porte verte mène ici : toutes les morts gamma y passent.",
+   "rel": [
+    "below",
+    "c3",
+    "devil",
+    "e20",
+    "h_anti",
+    "h_oba",
+    "x_gamma"
+   ]
+  },
+  "eternity": {
+   "map": 2,
+   "name": "Éternité",
+   "sub": "Naissance · Bien · Science",
+   "desc": "Incarnation du temps et de l’existence de l’univers, frère d’Infinité. Il pose sur le cosmos un regard serein.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "Strange Tales #138 (1965)",
+   "rel": [
+    "e18",
+    "e2",
+    "h_eter",
+    "infinity",
+    "powers",
+    "tribunal",
+    "x_abraxas",
+    "x_strange",
+    "x_ultimates"
+   ]
+  },
+  "powers": {
+   "map": 2,
+   "name": "Les-Pouvoirs-Qui-Sont",
+   "sub": "Naissance · Bien · Magie",
+   "desc": "The-Powers-That-Be : la volonté créatrice de la magie bienveillante, au sommet du cube.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "Doctor Strange (Jed MacKay, 2023) #6",
+   "rel": [
+    "eternity"
+   ]
+  },
+  "order": {
+   "map": 2,
+   "name": "Ordre Suprême",
+   "sub": "Naissance · Mal · Science",
+   "desc": "Master Order : la loi absolue, l’ordre imposé à toute chose, frère jumeau de Seigneur Chaos.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "Marvel Two-in-One Annual #2 (1977)",
+   "rel": [
+    "chaos",
+    "e8",
+    "h_order",
+    "x_inbetween"
+   ]
+  },
+  "chaos": {
+   "map": 2,
+   "name": "Seigneur Chaos",
+   "sub": "Naissance · Mal · Magie",
+   "desc": "Lord Chaos : le désordre créateur, l’imprévisible, le hasard incarné.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "Marvel Two-in-One Annual #2 (1977)",
+   "rel": [
+    "e8",
+    "h_chaos",
+    "order",
+    "x_inbetween"
+   ]
+  },
+  "tribunal": {
+   "map": 2,
+   "name": "Tribunal Vivant",
+   "sub": "Mort · Bien · Science",
+   "desc": "The Living Tribunal : juge du multivers, garant de l’équilibre entre toutes les réalités.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "Strange Tales #157 (1967)",
+   "rel": [
+    "e12",
+    "e4",
+    "eternity",
+    "h_trib",
+    "multi",
+    "x_magistrati",
+    "x_zom"
+   ]
+  },
+  "infinity": {
+   "map": 2,
+   "name": "Infinité",
+   "sub": "Mort · Bien · Magie",
+   "desc": "Infinity : l’espace sans limite, sœur d’Éternité, le tout qui contient tout.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "Quasar #24 (1991) · Ultimates² #100 (2017)",
+   "rel": [
+    "eternity",
+    "h_inf",
+    "void",
+    "x_gems"
+   ]
+  },
+  "natural": {
+   "map": 2,
+   "name": "L’Ordre-Naturel-des-Choses",
+   "sub": "Mort · Mal · Science",
+   "desc": "The-Natural-Order-Of-Things : la fatalité, l’entropie, la loi qui use toute chose.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "G.O.D.S. #2 (Jonathan Hickman, 2023)",
+   "rel": [
+    "oblivion",
+    "x_entropy"
+   ]
+  },
+  "oblivion": {
+   "map": 2,
+   "name": "Oubli",
+   "sub": "Mort · Mal · Magie",
+   "desc": "Oblivion : le néant, l’effacement, ce qui reste quand tout a été oublié.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "Iceman #1 (1984)",
+   "rel": [
+    "h_obl",
+    "natural"
+   ]
+  },
+  "f0": {
+   "map": 3,
+   "name": "1ᵉʳ Firmament : Singularité",
+   "desc": "Le tout premier univers : une seule réalité, entière et consciente. Ses fragments donneront naissance à tout le reste.",
+   "cat": "cos",
+   "cert": "d",
+   "src": "Ultimates² (2017)",
+   "rel": [
+    "c1",
+    "e19",
+    "h_asp",
+    "h_cel",
+    "x_logos",
+    "x_quarry"
+   ]
+  },
+  "f1": {
+   "map": 3,
+   "name": "2ᵉ Firmament : Multiversité",
+   "desc": "Le premier multivers : la réalité se démultiplie. Ses restes deviendront l’Au-delà des Beyonders.",
+   "cat": "cos",
+   "cert": "d",
+   "src": "Defenders: Beyond (2022)",
+   "rel": [
+    "c2",
+    "yesod"
+   ]
+  },
+  "f2": {
+   "map": 3,
+   "name": "3ᵉ Firmament : La Première Sentinelle et le Tout-Vide",
+   "desc": "Le récit commence : la première sentinelle de lumière face au Tout-Vide, l’ombre originelle.",
+   "cat": "cos",
+   "cert": "d",
+   "src": "Defenders (2021)",
+   "rel": [
+    "c3",
+    "h_anti"
+   ]
+  },
+  "f3": {
+   "map": 3,
+   "name": "4ᵉ Firmament : Les Archétypes",
+   "desc": "Un cosmos peuplé d’idées vivantes ; il deviendra la Reine des Jamais.",
+   "cat": "cos",
+   "cert": "d",
+   "src": "Defenders (2021)",
+   "rel": [
+    "c4",
+    "daat",
+    "x_neverq"
+   ]
+  },
+  "f4": {
+   "map": 3,
+   "name": "5ᵉ Firmament : Magie",
+   "desc": "La magie entre dans la réalité et tisse les illusions du changement.",
+   "cat": "cos",
+   "cert": "d",
+   "src": "Defenders (2021) #3",
+   "rel": [
+    "c5",
+    "netzach"
+   ]
+  },
+  "f5": {
+   "map": 3,
+   "name": "6ᵉ Firmament : « Science » !!",
+   "desc": "La mesure, la loi, la jonction vers partout.",
+   "cat": "cos",
+   "cert": "d",
+   "src": "Defenders (2021) #2",
+   "rel": [
+    "c6",
+    "h_gal",
+    "hod"
+   ]
+  },
+  "f6": {
+   "map": 3,
+   "name": "7ᵉ Firmament : Marvels",
+   "desc": "Le multivers Marvel classique (1961–2015), détruit par les Incursions.",
+   "cat": "cos",
+   "cert": "d",
+   "src": "1961 – 2015",
+   "rel": [
+    "bw",
+    "c7"
+   ]
+  },
+  "f7": {
+   "map": 3,
+   "name": "8ᵉ Firmament : Marvels",
+   "desc": "Reconstruit après Secret Wars : le multivers actuel, « deux-en-un » avec le Septième.",
+   "cat": "cos",
+   "cert": "d",
+   "src": "Secret Wars (2015) → aujourd’hui",
+   "rel": [
+    "bw",
+    "c8",
+    "malkuth"
+   ]
+  },
+  "f8": {
+   "map": 3,
+   "name": "9ᵉ Firmament : Ruines",
+   "desc": "Tout est brisé. Le firmament à venir… ou la fin de tout.",
+   "cat": "cos",
+   "cert": "t",
+   "src": "Hypothèse de fans",
+   "rel": [
+    "c8"
+   ]
+  },
+  "god": {
+   "map": 4,
+   "name": "Le Un-Au-Dessus-de-Tout",
+   "sub": "tout en haut",
+   "desc": "Le créateur suprême de l’Omnivers, figure ultime de la création.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Fantastic Four #511 (2004)",
+   "rel": [
+    "h_oaa",
+    "keter",
+    "omni"
+   ]
+  },
+  "omni": {
+   "map": 4,
+   "name": "Omnivers",
+   "sub": "toutes les fictions",
+   "desc": "La collection de tous les méga-multivers fictionnels.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Universe X #2 (2001)",
+   "rel": [
+    "devil",
+    "god",
+    "multi"
+   ]
+  },
+  "void": {
+   "map": 4,
+   "name": "Vide Extérieur",
+   "sub": "abîme d’Infinité",
+   "desc": "Le néant au-delà du multivers, domaine de l’Être-Infini et des Gemmes.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Infinity Abyss (2002)",
+   "rel": [
+    "infinity",
+    "x_gems"
+   ]
+  },
+  "exo": {
+   "map": 4,
+   "name": "Exo-Espace",
+   "sub": "espace eldritch · zone neutre",
+   "desc": "Dernier arrêt avant le Dehors : les Anciens, les Nombreux-Angles.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Captain America and the Mighty Avengers #5 (2015)",
+   "rel": [
+    "c8"
+   ]
+  },
+  "multi": {
+   "map": 4,
+   "name": "Multivers",
+   "sub": "le Vortex Cosmique",
+   "desc": "Toutes les réalités alternatives, sous l’arbitrage du Tribunal Vivant.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Ka-Zar #1 (pulp, 1936, rétroactivement)",
+   "rel": [
+    "c8",
+    "h_trib",
+    "malkuth",
+    "omni",
+    "tribunal",
+    "x_america",
+    "x_maker",
+    "x_mojo",
+    "x_tva",
+    "x_yggdrasil"
+   ]
+  },
+  "superflow": {
+   "map": 4,
+   "name": "Superflow",
+   "sub": "espace onirique entre les réalités",
+   "desc": "L’espace transuniversel où siège l’Ambassade Infinie.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Newuniversal #1 (2007)",
+   "rel": [
+    "c8",
+    "x_dreams"
+   ]
+  },
+  "overspace": {
+   "map": 4,
+   "name": "Overspace",
+   "sub": "royaume des Abstraits",
+   "desc": "Où siègent Éternité, Infinité, Mort, Seigneur Chaos et Ordre Suprême.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Defenders #92 (1981)",
+   "rel": [
+    "hod"
+   ]
+  },
+  "univ": {
+   "map": 4,
+   "name": "Univers · Terre",
+   "sub": "le cœur de la carte",
+   "desc": "Terre-616 : mortels, dieux, mutants, démons, Célestes, Phénix…",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Ka-Zar #1 (pulp, 1936, rétroactivement) · Fantastic Four #1 (1961)",
+   "rel": [
+    "c8",
+    "hyper",
+    "malkuth",
+    "p_crossroads",
+    "p_nexus",
+    "p_weirdworld"
+   ]
+  },
+  "hyper": {
+   "map": 4,
+   "name": "Hyperespace",
+   "sub": "« sub-space »",
+   "desc": "Le raccourci des voyages plus rapides que la lumière.",
+   "cat": "pla",
+   "cert": "d",
+   "src": "Notion de science-fiction reprise dans tout l’univers Marvel",
+   "rel": [
+    "micro",
+    "univ"
+   ]
+  },
+  "micro": {
+   "map": 4,
+   "name": "Microvers",
+   "sub": "univers subatomique",
+   "desc": "Sub-Atomica, les Fabricants, la Force Énigme.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Captain America Comics #26 (1943)",
+   "rel": [
+    "h_enigma",
+    "h_uni",
+    "hyper",
+    "samael",
+    "under"
+   ]
+  },
+  "under": {
+   "map": 4,
+   "name": "Underspace",
+   "sub": "le Royaume Quantique",
+   "desc": "Sous le Microvers : la fondation de la réalité elle-même.",
+   "cat": "pla",
+   "cert": "d",
+   "src": "Notion liée à la Zone Quantique de Quasar",
+   "rel": [
+    "micro",
+    "samael",
+    "x_quantum"
+   ]
+  },
+  "below": {
+   "map": 4,
+   "name": "Le Dessous",
+   "sub": "vrai enfer sous tous les autres",
+   "desc": "Royaume Gamma, demeure du Un-En-Dessous-de-Tout.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Immortal Hulk (2018-21)",
+   "rel": [
+    "h_oba",
+    "thaumiel",
+    "x_banner",
+    "x_gamma",
+    "x_mephisto"
+   ]
+  },
+  "devil": {
+   "map": 4,
+   "name": "Le Un-En-Dessous-de-Tout",
+   "sub": "tout en bas",
+   "desc": "Le mal absolu de l’Omnivers, tapi au fond du Dessous.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Immortal Hulk (2018-21)",
+   "rel": [
+    "h_oba",
+    "omni",
+    "thaumiel"
+   ]
+  },
+  "neg": {
+   "map": 4,
+   "name": "Zone Négative",
+   "sub": "univers d’antimatière",
+   "desc": "Royaume d’Annihilus et de Blastaar, miroir d’antimatière.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Fantastic Four #51 (1966)",
+   "rel": [
+    "e15",
+    "g_annwave",
+    "o_controlrod",
+    "x_annihilus"
+   ]
+  },
+  "beyond": {
+   "map": 4,
+   "name": "Dimension des Beyonders",
+   "sub": "espace sauvage blanc",
+   "desc": "Les seigneurs blancs de l’Au-delà : Rois d’Ivoire, Beyond Corp.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Secret Wars #1 (1984) · Defenders: Beyond (2022)",
+   "rel": [
+    "h_bey",
+    "yesod"
+   ]
+  },
+  "shore": {
+   "map": 4,
+   "name": "La Rive Lointaine",
+   "sub": "bord du Dehors",
+   "desc": "Les itérations précédentes du multivers : les Univers Vivants.",
+   "cat": "pla",
+   "cert": "d",
+   "src": "Ultimates² (Al Ewing, 2017)",
+   "rel": [
+    "c1",
+    "c8"
+   ]
+  },
+  "manif": {
+   "map": 4,
+   "name": "Les Manifestations",
+   "sub": "les Infinis",
+   "desc": "Fractales vivantes des entités abstraites.",
+   "cat": "pla",
+   "cert": "t",
+   "src": "Lecture de fans de l’Omnivers",
+   "rel": [
+    "h_eter",
+    "x_hate",
+    "x_love"
+   ]
+  },
+  "h_oaa": {
+   "map": 5,
+   "name": "Le Un-Au-Dessus-de-Tout",
+   "sub": "le créateur suprême",
+   "desc": "Au-dessus du Tribunal Vivant et de toute la création. Dans Fantastic Four #511 (2004), il apparaît sous les traits de Jack Kirby ; Defenders: Beyond #5 (2022) le place à Keter, la Maison des Idées.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "Fantastic Four #511 (2004)",
+   "rel": [
+    "e14",
+    "e25",
+    "god",
+    "keter",
+    "x_fulcrum"
+   ]
+  },
+  "h_trib": {
+   "map": 5,
+   "name": "Tribunal Vivant",
+   "sub": "juge du multivers",
+   "desc": "Être à trois visages (équité, vengeance, nécessité) chargé de l’équilibre entre les réalités. Tué par les Beyonders pendant les Incursions.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "Strange Tales #157 (1967) · New Avengers (2015)",
+   "rel": [
+    "multi",
+    "tribunal",
+    "x_heart"
+   ]
+  },
+  "h_bey": {
+   "map": 5,
+   "name": "Les Beyonders",
+   "sub": "seigneurs de l’Au-delà",
+   "desc": "Nés du Second Cosmos, ils puisent dans la Force Oméga. Ils ont provoqué la fin du Septième Cosmos par les Incursions.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "Secret Wars (1984) · New Avengers (2015) · Defenders: Beyond",
+   "rel": [
+    "beyond",
+    "bw",
+    "c2",
+    "c7",
+    "x_beyonder",
+    "x_doom",
+    "x_ivory",
+    "x_molecule",
+    "x_omegac",
+    "yesod"
+   ]
+  },
+  "h_eter": {
+   "map": 5,
+   "name": "Éternité",
+   "sub": "le temps et l’existence",
+   "desc": "Incarnation de l’univers vivant. Enchaîné par Ordre Suprême et Seigneur Chaos, puis libéré par les Ultimates.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "Strange Tales #138 (1965) · Ultimates²",
+   "rel": [
+    "eternity",
+    "manif",
+    "x_entropy",
+    "x_eon",
+    "x_epoch",
+    "x_kronos",
+    "x_love"
+   ]
+  },
+  "h_inf": {
+   "map": 5,
+   "name": "Infinité",
+   "sub": "l’espace sans fin",
+   "desc": "Sœur d’Éternité : l’espace, le tout qui contient tout.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "Quasar #24 (1991)",
+   "rel": [
+    "infinity"
+   ]
+  },
+  "h_death": {
+   "map": 5,
+   "name": "Mort",
+   "sub": "la fin de toute vie",
+   "desc": "Mistress Death, objet de l’obsession de Thanos.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "Captain Marvel #26 (1973)",
+   "rel": [
+    "d_manyangled",
+    "e5",
+    "e_contest",
+    "e_deathmv",
+    "p_cancerverse",
+    "x_annihilus",
+    "x_thanos"
+   ]
+  },
+  "h_obl": {
+   "map": 5,
+   "name": "Oubli",
+   "sub": "le néant",
+   "desc": "Plus ancien que la Mort : l’effacement de ce qui a été.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "Iceman #1 (1984)",
+   "rel": [
+    "oblivion",
+    "x_hate"
+   ]
+  },
+  "h_chaos": {
+   "map": 5,
+   "name": "Seigneur Chaos",
+   "sub": "le désordre",
+   "desc": "Avec son jumeau Ordre Suprême, il servit le Premier Firmament contre Éternité.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "Marvel Two-in-One Annual #2 (1977)",
+   "rel": [
+    "chaos",
+    "x_inbetween"
+   ]
+  },
+  "h_order": {
+   "map": 5,
+   "name": "Ordre Suprême",
+   "sub": "la loi absolue",
+   "desc": "Le principe d’ordre, éternel rival de Seigneur Chaos.",
+   "cat": "abs",
+   "cert": "d",
+   "src": "Marvel Two-in-One Annual #2 (1977)",
+   "rel": [
+    "order",
+    "x_inbetween"
+   ]
+  },
+  "h_phx": {
+   "map": 5,
+   "name": "Force Phénix",
+   "sub": "vie et renaissance",
+   "desc": "Feu de la création, née dans la Chambre Blanche Ardente. Hôtes célèbres : Jean Grey, Rachel Summers.",
+   "cat": "pow",
+   "cert": "d",
+   "src": "X-Men #101 (1976)",
+   "rel": [
+    "e7",
+    "e9",
+    "e_avx",
+    "g_shiar",
+    "tiferet",
+    "x_jean",
+    "x_mkraan"
+   ]
+  },
+  "h_omega": {
+   "map": 5,
+   "name": "Force Oméga",
+   "sub": "la source des Beyonders",
+   "desc": "Énergie originelle du Second Cosmos, carburant des Beyonders.",
+   "cat": "pow",
+   "cert": "d",
+   "src": "Defenders: Beyond (2022)",
+   "rel": [
+    "c2",
+    "x_omegac",
+    "yesod"
+   ]
+  },
+  "h_enigma": {
+   "map": 5,
+   "name": "Force Énigme",
+   "sub": "le pouvoir du Microvers",
+   "desc": "Manifestation du Microvers ; l’hôte devient Captain Universe.",
+   "cat": "pow",
+   "cert": "d",
+   "src": "Micronauts #1 (1979)",
+   "rel": [
+    "micro"
+   ]
+  },
+  "h_uni": {
+   "map": 5,
+   "name": "Uni-Power",
+   "sub": "Captain Universe",
+   "desc": "Énergie qui choisit un hôte pour sauver l’univers en danger.",
+   "cat": "pow",
+   "cert": "d",
+   "src": "Captain Universe",
+   "rel": [
+    "micro",
+    "x_nova",
+    "x_quantum"
+   ]
+  },
+  "h_cel": {
+   "map": 5,
+   "name": "Les Célestes",
+   "sub": "architectes du cosmos",
+   "desc": "Géants cosmiques nés du Premier Cosmos. Ils jugent et « ensemencent » les planètes, dont la Terre.",
+   "cat": "cel",
+   "cert": "d",
+   "src": "The Eternals #1 (Jack Kirby, 1976)",
+   "rel": [
+    "c1",
+    "e6",
+    "e_judgment",
+    "f0",
+    "p_knowhere",
+    "x_allblack",
+    "x_arishem",
+    "x_ashema",
+    "x_darkcel",
+    "x_deviants",
+    "x_devron",
+    "x_eson",
+    "x_eternals",
+    "x_exitar",
+    "x_fulcrum",
+    "x_gamiel",
+    "x_gammenon",
+    "x_hargen",
+    "x_ikaris",
+    "x_jemiah",
+    "x_mantis",
+    "x_nezarr",
+    "x_oneg",
+    "x_proemial",
+    "x_progen",
+    "x_scathan",
+    "x_stranger",
+    "x_tefral",
+    "x_tiamut",
+    "x_zgreb",
+    "x_ziran"
+   ]
+  },
+  "h_asp": {
+   "map": 5,
+   "name": "Les Aspirants",
+   "sub": "serviteurs du Premier Firmament",
+   "desc": "Frères des Célestes, vaincus dans la guerre qui brisa le Premier Cosmos.",
+   "cat": "cel",
+   "cert": "d",
+   "src": "Ultimates² (2017)",
+   "rel": [
+    "c1",
+    "e19",
+    "f0",
+    "x_logos",
+    "x_zgreb"
+   ]
+  },
+  "h_gal": {
+   "map": 5,
+   "name": "Galactus",
+   "sub": "le dévoreur de mondes",
+   "desc": "Galan de Taa, survivant d’un cosmos antérieur (le Sixième), renaît comme Galactus.",
+   "cat": "cel",
+   "cert": "d",
+   "src": "Fantastic Four #48 (1966)",
+   "rel": [
+    "c6",
+    "e3",
+    "f5",
+    "x_elders",
+    "x_galan",
+    "x_nullifier",
+    "x_pcosmic",
+    "x_silver"
+   ]
+  },
+  "h_watch": {
+   "map": 5,
+   "name": "Les Gardiens",
+   "sub": "les observateurs",
+   "desc": "Les Watchers, comme Uatu, observent tout sans intervenir.",
+   "cat": "cel",
+   "cert": "d",
+   "src": "Fantastic Four #13 (1963)",
+   "rel": [
+    "e1",
+    "x_stranger",
+    "x_uatu"
+   ]
+  },
+  "h_anti": {
+   "map": 5,
+   "name": "L’Anti-Tout",
+   "sub": "l’ennemi originel",
+   "desc": "Venu des Terres-du-Dessous, combattu par Lifebringer One au Troisième Cosmos.",
+   "cat": "dark",
+   "cert": "d",
+   "src": "Defenders (2021) #4",
+   "rel": [
+    "c3",
+    "f2",
+    "thaumiel",
+    "x_lifeb"
+   ]
+  },
+  "h_knull": {
+   "map": 5,
+   "name": "Knull",
+   "sub": "le Roi en Noir",
+   "desc": "Dieu du Vide primordial, créateur des symbiotes. Il tua un Céleste avec All-Black, la première arme.",
+   "cat": "dark",
+   "cert": "d",
+   "src": "Thor: God of Thunder #6 (2013) · Venom #3 (2018)",
+   "rel": [
+    "e21",
+    "e23",
+    "gamaliel",
+    "x_allblack",
+    "x_darkcel",
+    "x_gorr",
+    "x_symbiote",
+    "x_venom"
+   ]
+  },
+  "h_oba": {
+   "map": 5,
+   "name": "Le Un-En-Dessous-de-Tout",
+   "sub": "le mal absolu",
+   "desc": "Il règne sur le Dessous. Il ronge Bruce Banner depuis la porte verte.",
+   "cat": "dark",
+   "cert": "d",
+   "src": "Immortal Hulk #4 (2018)",
+   "rel": [
+    "below",
+    "devil",
+    "e20",
+    "thaumiel",
+    "x_banner",
+    "x_darkforce",
+    "x_gamma"
+   ]
+  },
+  "x_love": {
+   "map": 6,
+   "name": "Amour",
+   "en": "Love",
+   "sub": "l’attraction universelle",
+   "desc": "Abstrait cosmique incarnant l’amour, souvent présent aux conclaves des entités. Il forme un couple d’opposés avec Haine.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Marvel Two-in-One Annual #2 (1977) · Infinity Gauntlet (1991) — 1ʳᵉ apparition non renseignée sur marvel.fandom.com",
+   "fact": "Amour et Haine siègent ensemble aux réunions des Abstraits.",
+   "rel": [
+    "h_eter",
+    "manif",
+    "x_hate"
+   ]
+  },
+  "x_hate": {
+   "map": 6,
+   "name": "Haine",
+   "en": "Hate",
+   "sub": "la répulsion universelle",
+   "desc": "Pendant d’Amour : la force qui sépare et détruit les liens.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Infinity Gauntlet #3 (1991) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_obl",
+    "manif",
+    "x_love"
+   ]
+  },
+  "x_kronos": {
+   "map": 6,
+   "name": "Kronos",
+   "sub": "le Titan devenu le Temps",
+   "desc": "Titan d’origine, père de Mentor et grand-père de Thanos, il se mua en incarnation abstraite du temps.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Iron Man #55 (1973) · Thanos (2003) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_eter",
+    "x_drax",
+    "x_mentor",
+    "x_thanos",
+    "x_tva"
+   ]
+  },
+  "x_inbetween": {
+   "map": 6,
+   "name": "L’Entre-Deux",
+   "en": "In-Betweener",
+   "sub": "l’équilibre des contraires",
+   "desc": "Né de la fusion forcée de Seigneur Chaos et d’Ordre Suprême, il est tout ce qui se trouve entre deux pôles.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Warlock #9 (1975) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "fact": "Il a été créé par ses propres « parents » pour arbitrer leur opposition.",
+   "rel": [
+    "chaos",
+    "h_chaos",
+    "h_order",
+    "order"
+   ]
+  },
+  "x_entropy": {
+   "map": 6,
+   "name": "Entropie",
+   "en": "Entropy",
+   "sub": "l’usure de toute chose",
+   "desc": "Fils d’Éternité, il incarne la dégradation inévitable de la réalité.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Captain Marvel vol. 5 #2 (2002) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "fact": "Il réapparaît sous une forme nouvelle à la fin du Septième Cosmos.",
+   "rel": [
+    "h_eter",
+    "natural"
+   ]
+  },
+  "x_stranger": {
+   "map": 6,
+   "name": "L’Étranger",
+   "en": "The Stranger",
+   "sub": "le juge errant",
+   "desc": "Entité cosmique qui étudie et juge les planètes comme un scientifique ses éprouvettes.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "X-Men #11 (1965) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "h_watch"
+   ]
+  },
+  "x_logos": {
+   "map": 6,
+   "name": "Logos",
+   "sub": "le Verbe du Premier Firmament",
+   "desc": "Agent du Premier Firmament qui voulait réunifier tout le multivers en un seul bloc parfait.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Ultimates² #3 (Al Ewing, 2017) · 1ʳᵉ apparition selon marvel.fandom.com : Ultimates 2 vol. 2 #3",
+   "fact": "Logos est l’ennemi final des Ultimates : le passé de la création qui refuse de mourir.",
+   "rel": [
+    "c1",
+    "e19",
+    "f0",
+    "h_asp",
+    "x_ultimates"
+   ]
+  },
+  "x_neverq": {
+   "map": 6,
+   "name": "La Reine des Jamais",
+   "en": "Queen of Nevers",
+   "sub": "le Quatrième Cosmos devenu reine",
+   "desc": "Le Pèlerin, conscience du Quatrième Cosmos, survit à sa fin et règne sur ce qui n’a jamais été.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Silver Surfer (2014) #1 · Defenders (2021) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "fact": "Elle a ramené les Célestes à la vie dans le Sixième Cosmos.",
+   "rel": [
+    "c4",
+    "daat",
+    "f3"
+   ]
+  },
+  "x_omnimax": {
+   "map": 6,
+   "name": "Moridun / Omnimax",
+   "sub": "Sorcier Suprême du Cinquième Cosmos",
+   "desc": "Moridun, maître de la magie naissante, passe d’un cosmos à l’autre et réapparaît comme Omnimax.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "New Avengers (2015) #2 · Defenders (2021) #3 — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "c5",
+    "netzach",
+    "x_strange"
+   ]
+  },
+  "x_arishem": {
+   "map": 6,
+   "name": "Arishem le Juge",
+   "en": "Arishem the Judge",
+   "sub": "chef de l’Ost Céleste",
+   "desc": "Le Céleste qui juge chaque monde ensemencé : il décide s’il doit vivre ou être détruit.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "The Eternals #2 (1976) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "fact": "Il a jugé la Terre et lui a laissé sa chance.",
+   "rel": [
+    "e6",
+    "h_cel",
+    "x_ashema",
+    "x_deviants",
+    "x_devron",
+    "x_eson",
+    "x_eternals",
+    "x_exitar",
+    "x_gamiel",
+    "x_gammenon",
+    "x_hargen",
+    "x_jemiah",
+    "x_nezarr",
+    "x_scathan",
+    "x_tefral",
+    "x_ziran"
+   ]
+  },
+  "x_progen": {
+   "map": 6,
+   "name": "Le Progéniteur",
+   "en": "The Progenitor",
+   "sub": "le Céleste malade",
+   "desc": "Céleste infecté par une maladie, tombé sur la Terre primitive : son sang aurait ensemencé toute la vie terrestre.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Avengers (Jason Aaron, 2018) #3 — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "fact": "Toute vie sur Terre descendrait d’un Céleste malade.",
+   "rel": [
+    "e22",
+    "h_cel",
+    "x_darkcel"
+   ]
+  },
+  "x_darkcel": {
+   "map": 6,
+   "name": "Les Célestes Noirs",
+   "en": "Dark Celestials",
+   "sub": "l’Ost Final",
+   "desc": "Célestes corrompus qui reviennent anéantir la Terre et qu’affrontent les Avengers.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Marvel Legacy #1 (2017) · Avengers (2018) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e22",
+    "h_cel",
+    "h_knull",
+    "x_progen"
+   ]
+  },
+  "x_tiamut": {
+   "map": 6,
+   "name": "Tiamut, le Céleste Mourant",
+   "en": "Tiamut",
+   "sub": "le Céleste exilé",
+   "desc": "Un Céleste banni par les siens, longtemps « mourant » sous la Terre.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "The Eternals #18 (1978) · Eternals (Neil Gaiman, 2006) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_eternals"
+   ]
+  },
+  "x_eternals": {
+   "map": 6,
+   "name": "Les Éternels",
+   "en": "Eternals",
+   "sub": "les immortels créés par les Célestes",
+   "desc": "Race immortelle façonnée par les Célestes à partir des premiers humains, gardienne de la Terre.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Red Raven Comics #1 (1940, rétroactivement) · The Eternals #1 (1976) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e6",
+    "e_judgment",
+    "h_cel",
+    "p_titan",
+    "x_arishem",
+    "x_deviants",
+    "x_ikaris",
+    "x_mentor",
+    "x_sersi",
+    "x_tiamut",
+    "x_unimind",
+    "x_zuras"
+   ]
+  },
+  "x_deviants": {
+   "map": 6,
+   "name": "Les Déviants",
+   "en": "Deviants",
+   "sub": "la branche instable",
+   "desc": "L’autre branche issue des expériences célestes, aux formes changeantes.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Red Raven Comics #1 (1940, rétroactivement) · The Eternals #1 (1976) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_arishem",
+    "x_eternals"
+   ]
+  },
+  "x_elders": {
+   "map": 6,
+   "name": "Les Anciens de l’Univers",
+   "en": "Elders of the Universe",
+   "sub": "les derniers survivants",
+   "desc": "Derniers représentants de races éteintes, chacun voué à une obsession : collectionner, jouer, courir…",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Avengers #28 (1966) · Silver Surfer (1987) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_gal",
+    "x_astronomer",
+    "x_champion",
+    "x_collector",
+    "x_contemplator",
+    "x_gardener",
+    "x_grandm",
+    "x_possessor",
+    "x_runner",
+    "x_trader"
+   ]
+  },
+  "x_grandm": {
+   "map": 6,
+   "name": "Le Grand Maître",
+   "en": "Grandmaster",
+   "sub": "le joueur éternel",
+   "desc": "Ancien de l’Univers obsédé par les jeux, prêt à parier des planètes.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Avengers #69 (1969) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e_contest",
+    "x_collector",
+    "x_elders"
+   ]
+  },
+  "x_collector": {
+   "map": 6,
+   "name": "Le Collectionneur",
+   "en": "The Collector",
+   "sub": "le conservateur cosmique",
+   "desc": "Ancien de l’Univers qui collectionne êtres et objets rares.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Avengers #26-28 (1966) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_elders",
+    "x_gems",
+    "x_grandm"
+   ]
+  },
+  "x_uatu": {
+   "map": 6,
+   "name": "Uatu",
+   "en": "Uatu the Watcher",
+   "sub": "le Gardien de la Terre",
+   "desc": "Gardien qui observe la Terre depuis la Lune sans jamais intervenir… ou presque.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Fantastic Four #13 (1963) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e1",
+    "e_originsin",
+    "h_watch",
+    "p_bluearea"
+   ]
+  },
+  "x_pcosmic": {
+   "map": 6,
+   "name": "Le Pouvoir Cosmique",
+   "en": "Power Cosmic",
+   "sub": "l’énergie de Galactus",
+   "desc": "L’énergie que Galactus partage avec ses hérauts comme le Silver Surfer.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Fantastic Four #48 (1966) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_airwalker",
+    "h_fallen",
+    "h_firelord",
+    "h_gal",
+    "h_morg",
+    "h_novaf",
+    "h_redshift",
+    "h_stardust",
+    "h_terrax",
+    "x_silver"
+   ]
+  },
+  "x_darkforce": {
+   "map": 6,
+   "name": "La Force Noire",
+   "en": "Darkforce",
+   "sub": "l’énergie des ténèbres",
+   "desc": "Dimension et énergie sombres utilisées par Cloak, Darkstar ou le Hood.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Fantastic Four #142 (1974) · 1ʳᵉ apparition selon marvel.fandom.com : Cloak and Dagger vol. 2 #1",
+   "rel": [
+    "h_oba",
+    "tagiriron"
+   ]
+  },
+  "x_nova": {
+   "map": 6,
+   "name": "La Force Nova",
+   "en": "Nova Force",
+   "sub": "l’énergie des Nova Corps",
+   "desc": "Énergie collective qui alimente les Nova Corps de Xandar.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Nova #1 (1976) — 1ʳᵉ apparition non renseignée sur marvel.fandom.com",
+   "rel": [
+    "g_novacorps",
+    "h_uni",
+    "x_rider"
+   ]
+  },
+  "x_gamma": {
+   "map": 6,
+   "name": "Le rayonnement gamma",
+   "en": "Gamma radiation",
+   "sub": "la porte verte",
+   "desc": "Radiation qui relie les mutés gamma au Dessous et au Un-En-Dessous-de-Tout.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Immortal Hulk (Al Ewing, 2018-21) — 1ʳᵉ apparition non renseignée sur marvel.fandom.com",
+   "fact": "Chaque muté gamma passe par la porte verte à sa mort.",
+   "rel": [
+    "below",
+    "e20",
+    "h_oba",
+    "thaumiel",
+    "x_banner"
+   ]
+  },
+  "x_quantum": {
+   "map": 6,
+   "name": "L’énergie quantique",
+   "en": "Quantum energy",
+   "sub": "les Bracelets Quantiques",
+   "desc": "Énergie fondamentale de la réalité, canalisée par les Bracelets Quantiques de Quasar.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Captain America #217 (1978) · 1ʳᵉ apparition selon marvel.fandom.com : Marvel Boy #2",
+   "rel": [
+    "h_uni",
+    "under",
+    "x_quasar"
+   ]
+  },
+  "x_symbiote": {
+   "map": 6,
+   "name": "Les symbiotes",
+   "en": "Symbiotes",
+   "sub": "la Ruche de Knull",
+   "desc": "Créatures nées des ténèbres de Knull et liées à leur hôte.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Amazing Spider-Man #252 (1984) · Venom (2018) · 1ʳᵉ apparition selon marvel.fandom.com : Mystic Comics #1",
+   "rel": [
+    "e21",
+    "gamaliel",
+    "h_knull",
+    "x_venom"
+   ]
+  },
+  "x_gems": {
+   "map": 6,
+   "name": "Les Gemmes d’Infinité",
+   "en": "Infinity Stones",
+   "sub": "Espace, Réalité, Pouvoir, Âme, Esprit, Temps",
+   "desc": "Six gemmes nées, selon les versions, des restes d’un être unique d’avant l’univers. Réunies, elles donnent un contrôle total.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Marvel Premiere #1 (1972) · Infinity Gauntlet (1991) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e11",
+    "e_infwars",
+    "g_infwatch",
+    "infinity",
+    "void",
+    "x_adam",
+    "x_collector",
+    "x_gauntlet",
+    "x_nemesis",
+    "x_smind",
+    "x_spow",
+    "x_sreal",
+    "x_ssoul",
+    "x_sspace",
+    "x_stime",
+    "x_thanos"
+   ]
+  },
+  "x_gauntlet": {
+   "map": 6,
+   "name": "Le Gant de l’Infini",
+   "en": "Infinity Gauntlet",
+   "sub": "les six gemmes réunies",
+   "desc": "Le gant qui fait de son porteur un dieu.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Silver Surfer #44 (1990) · Infinity Gauntlet (1991) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "fact": "Thanos l’a utilisé pour effacer la moitié de la vie.",
+   "rel": [
+    "e12",
+    "x_adam",
+    "x_gems",
+    "x_smind",
+    "x_spow",
+    "x_sreal",
+    "x_sspace",
+    "x_stime",
+    "x_thanos"
+   ]
+  },
+  "x_heart": {
+   "map": 6,
+   "name": "Le Cœur de l’Univers",
+   "en": "Heart of the Universe",
+   "sub": "la source de toute puissance",
+   "desc": "Source d’énergie primordiale, plus puissante que les Gemmes.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Marvel Universe: The End #2 (2003) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e13",
+    "h_trib",
+    "x_thanos"
+   ]
+  },
+  "x_cube": {
+   "map": 6,
+   "name": "Le Cube Cosmique",
+   "en": "Cosmic Cube",
+   "sub": "le cube qui exauce",
+   "desc": "Objet capable de réaliser les désirs de son porteur ; il peut devenir conscient.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Tales of Suspense #79 (1966) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_beyonder",
+    "x_kubik"
+   ]
+  },
+  "x_nullifier": {
+   "map": 6,
+   "name": "L’Annulateur Ultime",
+   "en": "Ultimate Nullifier",
+   "sub": "l’arme absolue",
+   "desc": "Arme de Galactus capable d’effacer n’importe quoi, y compris son utilisateur.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Fantastic Four #50 (1966) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e3",
+    "h_gal",
+    "x_reed"
+   ]
+  },
+  "x_allblack": {
+   "map": 6,
+   "name": "All-Black",
+   "en": "All-Black the Necrosword",
+   "sub": "la première arme",
+   "desc": "Lame de ténèbres forgée par Knull à partir du Vide ; elle a tué le premier Céleste.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Thor: God of Thunder #2 (2013) · Venom (2018) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "h_knull",
+    "x_gorr"
+   ]
+  },
+  "x_mkraan": {
+   "map": 6,
+   "name": "Le Cristal M’Kraan",
+   "en": "M’Kraan Crystal",
+   "sub": "le nexus des réalités",
+   "desc": "Cristal qui contient le nexus de toutes les réalités ; le Phénix y réside.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "X-Men #107 (1977) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e9",
+    "h_phx",
+    "tiferet",
+    "x_jean"
+   ]
+  },
+  "x_quarry": {
+   "map": 6,
+   "name": "La Carrière des Dieux",
+   "en": "God Quarry",
+   "sub": "le cœur de l’existence",
+   "desc": "Lieu au centre de la réalité, porte vers le Premier Firmament.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Thanos (2016) #8 · Guardians of the Galaxy (Donny Cates, 2019) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "c1",
+    "f0",
+    "malkuth"
+   ]
+  },
+  "x_darkdim": {
+   "map": 6,
+   "name": "La Dimension Noire",
+   "en": "Dark Dimension",
+   "sub": "le royaume de Dormammu",
+   "desc": "Dimension mystique gouvernée par Dormammu.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Strange Tales #126 (1964) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_dormammu",
+    "x_strange",
+    "x_umar"
+   ]
+  },
+  "x_yggdrasil": {
+   "map": 6,
+   "name": "Yggdrasil",
+   "sub": "l’arbre-monde",
+   "desc": "L’arbre cosmique qui relie les Dix Royaumes d’Asgard.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Journey into Mystery #97 (1963) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "multi",
+    "p_asgard",
+    "x_loki"
+   ]
+  },
+  "x_battle": {
+   "map": 6,
+   "name": "Battleworld (1984)",
+   "sub": "la planète du Beyonder",
+   "desc": "Planète assemblée par le Beyonder pour les premières Secret Wars.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Secret Wars #1 (1984) · 1ʳᵉ apparition selon marvel.fandom.com : Marvel Super Heroes Secret Wars #1",
+   "rel": [
+    "bw",
+    "e10",
+    "x_beyonder"
+   ]
+  },
+  "x_mojo": {
+   "map": 6,
+   "name": "Le Mojovers",
+   "en": "Mojoverse",
+   "sub": "la dimension spectacle",
+   "desc": "Dimension où tout est télévision et audience.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Longshot (1985) · 1ʳᵉ apparition selon marvel.fandom.com : Longshot #1",
+   "rel": [
+    "multi"
+   ]
+  },
+  "x_dreams": {
+   "map": 6,
+   "name": "Le Royaume des Rêves",
+   "en": "Dream Dimension",
+   "sub": "le domaine de Cauchemar",
+   "desc": "Dimension onirique où règne Cauchemar.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Strange Tales #110 (1963) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "superflow",
+    "x_nightmare",
+    "x_strange"
+   ]
+  },
+  "x_thanos": {
+   "map": 6,
+   "name": "Thanos",
+   "sub": "le Titan fou",
+   "desc": "Titan éternel obsédé par la Mort, porteur du Gant de l’Infini.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Iron Man #55 (1973) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "fact": "Il a effacé la moitié de l’univers par amour pour la Mort.",
+   "rel": [
+    "e11",
+    "e12",
+    "e13",
+    "e5",
+    "e8",
+    "e_deathmv",
+    "e_imperative",
+    "e_infinity",
+    "g_blackorder",
+    "h_death",
+    "p_titan",
+    "x_adam",
+    "x_drax",
+    "x_gamora",
+    "x_gauntlet",
+    "x_gems",
+    "x_heart",
+    "x_kronos",
+    "x_marvell",
+    "x_mentor",
+    "x_nebula",
+    "x_starfox"
+   ]
+  },
+  "x_adam": {
+   "map": 6,
+   "name": "Adam Warlock",
+   "sub": "le sauveur cosmique",
+   "desc": "Être créé artificiellement, gardien de la Gemme de l’Âme et souvent opposé à Thanos.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Fantastic Four #66-67 (1967) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e12",
+    "e_crusade",
+    "e_infwar",
+    "g_church",
+    "g_infwatch",
+    "x_gauntlet",
+    "x_gems",
+    "x_magus",
+    "x_ssoul",
+    "x_thanos"
+   ]
+  },
+  "x_silver": {
+   "map": 6,
+   "name": "Silver Surfer",
+   "sub": "le héraut de Galactus",
+   "desc": "Norrin Radd, devenu héraut de Galactus pour sauver sa planète.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Fantastic Four #48 (1966) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e3",
+    "g_annihilators",
+    "h_fallen",
+    "h_gal",
+    "h_terrax",
+    "x_pcosmic",
+    "x_proemial"
+   ]
+  },
+  "x_beyonder": {
+   "map": 6,
+   "name": "Le Beyonder",
+   "en": "The Beyonder",
+   "sub": "l’enfant de l’Au-delà",
+   "desc": "Fragment des Beyonders devenu conscient, organisateur des premières Secret Wars.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Secret Wars #1 (1984) · 1ʳᵉ apparition selon marvel.fandom.com : Marvel Super Heroes Secret Wars #1",
+   "fact": "Il est né de la rencontre entre l’énergie des Beyonders et un Cube Cosmique.",
+   "rel": [
+    "e10",
+    "h_bey",
+    "x_battle",
+    "x_cube",
+    "x_molecule"
+   ]
+  },
+  "x_molecule": {
+   "map": 6,
+   "name": "Molecule Man",
+   "sub": "la bombe des Beyonders",
+   "desc": "Owen Reece, conçu par les Beyonders comme une bombe à travers le multivers.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Fantastic Four #20 (1963) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "fact": "Toutes ses versions alternatives étaient des bombes à retardement.",
+   "rel": [
+    "bw",
+    "e10",
+    "e17",
+    "h_bey",
+    "x_beyonder",
+    "x_doom"
+   ]
+  },
+  "x_doom": {
+   "map": 6,
+   "name": "Doom, Dieu-Empereur",
+   "en": "God Emperor Doom",
+   "sub": "le dieu de Battleworld",
+   "desc": "Victor von Doom vole le pouvoir des Beyonders et règne sur Battleworld.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Fantastic Four #5 (1962) · Secret Wars (2015) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "bw",
+    "e17",
+    "h_bey",
+    "x_molecule",
+    "x_rabum",
+    "x_reed"
+   ]
+  },
+  "x_rabum": {
+   "map": 6,
+   "name": "Rabum Alal",
+   "sub": "le Dieu-Fatalité",
+   "desc": "Le mystérieux destructeur de mondes des Incursions : Doom lui-même.",
+   "cat": "per",
+   "cert": "u",
+   "src": "New Avengers (Jonathan Hickman, 2013-15) · 1ʳᵉ apparition selon marvel.fandom.com : Fantastic Four #5",
+   "rel": [
+    "c7",
+    "e16",
+    "x_blackp",
+    "x_doom",
+    "x_illum"
+   ]
+  },
+  "x_reed": {
+   "map": 6,
+   "name": "Reed Richards",
+   "sub": "le rebâtisseur",
+   "desc": "Il reconstruit le multivers avec Franklin et Molecule Man après Secret Wars.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Fantastic Four #1 (1961) · 1ʳᵉ apparition selon marvel.fandom.com : Amazing Adult Fantasy #7",
+   "rel": [
+    "c8",
+    "e0",
+    "e_trial",
+    "g_reeds",
+    "x_doom",
+    "x_franklin",
+    "x_illum",
+    "x_maker",
+    "x_nullifier"
+   ]
+  },
+  "x_franklin": {
+   "map": 6,
+   "name": "Franklin Richards",
+   "sub": "le créateur de mondes",
+   "desc": "Mutant capable de créer des univers entiers ; clé de la renaissance du multivers.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Fantastic Four Annual #6 (1968) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "c8",
+    "x_reed"
+   ]
+  },
+  "x_strange": {
+   "map": 6,
+   "name": "Doctor Strange",
+   "sub": "le Sorcier Suprême",
+   "desc": "Gardien mystique de la Terre, témoin de nombreuses entités abstraites.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Strange Tales #110 (1963) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "d_shuma",
+    "e2",
+    "eternity",
+    "o_eye",
+    "o_watoomb",
+    "x_agamotto",
+    "x_clea",
+    "x_cyttorak",
+    "x_darkdim",
+    "x_dormammu",
+    "x_dreams",
+    "x_nightmare",
+    "x_omnimax",
+    "x_wiccan",
+    "x_zom"
+   ]
+  },
+  "x_dormammu": {
+   "map": 6,
+   "name": "Dormammu",
+   "sub": "le seigneur de la Dimension Noire",
+   "desc": "Faltinien avide de conquérir la Terre.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Strange Tales #126 (1964) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_darkdim",
+    "x_satannish",
+    "x_strange",
+    "x_umar"
+   ]
+  },
+  "x_jean": {
+   "map": 6,
+   "name": "Jean Grey",
+   "sub": "l’hôte du Phénix",
+   "desc": "Mutante liée à la Force Phénix, morte et revenue plusieurs fois.",
+   "cat": "per",
+   "cert": "u",
+   "src": "X-Men #1 (1963) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e7",
+    "e9",
+    "h_phx",
+    "tiferet",
+    "x_mkraan"
+   ]
+  },
+  "x_banner": {
+   "map": 6,
+   "name": "Bruce Banner",
+   "sub": "l’homme derrière Hulk",
+   "desc": "Ses morts successives le mènent au Dessous.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Incredible Hulk #1 (1962) · Immortal Hulk (2018) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "below",
+    "e20",
+    "h_oba",
+    "p_sakaar",
+    "x_gamma",
+    "x_sentry"
+   ]
+  },
+  "x_venom": {
+   "map": 6,
+   "name": "Venom",
+   "sub": "le nouveau dieu des symbiotes",
+   "desc": "Eddie Brock vainc Knull et prend sa place à la tête de la Ruche.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Web of Spider-Man #18 (1986) · King in Black #5 (2021) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e23",
+    "gamaliel",
+    "h_knull",
+    "x_symbiote"
+   ]
+  },
+  "x_annihilus": {
+   "map": 6,
+   "name": "Annihilus",
+   "sub": "le seigneur de la Zone Négative",
+   "desc": "Insectoïde tyrannique qui a envahi l’univers.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Fantastic Four Annual #6 (1968) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e15",
+    "g_annwave",
+    "h_death",
+    "neg",
+    "o_controlrod",
+    "p_kyln"
+   ]
+  },
+  "x_mephisto": {
+   "map": 6,
+   "name": "Méphisto",
+   "en": "Mephisto",
+   "sub": "le seigneur d’un enfer",
+   "desc": "Démon qui règne sur l’un des enfers et marchande les âmes.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Silver Surfer #3 (1968) · 1ʳᵉ apparition selon marvel.fandom.com : Bible Tales for Young Folk #1",
+   "rel": [
+    "below",
+    "lilith",
+    "x_satannish"
+   ]
+  },
+  "x_loki": {
+   "map": 6,
+   "name": "Loki",
+   "sub": "le dieu des histoires",
+   "desc": "Survivant du Septième Cosmos, il est jugé dans Defenders: Beyond.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Journey into Mystery #85 (1962) · Defenders: Beyond (2022) · 1ʳᵉ apparition selon marvel.fandom.com : Venus #6",
+   "rel": [
+    "e25",
+    "keter",
+    "x_defenders",
+    "x_yggdrasil"
+   ]
+  },
+  "x_blue": {
+   "map": 6,
+   "name": "Blue Marvel",
+   "sub": "le scientifique cosmique",
+   "desc": "Adam Brashear, membre des Ultimates et des Defenders.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Adam: Legend of the Blue Marvel #1 (2008) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_defenders",
+    "x_ultimates"
+   ]
+  },
+  "x_america": {
+   "map": 6,
+   "name": "Miss America",
+   "en": "America Chavez",
+   "sub": "la voyageuse des réalités",
+   "desc": "Elle ouvre des portails entre les réalités ; membre des Ultimates.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Vengeance #1 (2011) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "multi",
+    "x_defenders",
+    "x_ultimates"
+   ]
+  },
+  "x_maker": {
+   "map": 6,
+   "name": "Le Maker",
+   "en": "The Maker",
+   "sub": "le Reed Richards maléfique",
+   "desc": "Venu de l’ancien univers Ultimate, il façonne un nouveau monde à sa main.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Ultimate Invasion (Hickman, 2023) · 1ʳᵉ apparition selon marvel.fandom.com : Ultimate Marvel Team Up #4",
+   "rel": [
+    "e26",
+    "multi",
+    "x_reed"
+   ]
+  },
+  "x_galan": {
+   "map": 6,
+   "name": "Galan de Taa",
+   "en": "Galan of Taa",
+   "sub": "l’homme avant Galactus",
+   "desc": "Explorateur du Sixième Cosmos qui survit à sa fin et devient Galactus.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Fantastic Four #48 (1966) · Super-Villain Classics #1 (1983) · Defenders (2021) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "c6",
+    "d_blackwinter",
+    "e_hunger",
+    "e_trial",
+    "h_airwalker",
+    "h_fallen",
+    "h_firelord",
+    "h_gal",
+    "h_morg",
+    "h_novaf",
+    "h_redshift",
+    "h_stardust",
+    "h_taa2",
+    "h_terrax",
+    "h_thor",
+    "x_abraxas",
+    "x_ego",
+    "x_taaia",
+    "x_tyrant"
+   ]
+  },
+  "x_taaia": {
+   "map": 6,
+   "name": "Taaia",
+   "sub": "la mère de Galan",
+   "desc": "Venue du Sixième Cosmos, elle rejoint les Defenders.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Defenders (2021) #1 — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "c6",
+    "h_taa2",
+    "x_defenders",
+    "x_galan"
+   ]
+  },
+  "x_lifeb": {
+   "map": 6,
+   "name": "Lifebringer One",
+   "sub": "le premier héros",
+   "desc": "Champion du Troisième Cosmos, vainqueur de l’Anti-Tout.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Defenders (2021) #4 — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "c3",
+    "h_anti"
+   ]
+  },
+  "x_illum": {
+   "map": 6,
+   "name": "Les Illuminati",
+   "en": "Illuminati",
+   "sub": "le conseil secret",
+   "desc": "Reed, Tony Stark, Strange, Namor, Black Bolt… face aux Incursions.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "New Avengers #7 (2005) · New Avengers (2013) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "c7",
+    "e16",
+    "x_rabum",
+    "x_reed"
+   ]
+  },
+  "x_ultimates": {
+   "map": 6,
+   "name": "Les Ultimates",
+   "en": "The Ultimates",
+   "sub": "les résolveurs de problèmes cosmiques",
+   "desc": "Équipe qui s’attaque aux menaces de l’univers lui-même.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Avengers (2015) #0 · The Ultimates (Al Ewing, 2015) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e18",
+    "eternity",
+    "x_america",
+    "x_blue",
+    "x_logos",
+    "x_starbrand"
+   ]
+  },
+  "x_defenders": {
+   "map": 6,
+   "name": "Les Defenders (2021)",
+   "en": "Defenders",
+   "sub": "les voyageurs des cosmos",
+   "desc": "Doctor Strange, Masked Raider, Silver Surfer, Cloak… puis Blue Marvel, Tigra, Loki, Taaia et Miss America.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Defenders (2021) · Defenders: Beyond (2022) · 1ʳᵉ apparition selon marvel.fandom.com : Marvel Feature #1",
+   "rel": [
+    "c8",
+    "e24",
+    "x_america",
+    "x_blue",
+    "x_loki",
+    "x_taaia"
+   ]
+  },
+  "x_omegac": {
+   "map": 6,
+   "name": "Le Conseil Oméga",
+   "en": "Omega Council",
+   "sub": "les gardiens du moteur",
+   "desc": "Conseil des Beyonders siégeant dans la Salle des Machines.",
+   "cat": "grp",
+   "cert": "d",
+   "src": "Defenders: Beyond (2022)",
+   "rel": [
+    "h_bey",
+    "h_omega",
+    "x_ivory",
+    "yesod"
+   ]
+  },
+  "x_ivory": {
+   "map": 6,
+   "name": "Les Rois d’Ivoire",
+   "en": "Ivory Kings",
+   "sub": "les seigneurs blancs",
+   "desc": "Nom donné aux Beyonders, maîtres de l’Au-delà.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Fantastic Four #54 (1966, Beyonders) · Ultimates² (2017) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_bey",
+    "x_omegac",
+    "yesod"
+   ]
+  },
+  "x_blackp": {
+   "map": 6,
+   "name": "Les Prêtres Noirs",
+   "en": "Black Priests",
+   "sub": "les chasseurs de mondes",
+   "desc": "Ordre au service de Rabum Alal, chargé de détruire les Terres en Incursion.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "New Avengers (Hickman, 2013) #2 — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "c7",
+    "e16",
+    "x_mapmak",
+    "x_rabum"
+   ]
+  },
+  "x_mapmak": {
+   "map": 6,
+   "name": "Les Cartographes",
+   "en": "Map Makers",
+   "sub": "les nettoyeurs de réalités",
+   "desc": "Créatures qui effacent les mondes morts après les Incursions.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "New Avengers (Hickman, 2013) #6 — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "c7",
+    "x_blackp"
+   ]
+  },
+  "x_eson": {
+   "map": 6,
+   "name": "Eson le Chercheur",
+   "en": "Eson the Searcher",
+   "sub": "le Céleste qui cherche",
+   "desc": "Céleste chargé de retrouver ce qui a été perdu ; présent lors des jugements de la Terre.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "The Eternals #9 (1977) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_arishem"
+   ]
+  },
+  "x_exitar": {
+   "map": 6,
+   "name": "Exitar l’Exécuteur",
+   "en": "Exitar the Exterminator",
+   "sub": "le plus grand des Célestes",
+   "desc": "Le Céleste qui exécute les sentences : il détruit les mondes jugés indignes.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Thor #387 (1988) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_arishem"
+   ]
+  },
+  "x_gammenon": {
+   "map": 6,
+   "name": "Gammenon le Rassembleur",
+   "en": "Gammenon the Gatherer",
+   "sub": "le collecteur",
+   "desc": "Céleste qui rassemble les échantillons de vie d’un monde ensemencé.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "The Eternals #4 (1976) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_arishem"
+   ]
+  },
+  "x_jemiah": {
+   "map": 6,
+   "name": "Jemiah l’Analyseur",
+   "en": "Jemiah the Analyzer",
+   "sub": "le savant de l’Ost",
+   "desc": "Céleste qui étudie les espèces modifiées par l’Ost.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "The Eternals #7 (1977) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_arishem"
+   ]
+  },
+  "x_nezarr": {
+   "map": 6,
+   "name": "Nezarr le Calculateur",
+   "en": "Nezarr the Calculator",
+   "sub": "le mathématicien",
+   "desc": "Céleste qui calcule l’évolution des mondes.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "The Eternals #9 (1977) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_arishem"
+   ]
+  },
+  "x_ziran": {
+   "map": 6,
+   "name": "Ziran le Testeur",
+   "en": "Ziran the Tester",
+   "sub": "l’éprouveur",
+   "desc": "Céleste qui teste la résistance des espèces.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "The Eternals #18 (1978) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_arishem"
+   ]
+  },
+  "x_oneg": {
+   "map": 6,
+   "name": "Oneg le Sondeur",
+   "en": "Oneg the Prober",
+   "sub": "l’explorateur",
+   "desc": "Céleste qui sonde la Terre et ses profondeurs.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "The Eternals #9 (1977) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel"
+   ]
+  },
+  "x_fulcrum": {
+   "map": 6,
+   "name": "Le Fulcrum",
+   "en": "The Fulcrum",
+   "sub": "le dieu des Célestes",
+   "desc": "Entité que les Célestes vénèrent comme leur créateur, se présentant comme le Un-Au-Dessus-de-Tout de leur race.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Eternals vol. 4 #7 (2009) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "h_oaa"
+   ]
+  },
+  "x_nemesis": {
+   "map": 6,
+   "name": "Némésis",
+   "en": "Nemesis",
+   "sub": "l’être d’avant tout",
+   "desc": "Être unique d’un univers antérieur, dont l’essence fragmentée aurait donné les Gemmes d’Infinité.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Thanos Quest #2 (1990) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "fact": "Les six Gemmes seraient les morceaux d’un seul être.",
+   "rel": [
+    "c1",
+    "e11",
+    "x_gems"
+   ]
+  },
+  "x_epoch": {
+   "map": 6,
+   "name": "Epoch",
+   "sub": "la gardienne du cosmos",
+   "desc": "Enfant d’Eon, elle veille sur l’univers et choisit ses protecteurs.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Infinity Gauntlet #2 (1991) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_eter",
+    "x_eon"
+   ]
+  },
+  "x_eon": {
+   "map": 6,
+   "name": "Eon",
+   "sub": "le gardien du temps cosmique",
+   "desc": "Entité qui fit de Mar-Vell le Protecteur de l’Univers.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Captain Marvel #28 (1973) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_eter",
+    "x_epoch"
+   ]
+  },
+  "x_mentor": {
+   "map": 6,
+   "name": "Mentor",
+   "en": "A’Lars",
+   "sub": "le père de Thanos",
+   "desc": "Éternel de Titan, fils de Kronos et père de Thanos.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Iron Man #55 (1973) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_eternals",
+    "x_kronos",
+    "x_thanos",
+    "x_zuras"
+   ]
+  },
+  "x_proemial": {
+   "map": 6,
+   "name": "Les Dieux Proémiaux",
+   "en": "Proemial Gods",
+   "sub": "les premiers dieux",
+   "desc": "Êtres façonnés aux premiers instants de l’univers, gardiens de son équilibre.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Annihilation: Silver Surfer #3 (2006) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_silver"
+   ]
+  },
+  "x_tva": {
+   "map": 6,
+   "name": "La TVA",
+   "en": "Time Variance Authority",
+   "sub": "les gardiens du temps",
+   "desc": "Bureaucratie hors du temps qui surveille les lignes temporelles du multivers.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Thor #372 (1986) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_timekeepers",
+    "multi",
+    "x_hwr",
+    "x_kang",
+    "x_kronos",
+    "x_stime"
+   ]
+  },
+  "x_sspace": {
+   "map": 6,
+   "name": "Gemme de l’Espace",
+   "en": "Space Stone",
+   "sub": "la gemme bleue",
+   "desc": "Elle permet d’être partout à la fois.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Avengers Annual #7 (1977) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_gauntlet",
+    "x_gems"
+   ]
+  },
+  "x_smind": {
+   "map": 6,
+   "name": "Gemme de l’Esprit",
+   "en": "Mind Stone",
+   "sub": "la gemme jaune",
+   "desc": "Elle amplifie et contrôle les esprits.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Captain Marvel #41 (1975) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_gauntlet",
+    "x_gems"
+   ]
+  },
+  "x_sreal": {
+   "map": 6,
+   "name": "Gemme de la Réalité",
+   "en": "Reality Stone",
+   "sub": "la gemme rouge",
+   "desc": "Elle réécrit la réalité.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Avengers Annual #7 (1977) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_gauntlet",
+    "x_gems"
+   ]
+  },
+  "x_spow": {
+   "map": 6,
+   "name": "Gemme du Pouvoir",
+   "en": "Power Stone",
+   "sub": "la gemme violette",
+   "desc": "Elle donne une puissance illimitée.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Marvel Team-Up #55 (1977) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_gauntlet",
+    "x_gems"
+   ]
+  },
+  "x_stime": {
+   "map": 6,
+   "name": "Gemme du Temps",
+   "en": "Time Stone",
+   "sub": "la gemme verte",
+   "desc": "Elle contrôle passé, présent et futur.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Marvel Team-Up #55 (1977) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_gauntlet",
+    "x_gems",
+    "x_tva"
+   ]
+  },
+  "x_ssoul": {
+   "map": 6,
+   "name": "Gemme de l’Âme",
+   "en": "Soul Stone",
+   "sub": "la gemme orange",
+   "desc": "Consciente et affamée d’âmes ; longtemps portée par Adam Warlock.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Marvel Premiere #1 (1972) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_adam",
+    "x_gems"
+   ]
+  },
+  "h_airwalker": {
+   "map": 6,
+   "name": "Air-Walker",
+   "sub": "le héraut xandarien",
+   "desc": "Gabriel Lan, capitaine de la flotte de Xandar, accepte de servir Galactus. Après sa mort, son esprit est transféré dans un corps d’androïde.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Thor #306 (1981) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_novacorps",
+    "h_firelord",
+    "x_galan",
+    "x_pcosmic"
+   ]
+  },
+  "h_firelord": {
+   "map": 6,
+   "name": "Firelord",
+   "sub": "le héraut de flamme",
+   "desc": "Pyreus Kril, ami de Gabriel Lan, devient héraut à son tour en cherchant à le venger. Il manie le feu cosmique et un bâton de pouvoir.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Thor #225 (1974) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_airwalker",
+    "x_galan",
+    "x_pcosmic"
+   ]
+  },
+  "h_terrax": {
+   "map": 6,
+   "name": "Terrax",
+   "en": "Terrax the Tamer",
+   "sub": "le dompteur de mondes",
+   "desc": "Tyros, tyran de la planète Birj, est choisi par Galactus pour sa cruauté. Il commande à la roche et à la terre grâce à sa hache cosmique.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Fantastic Four #211 (1979) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_morg",
+    "x_galan",
+    "x_pcosmic",
+    "x_silver"
+   ]
+  },
+  "h_novaf": {
+   "map": 6,
+   "name": "Nova (Frankie Raye)",
+   "sub": "la héraut de feu",
+   "desc": "Frankie Raye, compagne de Johnny Storm, se propose comme héraut pour épargner la Terre. Elle mène ensuite Galactus vers des mondes habités.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Fantastic Four #164 (1975) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_galan",
+    "x_pcosmic"
+   ]
+  },
+  "h_morg": {
+   "map": 6,
+   "name": "Morg",
+   "sub": "le bourreau",
+   "desc": "Héraut impitoyable armé d’une hache cosmique, recruté par Galactus après que d’autres hérauts lui ont désobéi.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Silver Surfer vol. 3 #69 (1992) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_terrax",
+    "x_galan",
+    "x_pcosmic"
+   ]
+  },
+  "h_stardust": {
+   "map": 6,
+   "name": "Stardust",
+   "sub": "le héraut zélé",
+   "desc": "Héraut d’une loyauté fanatique, prêt à anéantir quiconque menace son maître.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Stormbreaker: The Saga of Beta Ray Bill #1 (2005) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_galan",
+    "x_pcosmic"
+   ]
+  },
+  "h_redshift": {
+   "map": 6,
+   "name": "Red Shift",
+   "sub": "le héraut artificiel",
+   "desc": "Héraut façonné par Galactus lui-même, sans passé propre, pour le servir sans faille.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Galactus the Devourer #1 (1999) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_galan",
+    "x_pcosmic"
+   ]
+  },
+  "h_fallen": {
+   "map": 6,
+   "name": "Le Déchu",
+   "en": "Fallen One",
+   "sub": "le premier héraut",
+   "desc": "Premier héraut de Galactus selon les récits, emprisonné après sa trahison. Son pouvoir cosmique est teinté de matière noire.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Thanos #11 (2004) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_galan",
+    "x_pcosmic",
+    "x_silver"
+   ]
+  },
+  "h_thor": {
+   "map": 6,
+   "name": "Thor",
+   "sub": "dieu du tonnerre, héraut un temps",
+   "desc": "Prince puis roi d’Asgard. Face à l’Hiver Noir, il accepte de devenir le héraut de Galactus en 2020.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Venus #11 (1950) · Thor vol. 6 #1 (2020) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "d_blackwinter",
+    "o_mjolnir",
+    "p_asgard",
+    "x_bill",
+    "x_ego",
+    "x_galan",
+    "x_gorr",
+    "x_odin"
+   ]
+  },
+  "h_taa2": {
+   "map": 6,
+   "name": "Taa II",
+   "sub": "le vaisseau-monde",
+   "desc": "Vaisseau-monde de Galactus, assez grand pour abriter une planète et bâti à l’image de son monde natal, Taa.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Fantastic Four #49 (1966) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_galan",
+    "x_taaia"
+   ]
+  },
+  "x_ashema": {
+   "map": 6,
+   "name": "Ashema",
+   "en": "Ashema the Listener",
+   "sub": "l’Écoutante",
+   "desc": "Céleste rattachée aux expériences sur l’humanité, l’une des rares à converser avec les mortels.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Heroes Reborn: The Return #1 (1997) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_arishem"
+   ]
+  },
+  "x_devron": {
+   "map": 6,
+   "name": "Devron",
+   "en": "Devron the Experimenter",
+   "sub": "l’Expérimentateur",
+   "desc": "Céleste qui teste des formes de vie et leur évolution au sein de l’Ost.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Marvel Monsters: Devil Dinosaur #1 (2005) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_arishem"
+   ]
+  },
+  "x_hargen": {
+   "map": 6,
+   "name": "Hargen",
+   "en": "Hargen the Measurer",
+   "sub": "l’Arpenteur",
+   "desc": "Céleste chargé de mesurer les mondes visités par l’Ost.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Eternals #9 (1976) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_arishem"
+   ]
+  },
+  "x_tefral": {
+   "map": 6,
+   "name": "Tefral",
+   "en": "Tefral the Surveyor",
+   "sub": "l’Inspecteur",
+   "desc": "Céleste qui inspecte les mondes ensemencés.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Eternals #7 (1976) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_arishem"
+   ]
+  },
+  "x_scathan": {
+   "map": 6,
+   "name": "Scathan",
+   "en": "Scathan the Approver",
+   "sub": "l’Approbateur",
+   "desc": "Céleste dont l’accord valide le jugement d’Arishem.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Guardians of the Galaxy #46 (1994) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_arishem"
+   ]
+  },
+  "x_zgreb": {
+   "map": 6,
+   "name": "Zgreb",
+   "en": "Zgreb the Aspirant",
+   "sub": "l’Aspirant",
+   "desc": "Céleste assimilé aux Aspirants, rivaux des Célestes de l’Ost.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Marvel Legacy #1 (2017) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_asp",
+    "h_cel"
+   ]
+  },
+  "x_gamiel": {
+   "map": 6,
+   "name": "Gamiel",
+   "en": "Gamiel the Manipulator",
+   "sub": "le Manipulateur",
+   "desc": "Céleste qui manipule les gènes des espèces ensemencées.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Marvel Monsters: Devil Dinosaur #1 (2005) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_arishem"
+   ]
+  },
+  "x_exnihilo": {
+   "map": 6,
+   "name": "Ex Nihilo",
+   "sub": "le jardinier des Bâtisseurs",
+   "desc": "Jardinier créé par les Bâtisseurs pour accélérer l’évolution de la vie sur les mondes.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Avengers vol. 5 #1 (2012) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_builders",
+    "x_abyss",
+    "x_aleph"
+   ]
+  },
+  "x_abyss": {
+   "map": 6,
+   "name": "Abyss",
+   "sub": "la sœur d’Ex Nihilo",
+   "desc": "Jardinière née des Bâtisseurs, sœur d’Ex Nihilo, qui manie l’ombre et l’obscurité.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Avengers vol. 5 #1 (2012) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_builders",
+    "x_exnihilo"
+   ]
+  },
+  "x_aleph": {
+   "map": 6,
+   "name": "Les Aleph",
+   "en": "Alephs",
+   "sub": "les éradicateurs",
+   "desc": "Machines des Bâtisseurs chargée d’effacer les mondes jugés irrécupérables.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Avengers vol. 5 #1 (2012) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_builders",
+    "x_exnihilo"
+   ]
+  },
+  "x_ego": {
+   "map": 6,
+   "name": "Ego",
+   "en": "Ego the Living Planet",
+   "sub": "la planète vivante",
+   "desc": "Planète douée de conscience, d’une force colossale, qui se mesure à Galactus et à Thor.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Thor #132 (1966) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_thor",
+    "x_galan"
+   ]
+  },
+  "x_mantis": {
+   "map": 6,
+   "name": "Mantis",
+   "sub": "la Madone céleste",
+   "desc": "Prédite comme Madone céleste, elle s’unit à un Kotati animé par l’esprit du Swordsman et donne naissance à Quoi (Sequoia).",
+   "cat": "per",
+   "cert": "u",
+   "src": "Avengers #112 (1973) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e_madonna",
+    "h_cel"
+   ]
+  },
+  "x_champion": {
+   "map": 6,
+   "name": "Le Champion",
+   "en": "Champion of the Universe",
+   "sub": "le Doyen lutteur",
+   "desc": "Doyen de l’Univers voué au combat, il défie les plus grands lutteurs de chaque monde.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Marvel Two-In-One Annual #7 (1982) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e_contest",
+    "x_elders"
+   ]
+  },
+  "x_runner": {
+   "map": 6,
+   "name": "Le Coureur",
+   "en": "Runner",
+   "sub": "le Doyen de la vitesse",
+   "desc": "Doyen de l’Univers qui consacre son existence infinie à la course.",
+   "cat": "per",
+   "cert": "u",
+   "src": "New Defenders #143 (1985) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_elders"
+   ]
+  },
+  "x_gardener": {
+   "map": 6,
+   "name": "Le Jardinier",
+   "en": "Gardener",
+   "sub": "le Doyen botaniste",
+   "desc": "Doyen de l’Univers qui fait fleurir les mondes stériles.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Marvel Team-Up #55 (1976) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_elders"
+   ]
+  },
+  "x_possessor": {
+   "map": 6,
+   "name": "Le Possesseur",
+   "en": "Possessor",
+   "sub": "le Doyen survivant",
+   "desc": "Doyen de l’Univers qui a survécu à la disparition de son peuple.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Thor #234 (1975) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_elders"
+   ]
+  },
+  "x_contemplator": {
+   "map": 6,
+   "name": "Le Contemplateur",
+   "en": "Contemplator",
+   "sub": "le Doyen méditant",
+   "desc": "Doyen de l’Univers voué à la méditation et aux arts mystiques.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Captain America's Bicentennial Battles #1 (1976) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_elders"
+   ]
+  },
+  "x_trader": {
+   "map": 6,
+   "name": "Le Marchand",
+   "en": "Trader",
+   "sub": "le Doyen du négoce",
+   "desc": "Doyen de l’Univers qui consacre son éternité au commerce.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Silver Surfer vol. 3 #4 (1987) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_elders"
+   ]
+  },
+  "x_astronomer": {
+   "map": 6,
+   "name": "L’Astronome",
+   "en": "Astronomer",
+   "sub": "le Doyen des étoiles",
+   "desc": "Doyen de l’Univers voué à l’étude du cosmos.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Silver Surfer vol. 3 #4 (1987) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_elders"
+   ]
+  },
+  "x_abraxas": {
+   "map": 6,
+   "name": "Abraxas",
+   "sub": "l’anti-Éternité",
+   "desc": "Incarnation de la destruction, contrepartie d’Éternité, libérée lorsque celle-ci est affaiblie.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Fantastic Four Annual #2001 (2001) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "eternity",
+    "x_galan"
+   ]
+  },
+  "x_kubik": {
+   "map": 6,
+   "name": "Kubik",
+   "sub": "le Cube devenu être",
+   "desc": "Cube cosmique ayant pris conscience de lui-même et une forme humanoïde.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Tales of Suspense #79 (1966) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_cube"
+   ]
+  },
+  "x_tyrant": {
+   "map": 6,
+   "name": "Tyrant",
+   "sub": "la créature rebelle de Galactus",
+   "desc": "Être créé par Galactus, qui se retourna contre lui et fut exilé pendant des éons.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Silver Surfer vol. 3 #81 (1993) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_galan"
+   ]
+  },
+  "x_agamotto": {
+   "map": 6,
+   "name": "Agamotto",
+   "sub": "membre des Vishanti",
+   "desc": "Entité mystique, l’un des Vishanti, dont l’Œil guide les Sorciers suprêmes.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Marvel Premiere #5 (1972) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_vishanti",
+    "o_eye",
+    "x_hoggoth",
+    "x_oshtur",
+    "x_strange"
+   ]
+  },
+  "x_oshtur": {
+   "map": 6,
+   "name": "Oshtur",
+   "sub": "membre des Vishanti",
+   "desc": "Divinité mystique bienveillante, membre des Vishanti.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Marvel Premiere #5 (1972) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_vishanti",
+    "x_agamotto"
+   ]
+  },
+  "x_hoggoth": {
+   "map": 6,
+   "name": "Hoggoth",
+   "sub": "membre des Vishanti",
+   "desc": "Divinité mystique, membre des Vishanti, invoquée par les sorciers.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Strange Tales #116 (1963) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_vishanti",
+    "x_agamotto"
+   ]
+  },
+  "x_cyttorak": {
+   "map": 6,
+   "name": "Cyttorak",
+   "sub": "la force du Fléau",
+   "desc": "Divinité de la Crimson Cosmos qui confère ses pouvoirs au Fléau.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "X-Men #12 (1965) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_strange"
+   ]
+  },
+  "x_satannish": {
+   "map": 6,
+   "name": "Satannish",
+   "sub": "le démon des pactes",
+   "desc": "Seigneur démoniaque qui accorde ses pouvoirs aux sorciers en échange de leur âme.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Doctor Strange #174 (1968) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_dormammu",
+    "x_mephisto"
+   ]
+  },
+  "x_umar": {
+   "map": 6,
+   "name": "Umar",
+   "sub": "la sœur de Dormammu",
+   "desc": "Faltine, sœur de Dormammu et mère de Clea, qui règne parfois sur la Dimension noire.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Strange Tales #150 (1966) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_clea",
+    "x_darkdim",
+    "x_dormammu"
+   ]
+  },
+  "x_nightmare": {
+   "map": 6,
+   "name": "Cauchemar",
+   "en": "Nightmare",
+   "sub": "le maître des rêves",
+   "desc": "Seigneur de la Dimension des rêves, il se nourrit des cauchemars des mortels.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Strange Tales #110 (1963) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "d_dweller",
+    "x_dreams",
+    "x_strange"
+   ]
+  },
+  "x_zom": {
+   "map": 6,
+   "name": "Zom",
+   "sub": "la puissance emprisonnée",
+   "desc": "Entité mystique d’une puissance redoutable, emprisonnée jadis par le Tribunal vivant.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Strange Tales #156 (1967) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "tribunal",
+    "x_strange"
+   ]
+  },
+  "x_gaea": {
+   "map": 6,
+   "name": "Gaïa",
+   "en": "Gaea",
+   "sub": "l’esprit de la Terre",
+   "desc": "Déesse primordiale incarnant la Terre et sa vie, mère de nombreux dieux.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Doctor Strange vol. 2 #6 (1974) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_chthon"
+   ]
+  },
+  "x_magus": {
+   "map": 6,
+   "name": "Le Magus",
+   "en": "Magus",
+   "sub": "le futur sombre d’Adam",
+   "desc": "Version future et corrompue d’Adam Warlock, chef de l’Église universelle de la vérité.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Strange Tales #178 (1974) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e_infwar",
+    "g_church",
+    "x_adam"
+   ]
+  },
+  "x_unimind": {
+   "map": 6,
+   "name": "Uni-Esprit",
+   "en": "Uni-Mind",
+   "sub": "la conscience collective des Éternels",
+   "desc": "Fusion des esprits de tous les Éternels en une entité unique.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Eternals #12 (1977) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_eternals"
+   ]
+  },
+  "x_starbrand": {
+   "map": 6,
+   "name": "Starbrand",
+   "sub": "l’arme planétaire",
+   "desc": "Pouvoir de défense de la Terre, confié à un hôte au hasard.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Star Brand #1 (1986) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_ultimates"
+   ]
+  },
+  "x_magistrati": {
+   "map": 6,
+   "name": "Les Magistrati",
+   "en": "Magistrati",
+   "sub": "les hérauts du Tribunal",
+   "desc": "Représentants du Tribunal vivant, ils parlent en son nom auprès des mortels.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "She-Hulk #7 (2004) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "tribunal"
+   ]
+  },
+  "d_shuma": {
+   "map": 6,
+   "name": "Shuma-Gorath",
+   "sub": "l’Ancien aux tentacules",
+   "desc": "Ancien Dieu tentaculaire, l’une des plus vieilles menaces de la Terre et d’autres dimensions.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Marvel Premiere #9 (1973) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_chthon",
+    "x_strange"
+   ]
+  },
+  "x_chthon": {
+   "map": 6,
+   "name": "Chthon",
+   "sub": "l’auteur du Darkhold",
+   "desc": "Ancien Dieu de la magie noire, auteur du Darkhold.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Marvel Chillers #1 (1975) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "d_mikaboshi",
+    "d_shuma",
+    "o_darkhold",
+    "x_gaea",
+    "x_set"
+   ]
+  },
+  "d_mikaboshi": {
+   "map": 6,
+   "name": "Amatsu-Mikaboshi",
+   "sub": "le Néant originel",
+   "desc": "Dieu japonais du mal, identifié au néant d’avant la création ; il menace tous les panthéons.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Ares #2 (2006) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_chthon"
+   ]
+  },
+  "d_dweller": {
+   "map": 6,
+   "name": "L’Habitant des ténèbres",
+   "en": "Dweller-in-Darkness",
+   "sub": "le dieu de la peur",
+   "desc": "Ancien Dieu qui se nourrit de la peur et pactise avec Cauchemar.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Thor #229 (1974) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_nightmare"
+   ]
+  },
+  "d_blackwinter": {
+   "map": 6,
+   "name": "L’Hiver Noir",
+   "en": "Black Winter",
+   "sub": "la fin des univers",
+   "desc": "Entité venue du Sixième Cosmos, qui l’a anéanti, et qui menace le nôtre ; Galactus fuit son approche.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Thor #169 (1969) · Thor vol. 6 #1 (2020) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_thor",
+    "x_galan"
+   ]
+  },
+  "d_manyangled": {
+   "map": 6,
+   "name": "Les Anges Multiples",
+   "en": "Many-Angled Ones",
+   "sub": "les seigneurs du Cancerverse",
+   "desc": "Anciens Dieux qui ont vaincu la Mort dans le Cancerverse.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Silver Surfer #12 (1969) · Thanos Imperative #1 (2010) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_death",
+    "p_cancerverse"
+   ]
+  },
+  "x_gorr": {
+   "map": 6,
+   "name": "Gorr",
+   "en": "Gorr the God Butcher",
+   "sub": "le massacreur de dieux",
+   "desc": "Armé de l’épée All-Black, il traque et tue des dieux à travers les âges.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Thor: God of Thunder #2 (2012) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_knull",
+    "h_thor",
+    "x_allblack"
+   ]
+  },
+  "o_mjolnir": {
+   "map": 6,
+   "name": "Mjolnir",
+   "sub": "le marteau de Thor",
+   "desc": "Marteau forgé dans l’uru, qui ne peut être soulevé que par une personne digne.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Journey Into Mystery #83 (1962) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_thor",
+    "o_uru",
+    "p_asgard",
+    "x_bill"
+   ]
+  },
+  "o_uru": {
+   "map": 6,
+   "name": "Uru",
+   "sub": "le métal d’Asgard",
+   "desc": "Métal asgardien quasi indestructible, capable de retenir la magie.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Journey Into Mystery #83 (1962) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "o_mjolnir",
+    "p_asgard"
+   ]
+  },
+  "o_darkhold": {
+   "map": 6,
+   "name": "Le Darkhold",
+   "en": "Darkhold",
+   "sub": "le livre des péchés",
+   "desc": "Grimoire écrit par Chthon, source de magie noire qui corrompt ses lecteurs.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Marvel Spotlight #4 (1972) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_chthon"
+   ]
+  },
+  "o_eye": {
+   "map": 6,
+   "name": "L’Œil d’Agamotto",
+   "en": "Eye of Agamotto (Knowledge)",
+   "sub": "l’amulette du Sorcier suprême",
+   "desc": "Amulette qui révèle la vérité et dissipe les illusions, portée par le Docteur Strange.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Strange Tales #127 (1964) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_agamotto",
+    "x_strange"
+   ]
+  },
+  "o_twilight": {
+   "map": 6,
+   "name": "L’Épée du crépuscule",
+   "en": "Twilight Sword (Surtur)",
+   "sub": "l’épée de Surtur",
+   "desc": "Épée capable de réécrire la réalité, liée au destin d’Asgard.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Journey Into Mystery #97 (1963) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "p_asgard"
+   ]
+  },
+  "o_controlrod": {
+   "map": 6,
+   "name": "Le Bâton de contrôle cosmique",
+   "en": "Cosmic Control Rod",
+   "sub": "le sceptre d’Annihilus",
+   "desc": "Source d’immortalité et de pouvoir d’Annihilus.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Fantastic Four Annual #6 (1968) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "neg",
+    "x_annihilus"
+   ]
+  },
+  "o_serpent": {
+   "map": 6,
+   "name": "La Couronne du Serpent",
+   "en": "Serpent Crown",
+   "sub": "la couronne de Set",
+   "desc": "Couronne liée au dieu-serpent Set, qui corrompt celui qui la porte.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Fantastic Four Annual #1 (1963) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_set"
+   ]
+  },
+  "x_set": {
+   "map": 6,
+   "name": "Set",
+   "sub": "le dieu-serpent",
+   "desc": "Ancien Dieu serpent, lié à la Couronne du Serpent.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Marvel Tales #96 (1950) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "o_serpent",
+    "x_chthon"
+   ]
+  },
+  "o_watoomb": {
+   "map": 6,
+   "name": "La Baguette de Watoomb",
+   "en": "Wand of Watoomb",
+   "sub": "l’arme mystique",
+   "desc": "Artefact mystique capable d’amplifier énormément la magie de son détenteur.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Amazing Spider-Man Annual #2 (1965) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_strange"
+   ]
+  },
+  "p_knowhere": {
+   "map": 6,
+   "name": "Knowhere",
+   "sub": "la tête du Céleste",
+   "desc": "Station installée dans la tête tranchée d’un Céleste, aux confins de l’univers.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Nova vol. 4 #8 (2007) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_guardians",
+    "h_cel"
+   ]
+  },
+  "p_kyln": {
+   "map": 6,
+   "name": "Le Kyln",
+   "en": "Kyln",
+   "sub": "la prison cosmique",
+   "desc": "Prison aux confins de l’univers, près de la Crunch.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Thanos #7 (2004) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_annihilus"
+   ]
+  },
+  "p_sakaar": {
+   "map": 6,
+   "name": "Sakaar",
+   "sub": "la planète de l’exil",
+   "desc": "Monde barbare où Hulk est exilé et devient roi.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Incredible Hulk vol. 2 #92 (2006) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_banner"
+   ]
+  },
+  "p_titan": {
+   "map": 6,
+   "name": "Titan",
+   "sub": "la lune des Éternels",
+   "desc": "Lune de Saturne, foyer des Éternels titaniens et de Thanos.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Iron Man #55 (1972) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_eternals",
+    "x_moondragon",
+    "x_starfox",
+    "x_thanos"
+   ]
+  },
+  "p_hala": {
+   "map": 6,
+   "name": "Hala (Planet)",
+   "sub": "le monde-trône kree",
+   "desc": "Planète capitale de l’Empire kree.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Marvel Super-Heroes #12 (1967) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_kree"
+   ]
+  },
+  "p_xandar": {
+   "map": 6,
+   "name": "Xandar",
+   "sub": "le monde des Nova",
+   "desc": "Planète siège du Nova Corps.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Nova #1 (1976) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_novacorps"
+   ]
+  },
+  "p_asgard": {
+   "map": 6,
+   "name": "Asgard (Realm)",
+   "sub": "le royaume des dieux",
+   "desc": "Royaume des dieux nordiques, relié aux autres mondes par Yggdrasil.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Journey Into Mystery #85 (1962) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_thor",
+    "o_mjolnir",
+    "o_twilight",
+    "o_uru",
+    "p_heven",
+    "x_hela",
+    "x_odin",
+    "x_yggdrasil"
+   ]
+  },
+  "p_bluearea": {
+   "map": 6,
+   "name": "Zone bleue de la Lune",
+   "en": "Blue Area of the Moon",
+   "sub": "l’oasis kree",
+   "desc": "Zone respirable de la Lune bâtie par les Kree, demeure d’Uatu.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Blonde Phantom Comics #21 (1948) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_kree",
+    "x_uatu"
+   ]
+  },
+  "p_nexus": {
+   "map": 6,
+   "name": "Nexus de toutes les réalités",
+   "en": "Nexus of All Realities",
+   "sub": "le carrefour des mondes",
+   "desc": "Point où toutes les réalités se rejoignent, dans les marais de Floride.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Fear #11 (1972) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "univ"
+   ]
+  },
+  "p_crossroads": {
+   "map": 6,
+   "name": "Le Carrefour",
+   "en": "Crossroads (Dimension)",
+   "sub": "la dimension des passages",
+   "desc": "Dimension de transit qui ouvre sur d’autres mondes.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Incredible Hulk #300 (1984) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "univ"
+   ]
+  },
+  "p_otherworld": {
+   "map": 6,
+   "name": "L’Autremonde",
+   "en": "Otherworld",
+   "sub": "le royaume celtique",
+   "desc": "Dimension mystique celtique, siège du Captain Britain Corps.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Fantastic Four #54 (1966) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_cbcorps"
+   ]
+  },
+  "p_weirdworld": {
+   "map": 6,
+   "name": "Weirdworld (Planet)",
+   "sub": "le monde étrange",
+   "desc": "Réalité de fantasy où se croisent des fragments d’autres mondes.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Monsters Unleashed #9 (1974) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "univ"
+   ]
+  },
+  "p_cancerverse": {
+   "map": 6,
+   "name": "Le Cancerverse",
+   "en": "Cancerverse",
+   "sub": "l’univers sans mort",
+   "desc": "Univers où la Mort a été vaincue et où la vie prolifère sans fin.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Realm of Kings #1 (2009) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "d_manyangled",
+    "e_imperative",
+    "h_death"
+   ]
+  },
+  "p_heven": {
+   "map": 6,
+   "name": "Heven",
+   "sub": "le royaume des Anges",
+   "desc": "Dixième Royaume, foyer des Anges.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Guardians of the Galaxy vol. 3 #7 (2013) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "p_asgard"
+   ]
+  },
+  "g_guardians": {
+   "map": 6,
+   "name": "Gardiens de la Galaxie",
+   "en": "Guardians of the Galaxy",
+   "sub": "les protecteurs cosmiques",
+   "desc": "Équipe cosmique moderne réunie autour de Star-Lord après Annihilation: Conquest.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Annihilation: Conquest - Starlord #1 (2007) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e_conquest",
+    "p_knowhere",
+    "x_gamora",
+    "x_starlord"
+   ]
+  },
+  "g_novacorps": {
+   "map": 6,
+   "name": "Nova Corps",
+   "sub": "la police de Xandar",
+   "desc": "Force militaire et de police de Xandar, alimentée par la Nova Force.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Fantastic Four #205 (1979) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_airwalker",
+    "p_xandar",
+    "x_nova",
+    "x_rider"
+   ]
+  },
+  "g_kree": {
+   "map": 6,
+   "name": "Kree",
+   "sub": "l’empire militaire",
+   "desc": "Empire galactique militariste, rival des Skrulls.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Fantastic Four #65 (1967) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e_conquest",
+    "e_empyre",
+    "e_galstorm",
+    "e_kreeskrull",
+    "e_warkings",
+    "g_phalanx",
+    "g_skrulls",
+    "p_bluearea",
+    "p_hala",
+    "x_marvell",
+    "x_ronan"
+   ]
+  },
+  "g_skrulls": {
+   "map": 6,
+   "name": "Deviant Skrulls",
+   "sub": "les métamorphes",
+   "desc": "Espèce capable de changer de forme, en guerre contre les Kree.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Amazing Adult Fantasy #7 (1961) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e_empyre",
+    "e_kreeskrull",
+    "e_secretinv",
+    "g_kree"
+   ]
+  },
+  "g_shiar": {
+   "map": 6,
+   "name": "Shi’ar",
+   "sub": "l’empire aviaire",
+   "desc": "Empire galactique qui considère la Force Phénix avec crainte.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "X-Men #97 (1975) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e_galstorm",
+    "e_warkings",
+    "h_phx",
+    "x_gladiator"
+   ]
+  },
+  "g_blackorder": {
+   "map": 6,
+   "name": "L’Ordre noir",
+   "en": "Black Order",
+   "sub": "les lieutenants de Thanos",
+   "desc": "Guerriers de Thanos qui ravagent les mondes en son nom.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "New Avengers vol. 3 #8 (2013) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e_infinity",
+    "x_thanos"
+   ]
+  },
+  "g_annwave": {
+   "map": 6,
+   "name": "La Vague d’Annihilation",
+   "en": "Annihilation Wave",
+   "sub": "l’armée de la Zone négative",
+   "desc": "Armée immense menée par Annihilus contre l’univers.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Annihilation: Prologue #1 (2006) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "neg",
+    "x_annihilus"
+   ]
+  },
+  "g_timekeepers": {
+   "map": 6,
+   "name": "Les Gardiens du Temps",
+   "en": "Time-Keepers",
+   "sub": "les maîtres de la TVA",
+   "desc": "Êtres de la fin des temps qui supervisent le flux temporel.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Thor #282 (1979) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_immortus",
+    "x_tva"
+   ]
+  },
+  "g_church": {
+   "map": 6,
+   "name": "L’Église universelle de la vérité",
+   "en": "Universal Church of Truth",
+   "sub": "le culte du Magus",
+   "desc": "Église galactique fondée par le Magus, qui convertit des mondes entiers.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Strange Tales #178 (1974) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_adam",
+    "x_magus"
+   ]
+  },
+  "g_vishanti": {
+   "map": 6,
+   "name": "Les Vishanti",
+   "en": "Vishanti (Earth-616)",
+   "sub": "la trinité mystique",
+   "desc": "Trinité de dieux bienveillants : Agamotto, Oshtur et Hoggoth.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Strange Tales #116 (1963) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_agamotto",
+    "x_hoggoth",
+    "x_oshtur"
+   ]
+  },
+  "g_cbcorps": {
+   "map": 6,
+   "name": "Captain Britain Corps",
+   "sub": "les gardiens du Multivers",
+   "desc": "Corps de Captain Britain issus de nombreux univers.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Daredevils #6 (1983) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "p_otherworld"
+   ]
+  },
+  "g_reeds": {
+   "map": 6,
+   "name": "Conseil des Reed",
+   "en": "Council of Reeds",
+   "sub": "l’assemblée des Reed Richards",
+   "desc": "Assemblée de versions de Reed Richards venues de plusieurs réalités.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Dark Reign: Fantastic Four #5 (2009) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_reed"
+   ]
+  },
+  "g_builders": {
+   "map": 6,
+   "name": "Les Bâtisseurs",
+   "en": "Builders",
+   "sub": "les architectes de l’univers",
+   "desc": "Race très ancienne qui se dit à l’origine de nombreuses formes de vie.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Avengers vol. 5 #2 (2012) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e_infinity",
+    "x_abyss",
+    "x_aleph",
+    "x_exnihilo"
+   ]
+  },
+  "g_infwatch": {
+   "map": 6,
+   "name": "Infinity Watch",
+   "sub": "les gardiens des Gemmes",
+   "desc": "Équipe d’Adam Warlock chargée de garder les Gemmes de l’infini.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Warlock and the Infinity Watch #2 (1992) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_adam",
+    "x_gems"
+   ]
+  },
+  "g_annihilators": {
+   "map": 6,
+   "name": "Les Annihilators",
+   "en": "Annihilators",
+   "sub": "les poids lourds cosmiques",
+   "desc": "Équipe des plus puissants héros cosmiques.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Thanos Imperative: Devastation #1 (2011) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_silver"
+   ]
+  },
+  "g_phalanx": {
+   "map": 6,
+   "name": "La Phalange",
+   "en": "Phalanx",
+   "sub": "le collectif techno-organique",
+   "desc": "Collectif techno-organique qui assimile toute vie.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Uncanny X-Men #305 (1993) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e_conquest",
+    "g_kree"
+   ]
+  },
+  "x_quasar": {
+   "map": 6,
+   "name": "Quasar",
+   "sub": "le protecteur de l’univers",
+   "desc": "Wendell Vaughn, porteur des Quantum Bands, désigné protecteur de l’univers.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Captain America #217 (1977) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_quantum"
+   ]
+  },
+  "x_ronan": {
+   "map": 6,
+   "name": "Ronan",
+   "en": "Ronan the Accuser",
+   "sub": "l’Accusateur kree",
+   "desc": "Accusateur suprême de l’Empire kree.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Fantastic Four #65 (1967) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_kree"
+   ]
+  },
+  "x_rider": {
+   "map": 6,
+   "name": "Nova (Richard Rider)",
+   "sub": "le dernier centurion",
+   "desc": "Richard Rider, adolescent devenu porteur de la Nova Force.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Nova #1 (1976) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_novacorps",
+    "x_nova"
+   ]
+  },
+  "x_starlord": {
+   "map": 6,
+   "name": "Star-Lord",
+   "sub": "le chef des Gardiens",
+   "desc": "Peter Quill, mi-humain, chef des Gardiens de la Galaxie.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Thanos #8 (2004) · Marvel Preview #4 (1976, Terre-791) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_guardians"
+   ]
+  },
+  "x_gamora": {
+   "map": 6,
+   "name": "Gamora",
+   "sub": "la fille adoptive de Thanos",
+   "desc": "Dernière de son espèce, élevée par Thanos pour devenir une arme.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Strange Tales #180 (1975) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e_infwars",
+    "g_guardians",
+    "x_thanos"
+   ]
+  },
+  "x_drax": {
+   "map": 6,
+   "name": "Drax",
+   "en": "Drax the Destroyer",
+   "sub": "le destructeur",
+   "desc": "Arthur Douglas, ressuscité par Kronos pour tuer Thanos.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Iron Man #55 (1972) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_kronos",
+    "x_moondragon",
+    "x_thanos"
+   ]
+  },
+  "x_marvell": {
+   "map": 6,
+   "name": "Mar-Vell",
+   "en": "Captain Mar-Vell",
+   "sub": "le premier Captain Marvel",
+   "desc": "Officier kree qui se range du côté de la Terre ; sa mort marque l’univers Marvel.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Marvel Super-Heroes #12 (1967) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e_deathmv",
+    "g_kree",
+    "x_genis",
+    "x_thanos"
+   ]
+  },
+  "x_genis": {
+   "map": 6,
+   "name": "Genis-Vell",
+   "sub": "le fils de Mar-Vell",
+   "desc": "Fils de Mar-Vell, il acquiert la conscience cosmique.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Silver Surfer Annual #6 (1993) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_marvell"
+   ]
+  },
+  "x_moondragon": {
+   "map": 6,
+   "name": "Moondragon",
+   "sub": "la télépathe de Titan",
+   "desc": "Heather Douglas, élevée sur Titan, télépathe redoutable.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Iron Man #54 (1972) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "p_titan",
+    "x_drax"
+   ]
+  },
+  "x_nebula": {
+   "map": 6,
+   "name": "Nebula",
+   "sub": "la petite-fille de Thanos",
+   "desc": "Pirate de l’espace se disant petite-fille de Thanos.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Avengers #257 (1985) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_thanos"
+   ]
+  },
+  "x_gladiator": {
+   "map": 6,
+   "name": "Gladiator",
+   "sub": "le prétorien Shi’ar",
+   "desc": "Kallark, chef de la Garde impériale Shi’ar.",
+   "cat": "per",
+   "cert": "u",
+   "src": "X-Men #107 (1977) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_shiar"
+   ]
+  },
+  "x_starfox": {
+   "map": 6,
+   "name": "Starfox",
+   "sub": "le frère de Thanos",
+   "desc": "Eros de Titan, frère de Thanos, Éternel au charme surnaturel.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Iron Man #55 (1972) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "p_titan",
+    "x_thanos"
+   ]
+  },
+  "x_kang": {
+   "map": 6,
+   "name": "Kang le Conquérant",
+   "en": "Kang the Conqueror",
+   "sub": "le conquérant du temps",
+   "desc": "Conquérant venu du futur, maître des voyages temporels.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Avengers #8 (1964) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e_forever",
+    "x_immortus",
+    "x_tva"
+   ]
+  },
+  "x_immortus": {
+   "map": 6,
+   "name": "Immortus",
+   "sub": "le maître des Limbes",
+   "desc": "Version tardive de Kang, serviteur des Gardiens du Temps.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Avengers #10 (1964) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e_forever",
+    "g_timekeepers",
+    "x_kang"
+   ]
+  },
+  "x_hwr": {
+   "map": 6,
+   "name": "Celui qui reste",
+   "en": "He Who Remains",
+   "sub": "le dernier directeur de la TVA",
+   "desc": "Dernier directeur de la TVA à la fin des temps.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Thor #245 (1975) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_tva"
+   ]
+  },
+  "x_sentry": {
+   "map": 6,
+   "name": "Sentry",
+   "sub": "le héros et le Void",
+   "desc": "Héros d’une immense puissance dont la part sombre est le Void.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Sentry #1 (2000) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_banner"
+   ]
+  },
+  "x_odin": {
+   "map": 6,
+   "name": "Odin",
+   "sub": "le Père de toutes choses",
+   "desc": "Roi d’Asgard et père de Thor.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Journey Into Mystery #85 (1962) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_thor",
+    "p_asgard"
+   ]
+  },
+  "x_hela": {
+   "map": 6,
+   "name": "Hela",
+   "sub": "déesse de la mort asgardienne",
+   "desc": "Souveraine de Hel et Niflheim.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Journey Into Mystery #102 (1964) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "p_asgard"
+   ]
+  },
+  "x_bill": {
+   "map": 6,
+   "name": "Beta Ray Bill",
+   "sub": "le Korbinite digne",
+   "desc": "Guerrier korbinite jugé digne de soulever Mjolnir.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Thor #337 (1983) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_thor",
+    "o_mjolnir"
+   ]
+  },
+  "x_ikaris": {
+   "map": 6,
+   "name": "Ikaris",
+   "sub": "l’Éternel",
+   "desc": "Éternel de la Terre, chef de son peuple à plusieurs reprises.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Eternals #1 (1976) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_eternals"
+   ]
+  },
+  "x_sersi": {
+   "map": 6,
+   "name": "Sersi",
+   "sub": "l’Éternelle",
+   "desc": "Éternelle capable de transmuter la matière.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Venus #1 (1948) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_eternals"
+   ]
+  },
+  "x_zuras": {
+   "map": 6,
+   "name": "Zuras",
+   "sub": "le chef des Éternels",
+   "desc": "Chef des Éternels et père de Thena.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Red Raven Comics #1 (1940) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_eternals",
+    "x_mentor"
+   ]
+  },
+  "x_wiccan": {
+   "map": 6,
+   "name": "Wiccan",
+   "sub": "le futur Démiurge",
+   "desc": "Billy Kaplan, sorcier destiné à devenir le Démiurge.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Young Avengers #1 (2005) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_strange"
+   ]
+  },
+  "x_clea": {
+   "map": 6,
+   "name": "Clea",
+   "sub": "la Sorcière suprême",
+   "desc": "Faltine, fille d’Umar, Sorcière suprême de la Dimension noire.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Strange Tales #126 (1964) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_strange",
+    "x_umar"
+   ]
+  },
+  "x_korvac": {
+   "map": 6,
+   "name": "Korvac",
+   "sub": "l’homme devenu dieu",
+   "desc": "Humain du futur qui s’empare du pouvoir de Galactus.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Giant-Size Defenders #3 (1974) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "e_korvac"
+   ]
+  },
+  "e_kreeskrull": {
+   "map": 6,
+   "name": "La Guerre Kree-Skrull",
+   "en": "Kree-Skrull War",
+   "sub": "Avengers #89-97",
+   "desc": "Les Avengers sont pris dans la guerre entre Kree et Skrulls.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Avengers #89 (1971) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_kree",
+    "g_skrulls"
+   ]
+  },
+  "e_madonna": {
+   "map": 6,
+   "name": "La Madone céleste",
+   "en": "Celestial Madonna",
+   "sub": "Giant-Size Avengers #4",
+   "desc": "Mantis s’unit à un Kotati pour accomplir sa destinée de Madone céleste.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Giant-Size Avengers #4 (1975) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_mantis"
+   ]
+  },
+  "e_korvac": {
+   "map": 6,
+   "name": "La Saga Korvac",
+   "en": "Korvac Saga",
+   "sub": "Avengers #167-177",
+   "desc": "Korvac défie les Avengers et les Gardiens de la Galaxie.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Avengers #167 (1977) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_korvac"
+   ]
+  },
+  "e_deathmv": {
+   "map": 6,
+   "name": "La Mort de Captain Marvel",
+   "en": "Death of Captain Marvel",
+   "sub": "Marvel Graphic Novel #1",
+   "desc": "Mar-Vell meurt d’un cancer, accueilli par Thanos et la Mort.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Marvel Graphic Novel #1 (1982) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_death",
+    "x_marvell",
+    "x_thanos"
+   ]
+  },
+  "e_contest": {
+   "map": 6,
+   "name": "Le Tournoi des champions",
+   "en": "Contest of Champions",
+   "sub": "Contest of Champions #1-3",
+   "desc": "Le Grand Maître et la Mort s’affrontent à travers des champions terriens.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Marvel Super Hero Contest of Champions #1 (1982) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_death",
+    "x_champion",
+    "x_grandm"
+   ]
+  },
+  "e_trial": {
+   "map": 6,
+   "name": "Le procès de Reed Richards",
+   "en": "Trial of Reed Richards",
+   "sub": "Fantastic Four #262",
+   "desc": "Reed Richards est jugé pour avoir sauvé Galactus.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Fantastic Four #262 (1983) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_galan",
+    "x_reed"
+   ]
+  },
+  "e_infwar": {
+   "map": 6,
+   "name": "La Guerre de l’Infini",
+   "en": "Infinity War",
+   "sub": "Infinity War #1-6",
+   "desc": "Le Magus revient et crée des doubles maléfiques des héros.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Infinity War #1 (1992) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_adam",
+    "x_magus"
+   ]
+  },
+  "e_galstorm": {
+   "map": 6,
+   "name": "Operation Galactic Storm",
+   "en": "Operation: Galactic Storm",
+   "sub": "Captain America #398",
+   "desc": "Les Avengers sont pris dans la guerre Kree-Shi’ar.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Captain America #398 (1992) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_kree",
+    "g_shiar"
+   ]
+  },
+  "e_crusade": {
+   "map": 6,
+   "name": "La Croisade de l’Infini",
+   "en": "Infinity Crusade",
+   "sub": "Infinity Crusade #1-6",
+   "desc": "La Déesse, part bienveillante d’Adam Warlock, convertit des héros.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Infinity Crusade #1 (1993) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_adam"
+   ]
+  },
+  "e_forever": {
+   "map": 6,
+   "name": "Avengers Forever",
+   "sub": "Avengers Forever #1-12",
+   "desc": "Les Avengers traversent le temps contre Immortus.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Avengers Forever #1 (1998) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_immortus",
+    "x_kang"
+   ]
+  },
+  "e_conquest": {
+   "map": 6,
+   "name": "Annihilation: Conquest",
+   "sub": "Annihilation: Conquest #1-6",
+   "desc": "La Phalange envahit l’espace kree.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Annihilation: Conquest #1 (2007) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_guardians",
+    "g_kree",
+    "g_phalanx"
+   ]
+  },
+  "e_secretinv": {
+   "map": 6,
+   "name": "Secret Invasion",
+   "sub": "Secret Invasion #1-8",
+   "desc": "Les Skrulls infiltrent la Terre.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Secret Invasion #1 (2008) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_skrulls"
+   ]
+  },
+  "e_warkings": {
+   "map": 6,
+   "name": "La Guerre des rois",
+   "en": "War of Kings",
+   "sub": "War of Kings #1-6",
+   "desc": "Kree et Shi’ar s’affrontent.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "War of Kings #1 (2009) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_kree",
+    "g_shiar"
+   ]
+  },
+  "e_imperative": {
+   "map": 6,
+   "name": "Thanos Imperative",
+   "sub": "Thanos Imperative #1-6",
+   "desc": "Le Cancerverse envahit l’univers.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Thanos Imperative #1 (2010) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "p_cancerverse",
+    "x_thanos"
+   ]
+  },
+  "e_avx": {
+   "map": 6,
+   "name": "Avengers vs. X-Men",
+   "sub": "Avengers vs. X-Men #1-12",
+   "desc": "Le retour de la Force Phénix oppose Avengers et X-Men.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Avengers vs. X-Men #1 (2012) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_phx"
+   ]
+  },
+  "e_infinity": {
+   "map": 6,
+   "name": "Infinity",
+   "sub": "Infinity #1-6",
+   "desc": "Les Bâtisseurs et Thanos attaquent en même temps.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Infinity #1 (2013) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_blackorder",
+    "g_builders",
+    "x_thanos"
+   ]
+  },
+  "e_hunger": {
+   "map": 6,
+   "name": "Hunger",
+   "sub": "Hunger #1-4",
+   "desc": "Un Galactus pénètre dans l’univers Ultimate.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Hunger #1 (2013) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_galan"
+   ]
+  },
+  "e_originsin": {
+   "map": 6,
+   "name": "Original Sin",
+   "sub": "Original Sin #1-8",
+   "desc": "Uatu est assassiné.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Original Sin #1 (2014) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_uatu"
+   ]
+  },
+  "e_infwars": {
+   "map": 6,
+   "name": "Infinity Wars",
+   "sub": "Infinity Wars #1-6",
+   "desc": "Gamora fusionne des réalités avec les Pierres.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Infinity Wars #1 (2018) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_gamora",
+    "x_gems"
+   ]
+  },
+  "e_empyre": {
+   "map": 6,
+   "name": "Empyre",
+   "sub": "Empyre #0-6",
+   "desc": "Kree et Skrulls unis attaquent la Terre.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Empyre #1 (2020) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_kree",
+    "g_skrulls"
+   ]
+  },
+  "e_judgment": {
+   "map": 6,
+   "name": "Judgment Day",
+   "en": "A.X.E.: Judgment Day",
+   "sub": "A.X.E.: Judgment Day #1-6",
+   "desc": "Un Céleste juge l’humanité.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "A.X.E.: Judgment Day #1 (2022) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "h_cel",
+    "x_eternals"
+   ]
+  },
+  "e0": {
+   "map": 7,
+   "name": "Fantastic Four #1",
+   "sub": "1961",
+   "desc": "Naissance de l’univers Marvel moderne : le Septième Cosmos commence.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Fantastic Four #1 (1961)",
+   "year": 1961,
+   "rel": [
+    "c7",
+    "x_reed"
+   ]
+  },
+  "e1": {
+   "map": 7,
+   "name": "Le Gardien Uatu",
+   "sub": "1963",
+   "desc": "Premier Gardien sur la Lune, témoin silencieux.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Fantastic Four #13 (1963)",
+   "year": 1963,
+   "rel": [
+    "h_watch",
+    "x_uatu"
+   ]
+  },
+  "e2": {
+   "map": 7,
+   "name": "Éternité apparaît",
+   "sub": "1965",
+   "desc": "Doctor Strange rencontre l’incarnation de l’univers.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Strange Tales #138 (1965)",
+   "year": 1965,
+   "rel": [
+    "eternity",
+    "x_strange"
+   ]
+  },
+  "e3": {
+   "map": 7,
+   "name": "La trilogie de Galactus",
+   "sub": "1966",
+   "desc": "Galactus et le Silver Surfer arrivent ; l’Annulateur Ultime le fait reculer.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Fantastic Four #48-50 (1966)",
+   "year": 1966,
+   "rel": [
+    "h_gal",
+    "x_nullifier",
+    "x_silver"
+   ]
+  },
+  "e4": {
+   "map": 7,
+   "name": "Le Tribunal Vivant",
+   "sub": "1967",
+   "desc": "Le juge du multivers entre en scène.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Strange Tales #157 (1967)",
+   "year": 1967,
+   "rel": [
+    "tribunal"
+   ]
+  },
+  "e5": {
+   "map": 7,
+   "name": "Thanos et la Mort",
+   "sub": "1973",
+   "desc": "Le Titan fou apparaît, amoureux de la Mort.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Iron Man #55 (1973)",
+   "year": 1973,
+   "rel": [
+    "h_death",
+    "x_thanos"
+   ]
+  },
+  "e6": {
+   "map": 7,
+   "name": "Les Célestes",
+   "sub": "1976",
+   "desc": "Jack Kirby révèle les géants qui ont façonné l’humanité.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "The Eternals #1 (1976)",
+   "year": 1976,
+   "rel": [
+    "h_cel",
+    "x_arishem",
+    "x_eternals"
+   ]
+  },
+  "e7": {
+   "map": 7,
+   "name": "La Force Phénix",
+   "sub": "1976",
+   "desc": "Jean Grey renaît comme Phénix.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "X-Men #101 (1976)",
+   "year": 1976,
+   "rel": [
+    "h_phx",
+    "x_jean"
+   ]
+  },
+  "e8": {
+   "map": 7,
+   "name": "Ordre Suprême et Seigneur Chaos",
+   "sub": "1977",
+   "desc": "Les abstraits jumeaux apparaissent pendant la Guerre de Thanos.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Marvel Two-in-One Annual #2 (1977)",
+   "year": 1977,
+   "rel": [
+    "chaos",
+    "order",
+    "x_thanos"
+   ]
+  },
+  "e9": {
+   "map": 7,
+   "name": "Le Phénix Noir",
+   "sub": "1980",
+   "desc": "Le Phénix dévore une étoile ; Jean Grey se sacrifie.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "X-Men #129-138 (1980)",
+   "year": 1980,
+   "rel": [
+    "h_phx",
+    "x_jean",
+    "x_mkraan"
+   ]
+  },
+  "e10": {
+   "map": 7,
+   "name": "Secret Wars",
+   "sub": "1984",
+   "desc": "Le Beyonder enlève héros et vilains sur sa planète.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Secret Wars #1-12 (1984-85)",
+   "year": 1984,
+   "rel": [
+    "x_battle",
+    "x_beyonder",
+    "x_molecule"
+   ]
+  },
+  "e11": {
+   "map": 7,
+   "name": "Thanos Quest",
+   "sub": "1990",
+   "desc": "Thanos rassemble les six Gemmes et découvre Némésis.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Thanos Quest #1-2 (1990)",
+   "year": 1990,
+   "rel": [
+    "x_gems",
+    "x_nemesis",
+    "x_thanos"
+   ]
+  },
+  "e12": {
+   "map": 7,
+   "name": "Le Gant de l’Infini",
+   "sub": "1991",
+   "desc": "Thanos réunit les Gemmes et efface la moitié de l’univers.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "The Infinity Gauntlet #1-6 (1991)",
+   "year": 1991,
+   "rel": [
+    "tribunal",
+    "x_adam",
+    "x_gauntlet",
+    "x_thanos"
+   ]
+  },
+  "e13": {
+   "map": 7,
+   "name": "Le Cœur de l’Univers",
+   "sub": "2003",
+   "desc": "Thanos s’empare de la source de toute puissance.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Marvel: The End #1-6 (2003)",
+   "year": 2003,
+   "rel": [
+    "x_heart",
+    "x_thanos"
+   ]
+  },
+  "e14": {
+   "map": 7,
+   "name": "Dieu a les traits de Kirby",
+   "sub": "2004",
+   "desc": "Les Fantastiques rencontrent le Créateur.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Fantastic Four #511 (2004)",
+   "year": 2004,
+   "rel": [
+    "h_oaa",
+    "keter"
+   ]
+  },
+  "e15": {
+   "map": 7,
+   "name": "Annihilation",
+   "sub": "2006",
+   "desc": "Annihilus envahit l’univers depuis la Zone Négative.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Annihilation (2006)",
+   "year": 2006,
+   "rel": [
+    "neg",
+    "x_annihilus"
+   ]
+  },
+  "e16": {
+   "map": 7,
+   "name": "Les Incursions",
+   "sub": "2013",
+   "desc": "Des Terres entrent en collision : le multivers meurt.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "New Avengers & Avengers (Hickman, 2013-15)",
+   "year": 2013,
+   "rel": [
+    "c7",
+    "x_blackp",
+    "x_illum",
+    "x_rabum"
+   ]
+  },
+  "e17": {
+   "map": 7,
+   "name": "Secret Wars (2015)",
+   "sub": "2015",
+   "desc": "Fin du Septième Cosmos ; Doom règne sur Battleworld, puis le multivers renaît.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Secret Wars #1-9 (2015)",
+   "year": 2015,
+   "rel": [
+    "bw",
+    "c8",
+    "x_doom",
+    "x_molecule"
+   ]
+  },
+  "e18": {
+   "map": 7,
+   "name": "The Ultimates",
+   "sub": "2016",
+   "desc": "Une équipe s’attaque aux problèmes de l’univers lui-même.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "The Ultimates (Al Ewing, 2015-16)",
+   "year": 2016,
+   "rel": [
+    "eternity",
+    "x_ultimates"
+   ]
+  },
+  "e19": {
+   "map": 7,
+   "name": "Le Premier Firmament",
+   "sub": "2017",
+   "desc": "Éternité est libéré ; on découvre le Premier Firmament et les Aspirants.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Ultimates² (Al Ewing, 2016-17)",
+   "year": 2017,
+   "rel": [
+    "c1",
+    "f0",
+    "h_asp",
+    "x_logos"
+   ]
+  },
+  "e20": {
+   "map": 7,
+   "name": "Immortal Hulk",
+   "sub": "2018",
+   "desc": "La porte verte et le Un-En-Dessous-de-Tout.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Immortal Hulk (Al Ewing, 2018-21)",
+   "year": 2018,
+   "rel": [
+    "h_oba",
+    "thaumiel",
+    "x_banner",
+    "x_gamma"
+   ]
+  },
+  "e21": {
+   "map": 7,
+   "name": "Knull se réveille",
+   "sub": "2018",
+   "desc": "Le créateur des symbiotes sort de l’ombre.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Venom #3 (2018)",
+   "year": 2018,
+   "rel": [
+    "h_knull",
+    "x_symbiote"
+   ]
+  },
+  "e22": {
+   "map": 7,
+   "name": "L’Ost Final",
+   "sub": "2018",
+   "desc": "Les Célestes Noirs et l’origine cosmique de la vie sur Terre.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Avengers (Jason Aaron, 2018)",
+   "year": 2018,
+   "rel": [
+    "x_darkcel",
+    "x_progen"
+   ]
+  },
+  "e23": {
+   "map": 7,
+   "name": "King in Black",
+   "sub": "2020",
+   "desc": "Knull envahit la Terre ; Venom devient le nouveau dieu des symbiotes.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "King in Black #1-5 (2020-21)",
+   "year": 2020,
+   "rel": [
+    "gamaliel",
+    "h_knull",
+    "x_venom"
+   ]
+  },
+  "e24": {
+   "map": 7,
+   "name": "Defenders : les Cosmos",
+   "sub": "2021",
+   "desc": "Voyage à travers les cosmos précédents.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Defenders (Ewing & Rodríguez, 2021)",
+   "year": 2021,
+   "rel": [
+    "c4",
+    "c5",
+    "c6",
+    "c8",
+    "x_defenders"
+   ]
+  },
+  "e25": {
+   "map": 7,
+   "name": "Defenders: Beyond",
+   "sub": "2022",
+   "desc": "L’Arbre de vie et la Maison des Idées.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Defenders: Beyond (2022)",
+   "year": 2022,
+   "rel": [
+    "h_oaa",
+    "keter",
+    "x_loki",
+    "yesod"
+   ]
+  },
+  "e26": {
+   "map": 7,
+   "name": "Ultimate Invasion",
+   "sub": "2023",
+   "desc": "Le Maker façonne un nouvel univers Ultimate.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Ultimate Invasion (Hickman, 2023)",
+   "year": 2023,
+   "rel": [
+    "c8",
+    "x_maker"
+   ]
+  }
+ },
+ "cosmos": [
+  "c1",
+  "c2",
+  "c3",
+  "c4",
+  "c5",
+  "c6",
+  "c7",
+  "bw",
+  "c8"
+ ]
+}

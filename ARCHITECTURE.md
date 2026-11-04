@@ -1,57 +1,31 @@
 # ARCHITECTURE — Marvel Primestone
 
-## Actuelle
-Site statique publié par GitHub Pages depuis `main` (à la racine). Il tient dans `index.html` (UI, 8 cartes SVG, Codex, vidéo, quiz, miniatures, i18n), `data.js` (fiches et chronologie) et `images.js` (portraits en base64). Aucun build ni dépendance. Tests : `tests/atlas/run.js` (Playwright).
+## Actuelle (2026-11-04)
+Site statique publié par GitHub Pages depuis `main` (à la racine). **Aucune dépendance à l'exécution, aucun backend.**
 
-## Cible
+| Fichier ou dossier | Rôle |
+|---|---|
+| `index.html`, `encyclopedie.html`, `cosmos.html`, `structures.html`, `chronologie.html`, `archive.html`, `dossiers.html`, `recherche.html`, `fiche/*.html` (301), `dossier/*.html`, `search.json` | Pages **générées** par `tools/build.js` (ne pas modifier à la main) |
+| `assets/site.css`, `assets/site.js` | Design system (tokens, 6 familles de cartes) et comportements (images du wiki, filtres, recherche) |
+| `explorer.html` | L'atlas interactif : 8 cartes SVG, Codex, vidéo, miniatures, quiz, i18n. Il lit `data.js` et `images.js` |
+| `data.js` | Fiches de l'encyclopédie (source de vérité, modifiée à la main) |
+| `content/atlas.json` | Instantané de toutes les fiches (data.js et nœuds des cartes), produit par `tools/snapshot.js` |
+| `content/dossiers/*.md` | Dossiers éditoriaux (markdown simple, liens `[[id]]` vérifiés) |
+| `comics.json` | Index des comics cités (`tools/comics.js`) |
+| `img/` | Portraits webp (chargés à la demande), logo, `credits.json` |
 
-### Principe
-On reste en **statique**. Il n'y a pas de backend tant qu'il n'y a ni comptes ni édition à plusieurs : l'encyclopédie se lit, elle ne s'écrit pas en ligne. GitHub Pages reste gratuit, rapide et sans surface d'attaque serveur.
+### Chaîne de publication
+1. Modifier `data.js` ou un dossier.
+2. Lancer `node tools/stamp.js`, `node tools/comics.js`, `node tools/snapshot.js`, puis `node tools/build.js`.
+3. Lancer `npm test` (38 contrôles).
+4. Pousser. L'action `Tests` revérifie tout, puis GitHub Pages publie `main`.
 
-### Choix recommandé : Astro (générateur de site statique)
-| | Rester en HTML seul | **Astro** | Next.js |
-|---|---|---|---|
-| Une page par fiche (URL, SEO, partage) | Manuel | Natif (routes générées) | Natif |
-| Données validées par schéma | À coder | Natif (collections de contenu et zod) | À coder |
-| JS envoyé | Tout, toujours | Zéro par défaut ; « îlots » pour l'Explorateur | Beaucoup |
-| Hébergement Pages | Oui | Oui (export statique) | Possible, avec contraintes |
-| Coût de migration | — | Moyen | Élevé |
+`tools/build.js` **refuse de générer** si une donnée est incohérente : relation vers une fiche inconnue, niveau de fiabilité inconnu, fiche « canon » sans numéro de comic, lien de dossier cassé.
 
-**Inconvénients d'Astro :** il faut une étape de build et une action GitHub de déploiement. Il y a aussi Node à maîtriser. Le risque est faible : le site actuel continue de vivre pendant la migration.
-
-### Arborescence cible
-```
-src/
-  content/                  # source de vérité, validée au build
-    entities/*.json         cosmos/, structures/, events/, comics/, creators/, dossiers/*.md
-    claims/*.json           affirmations et preuves (voir DATA_MODEL.md)
-  content.config.ts         schémas zod (un par collection)
-  pages/
-    index.astro             accueil
-    entites/[slug].astro    page de fiche (famille de carte B)
-    cosmos/ structures/ chronologie/ archive/ dossiers/ recherche/
-    explorer/               l'atlas actuel, intégré en îlot (cartes SVG, vidéo, quiz)
-  components/cards/         CosmosCard, EntityCard, StructureCard, EventCard, ComicCard, DossierCard
-  styles/tokens.css         design tokens (DESIGN_SYSTEM.md)
-public/img/                 images sous licence ou crédit, avec manifeste credits.json
-tests/                      unitaires (schémas, liens) et parcours (Playwright)
-```
-
-### Recherche
-**Pagefind** : index statique généré au build, chargé à la demande, avec filtres par type et autocomplétion. Les alias sont indexés comme champs. Il tient des milliers de pages sans serveur.
-
-### Images
-Fichiers `img/*.webp` dimensionnés (320 et 800 px) chargés à la demande (`loading="lazy"`), au lieu du `images.js` de 611 Ko. Un `credits.json` par image indique la source, l'œuvre, l'artiste si connu et le cadre d'usage. Les images du wiki restent en lien, avec le crédit affiché.
-
-### Qualité
-Pour chaque pull request, une action GitHub lance la validation des schémas, vérifie les liens internes (aucune relation ni preuve orpheline) et exécute les tests Playwright. Le déploiement se fait seulement depuis `main`, après accord.
-
-## Migration (par étapes, sans casser l'existant)
-1. Versionner `data.js` et `images.js` (`?v=` avec le hash) pour régler le cache. *(Immédiat, sans migration)*
-2. Script d'export de `DB.E` et des tableaux des cartes vers `src/content/**/*.json` avec un schéma, sans perte de données.
-3. Squelette Astro avec l'accueil et les pages de fiche. L'atlas actuel est servi tel quel sous `/explorer/`.
-4. Les cartes de l'atlas lisent le contenu généré (même source de vérité).
-5. Recherche Pagefind, puis chronologies, archive des comics et dossiers.
+### Pourquoi un générateur maison plutôt qu'Astro (décision du 2026-11-04, révisant la proposition initiale)
+- Il apporte les mêmes bénéfices pour le besoin actuel : une page par fiche, des données validées et des pages légères (36 Ko pour l'accueil).
+- Il n'ajoute **aucune dépendance** et ne demande **aucun build côté GitHub**. Pages continue de publier les fichiers tels quels : aucun risque de casser la mise en ligne.
+- Il tient en un seul fichier de 300 lignes lisibles. Il sera remplaçable par Astro le jour où le projet aura besoin de composants interactifs nombreux ou d'éditeurs multiples : les données (`content/`) sont déjà séparées du rendu.
 
 ## Décisions
 - **Pas de base de données serveur.** Git est la base, avec historique, relecture et sauvegarde gratuites.
