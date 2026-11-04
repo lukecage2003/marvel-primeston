@@ -11,12 +11,13 @@ Site statique publié par GitHub Pages depuis `main` (à la racine). **Aucune d�
 | `data.js` | Fiches de l'encyclopédie (source de vérité, modifiée à la main) |
 | `content/atlas.json` | Instantané de toutes les fiches (data.js et nœuds des cartes), produit par `tools/snapshot.js` |
 | `content/dossiers/*.md` | Dossiers éditoriaux (markdown simple, liens `[[id]]` vérifiés) |
+| `content/wiki.json` | Image principale actuelle et fiche d'identité **factuelle** (champs courts de l'infobox) de chaque fiche, relevées sur marvel.fandom.com par `tools/wiki_facts.py`. Aucun texte rédigé n'est repris |
 | `comics.json` | Index des comics cités (`tools/comics.js`) |
 | `img/` | Portraits webp (chargés à la demande), logo, `credits.json` |
 
 ### Chaîne de publication
 1. Modifier `data.js` ou un dossier.
-2. Lancer `node tools/stamp.js`, `node tools/comics.js`, `node tools/snapshot.js`, puis `node tools/build.js`.
+2. Lancer `node tools/stamp.js`, `node tools/comics.js`, `node tools/snapshot.js`, puis `node tools/build.js`. Pour rafraîchir les images et les fiches d'identité : `python3 tools/wiki_facts.py`, puis `node tools/build.js`.
 3. Lancer `npm test` (38 contrôles).
 4. Pousser. L'action `Tests` revérifie tout, puis GitHub Pages publie `main`.
 
@@ -30,4 +31,6 @@ Site statique publié par GitHub Pages depuis `main` (à la racine). **Aucune d�
 ## Décisions
 - **Pas de base de données serveur.** Git est la base, avec historique, relecture et sauvegarde gratuites.
 - **Pas d'authentification.** Rien à protéger en écriture ; l'édition passe par des pull requests.
+- **Images du wiki :** affichées depuis leur hébergement d'origine, dans des balises `<img>` en chargement différé et sans en-tête Referer (le wiki remplace sinon l'image par un visuel gris). Elles sont créditées sur chaque fiche ; aucune nouvelle illustration Marvel n'est hébergée par le projet.
+- **Aucun lien vers un site extérieur** dans les pages : les sources renvoient à l'archive interne (contrôlé par les tests).
 - **Tout texte externe passe par `escH`**, et les URL d'images sont en liste blanche (déjà en place).

@@ -258,8 +258,7 @@ function T(p,x,y,txt,cls,anc='middle',lh=16){const t=E('text',{x,y,class:cls,'te
 /* échappe tout texte venu de l'extérieur (API du wiki) avant de l'insérer en HTML */
 const escH=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 /* sources : chaque référence devient un lien de recherche sur le wiki (aucune adresse de page inventée) */
-const srcHTML=src=>String(src).split(' · ').map(x=>{const t=x.trim(),q=t.replace(/\s*—.*$/,'').replace(/\s*\([^)]*\)\s*/g,' ').replace(/1ʳᵉ apparition selon marvel\.fandom\.com :\s*/,'').trim();
- return q?`<a href="https://marvel.fandom.com/wiki/Special:Search?query=${encodeURIComponent(q)}" target="_blank" rel="noopener">${escH(t)}</a>`:escH(t)}).join(' · ');
+const srcHTML=src=>String(src).split(' · ').map(x=>escH(x.trim())).join(' · ');   /* sources en texte : on reste sur le site (fiche et archive : liens internes) */
 /* préférence « réduire les animations » : pas de rotation automatique ni de transitions */
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const rng=s=>()=>(s=s*16807%2147483647)/2147483647;
@@ -668,7 +667,7 @@ function showInfo(){const n=C.nodes[S.sel],p=$('#panel'),cap=$('#cap');
  p.querySelector('.d').textContent=n.d||'Cette sphère n’a pas encore été rattachée à un lieu connu de la cosmologie Marvel. Une case vide… pour une révélation future ?';
  const ob=p.querySelector('.orbp');ob.style.setProperty('--c',n.col||'#555');ob.style.background=n.img?`center/cover url(${n.img})`:'';$('#bimgr').style.display=USER[n.id]?'':'none';const wk=!USER[n.id]&&wikiOf(n.id);
  p.querySelector('.tags').innerHTML=(n.tags||[]).map(t=>`<span>${t}</span>`).join('');
- p.querySelector('.fact').textContent=n.fact||'';p.querySelector('.src').innerHTML=(IDX[n.id]&&IDX[n.id].m!==7&&!IDX[n.id].u?`<a class="full" href="${window.SOLO!=null?'https://lukecage2003.github.io/marvel-primeston/':''}fiche/${encodeURIComponent(n.id)}.html">Fiche complète, relations et comics →</a><br>`:'')+(n.src?'<b>Où le lire</b>'+srcHTML(n.src):'')+(wk?`<br><a href="https://marvel.fandom.com/wiki/${encodeURIComponent(wk.t.replace(/ /g,'_'))}" target="_blank" rel="noopener">Image : ${escH(wk.t)}, wiki Marvel</a>`:'');p.querySelector('.src').style.display=n.src||wk?'':'none';
+ p.querySelector('.fact').textContent=n.fact||'';p.querySelector('.src').innerHTML=(IDX[n.id]&&IDX[n.id].m!==7&&!IDX[n.id].u?`<a class="full" href="${window.SOLO!=null?'https://lukecage2003.github.io/marvel-primeston/':''}fiche/${encodeURIComponent(n.id)}.html">Fiche complète, relations et comics →</a><br>`:'')+(n.src?'<b>Où le lire</b>'+srcHTML(n.src):'')+(wk?`<br><span class="imgcredit">Image : ${escH(wk.t)}, wiki Marvel</span>`:'');p.querySelector('.src').style.display=n.src||wk?'':'none';
  const RL=(n.rel||[]).filter(r=>IDX[r]&&(SOLO==null||IDX[r].m==SOLO));p.querySelector('.rl').innerHTML=RL.length?'<b>À voir aussi</b>'+RL.map(r=>`<button data-go="${r}">${IDX[r].t} <span>(${MAPS[IDX[r].m].n})</span></button>`).join(''):'';
  p.classList.add('show')}
 function go(id){const x=IDX[id];if(!x||(SOLO!=null&&x.m!=SOLO))return;stopTour();const f=()=>select(C.nodes.findIndex(n=>n.id==id));if(x.m!=S.m){svg.style.opacity=0;setTimeout(()=>{render(x.m);f();svg.style.opacity=1},300)}else f()}

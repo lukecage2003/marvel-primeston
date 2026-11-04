@@ -78,19 +78,19 @@ a.card:hover,a.card:focus-visible{transform:translateY(-2px);box-shadow:var(--sh
 .card h3{margin:0}
 .card p{font-size:16px;color:var(--text-2);margin:0}
 /* A : Cosmos (3:4), chiffre romain en filigrane, barre naissance → mort */
-.cA{aspect-ratio:3/4;justify-content:flex-end;padding:18px;background:linear-gradient(to top,rgba(11,11,11,.96) 38%,rgba(11,11,11,.2)),var(--img,none) center/cover,var(--surface)}
+.cA{aspect-ratio:3/4;justify-content:flex-end;padding:18px;background:var(--surface)}
 .cA .num{position:absolute;top:6px;right:14px;font:400 96px/1 var(--font-accent);color:rgba(255,229,0,.16)}
 .cA h3{font-size:28px;color:var(--gold)}
 .cA .life{height:4px;margin-top:12px;background:linear-gradient(90deg,var(--gold),var(--red) 80%,#000);border-radius:2px}
 /* B : Entité (4:5) et version compacte */
 .cB{padding:0}
-.cB .pic{aspect-ratio:1/1;background:var(--surface-2) var(--img,none) center/cover;border-bottom:1px solid var(--line)}
+.cB .pic{aspect-ratio:3/4;background:var(--surface-2) var(--img,none) center top/cover;border-bottom:1px solid var(--line)}
 .cB .pic.none{display:grid;place-items:center;font:900 44px var(--font-display);color:#2f2d27}
 .cB .body{padding:14px 14px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
 .cB h3{font-size:22px}
 .cB .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:auto;padding-top:6px}
 .cBs{flex-direction:row;align-items:center;gap:12px;padding:10px 12px;min-height:72px}
-.cBs .av{flex:0 0 48px;height:48px;border-radius:50%;background:var(--surface-2) var(--img,none) center/cover;border:1px solid var(--line)}
+.cBs .av{flex:0 0 52px;height:52px;border-radius:50%;background:var(--surface-2) var(--img,none) center top/cover;border:1px solid var(--line)}
 .cBs h3{font-size:19px}
 .cBs p{font-size:14px}
 /* C : Structure (système de référence) */
@@ -130,3 +130,39 @@ a.card:hover,a.card:focus-visible{transform:translateY(-2px);box-shadow:var(--sh
 .results:empty:after{content:"Aucun résultat.";color:var(--text-3)}
 [hidden]{display:none!important}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important}a.card:hover,.btn:hover{transform:none}}
+
+/* fiche : héros centré sur fond d'image assombri, fiche d'identité en colonne */
+.fhero{position:relative;margin:-32px calc(50% - 50vw) 40px;padding:28px max(var(--gut),calc(50vw - var(--max)/2 + var(--gut))) 40px;overflow:hidden;isolation:isolate;border-bottom:1px solid var(--line)}
+.fhero:before{content:"";position:absolute;inset:-40px;z-index:-2;background:var(--img,none) center 20%/cover;filter:blur(28px) saturate(1.1);opacity:.45;transform:scale(1.1)}
+.fhero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to bottom,rgba(11,11,11,.55),var(--bg) 92%)}
+.fhero .crumb{margin-bottom:22px}
+.fhead{display:grid;gap:28px;justify-items:center;text-align:center}
+.fport{width:min(78vw,340px);aspect-ratio:3/4;object-fit:cover;object-position:center top;border-radius:6px;border:1px solid rgba(255,255,255,.12);box-shadow:0 24px 60px rgba(0,0,0,.6),var(--shadow-hard);background:var(--surface-2)}
+.fport.none{display:grid;place-items:center;font:900 96px var(--font-display);color:#2f2d27}
+.fid h1{margin:.1em 0 .15em}
+.fid .lead{margin:0 auto 14px}
+.chipsline{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 0 18px}
+.pill{font:700 14px var(--font-display);letter-spacing:.03em;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(20,20,18,.8);color:var(--text-2)}
+@media (min-width:860px){.fhead{grid-template-columns:340px 1fr;justify-items:start;text-align:left;align-items:center;gap:48px}.chipsline{justify-content:flex-start}.fid .lead{margin-left:0}}
+.fbody{display:grid;gap:32px;margin-bottom:48px}
+@media (min-width:960px){.fbody{grid-template-columns:minmax(0,1fr) 360px;align-items:start}.idcard{position:sticky;top:84px}}
+.prose .big{font-size:19px;line-height:1.7}
+.idcard{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px}
+.idcard h2{font-size:26px;color:var(--gold);margin-bottom:12px}
+.idcard dl{margin:0}
+.idcard dl div{display:grid;grid-template-columns:120px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--line)}
+.idcard dt{font:700 14px var(--font-display);letter-spacing:.05em;text-transform:uppercase;color:var(--text-3);padding-top:2px}
+.idcard dd{margin:0;font-size:16px;line-height:1.45}
+.credit{margin:14px 0 0;font-size:13px;line-height:1.5;color:var(--text-3)}
+.srcs{padding-left:20px}.srcs li{margin:4px 0}
+.pager{display:flex;justify-content:space-between;gap:16px;border-top:1px solid var(--line);padding-top:20px;font:700 18px var(--font-display)}
+.pager a{text-decoration:none}
+
+/* images dans les cartes et la fiche (balises img) */
+.cB .pic,.cBs .av,.portrait{position:relative;overflow:hidden}
+.cB .pic img,.cBs .av img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.cA{isolation:isolate}
+.cA .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.cA:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(11,11,11,.96) 38%,rgba(11,11,11,.15))}
+.fhero .fbg{position:absolute;inset:-40px;width:calc(100% + 80px);height:calc(100% + 80px);object-fit:cover;object-position:center 20%;z-index:-2;filter:blur(28px) saturate(1.1);opacity:.45}
+.fhero:before{display:none}

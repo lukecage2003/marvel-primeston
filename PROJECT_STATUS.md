@@ -12,6 +12,7 @@ Dernière mise à jour : 2026-11-04 · Dépôt : `lukecage2003/marvel-primeston`
 - Étape 0 faite (sur la branche) : versions `?v=` (`tools/stamp.js`) et 137 fiches passées à « À vérifier » (niveau `u`). Fiabilité : 87 canon, 1 déduit, 137 à vérifier. Tests : 26 réussis, 0 échoué.
 - Étape 1 faite et publiée (accord du propriétaire) : 5 niveaux et « À vérifier » ; plus aucune fiche « canon » sans vérification dans les comics (224 à vérifier, 1 interprétation, plus les théories des cartes). Sources cliquables, `comics.json` (211 références), portraits en fichiers séparés. Tests : 28 réussis, 0 échoué (29 avec --video).
 - Étapes 2 à 6 faites et publiées (sauf la comparaison de variantes de cartes, la chronologie interne, les preuves détaillées et l'anglais des pages éditoriales : voir ROADMAP.md). Plateforme : accueil, encyclopédie, 301 fiches, Cosmos, Structures, Chronologies, Archive, Dossiers, Recherche, Explorateur. Tests : 38 réussis, 0 échoué (39 avec --video).
+- Fiches enrichies : image principale actuelle du wiki (273 fiches) et fiche d'identité factuelle (1 883 faits : nom actuel, alias, nature, affiliations, famille, créateurs, première apparition…). Héros centré et nouvelle mise en page. Plus aucune redirection ni lien vers l'extérieur : les sources renvoient à l'archive interne, et les anciens liens `#id` ouvrent la fiche. Tests : 41 réussis, 0 échoué.
 - **Prochaine étape précise :** vérification des fiches dans les comics (attribution du niveau Canon et des preuves), puis de nouveaux dossiers.
 
 ## 1. Ce que contient le dépôt

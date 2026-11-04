@@ -50,12 +50,14 @@ let pass=0,fail=0;const ok=(c,m)=>{c?pass++:fail++;console.log((c?'  ✓ ':'  �
   const broken=[],noh1=[],noalt=[];for(const f of files){const h=fs.readFileSync(path.join(ROOT,f),'utf8'),dir=path.dirname(f);
    if(!/<h1[\s>]/.test(h))noh1.push(f);if(/<img(?![^>]*\balt=)[^>]*>/.test(h))noalt.push(f);
    for(const m of h.matchAll(/(?:href|src)="([^"#?]+)[^"]*"/g)){const u=m[1];if(/^(https?:|mailto:|data:)/.test(u))continue;if(!fs.existsSync(path.join(ROOT,dir,u)))broken.push(f+' → '+u)}}
-  ok(!broken.length,`liens internes valides dans ${files.length} pages `+broken.slice(0,3));ok(!noh1.length,'chaque page a un titre h1 '+noh1.slice(0,3));ok(!noalt.length,'chaque image a un texte alternatif '+noalt.slice(0,3))}
+  ok(!broken.length,`liens internes valides dans ${files.length} pages `+broken.slice(0,3));
+  {const ext=files.filter(f=>/href="https?:\/\/(?!fonts\.)/.test(fs.readFileSync(path.join(ROOT,f),'utf8').replace(/<link[^>]*>/g,'')));ok(!ext.length,'aucun lien vers un site extérieur dans les pages '+ext.slice(0,3))}
+  {const h=fs.readFileSync(path.join(ROOT,'fiche/x_galan.html'),'utf8');ok(/class="idcard"[\s\S]*Première apparition[\s\S]*Créateurs|class="idcard"[\s\S]*Créateurs/.test(h)||/class="idcard"[\s\S]*<dl>/.test(h),'fiche d’identité présente (Galan)');ok(/<img class="fport"[^>]*referrerpolicy="no-referrer"/.test(h),'portrait principal chargé sans Referer')}ok(!noh1.length,'chaque page a un titre h1 '+noh1.slice(0,3));ok(!noalt.length,'chaque image a un texte alternatif '+noalt.slice(0,3))}
  {const q=await b.newPage({viewport:{width:390,height:844}}),pe=[];q.on('pageerror',e=>pe.push(e.message));const base=URL.replace('explorer.html','');
   await q.goto(base+'encyclopedie.html');const all=await q.locator('[data-filter-list] > :not([hidden])').count();await q.click('[data-filter=cat][data-value=cel]');const cel=await q.locator('[data-filter-list] > :not([hidden])').count();ok(all>290&&cel>0&&cel<all,`filtre de l’encyclopédie (${all} → ${cel})`);
   await q.goto(base+'recherche.html?q=galactus');await q.waitForTimeout(600);ok(await q.locator('#results a').count()>0,'recherche « galactus » sur la page Recherche');
   await q.fill('#q2','Firelord');await q.waitForTimeout(400);ok((await q.textContent('#results')).includes('Firelord'),'recherche par nom anglais');
-  await q.goto(base+'index.html#h_firelord');await q.waitForURL(/explorer\.html#h_firelord/,{timeout:5000}).catch(()=>0);ok(q.url().includes('explorer.html#h_firelord'),'ancien lien #id redirigé vers l’explorateur');
+  await q.goto(base+'index.html#h_firelord');await q.waitForURL(/fiche\/h_firelord\.html/,{timeout:5000}).catch(()=>0);ok(q.url().includes('fiche/h_firelord.html'),'ancien lien #id : ouvre la fiche du site');
   for(const u of ['index.html','encyclopedie.html','fiche/x_galan.html','chronologie.html','archive.html']){await q.goto(base+u);const o=await q.evaluate(()=>document.documentElement.scrollWidth-innerWidth);if(o>1)pe.push('débordement '+u)}
   ok(!pe.length,'pages éditoriales sans erreur JS ni débordement à 390 px '+pe.slice(0,3));await q.close()}
  L('Responsive');

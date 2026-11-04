@@ -9,8 +9,10 @@ const fs = require('fs'), path = require('path');
 const ROOT = path.resolve(__dirname, '..'), CHECK = process.argv.includes('--check');
 const A = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/atlas.json'), 'utf8'));
 const COMICS = JSON.parse(fs.readFileSync(path.join(ROOT, 'comics.json'), 'utf8'));
+const WK = fs.existsSync(path.join(ROOT, 'content/wiki.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'content/wiki.json'), 'utf8')).entries : {};   // tools/wiki_facts.py
 const N = A.nodes, IDS = Object.keys(N);
 const SITE = 'https://lukecage2003.github.io/marvel-primeston/';
+const WKDATE = fs.existsSync(path.join(ROOT, 'content/wiki.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'content/wiki.json'), 'utf8')).fetched : '';
 
 /* ---------- utilitaires ---------- */
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -51,7 +53,7 @@ function page({ file, title, desc, body, active }) {
 <meta name="description" content="${esc(desc)}">
 <meta property="og:title" content="${esc(title)} · Marvel Primestone"><meta property="og:description" content="${esc(desc)}">
 <meta property="og:image" content="${SITE}og.png"><meta property="og:url" content="${SITE}${esc(file)}"><meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0b0b0b">
+<meta name="theme-color" content="#0b0b0b"><meta name="referrer" content="no-referrer">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Big+Shoulders+Display:wght@700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${base}assets/site.css">
@@ -67,7 +69,7 @@ function page({ file, title, desc, body, active }) {
 ${body}
 </div></main>
 <footer class="foot"><div class="wrap">
- <p><b>Marvel Primestone</b> · Au-delà des héros. Projet indépendant de fans, non commercial, consacré à l’analyse des comics Marvel. Personnages, noms et images © Marvel ; images chargées depuis marvel.fandom.com avec lien vers leur page. Les niveaux de fiabilité sont expliqués dans le <a href="${base}dossier/methode.html">dossier Méthode</a>.</p>
+ <p><b>Marvel Primestone</b> · Au-delà des héros. Projet indépendant de fans, non commercial, consacré à l’analyse des comics Marvel. Personnages, noms et images © Marvel ; images hébergées par le wiki communautaire marvel.fandom.com, créditées sur chaque fiche. Les niveaux de fiabilité sont expliqués dans le <a href="${base}dossier/methode.html">dossier Méthode</a>.</p>
 </div></footer>
 <nav class="tabbar" aria-label="Navigation rapide">${TAB.map(([h, l]) => `<a href="${base}${h}"${cur(h)}>${l}</a>`).join('')}</nav>
 <script src="${base}assets/site.js" defer></script>
@@ -77,11 +79,15 @@ ${body}
 }
 
 /* ---------- composants : cartes (DESIGN_SYSTEM.md) ---------- */
+const wikiImg = id => (WK[id] && WK[id].img) || null;
+const imgURL = id => wikiImg(id) || (A.img[id] ? '../' + A.img[id] : null);    // url() d'une variable CSS : relative à assets/site.css
 const imgOf = id => A.img[id] || null;
+/* image dans une vraie balise <img> : chargement différé et sans en-tête Referer (le wiki bloque l'affichage sur d'autres sites sinon) */
+const srcFor = (id, base) => wikiImg(id) || (A.img[id] ? base + A.img[id] : null);
+const IMGATTR = 'loading="lazy" decoding="async" referrerpolicy="no-referrer"';
 const visual = (id, base, cls) => {
-  const local = imgOf(id), wiki = A.wiki[id];
-  if (local) return `<span class="${cls}" style="--img:url('../${esc(local)}')"></span>`;   // url() d'une variable CSS : relative à assets/site.css
-  if (wiki) return `<span class="${cls} none" data-wiki="${esc(wiki)}" aria-hidden="true">${initials(N[id].name)}</span>`;
+  const u = srcFor(id, base);
+  if (u) return `<span class="${cls}"><img src="${esc(u)}" alt="" ${IMGATTR}></span>`;
   return `<span class="${cls} none" aria-hidden="true">${initials(N[id].name)}</span>`;
 };
 const relBadge = c => `<span class="rel ${esc(c)}" title="${esc(relDesc(c))}">${esc(relName(c))}</span>`;
@@ -98,8 +104,8 @@ function cardBs(id, base) {  // B compacte
   return `<a class="card cBs" href="${base}${fiche(id)}">${visual(id, base, 'av')}<span><h3>${esc(n.name)}</h3><p>${esc(catName(n.cat))}${n.sub ? ' · ' + esc(n.sub) : ''}</p></span></a>`;
 }
 function cardA(id, i, base) { // A : Cosmos
-  const n = N[id], local = imgOf(id);
-  return `<a class="card cA" href="${base}${fiche(id)}"${local ? ` style="--img:url('../${esc(local)}')"` : ''}>
+  const n = N[id], u = srcFor(id, base);
+  return `<a class="card cA" href="${base}${fiche(id)}">${u ? `<img class="bg" src="${esc(u)}" alt="" ${IMGATTR}>` : ''}
  <span class="num" aria-hidden="true">${id === 'bw' ? '◆' : ROMAN[i] || ''}</span>
  <span class="kicker">${id === 'bw' ? 'Entre deux cosmos' : 'Cosmos ' + (ROMAN[i] || '')}</span><h3>${esc(n.name)}</h3>${n.sub ? `<p>${esc(n.sub)}</p>` : ''}
  <span class="life" aria-hidden="true"></span></a>`;
@@ -108,14 +114,19 @@ function cardE(c, base) {   // E : comic (cartel)
   const ref = c.type === 'issue' ? `${esc(c.series)}${c.volume > 1 ? ' vol. ' + c.volume : ''} #${esc(c.issue)}` : esc(c.label);
   const q = encodeURIComponent(c.type === 'issue' ? `${c.series}${c.volume > 1 ? ' Vol ' + c.volume : ' Vol 1'} ${c.issue}` : c.label.replace(/\s*\([^)]*\)/g, ''));
   const by = c.citedBy.filter(id => N[id]);
-  return `<article class="card cE" data-cat="${c.year ? c.year.slice(0, 3) + '0' : 'nd'}" data-rel="${c.type}" data-text="${esc(norm(c.label + ' ' + by.map(id => N[id].name).join(' ')))}">
+  return `<article class="card cE" id="${esc(cid(c))}" data-cat=""${c.year ? c.year.slice(0, 3) + '0' : 'nd'}" data-rel="${c.type}" data-text="${esc(norm(c.label + ' ' + by.map(id => N[id].name).join(' ')))}">
  <span class="ser">${ref}</span><span class="muted">${c.year || 'année non renseignée'} · ${c.type === 'issue' ? 'numéro' : 'arc ou série'}</span>
  <span class="cite">Cité par : ${by.map(id => `<a href="${base}${fiche(id)}">${esc(N[id].name)}</a>`).join(', ') || '—'}</span>
- <a href="https://marvel.fandom.com/wiki/Special:Search?query=${q}" target="_blank" rel="noopener">Rechercher sur le wiki ↗</a></article>`;
+ </article>`;
 }
-const srcList = src => String(src || '').split(' · ').filter(Boolean).map(x => {
-  const q = x.replace(/\s*—.*$/, '').replace(/\s*\([^)]*\)\s*/g, ' ').replace(/1ʳᵉ apparition selon marvel\.fandom\.com :\s*/, '').trim();
-  return `<li><a href="https://marvel.fandom.com/wiki/Special:Search?query=${encodeURIComponent(q)}" target="_blank" rel="noopener">${esc(x)}</a></li>`;
+/* identifiant stable d'une référence de comics (ancre dans archive.html) */
+const cid = c => 'c-' + slug(c.type === 'issue' ? `${c.series} v${c.volume} ${c.issue}` : c.label);
+const COMIC_BY_LABEL = {};
+for (const c of COMICS) COMIC_BY_LABEL[c.type === 'issue' ? `${c.series}|${c.volume}|${c.issue}` : c.label] = c;
+const comicOf = part => { const m = part.match(/^(.*?)(?: vol\. (\d+))? #([\w.-]+(?:-\d+)?)(?: \(([^)]*)\))?$/); return COMIC_BY_LABEL[m ? `${m[1].trim()}|${m[2] || 1}|${m[3]}` : part] || null; };
+const srcList = (src, base) => String(src || '').split(' · ').filter(Boolean).map(x => {
+  const part = x.replace(/\s*—.*$/, '').replace(/^1ʳᵉ apparition selon marvel\.fandom\.com :\s*/, '').trim(), c = comicOf(part);
+  return `<li>${c ? `<a href="${base}archive.html#${esc(cid(c))}">${esc(x)}</a>` : esc(x)}</li>`;
 }).join('');
 
 /* ---------- pages ---------- */
@@ -125,36 +136,47 @@ const ENTRIES = IDS.filter(id => N[id].map !== 7);           // la carte 7 est l
 const byName = (a, b) => N[a].name.localeCompare(N[b].name, 'fr');
 
 function buildFiche(id) {
-  const n = N[id], base = '../', wiki = A.wiki[id];
+  const n = N[id], base = '../', w = WK[id], u = srcFor(id, base);
   const cited = COMICS.filter(c => c.citedBy.includes(id));
   const sameCat = ENTRIES.filter(x => N[x].cat === n.cat).sort(byName), k = sameCat.indexOf(id);
   const prev = k > 0 ? sameCat[k - 1] : null, next = k >= 0 && k < sameCat.length - 1 ? sameCat[k + 1] : null;
+  const rels = n.rel.filter(r => N[r].map !== 7).sort(byName), evts = n.rel.filter(r => N[r].map === 7);
+  const facts = (w && w.facts || []).filter(([l]) => l !== 'Première apparition');
+  const first = w && (w.facts || []).find(([l]) => l === 'Première apparition');
   const body = `
-<p class="crumb"><a href="../encyclopedie.html">Encyclopédie</a> › <a href="../encyclopedie.html#${esc(n.cat)}">${esc(catName(n.cat))}</a> › ${esc(n.name)}</p>
-<div class="hero">
- ${visual(id, base, 'portrait')}
- <div>
-  <span class="cat" style="--c:${catColor(n.cat)}">${esc(catName(n.cat))}</span>
-  <h1>${esc(n.name)}</h1>
-  ${n.en ? `<p class="muted">En anglais : ${esc(n.en)}</p>` : ''}
-  ${n.sub ? `<p class="lead">${esc(n.sub)}</p>` : ''}
-  <p>${relBadge(n.cert)} <span class="muted">${esc(relDesc(n.cert))}</span></p>
-  <p><a class="btn ghost" href="../explorer.html#${esc(id)}">Voir dans l’explorateur · ${esc(mapName(n.map))}</a></p>
+<div class="fhero">${u ? `<img class="fbg" src="${esc(u)}" alt="" aria-hidden="true" ${IMGATTR}>` : ''}
+ <p class="crumb"><a href="../encyclopedie.html">Encyclopédie</a> › ${esc(catName(n.cat))}</p>
+ <div class="fhead">
+  ${u ? `<img class="fport" src="${esc(u)}" alt="${esc(n.name)}" width="360" height="480" decoding="async" referrerpolicy="no-referrer">` : `<span class="fport none" aria-hidden="true">${initials(n.name)}</span>`}
+  <div class="fid">
+   <span class="cat" style="--c:${catColor(n.cat)}">${esc(catName(n.cat))}</span>
+   <h1>${esc(n.name)}</h1>
+   ${n.en ? `<p class="muted">${esc(n.en)}</p>` : ''}
+   ${n.sub ? `<p class="lead">${esc(n.sub)}</p>` : ''}
+   <p class="chipsline">${relBadge(n.cert)}${first ? `<span class="pill">1ʳᵉ apparition · ${esc(first[1][0])}</span>` : ''}${rels.length ? `<span class="pill">${rels.length} relation${rels.length > 1 ? 's' : ''}</span>` : ''}</p>
+   <p><a class="btn ghost" href="../explorer.html#${esc(id)}">Voir sur la carte · ${esc(mapName(n.map))}</a></p>
+  </div>
  </div>
 </div>
-<div class="prose">
- ${n.desc ? `<h2>Présentation</h2><p>${esc(n.desc)}</p>` : ''}
- ${n.fact ? `<p class="fact">${esc(n.fact)}</p>` : ''}
- <h2>Sources</h2>
- ${n.src ? `<ul>${srcList(n.src)}</ul>` : '<p class="note">Aucune source enregistrée pour cette fiche.</p>'}
- ${n.cert === 'u' ? '<p class="note">Fiche <b>à vérifier</b> : les comics de référence et la première apparition sont indiqués, mais la description n’a pas encore été confrontée aux comics eux-mêmes.</p>' : ''}
- ${n.cert === 't' ? '<p class="note">Cette fiche relève de la <b>théorie</b> : une construction de fans, cohérente mais non officielle.</p>' : ''}
- ${wiki ? `<p class="muted">Page de référence sur le wiki communautaire : <a href="https://marvel.fandom.com/wiki/${encodeURIComponent(wiki.replace(/ /g, '_'))}" target="_blank" rel="noopener">${esc(wiki)} ↗</a></p>` : ''}
+<div class="fbody">
+ <div class="prose">
+  ${n.desc ? `<h2>Présentation</h2><p class="big">${esc(n.desc)}</p>` : ''}
+  ${n.fact ? `<p class="fact">${esc(n.fact)}</p>` : ''}
+  <h2>Où le lire</h2>
+  ${n.src ? `<ul class="srcs">${srcList(n.src, base)}</ul>` : '<p class="note">Aucune source enregistrée pour cette fiche.</p>'}
+  ${n.cert === 'u' ? '<p class="note">Fiche <b>à vérifier</b> : les comics de référence et la première apparition sont indiqués, mais la présentation n’a pas encore été confrontée aux comics eux-mêmes.</p>' : ''}
+  ${n.cert === 't' ? '<p class="note">Cette fiche relève de la <b>théorie</b> : une construction de fans, cohérente mais non officielle.</p>' : ''}
+ </div>
+ <aside class="idcard" aria-label="Fiche d’identité">
+  <h2>Fiche d’identité</h2>
+  ${facts.length || first ? `<dl>${facts.concat(first ? [first] : []).map(([l, v]) => `<div><dt>${esc(l)}</dt><dd>${v.map(esc).join('<br>')}</dd></div>`).join('')}</dl>` : '<p class="muted">Pas de fiche d’identité disponible.</p>'}
+  <p class="credit">${w ? `Fiche d’identité et image : page « ${esc(w.title)} » du wiki communautaire marvel.fandom.com (CC BY-SA), relevées le ${esc(WKDATE)}. Valeurs en anglais, telles que publiées.` : 'Image : collection Primestone.'} Personnages et illustrations © Marvel.</p>
+ </aside>
 </div>
-${n.rel.filter(r => N[r].map !== 7).length ? `<section><h2>Relations</h2><div class="grid three">${n.rel.filter(r => N[r].map !== 7).sort(byName).map(r => cardBs(r, base)).join('')}</div></section>` : ''}
-${n.rel.filter(r => N[r].map === 7).length ? `<section><h2>Dans la chronologie éditoriale</h2><ul>${n.rel.filter(r => N[r].map === 7).map(r => `<li><a href="../chronologie.html#${esc(r)}">${N[r].year ? N[r].year + ' · ' : ''}${esc(N[r].name)}</a></li>`).join('')}</ul></section>` : ''}
+${rels.length ? `<section><h2>Relations</h2><div class="grid three">${rels.map(r => cardBs(r, base)).join('')}</div></section>` : ''}
+${evts.length ? `<section><h2>Dans la chronologie éditoriale</h2><ul>${evts.map(r => `<li><a href="../chronologie.html#${esc(r)}">${N[r].year ? N[r].year + ' · ' : ''}${esc(N[r].name)}</a></li>`).join('')}</ul></section>` : ''}
 ${cited.length ? `<section><h2>Comics qui la documentent</h2><div class="grid two">${cited.map(c => cardE(c, base)).join('')}</div></section>` : ''}
-<p>${prev ? `<a href="${esc(prev)}.html">← ${esc(N[prev].name)}</a>` : ''}${prev && next ? ' · ' : ''}${next ? `<a href="${esc(next)}.html">${esc(N[next].name)} →</a>` : ''}</p>`;
+<nav class="pager" aria-label="Fiches voisines">${prev ? `<a href="${esc(prev)}.html">← ${esc(N[prev].name)}</a>` : '<span></span>'}${next ? `<a href="${esc(next)}.html">${esc(N[next].name)} →</a>` : ''}</nav>`;
   emit(fiche(id), page({ file: fiche(id), title: n.name, desc: (n.sub ? n.sub + '. ' : '') + (n.desc || '').slice(0, 150), body, active: 'encyclopedie.html' }));
 }
 
@@ -267,7 +289,7 @@ function buildHome(dos) {
   const counts = Object.keys(A.cert).map(c => [c, ENTRIES.filter(id => N[id].cert === c).length]).filter(x => x[1]);
   const featured = ['eternity', 'infinity', 'tribunal', 'h_death', 'x_galan', 'h_phx', 'h_knull', 'x_arishem'].filter(id => N[id]);
   const body = `
-<script>/* anciens liens partagés (…/marvel-primeston/#id) : ils ouvrent la fiche dans l'explorateur */if(/^#[a-z0-9_]+$/.test(location.hash))location.replace('explorer.html'+location.hash)</script>
+<script>/* anciens liens partagés (…/marvel-primeston/#id) : ils ouvrent la fiche du site */if(/^#[a-z0-9_]+$/.test(location.hash))location.replace('fiche/'+location.hash.slice(1)+'.html')</script>
 <section style="padding:24px 0 8px">
  <span class="kicker">Au-delà des héros</span>
  <h1>La cosmologie Marvel, cartographiée et sourcée</h1>
