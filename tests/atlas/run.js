@@ -3,9 +3,13 @@
             node tests/atlas/run.js --video    (ajoute un enregistrement vidéo de 15 s et le quiz vidéo)
    Prérequis : Playwright (npm i -D playwright puis npx playwright install chromium). */
 const {chromium}=require('playwright'),path=require('path');
-const URL='file://'+path.resolve(__dirname,'../../index.html'),VIDEO=process.argv.includes('--video');
+const ROOT=path.resolve(__dirname,'../..'),VIDEO=process.argv.includes('--video');let URL;
+/* petit serveur statique local : même comportement que GitHub Pages (fetch, chemins relatifs) */
+const http=require('http'),fsx=require('fs'),MIME={'.html':'text/html','.js':'text/javascript','.webp':'image/webp','.png':'image/png','.json':'application/json'};
+const srv=http.createServer((q,r)=>{const f=path.join(ROOT,decodeURIComponent(q.url.split('?')[0])==='/'?'index.html':decodeURIComponent(q.url.split('?')[0]));
+ if(!f.startsWith(ROOT)||!fsx.existsSync(f)){r.writeHead(404);return r.end()}r.writeHead(200,{'Content-Type':MIME[path.extname(f)]||'application/octet-stream'});fsx.createReadStream(f).pipe(r)});
 let pass=0,fail=0;const ok=(c,m)=>{c?pass++:fail++;console.log((c?'  ✓ ':'  ✗ ')+m)};
-(async()=>{const b=await chromium.launch(),errs=[];
+(async()=>{await new Promise(r=>srv.listen(0,'127.0.0.1',r));URL=`http://127.0.0.1:${srv.address().port}/index.html`;const b=await chromium.launch(),errs=[];
  const page=async(vp={width:1280,height:800},q='')=>{const p=await b.newPage({viewport:vp,acceptDownloads:true});p.on('pageerror',e=>errs.push(e.message));await p.goto(URL+q);await p.waitForFunction(()=>typeof IDX!=='undefined'&&document.querySelector('#svg g'));return p};
  const L=(t)=>console.log('\n'+t);
  let p=await page();
@@ -18,6 +22,8 @@ let pass=0,fail=0;const ok=(c,m)=>{c?pass++:fail++;console.log((c?'  ✓ ':'  �
  {const fs=require('fs'),crypto=require('crypto'),root=path.resolve(__dirname,'../..'),html=fs.readFileSync(root+'/index.html','utf8');
   const st=['data.js','images.js'].every(f=>html.includes(`${f}?v=${crypto.createHash('sha1').update(fs.readFileSync(root+'/'+f)).digest('hex').slice(0,10)}`));
   ok(st,'versions ?v= à jour (sinon : node tools/stamp.js)')}
+ {const r=require('child_process').spawnSync('node',[path.join(ROOT,'tools/comics.js'),'--check']);ok(r.status===0,'comics.json à jour (sinon : node tools/comics.js)')}
+ {const n=await p.evaluate(async()=>{const u=Object.values(window.IMG);const r=await Promise.all(u.map(x=>fetch(x).then(r=>r.ok).catch(()=>false)));return r.filter(Boolean).length});ok(n==Object.keys(await p.evaluate(()=>window.IMG)).length,'portraits img/*.webp accessibles ('+n+')')}
  L('Cartes et formats');
  for(const f of ['free','916','169','45','11'])for(let m=0;m<8;m++){await p.evaluate(([f,m])=>{setFmt(f);render(m);select(0);select(-1)},[f,m])}
  ok(!errs.length,'8 cartes × 5 formats sans erreur JS');
@@ -29,7 +35,7 @@ let pass=0,fail=0;const ok=(c,m)=>{c?pass++:fail++;console.log((c?'  ✓ ':'  �
  await p.evaluate(()=>{location.hash='#h_firelord'});await p.waitForTimeout(1500);ok(await p.evaluate(()=>C.nodes[S.sel]?.id)=='h_firelord','lien #id ouvre la fiche');
  L('Exports');
  for(const [x,ext] of [['svg','.svg'],['html','.html'],['png','.png']]){const dl=p.waitForEvent('download',{timeout:20000}).catch(()=>null);await p.evaluate(x=>exp(x),x);const f=await dl;ok(f&&f.suggestedFilename().endsWith(ext),'export '+x);
-  if(f&&x=='html'){const t=require('fs').readFileSync(await f.path(),'utf8');ok(t.includes('window.DB=')&&t.includes('window.IMG=')&&!/src="(data|images)\.js/.test(t),'HTML autonome : données et images intégrées')}}
+  if(f&&x=='html'){const t=require('fs').readFileSync(await f.path(),'utf8');ok(t.includes('window.DB=')&&t.includes('data:image/webp')&&!/src="(data|images)\.js/.test(t),'HTML autonome : données et portraits intégrés (hors ligne)')}}
  L('Quiz');
  await p.click('#bquiz');await p.waitForTimeout(300);const deck=await p.evaluate(()=>QZ.d.every(([a,b])=>Math.abs(POW[a]-POW[b])>=8&&IDX[a]&&IDX[b]));ok(deck,'duels valides (écart ≥ 8, entités existantes)');
  await p.click('#qza');ok(/1$/.test(await p.textContent('#qzs')),'score mis à jour après réponse');await p.click('[data-q=x]');
@@ -43,4 +49,4 @@ let pass=0,fail=0;const ok=(c,m)=>{c?pass++:fail++;console.log((c?'  ✓ ':'  �
  if(VIDEO){L('Vidéo');const q=await page();const dls=[];q.on('download',x=>dls.push(x.suggestedFilename()));await q.evaluate(()=>{render(0);$('#vwhat').value='map';$('#vlen').value='15';makeVideo('v916')});
  await q.waitForTimeout(26000);ok(dls.some(x=>/\.(mp4|webm)$/.test(x))&&dls.some(x=>x.endsWith('.srt')),'vidéo TikTok 15 s + .srt : '+dls.join(', '));await q.close()}
  ok(!errs.length,'aucune erreur JS pendant toute la suite '+errs.slice(0,3));
- console.log(`\n${pass} réussis, ${fail} échoués`);await b.close();process.exit(fail?1:0)})().catch(e=>{console.error(e);process.exit(1)});
+ console.log(`\n${pass} réussis, ${fail} échoués`);await b.close();srv.close();process.exit(fail?1:0)})().catch(e=>{console.error(e);process.exit(1)});

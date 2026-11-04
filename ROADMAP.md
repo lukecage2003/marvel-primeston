@@ -7,10 +7,10 @@ Légende : effort S, M ou L · ✋ = accord requis avant mise en ligne.
 - [x] Requalifier les 137 fiches vérifiées uniquement sur le wiki communautaire : niveau `u` « À vérifier », avec la source du wiki indiquée en clair.
 
 ## Étape 1 — Fiabilité documentaire (M)
-- [ ] Contrôler les 87 fiches encore marquées « canon » (ajoutées lors de sessions antérieures, provenance des vérifications non tracée).
-- [ ] Passer aux 5 niveaux de fiabilité (`DATA_MODEL.md`) dans l'interface et les données.
-- [ ] Structurer les sources existantes en `Comic` (207 chaînes à analyser) et en `Evidence`.
-- [ ] Ajouter un crédit à chaque image ; remplacer `images.js` par des fichiers webp chargés à la demande.
+- [x] Contrôler les 87 fiches « canon » : 87 pages trouvées sur le wiki, 71 premières apparitions concordantes, 16 citant un arc de référence (1ʳᵉ apparition du wiki ajoutée). Toutes passent « À vérifier » : aucune description n'a été confrontée aux comics.
+- [x] 5 niveaux et « À vérifier » dans l'interface (fiche, Codex, filtres, explication, anglais). Nœuds des cartes et chronologie : « canon » → « À vérifier » ; théories et interprétations conservées.
+- [x] `comics.json` (tools/comics.js) : 211 références, dont 193 numéros et 18 arcs, avec les fiches qui les citent. Sources cliquables (recherche sur le wiki). Reste à faire : auteurs, pages et « ce que la source établit » (Evidence).
+- [x] Portraits extraits dans `img/*.webp` chargés à la demande (`images.js` : 611 → 74 Ko) ; `img/credits.json` (origine à documenter, champ par champ). Exports SVG, PNG, HTML autonome et vidéo intègrent toujours les images.
 
 ## Étape 2 — Socle (M) ✋
 - [ ] Projet Astro, schémas de contenu, script de migration depuis `data.js` et les cartes (sans perte, avec un test de comparaison).

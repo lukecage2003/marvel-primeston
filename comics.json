@@ -1,0 +1,2324 @@
+[
+ {
+  "type": "issue",
+  "series": "Red Raven Comics",
+  "volume": 1,
+  "issue": "1",
+  "year": "1940",
+  "label": "Red Raven Comics #1",
+  "citedBy": [
+   "x_eternals",
+   "x_deviants",
+   "x_zuras"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Blonde Phantom Comics",
+  "volume": 1,
+  "issue": "21",
+  "year": "1948",
+  "label": "Blonde Phantom Comics #21",
+  "citedBy": [
+   "p_bluearea"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Venus",
+  "volume": 1,
+  "issue": "1",
+  "year": "1948",
+  "label": "Venus #1",
+  "citedBy": [
+   "x_sersi"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Tales",
+  "volume": 1,
+  "issue": "96",
+  "year": "1950",
+  "label": "Marvel Tales #96",
+  "citedBy": [
+   "x_set"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Venus",
+  "volume": 1,
+  "issue": "11",
+  "year": "1950",
+  "label": "Venus #11",
+  "citedBy": [
+   "h_thor"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Amazing Adult Fantasy",
+  "volume": 1,
+  "issue": "7",
+  "year": "1961",
+  "label": "Amazing Adult Fantasy #7",
+  "citedBy": [
+   "x_reed",
+   "g_skrulls"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four",
+  "volume": 1,
+  "issue": "1",
+  "year": "1961",
+  "label": "Fantastic Four #1",
+  "citedBy": [
+   "x_reed"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four",
+  "volume": 1,
+  "issue": "5",
+  "year": "1962",
+  "label": "Fantastic Four #5",
+  "citedBy": [
+   "x_doom",
+   "x_rabum"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Incredible Hulk",
+  "volume": 1,
+  "issue": "1",
+  "year": "1962",
+  "label": "Incredible Hulk #1",
+  "citedBy": [
+   "x_banner"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Journey Into Mystery",
+  "volume": 1,
+  "issue": "83",
+  "year": "1962",
+  "label": "Journey Into Mystery #83",
+  "citedBy": [
+   "o_mjolnir",
+   "o_uru"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Journey into Mystery",
+  "volume": 1,
+  "issue": "85",
+  "year": "1962",
+  "label": "Journey into Mystery #85",
+  "citedBy": [
+   "x_loki"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Journey Into Mystery",
+  "volume": 1,
+  "issue": "85",
+  "year": "1962",
+  "label": "Journey Into Mystery #85",
+  "citedBy": [
+   "p_asgard",
+   "x_odin"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four",
+  "volume": 1,
+  "issue": "13",
+  "year": "1963",
+  "label": "Fantastic Four #13",
+  "citedBy": [
+   "x_uatu"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four",
+  "volume": 1,
+  "issue": "20",
+  "year": "1963",
+  "label": "Fantastic Four #20",
+  "citedBy": [
+   "x_molecule"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four Annual",
+  "volume": 1,
+  "issue": "1",
+  "year": "1963",
+  "label": "Fantastic Four Annual #1",
+  "citedBy": [
+   "o_serpent"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Journey into Mystery",
+  "volume": 1,
+  "issue": "97",
+  "year": "1963",
+  "label": "Journey into Mystery #97",
+  "citedBy": [
+   "x_yggdrasil"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Journey Into Mystery",
+  "volume": 1,
+  "issue": "97",
+  "year": "1963",
+  "label": "Journey Into Mystery #97",
+  "citedBy": [
+   "o_twilight"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Strange Tales",
+  "volume": 1,
+  "issue": "110",
+  "year": "1963",
+  "label": "Strange Tales #110",
+  "citedBy": [
+   "x_dreams",
+   "x_strange",
+   "x_nightmare"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Strange Tales",
+  "volume": 1,
+  "issue": "116",
+  "year": "1963",
+  "label": "Strange Tales #116",
+  "citedBy": [
+   "x_hoggoth",
+   "g_vishanti"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "X-Men",
+  "volume": 1,
+  "issue": "1",
+  "year": "1963",
+  "label": "X-Men #1",
+  "citedBy": [
+   "x_jean"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Avengers",
+  "volume": 1,
+  "issue": "10",
+  "year": "1964",
+  "label": "Avengers #10",
+  "citedBy": [
+   "x_immortus"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Avengers",
+  "volume": 1,
+  "issue": "8",
+  "year": "1964",
+  "label": "Avengers #8",
+  "citedBy": [
+   "x_kang"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Journey Into Mystery",
+  "volume": 1,
+  "issue": "102",
+  "year": "1964",
+  "label": "Journey Into Mystery #102",
+  "citedBy": [
+   "x_hela"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Strange Tales",
+  "volume": 1,
+  "issue": "126",
+  "year": "1964",
+  "label": "Strange Tales #126",
+  "citedBy": [
+   "x_darkdim",
+   "x_dormammu",
+   "x_clea"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Strange Tales",
+  "volume": 1,
+  "issue": "127",
+  "year": "1964",
+  "label": "Strange Tales #127",
+  "citedBy": [
+   "o_eye"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Amazing Spider-Man Annual",
+  "volume": 1,
+  "issue": "2",
+  "year": "1965",
+  "label": "Amazing Spider-Man Annual #2",
+  "citedBy": [
+   "o_watoomb"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "X-Men",
+  "volume": 1,
+  "issue": "11",
+  "year": "1965",
+  "label": "X-Men #11",
+  "citedBy": [
+   "x_stranger"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "X-Men",
+  "volume": 1,
+  "issue": "12",
+  "year": "1965",
+  "label": "X-Men #12",
+  "citedBy": [
+   "x_cyttorak"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Avengers",
+  "volume": 1,
+  "issue": "26-28",
+  "year": "1966",
+  "label": "Avengers #26-28",
+  "citedBy": [
+   "x_collector"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Avengers",
+  "volume": 1,
+  "issue": "28",
+  "year": "1966",
+  "label": "Avengers #28",
+  "citedBy": [
+   "x_elders"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four",
+  "volume": 1,
+  "issue": "48",
+  "year": "1966",
+  "label": "Fantastic Four #48",
+  "citedBy": [
+   "x_pcosmic",
+   "x_silver",
+   "x_galan"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four",
+  "volume": 1,
+  "issue": "49",
+  "year": "1966",
+  "label": "Fantastic Four #49",
+  "citedBy": [
+   "h_taa2"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four",
+  "volume": 1,
+  "issue": "50",
+  "year": "1966",
+  "label": "Fantastic Four #50",
+  "citedBy": [
+   "x_nullifier"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four",
+  "volume": 1,
+  "issue": "54",
+  "year": "1966",
+  "label": "Fantastic Four #54",
+  "citedBy": [
+   "x_ivory",
+   "p_otherworld"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Strange Tales",
+  "volume": 1,
+  "issue": "150",
+  "year": "1966",
+  "label": "Strange Tales #150",
+  "citedBy": [
+   "x_umar"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Tales of Suspense",
+  "volume": 1,
+  "issue": "79",
+  "year": "1966",
+  "label": "Tales of Suspense #79",
+  "citedBy": [
+   "x_cube",
+   "x_kubik"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thor",
+  "volume": 1,
+  "issue": "132",
+  "year": "1966",
+  "label": "Thor #132",
+  "citedBy": [
+   "x_ego"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four",
+  "volume": 1,
+  "issue": "65",
+  "year": "1967",
+  "label": "Fantastic Four #65",
+  "citedBy": [
+   "g_kree",
+   "x_ronan"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four",
+  "volume": 1,
+  "issue": "66-67",
+  "year": "1967",
+  "label": "Fantastic Four #66-67",
+  "citedBy": [
+   "x_adam"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Super-Heroes",
+  "volume": 1,
+  "issue": "12",
+  "year": "1967",
+  "label": "Marvel Super-Heroes #12",
+  "citedBy": [
+   "p_hala",
+   "x_marvell"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Strange Tales",
+  "volume": 1,
+  "issue": "156",
+  "year": "1967",
+  "label": "Strange Tales #156",
+  "citedBy": [
+   "x_zom"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Doctor Strange",
+  "volume": 1,
+  "issue": "174",
+  "year": "1968",
+  "label": "Doctor Strange #174",
+  "citedBy": [
+   "x_satannish"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four Annual",
+  "volume": 1,
+  "issue": "6",
+  "year": "1968",
+  "label": "Fantastic Four Annual #6",
+  "citedBy": [
+   "x_franklin",
+   "x_annihilus",
+   "o_controlrod"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Silver Surfer",
+  "volume": 1,
+  "issue": "3",
+  "year": "1968",
+  "label": "Silver Surfer #3",
+  "citedBy": [
+   "x_mephisto"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Avengers",
+  "volume": 1,
+  "issue": "69",
+  "year": "1969",
+  "label": "Avengers #69",
+  "citedBy": [
+   "x_grandm"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Silver Surfer",
+  "volume": 1,
+  "issue": "12",
+  "year": "1969",
+  "label": "Silver Surfer #12",
+  "citedBy": [
+   "d_manyangled"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thor",
+  "volume": 1,
+  "issue": "169",
+  "year": "1969",
+  "label": "Thor #169",
+  "citedBy": [
+   "d_blackwinter"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Avengers",
+  "volume": 1,
+  "issue": "89",
+  "year": "1971",
+  "label": "Avengers #89",
+  "citedBy": [
+   "e_kreeskrull"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fear",
+  "volume": 1,
+  "issue": "11",
+  "year": "1972",
+  "label": "Fear #11",
+  "citedBy": [
+   "p_nexus"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Iron Man",
+  "volume": 1,
+  "issue": "54",
+  "year": "1972",
+  "label": "Iron Man #54",
+  "citedBy": [
+   "x_moondragon"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Premiere",
+  "volume": 1,
+  "issue": "1",
+  "year": "1972",
+  "label": "Marvel Premiere #1",
+  "citedBy": [
+   "x_gems",
+   "x_ssoul"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Premiere",
+  "volume": 1,
+  "issue": "5",
+  "year": "1972",
+  "label": "Marvel Premiere #5",
+  "citedBy": [
+   "x_agamotto",
+   "x_oshtur"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Spotlight",
+  "volume": 1,
+  "issue": "4",
+  "year": "1972",
+  "label": "Marvel Spotlight #4",
+  "citedBy": [
+   "o_darkhold"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Avengers",
+  "volume": 1,
+  "issue": "112",
+  "year": "1973",
+  "label": "Avengers #112",
+  "citedBy": [
+   "x_mantis"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Captain Marvel",
+  "volume": 1,
+  "issue": "28",
+  "year": "1973",
+  "label": "Captain Marvel #28",
+  "citedBy": [
+   "x_eon"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Iron Man",
+  "volume": 1,
+  "issue": "55",
+  "year": "1973",
+  "label": "Iron Man #55",
+  "citedBy": [
+   "x_kronos",
+   "x_thanos",
+   "x_mentor",
+   "p_titan",
+   "x_drax",
+   "x_starfox"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Premiere",
+  "volume": 1,
+  "issue": "9",
+  "year": "1973",
+  "label": "Marvel Premiere #9",
+  "citedBy": [
+   "d_shuma"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Doctor Strange",
+  "volume": 2,
+  "issue": "6",
+  "year": "1974",
+  "label": "Doctor Strange vol. 2 #6",
+  "citedBy": [
+   "x_gaea"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four",
+  "volume": 1,
+  "issue": "142",
+  "year": "1974",
+  "label": "Fantastic Four #142",
+  "citedBy": [
+   "x_darkforce"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Giant-Size Defenders",
+  "volume": 1,
+  "issue": "3",
+  "year": "1974",
+  "label": "Giant-Size Defenders #3",
+  "citedBy": [
+   "x_korvac"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Monsters Unleashed",
+  "volume": 1,
+  "issue": "9",
+  "year": "1974",
+  "label": "Monsters Unleashed #9",
+  "citedBy": [
+   "p_weirdworld"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Strange Tales",
+  "volume": 1,
+  "issue": "178",
+  "year": "1974",
+  "label": "Strange Tales #178",
+  "citedBy": [
+   "x_magus",
+   "g_church"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thor",
+  "volume": 1,
+  "issue": "225",
+  "year": "1974",
+  "label": "Thor #225",
+  "citedBy": [
+   "h_firelord"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thor",
+  "volume": 1,
+  "issue": "229",
+  "year": "1974",
+  "label": "Thor #229",
+  "citedBy": [
+   "d_dweller"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Captain Marvel",
+  "volume": 1,
+  "issue": "41",
+  "year": "1975",
+  "label": "Captain Marvel #41",
+  "citedBy": [
+   "x_smind"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four",
+  "volume": 1,
+  "issue": "164",
+  "year": "1975",
+  "label": "Fantastic Four #164",
+  "citedBy": [
+   "h_novaf"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Giant-Size Avengers",
+  "volume": 1,
+  "issue": "4",
+  "year": "1975",
+  "label": "Giant-Size Avengers #4",
+  "citedBy": [
+   "e_madonna"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Chillers",
+  "volume": 1,
+  "issue": "1",
+  "year": "1975",
+  "label": "Marvel Chillers #1",
+  "citedBy": [
+   "x_chthon"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Strange Tales",
+  "volume": 1,
+  "issue": "180",
+  "year": "1975",
+  "label": "Strange Tales #180",
+  "citedBy": [
+   "x_gamora"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thor",
+  "volume": 1,
+  "issue": "234",
+  "year": "1975",
+  "label": "Thor #234",
+  "citedBy": [
+   "x_possessor"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thor",
+  "volume": 1,
+  "issue": "245",
+  "year": "1975",
+  "label": "Thor #245",
+  "citedBy": [
+   "x_hwr"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Warlock",
+  "volume": 1,
+  "issue": "9",
+  "year": "1975",
+  "label": "Warlock #9",
+  "citedBy": [
+   "x_inbetween"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "X-Men",
+  "volume": 1,
+  "issue": "97",
+  "year": "1975",
+  "label": "X-Men #97",
+  "citedBy": [
+   "g_shiar"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Captain America's Bicentennial Battles",
+  "volume": 1,
+  "issue": "1",
+  "year": "1976",
+  "label": "Captain America's Bicentennial Battles #1",
+  "citedBy": [
+   "x_contemplator"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Eternals",
+  "volume": 1,
+  "issue": "1",
+  "year": "1976",
+  "label": "Eternals #1",
+  "citedBy": [
+   "x_ikaris"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Eternals",
+  "volume": 1,
+  "issue": "7",
+  "year": "1976",
+  "label": "Eternals #7",
+  "citedBy": [
+   "x_tefral"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Eternals",
+  "volume": 1,
+  "issue": "9",
+  "year": "1976",
+  "label": "Eternals #9",
+  "citedBy": [
+   "x_hargen"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Preview",
+  "volume": 1,
+  "issue": "4",
+  "year": "1976",
+  "label": "Marvel Preview #4",
+  "citedBy": [
+   "x_starlord"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Nova",
+  "volume": 1,
+  "issue": "1",
+  "year": "1976",
+  "label": "Nova #1",
+  "citedBy": [
+   "x_nova",
+   "p_xandar",
+   "x_rider"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "The Eternals",
+  "volume": 1,
+  "issue": "1",
+  "year": "1976",
+  "label": "The Eternals #1",
+  "citedBy": [
+   "x_eternals",
+   "x_deviants"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "The Eternals",
+  "volume": 1,
+  "issue": "2",
+  "year": "1976",
+  "label": "The Eternals #2",
+  "citedBy": [
+   "x_arishem"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "The Eternals",
+  "volume": 1,
+  "issue": "4",
+  "year": "1976",
+  "label": "The Eternals #4",
+  "citedBy": [
+   "x_gammenon"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Avengers",
+  "volume": 1,
+  "issue": "167",
+  "year": "1977",
+  "label": "Avengers #167",
+  "citedBy": [
+   "e_korvac"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Avengers Annual",
+  "volume": 1,
+  "issue": "7",
+  "year": "1977",
+  "label": "Avengers Annual #7",
+  "citedBy": [
+   "x_sspace",
+   "x_sreal"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Eternals",
+  "volume": 1,
+  "issue": "12",
+  "year": "1977",
+  "label": "Eternals #12",
+  "citedBy": [
+   "x_unimind"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Team-Up",
+  "volume": 1,
+  "issue": "55",
+  "year": "1977",
+  "label": "Marvel Team-Up #55",
+  "citedBy": [
+   "x_spow",
+   "x_stime",
+   "x_gardener"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Two-in-One Annual",
+  "volume": 1,
+  "issue": "2",
+  "year": "1977",
+  "label": "Marvel Two-in-One Annual #2",
+  "citedBy": [
+   "x_love"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "The Eternals",
+  "volume": 1,
+  "issue": "7",
+  "year": "1977",
+  "label": "The Eternals #7",
+  "citedBy": [
+   "x_jemiah"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "The Eternals",
+  "volume": 1,
+  "issue": "9",
+  "year": "1977",
+  "label": "The Eternals #9",
+  "citedBy": [
+   "x_eson",
+   "x_nezarr",
+   "x_oneg"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "X-Men",
+  "volume": 1,
+  "issue": "107",
+  "year": "1977",
+  "label": "X-Men #107",
+  "citedBy": [
+   "x_mkraan",
+   "x_gladiator"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Captain America",
+  "volume": 1,
+  "issue": "217",
+  "year": "1978",
+  "label": "Captain America #217",
+  "citedBy": [
+   "x_quantum",
+   "x_quasar"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "The Eternals",
+  "volume": 1,
+  "issue": "18",
+  "year": "1978",
+  "label": "The Eternals #18",
+  "citedBy": [
+   "x_tiamut",
+   "x_ziran"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four",
+  "volume": 1,
+  "issue": "205",
+  "year": "1979",
+  "label": "Fantastic Four #205",
+  "citedBy": [
+   "g_novacorps"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four",
+  "volume": 1,
+  "issue": "211",
+  "year": "1979",
+  "label": "Fantastic Four #211",
+  "citedBy": [
+   "h_terrax"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thor",
+  "volume": 1,
+  "issue": "282",
+  "year": "1979",
+  "label": "Thor #282",
+  "citedBy": [
+   "g_timekeepers"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thor",
+  "volume": 1,
+  "issue": "306",
+  "year": "1981",
+  "label": "Thor #306",
+  "citedBy": [
+   "h_airwalker"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Graphic Novel",
+  "volume": 1,
+  "issue": "1",
+  "year": "1982",
+  "label": "Marvel Graphic Novel #1",
+  "citedBy": [
+   "e_deathmv"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Super Hero Contest of Champions",
+  "volume": 1,
+  "issue": "1",
+  "year": "1982",
+  "label": "Marvel Super Hero Contest of Champions #1",
+  "citedBy": [
+   "e_contest"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Two-In-One Annual",
+  "volume": 1,
+  "issue": "7",
+  "year": "1982",
+  "label": "Marvel Two-In-One Annual #7",
+  "citedBy": [
+   "x_champion"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Daredevils",
+  "volume": 1,
+  "issue": "6",
+  "year": "1983",
+  "label": "Daredevils #6",
+  "citedBy": [
+   "g_cbcorps"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four",
+  "volume": 1,
+  "issue": "262",
+  "year": "1983",
+  "label": "Fantastic Four #262",
+  "citedBy": [
+   "e_trial"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Super-Villain Classics",
+  "volume": 1,
+  "issue": "1",
+  "year": "1983",
+  "label": "Super-Villain Classics #1",
+  "citedBy": [
+   "x_galan"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thor",
+  "volume": 1,
+  "issue": "337",
+  "year": "1983",
+  "label": "Thor #337",
+  "citedBy": [
+   "x_bill"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Amazing Spider-Man",
+  "volume": 1,
+  "issue": "252",
+  "year": "1984",
+  "label": "Amazing Spider-Man #252",
+  "citedBy": [
+   "x_symbiote"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Incredible Hulk",
+  "volume": 1,
+  "issue": "300",
+  "year": "1984",
+  "label": "Incredible Hulk #300",
+  "citedBy": [
+   "p_crossroads"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Secret Wars",
+  "volume": 1,
+  "issue": "1",
+  "year": "1984",
+  "label": "Secret Wars #1",
+  "citedBy": [
+   "x_battle",
+   "x_beyonder"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Avengers",
+  "volume": 1,
+  "issue": "257",
+  "year": "1985",
+  "label": "Avengers #257",
+  "citedBy": [
+   "x_nebula"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Longshot (1985)",
+  "year": "1985",
+  "citedBy": [
+   "x_mojo"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "New Defenders",
+  "volume": 1,
+  "issue": "143",
+  "year": "1985",
+  "label": "New Defenders #143",
+  "citedBy": [
+   "x_runner"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Star Brand",
+  "volume": 1,
+  "issue": "1",
+  "year": "1986",
+  "label": "Star Brand #1",
+  "citedBy": [
+   "x_starbrand"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thor",
+  "volume": 1,
+  "issue": "372",
+  "year": "1986",
+  "label": "Thor #372",
+  "citedBy": [
+   "x_tva"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Web of Spider-Man",
+  "volume": 1,
+  "issue": "18",
+  "year": "1986",
+  "label": "Web of Spider-Man #18",
+  "citedBy": [
+   "x_venom"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Silver Surfer (1987)",
+  "year": "1987",
+  "citedBy": [
+   "x_elders"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Silver Surfer",
+  "volume": 3,
+  "issue": "4",
+  "year": "1987",
+  "label": "Silver Surfer vol. 3 #4",
+  "citedBy": [
+   "x_trader",
+   "x_astronomer"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thor",
+  "volume": 1,
+  "issue": "387",
+  "year": "1988",
+  "label": "Thor #387",
+  "citedBy": [
+   "x_exitar"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Silver Surfer",
+  "volume": 1,
+  "issue": "44",
+  "year": "1990",
+  "label": "Silver Surfer #44",
+  "citedBy": [
+   "x_gauntlet"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thanos Quest",
+  "volume": 1,
+  "issue": "2",
+  "year": "1990",
+  "label": "Thanos Quest #2",
+  "citedBy": [
+   "x_nemesis"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Infinity Gauntlet (1991)",
+  "year": "1991",
+  "citedBy": [
+   "x_love",
+   "x_gems",
+   "x_gauntlet"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Infinity Gauntlet",
+  "volume": 1,
+  "issue": "2",
+  "year": "1991",
+  "label": "Infinity Gauntlet #2",
+  "citedBy": [
+   "x_epoch"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Infinity Gauntlet",
+  "volume": 1,
+  "issue": "3",
+  "year": "1991",
+  "label": "Infinity Gauntlet #3",
+  "citedBy": [
+   "x_hate"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Captain America",
+  "volume": 1,
+  "issue": "398",
+  "year": "1992",
+  "label": "Captain America #398",
+  "citedBy": [
+   "e_galstorm"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Infinity War",
+  "volume": 1,
+  "issue": "1",
+  "year": "1992",
+  "label": "Infinity War #1",
+  "citedBy": [
+   "e_infwar"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Silver Surfer",
+  "volume": 3,
+  "issue": "69",
+  "year": "1992",
+  "label": "Silver Surfer vol. 3 #69",
+  "citedBy": [
+   "h_morg"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Warlock and the Infinity Watch",
+  "volume": 1,
+  "issue": "2",
+  "year": "1992",
+  "label": "Warlock and the Infinity Watch #2",
+  "citedBy": [
+   "g_infwatch"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Infinity Crusade",
+  "volume": 1,
+  "issue": "1",
+  "year": "1993",
+  "label": "Infinity Crusade #1",
+  "citedBy": [
+   "e_crusade"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Silver Surfer Annual",
+  "volume": 1,
+  "issue": "6",
+  "year": "1993",
+  "label": "Silver Surfer Annual #6",
+  "citedBy": [
+   "x_genis"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Silver Surfer",
+  "volume": 3,
+  "issue": "81",
+  "year": "1993",
+  "label": "Silver Surfer vol. 3 #81",
+  "citedBy": [
+   "x_tyrant"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Uncanny X-Men",
+  "volume": 1,
+  "issue": "305",
+  "year": "1993",
+  "label": "Uncanny X-Men #305",
+  "citedBy": [
+   "g_phalanx"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Guardians of the Galaxy",
+  "volume": 1,
+  "issue": "46",
+  "year": "1994",
+  "label": "Guardians of the Galaxy #46",
+  "citedBy": [
+   "x_scathan"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Heroes Reborn: The Return",
+  "volume": 1,
+  "issue": "1",
+  "year": "1997",
+  "label": "Heroes Reborn: The Return #1",
+  "citedBy": [
+   "x_ashema"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Avengers Forever",
+  "volume": 1,
+  "issue": "1",
+  "year": "1998",
+  "label": "Avengers Forever #1",
+  "citedBy": [
+   "e_forever"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Galactus the Devourer",
+  "volume": 1,
+  "issue": "1",
+  "year": "1999",
+  "label": "Galactus the Devourer #1",
+  "citedBy": [
+   "h_redshift"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Sentry",
+  "volume": 1,
+  "issue": "1",
+  "year": "2000",
+  "label": "Sentry #1",
+  "citedBy": [
+   "x_sentry"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Fantastic Four Annual",
+  "volume": 1,
+  "issue": "2001",
+  "year": "2001",
+  "label": "Fantastic Four Annual #2001",
+  "citedBy": [
+   "x_abraxas"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Captain Marvel",
+  "volume": 5,
+  "issue": "2",
+  "year": "2002",
+  "label": "Captain Marvel vol. 5 #2",
+  "citedBy": [
+   "x_entropy"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Universe: The End",
+  "volume": 1,
+  "issue": "2",
+  "year": "2003",
+  "label": "Marvel Universe: The End #2",
+  "citedBy": [
+   "x_heart"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Thanos (2003)",
+  "year": "2003",
+  "citedBy": [
+   "x_kronos"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "She-Hulk",
+  "volume": 1,
+  "issue": "7",
+  "year": "2004",
+  "label": "She-Hulk #7",
+  "citedBy": [
+   "x_magistrati"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thanos",
+  "volume": 1,
+  "issue": "11",
+  "year": "2004",
+  "label": "Thanos #11",
+  "citedBy": [
+   "h_fallen"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thanos",
+  "volume": 1,
+  "issue": "7",
+  "year": "2004",
+  "label": "Thanos #7",
+  "citedBy": [
+   "p_kyln"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thanos",
+  "volume": 1,
+  "issue": "8",
+  "year": "2004",
+  "label": "Thanos #8",
+  "citedBy": [
+   "x_starlord"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Monsters: Devil Dinosaur",
+  "volume": 1,
+  "issue": "1",
+  "year": "2005",
+  "label": "Marvel Monsters: Devil Dinosaur #1",
+  "citedBy": [
+   "x_devron",
+   "x_gamiel"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "New Avengers",
+  "volume": 1,
+  "issue": "7",
+  "year": "2005",
+  "label": "New Avengers #7",
+  "citedBy": [
+   "x_illum"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Stormbreaker: The Saga of Beta Ray Bill",
+  "volume": 1,
+  "issue": "1",
+  "year": "2005",
+  "label": "Stormbreaker: The Saga of Beta Ray Bill #1",
+  "citedBy": [
+   "h_stardust"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Young Avengers",
+  "volume": 1,
+  "issue": "1",
+  "year": "2005",
+  "label": "Young Avengers #1",
+  "citedBy": [
+   "x_wiccan"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Annihilation: Prologue",
+  "volume": 1,
+  "issue": "1",
+  "year": "2006",
+  "label": "Annihilation: Prologue #1",
+  "citedBy": [
+   "g_annwave"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Annihilation: Silver Surfer",
+  "volume": 1,
+  "issue": "3",
+  "year": "2006",
+  "label": "Annihilation: Silver Surfer #3",
+  "citedBy": [
+   "x_proemial"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Ares",
+  "volume": 1,
+  "issue": "2",
+  "year": "2006",
+  "label": "Ares #2",
+  "citedBy": [
+   "d_mikaboshi"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Eternals (Neil Gaiman, 2006)",
+  "year": "2006",
+  "citedBy": [
+   "x_tiamut"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Incredible Hulk",
+  "volume": 2,
+  "issue": "92",
+  "year": "2006",
+  "label": "Incredible Hulk vol. 2 #92",
+  "citedBy": [
+   "p_sakaar"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Annihilation: Conquest - Starlord",
+  "volume": 1,
+  "issue": "1",
+  "year": "2007",
+  "label": "Annihilation: Conquest - Starlord #1",
+  "citedBy": [
+   "g_guardians"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Annihilation: Conquest",
+  "volume": 1,
+  "issue": "1",
+  "year": "2007",
+  "label": "Annihilation: Conquest #1",
+  "citedBy": [
+   "e_conquest"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Nova",
+  "volume": 4,
+  "issue": "8",
+  "year": "2007",
+  "label": "Nova vol. 4 #8",
+  "citedBy": [
+   "p_knowhere"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Adam: Legend of the Blue Marvel",
+  "volume": 1,
+  "issue": "1",
+  "year": "2008",
+  "label": "Adam: Legend of the Blue Marvel #1",
+  "citedBy": [
+   "x_blue"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Secret Invasion",
+  "volume": 1,
+  "issue": "1",
+  "year": "2008",
+  "label": "Secret Invasion #1",
+  "citedBy": [
+   "e_secretinv"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Dark Reign: Fantastic Four",
+  "volume": 1,
+  "issue": "5",
+  "year": "2009",
+  "label": "Dark Reign: Fantastic Four #5",
+  "citedBy": [
+   "g_reeds"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Eternals",
+  "volume": 4,
+  "issue": "7",
+  "year": "2009",
+  "label": "Eternals vol. 4 #7",
+  "citedBy": [
+   "x_fulcrum"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Realm of Kings",
+  "volume": 1,
+  "issue": "1",
+  "year": "2009",
+  "label": "Realm of Kings #1",
+  "citedBy": [
+   "p_cancerverse"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "War of Kings",
+  "volume": 1,
+  "issue": "1",
+  "year": "2009",
+  "label": "War of Kings #1",
+  "citedBy": [
+   "e_warkings"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thanos Imperative",
+  "volume": 1,
+  "issue": "1",
+  "year": "2010",
+  "label": "Thanos Imperative #1",
+  "citedBy": [
+   "d_manyangled",
+   "e_imperative"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thanos Imperative: Devastation",
+  "volume": 1,
+  "issue": "1",
+  "year": "2011",
+  "label": "Thanos Imperative: Devastation #1",
+  "citedBy": [
+   "g_annihilators"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Vengeance",
+  "volume": 1,
+  "issue": "1",
+  "year": "2011",
+  "label": "Vengeance #1",
+  "citedBy": [
+   "x_america"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Avengers",
+  "volume": 5,
+  "issue": "1",
+  "year": "2012",
+  "label": "Avengers vol. 5 #1",
+  "citedBy": [
+   "x_exnihilo",
+   "x_abyss",
+   "x_aleph"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Avengers",
+  "volume": 5,
+  "issue": "2",
+  "year": "2012",
+  "label": "Avengers vol. 5 #2",
+  "citedBy": [
+   "g_builders"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Avengers vs. X-Men",
+  "volume": 1,
+  "issue": "1",
+  "year": "2012",
+  "label": "Avengers vs. X-Men #1",
+  "citedBy": [
+   "e_avx"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Guardians of the Galaxy",
+  "volume": 3,
+  "issue": "7",
+  "year": "2013",
+  "label": "Guardians of the Galaxy vol. 3 #7",
+  "citedBy": [
+   "p_heven"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Hunger",
+  "volume": 1,
+  "issue": "1",
+  "year": "2013",
+  "label": "Hunger #1",
+  "citedBy": [
+   "e_hunger"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Infinity",
+  "volume": 1,
+  "issue": "1",
+  "year": "2013",
+  "label": "Infinity #1",
+  "citedBy": [
+   "e_infinity"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "New Avengers (2013)",
+  "year": "2013",
+  "citedBy": [
+   "x_illum"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "New Avengers (Hickman, 2013)",
+  "volume": 1,
+  "issue": "2",
+  "year": "2013",
+  "label": "New Avengers (Hickman, 2013) #2",
+  "citedBy": [
+   "x_blackp"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "New Avengers (Hickman, 2013)",
+  "volume": 1,
+  "issue": "6",
+  "year": "2013",
+  "label": "New Avengers (Hickman, 2013) #6",
+  "citedBy": [
+   "x_mapmak"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "New Avengers (Jonathan Hickman, 2013-15)",
+  "year": "2013",
+  "citedBy": [
+   "x_rabum"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "New Avengers",
+  "volume": 3,
+  "issue": "8",
+  "year": "2013",
+  "label": "New Avengers vol. 3 #8",
+  "citedBy": [
+   "g_blackorder"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thor: God of Thunder",
+  "volume": 1,
+  "issue": "2",
+  "year": "2013",
+  "label": "Thor: God of Thunder #2",
+  "citedBy": [
+   "x_allblack",
+   "x_gorr"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Original Sin",
+  "volume": 1,
+  "issue": "1",
+  "year": "2014",
+  "label": "Original Sin #1",
+  "citedBy": [
+   "e_originsin"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Silver Surfer (2014)",
+  "volume": 1,
+  "issue": "1",
+  "year": "2014",
+  "label": "Silver Surfer (2014) #1",
+  "citedBy": [
+   "x_neverq"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Avengers (2015)",
+  "volume": 1,
+  "issue": "0",
+  "year": "2015",
+  "label": "Avengers (2015) #0",
+  "citedBy": [
+   "x_ultimates"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "New Avengers (2015)",
+  "volume": 1,
+  "issue": "2",
+  "year": "2015",
+  "label": "New Avengers (2015) #2",
+  "citedBy": [
+   "x_omnimax"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Secret Wars (2015)",
+  "year": "2015",
+  "citedBy": [
+   "x_doom"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "The Ultimates (Al Ewing, 2015)",
+  "year": "2015",
+  "citedBy": [
+   "x_ultimates"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thanos (2016)",
+  "volume": 1,
+  "issue": "8",
+  "year": "2016",
+  "label": "Thanos (2016) #8",
+  "citedBy": [
+   "x_quarry"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Legacy",
+  "volume": 1,
+  "issue": "1",
+  "year": "2017",
+  "label": "Marvel Legacy #1",
+  "citedBy": [
+   "x_darkcel",
+   "x_zgreb"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Ultimates² (2017)",
+  "year": "2017",
+  "citedBy": [
+   "x_ivory"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Ultimates²",
+  "volume": 1,
+  "issue": "3",
+  "year": "2017",
+  "label": "Ultimates² #3",
+  "citedBy": [
+   "x_logos"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Avengers (2018)",
+  "year": "2018",
+  "citedBy": [
+   "x_darkcel"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Avengers (Jason Aaron, 2018)",
+  "volume": 1,
+  "issue": "3",
+  "year": "2018",
+  "label": "Avengers (Jason Aaron, 2018) #3",
+  "citedBy": [
+   "x_progen"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Immortal Hulk (2018)",
+  "year": "2018",
+  "citedBy": [
+   "x_banner"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Immortal Hulk (Al Ewing, 2018-21)",
+  "year": "2018",
+  "citedBy": [
+   "x_gamma"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Infinity Wars",
+  "volume": 1,
+  "issue": "1",
+  "year": "2018",
+  "label": "Infinity Wars #1",
+  "citedBy": [
+   "e_infwars"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Venom (2018)",
+  "year": "2018",
+  "citedBy": [
+   "x_symbiote",
+   "x_allblack"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Guardians of the Galaxy (Donny Cates, 2019)",
+  "year": "2019",
+  "citedBy": [
+   "x_quarry"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Empyre",
+  "volume": 1,
+  "issue": "1",
+  "year": "2020",
+  "label": "Empyre #1",
+  "citedBy": [
+   "e_empyre"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Thor",
+  "volume": 6,
+  "issue": "1",
+  "year": "2020",
+  "label": "Thor vol. 6 #1",
+  "citedBy": [
+   "h_thor",
+   "d_blackwinter"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Defenders (2021)",
+  "year": "2021",
+  "citedBy": [
+   "x_neverq",
+   "x_galan",
+   "x_defenders"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Defenders (2021)",
+  "volume": 1,
+  "issue": "1",
+  "year": "2021",
+  "label": "Defenders (2021) #1",
+  "citedBy": [
+   "x_taaia"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Defenders (2021)",
+  "volume": 1,
+  "issue": "3",
+  "year": "2021",
+  "label": "Defenders (2021) #3",
+  "citedBy": [
+   "x_omnimax"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Defenders (2021)",
+  "volume": 1,
+  "issue": "4",
+  "year": "2021",
+  "label": "Defenders (2021) #4",
+  "citedBy": [
+   "x_lifeb"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "King in Black",
+  "volume": 1,
+  "issue": "5",
+  "year": "2021",
+  "label": "King in Black #5",
+  "citedBy": [
+   "x_venom"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "A.X.E.: Judgment Day",
+  "volume": 1,
+  "issue": "1",
+  "year": "2022",
+  "label": "A.X.E.: Judgment Day #1",
+  "citedBy": [
+   "e_judgment"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Defenders: Beyond (2022)",
+  "year": "2022",
+  "citedBy": [
+   "x_loki",
+   "x_defenders",
+   "x_omegac"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Ultimate Invasion (Hickman, 2023)",
+  "year": "2023",
+  "citedBy": [
+   "x_maker"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Bible Tales for Young Folk",
+  "volume": 1,
+  "issue": "1",
+  "year": null,
+  "label": "Bible Tales for Young Folk #1",
+  "citedBy": [
+   "x_mephisto"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Cloak and Dagger",
+  "volume": 2,
+  "issue": "1",
+  "year": null,
+  "label": "Cloak and Dagger vol. 2 #1",
+  "citedBy": [
+   "x_darkforce"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Longshot",
+  "volume": 1,
+  "issue": "1",
+  "year": null,
+  "label": "Longshot #1",
+  "citedBy": [
+   "x_mojo"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Boy",
+  "volume": 1,
+  "issue": "2",
+  "year": null,
+  "label": "Marvel Boy #2",
+  "citedBy": [
+   "x_quantum"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Feature",
+  "volume": 1,
+  "issue": "1",
+  "year": null,
+  "label": "Marvel Feature #1",
+  "citedBy": [
+   "x_defenders"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Super Heroes Secret Wars",
+  "volume": 1,
+  "issue": "1",
+  "year": null,
+  "label": "Marvel Super Heroes Secret Wars #1",
+  "citedBy": [
+   "x_battle",
+   "x_beyonder"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Mystic Comics",
+  "volume": 1,
+  "issue": "1",
+  "year": null,
+  "label": "Mystic Comics #1",
+  "citedBy": [
+   "x_symbiote"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Ultimate Marvel Team Up",
+  "volume": 1,
+  "issue": "4",
+  "year": null,
+  "label": "Ultimate Marvel Team Up #4",
+  "citedBy": [
+   "x_maker"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Ultimates 2",
+  "volume": 2,
+  "issue": "3",
+  "year": null,
+  "label": "Ultimates 2 vol. 2 #3",
+  "citedBy": [
+   "x_logos"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Venus",
+  "volume": 1,
+  "issue": "6",
+  "year": null,
+  "label": "Venus #6",
+  "citedBy": [
+   "x_loki"
+  ]
+ }
+]

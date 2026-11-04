@@ -10,7 +10,8 @@ Dernière mise à jour : 2026-11-04 · Dépôt : `lukecage2003/marvel-primeston`
 - Mises à jour « pas reçues » : `data.js` et `images.js` ne sont pas versionnés (cache Pages de 10 min). Correctif prévu à l'étape 0 de la feuille de route.
 - Aucun code modifié pendant cette session d'audit. Branche poussée, `main` inchangée (pas de mise en ligne).
 - Étape 0 faite (sur la branche) : versions `?v=` (`tools/stamp.js`) et 137 fiches passées à « À vérifier » (niveau `u`). Fiabilité : 87 canon, 1 déduit, 137 à vérifier. Tests : 26 réussis, 0 échoué.
-- **Prochaine étape précise :** mise en ligne de l'étape 0 (accord requis), puis étape 1 (5 niveaux et contrôle des 87 fiches « canon »).
+- Étape 1 faite et publiée (accord du propriétaire) : 5 niveaux et « À vérifier » ; plus aucune fiche « canon » sans vérification dans les comics (224 à vérifier, 1 interprétation, plus les théories des cartes). Sources cliquables, `comics.json` (211 références), portraits en fichiers séparés. Tests : 28 réussis, 0 échoué (29 avec --video).
+- **Prochaine étape précise :** étape 2 (socle Astro et accueil), à commencer par le script de migration des données vers des fichiers de contenu validés.
 
 ## 1. Ce que contient le dépôt
 `marvel-primeston` est une **copie propre, sans historique**, de l'atlas. L'ancien dépôt `matthias` n'existe plus sous ce nom. Il contenait aussi Tech Shield, avec des secrets et des CV de tiers, `site v3/` et un PDF de 56 Mo ; rien de tout cela n'est repris ici.
@@ -21,7 +22,8 @@ Dernière mise à jour : 2026-11-04 · Dépôt : `lukecage2003/marvel-primeston`
 ## 2. Architecture actuelle de l'atlas
 - `index.html` (environ 145 Ko) contient tout le site : CSS et un seul script (`const SRC…`) qui gère les 8 cartes SVG, le Codex, le panneau, la recherche, les exports PNG/SVG/HTML, la vidéo sur canvas, les miniatures, le quiz et l'i18n.
 - `data.js` : `window.DB.E` (336 fiches indexées avec les cartes) et `DB.T` (chronologie).
-- `images.js` (611 Ko, en base64) : portraits et logo. Il est chargé de façon synchrone.
+- `images.js` (74 Ko) : chemins des portraits `img/*.webp` (chargés à la demande) et logo Primestone intégré. `img/credits.json` : crédits.
+- `comics.json` : références citées, générées par `tools/comics.js`. `tools/stamp.js` : versions `?v=` (cache).
 - Pas de build, pas de dépendance. Le site marche hors ligne et peut exporter un HTML autonome (inline `data.js` et `images.js`).
 - Services externes : l'API `marvel.fandom.com` (images, CORS `origin=*`) et Google Fonts. Il n'y a ni backend, ni compte, ni donnée personnelle.
 - Stockage local : `cm_img` (images importées par l'utilisateur), `cm_wiki2` (cache du wiki), `cm_won`, `cm_lang`.

@@ -147,7 +147,7 @@ svg#svg:active{cursor:grabbing}
 #toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);z-index:90;padding:9px 16px;border-radius:3px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);box-shadow:4px 4px 0 var(--mag);font:italic 15px var(--serif);opacity:0;transition:.4s;pointer-events:none}
 #bcodex{background:var(--paper);color:var(--ink);box-shadow:3px 3px 0 var(--cyan)}
 #panel .cert{display:inline-block;margin:2px 0 6px;font:400 13px var(--serif);padding:3px 8px;border:1.5px solid var(--ink);border-radius:3px}#panel .cert b{font:800 14px var(--disp)}
-.cert.c{background:#bff3ff}.cert.d{background:#fff0a8}.cert.t{background:#ffc7da}.cert.u{background:#e2ddd0}#panel .cert:empty{display:none}
+.cert.c{background:#bff3ff}.cert.d{background:#fff0a8}.cert.t{background:#ffc7da}.cert.u{background:#e2ddd0}.cert.o{background:#c8d8ff}.cert.x{background:#ffb38a}#panel .cert:empty{display:none}
 #codex{position:fixed;inset:0;z-index:70;background:rgba(12,12,10,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:none;overflow:auto;overscroll-behavior:contain}
 #codex.show{display:block;animation:pop .3s}
 .cx-in{max-width:1240px;margin:0 auto;padding:30px 22px 80px}
@@ -215,7 +215,7 @@ svg#svg:active{cursor:grabbing}
 <div id="tip"></div><div id="toast"></div>
 <div id="codex" role="dialog" aria-label="Codex"><div class="cx-in"><div class="cx-h"><div><h2>Le Codex</h2><p id="cxn"></p></div><input id="cxq" placeholder="Filtrer par nom, comic ou mot-clé" autocomplete="off"><button id="cxp">Imprimer ou PDF</button><button id="cxx">Fermer ✕</button></div>
  <div id="cxf"></div><div id="cxc"></div>
- <details class="cx-m"><summary>Comment lire les niveaux de certitude</summary><p><b>Canon</b> : montré ou dit explicitement dans un comic Marvel, numéro à l’appui. <b>Déduit</b> : conclusion solide tirée de plusieurs comics, mais jamais formulée telle quelle. <b>Théorie</b> : construction de fans, comme les axes des Ur-Diviseurs ou la Qlippoth, cohérente mais non officielle. Les sources indiquent la première apparition ou l’arc qui fait référence.</p></details>
+ <details class="cx-m"><summary>Comment lire les niveaux de certitude</summary><p><b>Canon</b> : montré ou dit dans un comic Marvel, numéro et page vérifiés. <b>Source officielle</b> : guide ou manuel officiel Marvel. <b>Interprétation</b> : conclusion argumentée à partir de plusieurs comics. <b>Théorie</b> : construction de fans, comme les axes des Ur-Diviseurs ou la Qlippoth, cohérente mais non officielle. <b>Contesté</b> : les sources se contredisent. <b>À vérifier</b> : la fiche cite ses comics de référence et sa première apparition relevée sur un wiki communautaire (marvel.fandom.com), mais sa description n’a pas encore été confrontée aux comics eux-mêmes. Aucune fiche n’est marquée Canon tant que cette vérification n’est pas faite.</p></details>
  <div id="cxg"></div></div></div>
 <div id="dl" role="dialog" aria-label="Télécharger"><h3>Télécharger cette carte</h3><p>La carte entière, telle qu’elle est affichée maintenant.</p>
  <button data-x="png">Image PNG haute définition<small>Pour une publication, un fond d’écran, une miniature</small></button>
@@ -246,8 +246,8 @@ svg#svg:active{cursor:grabbing}
  <label class="snd"><input type="checkbox" id="thh" checked> Trame BD sur les bords</label>
  <button id="thd" class="th-go">Télécharger cette miniature</button><button id="thd2">Télécharger les deux formats</button><button id="thx">Fermer</button></div></div></div>
 <div id="vov" role="dialog" aria-label="Création de la vidéo"><canvas id="vcv"></canvas><p id="vmsg"></p><div id="vbar"><i></i></div><button id="vcancel">Annuler</button></div>
-<script src="data.js?v=a2ffa96024"></script>
-<script src="images.js?v=b1624f4159"></script>
+<script src="data.js?v=9043780562"></script>
+<script src="images.js?v=85653a0e67"></script>
 <script>
 const SRC='<!doctype html>\n'+document.documentElement.outerHTML,SOLO=window.SOLO??null;
 const $=s=>document.querySelector(s),NS='http://www.w3.org/2000/svg',TAU=Math.PI*2;
@@ -256,6 +256,9 @@ function E(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setA
 function T(p,x,y,txt,cls,anc='middle',lh=16){const t=E('text',{x,y,class:cls,'text-anchor':anc},p);String(txt).split('\n').forEach((l,i)=>{const s=E('tspan',{x,dy:i?lh:0},t);s.textContent=l});return t}
 /* échappe tout texte venu de l'extérieur (API du wiki) avant de l'insérer en HTML */
 const escH=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+/* sources : chaque référence devient un lien de recherche sur le wiki (aucune adresse de page inventée) */
+const srcHTML=src=>String(src).split(' · ').map(x=>{const t=x.trim(),q=t.replace(/\s*—.*$/,'').replace(/\s*\([^)]*\)\s*/g,' ').replace(/1ʳᵉ apparition selon marvel\.fandom\.com :\s*/,'').trim();
+ return q?`<a href="https://marvel.fandom.com/wiki/Special:Search?query=${encodeURIComponent(q)}" target="_blank" rel="noopener">${escH(t)}</a>`:escH(t)}).join(' · ');
 const rng=s=>()=>(s=s*16807%2147483647)/2147483647;
 
 /* ---------- DEFS ---------- */
@@ -618,16 +621,16 @@ const MAPS=[
  {n:'Le Réseau',sub:'Tout est lié',b:buildNet},
  {n:'La Chronologie',sub:'Soixante ans de cosmos',b:buildTime,dyn:1}];
 const CATS={cos:['Cosmos et firmaments','#ff6b5a'],abs:['Entités abstraites','#FFE500'],cel:['Célestes et puissances','#ffb21f'],pow:['Forces et énergies','#ff7a3d'],obj:['Objets de pouvoir','#b98bff'],pla:['Lieux et dimensions','#7fe0a0'],per:['Personnages','#f3ead2'],grp:['Groupes','#ffa45c'],dark:['Ténèbres','#a58bd8'],evt:['Événements','#fff503']};
-const CERT={c:['Canon','confirmé dans les comics'],d:['Déduit','interprétation solide des comics'],t:['Théorie','lecture de fans, non officielle'],u:['À vérifier','première apparition relevée sur un wiki communautaire ; description pas encore confrontée aux comics']};
+const CERT={c:['Canon','montré ou dit dans un comic, numéro et page vérifiés'],o:['Source officielle','guide ou manuel officiel Marvel'],d:['Interprétation','conclusion argumentée à partir de plusieurs comics'],t:['Théorie','hypothèse ou construction de fans, non officielle'],x:['Contesté','les sources se contredisent'],u:['À vérifier','première apparition relevée sur un wiki communautaire ; description pas encore confrontée aux comics']};
 const DBE=(window.DB||{}).E||{},DBT=(window.DB||{}).T||[],IDX={},RELS={},put=(id,m,o)=>IDX[id]=Object.assign({m},o);
-COS.forEach(r=>put(r[0],0,{t:r[1],s:r[2].replace('\n',' '),d:r[3],cat:'cos',col:r[0]=='bw'?'#8a6a4a':'#e2493f',cert:'c'}));
-TREE.forEach(r=>put(r[0],1,{t:r[4].replace(/^[\dQ]+\. /,''),s:r[5]||'',d:r[6]||'',cat:'pla',col:r[3]=='mv'?'#e2493f':r[3]||'#555',cert:!r[3]||r[2]>5?'t':'c',u:!r[3]}));
+COS.forEach(r=>put(r[0],0,{t:r[1],s:r[2].replace('\n',' '),d:r[3],cat:'cos',col:r[0]=='bw'?'#8a6a4a':'#e2493f',cert:'u'}));
+TREE.forEach(r=>put(r[0],1,{t:r[4].replace(/^[\dQ]+\. /,''),s:r[5]||'',d:r[6]||'',cat:'pla',col:r[3]=='mv'?'#e2493f':r[3]||'#555',cert:!r[3]||r[2]>5?'t':'u',u:!r[3]}));
 UR.forEach(r=>put(r[0],2,{t:r[1],s:r[2],d:r[5],cat:'abs',col:r[4],cert:'d'}));
 FIR.forEach((r,i)=>put('f'+i,3,{t:(i+1)+(i?'ᵉ':'ᵉʳ')+' Firmament : '+r[0].replace('\n',' '),s:'',d:r[1],cat:'cos',col:r[2],cert:i==8?'t':'d'}));
-OM.forEach(r=>put(r[0],4,{t:r[1],s:r[2],d:r[3],cat:r[0]=='god'||r[0]=='devil'?'abs':'pla',col:r[7],cert:{manif:'t',shore:'d',hyper:'d',under:'d'}[r[0]]||'c'}));
+OM.forEach(r=>put(r[0],4,{t:r[1],s:r[2],d:r[3],cat:r[0]=='god'||r[0]=='devil'?'abs':'pla',col:r[7],cert:{manif:'t',shore:'d',hyper:'d',under:'d'}[r[0]]||'u'}));
 HIER.forEach(r=>put(r[1],5,{t:r[2],s:r[3],d:r[4],cat:['abs','abs','abs','pow','cel','dark'][r[0]],col:r[5],cert:'d'}));
 Object.entries(DBE).forEach(([id,r])=>put(id,6,{t:r[0],en:r[1],cat:r[2],s:r[3],d:r[4],src:r[5],cert:r[6],rel:r[7],fact:r[8],col:CATS[r[2]][1]}));
-DBT.forEach((r,i)=>put('e'+i,7,{t:r[1],s:String(Math.floor(r[0])),d:r[2],src:r[3],rel:r[4],cat:'evt',col:'#fff503',cert:'c',yr:r[0]}));
+DBT.forEach((r,i)=>put('e'+i,7,{t:r[1],s:String(Math.floor(r[0])),d:r[2],src:r[3],rel:r[4],cat:'evt',col:'#fff503',cert:'u',yr:r[0]}));
 const link=(a,b)=>{if(a==b||!IDX[a]||!IDX[b])return;(RELS[a]=RELS[a]||new Set).add(b);(RELS[b]=RELS[b]||new Set).add(a)};
 Object.entries(IDX).forEach(([id,x])=>((EX[id]?EX[id][1]:x.rel)||'').split(' ').forEach(b=>b&&link(id,b)));
 const FMTS=[['free','Libre'],['916','TikTok 9:16'],['169','YouTube 16:9'],['45','Insta 4:5'],['11','1:1']];
@@ -662,7 +665,7 @@ function showInfo(){const n=C.nodes[S.sel],p=$('#panel'),cap=$('#cap');
  p.querySelector('.d').textContent=n.d||'Cette sphère n’a pas encore été rattachée à un lieu connu de la cosmologie Marvel. Une case vide… pour une révélation future ?';
  const ob=p.querySelector('.orbp');ob.style.setProperty('--c',n.col||'#555');ob.style.background=n.img?`center/cover url(${n.img})`:'';$('#bimgr').style.display=USER[n.id]?'':'none';const wk=!USER[n.id]&&wikiOf(n.id);
  p.querySelector('.tags').innerHTML=(n.tags||[]).map(t=>`<span>${t}</span>`).join('');
- p.querySelector('.fact').textContent=n.fact||'';p.querySelector('.src').innerHTML=(n.src?'<b>Où le lire</b>'+n.src:'')+(wk?`<br><a href="https://marvel.fandom.com/wiki/${encodeURIComponent(wk.t.replace(/ /g,'_'))}" target="_blank" rel="noopener">Image : ${escH(wk.t)}, wiki Marvel</a>`:'');p.querySelector('.src').style.display=n.src||wk?'':'none';
+ p.querySelector('.fact').textContent=n.fact||'';p.querySelector('.src').innerHTML=(n.src?'<b>Où le lire</b>'+srcHTML(n.src):'')+(wk?`<br><a href="https://marvel.fandom.com/wiki/${encodeURIComponent(wk.t.replace(/ /g,'_'))}" target="_blank" rel="noopener">Image : ${escH(wk.t)}, wiki Marvel</a>`:'');p.querySelector('.src').style.display=n.src||wk?'':'none';
  const RL=(n.rel||[]).filter(r=>IDX[r]&&(SOLO==null||IDX[r].m==SOLO));p.querySelector('.rl').innerHTML=RL.length?'<b>À voir aussi</b>'+RL.map(r=>`<button data-go="${r}">${IDX[r].t} <span>(${MAPS[IDX[r].m].n})</span></button>`).join(''):'';
  p.classList.add('show')}
 function go(id){const x=IDX[id];if(!x||(SOLO!=null&&x.m!=SOLO))return;stopTour();const f=()=>select(C.nodes.findIndex(n=>n.id==id));if(x.m!=S.m){svg.style.opacity=0;setTimeout(()=>{render(x.m);f();svg.style.opacity=1},300)}else f()}
@@ -749,7 +752,7 @@ async function svgOut(){const[a,b,w,h]=bounds,p=Math.max(w,h)*.07,X=a-p,Y=b-p,W=
  const bg=E('g',{}),first=c.querySelector('g');E('rect',{x:X,y:Y,width:W,height:H,fill:'url(#bgG)'},bg);
  for(let i=0;i<420;i++)E('circle',{cx:X+R()*W,cy:Y+R()*H,r:(R()**3*1.8+.3)*W/1400,fill:R()<.15?'#ffd9b0':'#fff',opacity:.2+R()*.7},bg);
  c.insertBefore(bg,first);
- for(const im of c.querySelectorAll('image[href^="http"]'))try{const bl=await(await fetch(im.getAttribute('href'))).blob();im.setAttribute('href',await new Promise(r=>{const f=new FileReader();f.onload=()=>r(f.result);f.readAsDataURL(bl)}))}catch(e){im.setAttribute('href',(window.IMG||{})[im.dataset.id]||'')}const st=document.createElementNS(NS,'style');st.textContent=(await fontCSS())+document.querySelector('style').textContent;c.insertBefore(st,c.firstChild);
+ for(const im of c.querySelectorAll('image:not([href^="data:"])'))try{const bl=await(await fetch(im.getAttribute('href'))).blob();im.setAttribute('href',await new Promise(r=>{const f=new FileReader();f.onload=()=>r(f.result);f.readAsDataURL(bl)}))}catch(e){im.setAttribute('href',(window.IMG||{})[im.dataset.id]||'')}const st=document.createElementNS(NS,'style');st.textContent=(await fontCSS())+document.querySelector('style').textContent;c.insertBefore(st,c.firstChild);
  E('text',{x:X+W-p*.4,y:Y+H-p*.35,'text-anchor':'end',class:'big',style:`font-size:${W/45}px`},c).textContent='PRIMESTONE · COSMOLOGIE MARVEL · '+MAPS[S.m].n.toUpperCase();
  return{s:'<?xml version="1.0" encoding="UTF-8"?>\n'+new XMLSerializer().serializeToString(c),W,H}}
 async function exp(x){$('#dl').classList.remove('show');const n=slug('cosmologie marvel '+MAPS[S.m].n);
@@ -760,9 +763,11 @@ async function exp(x){$('#dl').classList.remove('show');const n=slug('cosmologie
  if(x=='png'){toast('Rendu de l’image en haute définition…');const o=await svgOut(),k=4000/Math.max(o.W,o.H),cv=document.createElement('canvas'),img=new Image();
   cv.width=Math.round(o.W*k);cv.height=Math.round(o.H*k);img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(o.s);
   try{await img.decode();cv.getContext('2d').drawImage(img,0,0,cv.width,cv.height);cv.toBlob(b=>{dl(b,n+'.png');toast('Image PNG téléchargée ('+cv.width+' × '+cv.height+')')},'image/png')}catch(e){toast('Le rendu PNG a échoué : essayez le SVG.')}}
- const page=m=>new Blob([SRC.replace(/<script src="data\.js(\?v=[0-9a-f]*)?"><\/script>/,'<script>window.DB='+JSON.stringify(window.DB||{})+'<\/script>').replace(/<script src="images\.js(\?v=[0-9a-f]*)?"><\/script>/,'<script>window.IMG='+JSON.stringify(Object.assign({},window.IMG,USER))+';window.BRAND='+JSON.stringify(window.BRAND||{})+'<\/script>').replace(/<script>window\.SOLO=\d+<\/script>/,'').replace('<script>','<script>window.SOLO='+m+'<\/script><script>')],{type:'text/html'});
- if(x=='html'){dl(page(S.m),n+'.html');toast('Page interactive téléchargée')}
- if(x=='all'){if(SOLO!=null)return toast('Ouvrez le site complet pour télécharger les 6 cartes.');MAPS.forEach((m,i)=>setTimeout(()=>dl(page(i),slug('cosmologie marvel '+m.n)+'.html'),i*450));toast('Six pages en cours de téléchargement')}}
+ /* l'export autonome intègre les portraits en data: pour fonctionner hors ligne */
+ const inl=async o=>{const r={};for(const [k,v] of Object.entries(o||{}))try{r[k]=/^data:/.test(v)?v:await toData(v)}catch(e){r[k]=v}return r};
+ const page=async m=>{const IM=await inl(Object.assign({},window.IMG,USER));return new Blob([SRC.replace(/<script src="data\.js(\?v=[0-9a-f]*)?"><\/script>/,'<script>window.DB='+JSON.stringify(window.DB||{})+'<\/script>').replace(/<script src="images\.js(\?v=[0-9a-f]*)?"><\/script>/,'<script>window.IMG='+JSON.stringify(IM)+';window.BRAND='+JSON.stringify(window.BRAND||{})+'<\/script>').replace(/<script>window\.SOLO=\d+<\/script>/,'').replace('<script>','<script>window.SOLO='+m+'<\/script><script>')],{type:'text/html'})};
+ if(x=='html'){dl(await page(S.m),n+'.html');toast('Page interactive téléchargée')}
+ if(x=='all'){if(SOLO!=null)return toast('Ouvrez le site complet pour télécharger les 6 cartes.');for(let i=0;i<MAPS.length;i++){dl(await page(i),slug('cosmologie marvel '+MAPS[i].n)+'.html');await new Promise(r=>setTimeout(r,450))}toast('Six pages en cours de téléchargement')}}
 $('#bdl').onclick=e=>{e.stopPropagation();const vw=$('#vwhat'),cur=vw.value;vw.innerHTML=`<option value="map">Cette carte : ${MAPS[S.m].n}</option>`+(SOLO==null?'<option value="all">Présentation complète : les 8 cartes</option>'+Object.entries(CATS).map(([k,[n]])=>`<option value="cat:${k}">Catégorie : ${n}</option>`).join(''):'');if([...vw.options].some(o=>o.value==cur))vw.value=cur;$('#dl').classList.toggle('show')};
 $('#vcancel').onclick=()=>VSTOP=true;
 $('#vmus').onchange=async e=>{const f=e.target.files[0];if(!f)return;MUS=await f.arrayBuffer();$('#musn').textContent='Musique : '+f.name+' (cliquez pour changer)';$('#dl').classList.add('show');toast('Musique ajoutée aux prochaines vidéos')};
@@ -795,7 +800,7 @@ async function snap(vb,W,H,i){if(i>=0)ensureKr(C.nodes[i]);const c=svg.cloneNode
  const bg=E('g',{});E('rect',{x:vb[0]-vb[2],y:vb[1]-vb[3],width:vb[2]*3,height:vb[3]*3,fill:'#0e0e0e'},bg);
  STARS.forEach(([x,y,r,o])=>{if(x>vb[0]-9&&x<vb[0]+vb[2]+9&&y>vb[1]-9&&y<vb[1]+vb[3]+9)E('circle',{cx:x,cy:y,r,fill:'#fff',opacity:o},bg)});
  c.insertBefore(bg,c.querySelector('g'));const st=document.createElementNS(NS,'style');st.textContent=FCSS+document.querySelector('style').textContent+'*{transition:none!important;animation:none!important}';c.insertBefore(st,c.firstChild);
- for(const im of c.querySelectorAll('image[href^="http"]'))try{im.setAttribute('href',await toData(im.getAttribute('href')))}catch(e){}
+ for(const im of c.querySelectorAll('image:not([href^="data:"])'))try{im.setAttribute('href',await toData(im.getAttribute('href')))}catch(e){}
  const img=await ldImg('data:image/svg+xml;charset=utf-8,'+encodeURIComponent(new XMLSerializer().serializeToString(c))),cv=document.createElement('canvas');
  cv.width=W;cv.height=H;cv.getContext('2d').drawImage(img,0,0,W,H);return cv}
 const ease=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2,cl01=x=>Math.max(0,Math.min(1,x));
@@ -898,7 +903,7 @@ async function makeVideo(key){const[W,H,tag]=VFMT[key],A=W/H,P=A<1,ov=$('#vov'),
    g.translate(x0+bw3/2,y0+bh3/2);g.rotate(-.012);g.translate(-bw3/2,-bh3/2);
    g.fillStyle='#e2493f';g.fillRect(12*U,12*U,bw3,bh3);g.fillStyle='#f3ead2';g.fillRect(0,0,bw3,bh3);g.lineWidth=4*U;g.strokeStyle='#0b0b0b';g.strokeRect(0,0,bw3,bh3);
    let y=pad+34*U;g.textAlign='left';g.font=F(36*U,700);g.fillStyle='#e2493f';g.fillText(n.k,pad,y);
-   const ce=CERT[n.cert];if(ce){const kw=g.measureText(n.k).width+18*U;g.font=F(26*U,700);const cw2=g.measureText(ce[0]).width+18*U;g.fillStyle=({c:'#bff3ff',d:'#fff0a8',t:'#ffc7da',u:'#e2ddd0'})[n.cert];g.fillRect(pad+kw,y-27*U,cw2,36*U);g.strokeRect(pad+kw,y-27*U,cw2,36*U);g.fillStyle='#0b0b0b';g.fillText(ce[0],pad+kw+9*U,y)}
+   const ce=CERT[n.cert];if(ce){const kw=g.measureText(n.k).width+18*U;g.font=F(26*U,700);const cw2=g.measureText(ce[0]).width+18*U;g.fillStyle=({c:'#bff3ff',o:'#c8d8ff',d:'#fff0a8',t:'#ffc7da',x:'#ffb38a',u:'#e2ddd0'})[n.cert];g.fillRect(pad+kw,y-27*U,cw2,36*U);g.strokeRect(pad+kw,y-27*U,cw2,36*U);g.fillStyle='#0b0b0b';g.fillText(ce[0],pad+kw+9*U,y)}
    g.fillStyle='#0b0b0b';g.font=F(tfs,900);TL.forEach(l=>{y+=tfs*.92;g.fillText(l,pad,y)});
    g.font=F(36*U,'italic 400','Newsreader');g.fillStyle='#3a3628';SL.forEach(l=>{y+=46*U;g.fillText(l,pad,y)});y+=14*U;
    g.font=F(32*U,'400','Newsreader');g.fillStyle='#1d1b12';DL.forEach(l=>{y+=44*U;g.fillText(l,pad,y)});
@@ -1021,7 +1026,7 @@ $('#quiz').onclick=e=>{const b=e.target.closest('[data-q]');if(!b)return;const q
 Object.assign(I18N,{'Cosmologie Marvel':'Marvel Cosmology','Un atlas Primestone. Au-delà des héros.':'A Primestone atlas. Beyond the heroes.','Les Cosmos':'The Cosmoses','L’Arbre':'The Tree','Les Axes':'The Axes','Les Firmaments':'The Firmaments','L’Omnivers':'The Omniverse','La Hiérarchie':'The Hierarchy','Le Réseau':'The Network','La Chronologie':'The Timeline',
 'Coupe de la réalité Marvel':'A cross-section of Marvel reality','Du Premier au Huitième Cosmos':'From the First to the Eighth Cosmos','Le Mystère & la Qlippoth':'The Mystery & the Qlippoth','Les huit Ur-Diviseurs':'The eight Ur-Dividers','Neuf firmaments, un seul récit':'Nine firmaments, one story','Qui domine le cosmos ?':'Who rules the cosmos?','Soixante ans de cosmos':'Sixty years of cosmos','Tout est lié':'Everything is connected',
 'Interface du haut':'Top interface','Boutons':'Buttons','Légende et interface du bas':'Caption and bottom interface','Changer l’image':'Change image','Image d’origine':'Original image','Miniature':'Thumbnail','◀ Précédent':'◀ Previous','Suivant ▶':'Next ▶','▶ Tour':'▶ Cinematic','cinématique':' tour','Libre':'Free','Épuré':'Clean','Zones TikTok':'TikTok zones','● Filmer':'● Record','Images wiki':'Wiki images','⤓ Télécharger':'⤓ Download','Espace':'Space','lancer le tour,':'start the tour,','chercher,':'search,','format':'format',
-'Le Codex':'The Codex','Imprimer ou PDF':'Print or PDF','Fermer ✕':'Close ✕','Comment lire les niveaux de certitude':'How to read the certainty levels','Canon':'Canon','Déduit':'Inferred','Théorie':'Theory','À vérifier':'To verify','première apparition relevée sur un wiki communautaire ; description pas encore confrontée aux comics':'first appearance taken from a community wiki; description not yet checked against the comics',': première apparition relevée sur un wiki communautaire ; description pas encore confrontée aux comics':': first appearance taken from a community wiki; description not yet checked against the comics',
+'Le Codex':'The Codex','Imprimer ou PDF':'Print or PDF','Fermer ✕':'Close ✕','Comment lire les niveaux de certitude':'How to read the certainty levels','Canon':'Canon','Déduit':'Inferred','Théorie':'Theory','Interprétation':'Interpretation','Source officielle':'Official source','Contesté':'Contested','À vérifier':'To verify','montré ou dit dans un comic, numéro et page vérifiés':'shown or stated in a comic, issue and page checked','guide ou manuel officiel Marvel':'official Marvel guide or handbook','conclusion argumentée à partir de plusieurs comics':'reasoned conclusion from several comics','hypothèse ou construction de fans, non officielle':'hypothesis or fan construction, unofficial','les sources se contredisent':'sources contradict each other','première apparition relevée sur un wiki communautaire ; description pas encore confrontée aux comics':'first appearance taken from a community wiki; description not yet checked against the comics',': première apparition relevée sur un wiki communautaire ; description pas encore confrontée aux comics':': first appearance taken from a community wiki; description not yet checked against the comics',
 ': montré ou dit explicitement dans un comic Marvel, numéro à l’appui.':': shown or stated explicitly in a Marvel comic, issue cited.',': conclusion solide tirée de plusieurs comics, mais jamais formulée telle quelle.':': a solid conclusion drawn from several comics, but never stated as such.',
 ': construction de fans, comme les axes des Ur-Diviseurs ou la Qlippoth, cohérente mais non officielle. Les sources indiquent la première apparition ou l’arc qui fait référence.':': a fan construction, like the Ur-Divider axes or the Qlippoth, consistent but unofficial. Sources give the first appearance or the reference arc.',
 ': confirmé dans les comics':': confirmed in the comics',': interprétation solide des comics':': solid reading of the comics',': lecture de fans, non officielle':': fan reading, unofficial','confirmé dans les comics':'confirmed in the comics','interprétation solide des comics':'solid reading of the comics','lecture de fans, non officielle':'fan reading, unofficial',
@@ -1093,15 +1098,15 @@ $('#thb').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)
 [0,1].forEach(i=>$('#thf'+i).onchange=async e=>{const f=e.target.files[0];if(!f)return;TH.up[i]=await ldImg(URL.createObjectURL(f));$('#th'+(i+1)).value='up';thLoad(i);e.target.value=''});
 
 /* ---------- codex ---------- */
-const CX={cat:null,cert:new Set(['c','d','t','u']),q:''};
+const CX={cat:null,cert:new Set(['c','o','d','t','x','u']),q:''};
 function codex(on){const el=$('#codex');if(!on){el.classList.remove('show');return}stopTour();el.classList.add('show');
  $('#cxf').innerHTML=`<button class="chip ${CX.cat?'':'on'}" data-cat="">Tout</button>`+Object.entries(CATS).map(([k,[n,c]])=>`<button class="chip ${CX.cat==k?'on':''}" data-cat="${k}" style="--c:${c}">${n}</button>`).join('');
- $('#cxc').innerHTML=Object.entries(CERT).map(([k,[n]])=>`<button class="chip cert ${k} ${CX.cert.has(k)?'on':''}" data-cert="${k}" style="--c:${({c:'#bff3ff',d:'#fff0a8',t:'#ffc7da',u:'#e2ddd0'})[k]}">${n}</button>`).join('');
- const q=CX.q.toLowerCase(),L=Object.entries(IDX).filter(([id,x])=>!x.u&&(SOLO==null||x.m==SOLO)&&(!CX.cat||x.cat==CX.cat)&&CX.cert.has(x.cert||'c')&&(!q||[x.t,x.en,x.s,x.d,x.src||(EX[id]||[])[0]].join(' ').toLowerCase().includes(q)));
+ $('#cxc').innerHTML=Object.entries(CERT).map(([k,[n]])=>`<button class="chip cert ${k} ${CX.cert.has(k)?'on':''}" data-cert="${k}" style="--c:${({c:'#bff3ff',o:'#c8d8ff',d:'#fff0a8',t:'#ffc7da',x:'#ffb38a',u:'#e2ddd0'})[k]}">${n}</button>`).join('');
+ const q=CX.q.toLowerCase(),L=Object.entries(IDX).filter(([id,x])=>!x.u&&(SOLO==null||x.m==SOLO)&&(!CX.cat||x.cat==CX.cat)&&CX.cert.has(x.cert||'u')&&(!q||[x.t,x.en,x.s,x.d,x.src||(EX[id]||[])[0]].join(' ').toLowerCase().includes(q)));
  $('#cxn').textContent=`${L.length} fiches sur ${Object.keys(IDX).length}, réparties en ${Object.keys(CATS).length} catégories`;
  $('#cxg').innerHTML=Object.keys(CATS).map(k=>{const G=L.filter(e=>e[1].cat==k).sort((a,b)=>(a[1].yr||0)-(b[1].yr||0));if(!G.length)return'';
   return`<h3 style="--c:${CATS[k][1]}">${CATS[k][0]} <small style="font:italic 15px var(--serif);color:var(--mute)">${G.length}</small></h3>`+G.map(([id,x])=>{const im=imgOf(id);
-   return`<button class="cxe" data-go="${id}" style="--c:${x.col||CATS[k][1]}"><i ${im?`style="background-image:url('${im}')"`:''}></i><b>${x.t}</b><small>${x.en&&x.en!=x.t?x.en+'. ':''}${x.s||''}</small><em class="cert ${x.cert||'c'}">${CERT[x.cert||'c'][0]}</em></button>`}).join('')}).join('')||'<p style="color:var(--mute);font-style:italic">Aucune fiche ne correspond. Élargissez les filtres ou effacez la recherche.</p>'}
+   return`<button class="cxe" data-go="${id}" style="--c:${x.col||CATS[k][1]}"><i ${im?`style="background-image:url('${im}')"`:''}></i><b>${x.t}</b><small>${x.en&&x.en!=x.t?x.en+'. ':''}${x.s||''}</small><em class="cert ${x.cert||'u'}">${CERT[x.cert||'u'][0]}</em></button>`}).join('')}).join('')||'<p style="color:var(--mute);font-style:italic">Aucune fiche ne correspond. Élargissez les filtres ou effacez la recherche.</p>'}
 $('#bcodex').onclick=()=>codex(1);$('#cxp').onclick=()=>{document.title='Primestone · Codex Cosmologie Marvel'+(CX.cat?' · '+CATS[CX.cat][0]:'');print();document.title='Cosmologie Marvel · Primestone'};$('#cxx').onclick=()=>codex(0);
 $('#cxq').oninput=e=>{CX.q=e.target.value;codex(1)};
 $('#codex').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;

@@ -5,12 +5,12 @@ Principe : **toute affirmation importante est un objet `Claim`** relié à des p
 ## Niveaux de fiabilité (`status`)
 | Code | Libellé | Règle |
 |---|---|---|
-| `canon` | Canon | Montré ou dit explicitement dans une publication Marvel. Il faut au moins une preuve `comic` avec numéro, et une page si elle est connue |
-| `official` | Source officielle secondaire | Guide ou manuel officiel Marvel (ex. *Official Handbook of the Marvel Universe*) |
-| `interpretation` | Interprétation | Conclusion argumentée à partir de plusieurs publications. Les publications citées sont obligatoires |
-| `theory` | Théorie | Hypothèse non confirmée (ex. Qlippoth, Ur-Diviseurs). Son auteur ou son origine est obligatoire |
-| `contested` | Contesté | Les sources se contredisent. Il faut au moins deux preuves opposées |
-| `unverified` | À vérifier | État transitoire : affiché avec un avertissement, jamais présenté comme canon |
+| `canon` (code `c`) | Canon | Montré ou dit explicitement dans une publication Marvel. Il faut au moins une preuve `comic` avec numéro, et une page si elle est connue |
+| `official` (code `o`) | Source officielle secondaire | Guide ou manuel officiel Marvel (ex. *Official Handbook of the Marvel Universe*) |
+| `interpretation` (code `d`) | Interprétation | Conclusion argumentée à partir de plusieurs publications. Les publications citées sont obligatoires |
+| `theory` (code `t`) | Théorie | Hypothèse non confirmée (ex. Qlippoth, Ur-Diviseurs). Son auteur ou son origine est obligatoire |
+| `contested` (code `x`) | Contesté | Les sources se contredisent. Il faut au moins deux preuves opposées |
+| `unverified` (code `u`) | À vérifier | État transitoire : affiché avec un avertissement, jamais présenté comme canon |
 
 **Migration :** les fiches actuelles marquées `c` dont la seule vérification est le champ *First* d'un wiki communautaire passent à `unverified` pour leurs affirmations descriptives. Leur première apparition reste citée avec la source « wiki communautaire ».
 
