@@ -69,7 +69,7 @@ function page({ file, title, desc, body, active }) {
 ${body}
 </div></main>
 <footer class="foot"><div class="wrap">
- <p><b>Marvel Primestone</b> · Au-delà des héros. Projet indépendant de fans, non commercial, consacré à l’analyse des comics Marvel. Personnages, noms et images © Marvel ; images hébergées par le wiki communautaire marvel.fandom.com, créditées sur chaque fiche. Les niveaux de fiabilité sont expliqués dans le <a href="${base}dossier/methode.html">dossier Méthode</a>.</p>
+ <p><b>Marvel Primestone</b> · Au-delà des héros. Projet indépendant de fans, non commercial, consacré à l’analyse des comics Marvel. Personnages, noms et images © Marvel. Illustrations et fiches d’identité : marvel.fandom.com. Les niveaux de fiabilité sont expliqués dans le <a href="${base}dossier/methode.html">dossier Méthode</a>.</p>
 </div></footer>
 <nav class="tabbar" aria-label="Navigation rapide">${TAB.map(([h, l]) => `<a href="${base}${h}"${cur(h)}>${l}</a>`).join('')}</nav>
 <script src="${base}assets/site.js" defer></script>
@@ -126,7 +126,7 @@ for (const c of COMICS) COMIC_BY_LABEL[c.type === 'issue' ? `${c.series}|${c.vol
 const comicOf = part => { const m = part.match(/^(.*?)(?: vol\. (\d+))? #([\w.-]+(?:-\d+)?)(?: \(([^)]*)\))?$/); return COMIC_BY_LABEL[m ? `${m[1].trim()}|${m[2] || 1}|${m[3]}` : part] || null; };
 const srcList = (src, base) => String(src || '').split(' · ').filter(Boolean).map(x => {
   const part = x.replace(/\s*—.*$/, '').replace(/^1ʳᵉ apparition selon marvel\.fandom\.com :\s*/, '').trim(), c = comicOf(part);
-  return `<li>${c ? `<a href="${base}archive.html#${esc(cid(c))}">${esc(x)}</a>` : esc(x)}</li>`;
+  return `<li>${c ? `<a href="${base}archive.html#${esc(cid(c))}">${esc(part)}</a>` : esc(part)}</li>`;
 }).join('');
 
 /* ---------- pages ---------- */
@@ -164,13 +164,10 @@ function buildFiche(id) {
   ${n.fact ? `<p class="fact">${esc(n.fact)}</p>` : ''}
   <h2>Où le lire</h2>
   ${n.src ? `<ul class="srcs">${srcList(n.src, base)}</ul>` : '<p class="note">Aucune source enregistrée pour cette fiche.</p>'}
-  ${n.cert === 'u' ? '<p class="note">Fiche <b>à vérifier</b> : les comics de référence et la première apparition sont indiqués, mais la présentation n’a pas encore été confrontée aux comics eux-mêmes.</p>' : ''}
-  ${n.cert === 't' ? '<p class="note">Cette fiche relève de la <b>théorie</b> : une construction de fans, cohérente mais non officielle.</p>' : ''}
  </div>
  <aside class="idcard" aria-label="Fiche d’identité">
   <h2>Fiche d’identité</h2>
-  ${facts.length || first ? `<dl>${facts.concat(first ? [first] : []).map(([l, v]) => `<div><dt>${esc(l)}</dt><dd>${v.map(esc).join('<br>')}</dd></div>`).join('')}</dl>` : '<p class="muted">Pas de fiche d’identité disponible.</p>'}
-  <p class="credit">${w ? `Fiche d’identité et image : page « ${esc(w.title)} » du wiki communautaire marvel.fandom.com (CC BY-SA), relevées le ${esc(WKDATE)}. Valeurs en anglais, telles que publiées.` : 'Image : collection Primestone.'} Personnages et illustrations © Marvel.</p>
+  ${facts.length || first ? `<dl>${facts.concat(first ? [first] : []).map(([l, v]) => `<div><dt>${esc(l)}</dt><dd>${v.map(x => esc(x.replace(/\bEarth-(\d+)/g, 'Terre-$1'))).join('<br>')}</dd></div>`).join('')}</dl>` : '<p class="muted">Pas de fiche d’identité disponible.</p>'}
  </aside>
 </div>
 ${rels.length ? `<section><h2>Relations</h2><div class="grid three">${rels.map(r => cardBs(r, base)).join('')}</div></section>` : ''}

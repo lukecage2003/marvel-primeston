@@ -258,7 +258,7 @@ function T(p,x,y,txt,cls,anc='middle',lh=16){const t=E('text',{x,y,class:cls,'te
 /* échappe tout texte venu de l'extérieur (API du wiki) avant de l'insérer en HTML */
 const escH=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 /* sources : chaque référence devient un lien de recherche sur le wiki (aucune adresse de page inventée) */
-const srcHTML=src=>String(src).split(' · ').map(x=>escH(x.trim())).join(' · ');   /* sources en texte : on reste sur le site (fiche et archive : liens internes) */
+const srcHTML=src=>String(src).split(' · ').map(x=>escH(x.replace(/\s*—.*$/,'').replace(/^1ʳᵉ apparition selon marvel\.fandom\.com :\s*/,'').trim())).join(' · ');   /* sources en texte : on reste sur le site (fiche et archive : liens internes) */
 /* préférence « réduire les animations » : pas de rotation automatique ni de transitions */
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const rng=s=>()=>(s=s*16807%2147483647)/2147483647;
