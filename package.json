@@ -1,0 +1,14 @@
+{
+  "name": "cosmologie-marvel",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Cosmologie Marvel : atlas interactif Primestone (site statique à la racine, publié par GitHub Pages)",
+  "scripts": {
+    "test": "node tests/atlas/run.js",
+    "test:video": "node tests/atlas/run.js --video"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0"
+  },
+  "license": "UNLICENSED"
+}

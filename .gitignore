@@ -1,0 +1,4 @@
+# Captures de tests : jamais dans le site publié
+*.png
+!og.png
+node_modules/
