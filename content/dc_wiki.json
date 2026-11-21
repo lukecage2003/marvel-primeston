@@ -10025,6 +10025,278 @@
     ]
    ],
    "issue": false
+  },
+  "cal": {
+   "title": "Cal (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/2/2d/Cal_0001.jpg/revision/latest/scale-to-width-down/513?cb=20180307011948",
+   "facts": [
+    [
+     "Nom réel",
+     [
+      "Cal Belloc"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Cal Belloc"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Vertigo Universe"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Sandalphon (formerly)"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "God (grandparent)",
+      "Michael Demiurgos",
+      "(father, deceased)",
+      "Elaine Belloc (sister)",
+      "Briadach (cousin, deceased)",
+      "Takehiko (cousin)",
+      "Angels (uncles and aunts)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Mike Carey",
+      "Peter Gross"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Lucifer #11 (2001)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "eurydice": {
+   "title": "Eurydice (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/e/e0/Eurydice_0001.jpg/revision/latest/scale-to-width-down/370?cb=20150724115142",
+   "facts": [
+    [
+     "Nom réel",
+     [
+      "Eurydice"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Orpheus (husband, deceased)",
+      "Calliope (mother-in-law)",
+      "Oneiros (Dream) (father-in-law, deceased)"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Sandman Special #1 (1991)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "hector": {
+   "title": "Hector Hall (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/f/f9/Doctor_Fate_Hector_Hall_001.jpg/revision/latest/scale-to-width-down/728?cb=20100211193854",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Doctor Fate"
+     ]
+    ],
+    [
+     "Nom réel",
+     [
+      "Hector Sanders Hall"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Silver Scarab, Sandman"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Earth-Two"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Archaeologist",
+      "Agent of Balance"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Justice Society",
+      "Infinity, Inc.",
+      "Sentinels of Magic",
+      "Balancers of Chaos and Order"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Tower of Fate, Salem, Massachusetts"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Original",
+      "Carter Hall (father)",
+      "Shiera Sanders (mother)",
+      "Hippolyta Trevor (wife)",
+      "Daniel Hall (son)",
+      "Derek Trevor (father-in-law, deceased)",
+      "Joan Trevor (mother-in-law)",
+      "Nestor Sanders (maternal great-uncle)",
+      "Unnamed maternal aunt",
+      "Hank Sanders (maternal cousin)",
+      "Cyril Saunders (maternal cousin)",
+      "Michael Saunders (maternal cousin, deceased)",
+      "Trina Saunders (maternal cousin, deceased)",
+      "Kendra Saunders (maternal cousin, deceased)",
+      "Mia Saunders (maternal cousin)",
+      "Post-Reincarnation",
+      "Irwin Hall (paternal grandfather)",
+      "Rae Hall (paternal grandmother)",
+      "Russ Granger (maternal grandfather)",
+      "Marie Granger (maternal grandmother)",
+      "Hank Hall (father)",
+      "Dawn Granger (mother)",
+      "James Penfield (paternal great-uncle)",
+      "Don Hall (paternal uncle, deceased)",
+      "Holly Granger (maternal aunt, deceased)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Roy Thomas",
+      "Jerry Ordway"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "All-Star Squadron #25 (1983)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "lyta": {
+   "title": "Hippolyta Trevor (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/7/72/Hippolyta_Trevor_New_Earth_0001.jpg/revision/latest/scale-to-width-down/900?cb=20251109103322",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Fury"
+     ]
+    ],
+    [
+     "Nom réel",
+     [
+      "Hippolyta \"Lyta\" Trevor-Hall"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Imago"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Adventurer"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Infinity, Inc."
+     ]
+    ],
+    [
+     "Base",
+     [
+      "The Dreaming",
+      "Los Angeles"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Rose Kosmatos (grand aunt)",
+      "George Kosmatos (grand uncle)",
+      "Queen Hippolyta (foster grandmother)",
+      "Helena Kosmatos (mother)",
+      "Arnold Munro (possible father)",
+      "Michael Kosmatos (uncle, deceased)",
+      "Derek Trevor (adoptive father, deceased)",
+      "Joan Dale-Trevor (adoptive mother)",
+      "Carter Hall (father-in-law)",
+      "Shiera Sanders (mother-in-law)",
+      "Hector Hall (husband, deceased)",
+      "Daniel Hall (son, transmogrified)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Roy Thomas",
+      "Dann Thomas",
+      "Ross Andru"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Wonder Woman #300 (1983)"
+     ]
+    ]
+   ],
+   "issue": false
   }
  }
 }

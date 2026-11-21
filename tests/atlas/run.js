@@ -63,10 +63,10 @@ let pass=0,fail=0;const ok=(c,m)=>{c?pass++:fail++;console.log((c?'  ✓ ':'  �
   for(const u of ['index.html','encyclopedie.html','fiche/x_galan.html','chronologie.html','archive.html']){await q.goto(base+u);const o=await q.evaluate(()=>document.documentElement.scrollWidth-innerWidth);if(o>1)pe.push('débordement '+u)}
   ok(!pe.length,'pages éditoriales sans erreur JS ni débordement à 390 px '+pe.slice(0,3));await q.close()}
  L('Univers DC et versions');
- {const cp=require('child_process');for(const [cmd,args,lbl] of [['python3',[path.join(ROOT,'tools/dc_build.py'),'--check'],'data-dc.js à jour (sinon : python3 tools/dc_build.py)'],['node',[path.join(ROOT,'tools/snapshot.js'),'dc','--check'],'content/atlas-dc.json à jour (sinon : node tools/snapshot.js dc)']]){const r=cp.spawnSync(cmd,args);ok(r.status===0,lbl)}}
+ {const cp=require('child_process');for(const [cmd,args,lbl] of [['python3',[path.join(ROOT,'tools/dc_build.py'),'--check'],'data-dc.js à jour (sinon : python3 tools/dc_build.py)'],['node',[path.join(ROOT,'tools/layout_check.js')],'mise en page millimétrée : aucun chevauchement sur les 18 cartes (tools/layout_check.js)'],['node',[path.join(ROOT,'tools/snapshot.js'),'dc','--check'],'content/atlas-dc.json à jour (sinon : node tools/snapshot.js dc)']]){const r=cp.spawnSync(cmd,args);ok(r.status===0,lbl)}}
  {const q=await b.newPage({viewport:{width:1280,height:800}}),pe=[];q.on('pageerror',e=>pe.push(e.message));await q.goto(URL+'?u=dc');await q.waitForFunction(()=>typeof IDX!=='undefined'&&C);
   const r=await q.evaluate(()=>{const n=MAPS.map((m,i)=>{render(i);return C.nodes.length});return {maps:MAPS.length,idx:Object.keys(IDX).length,n,brand:document.title,quiz:$('#bquiz').hidden}});
-  ok(r.maps==10&&r.idx>=200&&r.n.every(x=>x>5),`10 cartes DC (${r.n.join(' ')} nœuds, ${r.idx} fiches)`);ok(r.quiz,'quiz masqué en mode DC');
+  ok(r.maps==9&&r.idx>=200&&r.n.every(x=>x>5),`9 cartes DC (${r.n.join(' ')} nœuds, ${r.idx} fiches)`);ok(r.quiz,'quiz masqué en mode DC');
   for(const f of ['916','169']){await q.evaluate(f=>{setFmt(f);render(0);select(2);select(-1)},f)}ok(!pe.length,'cartes DC sans erreur JS '+pe.slice(0,2));
   const v=await q.evaluate(()=>{render(0);S.ver='off';markVer();return [$('#vbadge').textContent,!$('#vbadge').hidden]});ok(v[1]&&v[0].includes('Multiversity'),'version officielle DC : source affichée ('+v[0]+')');await q.close()}
  {const q=await b.newPage({viewport:{width:1280,height:800}});await q.goto(URL);await q.waitForFunction(()=>typeof IDX!=='undefined'&&C);

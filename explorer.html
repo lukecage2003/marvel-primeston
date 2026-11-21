@@ -249,7 +249,7 @@ svg#svg:active{cursor:grabbing}
  <button id="thd" class="th-go">Télécharger cette miniature</button><button id="thd2">Télécharger les deux formats</button><button id="thx">Fermer</button></div></div></div>
 <div id="vov" role="dialog" aria-label="Création de la vidéo"><canvas id="vcv"></canvas><p id="vmsg"></p><div id="vbar"><i></i></div><button id="vcancel">Annuler</button></div>
 <script src="data.js?v=c098617aab"></script>
-<script src="data-dc.js?v=eeccb36644"></script>
+<script src="data-dc.js?v=f3be9a91bb"></script>
 <script src="images.js?v=e6752fbd54"></script>
 <script>
 const SRC='<!doctype html>\n'+document.documentElement.outerHTML,SOLO=window.SOLO??null;
@@ -622,16 +622,16 @@ function krackleField(g,n){const bb=g.getBBox(),R=rng(n*13+5),f=E('g',{class:'kf
    E('circle',{cx:x,cy:y,r:z*1.6,fill:R()<.3?'#e2493f':'#FFE500',opacity:.5},f);E('circle',{cx:x,cy:y,r:z,fill:'#0b0b0b'},f)}}}
 /* ---------- MAP 8 : LA CHRONOLOGIE ---------- */
 const ERAS=[[1958,1970,'Âge d’argent','#FFE500'],[1970,1985,'Âge de bronze','#ffa45c'],[1985,2000,'Âge moderne','#b98bff'],[2000,2012,'Renaissance cosmique','#7fe0a0'],[2012,2016,'Ère Hickman','#e2493f'],[2016,2025,'Ère Ewing et Cates','#fff503']];
-function buildTime(g,P){ctx(g);const X=y=>(y-1958)*54,Q=(a,b)=>P?[b,a]:[a,b],H=760;
+function buildTime(g,P){ctx(g);const X=y=>(y-1958)*54,Q=(a,b)=>P?[b,a]:[a,b],H=1000;
  ERAS.forEach(([a,b,n,c])=>{const[x,y]=Q(X(a),-H),[w,h]=Q(X(b)-X(a),2*H);E('rect',{x,y,width:w,height:h,fill:c,opacity:.07},g);const[lx,ly]=Q(X(a)+14,-H+34);const t=T(g,lx,ly,n.toUpperCase(),'big','start');t.style.fill=c});
  const[x1,y1]=Q(0,0),[x2,y2]=Q(X(2025),0);E('line',{x1,y1,x2,y2,stroke:'#f3ead2','stroke-width':3,opacity:.6},g);
  for(let y=1960;y<=2025;y+=5){const[tx,ty]=Q(X(y),0);E('circle',{cx:tx,cy:ty,r:5,fill:'#f3ead2'},g);const[lx,ly]=Q(X(y),P?0:30);T(g,lx+(P?-14:0),ly+(P?5:0),y,'ax',P?'end':'middle')}
- DBT.forEach((r,i)=>{const side=i%2?1:-1,off=side*(150+(i>>1)%3*100),[x,y]=Q(X(r[0]),off),[ax,ay]=Q(X(r[0]),0),col=(ERAS.find(e=>r[0]>=e[0]&&r[0]<e[1])||ERAS[5])[3];
+ const PL=[];DBT.forEach((r,i)=>{const w0=Math.max(80,r[1].length*11),xx=X(r[0]),cand=[130,240,350,460,570].flatMap(o=>i%2?[o,-o]:[-o,o]),off=cand.find(o=>!PL.some(q=>Math.abs(q[1]-o)<106&&Math.abs(q[0]-xx)<(q[2]+w0)/2+14))??(i%2?1:-1)*680;PL.push([xx,off,w0]);const side=Math.sign(off),[x,y]=Q(X(r[0]),off),[ax,ay]=Q(X(r[0]),0),col=(ERAS.find(e=>r[0]>=e[0]&&r[0]<e[1])||ERAS[5])[3];
   E('line',{x1:ax,y1:ay,x2:x,y2:y,stroke:col,'stroke-width':1.5,'stroke-dasharray':'3 4',opacity:.7},C.eL);
   C.add({id:'e'+i,x,y,r:26,t:r[1],s:String(Math.floor(r[0])),d:r[2],col,k:'Publication, '+Math.floor(r[0]),tags:[String(Math.floor(r[0]))],lab:'b',fs:.95,draw:c=>orb(c,x,y,26,col,i%6)})});
  /* les grands événements de l'encyclopédie, sous la frise (au-dessus en vertical) */
  Object.keys(IDX).filter(id=>IDX[id].m==7&&!/^e\d+$/.test(id)).map(id=>[id,+((IDX[id].src||'').match(/\((\d{4})\)/)||[])[1]]).filter(x=>x[1]).sort((a,b)=>a[1]-b[1]).forEach(([id,yr],k)=>{
-  const I=IDX[id],off=(k%2?1:-1)*(560+(k>>1)%2*120),[x,y]=Q(X(yr),off),[ax,ay]=Q(X(yr),0);E('line',{x1:ax,y1:ay,x2:x,y2:y,stroke:'#fff503','stroke-width':1.2,'stroke-dasharray':'1 6',opacity:.45},C.eL);
+  const I=IDX[id],off=(k%2?1:-1)*(790+(k>>1)%2*125),[x,y]=Q(X(yr),off),[ax,ay]=Q(X(yr),0);E('line',{x1:ax,y1:ay,x2:x,y2:y,stroke:'#fff503','stroke-width':1.2,'stroke-dasharray':'1 6',opacity:.45},C.eL);
   C.add({id,x,y,r:34,t:I.t,s:String(yr),d:I.d,col:'#fff503',k:'Grand événement, '+yr,tags:[String(yr)],lab:'b',fs:.9,draw:c=>orb(c,x,y,34,'#e2493f',k%6,'#fff503')})});
 }
 
@@ -707,7 +707,7 @@ const MAPS=[
  {n:'Les Royaumes',sub:'Yggdrasil, la galaxie et les dimensions',b:buildRealms,off:{src:'War of the Realms #1 (2019) · Thor vol. 4 #7 (2015)',img:'https://static.wikia.nocookie.net/marveldatabase/images/d/da/Ten_Realms_from_War_of_the_Realms_Vol_1_1_001.jpg/revision/latest?cb=20200205023709',cap:'la carte des Dix Royaumes, War of the Realms #1 (Marvel, 2019), Jason Aaron et Russell Dauterman'}},
  {n:'La Chronologie',sub:'Soixante ans de cosmos',b:buildTime,dyn:1,off:{data:1}},
  {n:'La Magie',sub:'Dieux anciens, Vishanti, seigneurs des dimensions et démons',hook:'Toute la magie de Marvel, de Chthon à Doctor Strange.',b:buildMagic,off:null}];
-const DCOFF=[{src:'The Multiversity Guidebook #1 (2015)',img:'https://static.wikia.nocookie.net/marvel_dc/images/6/6e/Map_of_the_Multiverse_002.png/revision/latest?cb=20141104181338',cap:'« The Map of the Multiverse », The Multiversity Guidebook #1 (DC Comics, 2015), Grant Morrison et Rian Hughes'},{src:'Justice League (2018-2020) · Dark Nights: Death Metal (2020-2021)'},{src:'Green Lantern (2005-2011) · Blackest Night (2009)'},{src:'The Sandman (1989-1996)'},{src:'New Gods (1971-1972)'},null,{data:1},{data:1}];
+const DCOFF=[{src:'The Multiversity Guidebook #1 (2015)',img:'https://static.wikia.nocookie.net/marvel_dc/images/6/6e/Map_of_the_Multiverse_002.png/revision/latest?cb=20141104181338',cap:'« The Map of the Multiverse », The Multiversity Guidebook #1 (DC Comics, 2015), Grant Morrison et Rian Hughes'},{src:'Justice League (2018-2020) · Dark Nights: Death Metal (2020-2021)'},{src:'Green Lantern (2005-2011) · Blackest Night (2009)'},{src:'The Sandman (1989-1996)'},{src:'New Gods (1971-1972)'},null,{data:1},null,{src:'Lucifer (2000-2006) · The Sandman (1989-1996)'}];
 if(UNI=='dc'){MAPS.length=0;DCX.MAPS.forEach((d,i)=>MAPS.push({n:d.n,sub:d.sub,hook:d.hook,b:dcBuilder(d,i),off:DCOFF[i]===undefined?null:DCOFF[i]}));Object.assign(window.IMG=window.IMG||{},DCX.IMG)}
 const CATS={cos:['Cosmos et firmaments','#ff6b5a'],abs:['Entités abstraites','#FFE500'],cel:['Célestes et puissances','#ffb21f'],pow:['Forces et énergies','#ff7a3d'],obj:['Objets de pouvoir','#b98bff'],pla:['Lieux et dimensions','#7fe0a0'],per:['Personnages','#f3ead2'],grp:['Groupes','#ffa45c'],dark:['Ténèbres','#a58bd8'],evt:['Événements','#fff503']};
 const CERT={c:['Canon','montré ou dit dans un comic, numéro et page vérifiés'],o:['Source officielle','guide ou manuel officiel Marvel'],d:['Interprétation','conclusion argumentée à partir de plusieurs comics'],t:['Théorie','hypothèse ou construction de fans, non officielle'],x:['Contesté','les sources se contredisent'],u:['À vérifier','première apparition relevée sur un wiki communautaire ; description pas encore confrontée aux comics']};
@@ -723,7 +723,7 @@ Object.entries(DBE).forEach(([id,r])=>put(id,MAGICSET.has(id)?8:r[2]=='evt'?7:r[
 DBT.forEach((r,i)=>put('e'+i,7,{t:r[1],s:String(Math.floor(r[0])),d:r[2],src:r[3],rel:r[4],cat:'evt',col:'#fff503',cert:'u',yr:r[0]}));
 }else{
  const first={};DCX.MAPS.forEach((d,m)=>[...(d.nodes||[]).map(n=>n[0]),...(d.wheel||[]),...(d.orbits||[]).flatMap(o=>o.ids),...(d.spokes?d.spokes.ids.flat():[])].forEach(id=>first[id]??=m));
- Object.entries(DCX.E).forEach(([id,r])=>put(id,r[2]=='evt'?6:first[id]??7,{t:r[1],fr:r[0],en:r[1],cat:r[2],s:r[3],d:r[4],src:r[5],cert:r[6],rel:r[7],fact:r[8],yr:r[9],col:CATS[r[2]][1]}));
+ Object.entries(DCX.E).forEach(([id,r])=>put(id,r[2]=='evt'?6:first[id]??0,{t:r[1],fr:r[0],en:r[1],cat:r[2],s:r[3],d:r[4],src:r[5],cert:r[6],rel:r[7],fact:r[8],yr:r[9],col:CATS[r[2]][1]}));
  for(const k in WQ)delete WQ[k];
 }
 if(UNI=='dc')FAMD=DCX.FAM||{p:[],s:[]};
@@ -750,18 +750,18 @@ function wedge(g,r1,r2,a1,a2,fill,op){const P=(r,a)=>`${Math.cos(a)*r} ${Math.si
 let GID=0;function rgrad(g,stops){const id='rg'+(++GID),gr=E('radialGradient',{id},g);stops.forEach(([o,c,a=1])=>E('stop',{offset:o,'stop-color':c,'stop-opacity':a},gr));return`url(#${id})`}
 function deco(g,list){(list||[]).forEach(d=>{const p=d.plan?E('g',{class:'xpd'},g):g;
  if(d.t=='band'){ring(p,d.r1,d.r2,rgrad(p,[[d.r1/d.r2,d.c[0],.9],[1,d.c[1]||d.c[0],.9]]));E('circle',{r:d.r2,fill:'none',stroke:'rgba(255,255,255,.35)','stroke-width':2},p);
-  if(d.label)[-90,90].forEach(a=>arcLabel(p,(d.r1+d.r2)/2,d.label,a,'#fff',Math.min(46,(d.r2-d.r1)*.4)))}
+  if(d.label)(d.angles||[-90,90]).forEach(a=>arcLabel(p,(d.r1+d.r2)/2,d.label,a,'#fff',Math.min(46,(d.r2-d.r1)*.4)))}
  if(d.rainbow||d.t=='rainbow'){const n=72;for(let k=0;k<n;k++)wedge(p,d.r1,d.r2,k/n*TAU-Math.PI/2,(k+1.05)/n*TAU-Math.PI/2,`hsl(${k/n*360},85%,55%)`,.55);
   ring(p,d.r1,d.r2,rgrad(p,[[d.r1/d.r2,'#000',.55],[.5+d.r1/d.r2/2,'#000',0],[1,'#fff',.25]]));
-  if(d.label)[-60,-120,60,120].forEach(a=>arcLabel(p,(d.r1+d.r2)/2,d.label,a,'#fff',44))}
+  if(d.label)[-60,-120,60,120].forEach(a=>arcLabel(p,d.lr||(d.r1+d.r2)/2,d.label,a,'#fff',34))}
  if(d.t=='sectors')for(let k=0;k<d.n;k++){const a=(d.a0+k*360/d.n)*Math.PI/180;E('line',{x1:Math.cos(a)*d.r1,y1:Math.sin(a)*d.r1,x2:Math.cos(a)*d.r2,y2:Math.sin(a)*d.r2,stroke:d.c,'stroke-width':22,opacity:.75},p)}
- if(d.t=='disk'){E('circle',{r:d.r*1.08,fill:d.c2,opacity:.35,filter:'url(#blur)'},p);E('circle',{r:d.r,fill:rgrad(p,[[0,d.c1,1],[.55,d.c2,.95],[1,d.c3||'#2a0508',1]])},p);if(d.label)arcLabel(p,d.r-30,d.label,-90,'#ffe9b0',30)}
+ if(d.t=='disk'){E('circle',{r:d.r*1.08,fill:d.c2,opacity:.35,filter:'url(#blur)'},p);E('circle',{r:d.r,fill:rgrad(p,[[0,d.c1,1],[.55,d.c2,.95],[1,d.c3||'#2a0508',1]])},p);if(d.label)arcLabel(p,d.r-30,d.label,d.la??-90,'#ffe9b0',30)}
  if(d.t=='ring'){E('circle',{r:d.r,fill:'none',stroke:d.c,'stroke-width':d.w||2,'stroke-dasharray':d.dash||'',opacity:.85},p);if(d.label)arcLabel(p,d.r+(d.w||2)+18,d.label,d.la??-90,d.c,22)}
  if(d.t=='glow'){E('circle',{cx:d.x,cy:d.y,r:d.r,fill:rgrad(p,[[0,d.c,.45],[.6,d.c,.12],[1,d.c,0]])},p)}
  if(d.t=='text'){const t=T(p,d.x,d.y,d.s,'big');t.style.fontSize=(d.f||34)+'px'}
  if(d.t=='panel'){E('rect',{x:d.x,y:d.y,width:d.w,height:d.h,rx:28,fill:'rgba(255,255,255,.035)',stroke:d.c||'rgba(255,229,0,.45)','stroke-width':2,'stroke-dasharray':'6 8'},p);
   const t=T(p,d.x+d.w/2,d.y+52,d.title,'big');t.style.fontSize='30px';if(d.c)t.style.fill=d.c}
- if(d.t=='tier')d.ys.forEach((y,k)=>{E('rect',{x:-d.w/2,y:y-125,width:d.w,height:250,rx:30,fill:k%2?'rgba(255,229,0,.035)':'rgba(255,255,255,.02)'},p);const t=T(p,-d.w/2+30,y-90,d.labels[k],'ax','start');t.style.cssText='font-size:20px;fill:#FFE500'})
+ if(d.t=='tier')d.ys.forEach((y,k)=>{E('rect',{x:-d.w/2,y:y-140,width:d.w,height:290,rx:30,fill:k%2?'rgba(255,229,0,.035)':'rgba(255,255,255,.02)'},p);const t=T(p,-d.w/2+30,y-108,d.labels[k],'ax','start');t.style.cssText='font-size:20px;fill:#FFE500'})
  if(d.t=='wheelbg'){const n=d.colors.length;d.colors.forEach((c,k)=>{const a=-Math.PI/2+k*TAU/n;wedge(p,d.r1,d.r2,a-TAU/n/2,a+TAU/n/2,rgrad(p,[[d.r1/d.r2,c,.5],[1,c,.05]]),1)})}
  if(d.t=='arc'){const a1=d.a1*Math.PI/180,a2=d.a2*Math.PI/180,cy=d.cy||0;E('path',{d:`M${Math.cos(a1)*d.r} ${cy+Math.sin(a1)*d.r}A${d.r} ${d.r} 0 0 1 ${Math.cos(a2)*d.r} ${cy+Math.sin(a2)*d.r}`,fill:'none',stroke:d.c,'stroke-width':d.w,'stroke-linecap':'round',opacity:.5},p);
   if(d.label)arcLabel(p,d.r,d.label,(d.a1+d.a2)/2,'#0b0b0b',18,0,cy)}})}
@@ -772,14 +772,14 @@ function famEdge(a,b){const A=C.nodes.find(n=>n.id==a),B=C.nodes.find(n=>n.id==b
 function famDefs(g){const m=E('marker',{id:'famar',viewBox:'0 0 10 10',refX:5,refY:5,markerWidth:5,markerHeight:5,orient:'auto-start-reverse'},E('defs',{},g));E('path',{d:'M0 0L10 5L0 10Z',fill:'#FFE500'},m)}
 function dcBuilder(d,mi){return function(g){ctx(g);famDefs(g);const tex=id=>[...id].reduce((a,c)=>a+c.charCodeAt(0),0)%6,cat=id=>(IDX[id]||{}).cat||'cos';
  const bg=E('g',{},g);g.insertBefore(bg,C.eL);deco(bg,d.deco);
- const add=(id,x,y,r,col,xp)=>{r*=d.scale||1;const I=IDX[id];if(!I||C.nodes.some(n=>n.id==id))return;col=col||I.col;C.add({id,x,y,r,t:I.t,s:I.s,d:I.d,col,xp:!!xp,fs:r>48?1.05:r>36?.9:.78,k:d.n,tags:[CATS[cat(id)][0]],draw:c=>orb(c,x,y,r,col,tex(id))})};
+ const add=(id,x,y,r,col,xp,lab,nosub)=>{r*=d.scale||1;const I=IDX[id];if(!I||C.nodes.some(n=>n.id==id))return;col=col||I.col;C.add({id,x,y,r,t:I.t,s:I.s,d:I.d,col,xp:!!xp,lab:lab||'b',nosub:!!nosub,fs:r>48?1.05:r>36?.9:.78,k:d.n,tags:[CATS[cat(id)][0]],draw:c=>orb(c,x,y,r,col,tex(id))})};
  (d.rings||[]).forEach(([r,l])=>{E('circle',{cx:0,cy:0,r,fill:'none',stroke:'rgba(255,229,0,.35)','stroke-width':2,'stroke-dasharray':'4 8'},bg);arcLabel(bg,r+20,l.toUpperCase(),-90,'#FFE500',20)});
  (d.tiers||[]).forEach((t,k)=>{E('line',{x1:-560,y1:k*230-78,x2:560,y2:k*230-78,stroke:'rgba(255,229,0,.14)'},bg);T(bg,-590,k*230+6,t,'big','end')});
  if(d.wheel){const n=d.wheel.length,R0=d.wheelR||420;d.wheel.forEach((id,k)=>{const a=-Math.PI/2+k*TAU/n,x=Math.cos(a)*R0,y=Math.sin(a)*R0,c=d.wheelColors[k];E('line',{x1:0,y1:0,x2:x,y2:y,stroke:c,'stroke-opacity':.35,'stroke-width':3},bg);add(id,x,y,48,c)})}
  if(d.spokes){const S0=d.spokes,n=S0.ids.length;S0.ids.forEach((row,k)=>{const a=-Math.PI/2+k*TAU/n,c=S0.colors[k];E('line',{x1:Math.cos(a)*170,y1:Math.sin(a)*170,x2:Math.cos(a)*S0.r[S0.r.length-1],y2:Math.sin(a)*S0.r[S0.r.length-1],stroke:c,'stroke-width':5,opacity:.55},bg);
   row.forEach((id,j)=>add(id,Math.cos(a)*S0.r[j],Math.sin(a)*S0.r[j],S0.size[j],c))})}
- (d.orbits||[]).forEach(o=>{const n=o.ids.length;o.ids.forEach((id,k)=>{const a=((o.a0??-90)+k*360/n)*Math.PI/180;add(id,Math.cos(a)*o.r,Math.sin(a)*o.r,o.size)})});
- (d.nodes||[]).forEach(([id,x,y,r,f])=>add(id,x,y,r,null,f=='x'));
+ (d.orbits||[]).forEach(o=>{const n=o.ids.length;o.ids.forEach((id,k)=>{const a=((o.a0??-90)+k*360/n)*Math.PI/180;add(id,Math.cos(a)*o.r,Math.sin(a)*o.r,o.size,null,0,'b',o.nosub)})});
+ (d.nodes||[]).forEach(([id,x,y,r,...f])=>add(id,x,y,r,null,f.includes('x'),f.find(v=>'lrb'.includes(v)&&v.length==1)));
  if(d.timeline){const ev=Object.keys(IDX).filter(id=>IDX[id].yr).sort((a,b)=>IDX[a].yr-IDX[b].yr),y0=1984,X=y=>(y-y0)*110;
   E('rect',{x:X(y0)-80,y:-26,width:X(2026)-X(y0)+160,height:52,rx:26,fill:'rgba(255,229,0,.08)',stroke:'rgba(255,229,0,.5)'},bg);
   [[1985,1986,'Crisis on Infinite Earths'],[2005,2009,'Les Crises Johns-Morrison'],[2011,2016,'New 52'],[2016,2020,'Rebirth'],[2020,2026,'Infinite Frontier et après']].forEach(([a,b,l],k)=>{E('rect',{x:X(a),y:-26,width:X(b)-X(a),height:52,fill:['#e2493f','#ff8a2a','#3f8fff','#3fcf5f','#c45bd1'][k],opacity:.35},bg);T(bg,(X(a)+X(b))/2,-40,l,'ax').style.fontSize='15px'});

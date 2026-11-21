@@ -26,11 +26,7 @@
   },
   {
    "name": "Les Crises",
-   "sub": "Quarante ans de crises"
-  },
-  {
-   "name": "Le Réseau DC",
-   "sub": "Tout est lié"
+   "sub": "Quarante ans de crises et leurs acteurs"
   },
   {
    "name": "Les Forces",
@@ -345,7 +341,11 @@
   "dc_steppenwolf": "Steppenwolf (New Earth)",
   "dc_heggra": "Heggra (New Earth)",
   "dc_granny": "Granny Goodness (New Earth)",
-  "dc_desaad": "Desaad (New Earth)"
+  "dc_desaad": "Desaad (New Earth)",
+  "dc_cal": "Cal (New Earth)",
+  "dc_eurydice": "Eurydice (New Earth)",
+  "dc_hector": "Hector Hall (New Earth)",
+  "dc_lyta": "Hippolyta Trevor (New Earth)"
  },
  "img": {
   "dc_presence": "https://static.wikia.nocookie.net/marvel_dc/images/1/17/Presence_01.jpg/revision/latest?cb=20100212043239",
@@ -582,7 +582,11 @@
   "dc_steppenwolf": "https://static.wikia.nocookie.net/marvel_dc/images/6/6e/Steppenwolf_0001.jpg/revision/latest/scale-to-width-down/422?cb=20240115134531",
   "dc_heggra": "https://static.wikia.nocookie.net/marvel_dc/images/9/90/Heggra_001.jpg/revision/latest?cb=20100416171738",
   "dc_granny": "https://static.wikia.nocookie.net/marvel_dc/images/1/1a/Granny_Goodness_003.jpg/revision/latest/scale-to-width-down/582?cb=20100413201501",
-  "dc_desaad": "https://static.wikia.nocookie.net/marvel_dc/images/3/34/DeSaad_001.jpg/revision/latest?cb=20080602235444"
+  "dc_desaad": "https://static.wikia.nocookie.net/marvel_dc/images/3/34/DeSaad_001.jpg/revision/latest?cb=20080602235444",
+  "dc_cal": "https://static.wikia.nocookie.net/marvel_dc/images/2/2d/Cal_0001.jpg/revision/latest/scale-to-width-down/513?cb=20180307011948",
+  "dc_eurydice": "https://static.wikia.nocookie.net/marvel_dc/images/e/e0/Eurydice_0001.jpg/revision/latest/scale-to-width-down/370?cb=20150724115142",
+  "dc_hector": "https://static.wikia.nocookie.net/marvel_dc/images/f/f9/Doctor_Fate_Hector_Hall_001.jpg/revision/latest/scale-to-width-down/728?cb=20100211193854",
+  "dc_lyta": "https://static.wikia.nocookie.net/marvel_dc/images/7/72/Hippolyta_Trevor_New_Earth_0001.jpg/revision/latest/scale-to-width-down/900?cb=20251109103322"
  },
  "nodes": {
   "dc_presence": {
@@ -788,7 +792,7 @@
    ]
   },
   "dc_lucifer": {
-   "map": 9,
+   "map": 8,
    "name": "Lucifer Morningstar",
    "sub": "l'ange déchu",
    "desc": "Ancien souverain de l'Enfer, qui abandonne son trône dans The Sandman et poursuit ensuite sa propre quête de liberté hors de la Création.",
@@ -808,7 +812,7 @@
    ]
   },
   "dc_michael": {
-   "map": 9,
+   "map": 8,
    "name": "Michael Demiurgos",
    "fr": "Michel Demiurgos",
    "sub": "l'archange démiurge",
@@ -817,6 +821,7 @@
    "cert": "u",
    "src": "Arkham Asylum: A Serious House on Serious Earth",
    "rel": [
+    "dc_cal",
     "dc_elaine",
     "dc_lucifer",
     "dc_presence",
@@ -846,6 +851,7 @@
     "dc_fiddlersgreen",
     "dc_lucien",
     "dc_lucifer",
+    "dc_lyta",
     "dc_matthew",
     "dc_orpheus"
    ]
@@ -1293,7 +1299,7 @@
    ]
   },
   "dc_stillforce": {
-   "map": 8,
+   "map": 7,
    "name": "Still Force",
    "fr": "La Still Force",
    "sub": "l'immobilité",
@@ -1306,7 +1312,7 @@
    ]
   },
   "dc_sageforce": {
-   "map": 8,
+   "map": 7,
    "name": "Sage Force",
    "fr": "La Sage Force",
    "sub": "la sagesse",
@@ -1319,7 +1325,7 @@
    ]
   },
   "dc_strengthforce": {
-   "map": 8,
+   "map": 7,
    "name": "Strength Force",
    "fr": "La Strength Force",
    "sub": "la force physique",
@@ -1733,7 +1739,7 @@
    ]
   },
   "dc_quintessence": {
-   "map": 7,
+   "map": 5,
    "name": "Quintessence",
    "fr": "La Quintessence",
    "sub": "les sages du cosmos",
@@ -1831,7 +1837,7 @@
    ]
   },
   "dc_imperiex": {
-   "map": 7,
+   "map": 6,
    "name": "Imperiex",
    "sub": "le destructeur d'univers",
    "desc": "Entité qui cherche à détruire l'univers pour le refaire, au cœur de l'événement Our Worlds at War (2001).",
@@ -1844,7 +1850,7 @@
    ]
   },
   "dc_brainiac": {
-   "map": 7,
+   "map": 6,
    "name": "Brainiac (Vril Dox)",
    "fr": "Brainiac",
    "sub": "le collectionneur de mondes",
@@ -1895,7 +1901,7 @@
    ]
   },
   "dc_manhattan": {
-   "map": 7,
+   "map": 6,
    "name": "Doctor Manhattan",
    "fr": "Docteur Manhattan",
    "sub": "l'homme qui voit le temps",
@@ -1909,7 +1915,7 @@
    ]
   },
   "dc_superboyprime": {
-   "map": 7,
+   "map": 6,
    "name": "Superboy-Prime",
    "sub": "le Superman de Terre-Prime",
    "desc": "Kal-El de Terre-Prime, rescapé de la première Crise, qui devient l'un des antagonistes d'Infinite Crisis.",
@@ -3292,7 +3298,7 @@
    ]
   },
   "dc_kamandi": {
-   "map": 7,
+   "map": 0,
    "name": "Kamandi (Earth 51)",
    "fr": "Kamandi",
    "sub": "le dernier garçon sur Terre",
@@ -3380,7 +3386,7 @@
    ]
   },
   "dc_mrmind": {
-   "map": 7,
+   "map": 6,
    "name": "Mister Mind",
    "sub": "le ver des mondes",
    "desc": "Ver venusien qui, devenu gigantesque, dévore les Terres et façonne les 52 mondes en les traversant.",
@@ -3393,7 +3399,7 @@
    ]
   },
   "dc_pariah": {
-   "map": 7,
+   "map": 6,
    "name": "Pariah (Kell Mossa)",
    "fr": "Pariah",
    "sub": "le témoin des fins",
@@ -3408,7 +3414,7 @@
    ]
   },
   "dc_harbinger": {
-   "map": 7,
+   "map": 6,
    "name": "Harbinger (Lyla Michaels)",
    "fr": "Harbinger",
    "sub": "la messagère du Monitor",
@@ -3436,7 +3442,7 @@
    ]
   },
   "dc_nth": {
-   "map": 7,
+   "map": 6,
    "name": "Nth Metal",
    "fr": "Le Métal Nième",
    "sub": "le métal de Thanagar",
@@ -3450,7 +3456,7 @@
    ]
   },
   "dc_green": {
-   "map": 8,
+   "map": 7,
    "name": "The Green",
    "fr": "Le Vert",
    "sub": "la force de la vie végétale",
@@ -3467,7 +3473,7 @@
    ]
   },
   "dc_red": {
-   "map": 8,
+   "map": 7,
    "name": "The Red",
    "fr": "Le Rouge",
    "sub": "la force de la vie animale",
@@ -3481,7 +3487,7 @@
    ]
   },
   "dc_rot": {
-   "map": 8,
+   "map": 7,
    "name": "The Rot (The Black)",
    "fr": "La Pourriture",
    "sub": "la force de la mort et de la décomposition",
@@ -3495,7 +3501,7 @@
    ]
   },
   "dc_grey": {
-   "map": 8,
+   "map": 7,
    "name": "The Grey",
    "fr": "Le Gris",
    "sub": "la force des champignons",
@@ -3508,7 +3514,7 @@
    ]
   },
   "dc_parliament": {
-   "map": 8,
+   "map": 7,
    "name": "Parliament of Trees",
    "fr": "Le Parlement des arbres",
    "sub": "les anciens avatars du Vert",
@@ -3818,7 +3824,8 @@
    "fact": "Dream tue son fils à sa demande dans The Sandman #49 : un acte qui scelle son propre destin.",
    "rel": [
     "dc_calliope",
-    "dc_dream"
+    "dc_dream",
+    "dc_eurydice"
    ]
   },
   "dc_calliope": {
@@ -3831,6 +3838,7 @@
    "src": "Sandman vol. 2 #17 (1990)",
    "rel": [
     "dc_dream",
+    "dc_eurydice",
     "dc_orpheus"
    ]
   },
@@ -3846,7 +3854,9 @@
    "rel": [
     "dc_dream",
     "dc_dreaming",
-    "dc_endless"
+    "dc_endless",
+    "dc_hector",
+    "dc_lyta"
    ]
   },
   "dc_lucien": {
@@ -3940,6 +3950,7 @@
    "src": "Lucifer #4 (2000)",
    "fact": "Elle devient la nouvelle créatrice à la fin de la série Lucifer de Mike Carey.",
    "rel": [
+    "dc_cal",
     "dc_lucifer",
     "dc_michael",
     "dc_presence",
@@ -3947,7 +3958,7 @@
    ]
   },
   "dc_mazikeen": {
-   "map": 9,
+   "map": 8,
    "name": "Mazikeen",
    "sub": "l’alliée de Lucifer",
    "desc": "Fille de Lilith, Lilim au visage à moitié masqué, alliée la plus fidèle de Lucifer.",
@@ -3960,7 +3971,7 @@
    ]
   },
   "dc_lilith": {
-   "map": 9,
+   "map": 8,
    "name": "Lilith",
    "sub": "la mère des Lilim",
    "desc": "La première femme d'Adam, mère des Lilim et de Mazikeen.",
@@ -3973,7 +3984,7 @@
    ]
   },
   "dc_sandalphon": {
-   "map": 9,
+   "map": 8,
    "name": "Sandalphon",
    "sub": "un ange de la Cité d’Argent",
    "desc": "Ange de la Cité d'Argent, créé par Dieu, qui cherche à engendrer des enfants avec des humaines.",
@@ -4253,6 +4264,60 @@
    "rel": [
     "dc_apokolips",
     "dc_darkseid"
+   ]
+  },
+  "dc_cal": {
+   "map": 8,
+   "name": "Cal",
+   "sub": "le fils de Michael",
+   "desc": "Fils de l'archange Michael et frère d'Elaine Belloc, dans la série Lucifer.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Lucifer #11 (2001)",
+   "rel": [
+    "dc_elaine",
+    "dc_michael"
+   ]
+  },
+  "dc_eurydice": {
+   "map": 3,
+   "name": "Eurydice",
+   "sub": "l’épouse d’Orphée",
+   "desc": "Épouse d'Orphée, dont la mort pousse celui-ci à descendre aux Enfers.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Sandman Special #1 (1991)",
+   "rel": [
+    "dc_calliope",
+    "dc_orpheus"
+   ]
+  },
+  "dc_hector": {
+   "map": 3,
+   "name": "Hector Hall",
+   "sub": "le père de Daniel",
+   "desc": "Fils de Hawkman et Hawkgirl ; devenu un Sandman dans le Rêve, il y conçoit Daniel avec Lyta.",
+   "cat": "per",
+   "cert": "u",
+   "src": "All-Star Squadron #25 (1983)",
+   "rel": [
+    "dc_danielhall",
+    "dc_lyta"
+   ]
+  },
+  "dc_lyta": {
+   "map": 3,
+   "name": "Lyta Hall (Fury)",
+   "fr": "Lyta Hall",
+   "sub": "la mère de Daniel",
+   "desc": "Hippolyta « Lyta » Trevor, héroïne Fury, mère de Daniel ; elle tient Dream pour responsable de la disparition de son fils.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Wonder Woman #300 (1983)",
+   "rel": [
+    "dc_danielhall",
+    "dc_dream",
+    "dc_hector"
    ]
   }
  },

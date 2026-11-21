@@ -1880,6 +1880,17 @@
  },
  {
   "type": "issue",
+  "series": "All-Star Squadron",
+  "volume": 1,
+  "issue": "25",
+  "year": "1983",
+  "label": "All-Star Squadron #25",
+  "citedBy": [
+   "dc_hector"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Daredevils",
   "volume": 1,
   "issue": "6",
@@ -1942,6 +1953,17 @@
   "label": "Thor #337",
   "citedBy": [
    "x_bill"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Wonder Woman",
+  "volume": 1,
+  "issue": "300",
+  "year": "1983",
+  "label": "Wonder Woman #300",
+  "citedBy": [
+   "dc_lyta"
   ]
  },
  {
@@ -2451,7 +2473,8 @@
   "year": "1991",
   "label": "Sandman Special #1",
   "citedBy": [
-   "dc_destruction"
+   "dc_destruction",
+   "dc_eurydice"
   ]
  },
  {
@@ -2772,6 +2795,17 @@
   "label": "Lucifer #10",
   "citedBy": [
    "dc_sandalphon"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Lucifer",
+  "volume": 1,
+  "issue": "11",
+  "year": "2001",
+  "label": "Lucifer #11",
+  "citedBy": [
+   "dc_cal"
   ]
  },
  {
