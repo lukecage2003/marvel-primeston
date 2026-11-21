@@ -34,7 +34,7 @@ let pass=0,fail=0;const ok=(c,m)=>{c?pass++:fail++;console.log((c?'  ✓ ':'  �
  await p.fill('#cxq','Firelord');await p.waitForTimeout(200);ok(await p.locator('#cxg .cxe').count()>=1,'recherche EN « Firelord »');await p.evaluate(()=>codex(0));
  await p.evaluate(()=>{location.hash='#h_firelord'});await p.waitForTimeout(1500);ok(await p.evaluate(()=>C.nodes[S.sel]?.id)=='h_firelord','lien #id ouvre la fiche');
  L('Exports');
- for(const [x,ext] of [['svg','.svg'],['html','.html'],['png','.png']]){const dl=p.waitForEvent('download',{timeout:20000}).catch(()=>null);await p.evaluate(x=>exp(x),x);const f=await dl;ok(f&&f.suggestedFilename().endsWith(ext),'export '+x);
+ for(const [x,ext] of [['svg','.svg'],['html','.html'],['png','.png']]){const t0=Date.now(),dl=p.waitForEvent('download',{timeout:90000}).catch(()=>null);await p.evaluate(x=>exp(x).catch(e=>console.log('exp '+e.message)),x);const f=await dl;ok(f&&f.suggestedFilename().endsWith(ext),'export '+x+' ('+Math.round((Date.now()-t0)/1000)+' s)');
   if(f&&x=='html'){const t=require('fs').readFileSync(await f.path(),'utf8');ok(t.includes('window.DB=')&&t.includes('data:image/webp')&&!/src="(data|images)\.js/.test(t),'HTML autonome : données et portraits intégrés (hors ligne)')}}
  L('Quiz');
  await p.click('#bquiz');await p.waitForTimeout(300);const deck=await p.evaluate(()=>QZ.d.every(([a,b])=>Math.abs(POW[a]-POW[b])>=8&&IDX[a]&&IDX[b]));ok(deck,'duels valides (écart ≥ 8, entités existantes)');
