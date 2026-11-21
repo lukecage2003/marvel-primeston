@@ -1,0 +1,1922 @@
+{
+ "maps": [
+  {
+   "name": "L'Orrerie des mondes",
+   "sub": "La carte du Multivers"
+  },
+  {
+   "name": "La Création",
+   "sub": "Des Mains à la Terre"
+  },
+  {
+   "name": "Le Spectre émotionnel",
+   "sub": "Sept lumières, sept entités"
+  },
+  {
+   "name": "Les Éternels",
+   "sub": "Les sept Endless"
+  },
+  {
+   "name": "Le Quatrième Monde",
+   "sub": "New Genesis et Apokolips"
+  },
+  {
+   "name": "Forces et magie",
+   "sub": "L'Ordre, le Chaos et les Forces"
+  },
+  {
+   "name": "Les Crises",
+   "sub": "Quarante ans de crises"
+  },
+  {
+   "name": "Le Réseau DC",
+   "sub": "Tout est lié"
+  }
+ ],
+ "cats": {
+  "cos": {
+   "name": "Cosmos et firmaments",
+   "color": "#ff6b5a"
+  },
+  "abs": {
+   "name": "Entités abstraites",
+   "color": "#FFE500"
+  },
+  "cel": {
+   "name": "Célestes et puissances",
+   "color": "#ffb21f"
+  },
+  "pow": {
+   "name": "Forces et énergies",
+   "color": "#ff7a3d"
+  },
+  "obj": {
+   "name": "Objets de pouvoir",
+   "color": "#b98bff"
+  },
+  "pla": {
+   "name": "Lieux et dimensions",
+   "color": "#7fe0a0"
+  },
+  "per": {
+   "name": "Personnages",
+   "color": "#f3ead2"
+  },
+  "grp": {
+   "name": "Groupes",
+   "color": "#ffa45c"
+  },
+  "dark": {
+   "name": "Ténèbres",
+   "color": "#a58bd8"
+  },
+  "evt": {
+   "name": "Événements",
+   "color": "#fff503"
+  }
+ },
+ "cert": {
+  "c": {
+   "name": "Canon",
+   "desc": "montré ou dit dans un comic, numéro et page vérifiés"
+  },
+  "o": {
+   "name": "Source officielle",
+   "desc": "guide ou manuel officiel Marvel"
+  },
+  "d": {
+   "name": "Interprétation",
+   "desc": "conclusion argumentée à partir de plusieurs comics"
+  },
+  "t": {
+   "name": "Théorie",
+   "desc": "hypothèse ou construction de fans, non officielle"
+  },
+  "x": {
+   "name": "Contesté",
+   "desc": "les sources se contredisent"
+  },
+  "u": {
+   "name": "À vérifier",
+   "desc": "première apparition relevée sur un wiki communautaire ; description pas encore confrontée aux comics"
+  }
+ },
+ "wiki": {
+  "dc_presence": "The Presence",
+  "dc_source": "The Source",
+  "dc_perpetua": "Perpetua (Sixth Dimension)",
+  "dc_monitor": "Mar Novu (Sixth Dimension)",
+  "dc_antimonitor": "Mobius (Sixth Dimension)",
+  "dc_worldforger": "Alpheus (Sixth Dimension)",
+  "dc_batmanwl": "Batman Who Laughs (Earth-Metal)",
+  "dc_barbatos": "Barbatos (Dark Multiverse)",
+  "dc_darkness": "Great Darkness",
+  "dc_spectre": "James Corrigan (New Earth)",
+  "dc_stranger": "Phantom Stranger (New Earth)",
+  "dc_lucifer": "Lucifer Morningstar (New Earth)",
+  "dc_michael": "Michael Demiurgos (New Earth)",
+  "dc_dream": "Dream (New Earth)",
+  "dc_death": "Death (New Earth)",
+  "dc_destiny": "Destiny (New Earth)",
+  "dc_destruction": "Destruction (New Earth)",
+  "dc_desire": "Desire (New Earth)",
+  "dc_despair": "Despair (New Earth)",
+  "dc_delirium": "Delirium (New Earth)",
+  "dc_endless": "Endless",
+  "dc_nekron": "Nekron (New Earth)",
+  "dc_parallax": "Parallax (New Earth)",
+  "dc_ion": "Ion (New Earth)",
+  "dc_ophidian": "Ophidian (New Earth)",
+  "dc_butcher": "Butcher (New Earth)",
+  "dc_predator": "Predator (New Earth)",
+  "dc_adara": "Adara (entity) (New Earth)",
+  "dc_proselyte": "Proselyte (New Earth)",
+  "dc_lifeentity": "Entity (New Earth)",
+  "dc_emptyhand": "Empty Hand",
+  "dc_mandrakk": "Monitor Dax Novu",
+  "dc_nixuotan": "Nix Uotan (Prime Earth)",
+  "dc_monitors": "Monitors",
+  "dc_darkseid": "Darkseid (New Earth)",
+  "dc_highfather": "Izaya (New Earth)",
+  "dc_metron": "Metron (New Earth)",
+  "dc_orion": "Orion (New Earth)",
+  "dc_mobius": "Mobius Chair",
+  "dc_antilife": "Anti-Life Equation",
+  "dc_sourcewall": "Source Wall",
+  "dc_speedforce": "Speed Force",
+  "dc_stillforce": "Still Force",
+  "dc_sageforce": "Sage Force",
+  "dc_strengthforce": "Strength Force",
+  "dc_spectrum": "Emotional Electromagnetic Spectrum",
+  "dc_glcorps": "Green Lantern Corps (New Earth)",
+  "dc_guardians": "Guardians of the Universe (New Earth)",
+  "dc_oa": "Oa",
+  "dc_newgenesis": "New Genesis",
+  "dc_apokolips": "Apokolips",
+  "dc_sphere": "Sphere of the Gods",
+  "dc_bleed": "The Bleed",
+  "dc_limbo": "Comic Book Limbo",
+  "dc_darkmulti": "Dark Multiverse",
+  "dc_multiverse": "Multiverse",
+  "dc_dreaming": "Dreaming",
+  "dc_hell": "Hell",
+  "dc_silvercity": "Silver City (Heaven)",
+  "dc_phantomzone": "Phantom Zone",
+  "dc_hypertime": "Hypertime",
+  "dc_overvoid": "Overvoid",
+  "dc_omniverse": "Omniverse",
+  "dc_hands": "The Hands",
+  "dc_quintessence": "Quintessence (Prime Earth)",
+  "dc_lordsorder": "Lords of Order",
+  "dc_lordschaos": "Lords of Chaos",
+  "dc_nabu": "Nabu (New Earth)",
+  "dc_fate": "Kent Nelson (New Earth)",
+  "dc_mxyzptlk": "Mister Mxyzptlk (New Earth)",
+  "dc_fifthdim": "Fifth Dimension",
+  "dc_imperiex": "Imperiex-Prime (New Earth)",
+  "dc_brainiac": "Vril Dox I (New Earth)",
+  "dc_krona": "Krona (New Earth)",
+  "dc_trigon": "Trigon (New Earth)",
+  "dc_eclipso": "Eclipso (New Earth)",
+  "dc_manhattan": "Jonathan Osterman (Watchmen)",
+  "dc_superboyprime": "Kal-El (Earth-Prime)",
+  "dc_sinestro": "Thaal Sinestro (New Earth)",
+  "dc_haljordan": "Harold Jordan (New Earth)",
+  "dc_kyle": "Kyle Rayner (New Earth)",
+  "dc_yugakhan": "Yuga Khan (New Earth)",
+  "dc_earthprime": "Earth-Prime",
+  "dc_newearth": "New Earth",
+  "dc_primeearth": "Prime Earth",
+  "dc_earth2": "Earth-Two",
+  "dc_earth3": "Earth-Three",
+  "dc_earth1": "Earth-One",
+  "dc_absolute": "Absolute Universe",
+  "dc_coie": "Crisis on Infinite Earths Vol 1 1",
+  "dc_zerohour": "Zero Hour: Crisis in Time Vol 1 4",
+  "dc_infcrisis": "Infinite Crisis Vol 1 1",
+  "dc_finalcrisis": "Final Crisis Vol 1 1",
+  "dc_flashpoint": "Flashpoint Vol 2 1",
+  "dc_convergence": "Convergence Vol 1 0",
+  "dc_rebirth": "DCU: Rebirth Vol 1 1",
+  "dc_doomsday": "Doomsday Clock Vol 1 1",
+  "dc_metal": "Dark Nights: Metal Vol 1 1",
+  "dc_deathmetal": "Dark Nights: Death Metal Vol 1 1",
+  "dc_infrontier": "Infinite Frontier Vol 1 0",
+  "dc_darkcrisis": "Dark Crisis Vol 1 1",
+  "dc_blackest": "Blackest Night Vol 1 1",
+  "dc_brightest": "Brightest Day Vol 1 0",
+  "dc_scwar": "Green Lantern: Sinestro Corps Special Vol 1 1",
+  "dc_multiversity": "The Multiversity Vol 1 1",
+  "dc_allin": "DC All In Special Vol 1 1"
+ },
+ "img": {
+  "dc_presence": "https://static.wikia.nocookie.net/marvel_dc/images/1/17/Presence_01.jpg/revision/latest?cb=20100212043239",
+  "dc_source": "https://static.wikia.nocookie.net/marvel_dc/images/7/76/Source_001.jpg/revision/latest/scale-to-width-down/900?cb=20100414144349",
+  "dc_perpetua": "https://static.wikia.nocookie.net/marvel_dc/images/8/85/Perpetua_%28Sixth_Dimension%29_0004.png/revision/latest/scale-to-width-down/628?cb=20230303184933",
+  "dc_monitor": "https://static.wikia.nocookie.net/marvel_dc/images/7/74/Mar_Novu_Sixth_Dimension_001.jpg/revision/latest?cb=20190723011021",
+  "dc_antimonitor": "https://static.wikia.nocookie.net/marvel_dc/images/5/52/Anti-Monitor_%28Prime_Earth%29_002.jpg/revision/latest/scale-to-width-down/781?cb=20150509041639",
+  "dc_worldforger": "https://static.wikia.nocookie.net/marvel_dc/images/5/55/World_Forger_0001.jpg/revision/latest/scale-to-width-down/580?cb=20190404230631",
+  "dc_batmanwl": "https://static.wikia.nocookie.net/marvel_dc/images/5/59/Batman_Who_Laughs_Dark_Multiverse_Dark_Nights_Metal_0001.jpg/revision/latest/scale-to-width-down/372?cb=20201231231521",
+  "dc_barbatos": "https://static.wikia.nocookie.net/marvel_dc/images/5/57/Dark_Nights_Metal_Vol_1_3_Textless.jpg/revision/latest/scale-to-width-down/592?cb=20171011205108",
+  "dc_darkness": "https://static.wikia.nocookie.net/marvel_dc/images/4/41/Great_Darkness_01.jpg/revision/latest/scale-to-width-down/900?cb=20110403134212",
+  "dc_spectre": "https://static.wikia.nocookie.net/marvel_dc/images/4/41/Spectre_001.jpg/revision/latest?cb=20051213085435",
+  "dc_stranger": "https://static.wikia.nocookie.net/marvel_dc/images/4/4a/Phantom_Stranger_05.jpg/revision/latest/scale-to-width-down/641?cb=20091019095502",
+  "dc_lucifer": "https://static.wikia.nocookie.net/marvel_dc/images/6/60/Lucifer16.jpg/revision/latest/scale-to-width-down/576?cb=20150316155839",
+  "dc_michael": "https://static.wikia.nocookie.net/marvel_dc/images/f/ff/Lucifer_Vol_1_44_Textless.jpg/revision/latest?cb=20160307175054",
+  "dc_dream": "https://static.wikia.nocookie.net/marvel_dc/images/c/cb/Dream_006.jpg/revision/latest/scale-to-width-down/577?cb=20120301224333",
+  "dc_death": "https://static.wikia.nocookie.net/marvel_dc/images/e/ed/Action_Comics_Vol_1_894_Textless.jpg/revision/latest/scale-to-width-down/605?cb=20130425171749",
+  "dc_destiny": "https://static.wikia.nocookie.net/marvel_dc/images/e/e3/Destiny%28Sandman%29.JPG/revision/latest?cb=20191212033645",
+  "dc_destruction": "https://static.wikia.nocookie.net/marvel_dc/images/1/13/Destruction_New_Earth_0001.jpg/revision/latest/scale-to-width-down/580?cb=20231202021528",
+  "dc_desire": "https://static.wikia.nocookie.net/marvel_dc/images/9/94/Desire_01.jpg/revision/latest?cb=20120829154145",
+  "dc_despair": "https://static.wikia.nocookie.net/marvel_dc/images/d/d7/Despair_01.jpg/revision/latest?cb=20120829154759",
+  "dc_delirium": "https://static.wikia.nocookie.net/marvel_dc/images/f/f8/Delirium.jpg/revision/latest?cb=20070211170045",
+  "dc_endless": "https://static.wikia.nocookie.net/marvel_dc/images/b/bc/Endless_001.jpg/revision/latest?cb=20070213145859",
+  "dc_nekron": "https://static.wikia.nocookie.net/marvel_dc/images/e/e4/Nekron_016.jpg/revision/latest/scale-to-width-down/593?cb=20200328215926",
+  "dc_parallax": "https://static.wikia.nocookie.net/marvel_dc/images/d/d8/Parallax.jpg/revision/latest/scale-to-width-down/571?cb=20141017093607",
+  "dc_ion": "https://static.wikia.nocookie.net/marvel_dc/images/d/d4/Ion_%28New_Earth%29_003.png/revision/latest?cb=20140310172847",
+  "dc_ophidian": "https://static.wikia.nocookie.net/marvel_dc/images/2/2a/Greed_Entity_1.JPG/revision/latest/scale-to-width-down/900?cb=20200105051448",
+  "dc_butcher": "https://static.wikia.nocookie.net/marvel_dc/images/4/42/Red_Lanterns_Vol_1_23_Textless.jpg/revision/latest/scale-to-width-down/595?cb=20130828195734",
+  "dc_predator": "https://static.wikia.nocookie.net/marvel_dc/images/2/2d/Predator_%28New_Earth%29_005.png/revision/latest?cb=20140310172030",
+  "dc_adara": "https://static.wikia.nocookie.net/marvel_dc/images/b/b3/Adara_%28New_Earth%29_002.png/revision/latest?cb=20191113125205",
+  "dc_proselyte": "https://static.wikia.nocookie.net/marvel_dc/images/d/de/Proselyte_%28New_Earth%29_002.png/revision/latest?cb=20140310153221",
+  "dc_lifeentity": "https://static.wikia.nocookie.net/marvel_dc/images/0/08/Entity_001.jpg/revision/latest?cb=20100228025914",
+  "dc_emptyhand": "https://static.wikia.nocookie.net/marvel_dc/images/9/94/Empty_Hand.jpg/revision/latest/scale-to-width-down/613?cb=20150429224017",
+  "dc_mandrakk": "https://static.wikia.nocookie.net/marvel_dc/images/c/c4/Mandrakk_Dax_Novu_01.jpg/revision/latest/scale-to-width-down/568?cb=20090214233046",
+  "dc_nixuotan": "https://static.wikia.nocookie.net/marvel_dc/images/6/63/Nix_Uotan_%28Prime_Earth%29_001.jpg/revision/latest/scale-to-width-down/593?cb=20141228191246",
+  "dc_monitors": "https://static.wikia.nocookie.net/marvel_dc/images/3/34/BNW_Monitors.jpg/revision/latest/scale-to-width-down/900?cb=20240530120618",
+  "dc_darkseid": "https://static.wikia.nocookie.net/marvel_dc/images/b/b6/Darkseid_0007.jpg/revision/latest/scale-to-width-down/593?cb=20140901003141",
+  "dc_highfather": "https://static.wikia.nocookie.net/marvel_dc/images/0/0a/Highfather_0007.jpg/revision/latest/scale-to-width-down/900?cb=20100427154949",
+  "dc_metron": "https://static.wikia.nocookie.net/marvel_dc/images/3/3a/Metron_0002.jpg/revision/latest/scale-to-width-down/632?cb=20090929153625",
+  "dc_orion": "https://static.wikia.nocookie.net/marvel_dc/images/f/ff/Orion_009.jpg/revision/latest/scale-to-width-down/587?cb=20100413202701",
+  "dc_mobius": "https://static.wikia.nocookie.net/marvel_dc/images/a/a0/Metron_%28Prime_Earth%29_002.jpg/revision/latest/scale-to-width-down/878?cb=20150429213154",
+  "dc_antilife": "https://static.wikia.nocookie.net/marvel_dc/images/e/ee/Norman_%26_Antilife.jpg/revision/latest/scale-to-width-down/402?cb=20191217014804",
+  "dc_sourcewall": "https://static.wikia.nocookie.net/marvel_dc/images/3/3f/Source_Wall_0001.jpg/revision/latest?cb=20151228133144",
+  "dc_speedforce": "https://static.wikia.nocookie.net/marvel_dc/images/2/2b/Speed_Force_0001.jpg/revision/latest/scale-to-width-down/585?cb=20170326044621",
+  "dc_stillforce": "https://static.wikia.nocookie.net/marvel_dc/images/f/f8/Still_Force_001.jpg/revision/latest/scale-to-width-down/900?cb=20231116162806",
+  "dc_sageforce": "https://static.wikia.nocookie.net/marvel_dc/images/f/fc/Sage_Force_001.jpg/revision/latest/scale-to-width-down/900?cb=20190210225650",
+  "dc_strengthforce": "https://static.wikia.nocookie.net/marvel_dc/images/9/9c/Strength_Force_0001.jpg/revision/latest?cb=20180822210347",
+  "dc_spectrum": "https://static.wikia.nocookie.net/marvel_dc/images/0/05/Emotional_Electromagnetic_Spectrum.png/revision/latest/scale-to-width-down/900?cb=20140528153014",
+  "dc_glcorps": "https://static.wikia.nocookie.net/marvel_dc/images/8/8e/Green_Lantern_Corps_005.jpg/revision/latest/scale-to-width-down/900?cb=20090718045938",
+  "dc_guardians": "https://static.wikia.nocookie.net/marvel_dc/images/e/ee/Guardians_of_the_Universe_001.jpg/revision/latest/scale-to-width-down/411?cb=20120531070404",
+  "dc_oa": "https://static.wikia.nocookie.net/marvel_dc/images/d/d3/Oa_002.jpg/revision/latest?cb=20101024030929",
+  "dc_newgenesis": "https://static.wikia.nocookie.net/marvel_dc/images/8/8f/New_Genesis_004.jpg/revision/latest/scale-to-width-down/577?cb=20100414152350",
+  "dc_apokolips": "https://static.wikia.nocookie.net/marvel_dc/images/d/d9/Apokolips_006.jpg/revision/latest?cb=20070510180426",
+  "dc_sphere": "https://static.wikia.nocookie.net/marvel_dc/images/6/6e/Map_of_the_Multiverse_002.png/revision/latest/scale-to-width-down/900?cb=20141104181338",
+  "dc_bleed": "https://static.wikia.nocookie.net/marvel_dc/images/7/77/Ion_024.jpg/revision/latest?cb=20110103062223",
+  "dc_limbo": "https://static.wikia.nocookie.net/marvel_dc/images/6/68/Green_Team_03.jpg/revision/latest/scale-to-width-down/900?cb=20110412075910",
+  "dc_darkmulti": "https://static.wikia.nocookie.net/marvel_dc/images/a/ab/Dark_Multiverse_001.jpg/revision/latest/scale-to-width-down/585?cb=20170921180833",
+  "dc_multiverse": "https://static.wikia.nocookie.net/marvel_dc/images/6/6e/Map_of_the_Multiverse_002.png/revision/latest/scale-to-width-down/900?cb=20141104181338",
+  "dc_dreaming": "https://static.wikia.nocookie.net/marvel_dc/images/6/6b/Dreaming_001.jpg/revision/latest/scale-to-width-down/622?cb=20091109054239",
+  "dc_hell": "https://static.wikia.nocookie.net/marvel_dc/images/f/f8/Hell_002.jpg/revision/latest/scale-to-width-down/585?cb=20190727133533",
+  "dc_silvercity": "https://static.wikia.nocookie.net/marvel_dc/images/f/f4/Heaven_005.png/revision/latest/scale-to-width-down/900?cb=20230511090811",
+  "dc_phantomzone": "https://static.wikia.nocookie.net/marvel_dc/images/9/92/Phantom_Zone_01.jpg/revision/latest?cb=20080808025244",
+  "dc_hypertime": "https://static.wikia.nocookie.net/marvel_dc/images/0/0f/Hypertime_001.jpg/revision/latest/scale-to-width-down/900?cb=20111229224400",
+  "dc_overvoid": "https://static.wikia.nocookie.net/marvel_dc/images/b/b2/Overvoid_001.jpg/revision/latest?cb=20221210212222",
+  "dc_hands": "https://static.wikia.nocookie.net/marvel_dc/images/6/6b/The_Hands_0001.jpg/revision/latest?cb=20210106013358",
+  "dc_quintessence": "https://static.wikia.nocookie.net/marvel_dc/images/d/d9/Quintessence_Prime_01.jpg/revision/latest/scale-to-width-down/627?cb=20200426000918",
+  "dc_lordsorder": "https://static.wikia.nocookie.net/marvel_dc/images/1/1f/Lords_of_Order_Prime_Earth_001.jpg/revision/latest/scale-to-width-down/585?cb=20190321204826",
+  "dc_lordschaos": "https://static.wikia.nocookie.net/marvel_dc/images/2/2b/Justice_League_Dark_Vol_2_12_Textless.jpg/revision/latest/scale-to-width-down/592?cb=20190702175455",
+  "dc_nabu": "https://static.wikia.nocookie.net/marvel_dc/images/5/5e/Nabu_012.jpg/revision/latest?cb=20130326102155",
+  "dc_fate": "https://static.wikia.nocookie.net/marvel_dc/images/5/56/Doctor_Fate_0001.jpg/revision/latest/scale-to-width-down/530?cb=20221014220118",
+  "dc_mxyzptlk": "https://static.wikia.nocookie.net/marvel_dc/images/a/a9/Mister_Mxyzptlk_001.jpg/revision/latest/scale-to-width-down/630?cb=20091104040525",
+  "dc_fifthdim": "https://static.wikia.nocookie.net/marvel_dc/images/5/56/5th_Dimension_001.jpg/revision/latest/scale-to-width-down/900?cb=20110303085106",
+  "dc_imperiex": "https://static.wikia.nocookie.net/marvel_dc/images/c/c1/Imperiex_Prime_1.jpg/revision/latest?cb=20080501002810",
+  "dc_brainiac": "https://static.wikia.nocookie.net/marvel_dc/images/0/05/Brainiac_New_Earth_001.jpg/revision/latest/scale-to-width-down/620?cb=20140118204454",
+  "dc_krona": "https://static.wikia.nocookie.net/marvel_dc/images/c/c4/Krona_0001.jpg/revision/latest?cb=20080611132945",
+  "dc_trigon": "https://static.wikia.nocookie.net/marvel_dc/images/e/e9/Trigon_0003.jpg/revision/latest/scale-to-width-down/578?cb=20130623121128",
+  "dc_eclipso": "https://static.wikia.nocookie.net/marvel_dc/images/b/b4/Eclipso_007.jpg/revision/latest/scale-to-width-down/592?cb=20110320230143",
+  "dc_manhattan": "https://static.wikia.nocookie.net/marvel_dc/images/d/d5/Doctor_Manhattan_Watchmen_0003.jpg/revision/latest/scale-to-width-down/575?cb=20171228073558",
+  "dc_superboyprime": "https://static.wikia.nocookie.net/marvel_dc/images/c/c8/Superman_Prime_001.jpg/revision/latest/scale-to-width-down/585?cb=20160213014016",
+  "dc_sinestro": "https://static.wikia.nocookie.net/marvel_dc/images/b/b8/Sinestro_001.jpg/revision/latest/scale-to-width-down/592?cb=20150704232623",
+  "dc_haljordan": "https://static.wikia.nocookie.net/marvel_dc/images/2/23/AirwaveIII.jpg/revision/latest?cb=20130812174748",
+  "dc_kyle": "https://static.wikia.nocookie.net/marvel_dc/images/3/35/Kyle_Rayner_06.jpg/revision/latest/scale-to-width-down/582?cb=20101009181628",
+  "dc_yugakhan": "https://static.wikia.nocookie.net/marvel_dc/images/3/3d/Yuga_Khan_001.jpg/revision/latest/scale-to-width-down/640?cb=20091019102554",
+  "dc_earthprime": "https://static.wikia.nocookie.net/marvel_dc/images/9/91/Earth-Prime.JPG/revision/latest/scale-to-width-down/887?cb=20230625140424",
+  "dc_newearth": "https://static.wikia.nocookie.net/marvel_dc/images/3/38/New_Earth.JPG/revision/latest/scale-to-width-down/900?cb=20200521202513",
+  "dc_primeearth": "https://static.wikia.nocookie.net/marvel_dc/images/7/70/Justice_League_0047.jpg/revision/latest/scale-to-width-down/598?cb=20120225072504",
+  "dc_earth2": "https://static.wikia.nocookie.net/marvel_dc/images/6/6e/Justice_Society_of_America_005.jpg/revision/latest?cb=20070102075229",
+  "dc_earth3": "https://static.wikia.nocookie.net/marvel_dc/images/d/d4/Crime_Syndicate_of_America_001.jpg/revision/latest/scale-to-width-down/844?cb=20200921104943",
+  "dc_earth1": "https://static.wikia.nocookie.net/marvel_dc/images/7/7a/Earth-One.JPG/revision/latest?cb=20070204040838",
+  "dc_absolute": "https://static.wikia.nocookie.net/marvel_dc/images/0/02/Absolute_Universe_001.jpg/revision/latest/scale-to-width-down/585?cb=20241002180726",
+  "dc_coie": "https://static.wikia.nocookie.net/marvel_dc/images/8/82/Crisis_on_Infinite_Earths_Vol_1_1.jpg/revision/latest/scale-to-width-down/582?cb=20160825142130",
+  "dc_zerohour": "https://static.wikia.nocookie.net/marvel_dc/images/5/57/Zero_Hour_4.jpg/revision/latest/scale-to-width-down/586?cb=20240529152837",
+  "dc_infcrisis": "https://static.wikia.nocookie.net/marvel_dc/images/2/21/Infinite_Crisis_1B.jpg/revision/latest?cb=20070220185428",
+  "dc_finalcrisis": "https://static.wikia.nocookie.net/marvel_dc/images/7/79/Final_Crisis_Vol_1_1_001.jpg/revision/latest?cb=20130705151434",
+  "dc_flashpoint": "https://static.wikia.nocookie.net/marvel_dc/images/a/a8/Flashpoint_Vol_2_1.jpg/revision/latest/scale-to-width-down/586?cb=20110513210733",
+  "dc_convergence": "https://static.wikia.nocookie.net/marvel_dc/images/a/a9/Convergence_Vol_1_0.jpg/revision/latest/scale-to-width-down/585?cb=20150401172507",
+  "dc_rebirth": "https://static.wikia.nocookie.net/marvel_dc/images/3/33/DC_Universe_Rebirth_Vol_1_1.jpg/revision/latest?cb=20160525233636",
+  "dc_doomsday": "https://static.wikia.nocookie.net/marvel_dc/images/1/17/Doomsday_Clock_Vol_1_1.jpg/revision/latest/scale-to-width-down/585?cb=20171115021704",
+  "dc_metal": "https://static.wikia.nocookie.net/marvel_dc/images/0/05/Dark_Nights_Metal_Vol_1_1.jpg/revision/latest/scale-to-width-down/586?cb=20170815012137",
+  "dc_deathmetal": "https://static.wikia.nocookie.net/marvel_dc/images/1/19/Dark_Nights_Death_Metal_Vol_1_1.jpg/revision/latest/scale-to-width-down/585?cb=20200616122704",
+  "dc_infrontier": "https://static.wikia.nocookie.net/marvel_dc/images/7/7e/Infinite_Frontier_Vol_1_0_Textless.jpg/revision/latest/scale-to-width-down/584?cb=20210228001810",
+  "dc_darkcrisis": "https://static.wikia.nocookie.net/marvel_dc/images/c/c3/Dark_Crisis_Vol_1_1.jpg/revision/latest/scale-to-width-down/585?cb=20220607122338",
+  "dc_blackest": "https://static.wikia.nocookie.net/marvel_dc/images/1/18/Blackest_Night_Vol_1_1.jpg/revision/latest/scale-to-width-down/577?cb=20090716030734",
+  "dc_brightest": "https://static.wikia.nocookie.net/marvel_dc/images/e/e3/Brightest_Day_0A.jpg/revision/latest?cb=20100415053826",
+  "dc_scwar": "https://static.wikia.nocookie.net/marvel_dc/images/a/a8/Sinestro_corps_special_1.jpg/revision/latest?cb=20070629011617",
+  "dc_multiversity": "https://static.wikia.nocookie.net/marvel_dc/images/b/bc/The_Multiversity_Vol_1_1.jpg/revision/latest/scale-to-width-down/585?cb=20140826214600",
+  "dc_allin": "https://static.wikia.nocookie.net/marvel_dc/images/f/fb/DC_All_In_Special_Vol_1_1.jpg/revision/latest/scale-to-width-down/585?cb=20241002120642"
+ },
+ "nodes": {
+  "dc_presence": {
+   "map": 1,
+   "name": "La Présence",
+   "en": "The Presence",
+   "sub": "le Créateur",
+   "desc": "Puissance suprême de la création dans l'univers DC, souvent identifiée au Dieu des traditions abrahamiques. Elle se tient au-dessus du Multivers et n'agit presque jamais directement.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "More Fun Comics #52 (1940)",
+   "fact": "Dans les récits de Vertigo, Lucifer abandonne l'Enfer en partie pour échapper à l'ordre voulu par la Présence.",
+   "rel": [
+    "dc_darkness",
+    "dc_lucifer",
+    "dc_michael",
+    "dc_silvercity",
+    "dc_source",
+    "dc_spectre",
+    "dc_stranger"
+   ]
+  },
+  "dc_source": {
+   "map": 1,
+   "name": "La Source",
+   "en": "The Source",
+   "sub": "l'énergie primordiale",
+   "desc": "Force créatrice inconnaissable, au-delà du Mur de la Source. Elle est à l'origine de la puissance des Nouveaux Dieux, et nul ne peut la contempler sans en payer le prix.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "New Gods #1 (1971)",
+   "fact": "Ceux qui tentent de franchir le Mur de la Source y restent figés pour toujours.",
+   "rel": [
+    "dc_apokolips",
+    "dc_darkseid",
+    "dc_highfather",
+    "dc_metron",
+    "dc_newgenesis",
+    "dc_presence",
+    "dc_sourcewall"
+   ]
+  },
+  "dc_perpetua": {
+   "map": 1,
+   "name": "Perpetua",
+   "sub": "la mère du Multivers",
+   "desc": "Céleste membre des Mains, qui façonna le Multivers. Emprisonnée derrière le Mur de la Source pour l'avoir rendu instable, elle revient pour le refaire à son image.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Green Lantern vol. 2 #40 (1965)",
+   "fact": "Ses trois enfants, le Monitor, l'Anti-Monitor et le Forgeron des mondes, incarnent l'équilibre qu'elle avait conçu.",
+   "rel": [
+    "dc_antimonitor",
+    "dc_deathmetal",
+    "dc_hands",
+    "dc_monitor",
+    "dc_sourcewall",
+    "dc_worldforger"
+   ]
+  },
+  "dc_monitor": {
+   "map": 0,
+   "name": "Le Monitor",
+   "en": "Monitor (Mar Novu)",
+   "sub": "l'observateur du Multivers",
+   "desc": "Mar Novu, gardien du Multivers positif. Il prépare les héros de toutes les Terres à la première grande Crise contre son double, l'Anti-Monitor.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "New Teen Titans #21 (1982)",
+   "fact": "Il se sacrifie pendant Crisis on Infinite Earths pour donner aux héros une chance de vaincre.",
+   "rel": [
+    "dc_antimonitor",
+    "dc_coie",
+    "dc_monitors",
+    "dc_multiverse",
+    "dc_overvoid",
+    "dc_perpetua"
+   ]
+  },
+  "dc_antimonitor": {
+   "map": 1,
+   "name": "L'Anti-Monitor",
+   "en": "Anti-Monitor (Mobius)",
+   "sub": "le dévoreur d'univers",
+   "desc": "Mobius, maître de l'univers d'antimatière de Qward. Il efface des Terres entières pendant la première Crise, puis revient à plusieurs reprises comme menace multiversielle.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Crisis on Infinite Earths #4 (1985)",
+   "fact": "Son offensive réduit l'infinité de Terres à une seule à la fin de Crisis on Infinite Earths.",
+   "rel": [
+    "dc_coie",
+    "dc_darkcrisis",
+    "dc_monitor",
+    "dc_perpetua"
+   ]
+  },
+  "dc_worldforger": {
+   "map": 1,
+   "name": "Le Forgeron des mondes",
+   "en": "World Forger (Alpheus)",
+   "sub": "le bâtisseur de mondes",
+   "desc": "Alpheus, troisième enfant de Perpetua. Il forge des mondes et rejette dans le Multivers noir ceux qui ne doivent pas survivre.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Dark Nights: Metal #4 (2018)",
+   "rel": [
+    "dc_barbatos",
+    "dc_darkmulti",
+    "dc_metal",
+    "dc_perpetua"
+   ]
+  },
+  "dc_batmanwl": {
+   "map": 1,
+   "name": "Le Batman qui rit",
+   "en": "The Batman Who Laughs",
+   "sub": "le pire des Batman",
+   "desc": "Bruce Wayne d'une Terre du Multivers noir, contaminé par le Joker. Il sert Barbatos puis cherche à régner sur toutes les réalités.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Tales from the Dark Multiverse: Dark Nights Metal #1 (2021)",
+   "rel": [
+    "dc_barbatos",
+    "dc_darkmulti",
+    "dc_deathmetal",
+    "dc_metal"
+   ]
+  },
+  "dc_barbatos": {
+   "map": 1,
+   "name": "Barbatos",
+   "sub": "le dieu-dragon du Multivers noir",
+   "desc": "Entité qui règne sur le Multivers noir et cherche à faire sombrer le Multivers positif dans les ténèbres, en se servant de Batman comme porte d'entrée.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Dark Days: The Casting #1 (2017)",
+   "rel": [
+    "dc_batmanwl",
+    "dc_darkmulti",
+    "dc_metal",
+    "dc_worldforger"
+   ]
+  },
+  "dc_darkness": {
+   "map": 1,
+   "name": "La Grande Ténèbre",
+   "en": "Great Darkness",
+   "sub": "l'obscurité originelle",
+   "desc": "Ténèbre primordiale, présente avant la création, qui s'oppose à la lumière de la Présence. Elle se manifeste notamment dans Swamp Thing.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Swamp Thing vol. 2 #49 (1986)",
+   "rel": [
+    "dc_darkcrisis",
+    "dc_emptyhand",
+    "dc_presence",
+    "dc_spectre"
+   ]
+  },
+  "dc_spectre": {
+   "map": 5,
+   "name": "Le Spectre",
+   "en": "The Spectre",
+   "sub": "l'Esprit de la vengeance divine",
+   "desc": "Entité de colère divine liée à un hôte humain, le plus souvent le policier Jim Corrigan. Il punit les coupables au nom de la Présence.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "More Fun Comics #52 (1940)",
+   "rel": [
+    "dc_darkness",
+    "dc_eclipso",
+    "dc_fate",
+    "dc_presence",
+    "dc_stranger"
+   ]
+  },
+  "dc_stranger": {
+   "map": 5,
+   "name": "L'Étranger fantôme",
+   "en": "Phantom Stranger",
+   "sub": "le témoin errant",
+   "desc": "Figure mystérieuse au passé incertain, qui apparaît pour guider ou avertir les héros face aux menaces surnaturelles. Plusieurs origines contradictoires lui ont été données.",
+   "cat": "per",
+   "cert": "u",
+   "src": "The Phantom Stranger #1 (1952)",
+   "rel": [
+    "dc_fate",
+    "dc_presence",
+    "dc_spectre"
+   ]
+  },
+  "dc_lucifer": {
+   "map": 3,
+   "name": "Lucifer Morningstar",
+   "sub": "l'ange déchu",
+   "desc": "Ancien souverain de l'Enfer, qui abandonne son trône dans The Sandman et poursuit ensuite sa propre quête de liberté hors de la Création.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Sandman vol. 2 #4 (1989)",
+   "fact": "Il remet les clés de l'Enfer à Dream.",
+   "rel": [
+    "dc_dream",
+    "dc_hell",
+    "dc_michael",
+    "dc_presence",
+    "dc_silvercity"
+   ]
+  },
+  "dc_michael": {
+   "map": 3,
+   "name": "Michel Demiurgos",
+   "en": "Michael Demiurgos",
+   "sub": "l'archange démiurge",
+   "desc": "Archange, frère de Lucifer, porteur d'une part du pouvoir créateur de la Présence (le Démiurgos).",
+   "cat": "per",
+   "cert": "u",
+   "src": "Arkham Asylum: A Serious House on Serious Earth",
+   "rel": [
+    "dc_lucifer",
+    "dc_presence",
+    "dc_silvercity"
+   ]
+  },
+  "dc_dream": {
+   "map": 3,
+   "name": "Dream",
+   "en": "Dream of the Endless",
+   "sub": "le seigneur des rêves",
+   "desc": "Morphée, un des sept Éternels (Endless). Il règne sur le Rêve, le royaume où vont tous les êtres qui dorment.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Sandman vol. 2 #1 (1989)",
+   "fact": "Sa captivité de près d'un siècle ouvre la série The Sandman (1989).",
+   "rel": [
+    "dc_death",
+    "dc_desire",
+    "dc_destiny",
+    "dc_dreaming",
+    "dc_endless",
+    "dc_lucifer"
+   ]
+  },
+  "dc_death": {
+   "map": 3,
+   "name": "Death",
+   "en": "Death of the Endless",
+   "sub": "la sœur aînée",
+   "desc": "Une des sept Éternels : elle accueille chaque être au moment de sa mort. Contrairement à l'image classique, elle est bienveillante.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Sandman vol. 2 #8 (1989)",
+   "rel": [
+    "dc_destiny",
+    "dc_dream",
+    "dc_endless"
+   ]
+  },
+  "dc_destiny": {
+   "map": 3,
+   "name": "Destiny",
+   "en": "Destiny of the Endless",
+   "sub": "l'aîné des Éternels",
+   "desc": "Le plus ancien des Éternels. Aveugle, il porte le livre où tout ce qui a été et sera est écrit.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Weird Mystery Tales #1 (1972)",
+   "rel": [
+    "dc_death",
+    "dc_dream",
+    "dc_endless"
+   ]
+  },
+  "dc_destruction": {
+   "map": 3,
+   "name": "Destruction",
+   "en": "Destruction of the Endless",
+   "sub": "l'Éternel qui s'en est allé",
+   "desc": "Éternel du changement et de la destruction, qui a quitté son royaume et ses fonctions.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Sandman Special #1 (1991)",
+   "rel": [
+    "dc_delirium",
+    "dc_endless"
+   ]
+  },
+  "dc_desire": {
+   "map": 3,
+   "name": "Desire",
+   "en": "Desire of the Endless",
+   "sub": "le désir",
+   "desc": "Éternel du désir, jumeau de Despair, souvent en conflit avec Dream.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Sandman vol. 2 #10 (1989)",
+   "rel": [
+    "dc_despair",
+    "dc_dream",
+    "dc_endless"
+   ]
+  },
+  "dc_despair": {
+   "map": 3,
+   "name": "Despair",
+   "en": "Despair of the Endless",
+   "sub": "le désespoir",
+   "desc": "Éternelle du désespoir, jumelle de Desire.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Sandman vol. 2 #10 (1989)",
+   "rel": [
+    "dc_desire",
+    "dc_endless"
+   ]
+  },
+  "dc_delirium": {
+   "map": 3,
+   "name": "Delirium",
+   "en": "Delirium of the Endless",
+   "sub": "autrefois Delight",
+   "desc": "La plus jeune des Éternels, qui fut Delight (le ravissement) avant de devenir Delirium.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Sandman vol. 2 #21 (1990)",
+   "rel": [
+    "dc_destruction",
+    "dc_endless"
+   ]
+  },
+  "dc_endless": {
+   "map": 3,
+   "name": "Les Éternels",
+   "en": "The Endless",
+   "sub": "les sept fonctions de l'existence",
+   "desc": "Sept êtres plus anciens que les dieux : Destiny, Death, Dream, Destruction, Desire, Despair et Delirium. Ils incarnent des fonctions de l'existence plutôt que des divinités.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Sandman vol. 2 #8 (1989)",
+   "rel": [
+    "dc_death",
+    "dc_delirium",
+    "dc_desire",
+    "dc_despair",
+    "dc_destiny",
+    "dc_destruction",
+    "dc_dream",
+    "dc_dreaming"
+   ]
+  },
+  "dc_nekron": {
+   "map": 2,
+   "name": "Nekron",
+   "sub": "le seigneur de la non-vie",
+   "desc": "Entité de la mort et du vide, liée à la lumière noire. Il est au centre de Blackest Night.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Tales of the Green Lantern Corps #2 (1981)",
+   "rel": [
+    "dc_blackest",
+    "dc_lifeentity",
+    "dc_spectrum"
+   ]
+  },
+  "dc_parallax": {
+   "map": 2,
+   "name": "Parallax",
+   "sub": "la peur",
+   "desc": "Entité incarnant la peur, liée à la lumière jaune du spectre émotionnel. Elle a possédé Hal Jordan.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Green Lantern vol. 3 #50 (1994)",
+   "rel": [
+    "dc_haljordan",
+    "dc_scwar",
+    "dc_sinestro",
+    "dc_spectrum"
+   ]
+  },
+  "dc_ion": {
+   "map": 2,
+   "name": "Ion",
+   "sub": "la volonté",
+   "desc": "Entité incarnant la volonté, liée à la lumière verte des Green Lanterns.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Infinite Crisis Special: Rann-Thanagar War #1 (2006)",
+   "rel": [
+    "dc_glcorps",
+    "dc_kyle",
+    "dc_spectrum"
+   ]
+  },
+  "dc_ophidian": {
+   "map": 2,
+   "name": "L'Ophidien",
+   "en": "Ophidian",
+   "sub": "l'avarice",
+   "desc": "Entité incarnant l'avarice, liée à la lumière orange.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Green Lantern vol. 4 #52 (2010)",
+   "rel": [
+    "dc_spectrum"
+   ]
+  },
+  "dc_butcher": {
+   "map": 2,
+   "name": "Le Boucher",
+   "en": "Butcher",
+   "sub": "la rage",
+   "desc": "Entité incarnant la rage, liée à la lumière rouge.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Green Lantern vol. 4 #52 (2010)",
+   "rel": [
+    "dc_spectrum"
+   ]
+  },
+  "dc_predator": {
+   "map": 2,
+   "name": "Le Prédateur",
+   "en": "Predator",
+   "sub": "l'amour",
+   "desc": "Entité incarnant l'amour, liée à la lumière violette des Star Sapphires.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Green Lantern vol. 2 #178 (1984)",
+   "rel": [
+    "dc_spectrum"
+   ]
+  },
+  "dc_adara": {
+   "map": 2,
+   "name": "Adara",
+   "sub": "l'espoir",
+   "desc": "Entité incarnant l'espoir, liée à la lumière bleue.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Green Lantern vol. 4 #52 (2010)",
+   "rel": [
+    "dc_spectrum"
+   ]
+  },
+  "dc_proselyte": {
+   "map": 2,
+   "name": "Le Prosélyte",
+   "en": "Proselyte",
+   "sub": "la compassion",
+   "desc": "Entité incarnant la compassion, liée à la lumière indigo.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Green Lantern vol. 4 #52 (2010)",
+   "rel": [
+    "dc_spectrum"
+   ]
+  },
+  "dc_lifeentity": {
+   "map": 2,
+   "name": "L'Entité de vie",
+   "en": "Life Entity",
+   "sub": "la lumière blanche",
+   "desc": "Entité incarnant la vie elle-même, réunion de toutes les lumières du spectre. Elle s'oppose à Nekron.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Blackest Night #7 (2010)",
+   "rel": [
+    "dc_blackest",
+    "dc_brightest",
+    "dc_kyle",
+    "dc_nekron",
+    "dc_spectrum"
+   ]
+  },
+  "dc_emptyhand": {
+   "map": 0,
+   "name": "La Main vide",
+   "en": "Empty Hand",
+   "sub": "le Gentry",
+   "desc": "Puissance destructrice venue d'au-delà du Multivers, qui cherche à corrompre et anéantir les mondes. Elle apparaît dans The Multiversity.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "The Multiversity Guidebook #1 (2015)",
+   "rel": [
+    "dc_darkness",
+    "dc_multiversity",
+    "dc_overvoid"
+   ]
+  },
+  "dc_mandrakk": {
+   "map": 0,
+   "name": "Mandrakk",
+   "en": "Mandrakk (Dax Novu)",
+   "sub": "le Monitor noir",
+   "desc": "Dax Novu, Monitor devenu vampire cosmique, qui cherche à dévorer le Multivers à la fin de Final Crisis.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Final Crisis: Superman Beyond #1 (2008)",
+   "rel": [
+    "dc_finalcrisis",
+    "dc_monitors",
+    "dc_nixuotan"
+   ]
+  },
+  "dc_nixuotan": {
+   "map": 0,
+   "name": "Nix Uotan",
+   "sub": "le dernier Monitor",
+   "desc": "Monitor bienveillant, déchu puis restauré, qui défend le Multivers dans Final Crisis et The Multiversity.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Countdown to Final Crisis #21 (2007)",
+   "rel": [
+    "dc_finalcrisis",
+    "dc_mandrakk",
+    "dc_monitors",
+    "dc_multiversity"
+   ]
+  },
+  "dc_monitors": {
+   "map": 0,
+   "name": "Les Monitors",
+   "en": "Monitors",
+   "sub": "les gardiens du Multivers",
+   "desc": "Race d'êtres issus de la conscience du premier Monitor, chargés de surveiller les Terres du Multivers.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "New Teen Titans #21 (1982)",
+   "rel": [
+    "dc_mandrakk",
+    "dc_monitor",
+    "dc_nixuotan"
+   ]
+  },
+  "dc_darkseid": {
+   "map": 4,
+   "name": "Darkseid",
+   "en": "Darkseid (Uxas)",
+   "sub": "le seigneur d'Apokolips",
+   "desc": "Nouveau Dieu tyran d'Apokolips, qui cherche l'Équation d'Anti-Vie pour soumettre toute volonté. Il est l'un des plus grands ennemis de l'univers DC.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Superman's Pal, Jimmy Olsen #134 (1970)",
+   "rel": [
+    "dc_absolute",
+    "dc_antilife",
+    "dc_apokolips",
+    "dc_finalcrisis",
+    "dc_highfather",
+    "dc_imperiex",
+    "dc_orion",
+    "dc_source",
+    "dc_yugakhan"
+   ]
+  },
+  "dc_highfather": {
+   "map": 4,
+   "name": "Highfather",
+   "en": "Highfather (Izaya)",
+   "sub": "le chef de New Genesis",
+   "desc": "Izaya, chef des Nouveaux Dieux de New Genesis, qui consulte la Source à travers le Mur.",
+   "cat": "per",
+   "cert": "u",
+   "src": "New Gods #1 (1971)",
+   "rel": [
+    "dc_darkseid",
+    "dc_newgenesis",
+    "dc_orion",
+    "dc_quintessence",
+    "dc_source"
+   ]
+  },
+  "dc_metron": {
+   "map": 4,
+   "name": "Metron",
+   "sub": "le chercheur de savoir",
+   "desc": "Nouveau Dieu en quête de connaissance absolue, qui voyage à travers l'espace et le temps sur son Fauteuil de Möbius.",
+   "cat": "per",
+   "cert": "u",
+   "src": "New Gods #1 (1971)",
+   "rel": [
+    "dc_mobius",
+    "dc_source",
+    "dc_sourcewall"
+   ]
+  },
+  "dc_orion": {
+   "map": 4,
+   "name": "Orion",
+   "sub": "le guerrier de New Genesis",
+   "desc": "Fils de Darkseid, élevé sur New Genesis dans le cadre d'un échange d'héritiers pour sceller la paix.",
+   "cat": "per",
+   "cert": "u",
+   "src": "New Gods #1 (1971)",
+   "rel": [
+    "dc_darkseid",
+    "dc_highfather",
+    "dc_newgenesis"
+   ]
+  },
+  "dc_mobius": {
+   "map": 4,
+   "name": "Le Fauteuil de Möbius",
+   "en": "Mobius Chair",
+   "sub": "le trône du savoir",
+   "desc": "Fauteuil de Metron, capable de voyager à travers le temps, l'espace et les dimensions, et de répondre à presque toutes les questions.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "New Gods #1 (1971)",
+   "rel": [
+    "dc_metron"
+   ]
+  },
+  "dc_antilife": {
+   "map": 4,
+   "name": "L'Équation d'Anti-Vie",
+   "en": "Anti-Life Equation",
+   "sub": "la preuve que la liberté n'existe pas",
+   "desc": "Formule capable d'asservir la volonté de tout être vivant. Darkseid la recherche depuis les récits de Jack Kirby.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Forever People #5 (1971)",
+   "rel": [
+    "dc_darkseid",
+    "dc_finalcrisis"
+   ]
+  },
+  "dc_sourcewall": {
+   "map": 0,
+   "name": "Le Mur de la Source",
+   "en": "Source Wall",
+   "sub": "la frontière de la Création",
+   "desc": "Mur cosmique au bord du Multivers, fait des corps figés de ceux qui ont tenté d'atteindre la Source.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "New Gods #5 (1971)",
+   "rel": [
+    "dc_hands",
+    "dc_metron",
+    "dc_perpetua",
+    "dc_source",
+    "dc_yugakhan"
+   ]
+  },
+  "dc_speedforce": {
+   "map": 0,
+   "name": "La Speed Force",
+   "en": "Speed Force",
+   "sub": "la force de la vitesse",
+   "desc": "Dimension et énergie extra-dimensionnelle d'où les bolides comme Flash tirent leur vitesse.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "The Flash vol. 2 #91 (1994)",
+   "rel": [
+    "dc_bleed",
+    "dc_flashpoint",
+    "dc_sageforce",
+    "dc_stillforce",
+    "dc_strengthforce"
+   ]
+  },
+  "dc_stillforce": {
+   "map": 5,
+   "name": "La Still Force",
+   "en": "Still Force",
+   "sub": "l'immobilité",
+   "desc": "Force opposée à la Speed Force, qui permet de ralentir ou d'arrêter le mouvement.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Justice League vol. 4 #2 (2018)",
+   "rel": [
+    "dc_speedforce"
+   ]
+  },
+  "dc_sageforce": {
+   "map": 5,
+   "name": "La Sage Force",
+   "en": "Sage Force",
+   "sub": "la sagesse",
+   "desc": "Une des forces de la Création révélées dans The Flash, liée à l'intelligence et à la conscience.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "The Flash vol. 5 #49 (2018)",
+   "rel": [
+    "dc_speedforce"
+   ]
+  },
+  "dc_strengthforce": {
+   "map": 5,
+   "name": "La Strength Force",
+   "en": "Strength Force",
+   "sub": "la force physique",
+   "desc": "Une des forces de la Création révélées dans The Flash, liée à la puissance physique.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "The Flash vol. 5 #49 (2018)",
+   "rel": [
+    "dc_speedforce"
+   ]
+  },
+  "dc_spectrum": {
+   "map": 2,
+   "name": "Le Spectre émotionnel",
+   "en": "Emotional Spectrum",
+   "sub": "les sept lumières",
+   "desc": "Spectre de lumières émotionnelles (rage, avarice, peur, volonté, espoir, compassion, amour), chacune associée à une entité et à un Corps de porteurs d'anneaux.",
+   "cat": "pow",
+   "cert": "u",
+   "src": "Green Lantern: Rebirth #3 (2005)",
+   "fact": "La volonté (le vert) occupe le centre du spectre.",
+   "rel": [
+    "dc_adara",
+    "dc_blackest",
+    "dc_butcher",
+    "dc_glcorps",
+    "dc_ion",
+    "dc_lifeentity",
+    "dc_nekron",
+    "dc_ophidian",
+    "dc_parallax",
+    "dc_predator",
+    "dc_proselyte"
+   ]
+  },
+  "dc_glcorps": {
+   "map": 2,
+   "name": "Le Green Lantern Corps",
+   "en": "Green Lantern Corps",
+   "sub": "les gardiens de l'espace",
+   "desc": "Force de police intergalactique créée par les Gardiens de l'Univers, dont les membres portent des anneaux alimentés par la volonté.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Showcase #22 (1959)",
+   "rel": [
+    "dc_guardians",
+    "dc_haljordan",
+    "dc_ion",
+    "dc_kyle",
+    "dc_oa",
+    "dc_scwar",
+    "dc_sinestro",
+    "dc_spectrum"
+   ]
+  },
+  "dc_guardians": {
+   "map": 2,
+   "name": "Les Gardiens de l'Univers",
+   "en": "Guardians of the Universe",
+   "sub": "les fondateurs du Corps",
+   "desc": "Êtres immortels de la planète Oa qui ont fondé le Green Lantern Corps.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Green Lantern vol. 2 #1 (1960)",
+   "rel": [
+    "dc_glcorps",
+    "dc_krona",
+    "dc_oa"
+   ]
+  },
+  "dc_oa": {
+   "map": 2,
+   "name": "Oa",
+   "sub": "le centre de l'univers",
+   "desc": "Planète des Gardiens de l'Univers et quartier général du Green Lantern Corps.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Green Lantern vol. 2 #1 (1960)",
+   "rel": [
+    "dc_glcorps",
+    "dc_guardians",
+    "dc_krona"
+   ]
+  },
+  "dc_newgenesis": {
+   "map": 4,
+   "name": "New Genesis",
+   "sub": "le monde lumineux",
+   "desc": "Planète des Nouveaux Dieux menés par Highfather, née comme Apokolips de la destruction des anciens dieux.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "New Gods #1 (1971)",
+   "rel": [
+    "dc_apokolips",
+    "dc_highfather",
+    "dc_orion",
+    "dc_source"
+   ]
+  },
+  "dc_apokolips": {
+   "map": 4,
+   "name": "Apokolips",
+   "sub": "le monde de feu",
+   "desc": "Planète infernale gouvernée par Darkseid, jumelle sombre de New Genesis.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "New Gods #1 (1971)",
+   "rel": [
+    "dc_darkseid",
+    "dc_newgenesis",
+    "dc_source",
+    "dc_yugakhan"
+   ]
+  },
+  "dc_sphere": {
+   "map": 0,
+   "name": "La Sphère des dieux",
+   "en": "Sphere of the Gods",
+   "sub": "le royaume des idées",
+   "desc": "Couche de la carte du Multivers qui entoure les Terres et abrite les royaumes des dieux et des idées (le Rêve, le Ciel, l'Enfer, la cinquième dimension…).",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Animal Man vol. 2 #1 (2011)",
+   "rel": [
+    "dc_dreaming",
+    "dc_fifthdim",
+    "dc_hell",
+    "dc_multiverse",
+    "dc_silvercity"
+   ]
+  },
+  "dc_bleed": {
+   "map": 0,
+   "name": "Le Bleed",
+   "en": "The Bleed",
+   "sub": "l'espace entre les mondes",
+   "desc": "Milieu qui sépare les univers du Multivers et permet de voyager entre eux.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Justice League of America #21 (1963)",
+   "rel": [
+    "dc_multiverse",
+    "dc_speedforce"
+   ]
+  },
+  "dc_limbo": {
+   "map": 0,
+   "name": "Les Limbes",
+   "en": "Limbo",
+   "sub": "le lieu des oubliés",
+   "desc": "Royaume où se retrouvent les personnages et les mondes oubliés par la continuité.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Animal Man #24 (1990)",
+   "rel": [
+    "dc_multiverse"
+   ]
+  },
+  "dc_darkmulti": {
+   "map": 0,
+   "name": "Le Multivers noir",
+   "en": "Dark Multiverse",
+   "sub": "les mondes ratés",
+   "desc": "Océan de réalités instables nées des peurs et des échecs, qui forme le reflet sombre du Multivers.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "Batman vol. 2 #49 (2016)",
+   "rel": [
+    "dc_barbatos",
+    "dc_batmanwl",
+    "dc_metal",
+    "dc_worldforger"
+   ]
+  },
+  "dc_multiverse": {
+   "map": 0,
+   "name": "Le Multivers",
+   "en": "Multiverse",
+   "sub": "les Terres parallèles",
+   "desc": "Ensemble des univers parallèles de DC. Après The Multiversity (2014), il est décrit comme 52 Terres organisées dans l'Orrerie des mondes.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "The Flash #123 (1961)",
+   "rel": [
+    "dc_bleed",
+    "dc_earth1",
+    "dc_earth2",
+    "dc_earth3",
+    "dc_earthprime",
+    "dc_hypertime",
+    "dc_infcrisis",
+    "dc_limbo",
+    "dc_monitor",
+    "dc_multiversity",
+    "dc_omniverse",
+    "dc_overvoid",
+    "dc_phantomzone",
+    "dc_primeearth",
+    "dc_sphere"
+   ]
+  },
+  "dc_dreaming": {
+   "map": 0,
+   "name": "Le Rêve",
+   "en": "The Dreaming",
+   "sub": "le royaume de Dream",
+   "desc": "Royaume de Dream où se rendent les êtres pendant leur sommeil.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "The Flash #176 (1968)",
+   "rel": [
+    "dc_dream",
+    "dc_endless",
+    "dc_sphere"
+   ]
+  },
+  "dc_hell": {
+   "map": 0,
+   "name": "L'Enfer",
+   "en": "Hell",
+   "sub": "le royaume des damnés",
+   "desc": "Royaume infernal longtemps gouverné par Lucifer avant qu'il ne l'abandonne.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Whiz Comics #72 (1946)",
+   "rel": [
+    "dc_lucifer",
+    "dc_sphere",
+    "dc_trigon"
+   ]
+  },
+  "dc_silvercity": {
+   "map": 0,
+   "name": "La Cité d'argent",
+   "en": "Silver City",
+   "sub": "le Ciel",
+   "desc": "Cité céleste des anges de la Présence.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "The Books of Magic #1 (1990)",
+   "rel": [
+    "dc_lucifer",
+    "dc_michael",
+    "dc_presence",
+    "dc_sphere"
+   ]
+  },
+  "dc_phantomzone": {
+   "map": 0,
+   "name": "La Zone fantôme",
+   "en": "Phantom Zone",
+   "sub": "la prison de Krypton",
+   "desc": "Dimension-prison utilisée par Krypton pour enfermer ses criminels.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Adventure Comics #283 (1961)",
+   "rel": [
+    "dc_multiverse"
+   ]
+  },
+  "dc_hypertime": {
+   "map": 0,
+   "name": "L'Hypertemps",
+   "en": "Hypertime",
+   "sub": "le réseau des chronologies",
+   "desc": "Concept qui relie les chronologies divergentes et explique la coexistence de versions contradictoires d'un même récit.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "Swamp Thing vol. 2 #62 (1987)",
+   "rel": [
+    "dc_multiverse",
+    "dc_omniverse"
+   ]
+  },
+  "dc_overvoid": {
+   "map": 0,
+   "name": "Le Survide",
+   "en": "Overvoid",
+   "sub": "la page blanche",
+   "desc": "Le néant blanc qui entoure tout le Multivers sur la carte de The Multiversity, souvent lu comme une métaphore de la page.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "Crisis on Infinite Earths #1 (1985)",
+   "rel": [
+    "dc_emptyhand",
+    "dc_monitor",
+    "dc_multiverse",
+    "dc_multiversity"
+   ]
+  },
+  "dc_omniverse": {
+   "map": 0,
+   "name": "L'Omnivers",
+   "en": "Omniverse",
+   "sub": "au-delà du Multivers",
+   "desc": "Ensemble plus vaste qui englobe le Multivers, l'Hypertemps et ce qui est révélé après Dark Nights: Death Metal.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "Swamp Thing vol. 2 #62 (1987)",
+   "rel": [
+    "dc_deathmetal",
+    "dc_hypertime",
+    "dc_infrontier",
+    "dc_multiverse"
+   ]
+  },
+  "dc_hands": {
+   "map": 1,
+   "name": "Les Mains",
+   "en": "The Hands",
+   "sub": "les bâtisseurs d'univers",
+   "desc": "Êtres cosmiques qui créent des multivers et jugent leurs créateurs. Perpetua est l'une d'eux.",
+   "cat": "cel",
+   "cert": "u",
+   "src": "Dark Nights: Death Metal #6 (2021)",
+   "rel": [
+    "dc_perpetua",
+    "dc_sourcewall"
+   ]
+  },
+  "dc_quintessence": {
+   "map": 7,
+   "name": "La Quintessence",
+   "en": "Quintessence",
+   "sub": "les sages du cosmos",
+   "desc": "Conseil d'êtres parmi les plus puissants et les plus sages de l'univers DC, qui observent les affaires des mortels.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Kingdom Come #3 (1996)",
+   "rel": [
+    "dc_highfather"
+   ]
+  },
+  "dc_lordsorder": {
+   "map": 5,
+   "name": "Les Seigneurs de l'Ordre",
+   "en": "Lords of Order",
+   "sub": "les gardiens de l'ordre",
+   "desc": "Êtres mystiques qui défendent l'ordre dans l'univers, en opposition aux Seigneurs du Chaos. Nabu en fait partie.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "DC Special Series #10 (1978)",
+   "rel": [
+    "dc_fate",
+    "dc_lordschaos",
+    "dc_nabu"
+   ]
+  },
+  "dc_lordschaos": {
+   "map": 5,
+   "name": "Les Seigneurs du Chaos",
+   "en": "Lords of Chaos",
+   "sub": "les forces du désordre",
+   "desc": "Êtres mystiques qui servent le chaos, en lutte éternelle contre les Seigneurs de l'Ordre.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "DC Special Series #10 (1978)",
+   "rel": [
+    "dc_lordsorder"
+   ]
+  },
+  "dc_nabu": {
+   "map": 5,
+   "name": "Nabu",
+   "sub": "le Seigneur de l'Ordre",
+   "desc": "Seigneur de l'Ordre qui réside dans le casque du Docteur Fate.",
+   "cat": "per",
+   "cert": "u",
+   "src": "More Fun Comics #67 (1941)",
+   "rel": [
+    "dc_fate",
+    "dc_lordsorder"
+   ]
+  },
+  "dc_fate": {
+   "map": 5,
+   "name": "Docteur Fate",
+   "en": "Doctor Fate (Kent Nelson)",
+   "sub": "le sorcier au casque",
+   "desc": "Kent Nelson, archéologue devenu sorcier en portant le casque de Nabu.",
+   "cat": "per",
+   "cert": "u",
+   "src": "More Fun Comics #55 (1940)",
+   "rel": [
+    "dc_lordsorder",
+    "dc_nabu",
+    "dc_spectre",
+    "dc_stranger"
+   ]
+  },
+  "dc_mxyzptlk": {
+   "map": 5,
+   "name": "Mister Mxyzptlk",
+   "sub": "le farceur de la 5e dimension",
+   "desc": "Être de la cinquième dimension qui tourmente Superman par ses farces et sa maîtrise de la réalité.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Superman vol. 2 #11 (1987)",
+   "rel": [
+    "dc_fifthdim"
+   ]
+  },
+  "dc_fifthdim": {
+   "map": 0,
+   "name": "La Cinquième dimension",
+   "en": "Fifth Dimension",
+   "sub": "le monde des imps",
+   "desc": "Dimension supérieure d'où viennent Mister Mxyzptlk et Bat-Mite, dont les habitants manipulent la réalité.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Wonder Woman #4 (1943)",
+   "rel": [
+    "dc_mxyzptlk",
+    "dc_sphere"
+   ]
+  },
+  "dc_imperiex": {
+   "map": 7,
+   "name": "Imperiex",
+   "sub": "le destructeur d'univers",
+   "desc": "Entité qui cherche à détruire l'univers pour le refaire, au cœur de l'événement Our Worlds at War (2001).",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Superman vol. 2 #153 (2000)",
+   "rel": [
+    "dc_brainiac",
+    "dc_darkseid"
+   ]
+  },
+  "dc_brainiac": {
+   "map": 7,
+   "name": "Brainiac",
+   "en": "Brainiac (Vril Dox)",
+   "sub": "le collectionneur de mondes",
+   "desc": "Intelligence coluane qui réduit et collectionne des villes entières, ennemi majeur de Superman.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Action Comics #242 (1958)",
+   "rel": [
+    "dc_convergence",
+    "dc_imperiex"
+   ]
+  },
+  "dc_krona": {
+   "map": 2,
+   "name": "Krona",
+   "sub": "le Gardien déchu",
+   "desc": "Oan dont la quête des origines de l'univers aurait provoqué des catastrophes cosmiques.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Green Lantern vol. 2 #40 (1965)",
+   "rel": [
+    "dc_guardians",
+    "dc_oa"
+   ]
+  },
+  "dc_trigon": {
+   "map": 5,
+   "name": "Trigon",
+   "sub": "le démon interdimensionnel",
+   "desc": "Démon tout-puissant, père de Raven, ennemi des Teen Titans.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "New Teen Titans #2 (1980)",
+   "rel": [
+    "dc_hell"
+   ]
+  },
+  "dc_eclipso": {
+   "map": 5,
+   "name": "Eclipso",
+   "sub": "l'esprit de la vengeance déchue",
+   "desc": "Entité de vengeance associée à un diamant noir, qui corrompt ceux qu'elle possède.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "House of Secrets #61 (1963)",
+   "rel": [
+    "dc_spectre"
+   ]
+  },
+  "dc_manhattan": {
+   "map": 7,
+   "name": "Docteur Manhattan",
+   "en": "Doctor Manhattan",
+   "sub": "l'homme qui voit le temps",
+   "desc": "Jon Osterman, rendu omnipotent par un accident. Venu de Watchmen, il modifie la chronologie de l'univers DC jusqu'à Doomsday Clock.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Watchmen #1 (1986)",
+   "rel": [
+    "dc_doomsday",
+    "dc_rebirth"
+   ]
+  },
+  "dc_superboyprime": {
+   "map": 7,
+   "name": "Superboy-Prime",
+   "sub": "le Superman de Terre-Prime",
+   "desc": "Kal-El de Terre-Prime, rescapé de la première Crise, qui devient l'un des antagonistes d'Infinite Crisis.",
+   "cat": "per",
+   "cert": "u",
+   "src": "DC Comics Presents #87 (1985)",
+   "rel": [
+    "dc_coie",
+    "dc_earthprime",
+    "dc_infcrisis"
+   ]
+  },
+  "dc_sinestro": {
+   "map": 2,
+   "name": "Sinestro",
+   "sub": "la peur faite loi",
+   "desc": "Ancien Green Lantern devenu fondateur du Sinestro Corps, qui puise dans la lumière jaune de la peur.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Green Lantern vol. 2 #7 (1961)",
+   "rel": [
+    "dc_glcorps",
+    "dc_haljordan",
+    "dc_parallax",
+    "dc_scwar"
+   ]
+  },
+  "dc_haljordan": {
+   "map": 2,
+   "name": "Hal Jordan",
+   "sub": "le Green Lantern de la Terre",
+   "desc": "Pilote d'essai choisi par l'anneau d'Abin Sur, possédé un temps par Parallax.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Green Lantern vol. 2 #100 (1978)",
+   "rel": [
+    "dc_glcorps",
+    "dc_parallax",
+    "dc_sinestro"
+   ]
+  },
+  "dc_kyle": {
+   "map": 2,
+   "name": "Kyle Rayner",
+   "sub": "le porteur de toutes les lumières",
+   "desc": "Green Lantern devenu un temps l'hôte d'Ion puis White Lantern.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Green Lantern vol. 3 #48 (1994)",
+   "rel": [
+    "dc_glcorps",
+    "dc_ion",
+    "dc_lifeentity"
+   ]
+  },
+  "dc_yugakhan": {
+   "map": 4,
+   "name": "Yuga Khan",
+   "sub": "le père de Darkseid",
+   "desc": "Ancien souverain d'Apokolips qui tenta de franchir le Mur de la Source et y resta figé.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "New Gods vol. 3 #17 (1990)",
+   "rel": [
+    "dc_apokolips",
+    "dc_darkseid",
+    "dc_sourcewall"
+   ]
+  },
+  "dc_earthprime": {
+   "map": 0,
+   "name": "Terre-Prime",
+   "en": "Earth-Prime",
+   "sub": "notre monde",
+   "desc": "Terre dans laquelle les super-héros n'existent que dans les comics, souvent présentée comme le monde du lecteur.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "The Flash #179 (1968)",
+   "rel": [
+    "dc_multiverse",
+    "dc_superboyprime"
+   ]
+  },
+  "dc_newearth": {
+   "map": 0,
+   "name": "Nouvelle Terre",
+   "en": "New Earth",
+   "sub": "la Terre post-Crise",
+   "desc": "La Terre unique née de Crisis on Infinite Earths (1985), cadre de la continuité DC jusqu'en 2011.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "Losers Special #1 (1985)",
+   "rel": [
+    "dc_coie",
+    "dc_primeearth",
+    "dc_zerohour"
+   ]
+  },
+  "dc_primeearth": {
+   "map": 0,
+   "name": "Terre première",
+   "en": "Prime Earth",
+   "sub": "la Terre principale depuis 2011",
+   "desc": "La Terre principale de la continuité DC depuis Flashpoint et le relancement de 2011.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "Flashpoint vol. 2 #5 (2011)",
+   "rel": [
+    "dc_flashpoint",
+    "dc_multiverse",
+    "dc_newearth"
+   ]
+  },
+  "dc_earth2": {
+   "map": 0,
+   "name": "Terre-Deux",
+   "en": "Earth-Two",
+   "sub": "la Terre de l'âge d'or",
+   "desc": "Terre parallèle des héros de l'âge d'or de DC.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "New Fun Comics #1 (1935)",
+   "rel": [
+    "dc_coie",
+    "dc_multiverse"
+   ]
+  },
+  "dc_earth3": {
+   "map": 0,
+   "name": "Terre-Trois",
+   "en": "Earth-Three",
+   "sub": "la Terre inversée",
+   "desc": "Terre où les rôles moraux sont inversés, foyer du Crime Syndicate.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "Justice League of America #29 (1964)",
+   "rel": [
+    "dc_multiverse"
+   ]
+  },
+  "dc_earth1": {
+   "map": 0,
+   "name": "Terre-Un",
+   "en": "Earth-One",
+   "sub": "la Terre de l'âge d'argent",
+   "desc": "Terre principale de DC avant Crisis on Infinite Earths.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "More Fun Comics #101 (1945)",
+   "rel": [
+    "dc_coie",
+    "dc_multiverse"
+   ]
+  },
+  "dc_absolute": {
+   "map": 7,
+   "name": "L'Univers Absolute",
+   "en": "Absolute Universe",
+   "sub": "un nouvel univers",
+   "desc": "Univers créé à partir de l'énergie de Darkseid, présenté dans la gamme Absolute lancée en 2024.",
+   "cat": "cos",
+   "cert": "u",
+   "src": "Dark Nights: Death Metal #7 (2021)",
+   "rel": [
+    "dc_allin",
+    "dc_darkseid"
+   ]
+  },
+  "dc_coie": {
+   "map": 6,
+   "name": "Crisis on Infinite Earths",
+   "sub": "la première Crise",
+   "desc": "L'Anti-Monitor détruit le Multivers ; il ne reste qu'une seule Terre et une seule continuité.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Crisis on Infinite Earths #1 (1985)",
+   "year": 1985,
+   "rel": [
+    "dc_antimonitor",
+    "dc_earth1",
+    "dc_earth2",
+    "dc_monitor",
+    "dc_newearth",
+    "dc_superboyprime"
+   ]
+  },
+  "dc_zerohour": {
+   "map": 6,
+   "name": "Zero Hour",
+   "en": "Zero Hour: Crisis in Time",
+   "sub": "la crise du temps",
+   "desc": "Une anomalie temporelle menace d'effacer l'histoire et conduit à une remise à plat de la chronologie.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Zero Hour: Crisis in Time #4 (1994)",
+   "year": 1994,
+   "rel": [
+    "dc_newearth"
+   ]
+  },
+  "dc_infcrisis": {
+   "map": 6,
+   "name": "Infinite Crisis",
+   "sub": "le retour des Terres",
+   "desc": "Des survivants de la première Crise tentent de recréer le Multivers, ce qui mène à son retour.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Infinite Crisis #1 (2005)",
+   "year": 2005,
+   "rel": [
+    "dc_multiverse",
+    "dc_superboyprime"
+   ]
+  },
+  "dc_finalcrisis": {
+   "map": 6,
+   "name": "Final Crisis",
+   "sub": "le jour où le mal a gagné",
+   "desc": "Darkseid répand l'Équation d'Anti-Vie sur la Terre, et les Monitors s'affrontent jusqu'à Mandrakk.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Final Crisis #1 (2008)",
+   "year": 2008,
+   "rel": [
+    "dc_antilife",
+    "dc_darkseid",
+    "dc_mandrakk",
+    "dc_nixuotan"
+   ]
+  },
+  "dc_flashpoint": {
+   "map": 6,
+   "name": "Flashpoint",
+   "sub": "la chronologie brisée",
+   "desc": "Flash modifie le passé et provoque une réalité alternative, qui donne naissance à la continuité de 2011.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Flashpoint vol. 2 #1 (2011)",
+   "year": 2011,
+   "rel": [
+    "dc_primeearth",
+    "dc_speedforce"
+   ]
+  },
+  "dc_convergence": {
+   "map": 6,
+   "name": "Convergence",
+   "sub": "les villes rescapées",
+   "desc": "Brainiac réunit des villes issues de continuités disparues sur un monde artificiel.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Convergence #0 (2015)",
+   "year": 2015,
+   "rel": [
+    "dc_brainiac"
+   ]
+  },
+  "dc_rebirth": {
+   "map": 6,
+   "name": "DC Rebirth",
+   "en": "DC Universe: Rebirth",
+   "sub": "la mémoire retrouvée",
+   "desc": "Wally West revient et révèle qu'une force extérieure a volé des années à l'univers DC : le début du mystère Docteur Manhattan.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "DCU: Rebirth #1 (2016)",
+   "year": 2016,
+   "rel": [
+    "dc_doomsday",
+    "dc_manhattan"
+   ]
+  },
+  "dc_doomsday": {
+   "map": 6,
+   "name": "Doomsday Clock",
+   "sub": "Watchmen rencontre DC",
+   "desc": "Le Docteur Manhattan découvre que l'univers DC, et Superman en particulier, se renouvelle à chaque remaniement de la continuité.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Doomsday Clock #1 (2018)",
+   "year": 2018,
+   "rel": [
+    "dc_manhattan",
+    "dc_rebirth"
+   ]
+  },
+  "dc_metal": {
+   "map": 6,
+   "name": "Dark Nights: Metal",
+   "sub": "le Multivers noir",
+   "desc": "Barbatos et les Batman du Multivers noir envahissent le Multivers positif.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Dark Nights: Metal #1 (2017)",
+   "year": 2017,
+   "rel": [
+    "dc_barbatos",
+    "dc_batmanwl",
+    "dc_darkmulti",
+    "dc_worldforger"
+   ]
+  },
+  "dc_deathmetal": {
+   "map": 6,
+   "name": "Dark Nights: Death Metal",
+   "sub": "le retour de Perpetua",
+   "desc": "Perpetua et le Batman qui rit refont la réalité ; la conclusion restaure toutes les histoires.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Dark Nights: Death Metal #1 (2020)",
+   "year": 2020,
+   "rel": [
+    "dc_batmanwl",
+    "dc_omniverse",
+    "dc_perpetua"
+   ]
+  },
+  "dc_infrontier": {
+   "map": 6,
+   "name": "Infinite Frontier",
+   "sub": "la nouvelle frontière",
+   "desc": "Après Death Metal, toutes les époques de DC comptent à nouveau, dans un Omnivers élargi.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Infinite Frontier #0 (2021)",
+   "year": 2021,
+   "rel": [
+    "dc_omniverse"
+   ]
+  },
+  "dc_darkcrisis": {
+   "map": 6,
+   "name": "Dark Crisis on Infinite Earths",
+   "sub": "la Grande Ténèbre",
+   "desc": "La Grande Ténèbre et Pariah attaquent alors que la Justice League a disparu.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Dark Crisis #1 (2022)",
+   "year": 2022,
+   "rel": [
+    "dc_antimonitor",
+    "dc_darkness"
+   ]
+  },
+  "dc_blackest": {
+   "map": 6,
+   "name": "Blackest Night",
+   "sub": "la nuit noire",
+   "desc": "Nekron lève une armée de Black Lanterns qui ressuscite les morts.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Blackest Night #1 (2009)",
+   "year": 2009,
+   "rel": [
+    "dc_lifeentity",
+    "dc_nekron",
+    "dc_spectrum"
+   ]
+  },
+  "dc_brightest": {
+   "map": 6,
+   "name": "Brightest Day",
+   "sub": "le jour le plus clair",
+   "desc": "L'Entité de vie ramène douze personnages à la vie et leur confie une mission.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Brightest Day #0 (2010)",
+   "year": 2010,
+   "rel": [
+    "dc_lifeentity"
+   ]
+  },
+  "dc_scwar": {
+   "map": 6,
+   "name": "La Guerre des Sinestro Corps",
+   "en": "Sinestro Corps War",
+   "sub": "la peur contre la volonté",
+   "desc": "Sinestro et son Corps alimenté par la peur attaquent le Green Lantern Corps.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "Green Lantern: Sinestro Corps Special #1 (2007)",
+   "year": 2007,
+   "rel": [
+    "dc_glcorps",
+    "dc_parallax",
+    "dc_sinestro"
+   ]
+  },
+  "dc_multiversity": {
+   "map": 6,
+   "name": "The Multiversity",
+   "sub": "la carte du Multivers",
+   "desc": "Grant Morrison cartographie les 52 Terres et la Main vide menace le Multivers.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "The Multiversity #1 (2014)",
+   "fact": "Le guide de la série publie la carte de référence du Multivers DC.",
+   "year": 2014,
+   "rel": [
+    "dc_emptyhand",
+    "dc_multiverse",
+    "dc_nixuotan",
+    "dc_overvoid"
+   ]
+  },
+  "dc_allin": {
+   "map": 6,
+   "name": "DC All In",
+   "sub": "l'élan de 2024",
+   "desc": "Relance éditoriale de 2024 qui introduit l'Univers Absolute.",
+   "cat": "evt",
+   "cert": "u",
+   "src": "DC All In Special #1 (2024)",
+   "year": 2024,
+   "rel": [
+    "dc_absolute"
+   ]
+  }
+ },
+ "cosmos": []
+}

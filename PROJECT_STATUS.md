@@ -14,7 +14,14 @@ Dernière mise à jour : 2026-11-04 · Dépôt : `lukecage2003/marvel-primeston`
 - Étapes 2 à 6 faites et publiées (sauf la comparaison de variantes de cartes, la chronologie interne, les preuves détaillées et l'anglais des pages éditoriales : voir ROADMAP.md). Plateforme : accueil, encyclopédie, 301 fiches, Cosmos, Structures, Chronologies, Archive, Dossiers, Recherche, Explorateur. Tests : 38 réussis, 0 échoué (39 avec --video).
 - Fiches enrichies : image principale actuelle du wiki (273 fiches) et fiche d'identité factuelle (1 883 faits : nom actuel, alias, nature, affiliations, famille, créateurs, première apparition…). Héros centré et nouvelle mise en page. Plus aucune redirection ni lien vers l'extérieur : les sources renvoient à l'archive interne, et les anciens liens `#id` ouvrent la fiche. Tests : 41 réussis, 0 échoué.
 - Finition visuelle : fiches sans mentions de provenance (crédit global discret en pied de page, infobulle sur la pastille de fiabilité), sources épurées, « Earth-616 » affiché « Terre-616 ».
-- **Session close le 2026-11-04.** Prochaine étape précise : vérification des fiches dans les comics (attribution du niveau Canon et des preuves), puis de nouveaux dossiers.
+- Session close le 2026-11-04.
+
+## Session du 2026-11-21 : univers DC
+- Logo Primestone retiré partout (site, explorateur, vidéos, miniatures, filigrane, image de partage). Le nom reste en texte.
+- **Univers DC** : 106 fiches (entités, structures, Éternels, spectre émotionnel, Quatrième Monde, crises), chacune vérifiée sur dc.fandom.com (page, première apparition avec année, créateurs, image actuelle). Textes rédigés par Primestone. 8 cartes DC dans l'explorateur (`?u=dc`) : Orrerie des mondes, Création, Spectre émotionnel, Éternels, Quatrième Monde, Forces et magie, Crises, Réseau.
+- **Mon plan / Officiel** : chaque carte peut afficher la version officielle (publication d'origine indiquée, constructions de fans masquées) ; les cartes sans version officielle le signalent.
+- Site : 407 fiches (Marvel et DC), filtre par univers, structures et chronologie DC, archive de 298 comics (11 sans année). Tests : 53 réussis, 0 échoué.
+- **Prochaine étape précise :** vérification des fiches dans les comics (niveau Canon et preuves), puis davantage de fiches DC (Terres de l'Orrerie, Lanterns, Justice League cosmique).
 
 ## 1. Ce que contient le dépôt
 `marvel-primeston` est une **copie propre, sans historique**, de l'atlas. L'ancien dépôt `matthias` n'existe plus sous ce nom. Il contenait aussi Tech Shield, avec des secrets et des CV de tiers, `site v3/` et un PDF de 56 Mo ; rien de tout cela n'est repris ici.

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8"><meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Cosmologie Marvel · Primestone</title>
 <meta name="description" content="L’atlas interactif de la cosmologie Marvel par Primestone : 8 cartes, près de 200 fiches sourcées, des Cosmos à l’Omnivers. Au-delà des héros.">
@@ -183,22 +183,23 @@ svg#svg:active{cursor:grabbing}
 }
 @media (max-width:400px){.brand{font-size:16px}.brand small{display:none}#q,#q:focus{width:17vw;padding:6px 8px}#bcodex,#bquiz{padding:6px 7px;font-size:14px}}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important}}
+#buni{border:2px solid var(--paper);color:var(--paper);font:700 15px var(--disp);padding:5px 8px;text-decoration:none;border-radius:3px}#vbadge{position:absolute;left:50%;top:12px;transform:translateX(-50%);z-index:5;background:#FFE500;color:#111;font:700 14px var(--disp);padding:5px 12px;border-radius:3px;box-shadow:3px 3px 0 #000;max-width:90%;text-align:center}.offv .n.th,.offv .th{display:none}
 </style>
 </head>
 <body>
 <canvas id="stars"></canvas><div class="grain"></div>
 <div id="app">
  <header>
-  <a class="brand" href="index.html" title="Accueil Marvel Primestone" style="text-decoration:none"><img class="bp" alt="Primestone"><div>Cosmologie Marvel<small>Un atlas Primestone. Au-delà des héros.</small></div></a>
+  <a class="brand" href="index.html" title="Accueil Marvel Primestone" style="text-decoration:none"><div>Cosmologie Marvel<small>Un atlas Primestone. Au-delà des héros.</small></div></a>
   <nav id="tabs"></nav>
-  <button id="bcodex">Codex</button><button id="bquiz" title="Qui est le plus puissant ?">Quiz</button><button id="blang" title="English version" aria-label="Langue">EN</button><input id="q" list="ql" placeholder="⌕ Chercher une entité…" autocomplete="off"><datalist id="ql"></datalist>
+  <button id="bcodex">Codex</button><button id="bquiz" title="Qui est le plus puissant ?">Quiz</button><button id="blang" title="English version" aria-label="Langue">EN</button><a id="buni" class="uni" href="explorer.html?u=dc" title="Changer d’univers">DC</a><input id="q" list="ql" placeholder="⌕ Chercher une entité…" autocomplete="off"><datalist id="ql"></datalist>
  </header>
  <main id="main">
   <div id="frame">
    <svg id="svg" xmlns="http://www.w3.org/2000/svg"></svg>
    <div id="scrim"></div>
    <div id="bars"></div>
-   <div id="wm"><img class="bp" alt=""><img class="bw" alt="Primestone"></div>
+   <div id="wm"></div><div id="vbadge" hidden></div>
    <div id="card"><span class="k">Cosmologie Marvel</span><h1></h1><p></p><div class="ln"></div></div>
    <div id="cap"><span class="k"></span><h2></h2><span class="s"></span><span class="d"></span><i class="pic"></i></div>
    <div id="safe"><i style="left:0;right:0;top:0;height:11%">Interface du haut</i><i style="right:0;top:34%;width:15%;height:44%">Boutons</i><i style="left:0;right:0;bottom:0;height:19%">Légende et interface du bas</i></div>
@@ -207,7 +208,7 @@ svg#svg:active{cursor:grabbing}
  </main>
  <footer>
   <div class="grp"><button id="prev">◀</button><button id="play">▶ Tour<span class="lg"> cinématique</span></button><button id="next">▶</button></div>
-  <div class="grp" id="fmts"></div>
+  <div class="grp" id="vers" role="group" aria-label="Version de la carte"><button data-v="plan" class="on">Mon plan</button><button data-v="off">Officiel</button></div><div class="grp" id="fmts"></div>
   <div class="grp"><button id="bclean">Épuré</button><button id="bsafe">Zones TikTok</button><button id="rec">● Filmer</button><button id="bfs" aria-label="Plein écran">⛶</button></div><button id="bwiki" class="on" title="Images officielles du wiki Marvel">Images wiki</button><button id="bdl">⤓ Télécharger</button>
   <div class="sp"></div>
   <div class="keys"><b>Espace</b> lancer le tour, <b>/</b> chercher, <b>V</b> format</div>
@@ -248,7 +249,8 @@ svg#svg:active{cursor:grabbing}
  <button id="thd" class="th-go">Télécharger cette miniature</button><button id="thd2">Télécharger les deux formats</button><button id="thx">Fermer</button></div></div></div>
 <div id="vov" role="dialog" aria-label="Création de la vidéo"><canvas id="vcv"></canvas><p id="vmsg"></p><div id="vbar"><i></i></div><button id="vcancel">Annuler</button></div>
 <script src="data.js?v=9043780562"></script>
-<script src="images.js?v=85653a0e67"></script>
+<script src="data-dc.js?v=35361d1b27"></script>
+<script src="images.js?v=e6752fbd54"></script>
 <script>
 const SRC='<!doctype html>\n'+document.documentElement.outerHTML,SOLO=window.SOLO??null;
 const $=s=>document.querySelector(s),NS='http://www.w3.org/2000/svg',TAU=Math.PI*2;
@@ -613,18 +615,24 @@ const EX={
  h_anti:['Defenders (2021) #4','c3 thaumiel',''],h_knull:['Thor: God of Thunder #6 (2013) · Venom #3 (2018)','gamaliel',''],h_oba:['Immortal Hulk #4 (2018)','thaumiel devil below','']};
 
 /* ---------- registry ---------- */
+/* univers affiché : Marvel (défaut) ou DC (?u=dc) */
+const UNI=new URLSearchParams(location.search).get('u')==='dc'?'dc':'marvel',UNAME=UNI=='dc'?'Cosmologie DC':'Cosmologie Marvel',DCX=window.DBDC||{E:{},MAPS:[],IMG:{}};
+/* off : version officielle de la carte (publication d'origine du schéma) ; null = aucune version officielle publiée ; data = carte construite à partir des sources */
 const MAPS=[
- {n:'Les Cosmos',sub:'Du Premier au Huitième Cosmos',b:buildCosmos,dyn:1},
- {n:'L’Arbre',sub:'Le Mystère & la Qlippoth',b:buildTree},
- {n:'Les Axes',sub:'Les huit Ur-Diviseurs',b:buildAxes,bounds:[-420,-400,840,820]},
- {n:'Les Firmaments',sub:'Neuf firmaments, un seul récit',b:buildFir},
- {n:'L’Omnivers',sub:'Coupe de la réalité Marvel',b:buildOmni},
- {n:'La Hiérarchie',sub:'Qui domine le cosmos ?',b:buildHier},
- {n:'Le Réseau',sub:'Tout est lié',b:buildNet},
- {n:'La Chronologie',sub:'Soixante ans de cosmos',b:buildTime,dyn:1}];
+ {n:'Les Cosmos',sub:'Du Premier au Huitième Cosmos',b:buildCosmos,dyn:1,off:{src:'Ultimates² (2016-2017) · Defenders (2021)'}},
+ {n:'L’Arbre',sub:'Le Mystère & la Qlippoth',b:buildTree,off:{src:'Defenders: Beyond (2022) ; la Qlippoth est masquée (construction de fans)'}},
+ {n:'Les Axes',sub:'Les huit Ur-Diviseurs',b:buildAxes,bounds:[-420,-400,840,820],off:null},
+ {n:'Les Firmaments',sub:'Neuf firmaments, un seul récit',b:buildFir,off:{src:'Ultimates² (2017) · Defenders (2021)'}},
+ {n:'L’Omnivers',sub:'Coupe de la réalité Marvel',b:buildOmni,off:{src:'Ultimates² (2017) · Defenders (2021)'}},
+ {n:'La Hiérarchie',sub:'Qui domine le cosmos ?',b:buildHier,off:null},
+ {n:'Le Réseau',sub:'Tout est lié',b:buildNet,off:{data:1}},
+ {n:'La Chronologie',sub:'Soixante ans de cosmos',b:buildTime,dyn:1,off:{data:1}}];
+const DCOFF=[{src:'The Multiversity Guidebook #1 (2015)'},{src:'Justice League (2018-2020) · Dark Nights: Death Metal (2020-2021)'},{src:'Green Lantern (2005-2011) · Blackest Night (2009)'},{src:'The Sandman (1989-1996)'},{src:'New Gods (1971-1972)'},null,{data:1},{data:1}];
+if(UNI=='dc'){MAPS.length=0;DCX.MAPS.forEach((d,i)=>MAPS.push({n:d.n,sub:d.sub,hook:d.hook,b:dcBuilder(d,i),off:DCOFF[i]===undefined?null:DCOFF[i]}));Object.assign(window.IMG=window.IMG||{},DCX.IMG)}
 const CATS={cos:['Cosmos et firmaments','#ff6b5a'],abs:['Entités abstraites','#FFE500'],cel:['Célestes et puissances','#ffb21f'],pow:['Forces et énergies','#ff7a3d'],obj:['Objets de pouvoir','#b98bff'],pla:['Lieux et dimensions','#7fe0a0'],per:['Personnages','#f3ead2'],grp:['Groupes','#ffa45c'],dark:['Ténèbres','#a58bd8'],evt:['Événements','#fff503']};
 const CERT={c:['Canon','montré ou dit dans un comic, numéro et page vérifiés'],o:['Source officielle','guide ou manuel officiel Marvel'],d:['Interprétation','conclusion argumentée à partir de plusieurs comics'],t:['Théorie','hypothèse ou construction de fans, non officielle'],x:['Contesté','les sources se contredisent'],u:['À vérifier','première apparition relevée sur un wiki communautaire ; description pas encore confrontée aux comics']};
 const DBE=(window.DB||{}).E||{},DBT=(window.DB||{}).T||[],IDX={},RELS={},put=(id,m,o)=>IDX[id]=Object.assign({m},o);
+if(UNI!='dc'){
 COS.forEach(r=>put(r[0],0,{t:r[1],s:r[2].replace('\n',' '),d:r[3],cat:'cos',col:r[0]=='bw'?'#8a6a4a':'#e2493f',cert:'u'}));
 TREE.forEach(r=>put(r[0],1,{t:r[4].replace(/^[\dQ]+\. /,''),s:r[5]||'',d:r[6]||'',cat:'pla',col:r[3]=='mv'?'#e2493f':r[3]||'#555',cert:!r[3]||r[2]>5?'t':'u',u:!r[3]}));
 UR.forEach(r=>put(r[0],2,{t:r[1],s:r[2],d:r[5],cat:'abs',col:r[4],cert:'d'}));
@@ -633,6 +641,11 @@ OM.forEach(r=>put(r[0],4,{t:r[1],s:r[2],d:r[3],cat:r[0]=='god'||r[0]=='devil'?'a
 HIER.forEach(r=>put(r[1],5,{t:r[2],s:r[3],d:r[4],cat:['abs','abs','abs','pow','cel','dark'][r[0]],col:r[5],cert:'d'}));
 Object.entries(DBE).forEach(([id,r])=>put(id,6,{t:r[0],en:r[1],cat:r[2],s:r[3],d:r[4],src:r[5],cert:r[6],rel:r[7],fact:r[8],col:CATS[r[2]][1]}));
 DBT.forEach((r,i)=>put('e'+i,7,{t:r[1],s:String(Math.floor(r[0])),d:r[2],src:r[3],rel:r[4],cat:'evt',col:'#fff503',cert:'u',yr:r[0]}));
+}else{
+ const first={};DCX.MAPS.forEach((d,m)=>[...(d.nodes||[]).map(n=>n[0]),...(d.wheel||[])].forEach(id=>first[id]??=m));
+ Object.entries(DCX.E).forEach(([id,r])=>put(id,r[2]=='evt'?6:first[id]??7,{t:r[0],en:r[1],cat:r[2],s:r[3],d:r[4],src:r[5],cert:r[6],rel:r[7],fact:r[8],yr:r[9],col:CATS[r[2]][1]}));
+ for(const k in WQ)delete WQ[k];
+}
 const link=(a,b)=>{if(a==b||!IDX[a]||!IDX[b])return;(RELS[a]=RELS[a]||new Set).add(b);(RELS[b]=RELS[b]||new Set).add(a)};
 Object.entries(IDX).forEach(([id,x])=>((EX[id]?EX[id][1]:x.rel)||'').split(' ').forEach(b=>b&&link(id,b)));
 const FMTS=[['free','Libre'],['916','TikTok 9:16'],['169','YouTube 16:9'],['45','Insta 4:5'],['11','1:1']];
@@ -641,23 +654,48 @@ const FMTS=[['free','Libre'],['916','TikTok 9:16'],['169','YouTube 16:9'],['45',
 const S={m:0,sel:-1,fmt:'free',free:false,tour:null,P:null,yaw:-.62,pitch:.38,tYaw:null,tPitch:null};
 const cam={x:0,y:0,w:1000,tx:0,ty:0,tw:1000};let bounds,aspect=1;
 const capOn=()=>S.tour||S.fmt!='free'||body.classList.contains('clean');
-function home(){const[a,b,w,h]=bounds;cam.tx=a+w/2;cam.ty=b+h/2+(capOn()&&S.tour?0:0);cam.tw=Math.max(w,h*aspect)*1.1}
+function home(){if(!bounds)return;const[a,b,w,h]=bounds;cam.tx=a+w/2;cam.ty=b+h/2+(capOn()&&S.tour?0:0);cam.tw=Math.max(w,h*aspect)*1.1}
 function focusT(n){let w=n.fw||n.r*(capOn()?(aspect<1?8.5:8):12);const mh=n.r*(capOn()?(aspect<1?5.5:8):7.5);if(w/aspect<mh)w=mh*aspect;const h=w/aspect;
  const ps=$('#panel').classList.contains('show'),mob=innerWidth<=760;cam.tw=w;cam.tx=n.x+(ps&&!mob?w*.17:capOn()&&aspect>1.3?-w*.14:0);cam.ty=n.y+(capOn()?h*(aspect<1?.2:.25):ps&&mob?h*.24:0)}
+/* cartes DC décrites par des données (data-dc.js) : anneaux, paliers, roue, frise ou réseau */
+function dcBuilder(d,mi){return function(g){ctx(g);const tex=id=>[...id].reduce((a,c)=>a+c.charCodeAt(0),0)%6,cat=id=>(IDX[id]||{}).cat||'cos';
+ const add=(id,x,y,r,col)=>{r*=d.scale||1;const I=IDX[id];if(!I||C.nodes.some(n=>n.id==id))return;col=col||I.col;C.add({id,x,y,r,t:I.t,s:I.s,d:I.d,col,fs:r>48?1:.85,k:d.n,tags:[CATS[cat(id)][0]],draw:c=>orb(c,x,y,r,col,tex(id))})};
+ (d.rings||[]).forEach(([r,l])=>{E('circle',{cx:0,cy:0,r,fill:'none',stroke:'rgba(255,229,0,.35)','stroke-width':2,'stroke-dasharray':'4 8'},g);T(g,0,-r-16,l.toUpperCase(),'ax').style.fontSize='18px'});
+ (d.tiers||[]).forEach((t,k)=>{E('line',{x1:-560,y1:k*230-78,x2:560,y2:k*230-78,stroke:'rgba(255,229,0,.14)'},g);T(g,-590,k*230+6,t,'big','end')});
+ if(d.wheel){const n=d.wheel.length,R0=d.wheelR||420;d.wheel.forEach((id,k)=>{const a=-Math.PI/2+k*TAU/n,x=Math.cos(a)*R0,y=Math.sin(a)*R0,c=d.wheelColors[k];E('line',{x1:0,y1:0,x2:x,y2:y,stroke:c,'stroke-opacity':.35,'stroke-width':3},g);add(id,x,y,48,c)});E('circle',{cx:0,cy:0,r:R0,fill:'none',stroke:'rgba(255,255,255,.12)'},g)}
+ (d.nodes||[]).forEach(([id,x,y,r])=>add(id,x,y,r));
+ if(d.timeline){const ev=Object.keys(IDX).filter(id=>IDX[id].yr).sort((a,b)=>IDX[a].yr-IDX[b].yr),y0=1984,X=y=>(y-y0)*95;
+  E('line',{x1:X(y0)-40,y1:0,x2:X(2025)+40,y2:0,stroke:'rgba(255,229,0,.5)','stroke-width':3},g);for(let y=1985;y<=2025;y+=5){E('line',{x1:X(y),y1:-12,x2:X(y),y2:12,stroke:'#FFE500'},g);T(g,X(y),40,String(y),'ax')}
+  ev.forEach((id,k)=>{const x=X(IDX[id].yr),y=(k%2?1:-1)*(150+(k%4>1?110:0));E('line',{x1:x,y1:0,x2:x,y2:y,stroke:'rgba(255,229,0,.25)'},g);add(id,x,y,40)})}
+ if(d.network){const ids=Object.keys(IDX),ix={},R=rng(11),ck=Object.keys(CATS);const P=ids.map((id,k)=>{ix[id]=k;const a=ck.indexOf(cat(id))/(ck.length-1)*TAU;return{id,a,x:Math.cos(a)*700+R()*200-100,y:Math.sin(a)*700+R()*200-100}}),L=[];
+  ids.forEach(a=>(RELS[a]||[]).forEach(b=>{if(ix[b]!=null&&a<b)L.push([ix[a],ix[b]])}));
+  for(let it=0;it<300;it++){const T0=1-it/340;for(let a=0;a<P.length;a++)for(let b=a+1;b<P.length;b++){const A=P[a],B=P[b],dx=A.x-B.x,dy=A.y-B.y,d2=dx*dx+dy*dy+1;if(d2>120000)continue;const f=Math.min(40,22000/d2)*T0;A.x+=dx*f/40;A.y+=dy*f/40;B.x-=dx*f/40;B.y-=dy*f/40}
+   L.forEach(([a,b])=>{const A=P[a],B=P[b],dx=B.x-A.x,dy=B.y-A.y,dd=Math.hypot(dx,dy)+.1,f=(dd-160)*.012*T0;A.x+=dx/dd*f;A.y+=dy/dd*f;B.x-=dx/dd*f;B.y-=dy/dd*f});P.forEach(p=>{p.x+=(Math.cos(p.a)*700-p.x)*.012;p.y+=(Math.sin(p.a)*700-p.y)*.012})}
+  P.forEach(p=>add(p.id,p.x,p.y,22+Math.min((RELS[p.id]||new Set).size,10)*2.2));L.forEach(([a,b])=>C.edge(P[a].id,P[b].id,{stroke:'rgba(255,229,0,.16)','stroke-width':1}))}
+ (d.edges||[]).forEach(([a,b])=>C.edge(a,b,{}));
+ if(!d.network&&!d.timeline)C.nodes.forEach(n=>(RELS[n.id]||[]).forEach(b=>{if(n.id<b&&C.nodes.some(m=>m.id==b)&&!(d.edges||[]).some(e=>(e[0]==n.id&&e[1]==b)||(e[1]==n.id&&e[0]==b)))C.edge(n.id,b,{'stroke-dasharray':'2 6','stroke-opacity':.5})}));
+ const ys=C.nodes.map(n=>n.y-n.r);T(g,0,Math.min(...ys,0)-120,d.title,'big').classList.add('ttl')}}
+/* version : « Mon plan » (tout) ou « Version officielle » (sans les constructions de fans, avec la publication d'origine du schéma) */
+S.ver='plan';
+function isAxes(){return UNI!="dc"&&S.m==2}   /* carte des Axes (3D), propre à Marvel */
+function markVer(){C.nodes.forEach(n=>n.g.classList.toggle('th',(IDX[n.id]||{}).cert=='t'));C.edges.forEach(e=>e.el.classList.toggle('th',(IDX[e.a]||{}).cert=='t'||(IDX[e.b]||{}).cert=='t'));
+ const o=MAPS[S.m].off,b=$('#vbadge');document.body.classList.toggle('offv',S.ver=='off'&&!!o);
+ b.textContent=S.ver!='off'?'':!o?'Aucune version officielle publiée : plan Primestone':o.data?'Carte construite à partir des sources':'Version officielle · d’après '+o.src;b.hidden=S.ver!='off';
+ document.querySelectorAll('#vers button').forEach(x=>x.classList.toggle('on',x.dataset.v==S.ver))}
 function render(i,keep,fp){S.m=i;S.sel=-1;S.free=false;S.P=fp??frame.clientHeight>frame.clientWidth;
- svg.innerHTML=DEFS;const g=E('g',{},svg);MAPS[i].b(g,S.P);
- if(i==2){S.tYaw=S.tPitch=null;updAxes()}
+ svg.innerHTML=DEFS;const g=E('g',{},svg);MAPS[i].b(g,S.P);markVer();
+ if(UNI!='dc'&&i==2){S.tYaw=S.tPitch=null;updAxes()}
  const bb=g.getBBox();bounds=MAPS[i].bounds||[bb.x,bb.y,bb.width,bb.height];
  document.querySelectorAll('#tabs button').forEach((b,k)=>b.classList.toggle('on',k==i));
  svg.classList.remove('focus');showInfo();aspect=svg.clientWidth/svg.clientHeight||1;home();
  if(!keep){cam.x=cam.tx;cam.y=cam.ty;cam.w=cam.tw*1.35}}
 function select(i){if(i<0||i>=C.nodes.length){S.sel=-1;svg.classList.remove('focus');C.nodes.forEach(n=>n.g.classList.remove('on'));C.edges.forEach(e=>e.el.classList.remove('on'));showInfo();home();
-  if(S.m==2)S.tYaw=S.tPitch=null;return}
+  if(isAxes())S.tYaw=S.tPitch=null;return}
  S.sel=i;S.free=false;const n=C.nodes[i];try{history.replaceState(null,'','#'+n.id)}catch(e){}svg.classList.add('focus');
  ensureKr(n);C.nodes.forEach((m,k)=>m.g.classList.toggle('on',k==i));C.edges.forEach(e=>e.el.classList.toggle('on',e.a==n.id||e.b==n.id));
- if(S.m==2){const[x,y,z]=n.p;let ty=Math.atan2(-x,z);while(ty-S.yaw>Math.PI)ty-=TAU;while(S.yaw-ty>Math.PI)ty+=TAU;S.tYaw=ty;S.tPitch=.55*Math.atan2(y,Math.SQRT2)}
+ if(isAxes()){const[x,y,z]=n.p;let ty=Math.atan2(-x,z);while(ty-S.yaw>Math.PI)ty-=TAU;while(S.yaw-ty>Math.PI)ty+=TAU;S.tYaw=ty;S.tPitch=.55*Math.atan2(y,Math.SQRT2)}
  showInfo()}
-function showInfo(){const n=C.nodes[S.sel],p=$('#panel'),cap=$('#cap');
+function showInfo(){if(typeof C=="undefined"||!C)return;const n=C.nodes[S.sel],p=$('#panel'),cap=$('#cap');
  cap.classList.remove('show');$('#scrim').style.opacity=0;svg.classList.toggle('cap',!!n&&capOn());
  if(!n){p.classList.remove('show');return}
  if(capOn()){p.classList.remove('show');setTimeout(()=>{if(C.nodes[S.sel]!==n)return;
@@ -691,7 +729,7 @@ function stopTour(){if(!S.tour)return;clearTimeout(S.tour.t);S.tour=null;card(0)
 function layout(){const W=main.clientWidth,H=main.clientHeight,r={'916':9/16,'169':16/9,'45':4/5,'11':1}[S.fmt];
  if(r){const pad=body.classList.contains('clean')?0:28;let h=H-pad*2,w=h*r;if(w>W-pad*2){w=W-pad*2;h=w/r}frame.style.width=w+'px';frame.style.height=h+'px'}else frame.style.width=frame.style.height='';
  body.classList.toggle('fmt',!!r);aspect=svg.clientWidth/svg.clientHeight||1;
- const P=frame.clientHeight>frame.clientWidth;if(MAPS[S.m].dyn&&(P!==S.P||S.m==0&&cosCols(P)!==S.cc)){const s=S.sel;render(S.m,1);if(s>=0)select(s)}else if(S.sel<0)home()}
+ const P=frame.clientHeight>frame.clientWidth;if(MAPS[S.m].dyn&&(P!==S.P||UNI!='dc'&&S.m==0&&cosCols(P)!==S.cc)){const s=S.sel;render(S.m,1);if(s>=0)select(s)}else if(S.sel<0)home()}
 function setFmt(f){S.fmt=f;document.querySelectorAll('#fmts button').forEach(b=>b.classList.toggle('on',b.dataset.f==f));layout();showInfo()}
 
 /* ---------- interaction ---------- */
@@ -704,7 +742,7 @@ svg.addEventListener('pointermove',e=>{
  const n=e.target.closest&&e.target.closest('.n'),tip=$('#tip');
  if(n&&!drag&&e.pointerType=='mouse'){const o=C.nodes[n.dataset.i];tip.innerHTML=o.t+((o.u?'non cartographiée':o.s)?'<small>'+(o.u?'non cartographiée':o.s).replace(/\n/g,' ')+'</small>':'');tip.style.left=e.clientX+14+'px';tip.style.top=e.clientY+14+'px';tip.style.opacity=1}else tip.style.opacity=0;
  if(!drag)return;const dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(!drag.m&&Math.hypot(dx,dy)<5)return;drag.m=1;drag.x=e.clientX;drag.y=e.clientY;
- if(S.m==2){S.yaw+=dx*.008;S.pitch=Math.max(-1.2,Math.min(1.2,S.pitch+dy*.006));S.tYaw=S.tPitch=null;S.free=true}
+ if(isAxes()){S.yaw+=dx*.008;S.pitch=Math.max(-1.2,Math.min(1.2,S.pitch+dy*.006));S.tYaw=S.tPitch=null;S.free=true}
  else{const k=cam.w/svg.clientWidth;cam.tx-=dx*k;cam.ty-=dy*k;cam.x-=dx*k;cam.y-=dy*k;S.free=true}});
 svg.addEventListener('pointerup',e=>{PT.delete(e.pointerId);if(PT.size<2)pinch=0;if(PT.size)return;const d=drag;drag=null;if(d&&!d.m){if(S.tour)return;const n=e.target.closest('.n');n?select(+n.dataset.i):select(-1)}});
 svg.addEventListener('wheel',e=>{e.preventDefault();const r=svg.getBoundingClientRect(),h=cam.w/aspect,
@@ -717,7 +755,7 @@ function stars(){const d=devicePixelRatio||1;cv.width=innerWidth*d;cv.height=inn
  ST=[...Array(Math.round(innerWidth*innerHeight/2600))].map(()=>({x:R()*cv.width,y:R()*cv.height,r:(R()**3*1.6+.25)*d,p:R()*TAU,s:.4+R()*1.6,z:R(),c:R()<.12?'255,214,170':R()<.2?'170,200,255':'255,255,255'}))}
 let shoot=null;
 function loop(t){const dt=Math.min(.05,(t-last)/1000||0);last=t;
- if(S.m==2&&C){if(S.tYaw!=null){S.yaw+=(S.tYaw-S.yaw)*(1-Math.exp(-dt*2.6));S.pitch+=(S.tPitch-S.pitch)*(1-Math.exp(-dt*2.6))}else if(!drag&&S.sel<0&&!S.free)S.yaw+=RM?0:dt*.16;updAxes()}
+ if(isAxes()&&C){if(S.tYaw!=null){S.yaw+=(S.tYaw-S.yaw)*(1-Math.exp(-dt*2.6));S.pitch+=(S.tPitch-S.pitch)*(1-Math.exp(-dt*2.6))}else if(!drag&&S.sel<0&&!S.free)S.yaw+=RM?0:dt*.16;updAxes()}
  if(S.sel>=0&&!S.free)focusT(C.nodes[S.sel]);
  const k=1-Math.exp(-dt*2.8);cam.x+=(cam.tx-cam.x)*k;cam.y+=(cam.ty-cam.y)*k;cam.w*=Math.pow(cam.tw/cam.w,k);
  const h=cam.w/aspect;svg.setAttribute('viewBox',`${cam.x-cam.w/2} ${cam.y-h/2} ${cam.w} ${h}`);
@@ -826,7 +864,7 @@ async function scene(m,o,W,H,P,msg){const A=W/H;if(S.m!==m||(MAPS[m].dyn&&S.P!==
  return{m,title:o.title,sub:o.sub,hook:o.hook,label:o.label||o.title,home,bv,SH,dur:V_IN+SH.length*(V_T+V_D)+V_T+V_HOLD}}
 /* transitions animées des vidéos : passage d'un cosmos à l'autre (effondrement puis big bang), volet BD et onomatopée Kirby ailleurs */
 const SFX=['KRAKOOM !','ZRAAAK !','BADOOM !','FWOOOSH !','SKRAKK !'];
-function vfx(g,W,H,U,e,m,n,seed){const cx=W/2,cy=H*(H>W?.38:.42),M=Math.max(W,H),R=rng(seed*7+3),cos=m==0;g.save();
+function vfx(g,W,H,U,e,m,n,seed){const cx=W/2,cy=H*(H>W?.38:.42),M=Math.max(W,H),R=rng(seed*7+3),cos=m==0&&UNI!='dc';g.save();
  if(cos){const f=Math.pow(Math.sin(Math.PI*cl01((e-.3)/.4)),2);
   if(e<.45){const ir=(1-ease(e/.45))*M*.65;g.lineWidth=16*U;g.strokeStyle='rgba(255,229,0,.85)';g.beginPath();g.arc(cx,cy,ir,0,TAU);g.stroke();g.lineWidth=6*U;g.strokeStyle='#111';g.beginPath();g.arc(cx,cy,ir*1.04,0,TAU);g.stroke()}
   if(f>0){g.globalAlpha=f*.9;g.fillStyle='#fffbe0';g.fillRect(0,0,W,H);g.globalAlpha=1}
@@ -856,7 +894,7 @@ async function makeVideo(key){const[W,H,tag]=VFMT[key],A=W/H,P=A<1,ov=$('#vov'),
  else if(what.startsWith('cat:')){const ct=what.slice(4),ids=Object.keys(IDX).filter(id=>IDX[id].cat==ct&&!IDX[id].u).sort((a,b)=>(IDX[a].yr||0)-(IDX[b].yr||0)||(RELS[b]?.size||0)-(RELS[a]?.size||0)).slice(0,16);
   plan=[[ct=='evt'?7:6,{title:tr(CATS[ct][0]),sub:tr(`${Object.keys(IDX).filter(id=>IDX[id].cat==ct).length} fiches de l’atlas`),ids,kick:(n,k,N)=>tr(CATS[ct][0])+(LANG=='en'?', '+(k+1)+' of ':', '+(k+1)+' sur ')+N}]];name=slug(CATS[ct][0])}
  else{plan=[[S.m,{title:tr(MAPS[S.m].n),sub:tr(MAPS[S.m].sub)}]];name=slug(MAPS[S.m].n)}
- if(what!='all')plan.forEach(([m,o])=>{if(NMAX)o.max=Math.min(o.max||16,NMAX);o.hook=o.hook||(o.ids?tr('Tout savoir sur : '+o.title.toLowerCase()+' de Marvel'):tr(HOOKS[m]))});if(VTK)name+='-'+LEN+'s';
+ if(what!='all')plan.forEach(([m,o])=>{if(NMAX)o.max=Math.min(o.max||16,NMAX);o.hook=o.hook||(o.ids?tr('Tout savoir sur : '+o.title.toLowerCase()+(UNI=='dc'?' de DC':' de Marvel')):tr(MAPS[m].hook||HOOKS[m]))});if(VTK)name+='-'+LEN+'s';
  const SC=[];for(let i=0;i<plan.length;i++){const s=await scene(plan[i][0],plan[i][1],W,H,P,t=>msg(t,.15*(i+.5)/plan.length));if(!s||VSTOP){ov.classList.remove('show');delete S.vidA;return render(m0,1)}SC.push(s)}
  const TOT=SC.reduce((a,s)=>a+s.dur,0)+V_OUT,multi=SC.length>1;
  const lerpV=(a,b,e)=>{const d=Math.hypot(a.x-b.x,a.y-b.y),bump=Math.min(1.6,d/(a.w+b.w)*1.4);return{x:a.x+(b.x-a.x)*e,y:a.y+(b.y-a.y)*e,w:Math.exp(Math.log(a.w)+(Math.log(b.w)-Math.log(a.w))*e)*(1+bump*Math.sin(Math.PI*e))}};
@@ -875,7 +913,7 @@ async function makeVideo(key){const[W,H,tag]=VFMT[key],A=W/H,P=A<1,ov=$('#vov'),
   for(let b=0;b<nb;b++){const p=cl01((tt-acc)/segs[b]);acc+=segs[b];const x0=mx+b*(bw2+8);g.fillStyle='rgba(243,234,210,.22)';g.fillRect(x0,top,bw2,6*U);g.fillStyle='#f3ead2';g.fillRect(x0,top,bw2*p,6*U)}
   let lx=mx;if(BP){const h2=62*U,w2=h2*BP.width/BP.height;g.drawImage(BP,mx,top+22*U,w2,h2);lx+=w2+14*U}
   if(BW){const h2=26*U;g.drawImage(BW,lx,top+30*U,h2*BW.width/BW.height,h2)}
-  g.font=F(28*U,'italic 400','Newsreader');g.fillStyle='#f3ead2';g.textAlign='left';g.fillText('Cosmologie Marvel : '+sc.label,lx,top+82*U);
+  g.font=F(28*U,'italic 400','Newsreader');g.fillStyle='#f3ead2';g.textAlign='left';g.fillText(UNAME+' : '+sc.label,lx,top+82*U);
   const card=(al,kick,title,sub)=>{if(al<=0)return;g.save();g.globalAlpha=al;g.fillStyle='rgba(10,10,8,.6)';g.fillRect(0,0,W,H);g.textAlign='center';
    let fs=(P?190:230)*U;g.font=F(fs,900);while(g.measureText(title).width>W*.86&&fs>40){fs-=6;g.font=F(fs,900)}
    g.translate(W/2,H*(P?.44:.5));const sc2=1+.15*(1-ease(cl01(al*1.2)));g.scale(sc2,sc2);
@@ -894,7 +932,7 @@ async function makeVideo(key){const[W,H,tag]=VFMT[key],A=W/H,P=A<1,ov=$('#vov'),
    if(BP){const h2=(P?190:170)*U,w2=h2*BP.width/BP.height;g.drawImage(BP,-w2/2,-h2-150*U,w2,h2)}
    if(BW){const w2=W*(P?.8:.5),h2=w2*BW.height/BW.width;g.drawImage(BW,-w2/2,-h2/2-40*U,w2,h2)}
    g.font=F(58*U,'400','Newsreader');g.fillStyle='#fff';g.fillText('Au-delà des héros.',0,115*U);
-   g.font=F(34*U,700);g.fillStyle='#fff503';g.fillText(`Cosmologie Marvel : ${MAPS.length} cartes, ${Object.keys(IDX).length} fiches sourcées`,0,195*U);
+   g.font=F(34*U,700);g.fillStyle='#fff503';g.fillText(`${UNAME} : ${MAPS.length} cartes, ${Object.keys(IDX).length} fiches sourcées`,0,195*U);
    g.font=F(24*U,'italic 400','Newsreader');g.fillStyle='#9a958a';g.fillText('Atlas hypothétique. Personnages et images © Marvel.',0,245*U);
    if(VTK){g.font=`400 ${54*U}px Anton`;const cta='SUIS PRIMESTONE POUR LA SUITE',cw4=g.measureText(cta).width+60*U;g.fillStyle='#FFE500';g.fillRect(-cw4/2,300*U,cw4,90*U);g.fillStyle='#111';g.fillText(cta,0,365*U)}g.restore()}
   if(!outro&&k>=0&&dw>=0){const s=sc.SH[k],n=s.n,p=ease(cl01(dw*V_D/.7)),q=cl01((V_D-dw*V_D)/.45),al=Math.min(p,q);if(al>0){
@@ -1115,6 +1153,8 @@ $('#codex').addEventListener('click',e=>{const b=e.target.closest('button');if(!
  if(b.dataset.cat!=null){CX.cat=b.dataset.cat||null;codex(1)}else if(b.dataset.cert){CX.cert.has(b.dataset.cert)?CX.cert.delete(b.dataset.cert):CX.cert.add(b.dataset.cert);codex(1)}else if(b.dataset.go){codex(0);go(b.dataset.go)}});
 
 /* ---------- UI wiring ---------- */
+$('#vers').onclick=e=>{const b=e.target.closest('[data-v]');if(!b)return;S.ver=b.dataset.v;markVer();if(S.ver=='off'&&!MAPS[S.m].off)toast('Pas de version officielle publiée pour cette carte : c’est un plan Primestone.')};
+if(UNI=='dc'){const bu=$('#buni');bu.href='explorer.html';bu.textContent='Marvel';document.title='Cosmologie DC · atlas interactif';const bt=document.querySelector('.brand div');if(bt&&bt.firstChild)bt.firstChild.nodeValue='Cosmologie DC';const bq=$('#bquiz');if(bq)bq.hidden=true}
 if(window.BRAND){document.querySelectorAll('img.bp').forEach(i=>i.src=BRAND.p);document.querySelectorAll('img.bw').forEach(i=>i.src=BRAND.word);const ic=document.createElement('link');ic.rel='icon';ic.href=BRAND.p;document.head.appendChild(ic)}
 $('#tabs').innerHTML=MAPS.map((m,i)=>SOLO!=null&&i!=SOLO?'':`<button data-i="${i}">${m.n}</button>`).join('');
 $('#fmts').innerHTML=FMTS.map(([f,l])=>`<button data-f="${f}">${l}</button>`).join('');

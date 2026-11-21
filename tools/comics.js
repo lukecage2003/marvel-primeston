@@ -2,9 +2,9 @@
    et la liste des fiches qui la citent. Base de la future archive des preuves (DATA_MODEL.md, Comic/Evidence).
    Les références d'arc sans numéro (« Immortal Hulk (Al Ewing, 2018-21) ») sont gardées telles quelles, type « arc ».
    Lancer : node tools/comics.js   (les tests vérifient que le fichier est à jour) */
-const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'..');global.window={};require(path.join(root,'data.js'));
+const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'..');global.window={};require(path.join(root,'data.js'));require(path.join(root,'data-dc.js'));
 const C={};
-for(const [id,r] of Object.entries(window.DB.E))for(let part of String(r[5]).split(' · ')){
+for(const [id,r] of Object.entries(Object.assign({},window.DB.E,window.DBDC.E)))for(let part of String(r[5]).split(' · ')){
  part=part.replace(/\s*—.*$/,'').replace(/^1ʳᵉ apparition selon marvel\.fandom\.com :\s*/,'').trim();if(!part)continue;
  const m=part.match(/^(.*?)(?: vol\. (\d+))? #([\w.-]+(?:-\d+)?)(?: \(([^)]*)\))?$/),y=(part.match(/\b(19|20)\d\d\b/)||[])[0]||null;
  const key=m?`${m[1]}|${m[2]||1}|${m[3]}`:part;

@@ -10,7 +10,16 @@ const ROOT = path.resolve(__dirname, '..'), CHECK = process.argv.includes('--che
 const A = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/atlas.json'), 'utf8'));
 const COMICS = JSON.parse(fs.readFileSync(path.join(ROOT, 'comics.json'), 'utf8'));
 const WK = fs.existsSync(path.join(ROOT, 'content/wiki.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'content/wiki.json'), 'utf8')).entries : {};   // tools/wiki_facts.py
+/* deux univers : Marvel (content/atlas.json) et DC (content/atlas-dc.json, identifiants préfixés dc_) */
+const AD = fs.existsSync(path.join(ROOT, 'content/atlas-dc.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'content/atlas-dc.json'), 'utf8')) : { nodes: {}, maps: [], wiki: {}, img: {} };
+for (const n of Object.values(A.nodes)) n.u = 'marvel';
+for (const [id, n] of Object.entries(AD.nodes)) { n.u = 'dc'; A.nodes[id] = n; }
+Object.assign(A.wiki, AD.wiki); Object.assign(A.img, AD.img);
+if (fs.existsSync(path.join(ROOT, 'content/dc_wiki.json'))) for (const [k, v] of Object.entries(JSON.parse(fs.readFileSync(path.join(ROOT, 'content/dc_wiki.json'), 'utf8')).entries)) WK['dc_' + k] = v;
+const UNAME = { marvel: 'Marvel', dc: 'DC' };
 const N = A.nodes, IDS = Object.keys(N);
+const isChrono = id => N[id].u === 'marvel' && N[id].map === 7;   // carte 7 Marvel : chronologie éditoriale (événements sans fiche)
+const explorerURL = id => 'explorer.html' + (N[id].u === 'dc' ? '?u=dc' : '') + '#' + id;
 const SITE = 'https://lukecage2003.github.io/marvel-primeston/';
 const WKDATE = fs.existsSync(path.join(ROOT, 'content/wiki.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'content/wiki.json'), 'utf8')).fetched : '';
 
@@ -20,7 +29,7 @@ const norm = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ
 const slug = s => norm(s).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const catName = c => (A.cats[c] || { name: c }).name, catColor = c => (A.cats[c] || {}).color || '#c9c3b3';
 const relName = c => (A.cert[c] || A.cert.u).name, relDesc = c => (A.cert[c] || A.cert.u).desc;
-const mapName = m => A.maps[m] ? A.maps[m].name : '';
+const mapName = (m, u) => { const L = u === 'dc' ? AD.maps : A.maps; return L[m] ? L[m].name : ''; };
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
 const initials = s => esc(String(s).replace(/^(L’|L'|La |Le |Les )/, '').slice(0, 2).toUpperCase());
 
@@ -40,7 +49,7 @@ function validate() {
 }
 
 /* ---------- gabarit commun ---------- */
-const NAV = [['index.html', 'Accueil'], ['explorer.html', 'Explorer'], ['encyclopedie.html', 'Encyclopédie'], ['cosmos.html', 'Cosmos'], ['structures.html', 'Structures'], ['chronologie.html', 'Chronologie'], ['archive.html', 'Archive'], ['dossiers.html', 'Dossiers']];
+const NAV = [['index.html', 'Accueil'], ['explorer.html', 'Marvel'], ['explorer.html?u=dc', 'DC'], ['encyclopedie.html', 'Encyclopédie'], ['cosmos.html', 'Cosmos'], ['structures.html', 'Structures'], ['chronologie.html', 'Chronologie'], ['archive.html', 'Archive'], ['dossiers.html', 'Dossiers']];
 const TAB = [['explorer.html', 'Explorer'], ['encyclopedie.html', 'Encyclopédie'], ['recherche.html', 'Recherche'], ['dossiers.html', 'Dossiers']];
 function page({ file, title, desc, body, active }) {
   const base = file.includes('/') ? '../' : '';
@@ -49,9 +58,9 @@ function page({ file, title, desc, body, active }) {
 <html lang="fr" data-base="${base}">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>${esc(title)} · Marvel Primestone</title>
+<title>${esc(title)} · Primestone</title>
 <meta name="description" content="${esc(desc)}">
-<meta property="og:title" content="${esc(title)} · Marvel Primestone"><meta property="og:description" content="${esc(desc)}">
+<meta property="og:title" content="${esc(title)} · Primestone"><meta property="og:description" content="${esc(desc)}">
 <meta property="og:image" content="${SITE}og.png"><meta property="og:url" content="${SITE}${esc(file)}"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b0b0b"><meta name="referrer" content="no-referrer">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,7 +70,7 @@ function page({ file, title, desc, body, active }) {
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
 <header class="top"><div class="wrap">
- <a class="brand" href="${base}index.html"><img src="${base}img/brand-p.png" alt="" width="24" height="30">Marvel Primestone</a>
+ <a class="brand" href="${base}index.html">Primestone<small> · Cosmologies Marvel &amp; DC</small></a>
  <nav class="nav" aria-label="Navigation principale">${NAV.map(([h, l]) => `<a href="${base}${h}"${cur(h)}>${l}</a>`).join('')}</nav>
  <form class="qbox" action="${base}recherche.html" role="search"><label class="skip" for="q">Rechercher</label><input id="q" name="q" type="search" list="qlist" placeholder="Rechercher…" autocomplete="off"><datalist id="qlist"></datalist></form>
 </div></header>
@@ -69,7 +78,7 @@ function page({ file, title, desc, body, active }) {
 ${body}
 </div></main>
 <footer class="foot"><div class="wrap">
- <p><b>Marvel Primestone</b> · Au-delà des héros. Projet indépendant de fans, non commercial, consacré à l’analyse des comics Marvel. Personnages, noms et images © Marvel. Illustrations et fiches d’identité : marvel.fandom.com. Les niveaux de fiabilité sont expliqués dans le <a href="${base}dossier/methode.html">dossier Méthode</a>.</p>
+ <p><b>Primestone</b> · Au-delà des héros. Projet indépendant de fans, non commercial, consacré à l’analyse des comics Marvel. Personnages, noms et images © Marvel et © DC. Illustrations et fiches d’identité : marvel.fandom.com et dc.fandom.com. Les niveaux de fiabilité sont expliqués dans le <a href="${base}dossier/methode.html">dossier Méthode</a>.</p>
 </div></footer>
 <nav class="tabbar" aria-label="Navigation rapide">${TAB.map(([h, l]) => `<a href="${base}${h}"${cur(h)}>${l}</a>`).join('')}</nav>
 <script src="${base}assets/site.js" defer></script>
@@ -80,10 +89,11 @@ ${body}
 
 /* ---------- composants : cartes (DESIGN_SYSTEM.md) ---------- */
 const wikiImg = id => (WK[id] && WK[id].img) || null;
-const imgURL = id => wikiImg(id) || (A.img[id] ? '../' + A.img[id] : null);    // url() d'une variable CSS : relative à assets/site.css
+const abs = u => /^https?:/.test(u);
+const imgURL = id => wikiImg(id) || (A.img[id] ? (abs(A.img[id]) ? '' : '../') + A.img[id] : null);    // url() d'une variable CSS : relative à assets/site.css
 const imgOf = id => A.img[id] || null;
 /* image dans une vraie balise <img> : chargement différé et sans en-tête Referer (le wiki bloque l'affichage sur d'autres sites sinon) */
-const srcFor = (id, base) => wikiImg(id) || (A.img[id] ? base + A.img[id] : null);
+const srcFor = (id, base) => wikiImg(id) || (A.img[id] ? (abs(A.img[id]) ? '' : base) + A.img[id] : null);
 const IMGATTR = 'loading="lazy" decoding="async" referrerpolicy="no-referrer"';
 const visual = (id, base, cls) => {
   const u = srcFor(id, base);
@@ -94,9 +104,9 @@ const relBadge = c => `<span class="rel ${esc(c)}" title="${esc(relDesc(c))}">${
 const fiche = id => 'fiche/' + id + '.html';
 function cardB(id, base) {   // B : entité
   const n = N[id];
-  return `<a class="card cB" href="${base}${fiche(id)}" data-cat="${esc(n.cat)}" data-rel="${esc(n.cert)}" data-text="${esc(norm([n.name, n.en, n.sub].join(' ')))}">
+  return `<a class="card cB" href="${base}${fiche(id)}" data-uni="${n.u}" data-cat="${esc(n.cat)}" data-rel="${esc(n.cert)}" data-text="${esc(norm([n.name, n.en, n.sub].join(' ')))}">
  ${visual(id, base, 'pic')}
- <span class="body"><span class="cat" style="--c:${catColor(n.cat)}">${esc(catName(n.cat))}</span><h3>${esc(n.name)}</h3>${n.sub ? `<p>${esc(n.sub)}</p>` : ''}
+ <span class="body"><span class="cat" style="--c:${catColor(n.cat)}"><span class="uni ${n.u}">${UNAME[n.u]}</span> ${esc(catName(n.cat))}</span><h3>${esc(n.name)}</h3>${n.sub ? `<p>${esc(n.sub)}</p>` : ''}
  <span class="meta">${relBadge(n.cert)}${n.rel.length ? `<span class="muted">${n.rel.length} lien${n.rel.length > 1 ? 's' : ''}</span>` : ''}</span></span></a>`;
 }
 function cardBs(id, base) {  // B compacte
@@ -132,29 +142,29 @@ const srcList = (src, base) => String(src || '').split(' · ').filter(Boolean).m
 /* ---------- pages ---------- */
 const out = {};
 const emit = (file, html) => { out[file] = html; };
-const ENTRIES = IDS.filter(id => N[id].map !== 7);           // la carte 7 est la chronologie éditoriale (événements de publication)
+const ENTRIES = IDS.filter(id => !isChrono(id));           // la carte 7 est la chronologie éditoriale (événements de publication)
 const byName = (a, b) => N[a].name.localeCompare(N[b].name, 'fr');
 
 function buildFiche(id) {
   const n = N[id], base = '../', w = WK[id], u = srcFor(id, base);
   const cited = COMICS.filter(c => c.citedBy.includes(id));
-  const sameCat = ENTRIES.filter(x => N[x].cat === n.cat).sort(byName), k = sameCat.indexOf(id);
+  const sameCat = ENTRIES.filter(x => N[x].cat === n.cat && N[x].u === n.u).sort(byName), k = sameCat.indexOf(id);
   const prev = k > 0 ? sameCat[k - 1] : null, next = k >= 0 && k < sameCat.length - 1 ? sameCat[k + 1] : null;
-  const rels = n.rel.filter(r => N[r].map !== 7).sort(byName), evts = n.rel.filter(r => N[r].map === 7);
+  const rels = n.rel.filter(r => !isChrono(r)).sort(byName), evts = n.rel.filter(r => isChrono(r));
   const facts = (w && w.facts || []).filter(([l]) => l !== 'Première apparition');
   const first = w && (w.facts || []).find(([l]) => l === 'Première apparition');
   const body = `
 <div class="fhero">${u ? `<img class="fbg" src="${esc(u)}" alt="" aria-hidden="true" ${IMGATTR}>` : ''}
- <p class="crumb"><a href="../encyclopedie.html">Encyclopédie</a> › ${esc(catName(n.cat))}</p>
+ <p class="crumb"><a href="../encyclopedie.html">Encyclopédie</a> › ${UNAME[n.u]} › ${esc(catName(n.cat))}</p>
  <div class="fhead">
   ${u ? `<img class="fport" src="${esc(u)}" alt="${esc(n.name)}" width="360" height="480" decoding="async" referrerpolicy="no-referrer">` : `<span class="fport none" aria-hidden="true">${initials(n.name)}</span>`}
   <div class="fid">
-   <span class="cat" style="--c:${catColor(n.cat)}">${esc(catName(n.cat))}</span>
+   <span class="cat" style="--c:${catColor(n.cat)}"><span class="uni ${n.u}">${UNAME[n.u]}</span> ${esc(catName(n.cat))}</span>
    <h1>${esc(n.name)}</h1>
    ${n.en ? `<p class="muted">${esc(n.en)}</p>` : ''}
    ${n.sub ? `<p class="lead">${esc(n.sub)}</p>` : ''}
    <p class="chipsline">${relBadge(n.cert)}${first ? `<span class="pill">1ʳᵉ apparition · ${esc(first[1][0])}</span>` : ''}${rels.length ? `<span class="pill">${rels.length} relation${rels.length > 1 ? 's' : ''}</span>` : ''}</p>
-   <p><a class="btn ghost" href="../explorer.html#${esc(id)}">Voir sur la carte · ${esc(mapName(n.map))}</a></p>
+   <p><a class="btn ghost" href="../${esc(explorerURL(id))}">Voir sur la carte · ${esc(mapName(n.map, n.u))}</a></p>
   </div>
  </div>
 </div>
@@ -181,8 +191,9 @@ function buildEncyclo() {
   const cats = Object.keys(A.cats).filter(c => ENTRIES.some(id => N[id].cat === c));
   const rels = Object.keys(A.cert).filter(c => ENTRIES.some(id => N[id].cert === c));
   const body = `<h1>Encyclopédie</h1>
-<p class="lead">${ENTRIES.length} fiches : entités, cosmos, structures, objets, groupes et événements. Chaque fiche indique ses sources et son niveau de fiabilité.</p>
+<p class="lead">${ENTRIES.length} fiches, Marvel (${ENTRIES.filter(id => N[id].u === 'marvel').length}) et DC (${ENTRIES.filter(id => N[id].u === 'dc').length}) : entités, cosmos, structures, objets, groupes et événements. Chaque fiche indique ses sources, sa première apparition et son niveau de fiabilité.</p>
 <label class="skip" for="fq">Filtrer</label><p><input id="fq" class="qbox-in" data-filter-q type="search" placeholder="Filtrer par nom…" style="width:100%;max-width:420px;background:var(--surface);border:1px solid var(--line);color:var(--text);font:17px var(--font-text);padding:10px 14px;border-radius:4px"></p>
+<div class="chips" role="group" aria-label="Univers"><button class="chip" data-filter="uni" data-value="marvel" aria-pressed="false">Marvel</button><button class="chip" data-filter="uni" data-value="dc" aria-pressed="false">DC</button></div>
 <div class="chips" role="group" aria-label="Catégories">${cats.map(c => `<button class="chip" data-filter="cat" data-value="${c}" aria-pressed="false">${esc(catName(c))}</button>`).join('')}</div>
 <div class="chips" role="group" aria-label="Fiabilité">${rels.map(c => `<button class="chip" data-filter="rel" data-value="${c}" aria-pressed="false">${esc(relName(c))}</button>`).join('')}</div>
 <p class="muted" data-filter-count aria-live="polite"></p>
@@ -200,25 +211,31 @@ function buildCosmos() {
 
 function buildStructures() {
   const sys = [[4, 'Organisation de la réalité, de l’Omnivers aux univers.'], [1, 'Lecture de la réalité Marvel sur le modèle de l’Arbre de vie (Defenders: Beyond) et de son reflet, la Qlippoth (construction de fans).'], [3, 'Les neuf firmaments : une lecture des couches successives de la création.'], [2, 'Les axes qui structurent les entités abstraites (Ur-Diviseurs : construction de fans).']];
+  const sysDC = [[0, 'La carte du Multivers publiée dans The Multiversity Guidebook #1 (2015) : 52 Terres, le Bleed, la Sphère des dieux, les Monitors et le Survide.'], [1, 'La hiérarchie de la création révélée entre Justice League (2018) et Dark Nights: Death Metal (2020).'], [2, 'Le spectre des sept lumières émotionnelles, de Green Lantern: Rebirth (2004) à Blackest Night (2009).'], [3, 'Les sept Éternels de The Sandman (1989-1996).'], [4, 'Le Quatrième Monde de Jack Kirby (1971).']];
   const body = `<h1>Structures du multivers</h1>
-<p class="lead">Il n’existe pas une hiérarchie unique et définitive de la réalité Marvel : selon les périodes et les auteurs, les comics en proposent plusieurs. Chaque système ci-dessous est présenté séparément, avec son niveau de fiabilité.</p>
+<p class="lead">Il n’existe pas une hiérarchie unique et définitive de la réalité, ni chez Marvel ni chez DC : selon les périodes et les auteurs, les comics en proposent plusieurs. Chaque système ci-dessous est présenté séparément, avec son niveau de fiabilité.</p>
 ${sys.map(([m, d]) => {
-    const ids = IDS.filter(id => N[id].map === m);
-    return `<section><h2>${esc(mapName(m))}</h2><p class="muted">${esc(d)} <a href="explorer.html">Voir la carte dans l’explorateur →</a></p>
+    const ids = IDS.filter(id => N[id].u === 'marvel' && N[id].map === m);
+    return `<section><span class="kicker">Marvel</span><h2>${esc(mapName(m))}</h2><p class="muted">${esc(d)} <a href="explorer.html">Voir la carte dans l’explorateur →</a></p>
+<div class="grid three">${ids.map(id => `<a class="card cC" style="--c:${catColor(N[id].cat)}" href="${fiche(id)}"><span class="cat">${esc(catName(N[id].cat))}</span><h3>${esc(N[id].name)}</h3>${N[id].sub ? `<p>${esc(N[id].sub)}</p>` : ''}<span>${relBadge(N[id].cert)}</span></a>`).join('')}</div></section>`;
+  }).join('')}
+${sysDC.map(([m, d]) => {
+    const ids = IDS.filter(id => N[id].u === 'dc' && N[id].map === m);
+    return `<section><span class="kicker">DC</span><h2>${esc(mapName(m, 'dc'))}</h2><p class="muted">${esc(d)} <a href="explorer.html?u=dc">Voir la carte dans l’explorateur →</a></p>
 <div class="grid three">${ids.map(id => `<a class="card cC" style="--c:${catColor(N[id].cat)}" href="${fiche(id)}"><span class="cat">${esc(catName(N[id].cat))}</span><h3>${esc(N[id].name)}</h3>${N[id].sub ? `<p>${esc(N[id].sub)}</p>` : ''}<span>${relBadge(N[id].cert)}</span></a>`).join('')}</div></section>`;
   }).join('')}`;
-  emit('structures.html', page({ file: 'structures.html', title: 'Structures', desc: 'Multivers, univers, dimensions et plans d’existence : les systèmes qui organisent la réalité Marvel.', body, active: 'structures.html' }));
+  emit('structures.html', page({ file: 'structures.html', title: 'Structures', desc: 'Multivers, univers, dimensions et plans d’existence : les systèmes qui organisent les réalités Marvel et DC.', body, active: 'structures.html' }));
 }
 
 function buildChrono() {
   const yr = n => n.year || +((String(n.src || '').match(/\b(19|20)\d\d\b/) || [])[0] || 0);
-  const edito = IDS.filter(id => N[id].map === 7 || N[id].cat === 'evt').map(id => [yr(N[id]), id]).filter(x => x[0]).sort((a, b) => a[0] - b[0]);
+  const edito = IDS.filter(id => isChrono(id) || N[id].cat === 'evt').map(id => [yr(N[id]), id]).filter(x => x[0]).sort((a, b) => a[0] - b[0]);
   const body = `<h1>Chronologies</h1>
 <p class="lead">Trois temporalités distinctes, qu’il ne faut pas confondre : l’ordre des Cosmos dans l’histoire de la création, l’ordre de publication des comics, et l’ordre interne des événements dans le récit.</p>
 <section><h2>1. Chronologie cosmologique</h2><p class="muted">L’ordre des Cosmos, du premier au huitième.</p>
 <ol class="timeline">${A.cosmos.map(id => `<li><a href="${fiche(id)}"><b>${esc(N[id].name)}</b></a>${N[id].sub ? ' : ' + esc(N[id].sub) : ''}</li>`).join('')}</ol></section>
 <section><h2>2. Chronologie éditoriale</h2><p class="muted">Les publications et événements éditoriaux, par année de parution.</p>
-<ol class="timeline">${edito.map(([y, id]) => `<li id="${esc(id)}"><span class="kicker" style="color:var(--gold)">${y}</span>${N[id].map === 7 ? `<b>${esc(N[id].name)}</b>` : `<a href="${fiche(id)}"><b>${esc(N[id].name)}</b></a>`}${N[id].desc ? ' : ' + esc(N[id].desc) : ''}${N[id].src ? ` <span class="muted">(${esc(N[id].src)})</span>` : ''}</li>`).join('')}</ol></section>
+<ol class="timeline">${edito.map(([y, id]) => `<li id="${esc(id)}"><span class="kicker" style="color:var(--gold)">${y} · ${UNAME[N[id].u]}</span>${isChrono(id) ? `<b>${esc(N[id].name)}</b>` : `<a href="${fiche(id)}"><b>${esc(N[id].name)}</b></a>`}${N[id].desc ? ' : ' + esc(N[id].desc) : ''}${N[id].src ? ` <span class="muted">(${esc(N[id].src)})</span>` : ''}</li>`).join('')}</ol></section>
 <section><h2>3. Chronologie interne</h2><p class="note">Pas encore documentée. L’ordre des événements à l’intérieur du récit demande de croiser plusieurs séries numéro par numéro ; il sera ajouté seulement quand chaque position pourra être sourcée.</p></section>`;
   emit('chronologie.html', page({ file: 'chronologie.html', title: 'Chronologies', desc: 'Chronologie cosmologique, éditoriale et interne du cosmos Marvel.', body, active: 'chronologie.html' }));
 }
@@ -273,7 +290,7 @@ function buildDossiers(errs) {
 }
 
 function buildSearch() {
-  const idx = IDS.filter(id => N[id].map !== 7).map(id => ({ n: N[id].name, a: N[id].en || undefined, s: N[id].sub || undefined, k: catName(N[id].cat), t: N[id].cat, u: fiche(id) }));
+  const idx = IDS.filter(id => !isChrono(id)).map(id => ({ n: N[id].name, a: N[id].en || undefined, s: N[id].sub || undefined, k: UNAME[N[id].u] + ' · ' + catName(N[id].cat), t: N[id].cat, u: fiche(id) }));
   emit('search.json', JSON.stringify(idx));
   const types = Object.keys(A.cats).filter(c => idx.some(e => e.t === c));
   emit('recherche.html', page({ file: 'recherche.html', title: 'Recherche', desc: 'Rechercher une entité, un cosmos, une structure ou un événement.', active: 'recherche.html', body: `<h1>Recherche</h1>
@@ -289,22 +306,23 @@ function buildHome(dos) {
 <script>/* anciens liens partagés (…/marvel-primeston/#id) : ils ouvrent la fiche du site */if(/^#[a-z0-9_]+$/.test(location.hash))location.replace('fiche/'+location.hash.slice(1)+'.html')</script>
 <section style="padding:24px 0 8px">
  <span class="kicker">Au-delà des héros</span>
- <h1>La cosmologie Marvel, cartographiée et sourcée</h1>
- <p class="lead">Marvel Primestone est un atlas et une encyclopédie consacrés au cosmos des comics Marvel : les huit Cosmos successifs, les entités abstraites, les structures du multivers, les événements cosmiques et les comics qui documentent chaque affirmation.</p>
- <p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn primary" href="explorer.html">Explorer les cartes</a><a class="btn ghost" href="encyclopedie.html">Ouvrir l’encyclopédie</a></p>
+ <h1>Les cosmologies Marvel et DC, cartographiées et sourcées</h1>
+ <p class="lead">Un atlas et une encyclopédie des structures cosmiques des comics : les huit Cosmos de Marvel, l’Orrerie des mondes de DC, les entités abstraites, les multivers, les crises et les numéros qui documentent chaque fiche.</p>
+ <p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn primary" href="explorer.html">Explorer Marvel</a><a class="btn primary" href="explorer.html?u=dc" style="background:#2f7bff;border-color:#2f7bff;color:#fff">Explorer DC</a><a class="btn ghost" href="encyclopedie.html">Ouvrir l’encyclopédie</a></p>
 </section>
 <section><h2>Les huit Cosmos</h2><p class="muted">Chaque univers naît de la mort du précédent. <a href="cosmos.html">Tous les Cosmos →</a></p>
 <div class="grid four">${A.cosmos.filter(id => id !== 'bw').slice(0, 8).map((id, i) => cardA(id, i, '')).join('')}</div></section>
-<section><h2>Entités fondamentales</h2><div class="grid four">${featured.map(id => cardB(id, '')).join('')}</div></section>
+<section><h2>Entités fondamentales de Marvel</h2><div class="grid four">${featured.map(id => cardB(id, '')).join('')}</div></section>
+<section><h2>L’univers DC</h2><p class="muted">De la Présence aux 52 Terres de l’Orrerie. <a href="explorer.html?u=dc">Voir les 8 cartes DC →</a></p><div class="grid four">${['dc_presence', 'dc_source', 'dc_perpetua', 'dc_monitor', 'dc_antimonitor', 'dc_dream', 'dc_darkseid', 'dc_multiverse'].filter(id => N[id]).map(id => cardB(id, '')).join('')}</div></section>
 <section><h2>Trois façons d’explorer</h2><div class="grid three">
- <a class="card cF" href="explorer.html"><span class="kicker">Explorer</span><h3>8 cartes interactives</h3><p>Les Cosmos, l’Arbre, les Axes, les Firmaments, l’Omnivers, la Hiérarchie, le Réseau et la Chronologie, avec visite guidée et export vidéo.</p></a>
+ <a class="card cF" href="explorer.html"><span class="kicker">Explorer</span><h3>16 cartes interactives</h3><p>8 cartes Marvel et 8 cartes DC, chacune en « mon plan » ou en version officielle quand elle existe, avec visite guidée et export vidéo.</p></a>
  <a class="card cF" href="encyclopedie.html"><span class="kicker">Encyclopédie</span><h3>${ENTRIES.length} fiches</h3><p>Une page par entité, avec ses sources, ses relations et son niveau de fiabilité.</p></a>
  <a class="card cF" href="archive.html"><span class="kicker">Archive</span><h3>${COMICS.length} comics cités</h3><p>Les numéros et les arcs qui documentent l’encyclopédie, reliés aux fiches.</p></a>
 </div></section>
 <section><h2>Dossiers</h2><div class="grid two">${dos.D.map(d => dos.card(d, '')).join('')}</div></section>
 <section><h2>Fiabilité, en toute transparence</h2>
 <p class="prose">Chaque fiche porte un niveau de fiabilité : ${counts.map(([c, n]) => `${relBadge(c)} ${n}`).join(' · ')}. Aucune fiche n’est encore classée <b>Canon</b> : ce niveau sera attribué seulement après vérification dans les comics eux-mêmes. <a href="dossier/methode.html">Lire la méthode →</a></p></section>`;
-  emit('index.html', page({ file: 'index.html', title: 'La cosmologie Marvel, cartographiée et sourcée', desc: 'Atlas et encyclopédie de la cosmologie Marvel : Cosmos, entités, structures, événements et sources.', body, active: 'index.html' }));
+  emit('index.html', page({ file: 'index.html', title: 'Cosmologies Marvel et DC', desc: 'Atlas et encyclopédie des cosmologies Marvel et DC : cosmos, multivers, entités, crises et sources.', body, active: 'index.html' }));
 }
 
 /* ---------- exécution ---------- */

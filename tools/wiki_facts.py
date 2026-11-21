@@ -4,14 +4,17 @@ l'infobox : nom actuel, alias, origine, réalité, affiliations, famille, créat
 wiki communautaire marvel.fandom.com (contenu CC BY-SA, attribué sur chaque page).
 Aucun texte rédigé (historique, présentation, citations) n'est repris : seulement des faits courts.
 Sortie : content/wiki.json   ·   Lancer : python3 tools/wiki_facts.py   (en-tête User-Agent obligatoire, sinon 403)"""
-import json, re, time, urllib.parse, urllib.request, datetime, pathlib
+import json, re, time, urllib.parse, urllib.request, datetime, pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 UA = {'User-Agent': 'CosmologieMarvelAtlas/1.0 (fan reference project)'}
-A = json.loads((ROOT / 'content/atlas.json').read_text())
+# Usage : python3 tools/wiki_facts.py                       (Marvel : fiches de content/atlas.json -> content/wiki.json)
+#         python3 tools/wiki_facts.py dc                    (DC : content/dc_titles.json -> content/dc_wiki.json)
+SITE = 'dc' if 'dc' in sys.argv[1:] else 'marvel'
+A = json.loads((ROOT / 'content/atlas.json').read_text()) if SITE == 'marvel' else None
 
 # champ de l'infobox -> libellé affiché, nombre maximal d'éléments gardés
-FIELDS = [('CurrentAlias', 'Nom actuel', 1), ('RealName', 'Nom réel', 1), ('Aliases', 'Autres noms', 4), ('Origin', 'Nature', 1),
+FIELDS = [('ReleaseDate', 'Parution', 1), ('Year', 'Année', 1), ('MainAlias', 'Nom actuel', 1), ('Writer1_1', 'Scénario', 1), ('Penciler1_1', 'Dessin', 1), ('CurrentAlias', 'Nom actuel', 1), ('RealName', 'Nom réel', 1), ('Aliases', 'Autres noms', 4), ('Origin', 'Nature', 1),
           ('Reality', 'Réalité', 2), ('Universe', 'Univers', 1), ('Occupation', 'Fonction', 2), ('Affiliation', 'Affiliations', 4),
           ('Parents', 'Parents', 3), ('Siblings', 'Fratrie', 3), ('Children', 'Descendance', 3), ('BaseOfOperations', 'Base', 2),
           ('Galaxy', 'Galaxie', 1), ('Locale', 'Lieu', 2), ('Type', 'Type', 1), ('Material', 'Matériau', 1), ('CurrentOwner', 'Détenteur', 1),
@@ -20,7 +23,7 @@ KEYS = {k for k, _, _ in FIELDS}
 
 
 def api(params):
-    url = 'https://marvel.fandom.com/api.php?' + urllib.parse.urlencode({'format': 'json', 'redirects': 1, **params})
+    url = f'https://{SITE}.fandom.com/api.php?' + urllib.parse.urlencode({'format': 'json', 'redirects': 1, **params})
     for attempt in range(4):
         try:
             return json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60))['query']
@@ -57,11 +60,12 @@ def items(raw, n):
 def first_label(v):
     v = clean(v).strip().split('\n')[0]
     m = re.match(r'(.*) Vol (\d+) (\S+)$', v)
-    return (m.group(1) + ('' if m.group(2) == '1' else ' vol. ' + m.group(2)) + ' #' + m.group(3)) if m else v
+    return (m.group(1) + ('' if m.group(2) == '1' else ' vol. ' + m.group(2)) + ' #' + m.group(3).lstrip('#')) if m else v
 
 
 def infobox(text):
-    i = text.find('{{Marvel Database:')
+    m0 = re.search(r'\{\{(?:Marvel|DC) Database:', text)
+    i = m0.start() if m0 else -1
     if i < 0:
         return {}
     depth, j = 0, i
@@ -80,7 +84,10 @@ def infobox(text):
 
 
 def main():
-    titles = {id_: t for id_, t in A['wiki'].items() if id_ in A['nodes'] and A['nodes'][id_]['map'] != 7}
+    if SITE == 'marvel':
+        titles = {id_: t for id_, t in A['wiki'].items() if id_ in A['nodes'] and A['nodes'][id_]['map'] != 7}
+    else:
+        titles = json.loads((ROOT / 'content/dc_titles.json').read_text())
     inv, res = {}, {}
     for id_, t in titles.items():
         inv.setdefault(t, []).append(id_)
@@ -97,6 +104,8 @@ def main():
             if not p or 'missing' in p:
                 continue
             text = p['revisions'][0]['slots']['main']['*']
+            if re.search(r'\{\{\s*disambig', text, re.I):
+                continue
             box, facts = infobox(text), []
             for key, label, n in FIELDS:
                 if key in box:
@@ -107,10 +116,35 @@ def main():
             if not img.startswith('https://static.wikia.nocookie.net/'):
                 img = ''
             for id_ in inv[t]:
-                res[id_] = {'title': real, 'img': img, 'facts': facts}
+                res[id_] = {'title': real, 'img': img, 'facts': facts, 'issue': bool(re.search(r'Vol \d+ \S+$', real))}
         time.sleep(0.5)
-    out = {'fetched': datetime.date.today().isoformat(), 'license': 'Faits relevés sur marvel.fandom.com (CC BY-SA)', 'entries': res}
-    (ROOT / 'content/wiki.json').write_text(json.dumps(out, ensure_ascii=False, indent=1) + '\n')
+    # année de parution de chaque première apparition (lue sur la page du numéro)
+    firsts = {}
+    for r in res.values():
+        for f in r['facts']:
+            if f[0] == 'Première apparition' and not re.search(r'\((19|20)\d\d\)$', f[1][0]):
+                m = re.match(r'(.*?)(?: vol\. (\d+))? #(\S+)$', f[1][0])
+                if m: firsts[f[1][0]] = f'{m.group(1)} Vol {m.group(2) or 1} {m.group(3)}'
+    years, tl2 = {}, list(set(firsts.values()))
+    for k in range(0, len(tl2), 40):
+        q = api({'action': 'query', 'prop': 'revisions', 'rvprop': 'content', 'rvslots': 'main', 'titles': '|'.join(tl2[k:k + 40])})
+        alias = {n['from']: n['to'] for n in q.get('normalized', [])}; red = {n['from']: n['to'] for n in q.get('redirects', [])}
+        pages = {p['title']: p for p in q['pages'].values()}
+        for t in tl2[k:k + 40]:
+            p = pages.get(red.get(alias.get(t, t), alias.get(t, t)))
+            if p and 'missing' not in p:
+                txt = p['revisions'][0]['slots']['main']['*']
+                y = re.search(r'^\s*\|\s*(?:Year|Pubyear|ReleaseDate)\s*=\s*[^\n]*?((?:19|20)\d\d)', txt, re.M)
+                if y: years[t] = y.group(1)
+        time.sleep(0.5)
+    for r in res.values():
+        for f in r['facts']:
+            if f[0] == 'Première apparition' and f[1][0] in firsts and firsts[f[1][0]] in years:
+                f[1][0] = f'{f[1][0]} ({years[firsts[f[1][0]]]})'
+    missing = sorted(set(titles) - set(res))
+    if missing: print('introuvables ou ambiguës :', ' '.join(missing))
+    out = {'fetched': datetime.date.today().isoformat(), 'license': f'Faits relevés sur {SITE}.fandom.com (CC BY-SA)', 'entries': res}
+    (ROOT / ('content/wiki.json' if SITE == 'marvel' else 'content/dc_wiki.json')).write_text(json.dumps(out, ensure_ascii=False, indent=1) + '\n')
     print(len(res), 'fiches ·', sum(1 for r in res.values() if r['img']), 'images ·', sum(len(r['facts']) for r in res.values()), 'faits')
 
 

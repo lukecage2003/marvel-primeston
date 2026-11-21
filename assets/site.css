@@ -166,3 +166,6 @@ a.card:hover,a.card:focus-visible{transform:translateY(-2px);box-shadow:var(--sh
 .cA:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(11,11,11,.96) 38%,rgba(11,11,11,.15))}
 .fhero .fbg{position:absolute;inset:-40px;width:calc(100% + 80px);height:calc(100% + 80px);object-fit:cover;object-position:center 20%;z-index:-2;filter:blur(28px) saturate(1.1);opacity:.45}
 .fhero:before{display:none}
+
+.uni{display:inline-block;font:800 11px var(--font-display);letter-spacing:.06em;padding:1px 5px;border-radius:3px;margin-right:4px;vertical-align:1px}.uni.marvel{background:#e2493f;color:#fff}.uni.dc{background:#2f7bff;color:#fff}
+.brand small{font:700 14px var(--font-display);color:var(--text-2);text-shadow:none}@media (max-width:520px){.brand small{display:none}}

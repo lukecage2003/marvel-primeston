@@ -8,8 +8,10 @@ Site statique publié par GitHub Pages depuis `main` (à la racine). **Aucune d�
 | `index.html`, `encyclopedie.html`, `cosmos.html`, `structures.html`, `chronologie.html`, `archive.html`, `dossiers.html`, `recherche.html`, `fiche/*.html` (301), `dossier/*.html`, `search.json` | Pages **générées** par `tools/build.js` (ne pas modifier à la main) |
 | `assets/site.css`, `assets/site.js` | Design system (tokens, 6 familles de cartes) et comportements (images du wiki, filtres, recherche) |
 | `explorer.html` | L'atlas interactif : 8 cartes SVG, Codex, vidéo, miniatures, quiz, i18n. Il lit `data.js` et `images.js` |
-| `data.js` | Fiches de l'encyclopédie (source de vérité, modifiée à la main) |
-| `content/atlas.json` | Instantané de toutes les fiches (data.js et nœuds des cartes), produit par `tools/snapshot.js` |
+| `data.js` | Fiches Marvel (source de vérité, modifiée à la main) |
+| `content/dc_entries.py` → `data-dc.js` | Fiches et cartes DC : textes Primestone et positions des nœuds (`content/dc_entries.py`), assemblés avec les sources vérifiées par `tools/dc_build.py`. L'explorateur affiche DC avec `explorer.html?u=dc` |
+| `content/dc_titles.json`, `content/dc_wiki.json` | Titres exacts des pages du wiki DC, puis faits, première apparition (avec année) et image actuelle, relevés par `python3 tools/wiki_facts.py dc` |
+| `content/atlas.json`, `content/atlas-dc.json` | Instantanés des fiches Marvel et DC, produits par `node tools/snapshot.js` et `node tools/snapshot.js dc` |
 | `content/dossiers/*.md` | Dossiers éditoriaux (markdown simple, liens `[[id]]` vérifiés) |
 | `content/wiki.json` | Image principale actuelle et fiche d'identité **factuelle** (champs courts de l'infobox) de chaque fiche, relevées sur marvel.fandom.com par `tools/wiki_facts.py`. Aucun texte rédigé n'est repris |
 | `comics.json` | Index des comics cités (`tools/comics.js`) |
@@ -17,7 +19,7 @@ Site statique publié par GitHub Pages depuis `main` (à la racine). **Aucune d�
 
 ### Chaîne de publication
 1. Modifier `data.js` ou un dossier.
-2. Lancer `node tools/stamp.js`, `node tools/comics.js`, `node tools/snapshot.js`, puis `node tools/build.js`. Pour rafraîchir les images et les fiches d'identité : `python3 tools/wiki_facts.py`, puis `node tools/build.js`.
+2. Lancer `python3 tools/dc_build.py` (si DC a changé), `node tools/stamp.js`, `node tools/comics.js`, `node tools/snapshot.js`, `node tools/snapshot.js dc`, puis `node tools/build.js`. Pour rafraîchir les images et les fiches d'identité : `python3 tools/wiki_facts.py`, puis `node tools/build.js`.
 3. Lancer `npm test` (38 contrôles).
 4. Pousser. L'action `Tests` revérifie tout, puis GitHub Pages publie `main`.
 
@@ -34,3 +36,6 @@ Site statique publié par GitHub Pages depuis `main` (à la racine). **Aucune d�
 - **Images du wiki :** affichées depuis leur hébergement d'origine, dans des balises `<img>` en chargement différé et sans en-tête Referer (le wiki remplace sinon l'image par un visuel gris). Elles sont créditées sur chaque fiche ; aucune nouvelle illustration Marvel n'est hébergée par le projet.
 - **Aucun lien vers un site extérieur** dans les pages : les sources renvoient à l'archive interne (contrôlé par les tests).
 - **Tout texte externe passe par `escH`**, et les URL d'images sont en liste blanche (déjà en place).
+
+### Versions des cartes (« Mon plan » / « Officiel »)
+Chaque carte déclare `off` dans `MAPS` (Marvel) ou `DCOFF` (DC) : la publication d'origine du schéma officiel, `null` si aucune version officielle n'existe (plan Primestone, par exemple les Axes des Ur-Diviseurs), ou `data` pour les cartes construites à partir des sources (Réseau, Chronologie, Crises). En version officielle, les nœuds de niveau « théorie » sont masqués.

@@ -44,7 +44,7 @@
   function filters() {
     var list = document.querySelector('[data-filter-list]');
     if (!list) return;
-    var items = [].slice.call(list.children), state = { cat: '', rel: '', q: '' };
+    var items = [].slice.call(list.children), state = { uni: '', cat: '', rel: '', q: '' };
     var q = document.querySelector('[data-filter-q]'), count = document.querySelector('[data-filter-count]');
     document.querySelectorAll('[data-filter]').forEach(function (b) {
       b.addEventListener('click', function () {
@@ -58,7 +58,7 @@
     function run() {
       var n = 0;
       items.forEach(function (it) {
-        var show = (!state.cat || it.dataset.cat === state.cat) && (!state.rel || it.dataset.rel === state.rel) && (!state.q || it.dataset.text.indexOf(state.q) >= 0);
+        var show = (!state.uni || it.dataset.uni === state.uni) && (!state.cat || it.dataset.cat === state.cat) && (!state.rel || it.dataset.rel === state.rel) && (!state.q || it.dataset.text.indexOf(state.q) >= 0);
         it.hidden = !show; if (show) n++;
       });
       if (count) count.textContent = n + ' fiche' + (n > 1 ? 's' : '');
