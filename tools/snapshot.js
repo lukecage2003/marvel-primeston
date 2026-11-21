@@ -9,7 +9,7 @@ const srv=http.createServer((q,r)=>{const f=path.join(ROOT,decodeURIComponent(q.
  r.writeHead(200,{'Content-Type':MIME[path.extname(f)]||'application/octet-stream'});fs.createReadStream(f).pipe(r)});
 (async()=>{await new Promise(r=>srv.listen(0,'127.0.0.1',r));const b=await chromium.launch(),p=await b.newPage();
  await p.goto(`http://127.0.0.1:${srv.address().port}/explorer.html${DC?'?u=dc':''}`);await p.waitForFunction(()=>typeof IDX!=='undefined');
- const d=await p.evaluate(()=>{const N={};for(const [id,x] of Object.entries(IDX)){if(x.u)continue;N[id]={map:x.m,name:x.t,en:x.en&&x.en!=x.t?x.en:undefined,sub:x.s||undefined,desc:x.d||undefined,cat:x.cat,cert:x.cert||'u',
+ const d=await p.evaluate(()=>{const N={};for(const [id,x] of Object.entries(IDX)){if(x.u)continue;N[id]={map:x.m,name:x.t,fr:x.fr&&x.fr!=x.t?x.fr:undefined,sub:x.s||undefined,desc:x.d||undefined,cat:x.cat,cert:x.cert||'u',
    src:(EX[id]?EX[id][0]:x.src)||undefined,fact:(EX[id]?EX[id][2]:x.fact)||undefined,year:x.yr?Math.floor(x.yr):undefined,rel:[...(RELS[id]||[])].filter(r=>IDX[r]&&!IDX[r].u).sort()}}
   return{maps:MAPS.map(m=>({name:m.n,sub:m.sub})),cats:Object.fromEntries(Object.entries(CATS).map(([k,v])=>[k,{name:v[0],color:v[1]}])),cert:Object.fromEntries(Object.entries(CERT).map(([k,v])=>[k,{name:v[0],desc:v[1]}])),
    wiki:UNI=='dc'?DCX.WIKI:WQ,img:Object.fromEntries(Object.keys(N).map(id=>[id,(window.IMG||{})[id]||(window.IMG||{})[IMAP[id]]]).filter(x=>x[1])),nodes:N,

@@ -95,3 +95,11 @@ La suite couvre : intégrité des données (liens, sources, format, titres wiki)
 - Tout texte externe passe par `escH`, et les URL d'images sont mises en liste blanche.
 - Les captures de test vont dans un dossier temporaire, jamais dans le site publié.
 - Le développement se fait sur la branche de travail. La mise en ligne (fusion dans la branche publiée) se fait avec l'accord du propriétaire.
+
+## Session du 2026-11-21 (suite) : plans complets, noms anglais, biographies
+- DC : 96 nouvelles fiches vérifiées sur le wiki (les 51 Terres de l’Orrerie, les 9 Corps de Lanterns et leurs porteurs, Justice Incarnate, Gentry, royaumes de la Sphère des dieux, Vert, Rouge et Pourriture…), soit 202 fiches. Les 8 cartes DC sont redessinées ; l’Orrerie suit la structure de la carte officielle de The Multiversity.
+- Marvel : Omnivers redessiné, nouvelles cartes Familles (43 liens parent → enfant, 21 fratries, relevés sur le wiki) et Royaumes (11 royaumes ajoutés), Hiérarchie et Réseau retirés, quiz retiré.
+- Noms anglais sur toutes les cartes ; biographie en français (origines, famille, rôle, apparitions) dans les fiches et au clic sur un nœud.
+- Version officielle : planche officielle affichée quand elle existe (Multivers DC, Dix Royaumes, histoire des Cosmos).
+- Site recentré sur les plans : l’accueil est le catalogue des 16 cartes.
+- Le wiki Marvel a fusionné Parents, Fratrie et Descendance dans un champ « Relatives » sans rôle : les rôles du relevé précédent sont conservés par `tools/wiki_facts.py`.

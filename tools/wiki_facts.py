@@ -18,7 +18,7 @@ FIELDS = [('ReleaseDate', 'Parution', 1), ('Year', 'Année', 1), ('MainAlias', '
           ('Reality', 'Réalité', 2), ('Universe', 'Univers', 1), ('Occupation', 'Fonction', 2), ('Affiliation', 'Affiliations', 4),
           ('Parents', 'Parents', 3), ('Siblings', 'Fratrie', 3), ('Children', 'Descendance', 3), ('BaseOfOperations', 'Base', 2),
           ('Galaxy', 'Galaxie', 1), ('Locale', 'Lieu', 2), ('Type', 'Type', 1), ('Material', 'Matériau', 1), ('CurrentOwner', 'Détenteur', 1),
-          ('Leaders', 'Dirigeants', 3), ('Creators', 'Créateurs', 4), ('First', 'Première apparition', 1)]
+          ('Leaders', 'Dirigeants', 3), ('Relatives', 'Proches', 8), ('Creators', 'Créateurs', 4), ('First', 'Première apparition', 1)]
 KEYS = {k for k, _, _ in FIELDS}
 
 
@@ -85,7 +85,7 @@ def infobox(text):
 
 def main():
     if SITE == 'marvel':
-        titles = {id_: t for id_, t in A['wiki'].items() if id_ in A['nodes'] and A['nodes'][id_]['map'] != 7}
+        titles = {id_: t for id_, t in A['wiki'].items() if id_ in A['nodes'] and not re.fullmatch(r'e\d+', id_)}
     else:
         titles = json.loads((ROOT / 'content/dc_titles.json').read_text())
     inv, res = {}, {}
@@ -141,6 +141,14 @@ def main():
         for f in r['facts']:
             if f[0] == 'Première apparition' and f[1][0] in firsts and firsts[f[1][0]] in years:
                 f[1][0] = f'{f[1][0]} ({years[firsts[f[1][0]]]})'
+    # le wiki Marvel a fusionné Parents, Fratrie et Descendance dans « Relatives » (sans rôle) : on garde les rôles du relevé précédent
+    old_p = ROOT / ('content/wiki.json' if SITE == 'marvel' else 'content/dc_wiki.json')
+    old = json.loads(old_p.read_text())['entries'] if old_p.exists() else {}
+    for id_, r in res.items():
+        have = {f[0] for f in r['facts']}
+        for f in (old.get(id_) or {}).get('facts', []):
+            if f[0] in ('Parents', 'Fratrie', 'Descendance') and f[0] not in have:
+                r['facts'].insert(-1 if r['facts'] and r['facts'][-1][0] == 'Première apparition' else len(r['facts']), f)
     missing = sorted(set(titles) - set(res))
     if missing: print('introuvables ou ambiguës :', ' '.join(missing))
     out = {'fetched': datetime.date.today().isoformat(), 'license': f'Faits relevés sur {SITE}.fandom.com (CC BY-SA)', 'entries': res}

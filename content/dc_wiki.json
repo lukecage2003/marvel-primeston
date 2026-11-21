@@ -4505,6 +4505,3014 @@
     ]
    ],
    "issue": true
+  },
+  "e2": {
+   "title": "Earth 2",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/e/ed/Earth_2_Society_Vol_1_22_Textless.jpg/revision/latest/scale-to-width-down/585?cb=20170307012042",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "James Robinson",
+      "Nicola Scott"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Earth 2 #1 (2012)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e3": {
+   "title": "Earth 3",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/5/51/Crime_Syndicate_New_52_0002.jpg/revision/latest/scale-to-width-down/585?cb=20130902185732",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Third Earth"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Geoff Johns",
+      "Ivan Reis"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Justice League Vol 2 23.4: Secret Society"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e4": {
+   "title": "Earth 4",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/9/9a/The_Multiversity_Pax_Americana_Vol_1_1_Textless.jpg/revision/latest/scale-to-width-down/594?cb=20141119230137",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Frank Quitely"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity: Pax Americana #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e5": {
+   "title": "Earth 5",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/c/c5/Earth_5.jpg/revision/latest?cb=20141219235511",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Thunderworld"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Cameron Stewart"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity: Thunderworld Adventures #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e6": {
+   "title": "Earth 6",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/5/58/Earth_6_0001.png/revision/latest?cb=20150131205207",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Just Imagine",
+      "Earth-27",
+      "Earth-901"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Stan Lee",
+      "Grant Morrison",
+      "Marcus To"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Just Imagine: Batman #1 (2001)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e7": {
+   "title": "Earth 7",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/c/ca/Earth_7_0001.jpg/revision/latest/scale-to-width-down/593?cb=20141214134444",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Oblivion Machine"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Ivan Reis",
+      "Joe Prado"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity #1 (2014)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e8": {
+   "title": "Earth 8",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/9/93/Earth_8_0001.png/revision/latest?cb=20150131205207",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Angor"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Ivan Reis"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity #1 (2014)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e9": {
+   "title": "Earth 9",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/7/79/Earth_9_0001.png/revision/latest?cb=20150131205208",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Dan Jurgens",
+      "Grant Morrison"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e10": {
+   "title": "Earth 10",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/7/7a/Earth_10_0001.jpg/revision/latest/scale-to-width-down/900?cb=20150218173535",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Earth-X &centerdot",
+      "Earth X"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Jim Lee",
+      "Mike Hawthorne"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e11": {
+   "title": "Earth 11",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/b/b1/Earth11.jpg/revision/latest/scale-to-width-down/900?cb=20150129002139",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Gaea",
+      "Pankosmos"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Emanuela Lupacchino"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e12": {
+   "title": "Earth 12",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/3/3b/Earth_12.jpg/revision/latest/scale-to-width-down/650?cb=20150211033132",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "DCAU"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Adam Beechen",
+      "Norm Breyfogle",
+      "Grant Morrison"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Batman Beyond vol. 4 #1 (2011)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e13": {
+   "title": "Earth 13",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/7/78/The_Multiversity_The_Society_of_Super-Heroes_Conquerors_of_the_Counter-World_Vol_1_1_Textless_Irving_Variant.jpg/revision/latest/scale-to-width-down/593?cb=20140923195556",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e14": {
+   "title": "Earth 14",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/0/0e/Superman_%28Earth_14%29.jpg/revision/latest/scale-to-width-down/585?cb=20170118212241",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Peter Tomasi",
+      "Ryan Sook"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e15": {
+   "title": "Earth 15",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/9/97/Earth_15_001.jpg/revision/latest/scale-to-width-down/585?cb=20210907104710",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "The Perfect Universe",
+      "Blackstar Universe"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Joe Prado"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e16": {
+   "title": "Earth 16",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/3/39/Earth_16_0001.png/revision/latest/scale-to-width-down/900?cb=20150131205435",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Earth-Me, Pre-Zero Hour/Hypertime"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Ben Oliver"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity: The Just #1 (2014)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e17": {
+   "title": "Earth 17",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/1/13/The_Multiversity_Thunderworld_Adventures_Vol_1_1_Textless_Chiang_Variant.jpg/revision/latest/scale-to-width-down/593?cb=20211207020026",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e18": {
+   "title": "Earth 18",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/c/c7/Earth_18_0001.png/revision/latest?cb=20150131205436",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Andrew Robinson"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e19": {
+   "title": "Earth 19",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/0/0b/Earth_19_0001.png/revision/latest?cb=20150131205436",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Giuseppe Camuncoli"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e20": {
+   "title": "Earth 20",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/7/79/Earth_20_0002.jpg/revision/latest/scale-to-width-down/585?cb=20150211050100",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Chris Sprouse"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity: The Society of Super-Heroes: Conquerors of the Counter-World #1 (2014)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e21": {
+   "title": "Earth 21",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/d/dd/Earth_21.jpg/revision/latest/scale-to-width-down/803?cb=20150201233259",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Darwyn Cooke",
+      "Grant Morrison"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e22": {
+   "title": "Earth 22",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/c/ce/Earth_22.jpg/revision/latest/scale-to-width-down/738?cb=20150202000509",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Kingdom Come Universe"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Mark Waid",
+      "Alex Ross",
+      "Grant Morrison",
+      "Yildiray Cinar"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e23": {
+   "title": "Earth 23",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/c/c1/Earth_23_0001.png/revision/latest/scale-to-width-down/888?cb=20150131234303",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Earth-23",
+      "23rd Earth"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Doug Mahnke",
+      "Gene Ha"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Final Crisis #7 (2009)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e24": {
+   "title": "Earth 24",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/1/12/Earth_24_001.jpg/revision/latest?cb=20221216111841",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Ant Lucia"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e25": {
+   "title": "Earth-ABC",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/6/61/America%27s_Best_01.jpg/revision/latest?cb=20080621001641",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "ABC Universe &centerdot",
+      "Earth-C &centerdot",
+      "Earth-2058 &centerdot",
+      "Earth 25 &centerdot"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Alan Moore"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Tom Strong #1 (1999)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e26": {
+   "title": "Earth 26",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/d/de/Earth_26.jpg/revision/latest/scale-to-width-down/805?cb=20150202005030",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e27": {
+   "title": "Earth 27",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/e/e6/Earth_27_001.jpg/revision/latest/scale-to-width-down/900?cb=20221213092551",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Juan Gedeon",
+      "Daniel Warren Johnson"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e28": {
+   "title": "Earth 28",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/3/3d/DC_Mech_Vol_1_1_Textless.jpg/revision/latest/scale-to-width-down/593?cb=20221005001403",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Kenny Porter",
+      "Baldemar Rivas"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e29": {
+   "title": "Earth 29",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/d/da/Earth_29_0001.png/revision/latest?cb=20150131234304",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Htrae &centerdot",
+      "Bizarroverse &centerdot",
+      "Bizarro World &centerdot",
+      "Earth-Z &centerdot"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Declan Shalvey",
+      "Marguerite Bennett"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Earth 2: World's End #1 (2014)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e30": {
+   "title": "Earth 30",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/2/2f/Earth_30.jpg/revision/latest/scale-to-width-down/900?cb=20150207233843",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Mark Millar",
+      "Dave Johnson",
+      "Killian Plunkett",
+      "Grant Morrison"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e31": {
+   "title": "Earth 31",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/a/a0/Flying_Fox_Earth_31_001.jpg/revision/latest?cb=20150131044107",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Pirate Universe"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Yildiray Cinar"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e32": {
+   "title": "Earth 32",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/5/5e/Earth_32_001.jpg/revision/latest/scale-to-width-down/744?cb=20150129010756",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e33": {
+   "title": "Earth 33",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/7/76/Earth_33_001.jpg/revision/latest/scale-to-width-down/766?cb=20150221075224",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Real World",
+      "Earth-Prime"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity: Ultra Comics #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e34": {
+   "title": "Earth 34",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/3/34/Earth_34.jpg/revision/latest/scale-to-width-down/900?cb=20150129015406",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Jeff Johnson"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e35": {
+   "title": "Earth 35",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/3/32/Earth_35.jpg/revision/latest/scale-to-width-down/772?cb=20150129022354",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Pseudoverse"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Giuseppe Camuncoli"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e36": {
+   "title": "Earth 36",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/a/a8/Earth_36.jpg/revision/latest/scale-to-width-down/824?cb=20150129003504",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e37": {
+   "title": "Earth 37",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/3/31/Earth_37.jpg/revision/latest/scale-to-width-down/822?cb=20150208005131",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Howard Chaykin",
+      "Grant Morrison",
+      "Jed Dougherty"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e38": {
+   "title": "Earth 38",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/a/a8/Earth_38.jpg/revision/latest/scale-to-width-down/900?cb=20150131230542",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "John Byrne",
+      "Grant Morrison",
+      "Jon Bogdanove"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e39": {
+   "title": "Earth 39",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/b/b7/Earth_39.jpg/revision/latest/scale-to-width-down/900?cb=20150208012134",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Marcus To"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e40": {
+   "title": "Earth 40",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/b/ba/Earth_40_0002.png/revision/latest?cb=20150131234305",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Chris Sprouse"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity: The Society of Super-Heroes: Conquerors of the Counter-World #1 (2014)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e41": {
+   "title": "Earth 41",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/3/3d/Earth_41_0001.jpg/revision/latest?cb=20150129194813",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Ivan Reis"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e42": {
+   "title": "Earth 42",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/f/fb/Earth_42_0001.png/revision/latest?cb=20150203030736",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Lil' League"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Gene Ha"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Action Comics vol. 2 #9 (2012)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e43": {
+   "title": "Earth 43",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/c/c2/Earth_43_001.jpg/revision/latest/scale-to-width-down/703?cb=20150208014330",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Vampire Earth",
+      "Vampire-World"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Kelley Jones"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e44": {
+   "title": "Earth 44",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/e/e8/Earth_44.jpg/revision/latest/scale-to-width-down/780?cb=20150208015102",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Duncan Rouleau"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e45": {
+   "title": "Earth 45",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/7/75/DCE45.jpg/revision/latest/scale-to-width-down/324?cb=20141213012550",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Earth-Superdoom",
+      "Earth 45™"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Gene Ha"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Action Comics vol. 2 #9 (2012)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e46": {
+   "title": "Earth 46",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/1/1c/Gotham_City_Earth_46_001.jpg/revision/latest/scale-to-width-down/900?cb=20231004220918",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Rafael Grampa"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e47": {
+   "title": "Earth 47",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/6/66/Earth_47.jpg/revision/latest/scale-to-width-down/785?cb=20150129024002",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Dreamworld"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Scott Hepburn"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e48": {
+   "title": "Earth 48",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/5/59/Earth_48.jpg/revision/latest/scale-to-width-down/891?cb=20150208020037",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Warworld"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Giuseppe Camuncoli"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e49": {
+   "title": "Earth 49",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/8/8b/Earth_49_004.jpg/revision/latest/scale-to-width-down/667?cb=20230613230546",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Earth-Injustice"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Tom Taylor",
+      "Jheremy Raapack"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e50": {
+   "title": "Earth 50",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/5/54/Earth50.jpg/revision/latest/scale-to-width-down/613?cb=20150211040315",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Kyle Higgins",
+      "Thony Silas",
+      "Grant Morrison"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Batman Beyond Universe #9 (2014)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e51": {
+   "title": "Earth 51",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/2/22/Earth_51_0001.png/revision/latest/scale-to-width-down/741?cb=20150221103508",
+   "facts": [
+    [
+     "Créateurs",
+     [
+      "Jack Kirby",
+      "Grant Morrison",
+      "Paulo Siqueira"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "e1": {
+   "title": "Superman: Earth One Vol 1 1",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/6/62/Superman_Earth_One.jpg/revision/latest?cb=20101030094350",
+   "facts": [
+    [
+     "Année",
+     [
+      "2010"
+     ]
+    ],
+    [
+     "Scénario",
+     [
+      "J. Michael Straczynski"
+     ]
+    ],
+    [
+     "Dessin",
+     [
+      "Shane Davis"
+     ]
+    ]
+   ],
+   "issue": true
+  },
+  "orrery": {
+   "title": "Orrery of Worlds",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/6/6e/Map_of_the_Multiverse_002.png/revision/latest/scale-to-width-down/900?cb=20141104181338",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "The World Orrery &centerdot",
+      "Infinite Earths"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Multiverse"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity #1 (2014)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "househeroes": {
+   "title": "Monitor's Satellite",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/1/11/Monitor%27s_Satellite_001.jpg/revision/latest?cb=20130329231416",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "House of Heroes"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Earth-One"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Marv Wolfman",
+      "George Perez"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "New Teen Titans #21 (1982)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "rock": {
+   "title": "Rock of Eternity",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/b/b5/Rock_of_Eternity_Prime_Earth_001.jpg/revision/latest/scale-to-width-down/356?cb=20230729001119",
+   "facts": [
+    [
+     "Univers",
+     [
+      "Earth-S"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Bill Parker",
+      "C.C. Beck"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Whiz Comics #2 (1940)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "wonderworld": {
+   "title": "Wonderworld",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/0/06/Wonderworld_01.png/revision/latest?cb=20110420180419",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Mammord"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "JLA #12 (1997)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "mamaragan": {
+   "title": "Mamaragan (Prime Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/3/30/Shazam_%28Prime_Earth%29_001.png/revision/latest?cb=20140821133449",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "The Wizard"
+     ]
+    ],
+    [
+     "Nom réel",
+     [
+      "Mamaragan"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Shazam",
+      "The Great Wizard",
+      "He-Who-Sleeps",
+      "Wizard of Shazam"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Sphere of the Gods"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "God of Thunder",
+      "Keeper of the Rock of Eternity"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Australian Aboriginal Gods",
+      "Quintessence",
+      "Council of Immortals",
+      "Conclave of Shazam"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Rock of Eternity"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "C.C. Beck",
+      "Bill Parker"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Whiz Comics #2 (1940)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "skyland": {
+   "title": "Skyland",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/6/6e/Map_of_the_Multiverse_002.png/revision/latest/scale-to-width-down/900?cb=20141104181338",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "The Heavens &centerdot",
+      "Celestial Plane &centerdot",
+      "Hightower &centerdot",
+      "The Sea of Skylands"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Sphere of the Gods"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Trinity of Sin: The Phantom Stranger #10 (2013)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "underworld": {
+   "title": "Underworld",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/6/6e/Map_of_the_Multiverse_002.png/revision/latest/scale-to-width-down/900?cb=20141104181338",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "The Netherworlds &centerdot",
+      "The Underworlds &centerdot",
+      "Netherworld &centerdot",
+      "Netherverse &centerdot"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Sphere of the Gods"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Wonder Woman vol. 4 #8 (2012)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "jli": {
+   "title": "Justice Incarnate",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/2/2b/Justice_Incarnate.jpg/revision/latest/scale-to-width-down/900?cb=20150429221255",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Justice League Incarnate"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Multiverse"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "House of Heroes"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Ivan Reis"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity #2 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "kalel23": {
+   "title": "Kalel (Earth 23)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/2/28/Action_Comics_Vol_2_9_Textless.png/revision/latest/scale-to-width-down/586?cb=20150309174949",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "President Superman"
+     ]
+    ],
+    [
+     "Nom réel",
+     [
+      "Kalel (Birth Name)"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Superman"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Earth 23"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "President of the United States"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Justice League",
+      "Justice Incarnate",
+      "Supermen of the Multiverse"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "White House",
+      "Fort Superman"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Doug Mahnke"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Final Crisis #7 (2009)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "gentry": {
+   "title": "The Gentry",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/1/1c/The_Gentry_0001.jpg/revision/latest?cb=20150218003531",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Pitiless Ones"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Multiverse"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Earth 7"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Ivan Reis"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity #1 (2014)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "ultracomics": {
+   "title": "Ultra Comics (Earth 33)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/f/f3/The_Multiversity_Ultra_Comics_Vol_1_1_Textless.jpg/revision/latest/scale-to-width-down/575?cb=20141229230501",
+   "facts": [
+    [
+     "Nom réel",
+     [
+      "Ultra Comics"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Ultra"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Earth 33"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Doug Mahnke"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity #1 (2014)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "kamandi": {
+   "title": "Kamandi (Earth 51)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/c/ce/Kamandi_%28Earth_51%29.png/revision/latest?cb=20150203021530",
+   "facts": [
+    [
+     "Nom réel",
+     [
+      "Kamandi"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Earth 51"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Mobile"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Jack Kirby"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "monsphere": {
+   "title": "Monitor Sphere",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/6/6e/Map_of_the_Multiverse_002.png/revision/latest/scale-to-width-down/900?cb=20141104181338",
+   "facts": [
+    [
+     "Univers",
+     [
+      "Multiverse"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Multiversity Guidebook #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "upsidedown": {
+   "title": "Upside-Down Man (Dark Multiverse)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/1/12/Justice_League_Dark_Vol_2_3_Textless.jpg/revision/latest/scale-to-width-down/593?cb=20180926170021",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Upside-Down Man"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Prime Magus"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Dark Multiverse"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Club IV, NYC"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "James Tynion IV",
+      "Álvaro Martínez Bueno"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Justice League Dark vol. 2 #1 (2018)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "darkknights": {
+   "title": "Dark Knights (Dark Multiverse)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/6/67/Dark_Knights_Rising_The_Wild_Hunt_Vol_1_1_Textless.jpg/revision/latest/scale-to-width-down/586?cb=20180214160900",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Bat-Family, Nightmare Batmen, Dark Council"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Dark Multiverse"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Dark Multiverse",
+      "Challengers Mountain (Earth 0)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Scott Snyder",
+      "Greg Capullo"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Dark Days: The Casting #1 (2017)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "sixthdim": {
+   "title": "Sixth Dimension",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/8/81/Sixth_Dimension_0009.jpg/revision/latest/scale-to-width-down/900?cb=20200504005007",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "6th Dimension"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Multiverse"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Mark Waid",
+      "Bryan Hitch",
+      "Scott Snyder",
+      "Jorge Jiménez"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "JLA #52 (2001)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "seventhdim": {
+   "title": "Seventh Dimension",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/3/3a/Star_Sapphire_Golden_Age_01.jpg/revision/latest/scale-to-width-down/450?cb=20101012163903",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "7th Dimension"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Earth-Two"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Robert Kanigher",
+      "Lee Elias"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "All-Flash #32 (1948)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "mrmind": {
+   "title": "Mister Mind (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/8/89/Mister_Mind_0001.jpg/revision/latest?cb=20130725103854",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Mr. Mind"
+     ]
+    ],
+    [
+     "Nom réel",
+     [
+      "Unpronounceable"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Hyperfly, Mister Mind"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Monster Society"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Mobile",
+      "Fawcett City"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Otto Binder",
+      "C.C. Beck"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "The Power of Shazam! #12 (1996)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "pariah": {
+   "title": "Kell Mossa (Pre-Crisis)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/1/15/Pariah_0001.jpg/revision/latest?cb=20121010120110",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Pariah"
+     ]
+    ],
+    [
+     "Nom réel",
+     [
+      "Kell Mossa"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Great Darkness"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Pre-Crisis"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Monitor",
+      "Black Lantern Corps"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Marv Wolfman",
+      "George Pérez"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Crisis on Infinite Earths #1 (1985)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "harbinger": {
+   "title": "Lyla Michaels (Pre-Crisis)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/4/4f/Harbinger_01.PNG/revision/latest/scale-to-width-down/555?cb=20230728122851",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Harbinger"
+     ]
+    ],
+    [
+     "Nom réel",
+     [
+      "Lyla Michaels"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Destiny"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Pre-Crisis"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Historian"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "New Guardians",
+      "Amazons of Themyscira",
+      "Black Lantern Corps"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Themyscira"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Marv Wolfman",
+      "George Pérez"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "New Teen Titans Annual #2 (1983)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "worldforge": {
+   "title": "World Forge",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/5/57/World_Forge_Dark_Nights_Metal_Vol_1_4.jpg/revision/latest/scale-to-width-down/900?cb=20201216135950",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Forge of Worlds"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Dark Multiverse"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Scott Snyder",
+      "Greg Capullo"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Justice League vol. 3 #33 (2018)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "nth": {
+   "title": "Nth Metal",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/b/b7/Hawkgirl_DCAU_003.jpg/revision/latest?cb=20110602081715",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Ninth Metal",
+      "Sky Metal",
+      "Gold of Legacy",
+      "Ûk Metal"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Earth-Two"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Gardner Fox",
+      "Dennis Neville"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Flash Comics #1 (1940)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "green": {
+   "title": "The Green",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/7/75/The_Green_001.jpg/revision/latest/scale-to-width-down/652?cb=20110714002409",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "The Green Kingdom (Rotworld)",
+      "The Burning Green",
+      "The Greenspore (Earth 41)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Alan Moore",
+      "Stan Woch"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Swamp Thing vol. 2 #47 (1986)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "red": {
+   "title": "The Red",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/8/83/The_Red_001.jpg/revision/latest/scale-to-width-down/900?cb=20110714015740",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "M-Field &centerdot",
+      "Lifeweb &centerdot",
+      "The Avatar Bestiary &centerdot",
+      "The Template &centerdot"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Multiverse"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Grant Morrison",
+      "Chaz Truog"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Animal Man #1 (1988)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "rot": {
+   "title": "The Black",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/f/fd/The_Rot_001.jpg/revision/latest/scale-to-width-down/585?cb=20120308201441",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "The Rot",
+      "The Rot Place",
+      "Rotlands"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Jeff Lemire",
+      "Travel Foreman"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Animal Man vol. 2 #1 (2011)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "grey": {
+   "title": "The Grey",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/7/7a/The_Grey_001.jpg/revision/latest/scale-to-width-down/583?cb=20111012212156",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Mycos"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Steve Bissette",
+      "Pat Broderick"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Swamp Thing Annual vol. 2 #4 (1988)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "parliament": {
+   "title": "Parliament of Trees",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/0/07/Parliament_of_Trees_001.jpg/revision/latest/scale-to-width-down/622?cb=20091109051124",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Plant Elementals",
+      "Earth-Spirits",
+      "Earth Sprites"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Earth-One"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Amazon Rainforest, Brazil (New Earth)",
+      "Mato Grosso, Brazil (Prime Earth)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Alan Moore",
+      "Stan Woch"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Swamp Thing vol. 2 #47 (1986)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "sincorps": {
+   "title": "Sinestro Corps (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/4/4e/Sinestro_Corps_Panel.JPG/revision/latest/scale-to-width-down/585?cb=20090423210419",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Yellow Lantern Corps, Mongul Corps"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Qward, Anti-Matter Universe"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Geoff Johns",
+      "Ethan Van Sciver"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Green Lantern vol. 4 #10 (2006)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "redcorps": {
+   "title": "Red Lantern Corps (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/e/ef/Red_Lantern_Corps_004.jpg/revision/latest?cb=20091113215537",
+   "facts": [
+    [
+     "Univers",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Ysmault"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Geoff Johns",
+      "Ethan Van Sciver"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Green Lantern vol. 4 #25 (2008)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "orangecorps": {
+   "title": "Orange Lantern Corps (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/9/9b/Orange_Lantern_Corps_02.jpg/revision/latest?cb=20090423003759",
+   "facts": [
+    [
+     "Univers",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Mobile"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Geoff Johns",
+      "Ethan Van Sciver"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Green Lantern vol. 4 #25 (2008)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "bluecorps": {
+   "title": "Blue Lantern Corps (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/8/81/Blue_Lantern_Corps_03.jpg/revision/latest?cb=20090424160916",
+   "facts": [
+    [
+     "Univers",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Odym (formerly), Elpis (formerly)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Geoff Johns",
+      "Ethan Van Sciver"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Green Lantern vol. 4 #25 (2008)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "indigo": {
+   "title": "Indigo Tribe (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/3/33/Indigo_Tribe.JPG/revision/latest/scale-to-width-down/585?cb=20200104032723",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Indigo Lantern Corps"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Nok"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Geoff Johns",
+      "Ethan Van Sciver"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Green Lantern vol. 4 #25 (2008)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "sapphire": {
+   "title": "Star Sapphire Corps (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/7/7b/Star_Sapphire_Corps_03.jpg/revision/latest/scale-to-width-down/585?cb=20090428163512",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Star Sapphires",
+      "Violet Lantern Corps"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Zamaron, Sector 1416",
+      "agents stationed in various sectors throughout known space"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Geoff Johns",
+      "Daniel Acuña"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Green Lantern vol. 4 #20 (2007)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "blackcorps": {
+   "title": "Black Lantern Corps (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/f/fa/Black_Lantern_Corps_003.jpg/revision/latest?cb=20090925173413",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Death, Cold-Blooded Hands of Death"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Ryut, Sector 666"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Geoff Johns",
+      "Ivan Reis",
+      "Ethan Van Sciver"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Green Lantern vol. 4 #25 (2008)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "whitecorps": {
+   "title": "White Lantern Corps (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/1/12/White_Lantern_Corps_001.jpg/revision/latest/scale-to-width-down/900?cb=20100331225823",
+   "facts": [
+    [
+     "Univers",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Geoff Johns",
+      "Ivan Reis"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Blackest Night #7 (2010)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "ultraviolet": {
+   "title": "Ultraviolet Corps (Prime Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/b/b5/Ultraviolet_Lantern_Corps_Prime_Earth_001.png/revision/latest?cb=20191006144909",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "UV Lanterns",
+      "Ultraviolet Lantern Corps"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Prime Earth"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Scott Snyder",
+      "Jorge Jimenez"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Justice League vol. 4 #2 (2018)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "atrocitus": {
+   "title": "Atrocitus (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/6/69/Atrocitus_001.jpg/revision/latest/scale-to-width-down/714?cb=20150510145155",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Atrocitus"
+     ]
+    ],
+    [
+     "Nom réel",
+     [
+      "Atros"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Atrocitus of the Five Inversions, Red Lantern"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Red Lantern",
+      "Leader"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Red Lantern Corps, formerly Five Inversions, Empire of Tears, New Guar…"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Ysmault"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Geoff Johns",
+      "Ethan Van Sciver"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Green Lantern vol. 4 #25 (2008)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "larfleeze": {
+   "title": "Larfleeze (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/9/93/Agent_Orange.JPG/revision/latest/scale-to-width-down/593?cb=20140406121828",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Larfleeze"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Larfleeze, Orange God"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Leader of the Orange Lantern Corps"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Orange Lantern Corps"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Okaara"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Geoff Johns",
+      "Ethan Van Sciver"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Green Lantern vol. 4 #25 (2008)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "saintwalker": {
+   "title": "Bro'Dee Walker (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/f/f7/Saint_Walker_002.jpg/revision/latest/scale-to-width-down/466?cb=20121227213852",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Saint Walker"
+     ]
+    ],
+    [
+     "Nom réel",
+     [
+      "Bro'Dee Walker"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Blue Lantern"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Blue Lantern Corps",
+      "Partner of Arkillo"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Earth"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Geoff Johns",
+      "Ethan Van Sciver"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Green Lantern vol. 4 #25 (2008)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "indigo1": {
+   "title": "Iroque (Prime Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/4/43/Green_Lantern_Vol_5_7_Textless_Variant.jpg/revision/latest/scale-to-width-down/586?cb=20161118075816",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Indigo-1"
+     ]
+    ],
+    [
+     "Nom réel",
+     [
+      "Iroque"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Prime Earth"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Leader of the Indigo Tribe"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Indigo Tribe"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Nok"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Geoff Johns",
+      "Ivan Reis"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Green Lantern vol. 4 #25 (2008)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "abinsur": {
+   "title": "Abin Sur (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/1/14/Abin_Sur_001.jpg/revision/latest?cb=20130704213129",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Green Lantern"
+     ]
+    ],
+    [
+     "Nom réel",
+     [
+      "Abin Sur"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Lagzia"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Earth-One"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Green Lantern, former History Professor"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Green Lantern Corps"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Oa"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "John Broome",
+      "Gil Kane"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Showcase #22 (1959)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "carol": {
+   "title": "Carol Ferris (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/c/cc/Star_Sapphire_008.jpg/revision/latest?cb=20110303024250",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Star Sapphire"
+     ]
+    ],
+    [
+     "Nom réel",
+     [
+      "Carol Ferris"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Predator"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Earth-One"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Businesswoman",
+      "Pilot"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Star Sapphire Corps",
+      "Zamarons, New Guardians"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Ferris Aircraft, Coast City"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "John Broome",
+      "Gil Kane"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Showcase #22 (1959)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "ganthet": {
+   "title": "Ganthet (New Earth)",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/d/d8/Green_Lantern_Ganthet_01.jpg/revision/latest?cb=20100103183612",
+   "facts": [
+    [
+     "Nom réel",
+     [
+      "Ganthet"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "New Earth"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Guardian of the Universe, Green Lantern"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Guardians of the Universe, Quintessence"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Oa"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Larry Niven",
+      "John Byrne"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Green Lantern: Ganthet's Tale"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "zamarons": {
+   "title": "Zamarons",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/2/20/Zamarons_003.jpg/revision/latest?cb=20131225035220",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Maltusians, Oans"
+     ]
+    ],
+    [
+     "Univers",
+     [
+      "Earth-One"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Star Sapphire Corps, formerly Manhunters"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Zamaron"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "John Broome",
+      "Gil Kane"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Green Lantern vol. 2 #16 (1962)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "emeraldspace": {
+   "title": "Emerald Space",
+   "img": "https://static.wikia.nocookie.net/marvel_dc/images/8/8b/Emerald_Space_01.jpg/revision/latest/scale-to-width-down/900?cb=20191017231440",
+   "facts": [
+    [
+     "Univers",
+     [
+      "Prime Earth"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Robert Venditti"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Hal Jordan and the Green Lantern Corps #9 (2017)"
+     ]
+    ]
+   ],
+   "issue": false
   }
  }
 }

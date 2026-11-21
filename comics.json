@@ -12,6 +12,39 @@
  },
  {
   "type": "issue",
+  "series": "Ka-Zar",
+  "volume": 1,
+  "issue": "1",
+  "year": "1936",
+  "label": "Ka-Zar #1",
+  "citedBy": [
+   "r_midgard"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Daring Mystery Comics",
+  "volume": 1,
+  "issue": "6",
+  "year": "1940",
+  "label": "Daring Mystery Comics #6",
+  "citedBy": [
+   "r_valhalla"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Flash Comics",
+  "volume": 1,
+  "issue": "1",
+  "year": "1940",
+  "label": "Flash Comics #1",
+  "citedBy": [
+   "dc_nth"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "More Fun Comics",
   "volume": 1,
   "issue": "52",
@@ -44,6 +77,18 @@
    "x_eternals",
    "x_deviants",
    "x_zuras"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Whiz Comics",
+  "volume": 1,
+  "issue": "2",
+  "year": "1940",
+  "label": "Whiz Comics #2",
+  "citedBy": [
+   "dc_rock",
+   "dc_mamaragan"
   ]
  },
  {
@@ -88,6 +133,17 @@
   "label": "Whiz Comics #72",
   "citedBy": [
    "dc_hell"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "All-Flash",
+  "volume": 1,
+  "issue": "32",
+  "year": "1948",
+  "label": "All-Flash #32",
+  "citedBy": [
+   "dc_seventhdim"
   ]
  },
  {
@@ -164,7 +220,9 @@
   "year": "1959",
   "label": "Showcase #22",
   "citedBy": [
-   "dc_glcorps"
+   "dc_glcorps",
+   "dc_abinsur",
+   "dc_carol"
   ]
  },
  {
@@ -249,6 +307,17 @@
  },
  {
   "type": "issue",
+  "series": "Green Lantern",
+  "volume": 2,
+  "issue": "16",
+  "year": "1962",
+  "label": "Green Lantern vol. 2 #16",
+  "citedBy": [
+   "dc_zamarons"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Incredible Hulk",
   "volume": 1,
   "issue": "1",
@@ -290,6 +359,7 @@
   "label": "Journey Into Mystery #85",
   "citedBy": [
    "p_asgard",
+   "r_bifrost",
    "x_odin"
   ]
  },
@@ -356,7 +426,9 @@
   "year": "1963",
   "label": "Journey Into Mystery #97",
   "citedBy": [
-   "o_twilight"
+   "o_twilight",
+   "r_jotunheim",
+   "r_muspelheim"
   ]
  },
  {
@@ -436,7 +508,20 @@
   "year": "1964",
   "label": "Journey Into Mystery #102",
   "citedBy": [
+   "r_niffleheim",
+   "r_hel",
    "x_hela"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Journey Into Mystery",
+  "volume": 1,
+  "issue": "103",
+  "year": "1964",
+  "label": "Journey Into Mystery #103",
+  "citedBy": [
+   "r_nidavellir"
   ]
  },
  {
@@ -1358,6 +1443,17 @@
  },
  {
   "type": "issue",
+  "series": "Thor",
+  "volume": 1,
+  "issue": "277",
+  "year": "1978",
+  "label": "Thor #277",
+  "citedBy": [
+   "r_alfheim"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Fantastic Four",
   "volume": 1,
   "issue": "205",
@@ -1464,7 +1560,8 @@
   "label": "New Teen Titans #21",
   "citedBy": [
    "dc_monitor",
-   "dc_monitors"
+   "dc_monitors",
+   "dc_househeroes"
   ]
  },
  {
@@ -1487,6 +1584,17 @@
   "label": "Fantastic Four #262",
   "citedBy": [
    "e_trial"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "New Teen Titans Annual",
+  "volume": 1,
+  "issue": "2",
+  "year": "1983",
+  "label": "New Teen Titans Annual #2",
+  "citedBy": [
+   "dc_harbinger"
   ]
  },
  {
@@ -1558,6 +1666,17 @@
  },
  {
   "type": "issue",
+  "series": "Thor",
+  "volume": 1,
+  "issue": "347",
+  "year": "1984",
+  "label": "Thor #347",
+  "citedBy": [
+   "r_svartalfheim"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Avengers",
   "volume": 1,
   "issue": "257",
@@ -1576,7 +1695,8 @@
   "label": "Crisis on Infinite Earths #1",
   "citedBy": [
    "dc_overvoid",
-   "dc_coie"
+   "dc_coie",
+   "dc_pariah"
   ]
  },
  {
@@ -1633,6 +1753,17 @@
  },
  {
   "type": "issue",
+  "series": "Official Handbook of the Marvel Universe",
+  "volume": 2,
+  "issue": "1",
+  "year": "1985",
+  "label": "Official Handbook of the Marvel Universe vol. 2 #1",
+  "citedBy": [
+   "r_vanaheim"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Star Brand",
   "volume": 1,
   "issue": "1",
@@ -1640,6 +1771,18 @@
   "label": "Star Brand #1",
   "citedBy": [
    "x_starbrand"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Swamp Thing",
+  "volume": 2,
+  "issue": "47",
+  "year": "1986",
+  "label": "Swamp Thing vol. 2 #47",
+  "citedBy": [
+   "dc_green",
+   "dc_parliament"
   ]
  },
  {
@@ -1727,6 +1870,28 @@
   "citedBy": [
    "dc_hypertime",
    "dc_omniverse"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Animal Man",
+  "volume": 1,
+  "issue": "1",
+  "year": "1988",
+  "label": "Animal Man #1",
+  "citedBy": [
+   "dc_red"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Swamp Thing Annual",
+  "volume": 2,
+  "issue": "4",
+  "year": "1988",
+  "label": "Swamp Thing Annual vol. 2 #4",
+  "citedBy": [
+   "dc_grey"
   ]
  },
  {
@@ -2051,6 +2216,17 @@
  },
  {
   "type": "issue",
+  "series": "The Power of Shazam!",
+  "volume": 1,
+  "issue": "12",
+  "year": "1996",
+  "label": "The Power of Shazam! #12",
+  "citedBy": [
+   "dc_mrmind"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Heroes Reborn: The Return",
   "volume": 1,
   "issue": "1",
@@ -2058,6 +2234,17 @@
   "label": "Heroes Reborn: The Return #1",
   "citedBy": [
    "x_ashema"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "JLA",
+  "volume": 1,
+  "issue": "12",
+  "year": "1997",
+  "label": "JLA #12",
+  "citedBy": [
+   "dc_wonderworld"
   ]
  },
  {
@@ -2080,6 +2267,17 @@
   "label": "Galactus the Devourer #1",
   "citedBy": [
    "h_redshift"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Tom Strong",
+  "volume": 1,
+  "issue": "1",
+  "year": "1999",
+  "label": "Tom Strong #1",
+  "citedBy": [
+   "dc_e25"
   ]
  },
  {
@@ -2113,6 +2311,28 @@
   "label": "Fantastic Four Annual #2001",
   "citedBy": [
    "x_abraxas"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "JLA",
+  "volume": 1,
+  "issue": "52",
+  "year": "2001",
+  "label": "JLA #52",
+  "citedBy": [
+   "dc_sixthdim"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Just Imagine: Batman",
+  "volume": 1,
+  "issue": "1",
+  "year": "2001",
+  "label": "Just Imagine: Batman #1",
+  "citedBy": [
+   "dc_e6"
   ]
  },
  {
@@ -2299,6 +2519,17 @@
  },
  {
   "type": "issue",
+  "series": "Green Lantern",
+  "volume": 4,
+  "issue": "10",
+  "year": "2006",
+  "label": "Green Lantern vol. 4 #10",
+  "citedBy": [
+   "dc_sincorps"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Incredible Hulk",
   "volume": 2,
   "issue": "92",
@@ -2350,6 +2581,17 @@
   "label": "Countdown to Final Crisis #21",
   "citedBy": [
    "dc_nixuotan"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Green Lantern",
+  "volume": 4,
+  "issue": "20",
+  "year": "2007",
+  "label": "Green Lantern vol. 4 #20",
+  "citedBy": [
+   "dc_sapphire"
   ]
  },
  {
@@ -2409,6 +2651,25 @@
  },
  {
   "type": "issue",
+  "series": "Green Lantern",
+  "volume": 4,
+  "issue": "25",
+  "year": "2008",
+  "label": "Green Lantern vol. 4 #25",
+  "citedBy": [
+   "dc_redcorps",
+   "dc_orangecorps",
+   "dc_bluecorps",
+   "dc_indigo",
+   "dc_blackcorps",
+   "dc_atrocitus",
+   "dc_larfleeze",
+   "dc_saintwalker",
+   "dc_indigo1"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Secret Invasion",
   "volume": 1,
   "issue": "1",
@@ -2453,6 +2714,18 @@
  },
  {
   "type": "issue",
+  "series": "Final Crisis",
+  "volume": 1,
+  "issue": "7",
+  "year": "2009",
+  "label": "Final Crisis #7",
+  "citedBy": [
+   "dc_e23",
+   "dc_kalel23"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Realm of Kings",
   "volume": 1,
   "issue": "1",
@@ -2481,7 +2754,8 @@
   "year": "2010",
   "label": "Blackest Night #7",
   "citedBy": [
-   "dc_lifeentity"
+   "dc_lifeentity",
+   "dc_whitecorps"
   ]
  },
  {
@@ -2511,6 +2785,17 @@
  },
  {
   "type": "issue",
+  "series": "Superman: Earth One",
+  "volume": 1,
+  "issue": "1",
+  "year": "2010",
+  "label": "Superman: Earth One #1",
+  "citedBy": [
+   "dc_e1"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Thanos Imperative",
   "volume": 1,
   "issue": "1",
@@ -2529,7 +2814,19 @@
   "year": "2011",
   "label": "Animal Man vol. 2 #1",
   "citedBy": [
-   "dc_sphere"
+   "dc_sphere",
+   "dc_rot"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Batman Beyond",
+  "volume": 4,
+  "issue": "1",
+  "year": "2011",
+  "label": "Batman Beyond vol. 4 #1",
+  "citedBy": [
+   "dc_e12"
   ]
  },
  {
@@ -2578,6 +2875,18 @@
  },
  {
   "type": "issue",
+  "series": "Action Comics",
+  "volume": 2,
+  "issue": "9",
+  "year": "2012",
+  "label": "Action Comics vol. 2 #9",
+  "citedBy": [
+   "dc_e42",
+   "dc_e45"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Avengers",
   "volume": 5,
   "issue": "1",
@@ -2609,6 +2918,28 @@
   "label": "Avengers vs. X-Men #1",
   "citedBy": [
    "e_avx"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Earth 2",
+  "volume": 1,
+  "issue": "1",
+  "year": "2012",
+  "label": "Earth 2 #1",
+  "citedBy": [
+   "dc_e2"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Wonder Woman",
+  "volume": 4,
+  "issue": "8",
+  "year": "2012",
+  "label": "Wonder Woman vol. 4 #8",
+  "citedBy": [
+   "dc_underworld"
   ]
  },
  {
@@ -2707,6 +3038,39 @@
  },
  {
   "type": "issue",
+  "series": "Trinity of Sin: The Phantom Stranger",
+  "volume": 1,
+  "issue": "10",
+  "year": "2013",
+  "label": "Trinity of Sin: The Phantom Stranger #10",
+  "citedBy": [
+   "dc_skyland"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Batman Beyond Universe",
+  "volume": 1,
+  "issue": "9",
+  "year": "2014",
+  "label": "Batman Beyond Universe #9",
+  "citedBy": [
+   "dc_e50"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Earth 2: World's End",
+  "volume": 1,
+  "issue": "1",
+  "year": "2014",
+  "label": "Earth 2: World's End #1",
+  "citedBy": [
+   "dc_e29"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Original Sin",
   "volume": 1,
   "issue": "1",
@@ -2735,7 +3099,35 @@
   "year": "2014",
   "label": "The Multiversity #1",
   "citedBy": [
-   "dc_multiversity"
+   "dc_multiversity",
+   "dc_e7",
+   "dc_e8",
+   "dc_orrery",
+   "dc_gentry",
+   "dc_ultracomics"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "The Multiversity: The Just",
+  "volume": 1,
+  "issue": "1",
+  "year": "2014",
+  "label": "The Multiversity: The Just #1",
+  "citedBy": [
+   "dc_e16"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "The Multiversity: The Society of Super-Heroes: Conquerors of the Counter-World",
+  "volume": 1,
+  "issue": "1",
+  "year": "2014",
+  "label": "The Multiversity: The Society of Super-Heroes: Conquerors of the Counter-World #1",
+  "citedBy": [
+   "dc_e20",
+   "dc_e40"
   ]
  },
  {
@@ -2781,13 +3173,91 @@
  },
  {
   "type": "issue",
+  "series": "The Multiversity",
+  "volume": 1,
+  "issue": "2",
+  "year": "2015",
+  "label": "The Multiversity #2",
+  "citedBy": [
+   "dc_jli"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "The Multiversity Guidebook",
   "volume": 1,
   "issue": "1",
   "year": "2015",
   "label": "The Multiversity Guidebook #1",
   "citedBy": [
-   "dc_emptyhand"
+   "dc_emptyhand",
+   "dc_e9",
+   "dc_e10",
+   "dc_e11",
+   "dc_e13",
+   "dc_e14",
+   "dc_e15",
+   "dc_e17",
+   "dc_e18",
+   "dc_e19",
+   "dc_e21",
+   "dc_e22",
+   "dc_e24",
+   "dc_e26",
+   "dc_e27",
+   "dc_e28",
+   "dc_e30",
+   "dc_e31",
+   "dc_e32",
+   "dc_e34",
+   "dc_e35",
+   "dc_e36",
+   "dc_e37",
+   "dc_e38",
+   "dc_e39",
+   "dc_e41",
+   "dc_e43",
+   "dc_e44",
+   "dc_e46",
+   "dc_e47",
+   "dc_e48",
+   "dc_e49",
+   "dc_e51",
+   "dc_kamandi",
+   "dc_monsphere"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "The Multiversity: Pax Americana",
+  "volume": 1,
+  "issue": "1",
+  "year": "2015",
+  "label": "The Multiversity: Pax Americana #1",
+  "citedBy": [
+   "dc_e4"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "The Multiversity: Thunderworld Adventures",
+  "volume": 1,
+  "issue": "1",
+  "year": "2015",
+  "label": "The Multiversity: Thunderworld Adventures #1",
+  "citedBy": [
+   "dc_e5"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "The Multiversity: Ultra Comics",
+  "volume": 1,
+  "issue": "1",
+  "year": "2015",
+  "label": "The Multiversity: Ultra Comics #1",
+  "citedBy": [
+   "dc_e33"
   ]
  },
  {
@@ -2839,7 +3309,8 @@
   "year": "2017",
   "label": "Dark Days: The Casting #1",
   "citedBy": [
-   "dc_barbatos"
+   "dc_barbatos",
+   "dc_darkknights"
   ]
  },
  {
@@ -2851,6 +3322,17 @@
   "label": "Dark Nights: Metal #1",
   "citedBy": [
    "dc_metal"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Hal Jordan and the Green Lantern Corps",
+  "volume": 1,
+  "issue": "9",
+  "year": "2017",
+  "label": "Hal Jordan and the Green Lantern Corps #9",
+  "citedBy": [
+   "dc_emeraldspace"
   ]
  },
  {
@@ -2954,13 +3436,36 @@
  },
  {
   "type": "issue",
+  "series": "Justice League Dark",
+  "volume": 2,
+  "issue": "1",
+  "year": "2018",
+  "label": "Justice League Dark vol. 2 #1",
+  "citedBy": [
+   "dc_upsidedown"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Justice League",
+  "volume": 3,
+  "issue": "33",
+  "year": "2018",
+  "label": "Justice League vol. 3 #33",
+  "citedBy": [
+   "dc_worldforge"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Justice League",
   "volume": 4,
   "issue": "2",
   "year": "2018",
   "label": "Justice League vol. 4 #2",
   "citedBy": [
-   "dc_stillforce"
+   "dc_stillforce",
+   "dc_ultraviolet"
   ]
  },
  {
@@ -3203,6 +3708,22 @@
   "label": "Cloak and Dagger vol. 2 #1",
   "citedBy": [
    "x_darkforce"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Green Lantern: Ganthet's Tale",
+  "year": null,
+  "citedBy": [
+   "dc_ganthet"
+  ]
+ },
+ {
+  "type": "arc",
+  "label": "Justice League Vol 2 23.4: Secret Society",
+  "year": null,
+  "citedBy": [
+   "dc_e3"
   ]
  },
  {

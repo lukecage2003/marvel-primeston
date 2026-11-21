@@ -33,8 +33,20 @@ for m in dc.MAPS:
         n[0] = P(n[0])
     for k in ('wheel',):
         if k in m: m[k] = [P(x) for x in m[k]]
-    for e in m.get('edges', []):
-        e[0], e[1] = P(e[0]), P(e[1])
+    for k in ('edges', 'fam'):
+        for e in m.get(k, []):
+            for x in e[:2]:
+                if x not in dc.E: err.append(m['n'] + ' : lien inconnu ' + x)
+            e[0], e[1] = P(e[0]), P(e[1])
+    for o in m.get('orbits', []):
+        for x in o['ids']:
+            if x not in dc.E: err.append(m['n'] + ' : orbite inconnue ' + x)
+        o['ids'] = [P(x) for x in o['ids']]
+    if 'spokes' in m:
+        for row in m['spokes']['ids']:
+            for x in row:
+                if x not in dc.E: err.append(m['n'] + ' : rayon inconnu ' + x)
+        m['spokes']['ids'] = [[P(x) for x in row] for row in m['spokes']['ids']]
     maps.append(m)
 if err: sys.exit('Données DC incohérentes :\n- ' + '\n- '.join(err))
 js = '/* Univers DC de l\'explorateur : généré par tools/dc_build.py (ne pas modifier à la main). */\nwindow.DBDC=' + json.dumps({'E': E, 'MAPS': maps, 'IMG': IMG, 'WIKI': WT}, ensure_ascii=False, separators=(',', ':')) + ';\n'

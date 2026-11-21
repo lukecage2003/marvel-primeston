@@ -36,9 +36,11 @@ let pass=0,fail=0;const ok=(c,m)=>{c?pass++:fail++;console.log((c?'  ✓ ':'  �
  L('Exports');
  for(const [x,ext] of [['svg','.svg'],['html','.html'],['png','.png']]){const t0=Date.now(),dl=p.waitForEvent('download',{timeout:90000}).catch(()=>null);await p.evaluate(x=>exp(x).catch(e=>console.log('exp '+e.message)),x);const f=await dl;ok(f&&f.suggestedFilename().endsWith(ext),'export '+x+' ('+Math.round((Date.now()-t0)/1000)+' s)');
   if(f&&x=='html'){const t=require('fs').readFileSync(await f.path(),'utf8');ok(t.includes('window.DB=')&&t.includes('data:image/webp')&&!/src="(data|images)\.js/.test(t),'HTML autonome : données et portraits intégrés (hors ligne)')}}
- L('Quiz');
- await p.click('#bquiz');await p.waitForTimeout(300);const deck=await p.evaluate(()=>QZ.d.every(([a,b])=>Math.abs(POW[a]-POW[b])>=8&&IDX[a]&&IDX[b]));ok(deck,'duels valides (écart ≥ 8, entités existantes)');
- await p.click('#qza');ok(/1$/.test(await p.textContent('#qzs')),'score mis à jour après réponse');await p.click('[data-q=x]');
+ L('Plans Marvel');
+ {const r=await p.evaluate(()=>{const o={};render(5);o.fam=C.edges.filter(e=>e.fam).length;o.eter=C.nodes.some(n=>n.id=='h_eter'&&n.t=='Eternity');render(6);o.realms=['r_vanaheim','r_alfheim','r_nidavellir','r_midgard','r_jotunheim','r_svartalfheim','r_muspelheim','r_niffleheim','r_hel','p_asgard','p_heven'].every(id=>C.nodes.some(n=>n.id==id));o.names=MAPS.map(m=>m.n).join('|');o.quiz=getComputedStyle(document.querySelector('#bquiz')).display;return o});
+  ok(r.fam>=20,'Familles : '+r.fam+' liens de parenté dessinés');ok(r.eter,'noms anglais sur les cartes (Eternity)');ok(r.realms,'Royaumes : les Dix Royaumes d’Yggdrasil');ok(!/Hiérarchie|Réseau/.test(r.names),'Hiérarchie et Réseau Marvel retirés');ok(r.quiz=='none','quiz retiré')}
+ {const B=JSON.parse(require('fs').readFileSync(ROOT+'/bios.json','utf8'));ok(/Famille[\s\S]*Starfox[\s\S]*Apparitions/.test(B.x_thanos||'')&&/One-Above-All/.test(B.h_eter||''),'biographies : famille et apparitions ('+Object.keys(B).length+' fiches)');
+  await p.evaluate(()=>{setFmt('free');render(5);select(C.nodes.findIndex(n=>n.id=='x_thanos'))});await p.waitForTimeout(800);ok(/Apparitions/.test(await p.textContent('#panel .d')),'le panneau affiche la biographie au clic')}
  L('Langue');
  await p.click('#blang');ok((await p.textContent('#tabs')).includes('The Tree'),'interface en anglais');await p.click('#blang');ok((await p.textContent('#tabs')).includes('L’Arbre'),'retour en français');
  L('Sécurité');

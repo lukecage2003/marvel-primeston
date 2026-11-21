@@ -15,11 +15,14 @@ Site statique publié par GitHub Pages depuis `main` (à la racine). **Aucune d�
 | `content/dossiers/*.md` | Dossiers éditoriaux (markdown simple, liens `[[id]]` vérifiés) |
 | `content/wiki.json` | Image principale actuelle et fiche d'identité **factuelle** (champs courts de l'infobox) de chaque fiche, relevées sur marvel.fandom.com par `tools/wiki_facts.py`. Aucun texte rédigé n'est repris |
 | `comics.json` | Index des comics cités (`tools/comics.js`) |
+| `content/family.json` | Liens de parenté Marvel (parent → enfant, fratries) tirés des fiches du wiki, par `python3 tools/family.py`, qui écrit aussi le bloc généré `window.DB.FAM` et `window.DB.IMGW` (images du wiki) à la fin de `data.js` |
+| `content/appearances.json` | Nombre d’apparitions, premières et dernières parutions de chaque fiche (catégories « Appearances » des wikis), par `python3 tools/appearances.py` |
+| `bios.json` | Biographies générées par `tools/build.js` (origines, famille, rôle, apparitions), lues par le panneau de l’explorateur au clic sur un nœud |
 | `img/` | Portraits webp (chargés à la demande), logo, `credits.json` |
 
 ### Chaîne de publication
 1. Modifier `data.js` ou un dossier.
-2. Lancer `python3 tools/dc_build.py` (si DC a changé), `node tools/stamp.js`, `node tools/comics.js`, `node tools/snapshot.js`, `node tools/snapshot.js dc`, puis `node tools/build.js`. Pour rafraîchir les images et les fiches d'identité : `python3 tools/wiki_facts.py`, puis `node tools/build.js`.
+2. Lancer `python3 tools/wiki_facts.py` et `python3 tools/wiki_facts.py dc` (faits du wiki), `python3 tools/family.py`, `python3 tools/appearances.py`, puis `python3 tools/dc_build.py` (si DC a changé), `node tools/stamp.js`, `node tools/comics.js`, `node tools/snapshot.js`, `node tools/snapshot.js dc`, puis `node tools/build.js`. Pour rafraîchir les images et les fiches d'identité : `python3 tools/wiki_facts.py`, puis `node tools/build.js`.
 3. Lancer `npm test` (38 contrôles).
 4. Pousser. L'action `Tests` revérifie tout, puis GitHub Pages publie `main`.
 
@@ -39,3 +42,9 @@ Site statique publié par GitHub Pages depuis `main` (à la racine). **Aucune d�
 
 ### Versions des cartes (« Mon plan » / « Officiel »)
 Chaque carte déclare `off` dans `MAPS` (Marvel) ou `DCOFF` (DC) : la publication d'origine du schéma officiel, `null` si aucune version officielle n'existe (plan Primestone, par exemple les Axes des Ur-Diviseurs), ou `data` pour les cartes construites à partir des sources (Réseau, Chronologie, Crises). En version officielle, les nœuds de niveau « théorie » sont masqués.
+
+### Cartes (2026-11-21)
+- **Marvel (8)** : Cosmos, Arbre, Axes, Firmaments, Omnivers (coupe Macro/Micro), Familles (généalogie relevée sur le wiki), Royaumes (Yggdrasil et les Dix Royaumes, la galaxie, les dimensions), Chronologie (jalons éditoriaux et grands événements). La Hiérarchie et le Réseau ont été retirés.
+- **DC (8)** : Orrerie des mondes (structure de « The Map of the Multiverse », 52 Terres), Création, Spectre émotionnel (9 lumières, entités, Corps, porteurs), Éternels, Quatrième Monde, Forces et magie, Crises, Réseau. Décrites dans `content/dc_entries.py` : `deco` (bandes, anneaux, disques, panneaux), `orbits`, `spokes`, `nodes` (`'x'` = propre au plan Primestone), `fam` (flèches de parenté).
+- **Noms** : le libellé affiché est le nom anglais ; le nom français reste dans la fiche.
+- **Version officielle** : masque les constructions de fans et les nœuds `'x'`, et affiche la planche officielle hébergée par le wiki quand elle existe (`off.img`, `off.cap`).

@@ -21,12 +21,12 @@
    "sub": "Coupe de la réalité Marvel"
   },
   {
-   "name": "La Hiérarchie",
-   "sub": "Qui domine le cosmos ?"
+   "name": "Les Familles",
+   "sub": "Parents, enfants et fratries du cosmos"
   },
   {
-   "name": "Le Réseau",
-   "sub": "Tout est lié"
+   "name": "Les Royaumes",
+   "sub": "Yggdrasil, la galaxie et les dimensions"
   },
   {
    "name": "La Chronologie",
@@ -317,6 +317,17 @@
   "p_weirdworld": "Weirdworld (Planet)",
   "p_cancerverse": "Earth-10011",
   "p_heven": "Heven",
+  "r_vanaheim": "Vanaheim (Ten Realms)",
+  "r_alfheim": "Alfheim",
+  "r_nidavellir": "Nidavellir",
+  "r_midgard": "Earth",
+  "r_jotunheim": "Jotunheim",
+  "r_svartalfheim": "Svartalfheim",
+  "r_muspelheim": "Muspelheim",
+  "r_niffleheim": "Niffleheim",
+  "r_hel": "Hel",
+  "r_valhalla": "Valhalla (Afterlife)",
+  "r_bifrost": "Bifrost",
   "g_guardians": "Guardians of the Galaxy (Earth-616)",
   "g_novacorps": "Nova Corps (Earth-616)",
   "g_kree": "Kree",
@@ -431,7 +442,8 @@
  "nodes": {
   "c1": {
    "map": 0,
-   "name": "Premier Cosmos",
+   "name": "First Cosmos",
+   "fr": "Premier Cosmos",
    "sub": "le premier firmament, l’univers originel",
    "desc": "Berceau des Aspirants et des Célestes. Le Premier Cosmos s’est brisé en fragments, formant le premier multivers.",
    "cat": "cos",
@@ -467,7 +479,8 @@
   },
   "c3": {
    "map": 0,
-   "name": "Troisième Cosmos",
+   "name": "Third Cosmos",
+   "fr": "Troisième Cosmos",
    "sub": "le commencement du récit, créateur de Lifebringer One",
    "desc": "L’Anti-Tout (Anti-All) y est entré depuis les Terres-du-Dessous, le Below-Place de la Qlippoth.",
    "cat": "cos",
@@ -483,7 +496,8 @@
   },
   "c4": {
    "map": 0,
-   "name": "Quatrième Cosmos",
+   "name": "Fourth Cosmos",
+   "fr": "Quatrième Cosmos",
    "sub": "le Pèlerin, habité par les archétypes",
    "desc": "Il devint la Reine des Jamais (Never Queen) et partit vers le Mystère, au Da’at.",
    "cat": "cos",
@@ -499,7 +513,8 @@
   },
   "c5": {
    "map": 0,
-   "name": "Cinquième Cosmos",
+   "name": "Fifth Cosmos",
+   "fr": "Cinquième Cosmos",
    "sub": "faiseur de magie, tisserand des illusions",
    "desc": "Créateur de la magie, tisserand des illusions du changement. La Magie apparaît : un point sur l’axe du pouvoir.",
    "cat": "cos",
@@ -515,7 +530,8 @@
   },
   "c6": {
    "map": 0,
-   "name": "Sixième Cosmos",
+   "name": "Sixth Cosmos",
+   "fr": "Sixième Cosmos",
    "sub": "inventeur de la science, bâtisseur de la jonction",
    "desc": "Bâtisseur de la Jonction vers Partout : ses restes forment l’Overspace (Hod), au-dessus du Macrovers.",
    "cat": "cos",
@@ -533,7 +549,8 @@
   },
   "c7": {
    "map": 0,
-   "name": "Septième Cosmos",
+   "name": "Seventh Cosmos",
+   "fr": "Septième Cosmos",
    "sub": "Multivers Marvel 1961 – 2015",
    "desc": "Le cube des axes est complet. Il s’acheva avec les Incursions, mais ses restes furent préservés par Rabum Alal.",
    "cat": "cos",
@@ -575,7 +592,8 @@
   },
   "c8": {
    "map": 0,
-   "name": "Huitième Cosmos",
+   "name": "Eighth Cosmos",
+   "fr": "Huitième Cosmos",
    "sub": "Malkuth · 2015 – aujourd’hui",
    "desc": "Les Axes de Tout (forme cubique), la Rive Lointaine / Ginnungagap (bord de tout), l’Exo-Espace (zone neutre), le Superflow (entre les univers) et les univers individuels comme Terre-616.",
    "cat": "cos",
@@ -602,7 +620,8 @@
   },
   "keter": {
    "map": 1,
-   "name": "Keter : Maison des Idées",
+   "name": "Keter: House of Ideas",
+   "fr": "Keter : Maison des Idées",
    "sub": "Couronne de la Création",
    "desc": "Demeure du Un-Au-Dessus-de-Tout (One-Above-All), sommet du Monde de l’Action.",
    "cat": "pla",
@@ -619,7 +638,8 @@
   },
   "daat": {
    "map": 1,
-   "name": "Da’at : Ne-Pouvait-Être",
+   "name": "Da’at: Couldn’t-Be-Shouldn’t-Be",
+   "fr": "Da’at : Ne-Pouvait-Être",
    "sub": "Ni-Ici-Ni-Là · Pays du Peut-Être-Sera",
    "desc": "Le Pays du Ne-Pouvait-Être-Ne-Devait-Être. Demeure de la Reine des Jamais : les archétypes du Quatrième Cosmos.",
    "cat": "pla",
@@ -634,7 +654,8 @@
   },
   "gevurah": {
    "map": 1,
-   "name": "Gevurah : Sphère du Jugement",
+   "name": "Gevurah: Sphere of Judgment",
+   "fr": "Gevurah : Sphère du Jugement",
    "sub": "la Cité Brisée",
    "desc": "Là où la création est pesée et jugée : la Cité Brisée.",
    "cat": "pla",
@@ -648,7 +669,8 @@
   },
   "tiferet": {
    "map": 1,
-   "name": "Tiferet : Chambre Blanche Ardente",
+   "name": "Tiferet: White Hot Room",
+   "fr": "Tiferet : Chambre Blanche Ardente",
    "sub": "Cœur de toutes choses",
    "desc": "La White Hot Room : feu et vie incarnés, demeure de la Force Phénix.",
    "cat": "pla",
@@ -663,7 +685,8 @@
   },
   "netzach": {
    "map": 1,
-   "name": "Netzach : Bien Au-delà des Mondes",
+   "name": "Netzach: Far Beyond the Worlds",
+   "fr": "Netzach : Bien Au-delà des Mondes",
    "sub": "le jardin où pousse la magie",
    "desc": "Héritage du Cinquième Cosmos, le jardin d’où vient toute magie.",
    "cat": "pla",
@@ -678,7 +701,8 @@
   },
   "hod": {
    "map": 1,
-   "name": "Hod : Overspace",
+   "name": "Hod: Overspace",
+   "fr": "Hod : Overspace",
    "sub": "Jonction vers Partout",
    "desc": "Au-dessus du Macrovers : la jonction bâtie par le Sixième Cosmos.",
    "cat": "pla",
@@ -693,7 +717,8 @@
   },
   "yesod": {
    "map": 1,
-   "name": "Yesod : l’Au-delà",
+   "name": "Yesod: The Beyond",
+   "fr": "Yesod : l’Au-delà",
    "sub": "Salle des Machines",
    "desc": "Moteurs de Concordance, restes du Second Cosmos. Demeure des Beyonders (Conseil Oméga, Rois d’Ivoire).",
    "cat": "pla",
@@ -713,7 +738,8 @@
   },
   "malkuth": {
    "map": 1,
-   "name": "Malkuth : Huitième Cosmos",
+   "name": "Malkuth: Eighth Cosmos",
+   "fr": "Malkuth : Huitième Cosmos",
    "sub": "Multivers Marvel · 2015 – présent",
    "desc": "Le monde manifesté : les Axes de Tout, la Rive Lointaine, l’Exo-Espace, le Superflow et tous les univers individuels.",
    "cat": "pla",
@@ -731,7 +757,8 @@
   },
   "lilith": {
    "map": 1,
-   "name": "Lilith : Limbes",
+   "name": "Lilith: Limbo",
+   "fr": "Lilith : Limbes",
    "sub": "Autre-Lieu · Royaume démoniaque",
    "desc": "Le miroir sombre du monde, demeure de la Reine Gobeline.",
    "cat": "pla",
@@ -744,7 +771,8 @@
   },
   "gamaliel": {
    "map": 1,
-   "name": "Gamaliel : Non-Au-delà",
+   "name": "Gamaliel: Un-Beyond",
+   "fr": "Gamaliel : Non-Au-delà",
    "sub": "Sous-Moteur · Trône d’Onyx",
    "desc": "Le cœur de la Ruche, véritable demeure du Roi en Noir.",
    "cat": "pla",
@@ -760,7 +788,8 @@
   },
   "samael": {
    "map": 1,
-   "name": "Samael : Underspace",
+   "name": "Samael: Underspace",
+   "fr": "Samael : Underspace",
    "sub": "sous le Microvers",
    "desc": "La strate la plus profonde sous le Microvers et le Royaume Quantique.",
    "cat": "pla",
@@ -773,7 +802,8 @@
   },
   "tagiriron": {
    "map": 1,
-   "name": "Tagiriron : Chambre Noire et Froide",
+   "name": "Tagiriron: Cold Black Room",
+   "fr": "Tagiriron : Chambre Noire et Froide",
    "sub": "Royaume des Ombres · Terre Sans Soleils",
    "desc": "Au-delà de la portée des premières flammes. Demeure du Dieu-Tigre, de l’Adversaire, du Roi des Ombres et d’Annihilation.",
    "cat": "pla",
@@ -787,7 +817,8 @@
   },
   "thaumiel": {
    "map": 1,
-   "name": "Thaumiel : le Dessous",
+   "name": "Thaumiel: Below-Place",
+   "fr": "Thaumiel : le Dessous",
    "sub": "Terres-du-Dessous · Royaume Gamma",
    "desc": "L’enfer le plus profond, sous tout. Demeure du Un-En-Dessous-de-Tout (One-Below-All).",
    "cat": "pla",
@@ -806,7 +837,8 @@
   },
   "eternity": {
    "map": 2,
-   "name": "Éternité",
+   "name": "Eternity",
+   "fr": "Éternité",
    "sub": "Naissance · Bien · Science",
    "desc": "Incarnation du temps et de l’existence de l’univers, frère d’Infinité. Il pose sur le cosmos un regard serein.",
    "cat": "abs",
@@ -826,7 +858,8 @@
   },
   "powers": {
    "map": 2,
-   "name": "Les-Pouvoirs-Qui-Sont",
+   "name": "The-Powers-That-Be",
+   "fr": "Les-Pouvoirs-Qui-Sont",
    "sub": "Naissance · Bien · Magie",
    "desc": "The-Powers-That-Be : la volonté créatrice de la magie bienveillante, au sommet du cube.",
    "cat": "abs",
@@ -838,7 +871,8 @@
   },
   "order": {
    "map": 2,
-   "name": "Ordre Suprême",
+   "name": "Master Order",
+   "fr": "Ordre Suprême",
    "sub": "Naissance · Mal · Science",
    "desc": "Master Order : la loi absolue, l’ordre imposé à toute chose, frère jumeau de Seigneur Chaos.",
    "cat": "abs",
@@ -853,7 +887,8 @@
   },
   "chaos": {
    "map": 2,
-   "name": "Seigneur Chaos",
+   "name": "Lord Chaos",
+   "fr": "Seigneur Chaos",
    "sub": "Naissance · Mal · Magie",
    "desc": "Lord Chaos : le désordre créateur, l’imprévisible, le hasard incarné.",
    "cat": "abs",
@@ -868,7 +903,8 @@
   },
   "tribunal": {
    "map": 2,
-   "name": "Tribunal Vivant",
+   "name": "Living Tribunal",
+   "fr": "Tribunal Vivant",
    "sub": "Mort · Bien · Science",
    "desc": "The Living Tribunal : juge du multivers, garant de l’équilibre entre toutes les réalités.",
    "cat": "abs",
@@ -886,7 +922,8 @@
   },
   "infinity": {
    "map": 2,
-   "name": "Infinité",
+   "name": "Infinity",
+   "fr": "Infinité",
    "sub": "Mort · Bien · Magie",
    "desc": "Infinity : l’espace sans limite, sœur d’Éternité, le tout qui contient tout.",
    "cat": "abs",
@@ -901,7 +938,8 @@
   },
   "natural": {
    "map": 2,
-   "name": "L’Ordre-Naturel-des-Choses",
+   "name": "The-Natural-Order-of-Things",
+   "fr": "L’Ordre-Naturel-des-Choses",
    "sub": "Mort · Mal · Science",
    "desc": "The-Natural-Order-Of-Things : la fatalité, l’entropie, la loi qui use toute chose.",
    "cat": "abs",
@@ -914,7 +952,8 @@
   },
   "oblivion": {
    "map": 2,
-   "name": "Oubli",
+   "name": "Oblivion",
+   "fr": "Oubli",
    "sub": "Mort · Mal · Magie",
    "desc": "Oblivion : le néant, l’effacement, ce qui reste quand tout a été oublié.",
    "cat": "abs",
@@ -927,7 +966,8 @@
   },
   "f0": {
    "map": 3,
-   "name": "1ᵉʳ Firmament : Singularité",
+   "name": "Singularity",
+   "fr": "1ᵉʳ Firmament : Singularité",
    "desc": "Le tout premier univers : une seule réalité, entière et consciente. Ses fragments donneront naissance à tout le reste.",
    "cat": "cos",
    "cert": "d",
@@ -943,7 +983,8 @@
   },
   "f1": {
    "map": 3,
-   "name": "2ᵉ Firmament : Multiversité",
+   "name": "Multiversity",
+   "fr": "2ᵉ Firmament : Multiversité",
    "desc": "Le premier multivers : la réalité se démultiplie. Ses restes deviendront l’Au-delà des Beyonders.",
    "cat": "cos",
    "cert": "d",
@@ -955,7 +996,8 @@
   },
   "f2": {
    "map": 3,
-   "name": "3ᵉ Firmament : La Première Sentinelle et le Tout-Vide",
+   "name": "The First Sentinel & the All-Void",
+   "fr": "3ᵉ Firmament : La Première Sentinelle et le Tout-Vide",
    "desc": "Le récit commence : la première sentinelle de lumière face au Tout-Vide, l’ombre originelle.",
    "cat": "cos",
    "cert": "d",
@@ -967,7 +1009,8 @@
   },
   "f3": {
    "map": 3,
-   "name": "4ᵉ Firmament : Les Archétypes",
+   "name": "The Archetypes",
+   "fr": "4ᵉ Firmament : Les Archétypes",
    "desc": "Un cosmos peuplé d’idées vivantes ; il deviendra la Reine des Jamais.",
    "cat": "cos",
    "cert": "d",
@@ -980,7 +1023,8 @@
   },
   "f4": {
    "map": 3,
-   "name": "5ᵉ Firmament : Magie",
+   "name": "Magic",
+   "fr": "5ᵉ Firmament : Magie",
    "desc": "La magie entre dans la réalité et tisse les illusions du changement.",
    "cat": "cos",
    "cert": "d",
@@ -992,7 +1036,8 @@
   },
   "f5": {
    "map": 3,
-   "name": "6ᵉ Firmament : « Science » !!",
+   "name": "“Science”!!",
+   "fr": "6ᵉ Firmament : « Science » !!",
    "desc": "La mesure, la loi, la jonction vers partout.",
    "cat": "cos",
    "cert": "d",
@@ -1005,7 +1050,8 @@
   },
   "f6": {
    "map": 3,
-   "name": "7ᵉ Firmament : Marvels",
+   "name": "Marvels",
+   "fr": "7ᵉ Firmament : Marvels",
    "desc": "Le multivers Marvel classique (1961–2015), détruit par les Incursions.",
    "cat": "cos",
    "cert": "d",
@@ -1017,7 +1063,8 @@
   },
   "f7": {
    "map": 3,
-   "name": "8ᵉ Firmament : Marvels",
+   "name": "Marvels",
+   "fr": "8ᵉ Firmament : Marvels",
    "desc": "Reconstruit après Secret Wars : le multivers actuel, « deux-en-un » avec le Septième.",
    "cat": "cos",
    "cert": "d",
@@ -1030,7 +1077,8 @@
   },
   "f8": {
    "map": 3,
-   "name": "9ᵉ Firmament : Ruines",
+   "name": "Ruins",
+   "fr": "9ᵉ Firmament : Ruines",
    "desc": "Tout est brisé. Le firmament à venir… ou la fin de tout.",
    "cat": "cos",
    "cert": "t",
@@ -1041,7 +1089,8 @@
   },
   "god": {
    "map": 4,
-   "name": "Le Un-Au-Dessus-de-Tout",
+   "name": "One-Above-All",
+   "fr": "Le Un-Au-Dessus-de-Tout",
    "sub": "tout en haut",
    "desc": "Le créateur suprême de l’Omnivers, figure ultime de la création.",
    "cat": "abs",
@@ -1055,7 +1104,8 @@
   },
   "omni": {
    "map": 4,
-   "name": "Omnivers",
+   "name": "Omniverse",
+   "fr": "Omnivers",
    "sub": "toutes les fictions",
    "desc": "La collection de tous les méga-multivers fictionnels.",
    "cat": "pla",
@@ -1069,7 +1119,8 @@
   },
   "void": {
    "map": 4,
-   "name": "Vide Extérieur",
+   "name": "Outer Void",
+   "fr": "Vide Extérieur",
    "sub": "abîme d’Infinité",
    "desc": "Le néant au-delà du multivers, domaine de l’Être-Infini et des Gemmes.",
    "cat": "pla",
@@ -1082,7 +1133,8 @@
   },
   "exo": {
    "map": 4,
-   "name": "Exo-Espace",
+   "name": "Exo-Space",
+   "fr": "Exo-Espace",
    "sub": "espace eldritch · zone neutre",
    "desc": "Dernier arrêt avant le Dehors : les Anciens, les Nombreux-Angles.",
    "cat": "pla",
@@ -1094,7 +1146,8 @@
   },
   "multi": {
    "map": 4,
-   "name": "Multivers",
+   "name": "Multiverse",
+   "fr": "Multivers",
    "sub": "le Vortex Cosmique",
    "desc": "Toutes les réalités alternatives, sous l’arbitrage du Tribunal Vivant.",
    "cat": "pla",
@@ -1140,7 +1193,8 @@
   },
   "univ": {
    "map": 4,
-   "name": "Univers · Terre",
+   "name": "Universe · Earth",
+   "fr": "Univers · Terre",
    "sub": "le cœur de la carte",
    "desc": "Terre-616 : mortels, dieux, mutants, démons, Célestes, Phénix…",
    "cat": "pla",
@@ -1157,7 +1211,8 @@
   },
   "hyper": {
    "map": 4,
-   "name": "Hyperespace",
+   "name": "Hyperspace",
+   "fr": "Hyperespace",
    "sub": "« sub-space »",
    "desc": "Le raccourci des voyages plus rapides que la lumière.",
    "cat": "pla",
@@ -1170,7 +1225,8 @@
   },
   "micro": {
    "map": 4,
-   "name": "Microvers",
+   "name": "Microverse",
+   "fr": "Microvers",
    "sub": "univers subatomique",
    "desc": "Sub-Atomica, les Fabricants, la Force Énigme.",
    "cat": "pla",
@@ -1200,7 +1256,8 @@
   },
   "below": {
    "map": 4,
-   "name": "Le Dessous",
+   "name": "Below-Place",
+   "fr": "Le Dessous",
    "sub": "vrai enfer sous tous les autres",
    "desc": "Royaume Gamma, demeure du Un-En-Dessous-de-Tout.",
    "cat": "pla",
@@ -1216,7 +1273,8 @@
   },
   "devil": {
    "map": 4,
-   "name": "Le Un-En-Dessous-de-Tout",
+   "name": "One-Below-All",
+   "fr": "Le Un-En-Dessous-de-Tout",
    "sub": "tout en bas",
    "desc": "Le mal absolu de l’Omnivers, tapi au fond du Dessous.",
    "cat": "abs",
@@ -1230,7 +1288,8 @@
   },
   "neg": {
    "map": 4,
-   "name": "Zone Négative",
+   "name": "Negative Zone",
+   "fr": "Zone Négative",
    "sub": "univers d’antimatière",
    "desc": "Royaume d’Annihilus et de Blastaar, miroir d’antimatière.",
    "cat": "pla",
@@ -1245,7 +1304,8 @@
   },
   "beyond": {
    "map": 4,
-   "name": "Dimension des Beyonders",
+   "name": "Beyond Realm",
+   "fr": "Dimension des Beyonders",
    "sub": "espace sauvage blanc",
    "desc": "Les seigneurs blancs de l’Au-delà : Rois d’Ivoire, Beyond Corp.",
    "cat": "pla",
@@ -1258,7 +1318,8 @@
   },
   "shore": {
    "map": 4,
-   "name": "La Rive Lointaine",
+   "name": "Far Shore",
+   "fr": "La Rive Lointaine",
    "sub": "bord du Dehors",
    "desc": "Les itérations précédentes du multivers : les Univers Vivants.",
    "cat": "pla",
@@ -1270,8 +1331,9 @@
    ]
   },
   "manif": {
-   "map": 4,
-   "name": "Les Manifestations",
+   "map": 5,
+   "name": "The Manifestations (Infinites)",
+   "fr": "Les Manifestations",
    "sub": "les Infinis",
    "desc": "Fractales vivantes des entités abstraites.",
    "cat": "pla",
@@ -1285,7 +1347,8 @@
   },
   "h_oaa": {
    "map": 5,
-   "name": "Le Un-Au-Dessus-de-Tout",
+   "name": "One-Above-All",
+   "fr": "Le Un-Au-Dessus-de-Tout",
    "sub": "le créateur suprême",
    "desc": "Au-dessus du Tribunal Vivant et de toute la création. Dans Fantastic Four #511 (2004), il apparaît sous les traits de Jack Kirby ; Defenders: Beyond #5 (2022) le place à Keter, la Maison des Idées.",
    "cat": "abs",
@@ -1301,7 +1364,8 @@
   },
   "h_trib": {
    "map": 5,
-   "name": "Tribunal Vivant",
+   "name": "Living Tribunal",
+   "fr": "Tribunal Vivant",
    "sub": "juge du multivers",
    "desc": "Être à trois visages (équité, vengeance, nécessité) chargé de l’équilibre entre les réalités. Tué par les Beyonders pendant les Incursions.",
    "cat": "abs",
@@ -1315,7 +1379,8 @@
   },
   "h_bey": {
    "map": 5,
-   "name": "Les Beyonders",
+   "name": "Beyonders",
+   "fr": "Les Beyonders",
    "sub": "seigneurs de l’Au-delà",
    "desc": "Nés du Second Cosmos, ils puisent dans la Force Oméga. Ils ont provoqué la fin du Septième Cosmos par les Incursions.",
    "cat": "abs",
@@ -1336,7 +1401,8 @@
   },
   "h_eter": {
    "map": 5,
-   "name": "Éternité",
+   "name": "Eternity",
+   "fr": "Éternité",
    "sub": "le temps et l’existence",
    "desc": "Incarnation de l’univers vivant. Enchaîné par Ordre Suprême et Seigneur Chaos, puis libéré par les Ultimates.",
    "cat": "abs",
@@ -1354,7 +1420,8 @@
   },
   "h_inf": {
    "map": 5,
-   "name": "Infinité",
+   "name": "Infinity",
+   "fr": "Infinité",
    "sub": "l’espace sans fin",
    "desc": "Sœur d’Éternité : l’espace, le tout qui contient tout.",
    "cat": "abs",
@@ -1366,7 +1433,8 @@
   },
   "h_death": {
    "map": 5,
-   "name": "Mort",
+   "name": "Death",
+   "fr": "Mort",
    "sub": "la fin de toute vie",
    "desc": "Mistress Death, objet de l’obsession de Thanos.",
    "cat": "abs",
@@ -1384,7 +1452,8 @@
   },
   "h_obl": {
    "map": 5,
-   "name": "Oubli",
+   "name": "Oblivion",
+   "fr": "Oubli",
    "sub": "le néant",
    "desc": "Plus ancien que la Mort : l’effacement de ce qui a été.",
    "cat": "abs",
@@ -1397,7 +1466,8 @@
   },
   "h_chaos": {
    "map": 5,
-   "name": "Seigneur Chaos",
+   "name": "Lord Chaos",
+   "fr": "Seigneur Chaos",
    "sub": "le désordre",
    "desc": "Avec son jumeau Ordre Suprême, il servit le Premier Firmament contre Éternité.",
    "cat": "abs",
@@ -1410,7 +1480,8 @@
   },
   "h_order": {
    "map": 5,
-   "name": "Ordre Suprême",
+   "name": "Master Order",
+   "fr": "Ordre Suprême",
    "sub": "la loi absolue",
    "desc": "Le principe d’ordre, éternel rival de Seigneur Chaos.",
    "cat": "abs",
@@ -1423,7 +1494,8 @@
   },
   "h_phx": {
    "map": 5,
-   "name": "Force Phénix",
+   "name": "Phoenix Force",
+   "fr": "Force Phénix",
    "sub": "vie et renaissance",
    "desc": "Feu de la création, née dans la Chambre Blanche Ardente. Hôtes célèbres : Jean Grey, Rachel Summers.",
    "cat": "pow",
@@ -1441,7 +1513,8 @@
   },
   "h_omega": {
    "map": 5,
-   "name": "Force Oméga",
+   "name": "Omega Force",
+   "fr": "Force Oméga",
    "sub": "la source des Beyonders",
    "desc": "Énergie originelle du Second Cosmos, carburant des Beyonders.",
    "cat": "pow",
@@ -1455,7 +1528,8 @@
   },
   "h_enigma": {
    "map": 5,
-   "name": "Force Énigme",
+   "name": "Enigma Force",
+   "fr": "Force Énigme",
    "sub": "le pouvoir du Microvers",
    "desc": "Manifestation du Microvers ; l’hôte devient Captain Universe.",
    "cat": "pow",
@@ -1481,7 +1555,8 @@
   },
   "h_cel": {
    "map": 5,
-   "name": "Les Célestes",
+   "name": "Celestials",
+   "fr": "Les Célestes",
    "sub": "architectes du cosmos",
    "desc": "Géants cosmiques nés du Premier Cosmos. Ils jugent et « ensemencent » les planètes, dont la Terre.",
    "cat": "cel",
@@ -1523,7 +1598,8 @@
   },
   "h_asp": {
    "map": 5,
-   "name": "Les Aspirants",
+   "name": "Aspirants",
+   "fr": "Les Aspirants",
    "sub": "serviteurs du Premier Firmament",
    "desc": "Frères des Célestes, vaincus dans la guerre qui brisa le Premier Cosmos.",
    "cat": "cel",
@@ -1558,7 +1634,8 @@
   },
   "h_watch": {
    "map": 5,
-   "name": "Les Gardiens",
+   "name": "Watchers",
+   "fr": "Les Gardiens",
    "sub": "les observateurs",
    "desc": "Les Watchers, comme Uatu, observent tout sans intervenir.",
    "cat": "cel",
@@ -1572,7 +1649,8 @@
   },
   "h_anti": {
    "map": 5,
-   "name": "L’Anti-Tout",
+   "name": "Anti-All",
+   "fr": "L’Anti-Tout",
    "sub": "l’ennemi originel",
    "desc": "Venu des Terres-du-Dessous, combattu par Lifebringer One au Troisième Cosmos.",
    "cat": "dark",
@@ -1606,7 +1684,8 @@
   },
   "h_oba": {
    "map": 5,
-   "name": "Le Un-En-Dessous-de-Tout",
+   "name": "One-Below-All",
+   "fr": "Le Un-En-Dessous-de-Tout",
    "sub": "le mal absolu",
    "desc": "Il règne sur le Dessous. Il ronge Bruce Banner depuis la porte verte.",
    "cat": "dark",
@@ -1623,9 +1702,9 @@
    ]
   },
   "x_love": {
-   "map": 6,
-   "name": "Amour",
-   "en": "Love",
+   "map": 5,
+   "name": "Love",
+   "fr": "Amour",
    "sub": "l’attraction universelle",
    "desc": "Abstrait cosmique incarnant l’amour, souvent présent aux conclaves des entités. Il forme un couple d’opposés avec Haine.",
    "cat": "abs",
@@ -1639,9 +1718,9 @@
    ]
   },
   "x_hate": {
-   "map": 6,
-   "name": "Haine",
-   "en": "Hate",
+   "map": 5,
+   "name": "Hate",
+   "fr": "Haine",
    "sub": "la répulsion universelle",
    "desc": "Pendant d’Amour : la force qui sépare et détruit les liens.",
    "cat": "abs",
@@ -1654,7 +1733,7 @@
    ]
   },
   "x_kronos": {
-   "map": 6,
+   "map": 5,
    "name": "Kronos",
    "sub": "le Titan devenu le Temps",
    "desc": "Titan d’origine, père de Mentor et grand-père de Thanos, il se mua en incarnation abstraite du temps.",
@@ -1670,9 +1749,9 @@
    ]
   },
   "x_inbetween": {
-   "map": 6,
-   "name": "L’Entre-Deux",
-   "en": "In-Betweener",
+   "map": 5,
+   "name": "In-Betweener",
+   "fr": "L’Entre-Deux",
    "sub": "l’équilibre des contraires",
    "desc": "Né de la fusion forcée de Seigneur Chaos et d’Ordre Suprême, il est tout ce qui se trouve entre deux pôles.",
    "cat": "abs",
@@ -1687,9 +1766,9 @@
    ]
   },
   "x_entropy": {
-   "map": 6,
-   "name": "Entropie",
-   "en": "Entropy",
+   "map": 5,
+   "name": "Entropy",
+   "fr": "Entropie",
    "sub": "l’usure de toute chose",
    "desc": "Fils d’Éternité, il incarne la dégradation inévitable de la réalité.",
    "cat": "abs",
@@ -1702,9 +1781,9 @@
    ]
   },
   "x_stranger": {
-   "map": 6,
-   "name": "L’Étranger",
-   "en": "The Stranger",
+   "map": 5,
+   "name": "The Stranger",
+   "fr": "L’Étranger",
    "sub": "le juge errant",
    "desc": "Entité cosmique qui étudie et juge les planètes comme un scientifique ses éprouvettes.",
    "cat": "abs",
@@ -1716,7 +1795,7 @@
    ]
   },
   "x_logos": {
-   "map": 6,
+   "map": 5,
    "name": "Logos",
    "sub": "le Verbe du Premier Firmament",
    "desc": "Agent du Premier Firmament qui voulait réunifier tout le multivers en un seul bloc parfait.",
@@ -1733,9 +1812,9 @@
    ]
   },
   "x_neverq": {
-   "map": 6,
-   "name": "La Reine des Jamais",
-   "en": "Queen of Nevers",
+   "map": 5,
+   "name": "Queen of Nevers",
+   "fr": "La Reine des Jamais",
    "sub": "le Quatrième Cosmos devenu reine",
    "desc": "Le Pèlerin, conscience du Quatrième Cosmos, survit à sa fin et règne sur ce qui n’a jamais été.",
    "cat": "abs",
@@ -1749,7 +1828,7 @@
    ]
   },
   "x_omnimax": {
-   "map": 6,
+   "map": 5,
    "name": "Moridun / Omnimax",
    "sub": "Sorcier Suprême du Cinquième Cosmos",
    "desc": "Moridun, maître de la magie naissante, passe d’un cosmos à l’autre et réapparaît comme Omnimax.",
@@ -1763,9 +1842,9 @@
    ]
   },
   "x_arishem": {
-   "map": 6,
-   "name": "Arishem le Juge",
-   "en": "Arishem the Judge",
+   "map": 5,
+   "name": "Arishem the Judge",
+   "fr": "Arishem le Juge",
    "sub": "chef de l’Ost Céleste",
    "desc": "Le Céleste qui juge chaque monde ensemencé : il décide s’il doit vivre ou être détruit.",
    "cat": "cel",
@@ -1792,9 +1871,9 @@
    ]
   },
   "x_progen": {
-   "map": 6,
-   "name": "Le Progéniteur",
-   "en": "The Progenitor",
+   "map": 5,
+   "name": "The Progenitor",
+   "fr": "Le Progéniteur",
    "sub": "le Céleste malade",
    "desc": "Céleste infecté par une maladie, tombé sur la Terre primitive : son sang aurait ensemencé toute la vie terrestre.",
    "cat": "cel",
@@ -1808,9 +1887,9 @@
    ]
   },
   "x_darkcel": {
-   "map": 6,
-   "name": "Les Célestes Noirs",
-   "en": "Dark Celestials",
+   "map": 5,
+   "name": "Dark Celestials",
+   "fr": "Les Célestes Noirs",
    "sub": "l’Ost Final",
    "desc": "Célestes corrompus qui reviennent anéantir la Terre et qu’affrontent les Avengers.",
    "cat": "cel",
@@ -1824,9 +1903,9 @@
    ]
   },
   "x_tiamut": {
-   "map": 6,
-   "name": "Tiamut, le Céleste Mourant",
-   "en": "Tiamut",
+   "map": 5,
+   "name": "Tiamut",
+   "fr": "Tiamut, le Céleste Mourant",
    "sub": "le Céleste exilé",
    "desc": "Un Céleste banni par les siens, longtemps « mourant » sous la Terre.",
    "cat": "cel",
@@ -1839,8 +1918,8 @@
   },
   "x_eternals": {
    "map": 6,
-   "name": "Les Éternels",
-   "en": "Eternals",
+   "name": "Eternals",
+   "fr": "Les Éternels",
    "sub": "les immortels créés par les Célestes",
    "desc": "Race immortelle façonnée par les Célestes à partir des premiers humains, gardienne de la Terre.",
    "cat": "grp",
@@ -1863,8 +1942,8 @@
   },
   "x_deviants": {
    "map": 6,
-   "name": "Les Déviants",
-   "en": "Deviants",
+   "name": "Deviants",
+   "fr": "Les Déviants",
    "sub": "la branche instable",
    "desc": "L’autre branche issue des expériences célestes, aux formes changeantes.",
    "cat": "grp",
@@ -1878,8 +1957,8 @@
   },
   "x_elders": {
    "map": 6,
-   "name": "Les Anciens de l’Univers",
-   "en": "Elders of the Universe",
+   "name": "Elders of the Universe",
+   "fr": "Les Anciens de l’Univers",
    "sub": "les derniers survivants",
    "desc": "Derniers représentants de races éteintes, chacun voué à une obsession : collectionner, jouer, courir…",
    "cat": "grp",
@@ -1899,9 +1978,9 @@
    ]
   },
   "x_grandm": {
-   "map": 6,
-   "name": "Le Grand Maître",
-   "en": "Grandmaster",
+   "map": 5,
+   "name": "Grandmaster",
+   "fr": "Le Grand Maître",
    "sub": "le joueur éternel",
    "desc": "Ancien de l’Univers obsédé par les jeux, prêt à parier des planètes.",
    "cat": "per",
@@ -1914,9 +1993,9 @@
    ]
   },
   "x_collector": {
-   "map": 6,
-   "name": "Le Collectionneur",
-   "en": "The Collector",
+   "map": 5,
+   "name": "The Collector",
+   "fr": "Le Collectionneur",
    "sub": "le conservateur cosmique",
    "desc": "Ancien de l’Univers qui collectionne êtres et objets rares.",
    "cat": "per",
@@ -1929,9 +2008,9 @@
    ]
   },
   "x_uatu": {
-   "map": 6,
-   "name": "Uatu",
-   "en": "Uatu the Watcher",
+   "map": 5,
+   "name": "Uatu the Watcher",
+   "fr": "Uatu",
    "sub": "le Gardien de la Terre",
    "desc": "Gardien qui observe la Terre depuis la Lune sans jamais intervenir… ou presque.",
    "cat": "per",
@@ -1945,9 +2024,9 @@
    ]
   },
   "x_pcosmic": {
-   "map": 6,
-   "name": "Le Pouvoir Cosmique",
-   "en": "Power Cosmic",
+   "map": 5,
+   "name": "Power Cosmic",
+   "fr": "Le Pouvoir Cosmique",
    "sub": "l’énergie de Galactus",
    "desc": "L’énergie que Galactus partage avec ses hérauts comme le Silver Surfer.",
    "cat": "pow",
@@ -1967,9 +2046,9 @@
    ]
   },
   "x_darkforce": {
-   "map": 6,
-   "name": "La Force Noire",
-   "en": "Darkforce",
+   "map": 5,
+   "name": "Darkforce",
+   "fr": "La Force Noire",
    "sub": "l’énergie des ténèbres",
    "desc": "Dimension et énergie sombres utilisées par Cloak, Darkstar ou le Hood.",
    "cat": "pow",
@@ -1981,9 +2060,9 @@
    ]
   },
   "x_nova": {
-   "map": 6,
-   "name": "La Force Nova",
-   "en": "Nova Force",
+   "map": 5,
+   "name": "Nova Force",
+   "fr": "La Force Nova",
    "sub": "l’énergie des Nova Corps",
    "desc": "Énergie collective qui alimente les Nova Corps de Xandar.",
    "cat": "pow",
@@ -1996,9 +2075,9 @@
    ]
   },
   "x_gamma": {
-   "map": 6,
-   "name": "Le rayonnement gamma",
-   "en": "Gamma radiation",
+   "map": 5,
+   "name": "Gamma radiation",
+   "fr": "Le rayonnement gamma",
    "sub": "la porte verte",
    "desc": "Radiation qui relie les mutés gamma au Dessous et au Un-En-Dessous-de-Tout.",
    "cat": "pow",
@@ -2014,9 +2093,9 @@
    ]
   },
   "x_quantum": {
-   "map": 6,
-   "name": "L’énergie quantique",
-   "en": "Quantum energy",
+   "map": 5,
+   "name": "Quantum energy",
+   "fr": "L’énergie quantique",
    "sub": "les Bracelets Quantiques",
    "desc": "Énergie fondamentale de la réalité, canalisée par les Bracelets Quantiques de Quasar.",
    "cat": "pow",
@@ -2029,9 +2108,9 @@
    ]
   },
   "x_symbiote": {
-   "map": 6,
-   "name": "Les symbiotes",
-   "en": "Symbiotes",
+   "map": 5,
+   "name": "Symbiotes",
+   "fr": "Les symbiotes",
    "sub": "la Ruche de Knull",
    "desc": "Créatures nées des ténèbres de Knull et liées à leur hôte.",
    "cat": "pow",
@@ -2045,9 +2124,9 @@
    ]
   },
   "x_gems": {
-   "map": 6,
-   "name": "Les Gemmes d’Infinité",
-   "en": "Infinity Stones",
+   "map": 5,
+   "name": "Infinity Stones",
+   "fr": "Les Gemmes d’Infinité",
    "sub": "Espace, Réalité, Pouvoir, Âme, Esprit, Temps",
    "desc": "Six gemmes nées, selon les versions, des restes d’un être unique d’avant l’univers. Réunies, elles donnent un contrôle total.",
    "cat": "obj",
@@ -2073,9 +2152,9 @@
    ]
   },
   "x_gauntlet": {
-   "map": 6,
-   "name": "Le Gant de l’Infini",
-   "en": "Infinity Gauntlet",
+   "map": 5,
+   "name": "Infinity Gauntlet",
+   "fr": "Le Gant de l’Infini",
    "sub": "les six gemmes réunies",
    "desc": "Le gant qui fait de son porteur un dieu.",
    "cat": "obj",
@@ -2095,9 +2174,9 @@
    ]
   },
   "x_heart": {
-   "map": 6,
-   "name": "Le Cœur de l’Univers",
-   "en": "Heart of the Universe",
+   "map": 5,
+   "name": "Heart of the Universe",
+   "fr": "Le Cœur de l’Univers",
    "sub": "la source de toute puissance",
    "desc": "Source d’énergie primordiale, plus puissante que les Gemmes.",
    "cat": "obj",
@@ -2110,9 +2189,9 @@
    ]
   },
   "x_cube": {
-   "map": 6,
-   "name": "Le Cube Cosmique",
-   "en": "Cosmic Cube",
+   "map": 5,
+   "name": "Cosmic Cube",
+   "fr": "Le Cube Cosmique",
    "sub": "le cube qui exauce",
    "desc": "Objet capable de réaliser les désirs de son porteur ; il peut devenir conscient.",
    "cat": "obj",
@@ -2124,9 +2203,9 @@
    ]
   },
   "x_nullifier": {
-   "map": 6,
-   "name": "L’Annulateur Ultime",
-   "en": "Ultimate Nullifier",
+   "map": 5,
+   "name": "Ultimate Nullifier",
+   "fr": "L’Annulateur Ultime",
    "sub": "l’arme absolue",
    "desc": "Arme de Galactus capable d’effacer n’importe quoi, y compris son utilisateur.",
    "cat": "obj",
@@ -2139,9 +2218,9 @@
    ]
   },
   "x_allblack": {
-   "map": 6,
-   "name": "All-Black",
-   "en": "All-Black the Necrosword",
+   "map": 5,
+   "name": "All-Black the Necrosword",
+   "fr": "All-Black",
    "sub": "la première arme",
    "desc": "Lame de ténèbres forgée par Knull à partir du Vide ; elle a tué le premier Céleste.",
    "cat": "obj",
@@ -2154,9 +2233,9 @@
    ]
   },
   "x_mkraan": {
-   "map": 6,
-   "name": "Le Cristal M’Kraan",
-   "en": "M’Kraan Crystal",
+   "map": 5,
+   "name": "M’Kraan Crystal",
+   "fr": "Le Cristal M’Kraan",
    "sub": "le nexus des réalités",
    "desc": "Cristal qui contient le nexus de toutes les réalités ; le Phénix y réside.",
    "cat": "obj",
@@ -2171,8 +2250,8 @@
   },
   "x_quarry": {
    "map": 6,
-   "name": "La Carrière des Dieux",
-   "en": "God Quarry",
+   "name": "God Quarry",
+   "fr": "La Carrière des Dieux",
    "sub": "le cœur de l’existence",
    "desc": "Lieu au centre de la réalité, porte vers le Premier Firmament.",
    "cat": "pla",
@@ -2186,8 +2265,8 @@
   },
   "x_darkdim": {
    "map": 6,
-   "name": "La Dimension Noire",
-   "en": "Dark Dimension",
+   "name": "Dark Dimension",
+   "fr": "La Dimension Noire",
    "sub": "le royaume de Dormammu",
    "desc": "Dimension mystique gouvernée par Dormammu.",
    "cat": "pla",
@@ -2210,6 +2289,14 @@
    "rel": [
     "multi",
     "p_asgard",
+    "r_alfheim",
+    "r_jotunheim",
+    "r_midgard",
+    "r_muspelheim",
+    "r_nidavellir",
+    "r_niffleheim",
+    "r_svartalfheim",
+    "r_vanaheim",
     "x_loki"
    ]
   },
@@ -2229,8 +2316,8 @@
   },
   "x_mojo": {
    "map": 6,
-   "name": "Le Mojovers",
-   "en": "Mojoverse",
+   "name": "Mojoverse",
+   "fr": "Le Mojovers",
    "sub": "la dimension spectacle",
    "desc": "Dimension où tout est télévision et audience.",
    "cat": "pla",
@@ -2242,8 +2329,8 @@
   },
   "x_dreams": {
    "map": 6,
-   "name": "Le Royaume des Rêves",
-   "en": "Dream Dimension",
+   "name": "Dream Dimension",
+   "fr": "Le Royaume des Rêves",
    "sub": "le domaine de Cauchemar",
    "desc": "Dimension onirique où règne Cauchemar.",
    "cat": "pla",
@@ -2256,7 +2343,7 @@
    ]
   },
   "x_thanos": {
-   "map": 6,
+   "map": 5,
    "name": "Thanos",
    "sub": "le Titan fou",
    "desc": "Titan éternel obsédé par la Mort, porteur du Gant de l’Infini.",
@@ -2290,7 +2377,7 @@
    ]
   },
   "x_adam": {
-   "map": 6,
+   "map": 5,
    "name": "Adam Warlock",
    "sub": "le sauveur cosmique",
    "desc": "Être créé artificiellement, gardien de la Gemme de l’Âme et souvent opposé à Thanos.",
@@ -2311,7 +2398,7 @@
    ]
   },
   "x_silver": {
-   "map": 6,
+   "map": 5,
    "name": "Silver Surfer",
    "sub": "le héraut de Galactus",
    "desc": "Norrin Radd, devenu héraut de Galactus pour sauver sa planète.",
@@ -2329,9 +2416,9 @@
    ]
   },
   "x_beyonder": {
-   "map": 6,
-   "name": "Le Beyonder",
-   "en": "The Beyonder",
+   "map": 5,
+   "name": "The Beyonder",
+   "fr": "Le Beyonder",
    "sub": "l’enfant de l’Au-delà",
    "desc": "Fragment des Beyonders devenu conscient, organisateur des premières Secret Wars.",
    "cat": "per",
@@ -2347,7 +2434,7 @@
    ]
   },
   "x_molecule": {
-   "map": 6,
+   "map": 5,
    "name": "Molecule Man",
    "sub": "la bombe des Beyonders",
    "desc": "Owen Reece, conçu par les Beyonders comme une bombe à travers le multivers.",
@@ -2365,9 +2452,9 @@
    ]
   },
   "x_doom": {
-   "map": 6,
-   "name": "Doom, Dieu-Empereur",
-   "en": "God Emperor Doom",
+   "map": 5,
+   "name": "God Emperor Doom",
+   "fr": "Doom, Dieu-Empereur",
    "sub": "le dieu de Battleworld",
    "desc": "Victor von Doom vole le pouvoir des Beyonders et règne sur Battleworld.",
    "cat": "per",
@@ -2383,7 +2470,7 @@
    ]
   },
   "x_rabum": {
-   "map": 6,
+   "map": 5,
    "name": "Rabum Alal",
    "sub": "le Dieu-Fatalité",
    "desc": "Le mystérieux destructeur de mondes des Incursions : Doom lui-même.",
@@ -2399,7 +2486,7 @@
    ]
   },
   "x_reed": {
-   "map": 6,
+   "map": 5,
    "name": "Reed Richards",
    "sub": "le rebâtisseur",
    "desc": "Il reconstruit le multivers avec Franklin et Molecule Man après Secret Wars.",
@@ -2419,7 +2506,7 @@
    ]
   },
   "x_franklin": {
-   "map": 6,
+   "map": 5,
    "name": "Franklin Richards",
    "sub": "le créateur de mondes",
    "desc": "Mutant capable de créer des univers entiers ; clé de la renaissance du multivers.",
@@ -2432,7 +2519,7 @@
    ]
   },
   "x_strange": {
-   "map": 6,
+   "map": 5,
    "name": "Doctor Strange",
    "sub": "le Sorcier Suprême",
    "desc": "Gardien mystique de la Terre, témoin de nombreuses entités abstraites.",
@@ -2458,7 +2545,7 @@
    ]
   },
   "x_dormammu": {
-   "map": 6,
+   "map": 5,
    "name": "Dormammu",
    "sub": "le seigneur de la Dimension Noire",
    "desc": "Faltinien avide de conquérir la Terre.",
@@ -2473,7 +2560,7 @@
    ]
   },
   "x_jean": {
-   "map": 6,
+   "map": 5,
    "name": "Jean Grey",
    "sub": "l’hôte du Phénix",
    "desc": "Mutante liée à la Force Phénix, morte et revenue plusieurs fois.",
@@ -2489,7 +2576,7 @@
    ]
   },
   "x_banner": {
-   "map": 6,
+   "map": 5,
    "name": "Bruce Banner",
    "sub": "l’homme derrière Hulk",
    "desc": "Ses morts successives le mènent au Dessous.",
@@ -2506,7 +2593,7 @@
    ]
   },
   "x_venom": {
-   "map": 6,
+   "map": 5,
    "name": "Venom",
    "sub": "le nouveau dieu des symbiotes",
    "desc": "Eddie Brock vainc Knull et prend sa place à la tête de la Ruche.",
@@ -2521,7 +2608,7 @@
    ]
   },
   "x_annihilus": {
-   "map": 6,
+   "map": 5,
    "name": "Annihilus",
    "sub": "le seigneur de la Zone Négative",
    "desc": "Insectoïde tyrannique qui a envahi l’univers.",
@@ -2538,9 +2625,9 @@
    ]
   },
   "x_mephisto": {
-   "map": 6,
-   "name": "Méphisto",
-   "en": "Mephisto",
+   "map": 5,
+   "name": "Mephisto",
+   "fr": "Méphisto",
    "sub": "le seigneur d’un enfer",
    "desc": "Démon qui règne sur l’un des enfers et marchande les âmes.",
    "cat": "per",
@@ -2553,7 +2640,7 @@
    ]
   },
   "x_loki": {
-   "map": 6,
+   "map": 5,
    "name": "Loki",
    "sub": "le dieu des histoires",
    "desc": "Survivant du Septième Cosmos, il est jugé dans Defenders: Beyond.",
@@ -2563,12 +2650,13 @@
    "rel": [
     "e25",
     "keter",
+    "r_jotunheim",
     "x_defenders",
     "x_yggdrasil"
    ]
   },
   "x_blue": {
-   "map": 6,
+   "map": 5,
    "name": "Blue Marvel",
    "sub": "le scientifique cosmique",
    "desc": "Adam Brashear, membre des Ultimates et des Defenders.",
@@ -2581,9 +2669,9 @@
    ]
   },
   "x_america": {
-   "map": 6,
-   "name": "Miss America",
-   "en": "America Chavez",
+   "map": 5,
+   "name": "America Chavez",
+   "fr": "Miss America",
    "sub": "la voyageuse des réalités",
    "desc": "Elle ouvre des portails entre les réalités ; membre des Ultimates.",
    "cat": "per",
@@ -2596,9 +2684,9 @@
    ]
   },
   "x_maker": {
-   "map": 6,
-   "name": "Le Maker",
-   "en": "The Maker",
+   "map": 5,
+   "name": "The Maker",
+   "fr": "Le Maker",
    "sub": "le Reed Richards maléfique",
    "desc": "Venu de l’ancien univers Ultimate, il façonne un nouveau monde à sa main.",
    "cat": "per",
@@ -2611,9 +2699,9 @@
    ]
   },
   "x_galan": {
-   "map": 6,
-   "name": "Galan de Taa",
-   "en": "Galan of Taa",
+   "map": 5,
+   "name": "Galan of Taa",
+   "fr": "Galan de Taa",
    "sub": "l’homme avant Galactus",
    "desc": "Explorateur du Sixième Cosmos qui survit à sa fin et devient Galactus.",
    "cat": "per",
@@ -2642,7 +2730,7 @@
    ]
   },
   "x_taaia": {
-   "map": 6,
+   "map": 5,
    "name": "Taaia",
    "sub": "la mère de Galan",
    "desc": "Venue du Sixième Cosmos, elle rejoint les Defenders.",
@@ -2657,7 +2745,7 @@
    ]
   },
   "x_lifeb": {
-   "map": 6,
+   "map": 5,
    "name": "Lifebringer One",
    "sub": "le premier héros",
    "desc": "Champion du Troisième Cosmos, vainqueur de l’Anti-Tout.",
@@ -2671,8 +2759,8 @@
   },
   "x_illum": {
    "map": 6,
-   "name": "Les Illuminati",
-   "en": "Illuminati",
+   "name": "Illuminati",
+   "fr": "Les Illuminati",
    "sub": "le conseil secret",
    "desc": "Reed, Tony Stark, Strange, Namor, Black Bolt… face aux Incursions.",
    "cat": "grp",
@@ -2687,8 +2775,8 @@
   },
   "x_ultimates": {
    "map": 6,
-   "name": "Les Ultimates",
-   "en": "The Ultimates",
+   "name": "The Ultimates",
+   "fr": "Les Ultimates",
    "sub": "les résolveurs de problèmes cosmiques",
    "desc": "Équipe qui s’attaque aux menaces de l’univers lui-même.",
    "cat": "grp",
@@ -2705,8 +2793,8 @@
   },
   "x_defenders": {
    "map": 6,
-   "name": "Les Defenders (2021)",
-   "en": "Defenders",
+   "name": "Defenders",
+   "fr": "Les Defenders (2021)",
    "sub": "les voyageurs des cosmos",
    "desc": "Doctor Strange, Masked Raider, Silver Surfer, Cloak… puis Blue Marvel, Tigra, Loki, Taaia et Miss America.",
    "cat": "grp",
@@ -2723,8 +2811,8 @@
   },
   "x_omegac": {
    "map": 6,
-   "name": "Le Conseil Oméga",
-   "en": "Omega Council",
+   "name": "Omega Council",
+   "fr": "Le Conseil Oméga",
    "sub": "les gardiens du moteur",
    "desc": "Conseil des Beyonders siégeant dans la Salle des Machines.",
    "cat": "grp",
@@ -2739,8 +2827,8 @@
   },
   "x_ivory": {
    "map": 6,
-   "name": "Les Rois d’Ivoire",
-   "en": "Ivory Kings",
+   "name": "Ivory Kings",
+   "fr": "Les Rois d’Ivoire",
    "sub": "les seigneurs blancs",
    "desc": "Nom donné aux Beyonders, maîtres de l’Au-delà.",
    "cat": "grp",
@@ -2754,8 +2842,8 @@
   },
   "x_blackp": {
    "map": 6,
-   "name": "Les Prêtres Noirs",
-   "en": "Black Priests",
+   "name": "Black Priests",
+   "fr": "Les Prêtres Noirs",
    "sub": "les chasseurs de mondes",
    "desc": "Ordre au service de Rabum Alal, chargé de détruire les Terres en Incursion.",
    "cat": "grp",
@@ -2770,8 +2858,8 @@
   },
   "x_mapmak": {
    "map": 6,
-   "name": "Les Cartographes",
-   "en": "Map Makers",
+   "name": "Map Makers",
+   "fr": "Les Cartographes",
    "sub": "les nettoyeurs de réalités",
    "desc": "Créatures qui effacent les mondes morts après les Incursions.",
    "cat": "grp",
@@ -2783,9 +2871,9 @@
    ]
   },
   "x_eson": {
-   "map": 6,
-   "name": "Eson le Chercheur",
-   "en": "Eson the Searcher",
+   "map": 5,
+   "name": "Eson the Searcher",
+   "fr": "Eson le Chercheur",
    "sub": "le Céleste qui cherche",
    "desc": "Céleste chargé de retrouver ce qui a été perdu ; présent lors des jugements de la Terre.",
    "cat": "cel",
@@ -2797,9 +2885,9 @@
    ]
   },
   "x_exitar": {
-   "map": 6,
-   "name": "Exitar l’Exécuteur",
-   "en": "Exitar the Exterminator",
+   "map": 5,
+   "name": "Exitar the Exterminator",
+   "fr": "Exitar l’Exécuteur",
    "sub": "le plus grand des Célestes",
    "desc": "Le Céleste qui exécute les sentences : il détruit les mondes jugés indignes.",
    "cat": "cel",
@@ -2811,9 +2899,9 @@
    ]
   },
   "x_gammenon": {
-   "map": 6,
-   "name": "Gammenon le Rassembleur",
-   "en": "Gammenon the Gatherer",
+   "map": 5,
+   "name": "Gammenon the Gatherer",
+   "fr": "Gammenon le Rassembleur",
    "sub": "le collecteur",
    "desc": "Céleste qui rassemble les échantillons de vie d’un monde ensemencé.",
    "cat": "cel",
@@ -2825,9 +2913,9 @@
    ]
   },
   "x_jemiah": {
-   "map": 6,
-   "name": "Jemiah l’Analyseur",
-   "en": "Jemiah the Analyzer",
+   "map": 5,
+   "name": "Jemiah the Analyzer",
+   "fr": "Jemiah l’Analyseur",
    "sub": "le savant de l’Ost",
    "desc": "Céleste qui étudie les espèces modifiées par l’Ost.",
    "cat": "cel",
@@ -2839,9 +2927,9 @@
    ]
   },
   "x_nezarr": {
-   "map": 6,
-   "name": "Nezarr le Calculateur",
-   "en": "Nezarr the Calculator",
+   "map": 5,
+   "name": "Nezarr the Calculator",
+   "fr": "Nezarr le Calculateur",
    "sub": "le mathématicien",
    "desc": "Céleste qui calcule l’évolution des mondes.",
    "cat": "cel",
@@ -2853,9 +2941,9 @@
    ]
   },
   "x_ziran": {
-   "map": 6,
-   "name": "Ziran le Testeur",
-   "en": "Ziran the Tester",
+   "map": 5,
+   "name": "Ziran the Tester",
+   "fr": "Ziran le Testeur",
    "sub": "l’éprouveur",
    "desc": "Céleste qui teste la résistance des espèces.",
    "cat": "cel",
@@ -2867,9 +2955,9 @@
    ]
   },
   "x_oneg": {
-   "map": 6,
-   "name": "Oneg le Sondeur",
-   "en": "Oneg the Prober",
+   "map": 5,
+   "name": "Oneg the Prober",
+   "fr": "Oneg le Sondeur",
    "sub": "l’explorateur",
    "desc": "Céleste qui sonde la Terre et ses profondeurs.",
    "cat": "cel",
@@ -2880,9 +2968,9 @@
    ]
   },
   "x_fulcrum": {
-   "map": 6,
-   "name": "Le Fulcrum",
-   "en": "The Fulcrum",
+   "map": 5,
+   "name": "The Fulcrum",
+   "fr": "Le Fulcrum",
    "sub": "le dieu des Célestes",
    "desc": "Entité que les Célestes vénèrent comme leur créateur, se présentant comme le Un-Au-Dessus-de-Tout de leur race.",
    "cat": "cel",
@@ -2894,9 +2982,9 @@
    ]
   },
   "x_nemesis": {
-   "map": 6,
-   "name": "Némésis",
-   "en": "Nemesis",
+   "map": 5,
+   "name": "Nemesis",
+   "fr": "Némésis",
    "sub": "l’être d’avant tout",
    "desc": "Être unique d’un univers antérieur, dont l’essence fragmentée aurait donné les Gemmes d’Infinité.",
    "cat": "abs",
@@ -2910,7 +2998,7 @@
    ]
   },
   "x_epoch": {
-   "map": 6,
+   "map": 5,
    "name": "Epoch",
    "sub": "la gardienne du cosmos",
    "desc": "Enfant d’Eon, elle veille sur l’univers et choisit ses protecteurs.",
@@ -2923,7 +3011,7 @@
    ]
   },
   "x_eon": {
-   "map": 6,
+   "map": 5,
    "name": "Eon",
    "sub": "le gardien du temps cosmique",
    "desc": "Entité qui fit de Mar-Vell le Protecteur de l’Univers.",
@@ -2936,9 +3024,9 @@
    ]
   },
   "x_mentor": {
-   "map": 6,
-   "name": "Mentor",
-   "en": "A’Lars",
+   "map": 5,
+   "name": "A’Lars",
+   "fr": "Mentor",
    "sub": "le père de Thanos",
    "desc": "Éternel de Titan, fils de Kronos et père de Thanos.",
    "cat": "per",
@@ -2952,9 +3040,9 @@
    ]
   },
   "x_proemial": {
-   "map": 6,
-   "name": "Les Dieux Proémiaux",
-   "en": "Proemial Gods",
+   "map": 5,
+   "name": "Proemial Gods",
+   "fr": "Les Dieux Proémiaux",
    "sub": "les premiers dieux",
    "desc": "Êtres façonnés aux premiers instants de l’univers, gardiens de son équilibre.",
    "cat": "cel",
@@ -2967,8 +3055,8 @@
   },
   "x_tva": {
    "map": 6,
-   "name": "La TVA",
-   "en": "Time Variance Authority",
+   "name": "Time Variance Authority",
+   "fr": "La TVA",
    "sub": "les gardiens du temps",
    "desc": "Bureaucratie hors du temps qui surveille les lignes temporelles du multivers.",
    "cat": "grp",
@@ -2984,9 +3072,9 @@
    ]
   },
   "x_sspace": {
-   "map": 6,
-   "name": "Gemme de l’Espace",
-   "en": "Space Stone",
+   "map": 5,
+   "name": "Space Stone",
+   "fr": "Gemme de l’Espace",
    "sub": "la gemme bleue",
    "desc": "Elle permet d’être partout à la fois.",
    "cat": "obj",
@@ -2998,9 +3086,9 @@
    ]
   },
   "x_smind": {
-   "map": 6,
-   "name": "Gemme de l’Esprit",
-   "en": "Mind Stone",
+   "map": 5,
+   "name": "Mind Stone",
+   "fr": "Gemme de l’Esprit",
    "sub": "la gemme jaune",
    "desc": "Elle amplifie et contrôle les esprits.",
    "cat": "obj",
@@ -3012,9 +3100,9 @@
    ]
   },
   "x_sreal": {
-   "map": 6,
-   "name": "Gemme de la Réalité",
-   "en": "Reality Stone",
+   "map": 5,
+   "name": "Reality Stone",
+   "fr": "Gemme de la Réalité",
    "sub": "la gemme rouge",
    "desc": "Elle réécrit la réalité.",
    "cat": "obj",
@@ -3026,9 +3114,9 @@
    ]
   },
   "x_spow": {
-   "map": 6,
-   "name": "Gemme du Pouvoir",
-   "en": "Power Stone",
+   "map": 5,
+   "name": "Power Stone",
+   "fr": "Gemme du Pouvoir",
    "sub": "la gemme violette",
    "desc": "Elle donne une puissance illimitée.",
    "cat": "obj",
@@ -3040,9 +3128,9 @@
    ]
   },
   "x_stime": {
-   "map": 6,
-   "name": "Gemme du Temps",
-   "en": "Time Stone",
+   "map": 5,
+   "name": "Time Stone",
+   "fr": "Gemme du Temps",
    "sub": "la gemme verte",
    "desc": "Elle contrôle passé, présent et futur.",
    "cat": "obj",
@@ -3055,9 +3143,9 @@
    ]
   },
   "x_ssoul": {
-   "map": 6,
-   "name": "Gemme de l’Âme",
-   "en": "Soul Stone",
+   "map": 5,
+   "name": "Soul Stone",
+   "fr": "Gemme de l’Âme",
    "sub": "la gemme orange",
    "desc": "Consciente et affamée d’âmes ; longtemps portée par Adam Warlock.",
    "cat": "obj",
@@ -3069,7 +3157,7 @@
    ]
   },
   "h_airwalker": {
-   "map": 6,
+   "map": 5,
    "name": "Air-Walker",
    "sub": "le héraut xandarien",
    "desc": "Gabriel Lan, capitaine de la flotte de Xandar, accepte de servir Galactus. Après sa mort, son esprit est transféré dans un corps d’androïde.",
@@ -3084,7 +3172,7 @@
    ]
   },
   "h_firelord": {
-   "map": 6,
+   "map": 5,
    "name": "Firelord",
    "sub": "le héraut de flamme",
    "desc": "Pyreus Kril, ami de Gabriel Lan, devient héraut à son tour en cherchant à le venger. Il manie le feu cosmique et un bâton de pouvoir.",
@@ -3098,9 +3186,9 @@
    ]
   },
   "h_terrax": {
-   "map": 6,
-   "name": "Terrax",
-   "en": "Terrax the Tamer",
+   "map": 5,
+   "name": "Terrax the Tamer",
+   "fr": "Terrax",
    "sub": "le dompteur de mondes",
    "desc": "Tyros, tyran de la planète Birj, est choisi par Galactus pour sa cruauté. Il commande à la roche et à la terre grâce à sa hache cosmique.",
    "cat": "per",
@@ -3114,7 +3202,7 @@
    ]
   },
   "h_novaf": {
-   "map": 6,
+   "map": 5,
    "name": "Nova (Frankie Raye)",
    "sub": "la héraut de feu",
    "desc": "Frankie Raye, compagne de Johnny Storm, se propose comme héraut pour épargner la Terre. Elle mène ensuite Galactus vers des mondes habités.",
@@ -3127,7 +3215,7 @@
    ]
   },
   "h_morg": {
-   "map": 6,
+   "map": 5,
    "name": "Morg",
    "sub": "le bourreau",
    "desc": "Héraut impitoyable armé d’une hache cosmique, recruté par Galactus après que d’autres hérauts lui ont désobéi.",
@@ -3141,7 +3229,7 @@
    ]
   },
   "h_stardust": {
-   "map": 6,
+   "map": 5,
    "name": "Stardust",
    "sub": "le héraut zélé",
    "desc": "Héraut d’une loyauté fanatique, prêt à anéantir quiconque menace son maître.",
@@ -3154,7 +3242,7 @@
    ]
   },
   "h_redshift": {
-   "map": 6,
+   "map": 5,
    "name": "Red Shift",
    "sub": "le héraut artificiel",
    "desc": "Héraut façonné par Galactus lui-même, sans passé propre, pour le servir sans faille.",
@@ -3167,9 +3255,9 @@
    ]
   },
   "h_fallen": {
-   "map": 6,
-   "name": "Le Déchu",
-   "en": "Fallen One",
+   "map": 5,
+   "name": "Fallen One",
+   "fr": "Le Déchu",
    "sub": "le premier héraut",
    "desc": "Premier héraut de Galactus selon les récits, emprisonné après sa trahison. Son pouvoir cosmique est teinté de matière noire.",
    "cat": "per",
@@ -3182,7 +3270,7 @@
    ]
   },
   "h_thor": {
-   "map": 6,
+   "map": 5,
    "name": "Thor",
    "sub": "dieu du tonnerre, héraut un temps",
    "desc": "Prince puis roi d’Asgard. Face à l’Hiver Noir, il accepte de devenir le héraut de Galactus en 2020.",
@@ -3214,9 +3302,9 @@
    ]
   },
   "x_ashema": {
-   "map": 6,
-   "name": "Ashema",
-   "en": "Ashema the Listener",
+   "map": 5,
+   "name": "Ashema the Listener",
+   "fr": "Ashema",
    "sub": "l’Écoutante",
    "desc": "Céleste rattachée aux expériences sur l’humanité, l’une des rares à converser avec les mortels.",
    "cat": "cel",
@@ -3228,9 +3316,9 @@
    ]
   },
   "x_devron": {
-   "map": 6,
-   "name": "Devron",
-   "en": "Devron the Experimenter",
+   "map": 5,
+   "name": "Devron the Experimenter",
+   "fr": "Devron",
    "sub": "l’Expérimentateur",
    "desc": "Céleste qui teste des formes de vie et leur évolution au sein de l’Ost.",
    "cat": "cel",
@@ -3242,9 +3330,9 @@
    ]
   },
   "x_hargen": {
-   "map": 6,
-   "name": "Hargen",
-   "en": "Hargen the Measurer",
+   "map": 5,
+   "name": "Hargen the Measurer",
+   "fr": "Hargen",
    "sub": "l’Arpenteur",
    "desc": "Céleste chargé de mesurer les mondes visités par l’Ost.",
    "cat": "cel",
@@ -3256,9 +3344,9 @@
    ]
   },
   "x_tefral": {
-   "map": 6,
-   "name": "Tefral",
-   "en": "Tefral the Surveyor",
+   "map": 5,
+   "name": "Tefral the Surveyor",
+   "fr": "Tefral",
    "sub": "l’Inspecteur",
    "desc": "Céleste qui inspecte les mondes ensemencés.",
    "cat": "cel",
@@ -3270,9 +3358,9 @@
    ]
   },
   "x_scathan": {
-   "map": 6,
-   "name": "Scathan",
-   "en": "Scathan the Approver",
+   "map": 5,
+   "name": "Scathan the Approver",
+   "fr": "Scathan",
    "sub": "l’Approbateur",
    "desc": "Céleste dont l’accord valide le jugement d’Arishem.",
    "cat": "cel",
@@ -3284,9 +3372,9 @@
    ]
   },
   "x_zgreb": {
-   "map": 6,
-   "name": "Zgreb",
-   "en": "Zgreb the Aspirant",
+   "map": 5,
+   "name": "Zgreb the Aspirant",
+   "fr": "Zgreb",
    "sub": "l’Aspirant",
    "desc": "Céleste assimilé aux Aspirants, rivaux des Célestes de l’Ost.",
    "cat": "cel",
@@ -3298,9 +3386,9 @@
    ]
   },
   "x_gamiel": {
-   "map": 6,
-   "name": "Gamiel",
-   "en": "Gamiel the Manipulator",
+   "map": 5,
+   "name": "Gamiel the Manipulator",
+   "fr": "Gamiel",
    "sub": "le Manipulateur",
    "desc": "Céleste qui manipule les gènes des espèces ensemencées.",
    "cat": "cel",
@@ -3312,7 +3400,7 @@
    ]
   },
   "x_exnihilo": {
-   "map": 6,
+   "map": 5,
    "name": "Ex Nihilo",
    "sub": "le jardinier des Bâtisseurs",
    "desc": "Jardinier créé par les Bâtisseurs pour accélérer l’évolution de la vie sur les mondes.",
@@ -3326,7 +3414,7 @@
    ]
   },
   "x_abyss": {
-   "map": 6,
+   "map": 5,
    "name": "Abyss",
    "sub": "la sœur d’Ex Nihilo",
    "desc": "Jardinière née des Bâtisseurs, sœur d’Ex Nihilo, qui manie l’ombre et l’obscurité.",
@@ -3339,9 +3427,9 @@
    ]
   },
   "x_aleph": {
-   "map": 6,
-   "name": "Les Aleph",
-   "en": "Alephs",
+   "map": 5,
+   "name": "Alephs",
+   "fr": "Les Aleph",
    "sub": "les éradicateurs",
    "desc": "Machines des Bâtisseurs chargée d’effacer les mondes jugés irrécupérables.",
    "cat": "cel",
@@ -3353,9 +3441,9 @@
    ]
   },
   "x_ego": {
-   "map": 6,
-   "name": "Ego",
-   "en": "Ego the Living Planet",
+   "map": 5,
+   "name": "Ego the Living Planet",
+   "fr": "Ego",
    "sub": "la planète vivante",
    "desc": "Planète douée de conscience, d’une force colossale, qui se mesure à Galactus et à Thor.",
    "cat": "cel",
@@ -3367,7 +3455,7 @@
    ]
   },
   "x_mantis": {
-   "map": 6,
+   "map": 5,
    "name": "Mantis",
    "sub": "la Madone céleste",
    "desc": "Prédite comme Madone céleste, elle s’unit à un Kotati animé par l’esprit du Swordsman et donne naissance à Quoi (Sequoia).",
@@ -3380,9 +3468,9 @@
    ]
   },
   "x_champion": {
-   "map": 6,
-   "name": "Le Champion",
-   "en": "Champion of the Universe",
+   "map": 5,
+   "name": "Champion of the Universe",
+   "fr": "Le Champion",
    "sub": "le Doyen lutteur",
    "desc": "Doyen de l’Univers voué au combat, il défie les plus grands lutteurs de chaque monde.",
    "cat": "per",
@@ -3394,9 +3482,9 @@
    ]
   },
   "x_runner": {
-   "map": 6,
-   "name": "Le Coureur",
-   "en": "Runner",
+   "map": 5,
+   "name": "Runner",
+   "fr": "Le Coureur",
    "sub": "le Doyen de la vitesse",
    "desc": "Doyen de l’Univers qui consacre son existence infinie à la course.",
    "cat": "per",
@@ -3407,9 +3495,9 @@
    ]
   },
   "x_gardener": {
-   "map": 6,
-   "name": "Le Jardinier",
-   "en": "Gardener",
+   "map": 5,
+   "name": "Gardener",
+   "fr": "Le Jardinier",
    "sub": "le Doyen botaniste",
    "desc": "Doyen de l’Univers qui fait fleurir les mondes stériles.",
    "cat": "per",
@@ -3420,9 +3508,9 @@
    ]
   },
   "x_possessor": {
-   "map": 6,
-   "name": "Le Possesseur",
-   "en": "Possessor",
+   "map": 5,
+   "name": "Possessor",
+   "fr": "Le Possesseur",
    "sub": "le Doyen survivant",
    "desc": "Doyen de l’Univers qui a survécu à la disparition de son peuple.",
    "cat": "per",
@@ -3433,9 +3521,9 @@
    ]
   },
   "x_contemplator": {
-   "map": 6,
-   "name": "Le Contemplateur",
-   "en": "Contemplator",
+   "map": 5,
+   "name": "Contemplator",
+   "fr": "Le Contemplateur",
    "sub": "le Doyen méditant",
    "desc": "Doyen de l’Univers voué à la méditation et aux arts mystiques.",
    "cat": "per",
@@ -3446,9 +3534,9 @@
    ]
   },
   "x_trader": {
-   "map": 6,
-   "name": "Le Marchand",
-   "en": "Trader",
+   "map": 5,
+   "name": "Trader",
+   "fr": "Le Marchand",
    "sub": "le Doyen du négoce",
    "desc": "Doyen de l’Univers qui consacre son éternité au commerce.",
    "cat": "per",
@@ -3459,9 +3547,9 @@
    ]
   },
   "x_astronomer": {
-   "map": 6,
-   "name": "L’Astronome",
-   "en": "Astronomer",
+   "map": 5,
+   "name": "Astronomer",
+   "fr": "L’Astronome",
    "sub": "le Doyen des étoiles",
    "desc": "Doyen de l’Univers voué à l’étude du cosmos.",
    "cat": "per",
@@ -3472,7 +3560,7 @@
    ]
   },
   "x_abraxas": {
-   "map": 6,
+   "map": 5,
    "name": "Abraxas",
    "sub": "l’anti-Éternité",
    "desc": "Incarnation de la destruction, contrepartie d’Éternité, libérée lorsque celle-ci est affaiblie.",
@@ -3485,7 +3573,7 @@
    ]
   },
   "x_kubik": {
-   "map": 6,
+   "map": 5,
    "name": "Kubik",
    "sub": "le Cube devenu être",
    "desc": "Cube cosmique ayant pris conscience de lui-même et une forme humanoïde.",
@@ -3497,7 +3585,7 @@
    ]
   },
   "x_tyrant": {
-   "map": 6,
+   "map": 5,
    "name": "Tyrant",
    "sub": "la créature rebelle de Galactus",
    "desc": "Être créé par Galactus, qui se retourna contre lui et fut exilé pendant des éons.",
@@ -3509,7 +3597,7 @@
    ]
   },
   "x_agamotto": {
-   "map": 6,
+   "map": 5,
    "name": "Agamotto",
    "sub": "membre des Vishanti",
    "desc": "Entité mystique, l’un des Vishanti, dont l’Œil guide les Sorciers suprêmes.",
@@ -3525,7 +3613,7 @@
    ]
   },
   "x_oshtur": {
-   "map": 6,
+   "map": 5,
    "name": "Oshtur",
    "sub": "membre des Vishanti",
    "desc": "Divinité mystique bienveillante, membre des Vishanti.",
@@ -3538,7 +3626,7 @@
    ]
   },
   "x_hoggoth": {
-   "map": 6,
+   "map": 5,
    "name": "Hoggoth",
    "sub": "membre des Vishanti",
    "desc": "Divinité mystique, membre des Vishanti, invoquée par les sorciers.",
@@ -3551,7 +3639,7 @@
    ]
   },
   "x_cyttorak": {
-   "map": 6,
+   "map": 5,
    "name": "Cyttorak",
    "sub": "la force du Fléau",
    "desc": "Divinité de la Crimson Cosmos qui confère ses pouvoirs au Fléau.",
@@ -3563,7 +3651,7 @@
    ]
   },
   "x_satannish": {
-   "map": 6,
+   "map": 5,
    "name": "Satannish",
    "sub": "le démon des pactes",
    "desc": "Seigneur démoniaque qui accorde ses pouvoirs aux sorciers en échange de leur âme.",
@@ -3576,7 +3664,7 @@
    ]
   },
   "x_umar": {
-   "map": 6,
+   "map": 5,
    "name": "Umar",
    "sub": "la sœur de Dormammu",
    "desc": "Faltine, sœur de Dormammu et mère de Clea, qui règne parfois sur la Dimension noire.",
@@ -3590,9 +3678,9 @@
    ]
   },
   "x_nightmare": {
-   "map": 6,
-   "name": "Cauchemar",
-   "en": "Nightmare",
+   "map": 5,
+   "name": "Nightmare",
+   "fr": "Cauchemar",
    "sub": "le maître des rêves",
    "desc": "Seigneur de la Dimension des rêves, il se nourrit des cauchemars des mortels.",
    "cat": "abs",
@@ -3605,7 +3693,7 @@
    ]
   },
   "x_zom": {
-   "map": 6,
+   "map": 5,
    "name": "Zom",
    "sub": "la puissance emprisonnée",
    "desc": "Entité mystique d’une puissance redoutable, emprisonnée jadis par le Tribunal vivant.",
@@ -3618,9 +3706,9 @@
    ]
   },
   "x_gaea": {
-   "map": 6,
-   "name": "Gaïa",
-   "en": "Gaea",
+   "map": 5,
+   "name": "Gaea",
+   "fr": "Gaïa",
    "sub": "l’esprit de la Terre",
    "desc": "Déesse primordiale incarnant la Terre et sa vie, mère de nombreux dieux.",
    "cat": "abs",
@@ -3631,9 +3719,9 @@
    ]
   },
   "x_magus": {
-   "map": 6,
-   "name": "Le Magus",
-   "en": "Magus",
+   "map": 5,
+   "name": "Magus",
+   "fr": "Le Magus",
    "sub": "le futur sombre d’Adam",
    "desc": "Version future et corrompue d’Adam Warlock, chef de l’Église universelle de la vérité.",
    "cat": "per",
@@ -3646,9 +3734,9 @@
    ]
   },
   "x_unimind": {
-   "map": 6,
-   "name": "Uni-Esprit",
-   "en": "Uni-Mind",
+   "map": 5,
+   "name": "Uni-Mind",
+   "fr": "Uni-Esprit",
    "sub": "la conscience collective des Éternels",
    "desc": "Fusion des esprits de tous les Éternels en une entité unique.",
    "cat": "pow",
@@ -3659,7 +3747,7 @@
    ]
   },
   "x_starbrand": {
-   "map": 6,
+   "map": 5,
    "name": "Starbrand",
    "sub": "l’arme planétaire",
    "desc": "Pouvoir de défense de la Terre, confié à un hôte au hasard.",
@@ -3672,8 +3760,8 @@
   },
   "x_magistrati": {
    "map": 6,
-   "name": "Les Magistrati",
-   "en": "Magistrati",
+   "name": "Magistrati",
+   "fr": "Les Magistrati",
    "sub": "les hérauts du Tribunal",
    "desc": "Représentants du Tribunal vivant, ils parlent en son nom auprès des mortels.",
    "cat": "grp",
@@ -3684,7 +3772,7 @@
    ]
   },
   "d_shuma": {
-   "map": 6,
+   "map": 5,
    "name": "Shuma-Gorath",
    "sub": "l’Ancien aux tentacules",
    "desc": "Ancien Dieu tentaculaire, l’une des plus vieilles menaces de la Terre et d’autres dimensions.",
@@ -3697,7 +3785,7 @@
    ]
   },
   "x_chthon": {
-   "map": 6,
+   "map": 5,
    "name": "Chthon",
    "sub": "l’auteur du Darkhold",
    "desc": "Ancien Dieu de la magie noire, auteur du Darkhold.",
@@ -3713,7 +3801,7 @@
    ]
   },
   "d_mikaboshi": {
-   "map": 6,
+   "map": 5,
    "name": "Amatsu-Mikaboshi",
    "sub": "le Néant originel",
    "desc": "Dieu japonais du mal, identifié au néant d’avant la création ; il menace tous les panthéons.",
@@ -3725,9 +3813,9 @@
    ]
   },
   "d_dweller": {
-   "map": 6,
-   "name": "L’Habitant des ténèbres",
-   "en": "Dweller-in-Darkness",
+   "map": 5,
+   "name": "Dweller-in-Darkness",
+   "fr": "L’Habitant des ténèbres",
    "sub": "le dieu de la peur",
    "desc": "Ancien Dieu qui se nourrit de la peur et pactise avec Cauchemar.",
    "cat": "dark",
@@ -3738,9 +3826,9 @@
    ]
   },
   "d_blackwinter": {
-   "map": 6,
-   "name": "L’Hiver Noir",
-   "en": "Black Winter",
+   "map": 5,
+   "name": "Black Winter",
+   "fr": "L’Hiver Noir",
    "sub": "la fin des univers",
    "desc": "Entité venue du Sixième Cosmos, qui l’a anéanti, et qui menace le nôtre ; Galactus fuit son approche.",
    "cat": "dark",
@@ -3752,9 +3840,9 @@
    ]
   },
   "d_manyangled": {
-   "map": 6,
-   "name": "Les Anges Multiples",
-   "en": "Many-Angled Ones",
+   "map": 5,
+   "name": "Many-Angled Ones",
+   "fr": "Les Anges Multiples",
    "sub": "les seigneurs du Cancerverse",
    "desc": "Anciens Dieux qui ont vaincu la Mort dans le Cancerverse.",
    "cat": "dark",
@@ -3766,9 +3854,9 @@
    ]
   },
   "x_gorr": {
-   "map": 6,
-   "name": "Gorr",
-   "en": "Gorr the God Butcher",
+   "map": 5,
+   "name": "Gorr the God Butcher",
+   "fr": "Gorr",
    "sub": "le massacreur de dieux",
    "desc": "Armé de l’épée All-Black, il traque et tue des dieux à travers les âges.",
    "cat": "dark",
@@ -3781,7 +3869,7 @@
    ]
   },
   "o_mjolnir": {
-   "map": 6,
+   "map": 5,
    "name": "Mjolnir",
    "sub": "le marteau de Thor",
    "desc": "Marteau forgé dans l’uru, qui ne peut être soulevé que par une personne digne.",
@@ -3792,11 +3880,12 @@
     "h_thor",
     "o_uru",
     "p_asgard",
+    "r_nidavellir",
     "x_bill"
    ]
   },
   "o_uru": {
-   "map": 6,
+   "map": 5,
    "name": "Uru",
    "sub": "le métal d’Asgard",
    "desc": "Métal asgardien quasi indestructible, capable de retenir la magie.",
@@ -3809,9 +3898,9 @@
    ]
   },
   "o_darkhold": {
-   "map": 6,
-   "name": "Le Darkhold",
-   "en": "Darkhold",
+   "map": 5,
+   "name": "Darkhold",
+   "fr": "Le Darkhold",
    "sub": "le livre des péchés",
    "desc": "Grimoire écrit par Chthon, source de magie noire qui corrompt ses lecteurs.",
    "cat": "obj",
@@ -3822,9 +3911,9 @@
    ]
   },
   "o_eye": {
-   "map": 6,
-   "name": "L’Œil d’Agamotto",
-   "en": "Eye of Agamotto (Knowledge)",
+   "map": 5,
+   "name": "Eye of Agamotto (Knowledge)",
+   "fr": "L’Œil d’Agamotto",
    "sub": "l’amulette du Sorcier suprême",
    "desc": "Amulette qui révèle la vérité et dissipe les illusions, portée par le Docteur Strange.",
    "cat": "obj",
@@ -3836,9 +3925,9 @@
    ]
   },
   "o_twilight": {
-   "map": 6,
-   "name": "L’Épée du crépuscule",
-   "en": "Twilight Sword (Surtur)",
+   "map": 5,
+   "name": "Twilight Sword (Surtur)",
+   "fr": "L’Épée du crépuscule",
    "sub": "l’épée de Surtur",
    "desc": "Épée capable de réécrire la réalité, liée au destin d’Asgard.",
    "cat": "obj",
@@ -3849,9 +3938,9 @@
    ]
   },
   "o_controlrod": {
-   "map": 6,
-   "name": "Le Bâton de contrôle cosmique",
-   "en": "Cosmic Control Rod",
+   "map": 5,
+   "name": "Cosmic Control Rod",
+   "fr": "Le Bâton de contrôle cosmique",
    "sub": "le sceptre d’Annihilus",
    "desc": "Source d’immortalité et de pouvoir d’Annihilus.",
    "cat": "obj",
@@ -3863,9 +3952,9 @@
    ]
   },
   "o_serpent": {
-   "map": 6,
-   "name": "La Couronne du Serpent",
-   "en": "Serpent Crown",
+   "map": 5,
+   "name": "Serpent Crown",
+   "fr": "La Couronne du Serpent",
    "sub": "la couronne de Set",
    "desc": "Couronne liée au dieu-serpent Set, qui corrompt celui qui la porte.",
    "cat": "obj",
@@ -3876,7 +3965,7 @@
    ]
   },
   "x_set": {
-   "map": 6,
+   "map": 5,
    "name": "Set",
    "sub": "le dieu-serpent",
    "desc": "Ancien Dieu serpent, lié à la Couronne du Serpent.",
@@ -3889,9 +3978,9 @@
    ]
   },
   "o_watoomb": {
-   "map": 6,
-   "name": "La Baguette de Watoomb",
-   "en": "Wand of Watoomb",
+   "map": 5,
+   "name": "Wand of Watoomb",
+   "fr": "La Baguette de Watoomb",
    "sub": "l’arme mystique",
    "desc": "Artefact mystique capable d’amplifier énormément la magie de son détenteur.",
    "cat": "obj",
@@ -3916,8 +4005,8 @@
   },
   "p_kyln": {
    "map": 6,
-   "name": "Le Kyln",
-   "en": "Kyln",
+   "name": "Kyln",
+   "fr": "Le Kyln",
    "sub": "la prison cosmique",
    "desc": "Prison aux confins de l’univers, près de la Crunch.",
    "cat": "pla",
@@ -3992,6 +4081,12 @@
     "o_twilight",
     "o_uru",
     "p_heven",
+    "r_alfheim",
+    "r_bifrost",
+    "r_midgard",
+    "r_nidavellir",
+    "r_valhalla",
+    "r_vanaheim",
     "x_hela",
     "x_odin",
     "x_yggdrasil"
@@ -3999,8 +4094,8 @@
   },
   "p_bluearea": {
    "map": 6,
-   "name": "Zone bleue de la Lune",
-   "en": "Blue Area of the Moon",
+   "name": "Blue Area of the Moon",
+   "fr": "Zone bleue de la Lune",
    "sub": "l’oasis kree",
    "desc": "Zone respirable de la Lune bâtie par les Kree, demeure d’Uatu.",
    "cat": "pla",
@@ -4013,8 +4108,8 @@
   },
   "p_nexus": {
    "map": 6,
-   "name": "Nexus de toutes les réalités",
-   "en": "Nexus of All Realities",
+   "name": "Nexus of All Realities",
+   "fr": "Nexus de toutes les réalités",
    "sub": "le carrefour des mondes",
    "desc": "Point où toutes les réalités se rejoignent, dans les marais de Floride.",
    "cat": "pla",
@@ -4026,8 +4121,8 @@
   },
   "p_crossroads": {
    "map": 6,
-   "name": "Le Carrefour",
-   "en": "Crossroads (Dimension)",
+   "name": "Crossroads (Dimension)",
+   "fr": "Le Carrefour",
    "sub": "la dimension des passages",
    "desc": "Dimension de transit qui ouvre sur d’autres mondes.",
    "cat": "pla",
@@ -4039,8 +4134,8 @@
   },
   "p_otherworld": {
    "map": 6,
-   "name": "L’Autremonde",
-   "en": "Otherworld",
+   "name": "Otherworld",
+   "fr": "L’Autremonde",
    "sub": "le royaume celtique",
    "desc": "Dimension mystique celtique, siège du Captain Britain Corps.",
    "cat": "pla",
@@ -4064,8 +4159,8 @@
   },
   "p_cancerverse": {
    "map": 6,
-   "name": "Le Cancerverse",
-   "en": "Cancerverse",
+   "name": "Cancerverse",
+   "fr": "Le Cancerverse",
    "sub": "l’univers sans mort",
    "desc": "Univers où la Mort a été vaincue et où la vie prolifère sans fin.",
    "cat": "pla",
@@ -4089,10 +4184,154 @@
     "p_asgard"
    ]
   },
+  "r_vanaheim": {
+   "map": 6,
+   "name": "Vanaheim",
+   "sub": "le royaume des Vanes",
+   "desc": "Royaume des Vanes, peuple frère des Ases. Il partage avec Asgard, Alfheim et Nidavellir le même continent céleste.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Official Handbook of the Marvel Universe vol. 2 #1 (1985) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "p_asgard",
+    "x_yggdrasil"
+   ]
+  },
+  "r_alfheim": {
+   "map": 6,
+   "name": "Alfheim",
+   "sub": "le royaume des Elfes de lumière",
+   "desc": "Royaume des Elfes de lumière, gouverné par la reine Aelsa ; il est rattaché au même continent qu’Asgard.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Thor #277 (1978) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "p_asgard",
+    "x_yggdrasil"
+   ]
+  },
+  "r_nidavellir": {
+   "map": 6,
+   "name": "Nidavellir",
+   "sub": "le royaume des Nains",
+   "desc": "Les « Champs sombres », royaume des Nains forgerons, artisans de Mjolnir et des armes des dieux.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Journey Into Mystery #103 (1964) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "o_mjolnir",
+    "p_asgard",
+    "x_yggdrasil"
+   ]
+  },
+  "r_midgard": {
+   "map": 6,
+   "name": "Midgard (Earth)",
+   "fr": "Midgard",
+   "sub": "la Terre des humains",
+   "desc": "La Terre vue par les Asgardiens : le royaume des humains, au centre de l’arbre-monde.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Ka-Zar #1 (pulp, 1936, rétroactivement) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "p_asgard",
+    "r_bifrost",
+    "x_yggdrasil"
+   ]
+  },
+  "r_jotunheim": {
+   "map": 6,
+   "name": "Jotunheim",
+   "sub": "le royaume des Géants",
+   "desc": "Terre glacée des Géants, berceau de Loki, ennemi juré d’Asgard.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Journey Into Mystery #97 (1963) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_loki",
+    "x_yggdrasil"
+   ]
+  },
+  "r_svartalfheim": {
+   "map": 6,
+   "name": "Svartalfheim",
+   "sub": "le royaume des Elfes noirs",
+   "desc": "Le « monde sombre » des Elfes noirs de Malekith le Maudit, déclencheur de la Guerre des Royaumes.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Thor #347 (1984) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_yggdrasil"
+   ]
+  },
+  "r_muspelheim": {
+   "map": 6,
+   "name": "Muspelheim",
+   "sub": "le royaume du feu",
+   "desc": "Royaume de flammes éternelles des démons du feu, gouverné par Surtur.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Journey Into Mystery #97 (1963) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_yggdrasil"
+   ]
+  },
+  "r_niffleheim": {
+   "map": 6,
+   "name": "Niffleheim",
+   "sub": "le royaume de la brume",
+   "desc": "Royaume de glace et de brume, séjour des morts déshonorés.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Journey Into Mystery #102 (1964) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "r_hel",
+    "x_yggdrasil"
+   ]
+  },
+  "r_hel": {
+   "map": 6,
+   "name": "Hel",
+   "sub": "le royaume des morts de Hela",
+   "desc": "Région de Niffleheim où séjournent les morts ni glorieux ni déshonorés, sous le règne de Hela.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Journey Into Mystery #102 (1964) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "r_niffleheim",
+    "x_hela"
+   ]
+  },
+  "r_valhalla": {
+   "map": 6,
+   "name": "Valhalla",
+   "sub": "la demeure des morts glorieux",
+   "desc": "Séjour des guerriers morts avec honneur, distinct d’Asgard mais étroitement lié à lui.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Daring Mystery Comics #6 (1940) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "p_asgard"
+   ]
+  },
+  "r_bifrost": {
+   "map": 6,
+   "name": "Bifrost",
+   "fr": "Le Bifrost",
+   "sub": "le pont arc-en-ciel",
+   "desc": "Le pont arc-en-ciel gardé par Heimdall, qui relie Asgard aux autres royaumes.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Journey Into Mystery #85 (1962) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "p_asgard",
+    "r_midgard"
+   ]
+  },
   "g_guardians": {
    "map": 6,
-   "name": "Gardiens de la Galaxie",
-   "en": "Guardians of the Galaxy",
+   "name": "Guardians of the Galaxy",
+   "fr": "Gardiens de la Galaxie",
    "sub": "les protecteurs cosmiques",
    "desc": "Équipe cosmique moderne réunie autour de Star-Lord après Annihilation: Conquest.",
    "cat": "grp",
@@ -4174,8 +4413,8 @@
   },
   "g_blackorder": {
    "map": 6,
-   "name": "L’Ordre noir",
-   "en": "Black Order",
+   "name": "Black Order",
+   "fr": "L’Ordre noir",
    "sub": "les lieutenants de Thanos",
    "desc": "Guerriers de Thanos qui ravagent les mondes en son nom.",
    "cat": "grp",
@@ -4188,8 +4427,8 @@
   },
   "g_annwave": {
    "map": 6,
-   "name": "La Vague d’Annihilation",
-   "en": "Annihilation Wave",
+   "name": "Annihilation Wave",
+   "fr": "La Vague d’Annihilation",
    "sub": "l’armée de la Zone négative",
    "desc": "Armée immense menée par Annihilus contre l’univers.",
    "cat": "grp",
@@ -4202,8 +4441,8 @@
   },
   "g_timekeepers": {
    "map": 6,
-   "name": "Les Gardiens du Temps",
-   "en": "Time-Keepers",
+   "name": "Time-Keepers",
+   "fr": "Les Gardiens du Temps",
    "sub": "les maîtres de la TVA",
    "desc": "Êtres de la fin des temps qui supervisent le flux temporel.",
    "cat": "grp",
@@ -4216,8 +4455,8 @@
   },
   "g_church": {
    "map": 6,
-   "name": "L’Église universelle de la vérité",
-   "en": "Universal Church of Truth",
+   "name": "Universal Church of Truth",
+   "fr": "L’Église universelle de la vérité",
    "sub": "le culte du Magus",
    "desc": "Église galactique fondée par le Magus, qui convertit des mondes entiers.",
    "cat": "grp",
@@ -4230,8 +4469,8 @@
   },
   "g_vishanti": {
    "map": 6,
-   "name": "Les Vishanti",
-   "en": "Vishanti (Earth-616)",
+   "name": "Vishanti (Earth-616)",
+   "fr": "Les Vishanti",
    "sub": "la trinité mystique",
    "desc": "Trinité de dieux bienveillants : Agamotto, Oshtur et Hoggoth.",
    "cat": "grp",
@@ -4257,8 +4496,8 @@
   },
   "g_reeds": {
    "map": 6,
-   "name": "Conseil des Reed",
-   "en": "Council of Reeds",
+   "name": "Council of Reeds",
+   "fr": "Conseil des Reed",
    "sub": "l’assemblée des Reed Richards",
    "desc": "Assemblée de versions de Reed Richards venues de plusieurs réalités.",
    "cat": "grp",
@@ -4270,8 +4509,8 @@
   },
   "g_builders": {
    "map": 6,
-   "name": "Les Bâtisseurs",
-   "en": "Builders",
+   "name": "Builders",
+   "fr": "Les Bâtisseurs",
    "sub": "les architectes de l’univers",
    "desc": "Race très ancienne qui se dit à l’origine de nombreuses formes de vie.",
    "cat": "grp",
@@ -4299,8 +4538,8 @@
   },
   "g_annihilators": {
    "map": 6,
-   "name": "Les Annihilators",
-   "en": "Annihilators",
+   "name": "Annihilators",
+   "fr": "Les Annihilators",
    "sub": "les poids lourds cosmiques",
    "desc": "Équipe des plus puissants héros cosmiques.",
    "cat": "grp",
@@ -4312,8 +4551,8 @@
   },
   "g_phalanx": {
    "map": 6,
-   "name": "La Phalange",
-   "en": "Phalanx",
+   "name": "Phalanx",
+   "fr": "La Phalange",
    "sub": "le collectif techno-organique",
    "desc": "Collectif techno-organique qui assimile toute vie.",
    "cat": "grp",
@@ -4325,7 +4564,7 @@
    ]
   },
   "x_quasar": {
-   "map": 6,
+   "map": 5,
    "name": "Quasar",
    "sub": "le protecteur de l’univers",
    "desc": "Wendell Vaughn, porteur des Quantum Bands, désigné protecteur de l’univers.",
@@ -4337,9 +4576,9 @@
    ]
   },
   "x_ronan": {
-   "map": 6,
-   "name": "Ronan",
-   "en": "Ronan the Accuser",
+   "map": 5,
+   "name": "Ronan the Accuser",
+   "fr": "Ronan",
    "sub": "l’Accusateur kree",
    "desc": "Accusateur suprême de l’Empire kree.",
    "cat": "per",
@@ -4350,7 +4589,7 @@
    ]
   },
   "x_rider": {
-   "map": 6,
+   "map": 5,
    "name": "Nova (Richard Rider)",
    "sub": "le dernier centurion",
    "desc": "Richard Rider, adolescent devenu porteur de la Nova Force.",
@@ -4363,7 +4602,7 @@
    ]
   },
   "x_starlord": {
-   "map": 6,
+   "map": 5,
    "name": "Star-Lord",
    "sub": "le chef des Gardiens",
    "desc": "Peter Quill, mi-humain, chef des Gardiens de la Galaxie.",
@@ -4375,7 +4614,7 @@
    ]
   },
   "x_gamora": {
-   "map": 6,
+   "map": 5,
    "name": "Gamora",
    "sub": "la fille adoptive de Thanos",
    "desc": "Dernière de son espèce, élevée par Thanos pour devenir une arme.",
@@ -4389,9 +4628,9 @@
    ]
   },
   "x_drax": {
-   "map": 6,
-   "name": "Drax",
-   "en": "Drax the Destroyer",
+   "map": 5,
+   "name": "Drax the Destroyer",
+   "fr": "Drax",
    "sub": "le destructeur",
    "desc": "Arthur Douglas, ressuscité par Kronos pour tuer Thanos.",
    "cat": "per",
@@ -4404,9 +4643,9 @@
    ]
   },
   "x_marvell": {
-   "map": 6,
-   "name": "Mar-Vell",
-   "en": "Captain Mar-Vell",
+   "map": 5,
+   "name": "Captain Mar-Vell",
+   "fr": "Mar-Vell",
    "sub": "le premier Captain Marvel",
    "desc": "Officier kree qui se range du côté de la Terre ; sa mort marque l’univers Marvel.",
    "cat": "per",
@@ -4420,7 +4659,7 @@
    ]
   },
   "x_genis": {
-   "map": 6,
+   "map": 5,
    "name": "Genis-Vell",
    "sub": "le fils de Mar-Vell",
    "desc": "Fils de Mar-Vell, il acquiert la conscience cosmique.",
@@ -4432,7 +4671,7 @@
    ]
   },
   "x_moondragon": {
-   "map": 6,
+   "map": 5,
    "name": "Moondragon",
    "sub": "la télépathe de Titan",
    "desc": "Heather Douglas, élevée sur Titan, télépathe redoutable.",
@@ -4445,7 +4684,7 @@
    ]
   },
   "x_nebula": {
-   "map": 6,
+   "map": 5,
    "name": "Nebula",
    "sub": "la petite-fille de Thanos",
    "desc": "Pirate de l’espace se disant petite-fille de Thanos.",
@@ -4457,7 +4696,7 @@
    ]
   },
   "x_gladiator": {
-   "map": 6,
+   "map": 5,
    "name": "Gladiator",
    "sub": "le prétorien Shi’ar",
    "desc": "Kallark, chef de la Garde impériale Shi’ar.",
@@ -4469,7 +4708,7 @@
    ]
   },
   "x_starfox": {
-   "map": 6,
+   "map": 5,
    "name": "Starfox",
    "sub": "le frère de Thanos",
    "desc": "Eros de Titan, frère de Thanos, Éternel au charme surnaturel.",
@@ -4482,9 +4721,9 @@
    ]
   },
   "x_kang": {
-   "map": 6,
-   "name": "Kang le Conquérant",
-   "en": "Kang the Conqueror",
+   "map": 5,
+   "name": "Kang the Conqueror",
+   "fr": "Kang le Conquérant",
    "sub": "le conquérant du temps",
    "desc": "Conquérant venu du futur, maître des voyages temporels.",
    "cat": "per",
@@ -4497,7 +4736,7 @@
    ]
   },
   "x_immortus": {
-   "map": 6,
+   "map": 5,
    "name": "Immortus",
    "sub": "le maître des Limbes",
    "desc": "Version tardive de Kang, serviteur des Gardiens du Temps.",
@@ -4511,9 +4750,9 @@
    ]
   },
   "x_hwr": {
-   "map": 6,
-   "name": "Celui qui reste",
-   "en": "He Who Remains",
+   "map": 5,
+   "name": "He Who Remains",
+   "fr": "Celui qui reste",
    "sub": "le dernier directeur de la TVA",
    "desc": "Dernier directeur de la TVA à la fin des temps.",
    "cat": "per",
@@ -4524,7 +4763,7 @@
    ]
   },
   "x_sentry": {
-   "map": 6,
+   "map": 5,
    "name": "Sentry",
    "sub": "le héros et le Void",
    "desc": "Héros d’une immense puissance dont la part sombre est le Void.",
@@ -4536,7 +4775,7 @@
    ]
   },
   "x_odin": {
-   "map": 6,
+   "map": 5,
    "name": "Odin",
    "sub": "le Père de toutes choses",
    "desc": "Roi d’Asgard et père de Thor.",
@@ -4549,7 +4788,7 @@
    ]
   },
   "x_hela": {
-   "map": 6,
+   "map": 5,
    "name": "Hela",
    "sub": "déesse de la mort asgardienne",
    "desc": "Souveraine de Hel et Niflheim.",
@@ -4557,11 +4796,12 @@
    "cert": "u",
    "src": "Journey Into Mystery #102 (1964) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
    "rel": [
-    "p_asgard"
+    "p_asgard",
+    "r_hel"
    ]
   },
   "x_bill": {
-   "map": 6,
+   "map": 5,
    "name": "Beta Ray Bill",
    "sub": "le Korbinite digne",
    "desc": "Guerrier korbinite jugé digne de soulever Mjolnir.",
@@ -4574,7 +4814,7 @@
    ]
   },
   "x_ikaris": {
-   "map": 6,
+   "map": 5,
    "name": "Ikaris",
    "sub": "l’Éternel",
    "desc": "Éternel de la Terre, chef de son peuple à plusieurs reprises.",
@@ -4587,7 +4827,7 @@
    ]
   },
   "x_sersi": {
-   "map": 6,
+   "map": 5,
    "name": "Sersi",
    "sub": "l’Éternelle",
    "desc": "Éternelle capable de transmuter la matière.",
@@ -4599,7 +4839,7 @@
    ]
   },
   "x_zuras": {
-   "map": 6,
+   "map": 5,
    "name": "Zuras",
    "sub": "le chef des Éternels",
    "desc": "Chef des Éternels et père de Thena.",
@@ -4612,7 +4852,7 @@
    ]
   },
   "x_wiccan": {
-   "map": 6,
+   "map": 5,
    "name": "Wiccan",
    "sub": "le futur Démiurge",
    "desc": "Billy Kaplan, sorcier destiné à devenir le Démiurge.",
@@ -4624,7 +4864,7 @@
    ]
   },
   "x_clea": {
-   "map": 6,
+   "map": 5,
    "name": "Clea",
    "sub": "la Sorcière suprême",
    "desc": "Faltine, fille d’Umar, Sorcière suprême de la Dimension noire.",
@@ -4637,7 +4877,7 @@
    ]
   },
   "x_korvac": {
-   "map": 6,
+   "map": 5,
    "name": "Korvac",
    "sub": "l’homme devenu dieu",
    "desc": "Humain du futur qui s’empare du pouvoir de Galactus.",
@@ -4649,9 +4889,9 @@
    ]
   },
   "e_kreeskrull": {
-   "map": 6,
-   "name": "La Guerre Kree-Skrull",
-   "en": "Kree-Skrull War",
+   "map": 7,
+   "name": "Kree-Skrull War",
+   "fr": "La Guerre Kree-Skrull",
    "sub": "Avengers #89-97",
    "desc": "Les Avengers sont pris dans la guerre entre Kree et Skrulls.",
    "cat": "evt",
@@ -4663,9 +4903,9 @@
    ]
   },
   "e_madonna": {
-   "map": 6,
-   "name": "La Madone céleste",
-   "en": "Celestial Madonna",
+   "map": 7,
+   "name": "Celestial Madonna",
+   "fr": "La Madone céleste",
    "sub": "Giant-Size Avengers #4",
    "desc": "Mantis s’unit à un Kotati pour accomplir sa destinée de Madone céleste.",
    "cat": "evt",
@@ -4676,9 +4916,9 @@
    ]
   },
   "e_korvac": {
-   "map": 6,
-   "name": "La Saga Korvac",
-   "en": "Korvac Saga",
+   "map": 7,
+   "name": "Korvac Saga",
+   "fr": "La Saga Korvac",
    "sub": "Avengers #167-177",
    "desc": "Korvac défie les Avengers et les Gardiens de la Galaxie.",
    "cat": "evt",
@@ -4689,9 +4929,9 @@
    ]
   },
   "e_deathmv": {
-   "map": 6,
-   "name": "La Mort de Captain Marvel",
-   "en": "Death of Captain Marvel",
+   "map": 7,
+   "name": "Death of Captain Marvel",
+   "fr": "La Mort de Captain Marvel",
    "sub": "Marvel Graphic Novel #1",
    "desc": "Mar-Vell meurt d’un cancer, accueilli par Thanos et la Mort.",
    "cat": "evt",
@@ -4704,9 +4944,9 @@
    ]
   },
   "e_contest": {
-   "map": 6,
-   "name": "Le Tournoi des champions",
-   "en": "Contest of Champions",
+   "map": 7,
+   "name": "Contest of Champions",
+   "fr": "Le Tournoi des champions",
    "sub": "Contest of Champions #1-3",
    "desc": "Le Grand Maître et la Mort s’affrontent à travers des champions terriens.",
    "cat": "evt",
@@ -4719,9 +4959,9 @@
    ]
   },
   "e_trial": {
-   "map": 6,
-   "name": "Le procès de Reed Richards",
-   "en": "Trial of Reed Richards",
+   "map": 7,
+   "name": "Trial of Reed Richards",
+   "fr": "Le procès de Reed Richards",
    "sub": "Fantastic Four #262",
    "desc": "Reed Richards est jugé pour avoir sauvé Galactus.",
    "cat": "evt",
@@ -4733,9 +4973,9 @@
    ]
   },
   "e_infwar": {
-   "map": 6,
-   "name": "La Guerre de l’Infini",
-   "en": "Infinity War",
+   "map": 7,
+   "name": "Infinity War",
+   "fr": "La Guerre de l’Infini",
    "sub": "Infinity War #1-6",
    "desc": "Le Magus revient et crée des doubles maléfiques des héros.",
    "cat": "evt",
@@ -4747,9 +4987,9 @@
    ]
   },
   "e_galstorm": {
-   "map": 6,
-   "name": "Operation Galactic Storm",
-   "en": "Operation: Galactic Storm",
+   "map": 7,
+   "name": "Operation: Galactic Storm",
+   "fr": "Operation Galactic Storm",
    "sub": "Captain America #398",
    "desc": "Les Avengers sont pris dans la guerre Kree-Shi’ar.",
    "cat": "evt",
@@ -4761,9 +5001,9 @@
    ]
   },
   "e_crusade": {
-   "map": 6,
-   "name": "La Croisade de l’Infini",
-   "en": "Infinity Crusade",
+   "map": 7,
+   "name": "Infinity Crusade",
+   "fr": "La Croisade de l’Infini",
    "sub": "Infinity Crusade #1-6",
    "desc": "La Déesse, part bienveillante d’Adam Warlock, convertit des héros.",
    "cat": "evt",
@@ -4774,7 +5014,7 @@
    ]
   },
   "e_forever": {
-   "map": 6,
+   "map": 7,
    "name": "Avengers Forever",
    "sub": "Avengers Forever #1-12",
    "desc": "Les Avengers traversent le temps contre Immortus.",
@@ -4787,7 +5027,7 @@
    ]
   },
   "e_conquest": {
-   "map": 6,
+   "map": 7,
    "name": "Annihilation: Conquest",
    "sub": "Annihilation: Conquest #1-6",
    "desc": "La Phalange envahit l’espace kree.",
@@ -4801,7 +5041,7 @@
    ]
   },
   "e_secretinv": {
-   "map": 6,
+   "map": 7,
    "name": "Secret Invasion",
    "sub": "Secret Invasion #1-8",
    "desc": "Les Skrulls infiltrent la Terre.",
@@ -4813,9 +5053,9 @@
    ]
   },
   "e_warkings": {
-   "map": 6,
-   "name": "La Guerre des rois",
-   "en": "War of Kings",
+   "map": 7,
+   "name": "War of Kings",
+   "fr": "La Guerre des rois",
    "sub": "War of Kings #1-6",
    "desc": "Kree et Shi’ar s’affrontent.",
    "cat": "evt",
@@ -4827,7 +5067,7 @@
    ]
   },
   "e_imperative": {
-   "map": 6,
+   "map": 7,
    "name": "Thanos Imperative",
    "sub": "Thanos Imperative #1-6",
    "desc": "Le Cancerverse envahit l’univers.",
@@ -4840,7 +5080,7 @@
    ]
   },
   "e_avx": {
-   "map": 6,
+   "map": 7,
    "name": "Avengers vs. X-Men",
    "sub": "Avengers vs. X-Men #1-12",
    "desc": "Le retour de la Force Phénix oppose Avengers et X-Men.",
@@ -4852,7 +5092,7 @@
    ]
   },
   "e_infinity": {
-   "map": 6,
+   "map": 7,
    "name": "Infinity",
    "sub": "Infinity #1-6",
    "desc": "Les Bâtisseurs et Thanos attaquent en même temps.",
@@ -4866,7 +5106,7 @@
    ]
   },
   "e_hunger": {
-   "map": 6,
+   "map": 7,
    "name": "Hunger",
    "sub": "Hunger #1-4",
    "desc": "Un Galactus pénètre dans l’univers Ultimate.",
@@ -4878,7 +5118,7 @@
    ]
   },
   "e_originsin": {
-   "map": 6,
+   "map": 7,
    "name": "Original Sin",
    "sub": "Original Sin #1-8",
    "desc": "Uatu est assassiné.",
@@ -4890,7 +5130,7 @@
    ]
   },
   "e_infwars": {
-   "map": 6,
+   "map": 7,
    "name": "Infinity Wars",
    "sub": "Infinity Wars #1-6",
    "desc": "Gamora fusionne des réalités avec les Pierres.",
@@ -4903,7 +5143,7 @@
    ]
   },
   "e_empyre": {
-   "map": 6,
+   "map": 7,
    "name": "Empyre",
    "sub": "Empyre #0-6",
    "desc": "Kree et Skrulls unis attaquent la Terre.",
@@ -4916,9 +5156,9 @@
    ]
   },
   "e_judgment": {
-   "map": 6,
-   "name": "Judgment Day",
-   "en": "A.X.E.: Judgment Day",
+   "map": 7,
+   "name": "A.X.E.: Judgment Day",
+   "fr": "Judgment Day",
    "sub": "A.X.E.: Judgment Day #1-6",
    "desc": "Un Céleste juge l’humanité.",
    "cat": "evt",

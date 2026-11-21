@@ -18,7 +18,7 @@ Object.assign(A.wiki, AD.wiki); Object.assign(A.img, AD.img);
 if (fs.existsSync(path.join(ROOT, 'content/dc_wiki.json'))) for (const [k, v] of Object.entries(JSON.parse(fs.readFileSync(path.join(ROOT, 'content/dc_wiki.json'), 'utf8')).entries)) WK['dc_' + k] = v;
 const UNAME = { marvel: 'Marvel', dc: 'DC' };
 const N = A.nodes, IDS = Object.keys(N);
-const isChrono = id => N[id].u === 'marvel' && N[id].map === 7;   // carte 7 Marvel : chronologie éditoriale (événements sans fiche)
+const isChrono = id => N[id].u === 'marvel' && /^e\d+$/.test(id);   // jalons de la chronologie éditoriale Marvel (événements sans fiche)
 const explorerURL = id => 'explorer.html' + (N[id].u === 'dc' ? '?u=dc' : '') + '#' + id;
 const SITE = 'https://lukecage2003.github.io/marvel-primeston/';
 const WKDATE = fs.existsSync(path.join(ROOT, 'content/wiki.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'content/wiki.json'), 'utf8')).fetched : '';
@@ -32,6 +32,60 @@ const relName = c => (A.cert[c] || A.cert.u).name, relDesc = c => (A.cert[c] || 
 const mapName = (m, u) => { const L = u === 'dc' ? AD.maps : A.maps; return L[m] ? L[m].name : ''; };
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
 const initials = s => esc(String(s).replace(/^(L’|L'|La |Le |Les )/, '').slice(0, 2).toUpperCase());
+
+
+/* ---------- biographies (texte composé à partir des fiches, des faits relevés et des apparitions) ---------- */
+const APP = fs.existsSync(path.join(ROOT, 'content/appearances.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'content/appearances.json'), 'utf8')).entries : {};
+const FAMJ = fs.existsSync(path.join(ROOT, 'content/family.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'content/family.json'), 'utf8')) : { parents: [], siblings: [] };
+const DCFAM = []; for (const m of (AD.mapsRaw || [])) for (const e of (m.fam || [])) DCFAM.push(e);
+const fin = t => /[.…!?]$/.test(t) ? t : t + '.';
+const liste = a => a.length < 2 ? (a[0] || '') : a.slice(0, -1).join(', ') + ' et ' + a[a.length - 1];
+const terre = s => String(s).replace(/\bEarth-(\d+)/g, 'Terre-$1');
+function famLinks(id) {
+  const P = [], K = [], S = [];
+  for (const [a, b, note, side] of FAMJ.parents) { if (b === id && N[a]) P.push([a, side === 'c' ? '' : note]); if (a === id && N[b]) K.push([b, side === 'c' ? note : /adoptif|adoptive/.test(note) ? 'adoption' : /création|créateur/.test(note) ? 'création' : '']); }
+  for (const [a, b, note] of FAMJ.siblings) { if (a === id && N[b]) S.push([b, note]); if (b === id && N[a]) S.push([a, note]); }
+  return { P, K, S };
+}
+/* rend une biographie : link(id, texte) produit le lien vers une autre fiche */
+const WALIAS = { h_eter: 'eternity', h_inf: 'infinity', h_obl: 'oblivion', h_chaos: 'chaos', h_order: 'order', h_trib: 'tribunal', h_oaa: 'god' };
+function bioHTML(id, link) {
+  const n = N[id], w = WK[id] || WK[WALIAS[id]] || {}, F = Object.fromEntries((w.facts || []).map(([l, v]) => [l, v])), out = [];
+  const name = `<b>${esc(n.name)}</b>`;
+  out.push(`<p>${name}${n.sub ? `, ${esc(n.sub)}` : ''}. ${esc(n.desc || '')}</p>`);
+  const orig = [];
+  if (F['Première apparition']) orig.push(`Sa première apparition remonte à <i>${esc(F['Première apparition'][0])}</i>${F['Créateurs'] ? `, sous la plume de ${esc(liste(F['Créateurs']))}` : ''}.`);
+  else if (F['Créateurs']) orig.push(`On doit sa création à ${esc(liste(F['Créateurs']))}.`);
+  if (F['Nom réel']) orig.push(`Nom réel : ${esc(F['Nom réel'][0])}.`);
+  if (F['Nom actuel'] && F['Nom actuel'][0] !== n.name) orig.push(`Nom actuel : ${esc(F['Nom actuel'][0])}.`);
+  if (F['Autres noms']) orig.push(`Autres noms connus : ${esc(fin(liste(F['Autres noms'])))}`);
+  if (F['Nature']) orig.push(`Nature : ${esc(fin(F['Nature'].join(', ')))}`);
+  if (F['Réalité'] || F['Univers']) orig.push(`Réalité d’origine : ${esc(terre((F['Réalité'] || F['Univers']).join(', ')))}.`);
+  if (orig.length) out.push(`<h3>Origines</h3><p>${orig.join(' ')}</p>`);
+  const fl = famLinks(id), fam = [], who = ([x, note]) => link(x, N[x].name) + (note ? ` <small>(${esc(note)})</small>` : '');
+  if (fl.P.length) fam.push(`<li><b>Parents</b> : ${fl.P.map(who).join(', ')}</li>`); else if (F['Parents']) fam.push(`<li><b>Parents</b> : ${esc(F['Parents'].join(', '))}</li>`);
+  if (fl.S.length) fam.push(`<li><b>Fratrie</b> : ${fl.S.map(who).join(', ')}</li>`); else if (F['Fratrie']) fam.push(`<li><b>Fratrie</b> : ${esc(F['Fratrie'].join(', '))}</li>`);
+  if (fl.K.length) fam.push(`<li><b>Descendance</b> : ${fl.K.map(who).join(', ')}</li>`); else if (F['Descendance']) fam.push(`<li><b>Descendance</b> : ${esc(F['Descendance'].join(', '))}</li>`);
+  if (!fam.length && F['Proches']) fam.push(`<li><b>Proches</b> : ${esc(F['Proches'].join(', '))}</li>`);
+  if (fam.length) out.push(`<h3>Famille</h3><ul>${fam.join('')}</ul>`);
+  const role = [];
+  if (F['Fonction']) role.push(`<li><b>Rôle</b> : ${esc(F['Fonction'].join(', '))}</li>`);
+  if (F['Affiliations']) role.push(`<li><b>Affiliations</b> : ${esc(F['Affiliations'].join(', '))}</li>`);
+  if (F['Base']) role.push(`<li><b>Base</b> : ${esc(terre(F['Base'].join(', ')))}</li>`);
+  if (F['Dirigeants']) role.push(`<li><b>Dirigeants</b> : ${esc(F['Dirigeants'].join(', '))}</li>`);
+  if (F['Détenteur']) role.push(`<li><b>Détenteur</b> : ${esc(F['Détenteur'][0])}</li>`);
+  if (F['Lieu'] || F['Galaxie']) role.push(`<li><b>Situation</b> : ${esc(terre([...(F['Lieu'] || []), ...(F['Galaxie'] || [])].join(', ')))}</li>`);
+  if (role.length) out.push(`<h3>Rôle et alliances</h3><ul>${role.join('')}</ul>`);
+  if (n.fact) out.push(`<p class="fact">${esc(n.fact)}</p>`);
+  const a = APP[id] || APP[WALIAS[id]], key = (n.src || '').split(' · ').map(x => x.replace(/\s+—.*$/, '').trim()).filter(Boolean);
+  const ap = [];
+  if (a) ap.push(`<p><b>${a.n.toLocaleString('fr-FR')}</b> apparition${a.n > 1 ? 's' : ''} recensée${a.n > 1 ? 's' : ''} sur le wiki ${n.u === 'dc' ? 'DC' : 'Marvel'}.</p>`);
+  if (a && a.first && a.first.length) ap.push(`<p><b>Premières apparitions</b> : ${a.first.map(x => `<i>${esc(x)}</i>`).join(', ')}.</p>`);
+  if (key.length) ap.push(`<p><b>Apparitions clés</b> : ${key.map(x => `<i>${esc(x)}</i>`).join(', ')}.</p>`);
+  if (a && a.last && a.last.length) ap.push(`<p><b>Apparitions les plus récentes</b> : ${a.last.map(x => `<i>${esc(x)}</i>`).join(', ')}.</p>`);
+  if (ap.length) out.push(`<h3>Apparitions</h3>${ap.join('')}`);
+  return out.join('\n');
+}
 
 /* ---------- validation des données ---------- */
 function validate() {
@@ -49,8 +103,8 @@ function validate() {
 }
 
 /* ---------- gabarit commun ---------- */
-const NAV = [['index.html', 'Accueil'], ['explorer.html', 'Marvel'], ['explorer.html?u=dc', 'DC'], ['encyclopedie.html', 'Encyclopédie'], ['cosmos.html', 'Cosmos'], ['structures.html', 'Structures'], ['chronologie.html', 'Chronologie'], ['archive.html', 'Archive'], ['dossiers.html', 'Dossiers']];
-const TAB = [['explorer.html', 'Explorer'], ['encyclopedie.html', 'Encyclopédie'], ['recherche.html', 'Recherche'], ['dossiers.html', 'Dossiers']];
+const NAV = [['index.html', 'Les plans'], ['explorer.html', 'Plans Marvel'], ['explorer.html?u=dc', 'Plans DC'], ['encyclopedie.html', 'Fiches'], ['archive.html', 'Sources']];
+const TAB = [['index.html', 'Plans'], ['explorer.html', 'Marvel'], ['explorer.html?u=dc', 'DC'], ['encyclopedie.html', 'Fiches']];
 function page({ file, title, desc, body, active }) {
   const base = file.includes('/') ? '../' : '';
   const cur = h => h === active ? ' aria-current="page"' : '';
@@ -104,7 +158,7 @@ const relBadge = c => `<span class="rel ${esc(c)}" title="${esc(relDesc(c))}">${
 const fiche = id => 'fiche/' + id + '.html';
 function cardB(id, base) {   // B : entité
   const n = N[id];
-  return `<a class="card cB" href="${base}${fiche(id)}" data-uni="${n.u}" data-cat="${esc(n.cat)}" data-rel="${esc(n.cert)}" data-text="${esc(norm([n.name, n.en, n.sub].join(' ')))}">
+  return `<a class="card cB" href="${base}${fiche(id)}" data-uni="${n.u}" data-cat="${esc(n.cat)}" data-rel="${esc(n.cert)}" data-text="${esc(norm([n.name, n.fr, n.sub].join(' ')))}">
  ${visual(id, base, 'pic')}
  <span class="body"><span class="cat" style="--c:${catColor(n.cat)}"><span class="uni ${n.u}">${UNAME[n.u]}</span> ${esc(catName(n.cat))}</span><h3>${esc(n.name)}</h3>${n.sub ? `<p>${esc(n.sub)}</p>` : ''}
  <span class="meta">${relBadge(n.cert)}${n.rel.length ? `<span class="muted">${n.rel.length} lien${n.rel.length > 1 ? 's' : ''}</span>` : ''}</span></span></a>`;
@@ -161,7 +215,7 @@ function buildFiche(id) {
   <div class="fid">
    <span class="cat" style="--c:${catColor(n.cat)}"><span class="uni ${n.u}">${UNAME[n.u]}</span> ${esc(catName(n.cat))}</span>
    <h1>${esc(n.name)}</h1>
-   ${n.en ? `<p class="muted">${esc(n.en)}</p>` : ''}
+   ${n.fr ? `<p class="muted">En français : ${esc(n.fr)}</p>` : ''}
    ${n.sub ? `<p class="lead">${esc(n.sub)}</p>` : ''}
    <p class="chipsline">${relBadge(n.cert)}${first ? `<span class="pill">1ʳᵉ apparition · ${esc(first[1][0])}</span>` : ''}${rels.length ? `<span class="pill">${rels.length} relation${rels.length > 1 ? 's' : ''}</span>` : ''}</p>
    <p><a class="btn ghost" href="../${esc(explorerURL(id))}">Voir sur la carte · ${esc(mapName(n.map, n.u))}</a></p>
@@ -170,8 +224,8 @@ function buildFiche(id) {
 </div>
 <div class="fbody">
  <div class="prose">
-  ${n.desc ? `<h2>Présentation</h2><p class="big">${esc(n.desc)}</p>` : ''}
-  ${n.fact ? `<p class="fact">${esc(n.fact)}</p>` : ''}
+  <h2>Biographie</h2>
+  <div class="bio">${bioHTML(id, (x, t) => `<a href="${esc(x)}.html">${esc(t)}</a>`)}</div>
   <h2>Où le lire</h2>
   ${n.src ? `<ul class="srcs">${srcList(n.src, base)}</ul>` : '<p class="note">Aucune source enregistrée pour cette fiche.</p>'}
  </div>
@@ -290,8 +344,10 @@ function buildDossiers(errs) {
 }
 
 function buildSearch() {
-  const idx = IDS.filter(id => !isChrono(id)).map(id => ({ n: N[id].name, a: N[id].en || undefined, s: N[id].sub || undefined, k: UNAME[N[id].u] + ' · ' + catName(N[id].cat), t: N[id].cat, u: fiche(id) }));
+  const idx = IDS.filter(id => !isChrono(id)).map(id => ({ n: N[id].name, a: N[id].fr || undefined, s: N[id].sub || undefined, k: UNAME[N[id].u] + ' · ' + catName(N[id].cat), t: N[id].cat, u: fiche(id) }));
   emit('search.json', JSON.stringify(idx));
+  /* biographies lues par le panneau de l'explorateur au clic sur un nœud */
+  emit('bios.json', JSON.stringify(Object.fromEntries(ENTRIES.map(id => [id, bioHTML(id, (x, t) => `<button type="button" data-go="${esc(x)}">${esc(t)}</button>`)]))));
   const types = Object.keys(A.cats).filter(c => idx.some(e => e.t === c));
   emit('recherche.html', page({ file: 'recherche.html', title: 'Recherche', desc: 'Rechercher une entité, un cosmos, une structure ou un événement.', active: 'recherche.html', body: `<h1>Recherche</h1>
 <p><label class="skip" for="q2">Recherche</label><input id="q2" type="search" placeholder="Nom en français ou en anglais…" autocomplete="off" style="width:100%;max-width:560px;background:var(--surface);border:1px solid var(--line);color:var(--text);font:19px var(--font-text);padding:12px 16px;border-radius:4px"></p>
@@ -300,29 +356,26 @@ function buildSearch() {
 }
 
 function buildHome(dos) {
-  const counts = Object.keys(A.cert).map(c => [c, ENTRIES.filter(id => N[id].cert === c).length]).filter(x => x[1]);
-  const featured = ['eternity', 'infinity', 'tribunal', 'h_death', 'x_galan', 'h_phx', 'h_knull', 'x_arishem'].filter(id => N[id]);
+  /* le site est consacré aux plans : l'accueil est le catalogue des cartes, chacune avec une image tirée de ses nœuds */
+  const pick = (u, m) => { const ids = IDS.filter(id => N[id].u === u && N[id].map === m && !isChrono(id)); const im = ids.map(id => srcFor(id, '')).find(Boolean); return [ids.length, im]; };
+  const mapCard = (u, m, i) => { const L = u === 'dc' ? AD.maps : A.maps, [n, im] = pick(u, m);
+    return `<a class="card mapc ${u}" href="explorer.html?${u === 'dc' ? 'u=dc&amp;' : ''}map=${m}">${im ? `<img src="${esc(im)}" alt="" ${IMGATTR}>` : ''}<span class="mapn">${u === 'dc' ? 'DC' : 'Marvel'} · plan ${i + 1}</span><h3>${esc(L[m].name)}</h3><p>${esc(L[m].sub || '')}</p></a>`; };
   const body = `
 <script>/* anciens liens partagés (…/marvel-primeston/#id) : ils ouvrent la fiche du site */if(/^#[a-z0-9_]+$/.test(location.hash))location.replace('fiche/'+location.hash.slice(1)+'.html')</script>
 <section style="padding:24px 0 8px">
  <span class="kicker">Au-delà des héros</span>
- <h1>Les cosmologies Marvel et DC, cartographiées et sourcées</h1>
- <p class="lead">Un atlas et une encyclopédie des structures cosmiques des comics : les huit Cosmos de Marvel, l’Orrerie des mondes de DC, les entités abstraites, les multivers, les crises et les numéros qui documentent chaque fiche.</p>
- <p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn primary" href="explorer.html">Explorer Marvel</a><a class="btn primary" href="explorer.html?u=dc" style="background:#2f7bff;border-color:#2f7bff;color:#fff">Explorer DC</a><a class="btn ghost" href="encyclopedie.html">Ouvrir l’encyclopédie</a></p>
+ <h1>Les plans des cosmologies Marvel et DC</h1>
+ <p class="lead">Ce site est réservé aux plans : les cartes de la cosmologie Marvel et de la cosmologie DC, interactives, en version Primestone ou en version officielle quand elle existe. Cliquez sur un personnage ou un lieu pour lire sa biographie, sa famille et ses apparitions.</p>
+ <p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn primary" href="explorer.html">Plans Marvel</a><a class="btn primary" href="explorer.html?u=dc" style="background:#2f7bff;border-color:#2f7bff;color:#fff">Plans DC</a><a class="btn ghost" href="encyclopedie.html">Toutes les fiches (${ENTRIES.length})</a></p>
 </section>
-<section><h2>Les huit Cosmos</h2><p class="muted">Chaque univers naît de la mort du précédent. <a href="cosmos.html">Tous les Cosmos →</a></p>
-<div class="grid four">${A.cosmos.filter(id => id !== 'bw').slice(0, 8).map((id, i) => cardA(id, i, '')).join('')}</div></section>
-<section><h2>Entités fondamentales de Marvel</h2><div class="grid four">${featured.map(id => cardB(id, '')).join('')}</div></section>
-<section><h2>L’univers DC</h2><p class="muted">De la Présence aux 52 Terres de l’Orrerie. <a href="explorer.html?u=dc">Voir les 8 cartes DC →</a></p><div class="grid four">${['dc_presence', 'dc_source', 'dc_perpetua', 'dc_monitor', 'dc_antimonitor', 'dc_dream', 'dc_darkseid', 'dc_multiverse'].filter(id => N[id]).map(id => cardB(id, '')).join('')}</div></section>
-<section><h2>Trois façons d’explorer</h2><div class="grid three">
- <a class="card cF" href="explorer.html"><span class="kicker">Explorer</span><h3>16 cartes interactives</h3><p>8 cartes Marvel et 8 cartes DC, chacune en « mon plan » ou en version officielle quand elle existe, avec visite guidée et export vidéo.</p></a>
- <a class="card cF" href="encyclopedie.html"><span class="kicker">Encyclopédie</span><h3>${ENTRIES.length} fiches</h3><p>Une page par entité, avec ses sources, ses relations et son niveau de fiabilité.</p></a>
- <a class="card cF" href="archive.html"><span class="kicker">Archive</span><h3>${COMICS.length} comics cités</h3><p>Les numéros et les arcs qui documentent l’encyclopédie, reliés aux fiches.</p></a>
-</div></section>
-<section><h2>Dossiers</h2><div class="grid two">${dos.D.map(d => dos.card(d, '')).join('')}</div></section>
-<section><h2>Fiabilité, en toute transparence</h2>
-<p class="prose">Chaque fiche porte un niveau de fiabilité : ${counts.map(([c, n]) => `${relBadge(c)} ${n}`).join(' · ')}. Aucune fiche n’est encore classée <b>Canon</b> : ce niveau sera attribué seulement après vérification dans les comics eux-mêmes. <a href="dossier/methode.html">Lire la méthode →</a></p></section>`;
-  emit('index.html', page({ file: 'index.html', title: 'Cosmologies Marvel et DC', desc: 'Atlas et encyclopédie des cosmologies Marvel et DC : cosmos, multivers, entités, crises et sources.', body, active: 'index.html' }));
+<section><h2>Les plans Marvel</h2><div class="grid four maps">${A.maps.map((_, m) => mapCard('marvel', m, m)).join('')}</div></section>
+<section><h2>Les plans DC</h2><div class="grid four maps">${AD.maps.map((_, m) => mapCard('dc', m, m)).join('')}</div></section>
+<section><h2>Comment lire les plans</h2><div class="grid three">
+ <div class="card cF"><span class="kicker">Noms</span><h3>En anglais</h3><p>Les personnages et les lieux portent leur nom anglais d’origine ; le nom français figure dans chaque fiche.</p></div>
+ <div class="card cF"><span class="kicker">Versions</span><h3>Mon plan ou officiel</h3><p>Le bouton « Officiel » retire les constructions de fans et affiche la planche officielle publiée quand elle existe.</p></div>
+ <div class="card cF"><span class="kicker">Sources</span><h3>${COMICS.length} comics cités</h3><p>Premières apparitions, créateurs et familles sont relevés sur les wikis Marvel et DC. <a href="archive.html">Voir les sources →</a></p></div>
+</div></section>`;
+  emit('index.html', page({ file: 'index.html', title: 'Plans des cosmologies Marvel et DC', desc: 'Les plans interactifs des cosmologies Marvel et DC : multivers, cosmos, entités, familles, royaumes, avec biographies et apparitions.', body, active: 'index.html' }));
 }
 
 /* ---------- exécution ---------- */

@@ -2,3 +2,4 @@
 *.png
 !og.png
 node_modules/
+__pycache__/

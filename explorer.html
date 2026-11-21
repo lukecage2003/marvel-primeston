@@ -183,7 +183,7 @@ svg#svg:active{cursor:grabbing}
 }
 @media (max-width:400px){.brand{font-size:16px}.brand small{display:none}#q,#q:focus{width:17vw;padding:6px 8px}#bcodex,#bquiz{padding:6px 7px;font-size:14px}}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important}}
-#buni{border:2px solid var(--paper);color:var(--paper);font:700 15px var(--disp);padding:5px 8px;text-decoration:none;border-radius:3px}#vbadge{position:absolute;left:50%;top:12px;transform:translateX(-50%);z-index:5;background:#FFE500;color:#111;font:700 14px var(--disp);padding:5px 12px;border-radius:3px;box-shadow:3px 3px 0 #000;max-width:90%;text-align:center}.offv .n.th,.offv .th{display:none}
+#buni{border:2px solid var(--paper);color:var(--paper);font:700 15px var(--disp);padding:5px 8px;text-decoration:none;border-radius:3px}#vbadge{position:absolute;left:50%;top:12px;transform:translateX(-50%);z-index:5;background:#FFE500;color:#111;font:700 14px var(--disp);padding:5px 12px;border-radius:3px;box-shadow:3px 3px 0 #000;max-width:90%;text-align:center}.offv .n.th,#offplate{position:absolute;left:16px;bottom:16px;width:min(34%,420px);margin:0;background:#0b0b0b;border:3px solid #FFE500;box-shadow:6px 6px 0 #e2493f;z-index:6;transition:width .35s}#offplate button{display:block;padding:0;border:0;background:none;cursor:zoom-in;width:100%}#offplate img{display:block;width:100%;max-height:62vh;object-fit:contain;background:#111}#offplate figcaption{font:600 12px/1.35 var(--serif,Georgia);color:#f3ead2;padding:6px 9px}#offplate.big{width:min(92%,1200px);left:50%;transform:translateX(-50%)}#offplate.big button{cursor:zoom-out}#offplate.big img{max-height:78vh}@media(max-width:760px){#offplate{width:46%}}#panel .d.bio h3{font:700 13px var(--disp);letter-spacing:.12em;text-transform:uppercase;color:var(--mag,#e2493f);margin:16px 0 4px}#panel .d.bio p{margin:0 0 8px}#panel .d.bio ul{margin:0 0 8px;padding-left:18px}#panel .d.bio small{color:#6b6250}#panel .d.bio i{font-style:italic}#panel .d.bio button{font:inherit;font-weight:700;color:inherit;background:#FFE500;border:0;border-bottom:2px solid #0b0b0b;padding:0 4px;cursor:pointer}#panel .d.bio .fact{border-left:4px solid #FFE500;padding-left:10px}#bquiz{display:none!important}.e.hov{opacity:1!important;stroke-opacity:1!important;stroke-width:3.5px}.n.hov .core{filter:brightness(1.25) drop-shadow(0 0 18px rgba(255,229,0,.55))}.n{cursor:pointer}.offv .th,.offv .xpd{display:none}.arcl{font-family:var(--disp);font-weight:700;letter-spacing:.14em;paint-order:stroke;stroke:rgba(0,0,0,.55);stroke-width:4px;pointer-events:none}
 </style>
 </head>
 <body>
@@ -199,7 +199,7 @@ svg#svg:active{cursor:grabbing}
    <svg id="svg" xmlns="http://www.w3.org/2000/svg"></svg>
    <div id="scrim"></div>
    <div id="bars"></div>
-   <div id="wm"></div><div id="vbadge" hidden></div>
+   <div id="wm"></div><div id="vbadge" hidden></div><figure id="offplate" hidden><button type="button" aria-label="Agrandir la planche officielle"><img alt="Planche officielle" referrerpolicy="no-referrer"></button><figcaption></figcaption></figure>
    <div id="card"><span class="k">Cosmologie Marvel</span><h1></h1><p></p><div class="ln"></div></div>
    <div id="cap"><span class="k"></span><h2></h2><span class="s"></span><span class="d"></span><i class="pic"></i></div>
    <div id="safe"><i style="left:0;right:0;top:0;height:11%">Interface du haut</i><i style="right:0;top:34%;width:15%;height:44%">Boutons</i><i style="left:0;right:0;bottom:0;height:19%">Légende et interface du bas</i></div>
@@ -248,8 +248,8 @@ svg#svg:active{cursor:grabbing}
  <label class="snd"><input type="checkbox" id="thh" checked> Trame BD sur les bords</label>
  <button id="thd" class="th-go">Télécharger cette miniature</button><button id="thd2">Télécharger les deux formats</button><button id="thx">Fermer</button></div></div></div>
 <div id="vov" role="dialog" aria-label="Création de la vidéo"><canvas id="vcv"></canvas><p id="vmsg"></p><div id="vbar"><i></i></div><button id="vcancel">Annuler</button></div>
-<script src="data.js?v=9043780562"></script>
-<script src="data-dc.js?v=35361d1b27"></script>
+<script src="data.js?v=a62c0db75d"></script>
+<script src="data-dc.js?v=51717ed2bd"></script>
 <script src="images.js?v=e6752fbd54"></script>
 <script>
 const SRC='<!doctype html>\n'+document.documentElement.outerHTML,SOLO=window.SOLO??null;
@@ -290,11 +290,11 @@ ${[.035,.022,.055,.014,.03,.07].map((f,i)=>`<filter id="tx${i}" x="0" y="0" widt
 const IMAP={c7:'eternity',h_eter:'eternity',h_inf:'infinity',h_chaos:'chaos',h_order:'order',h_obl:'oblivion',h_trib:'tribunal',h_oba:'thaumiel',h_anti:'anti',beyond:'yesod'};
 let USER={},PIC=0;try{USER=JSON.parse(localStorage.getItem('cm_img')||'{}')}catch(e){}
 /* images officielles : chargées par le navigateur depuis le wiki Marvel (Fandom) */
-const WQ={'x_mkraan':"M'kraan Crystal",'x_darkforce':'Darkforce Dimension','x_nova':'Glossary:Nova Force','x_gamma':'Glossary:Gamma Radiation','x_quantum':'Quantum Bands','x_maker':'Reed Richards (Earth-1610)','x_defenders':'Defenders (Earth-616)','x_eson':'Eson (First Cosmos)','x_exitar':'Exitar (Multiverse)','x_gammenon':'Gammenon (First Cosmos)','x_jemiah':'Jemiah (First Cosmos)','x_nezarr':'Nezarr (First Cosmos)','x_ziran':'Ziran (First Cosmos)','x_oneg':'Oneg (First Cosmos)','x_fulcrum':'Fulcrum (Earth-616)','x_nemesis':'Nemesis (Cosmic Being) (First Cosmos)','x_epoch':'Epoch (Earth-616)','x_eon':'Eon (Earth-616)','x_mentor':"A'Lars (Earth-616)",'x_proemial':'Proemial Gods','x_tva':'Time Variance Authority (Null-Time Zone)','x_sspace':'Space Stone','x_smind':'Mind Stone','x_sreal':'Reality Stone','x_spow':'Power Stone','x_stime':'Time Stone','x_ssoul':'Soul Stone','c1': 'First Firmament', 'c2': 'Second Cosmos (Multiverse)', 'c3': 'Third Cosmos (Multiverse)', 'c4': 'Queen of Nevers (Multiverse)', 'c5': 'Fifth Cosmos (Multiverse)', 'c6': 'Galan (Earth-616)', 'c7': 'Victor von Doom (Earth-616)', 'bw': 'Battleworld (Beyonder)', 'c8': 'Multiverse', 'eternity': 'Eternity (Earth-616)', 'infinity': 'Infinity (Earth-616)', 'tribunal': 'Living Tribunal (Multiverse)', 'oblivion': 'Oblivion (Earth-616)', 'chaos': 'Lord Chaos (Earth-616)', 'order': 'Master Order (Earth-616)', 'powers': 'The-Powers-That-Be (Earth-616)', 'natural': 'The-Natural-Order-of-Things (Earth-616)', 'keter': 'House of Ideas', 'daat': "Land of Couldn't-Be-Shouldn't-Be", 'gevurah': 'City of Judgment', 'tiferet': 'White Hot Room', 'netzach': 'Well Beyond the Worlds', 'hod': 'Overspace', 'yesod': 'Beyond (Womb-Space)', 'lilith': 'Limbo (Otherplace)', 'gamaliel': 'Symbiote Hive-Mind', 'samael': 'Underspace', 'tagiriron': 'Shadow Kingdom', 'thaumiel': 'Below-Place', 'h_oaa': 'One Above All (Multiverse)', 'h_bey': 'Beyonders', 'h_death': 'Death (Earth-616)', 'h_phx': 'Phoenix Force (Earth-616)', 'h_enigma': 'Enigma Force (Earth-616)', 'h_uni': 'Captain Universe', 'h_cel': 'Celestials', 'h_asp': 'Aspirants', 'h_gal': 'Galan (Earth-616)', 'h_watch': 'Watchers', 'h_anti': 'Anti-All (Multiverse)', 'h_knull': 'Knull (Earth-616)', 'h_oba': 'One Below All (Multiverse)', 'god': 'One Above All (Multiverse)', 'devil': 'One Below All (Multiverse)', 'neg': 'Negative Zone', 'beyond': 'Beyonders', 'shore': 'Oblivion Void', 'univ': 'Earth-616', 'superflow': 'Superflow', 'exo': 'Exo-Space', 'micro': 'Microverse', 'f0': 'First Firmament', 'x_love': 'Love', 'x_hate': 'Sire Hate (Earth-616)', 'x_kronos': 'Kronos (Earth-616)', 'x_inbetween': 'In-Betweener (Earth-616)', 'x_entropy': 'Entropy (Earth-616)', 'x_stranger': 'Stranger (Cosmic Being) (Earth-616)', 'x_logos': 'Logos (Cosmic Being) (Earth-616)', 'x_neverq': 'Queen of Nevers (Multiverse)', 'x_omnimax': 'Moridun (Earth-616)', 'x_arishem': 'Arishem (First Cosmos)', 'x_progen': 'Progenitor (Celestial) (Multiverse)', 'x_darkcel': 'Dark Celestials (Horde)', 'x_tiamut': 'Tiamut (Multiverse)', 'x_eternals': 'Eternals (Homo immortalis)', 'x_deviants': 'Deviants (Homo descendus)', 'x_elders': 'Elders of the Universe (Earth-616)', 'x_grandm': 'En Dwi Gast (Earth-616)', 'x_collector': 'Taneleer Tivan (Earth-616)', 'x_uatu': 'Uatu (Earth-616)', 'x_pcosmic': 'Power Cosmic', 'x_symbiote': 'Symbiotes', 'x_gems': 'Infinity Stones', 'x_gauntlet': 'Infinity Gauntlet', 'x_heart': 'Heart of the Universe', 'x_cube': 'Cosmic Cube', 'x_nullifier': 'Ultimate Nullifier', 'x_allblack': 'All-Black (Symbiote) (Earth-616)', 'x_quarry': 'Quarry of Creation', 'x_darkdim': 'Dark Dimension', 'x_yggdrasil': 'Yggdrasill', 'x_mojo': 'Mojoverse', 'x_dreams': 'Dream Dimension', 'x_battle': 'Battleworld (Beyonder)', 'x_thanos': 'Thanos (Earth-616)', 'x_adam': 'Adam Warlock (Earth-616)', 'x_silver': 'Norrin Radd (Earth-616)', 'x_beyonder': 'Beyonder (Earth-616)', 'x_molecule': 'Owen Reece (Earth-616)', 'x_doom': 'Victor von Doom (Earth-616)', 'x_rabum': 'Victor von Doom (Earth-616)', 'x_reed': 'Reed Richards (Earth-616)', 'x_franklin': 'Franklin Richards (Earth-616)', 'x_strange': 'Stephen Strange (Earth-616)', 'x_dormammu': 'Dormammu (Earth-616)', 'x_jean': 'Jean Grey (Earth-616)', 'x_banner': 'Bruce Banner (Earth-616)', 'x_venom': 'Edward Brock (Earth-616)', 'x_annihilus': 'Annihilus (Earth-616)', 'x_mephisto': 'Mephisto (Earth-616)', 'x_loki': 'Loki Laufeyson (Earth-616)', 'x_blue': 'Adam Brashear (Earth-616)', 'x_america': 'America Chavez (Earth-616)', 'x_galan': 'Galan (Earth-616)', 'x_taaia': 'Taaia (Earth-616)', 'x_lifeb': 'Lifebringer One (Multiverse)', 'x_illum': 'Illuminati (Earth-616)', 'x_ultimates': 'Ultimates (Earth-616)', 'x_omegac': 'Omega Council (Multiverse)', 'x_ivory': 'Beyonders', 'x_blackp': 'Black Priests (Multiverse)', 'x_mapmak': 'Mapmakers (Multiverse)','h_airwalker':"Gabriel Lan (Earth-616)",'h_firelord':"Pyreus Kril (Earth-616)",'h_terrax':"Tyros (Earth-616)",'h_novaf':"Frankie Raye (Earth-616)",'h_morg':"Morg (Earth-616)",'h_stardust':"Lambda-Zero (Earth-616)",'h_redshift':"Red Shift (Earth-616)",'h_fallen':"Fallen One (Herald) (Earth-616)",'h_thor':"Thor Odinson (Earth-616)",'h_taa2':"Worldship (Taa II)",'x_ashema':"Ashema (Multiverse)",'x_devron':"Devron (Multiverse)",'x_hargen':"Hargen (Multiverse)",'x_tefral':"Tefral (First Cosmos)",'x_scathan':"Scathan (Multiverse)",'x_zgreb':"Zgreb (Multiverse)",'x_gamiel':"Gamiel (Multiverse)",'x_exnihilo':"Ex Nihilo (Earth-616)",'x_abyss':"Abyss (Earth-616)",'x_aleph':"Alephs",'x_ego':"Egros (Earth-616)",'x_mantis':"Mantis (Brandt) (Earth-616)",'x_champion':"Tryco Slatterus (Earth-616)",'x_runner':"Gilpetperdon (Earth-616)",'x_gardener':"Ord Zyonz (Earth-616)",'x_possessor':"Kamo Tharnn (Earth-616)",'x_contemplator':"Tath Ki (Earth-616)",'x_trader':"Cort Zo Tinnus (Earth-616)",'x_astronomer':"Seginn Gallio (Earth-616)",'x_abraxas':"Abraxas (Multiverse)",'x_kubik':"Kubik (Earth-616)",'x_tyrant':"Tyrant (Earth-616)",'x_agamotto':"Agamotto (Earth-616)",'x_oshtur':"Oshtur (Earth-616)",'x_hoggoth':"Hoggoth (Earth-616)",'x_cyttorak':"Cyttorak (Earth-616)",'x_satannish':"Satannish (Earth-616)",'x_umar':"Umar (Earth-616)",'x_nightmare':"Nightmare (Earth-616)",'x_zom':"Zom (Earth-616)",'x_gaea':"Gaea (Earth-616)",'x_magus':"Magus (Earth-7528)",'x_unimind':"Uni-Mind (Earth-616)",'x_starbrand':"Star Brand (Object)",'x_magistrati':"Magistrati (Multiverse)",'d_shuma':"Shuma-Gorath (Multiverse)",'x_chthon':"Chthon (Earth-616)",'d_mikaboshi':"Amatsu-Mikaboshi (Earth-616)",'d_dweller':"Dweller-in-Darkness (Earth-616)",'d_blackwinter':"Black Winter (Sixth Cosmos) (Multiverse)",'d_manyangled':"Great Old Ones",'x_gorr':"Gorr (Earth-616)",'o_mjolnir':"Mjolnir",'o_uru':"Uru",'o_darkhold':"Darkhold",'o_eye':"Eye of Agamotto (Knowledge)",'o_twilight':"Twilight Sword (Surtur)",'o_controlrod':"Cosmic Control Rod",'o_serpent':"Serpent Crown",'x_set':"Set (Earth-616)",'o_watoomb':"Wand of Watoomb",'p_knowhere':"Knowhere",'p_kyln':"Kyln",'p_sakaar':"Sakaar",'p_titan':"Titan (Moon of Saturn)",'p_hala':"Hala (Planet)",'p_xandar':"Xandar",'p_asgard':"Asgard (Realm)",'p_bluearea':"Blue Area of the Moon",'p_nexus':"Nexus of All Realities",'p_crossroads':"Crossroads (Dimension)",'p_otherworld':"Otherworld",'p_weirdworld':"Weirdworld (Planet)",'p_cancerverse':"Earth-10011",'p_heven':"Heven",'g_guardians':"Guardians of the Galaxy (Earth-616)",'g_novacorps':"Nova Corps (Earth-616)",'g_kree':"Kree",'g_skrulls':"Deviant Skrulls",'g_shiar':"Shi'ar",'g_blackorder':"Black Order (Earth-616)",'g_annwave':"Annihilation Wave (Earth-616)",'g_timekeepers':"Time-Keepers",'g_church':"Universal Church of Truth (Earth-616)",'g_vishanti':"Vishanti (Earth-616)",'g_cbcorps':"Captain Britain Corps (Multiverse)",'g_reeds':"Interdimensional Council of Reeds (Multiverse)",'g_builders':"Builders",'g_infwatch':"Infinity Watch (Earth-616)",'g_annihilators':"Annihilators (Earth-616)",'g_phalanx':"Phalanx",'x_quasar':"Wendell Vaughn (Earth-616)",'x_ronan':"Ronan (Earth-616)",'x_rider':"Richard Rider (Earth-616)",'x_starlord':"Peter Quill (Earth-616)",'x_gamora':"Gamora Zen Whoberi Ben Titan (Earth-7528)",'x_drax':"Arthur Douglas (Earth-616)",'x_marvell':"Mar-Vell (Earth-616)",'x_genis':"Genis-Vell (Earth-616)",'x_moondragon':"Heather Douglas (Earth-616)",'x_nebula':"Nebula (Earth-616)",'x_gladiator':"Kallark (Earth-616)",'x_starfox':"Eros (Earth-616)",'x_kang':"Nathaniel Richards (Kang) (Earth-6311)",'x_immortus':"Nathaniel Richards (Immortus) (Earth-6311)",'x_hwr':"He Who Remains (Null-Time Zone)",'x_sentry':"Robert Reynolds (Earth-616)",'x_odin':"Odin Borson (Earth-616)",'x_hela':"Hela (Earth-616)",'x_bill':"Beta Ray Bill (Earth-616)",'x_ikaris':"Ikaris (Earth-616)",'x_sersi':"Sersi (Earth-616)",'x_zuras':"Zuras (Earth-616)",'x_wiccan':"William Kaplan (Earth-616)",'x_clea':"Clea (Earth-616)",'x_korvac':"Michael Korvac (Earth-691)",'e_kreeskrull':"Avengers Vol 1 89",'e_madonna':"Giant-Size Avengers Vol 1 4",'e_korvac':"Avengers Vol 1 167",'e_deathmv':"Marvel Graphic Novel Vol 1 1: Death of Captain Marvel",'e_contest':"Marvel Super Hero Contest of Champions Vol 1 1",'e_trial':"Fantastic Four Vol 1 262",'e_infwar':"Infinity War Vol 1 1",'e_galstorm':"Captain America Vol 1 398",'e_crusade':"Infinity Crusade Vol 1 1",'e_forever':"Avengers Forever Vol 1 1",'e_conquest':"Annihilation: Conquest Vol 1 1",'e_secretinv':"Secret Invasion Vol 1 1",'e_warkings':"War of Kings Vol 1 1",'e_imperative':"Thanos Imperative Vol 1 1",'e_avx':"Avengers vs. X-Men Vol 1 1",'e_infinity':"Infinity Vol 1 1",'e_hunger':"Hunger Vol 1 1",'e_originsin':"Original Sin Vol 1 1",'e_infwars':"Infinity Wars Vol 1 1",'e_empyre':"Empyre Vol 1 1",'e_judgment':"A.X.E.: Judgment Day Vol 1 1"};
+const WQ={'x_mkraan':"M'kraan Crystal",'x_darkforce':'Darkforce Dimension','x_nova':'Glossary:Nova Force','x_gamma':'Glossary:Gamma Radiation','x_quantum':'Quantum Bands','x_maker':'Reed Richards (Earth-1610)','x_defenders':'Defenders (Earth-616)','x_eson':'Eson (First Cosmos)','x_exitar':'Exitar (Multiverse)','x_gammenon':'Gammenon (First Cosmos)','x_jemiah':'Jemiah (First Cosmos)','x_nezarr':'Nezarr (First Cosmos)','x_ziran':'Ziran (First Cosmos)','x_oneg':'Oneg (First Cosmos)','x_fulcrum':'Fulcrum (Earth-616)','x_nemesis':'Nemesis (Cosmic Being) (First Cosmos)','x_epoch':'Epoch (Earth-616)','x_eon':'Eon (Earth-616)','x_mentor':"A'Lars (Earth-616)",'x_proemial':'Proemial Gods','x_tva':'Time Variance Authority (Null-Time Zone)','x_sspace':'Space Stone','x_smind':'Mind Stone','x_sreal':'Reality Stone','x_spow':'Power Stone','x_stime':'Time Stone','x_ssoul':'Soul Stone','c1': 'First Firmament', 'c2': 'Second Cosmos (Multiverse)', 'c3': 'Third Cosmos (Multiverse)', 'c4': 'Queen of Nevers (Multiverse)', 'c5': 'Fifth Cosmos (Multiverse)', 'c6': 'Galan (Earth-616)', 'c7': 'Victor von Doom (Earth-616)', 'bw': 'Battleworld (Beyonder)', 'c8': 'Multiverse', 'eternity': 'Eternity (Earth-616)', 'infinity': 'Infinity (Earth-616)', 'tribunal': 'Living Tribunal (Multiverse)', 'oblivion': 'Oblivion (Earth-616)', 'chaos': 'Lord Chaos (Earth-616)', 'order': 'Master Order (Earth-616)', 'powers': 'The-Powers-That-Be (Earth-616)', 'natural': 'The-Natural-Order-of-Things (Earth-616)', 'keter': 'House of Ideas', 'daat': "Land of Couldn't-Be-Shouldn't-Be", 'gevurah': 'City of Judgment', 'tiferet': 'White Hot Room', 'netzach': 'Well Beyond the Worlds', 'hod': 'Overspace', 'yesod': 'Beyond (Womb-Space)', 'lilith': 'Limbo (Otherplace)', 'gamaliel': 'Symbiote Hive-Mind', 'samael': 'Underspace', 'tagiriron': 'Shadow Kingdom', 'thaumiel': 'Below-Place', 'h_oaa': 'One Above All (Multiverse)', 'h_bey': 'Beyonders', 'h_death': 'Death (Earth-616)', 'h_phx': 'Phoenix Force (Earth-616)', 'h_enigma': 'Enigma Force (Earth-616)', 'h_uni': 'Captain Universe', 'h_cel': 'Celestials', 'h_asp': 'Aspirants', 'h_gal': 'Galan (Earth-616)', 'h_watch': 'Watchers', 'h_anti': 'Anti-All (Multiverse)', 'h_knull': 'Knull (Earth-616)', 'h_oba': 'One Below All (Multiverse)', 'god': 'One Above All (Multiverse)', 'devil': 'One Below All (Multiverse)', 'neg': 'Negative Zone', 'beyond': 'Beyonders', 'shore': 'Oblivion Void', 'univ': 'Earth-616', 'superflow': 'Superflow', 'exo': 'Exo-Space', 'micro': 'Microverse', 'f0': 'First Firmament', 'x_love': 'Love', 'x_hate': 'Sire Hate (Earth-616)', 'x_kronos': 'Kronos (Earth-616)', 'x_inbetween': 'In-Betweener (Earth-616)', 'x_entropy': 'Entropy (Earth-616)', 'x_stranger': 'Stranger (Cosmic Being) (Earth-616)', 'x_logos': 'Logos (Cosmic Being) (Earth-616)', 'x_neverq': 'Queen of Nevers (Multiverse)', 'x_omnimax': 'Moridun (Earth-616)', 'x_arishem': 'Arishem (First Cosmos)', 'x_progen': 'Progenitor (Celestial) (Multiverse)', 'x_darkcel': 'Dark Celestials (Horde)', 'x_tiamut': 'Tiamut (Multiverse)', 'x_eternals': 'Eternals (Homo immortalis)', 'x_deviants': 'Deviants (Homo descendus)', 'x_elders': 'Elders of the Universe (Earth-616)', 'x_grandm': 'En Dwi Gast (Earth-616)', 'x_collector': 'Taneleer Tivan (Earth-616)', 'x_uatu': 'Uatu (Earth-616)', 'x_pcosmic': 'Power Cosmic', 'x_symbiote': 'Symbiotes', 'x_gems': 'Infinity Stones', 'x_gauntlet': 'Infinity Gauntlet', 'x_heart': 'Heart of the Universe', 'x_cube': 'Cosmic Cube', 'x_nullifier': 'Ultimate Nullifier', 'x_allblack': 'All-Black (Symbiote) (Earth-616)', 'x_quarry': 'Quarry of Creation', 'x_darkdim': 'Dark Dimension', 'x_yggdrasil': 'Yggdrasill', 'x_mojo': 'Mojoverse', 'x_dreams': 'Dream Dimension', 'x_battle': 'Battleworld (Beyonder)', 'x_thanos': 'Thanos (Earth-616)', 'x_adam': 'Adam Warlock (Earth-616)', 'x_silver': 'Norrin Radd (Earth-616)', 'x_beyonder': 'Beyonder (Earth-616)', 'x_molecule': 'Owen Reece (Earth-616)', 'x_doom': 'Victor von Doom (Earth-616)', 'x_rabum': 'Victor von Doom (Earth-616)', 'x_reed': 'Reed Richards (Earth-616)', 'x_franklin': 'Franklin Richards (Earth-616)', 'x_strange': 'Stephen Strange (Earth-616)', 'x_dormammu': 'Dormammu (Earth-616)', 'x_jean': 'Jean Grey (Earth-616)', 'x_banner': 'Bruce Banner (Earth-616)', 'x_venom': 'Edward Brock (Earth-616)', 'x_annihilus': 'Annihilus (Earth-616)', 'x_mephisto': 'Mephisto (Earth-616)', 'x_loki': 'Loki Laufeyson (Earth-616)', 'x_blue': 'Adam Brashear (Earth-616)', 'x_america': 'America Chavez (Earth-616)', 'x_galan': 'Galan (Earth-616)', 'x_taaia': 'Taaia (Earth-616)', 'x_lifeb': 'Lifebringer One (Multiverse)', 'x_illum': 'Illuminati (Earth-616)', 'x_ultimates': 'Ultimates (Earth-616)', 'x_omegac': 'Omega Council (Multiverse)', 'x_ivory': 'Beyonders', 'x_blackp': 'Black Priests (Multiverse)', 'x_mapmak': 'Mapmakers (Multiverse)','h_airwalker':"Gabriel Lan (Earth-616)",'h_firelord':"Pyreus Kril (Earth-616)",'h_terrax':"Tyros (Earth-616)",'h_novaf':"Frankie Raye (Earth-616)",'h_morg':"Morg (Earth-616)",'h_stardust':"Lambda-Zero (Earth-616)",'h_redshift':"Red Shift (Earth-616)",'h_fallen':"Fallen One (Herald) (Earth-616)",'h_thor':"Thor Odinson (Earth-616)",'h_taa2':"Worldship (Taa II)",'x_ashema':"Ashema (Multiverse)",'x_devron':"Devron (Multiverse)",'x_hargen':"Hargen (Multiverse)",'x_tefral':"Tefral (First Cosmos)",'x_scathan':"Scathan (Multiverse)",'x_zgreb':"Zgreb (Multiverse)",'x_gamiel':"Gamiel (Multiverse)",'x_exnihilo':"Ex Nihilo (Earth-616)",'x_abyss':"Abyss (Earth-616)",'x_aleph':"Alephs",'x_ego':"Egros (Earth-616)",'x_mantis':"Mantis (Brandt) (Earth-616)",'x_champion':"Tryco Slatterus (Earth-616)",'x_runner':"Gilpetperdon (Earth-616)",'x_gardener':"Ord Zyonz (Earth-616)",'x_possessor':"Kamo Tharnn (Earth-616)",'x_contemplator':"Tath Ki (Earth-616)",'x_trader':"Cort Zo Tinnus (Earth-616)",'x_astronomer':"Seginn Gallio (Earth-616)",'x_abraxas':"Abraxas (Multiverse)",'x_kubik':"Kubik (Earth-616)",'x_tyrant':"Tyrant (Earth-616)",'x_agamotto':"Agamotto (Earth-616)",'x_oshtur':"Oshtur (Earth-616)",'x_hoggoth':"Hoggoth (Earth-616)",'x_cyttorak':"Cyttorak (Earth-616)",'x_satannish':"Satannish (Earth-616)",'x_umar':"Umar (Earth-616)",'x_nightmare':"Nightmare (Earth-616)",'x_zom':"Zom (Earth-616)",'x_gaea':"Gaea (Earth-616)",'x_magus':"Magus (Earth-7528)",'x_unimind':"Uni-Mind (Earth-616)",'x_starbrand':"Star Brand (Object)",'x_magistrati':"Magistrati (Multiverse)",'d_shuma':"Shuma-Gorath (Multiverse)",'x_chthon':"Chthon (Earth-616)",'d_mikaboshi':"Amatsu-Mikaboshi (Earth-616)",'d_dweller':"Dweller-in-Darkness (Earth-616)",'d_blackwinter':"Black Winter (Sixth Cosmos) (Multiverse)",'d_manyangled':"Great Old Ones",'x_gorr':"Gorr (Earth-616)",'o_mjolnir':"Mjolnir",'o_uru':"Uru",'o_darkhold':"Darkhold",'o_eye':"Eye of Agamotto (Knowledge)",'o_twilight':"Twilight Sword (Surtur)",'o_controlrod':"Cosmic Control Rod",'o_serpent':"Serpent Crown",'x_set':"Set (Earth-616)",'o_watoomb':"Wand of Watoomb",'p_knowhere':"Knowhere",'p_kyln':"Kyln",'p_sakaar':"Sakaar",'p_titan':"Titan (Moon of Saturn)",'p_hala':"Hala (Planet)",'p_xandar':"Xandar",'p_asgard':"Asgard (Realm)",'p_bluearea':"Blue Area of the Moon",'p_nexus':"Nexus of All Realities",'p_crossroads':"Crossroads (Dimension)",'p_otherworld':"Otherworld",'p_weirdworld':"Weirdworld (Planet)",'p_cancerverse':"Earth-10011",'p_heven':"Heven",'r_vanaheim':"Vanaheim (Ten Realms)",'r_alfheim':"Alfheim",'r_nidavellir':"Nidavellir",'r_midgard':"Earth",'r_jotunheim':"Jotunheim",'r_svartalfheim':"Svartalfheim",'r_muspelheim':"Muspelheim",'r_niffleheim':"Niffleheim",'r_hel':"Hel",'r_valhalla':"Valhalla (Afterlife)",'r_bifrost':"Bifrost",'g_guardians':"Guardians of the Galaxy (Earth-616)",'g_novacorps':"Nova Corps (Earth-616)",'g_kree':"Kree",'g_skrulls':"Deviant Skrulls",'g_shiar':"Shi'ar",'g_blackorder':"Black Order (Earth-616)",'g_annwave':"Annihilation Wave (Earth-616)",'g_timekeepers':"Time-Keepers",'g_church':"Universal Church of Truth (Earth-616)",'g_vishanti':"Vishanti (Earth-616)",'g_cbcorps':"Captain Britain Corps (Multiverse)",'g_reeds':"Interdimensional Council of Reeds (Multiverse)",'g_builders':"Builders",'g_infwatch':"Infinity Watch (Earth-616)",'g_annihilators':"Annihilators (Earth-616)",'g_phalanx':"Phalanx",'x_quasar':"Wendell Vaughn (Earth-616)",'x_ronan':"Ronan (Earth-616)",'x_rider':"Richard Rider (Earth-616)",'x_starlord':"Peter Quill (Earth-616)",'x_gamora':"Gamora Zen Whoberi Ben Titan (Earth-7528)",'x_drax':"Arthur Douglas (Earth-616)",'x_marvell':"Mar-Vell (Earth-616)",'x_genis':"Genis-Vell (Earth-616)",'x_moondragon':"Heather Douglas (Earth-616)",'x_nebula':"Nebula (Earth-616)",'x_gladiator':"Kallark (Earth-616)",'x_starfox':"Eros (Earth-616)",'x_kang':"Nathaniel Richards (Kang) (Earth-6311)",'x_immortus':"Nathaniel Richards (Immortus) (Earth-6311)",'x_hwr':"He Who Remains (Null-Time Zone)",'x_sentry':"Robert Reynolds (Earth-616)",'x_odin':"Odin Borson (Earth-616)",'x_hela':"Hela (Earth-616)",'x_bill':"Beta Ray Bill (Earth-616)",'x_ikaris':"Ikaris (Earth-616)",'x_sersi':"Sersi (Earth-616)",'x_zuras':"Zuras (Earth-616)",'x_wiccan':"William Kaplan (Earth-616)",'x_clea':"Clea (Earth-616)",'x_korvac':"Michael Korvac (Earth-691)",'e_kreeskrull':"Avengers Vol 1 89",'e_madonna':"Giant-Size Avengers Vol 1 4",'e_korvac':"Avengers Vol 1 167",'e_deathmv':"Marvel Graphic Novel Vol 1 1: Death of Captain Marvel",'e_contest':"Marvel Super Hero Contest of Champions Vol 1 1",'e_trial':"Fantastic Four Vol 1 262",'e_infwar':"Infinity War Vol 1 1",'e_galstorm':"Captain America Vol 1 398",'e_crusade':"Infinity Crusade Vol 1 1",'e_forever':"Avengers Forever Vol 1 1",'e_conquest':"Annihilation: Conquest Vol 1 1",'e_secretinv':"Secret Invasion Vol 1 1",'e_warkings':"War of Kings Vol 1 1",'e_imperative':"Thanos Imperative Vol 1 1",'e_avx':"Avengers vs. X-Men Vol 1 1",'e_infinity':"Infinity Vol 1 1",'e_hunger':"Hunger Vol 1 1",'e_originsin':"Original Sin Vol 1 1",'e_infwars':"Infinity Wars Vol 1 1",'e_empyre':"Empyre Vol 1 1",'e_judgment':"A.X.E.: Judgment Day Vol 1 1"};
 const WMAP={h_trib:'tribunal',h_eter:'eternity',h_inf:'infinity',h_chaos:'chaos',h_order:'order',h_obl:'oblivion'};
 let WC={},WON=true;try{WC=JSON.parse(localStorage.getItem('cm_wiki2')||'{}');for(const k in WC)if(WC[k]&&!/^https:\/\/static\.wikia\.nocookie\.net\//.test(WC[k].u||''))delete WC[k];WON=localStorage.getItem('cm_won')!=='0'}catch(e){}
 const wikiOf=id=>WON&&(WC[id]||WC[WMAP[id]]);
-const imgOf=id=>USER[id]||(wikiOf(id)||{}).u||(window.IMG||{})[id]||(window.IMG||{})[IMAP[id]];
+const IMGW=(window.DB||{}).IMGW||{};const imgOf=id=>USER[id]||(wikiOf(id)||{}).u||(WON&&(IMGW[id]||IMGW[WMAP[id]]))||(window.IMG||{})[id]||(window.IMG||{})[IMAP[id]];
 async function wikiLoad(force){if(!WON)return;const todo=Object.keys(WQ).filter(id=>force||WC[id]===undefined);if(!todo.length)return;let got=0;
  const one=async id=>{try{const r=await fetch('https://marvel.fandom.com/api.php?action=query&format=json&origin=*&redirects=1&prop=pageimages&piprop=thumbnail&pithumbsize=800&titles='+encodeURIComponent(WQ[id]));
   const j=await r.json(),pg=Object.values((j.query||{}).pages||{})[0];WC[id]=pg&&pg.thumbnail&&/^https:\/\/static\.wikia\.nocookie\.net\//.test(pg.thumbnail.source)?{u:pg.thumbnail.source,t:String(pg.title).slice(0,200)}:null;if(WC[id])got++}catch(e){}};
@@ -345,7 +345,7 @@ function arrow(g,x,y,a,s=1){E('path',{d:'M-16 -10H4V-22L24 0 4 22V10H-16Z',fill:
 /* ---------- map context ---------- */
 let C;
 function ctx(g){return C={g,nodes:[],edges:[],eL:E('g',{},g),nL:E('g',{},g),
- add(o){const x=EX[o.id],I=IDX[o.id]||{};if(x){o.src=x[0];o.fact=x[2]}o.src=o.src||I.src;o.fact=o.fact||I.fact;o.cert=o.cert||I.cert;o.rel=[...(RELS[o.id]||[])];const n=E('g',{class:'n','data-i':C.nodes.length},C.nL),core=E('g',{class:'core'},n);o.g=n;o.core=core;
+ add(o){const x=EX[o.id],I=IDX[o.id]||{},en=UNI!='dc'&&ENN[o.id];if(en){o.fr=o.fr||o.t;if(/^f\d$/.test(o.id))o.lt=en.toUpperCase();else{o.t=en.replace(/^[\dQ]+\. /,'');if(o.lt)o.lt=en}}else if(I.en&&I.fr){o.fr=I.fr;o.t=I.en}if(x){o.src=x[0];o.fact=x[2]}o.src=o.src||I.src;o.fact=o.fact||I.fact;o.cert=o.cert||I.cert;o.rel=[...(RELS[o.id]||[])];const n=E('g',{class:'n','data-i':C.nodes.length},C.nL),core=E('g',{class:'core'},n);o.g=n;o.core=core;
   o.draw(core,o);const im=!o.u&&imgOf(o.id);if(im){o.img=im;o.badge?pic(core,o.x+o.r*.8,o.y-o.r*.8,o.r*.5,im):pic(core,o.x,o.y,o.r,im)}if(o.lab!=='none')label(n,o);C.nodes.push(o);return o},
  edge(a,b,attrs={}){const A=C.nodes.find(n=>n.id==a),B=C.nodes.find(n=>n.id==b);
   const el=E('line',Object.assign({x1:A.x,y1:A.y,x2:B.x,y2:B.y,class:'e',stroke:'rgba(205,215,240,.32)','stroke-width':1.3},attrs),C.eL);C.edges.push({a,b,el})}}}
@@ -494,20 +494,32 @@ const OM=[
  ['shore','La Rive Lointaine','bord du Dehors','Les itérations précédentes du multivers : les Univers Vivants.',-405,-110,'node','#2d2450'],
  ['manif','Les Manifestations','les Infinis','Fractales vivantes des entités abstraites.',405,-110,'node','#c25a6a']];
 function ann(r1,r2,up){const s=up?1:0,t=up?0:1;return`M${-r2} 0A${r2} ${r2} 0 0 ${s} ${r2} 0L${r1} 0A${r1} ${r1} 0 0 ${t} ${-r1} 0Z`}
-function buildOmni(g){ctx(g);
- OM.forEach(([id,t,s,d,a,b,kind,col],i)=>{const band=kind=='up'||kind=='down',mid=(a+b)/2,
-  o={id,t,s,d,col,k:kind=='up'?'Au-dessus de la Terre':kind=='down'?'Sous la Terre':'Dans l’Omnivers',tags:[kind=='up'?'Macro':kind=='down'?'Micro':'Royaume'],lab:'none'};
-  if(kind=='node')Object.assign(o,{x:a,y:b,r:38,fs:.75,draw:c=>orb(c,a,b,38,col,i%6)});
-  else if(band)Object.assign(o,{x:0,y:kind=='up'?-mid:mid,r:70,draw(c){E('path',{d:ann(a,b,kind=='up'),fill:col,'fill-opacity':.16,stroke:col,'stroke-opacity':.55,class:'band'},c);
-   const ty=kind=='up'?-mid+3:mid+3;T(c,0,ty,t.toUpperCase(),'ax').style.cssText='font-size:11px;fill:'+col}});
-  else if(kind=='full')Object.assign(o,{x:0,y:-450,r:60,fw:1100,draw(c){E('circle',{r:b,fill:'rgba(255,255,255,.015)',stroke:'rgba(255,255,255,.35)','stroke-dasharray':'2 6',class:'band','fill-opacity':.04},c);T(c,0,-b+26,'OMNIVERS','big')}});
-  else Object.assign(o,{x:0,y:0,r:62,fw:520,draw(c){E('circle',{r:b,fill:'url(#uni)',stroke:'#7fa8ff','stroke-opacity':.6},c);
-   const R=rng(4);for(let k=0;k<70;k++){const an=R()*TAU,dd=Math.sqrt(R())*b*.95;E('circle',{cx:Math.cos(an)*dd,cy:Math.sin(an)*dd,r:R()*1.4+.3,fill:'#fff',opacity:R()},c)}
-   orb(c,0,0,58,col,0,'rgba(200,255,210,.6)');T(c,0,-80,'UNIVERS','ax');T(c,0,90,'TERRE','big')}});
-  C.add(o)});
- E('line',{x1:-470,y1:0,x2:470,y2:0,stroke:'rgba(255,210,63,.35)','stroke-dasharray':'4 6'},C.eL);
- T(g,-455,-10,'MACRO ↑','ax','start');T(g,-455,22,'MICRO ↓','ax','start');
-}
+function buildOmni(g){ctx(g);const K=2.3,bg=E('g',{},g);g.insertBefore(bg,C.eL);
+ const ups=OM.filter(r=>r[6]=='up'),downs=OM.filter(r=>r[6]=='down'),R0=470*K;
+ /* l'Omnivers : halo extérieur, puis les strates du Macro (haut) et du Micro (bas) en demi-anneaux lumineux */
+ E('circle',{r:R0*1.08,fill:rgrad(bg,[[.8,'#ffffff',.06],[1,'#ffffff',0]])},bg);E('circle',{r:R0,fill:'rgba(255,255,255,.02)',stroke:'rgba(255,255,255,.45)','stroke-width':3,'stroke-dasharray':'3 10'},bg);
+ arcLabel(bg,R0+34,'OMNIVERSE · ALL FICTIONS',-90,'#f4ead0',34);arcLabel(bg,R0+34,'OMNIVERSE · ALL FICTIONS',90,'#f4ead0',34);
+ const band=(r,up,k,n)=>{const[,t,s0,d,a,b,,col]=r,A=a*K,B=b*K,mid=(A+B)/2;E('path',{d:ann(A,B,up),fill:rgrad(bg,[[A/B,col,.42],[1,col,.12]]),stroke:col,'stroke-opacity':.8,'stroke-width':2},bg);
+  arcLabel(bg,mid,(ENN[r[0]]||t).toUpperCase(),up?-90:90,'#fff',Math.min(30,(B-A)*.42));
+  const ang=(up?-1:1)*(k%2?150-k*7:30+k*7)*Math.PI/180,x=Math.cos(ang)*mid,y=Math.sin(ang)*mid;return[x,y,Math.min(46,(B-A)*.55)]};
+ const node=(r,x,y,rad,k,i)=>{const[id,t,s0,d,,,kind,col]=r;C.add({id,x,y,r:rad,t,s:s0,d,col,fs:.9,k:kind=='up'?'Au-dessus de la Terre (Macro)':kind=='down'?'Sous la Terre (Micro)':'Dans l’Omnivers',tags:[kind=='up'?'Macro':kind=='down'?'Micro':'Royaume'],draw:c=>orb(c,x,y,rad,col,i%6)})};
+ ups.forEach((r,k)=>{const[x,y,rad]=band(r,1,k,ups.length);node(r,x,y,rad,k,k)});downs.forEach((r,k)=>{const[x,y,rad]=band(r,0,k,downs.length);node(r,x,y,rad,k,k+3)});
+ /* l'univers et la Terre au centre */
+ const U=OM.find(r=>r[0]=='univ'),RU=U[5]*K;E('circle',{r:RU,fill:'url(#uni)',stroke:'#7fa8ff','stroke-width':3,'stroke-opacity':.8},bg);
+ {const R=rng(4);for(let k=0;k<160;k++){const an=R()*TAU,dd=Math.sqrt(R())*RU*.96;E('circle',{cx:Math.cos(an)*dd,cy:Math.sin(an)*dd,r:R()*2.2+.4,fill:'#fff',opacity:R()},bg)}}
+ C.add({id:'univ',x:0,y:0,r:120,t:U[1],s:U[2],d:U[3],col:U[7],fs:1.4,fw:1100,k:'Le cœur de la carte',tags:['Univers'],draw:c=>orb(c,0,0,120,U[7],0,'rgba(200,255,210,.6)')});
+ E('line',{x1:-R0,y1:0,x2:R0,y2:0,stroke:'rgba(255,210,63,.45)','stroke-width':2,'stroke-dasharray':'6 8'},C.eL);
+ [['MACRO ↑',-14],['MICRO ↓',36]].forEach(([l,o])=>{const t=T(bg,-R0+30,o,l,'big','start');t.style.fontSize='30px';const t2=T(bg,R0-30,o,l,'big','end');t2.style.fontSize='30px'});
+ /* le Un-Au-Dessus-de-Tout et le Un-En-Dessous-de-Tout */
+ const god=OM.find(r=>r[0]=='god'),dev=OM.find(r=>r[0]=='devil'),gy=-R0-330,dy=R0+330;
+ for(let k=0;k<24;k++){const a=-Math.PI/2+(k-11.5)*.07;E('line',{x1:0,y1:gy,x2:Math.cos(a)*900,y2:gy+Math.sin(a)*-900*-1+0,stroke:'#fff3c4','stroke-width':3,opacity:.07},bg)}
+ E('circle',{cy:gy,r:300,fill:rgrad(bg,[[0,'#fff6d8',.5],[1,'#fff6d8',0]])},bg);E('circle',{cy:dy,r:300,fill:rgrad(bg,[[0,'#9cff5a',.45],[1,'#9cff5a',0]])},bg);
+ [[god,gy],[dev,dy]].forEach(([r,y],k)=>C.add({id:r[0],x:0,y,r:88,t:r[1],s:r[2],d:r[3],col:r[7],fs:1.3,k:'Aux deux extrémités',tags:[k?'Tout en bas':'Tout en haut'],draw:c=>orb(c,0,y,88,r[7],k?4:0,k?'#9cff5a':'#fff')}));
+ /* royaumes extérieurs */
+ const side=[['neg',-R0-420,-520],['beyond',R0+420,-520],['shore',-R0-420,420],['omni',R0+420,420]];
+ side.forEach(([id,x,y],k)=>{const r=OM.find(q=>q[0]==id);E('line',{x1:x,y1:y,x2:Math.sign(x)*R0*.92,y2:y*.6,stroke:r[7]=='#ffffff'?'#ddd':r[7],'stroke-width':2,'stroke-dasharray':'4 8',opacity:.6},bg);
+  C.add({id,x,y,r:70,t:r[1],s:r[2],d:r[3],col:r[7],fs:1.1,k:'Hors des strates',tags:['Royaume'],draw:c=>orb(c,x,y,70,r[7],k+1)})});
+ T(g,0,gy-260,'THE MARVEL OMNIVERSE','big').classList.add('ttl')}
 
 /* ---------- MAP 6 : HIÉRARCHIE ---------- */
 const HIER=[
@@ -532,36 +544,72 @@ const HIER=[
  [5,'h_knull','Knull','le Roi en Noir','Dieu du Vide primordial, créateur des symbiotes. Il tua un Céleste avec All-Black, la première arme.','#1b1d2e',1,'#6fdcff'],
  [5,'h_oba','Le Un-En-Dessous-de-Tout','le mal absolu','Il règne sur le Dessous. Il ronge Bruce Banner depuis la porte verte.','#3b1b10',0,'#9cff5a']];
 const TIERS=['Suprême','Arbitres','Abstraits','Forces','Puissances','Ténèbres'];
-function buildHier(g){ctx(g);const dx=205,dy=235,r=40;
- TIERS.forEach((t,i)=>{const n=HIER.filter(h=>h[0]==i).length,w=Math.max(n,2)*dx/2+60;E('line',{x1:-w,y1:i*dy-r-28,x2:w,y2:i*dy-r-28,stroke:'rgba(255,210,63,.22)'},g);T(g,-610,i*dy+5,t,'big','end')});
- HIER.forEach(([ti,id,t,s,d,col,tex,rim])=>{const row=HIER.filter(h=>h[0]==ti),j=row.findIndex(h=>h[1]==id),x=(j-(row.length-1)/2)*dx,y=ti*dy;
-  C.add({id,x,y,r,t,s,d,col,fs:.82,k:'Rang : '+TIERS[ti].toLowerCase(),tags:[TIERS[ti]],draw:c=>orb(c,x,y,r,col,tex,rim)})});
- for(let i=1;i<C.nodes.length;i++)if(HIER[i][0]<=2)C.edge(HIER[i][0]==1?'h_oaa':HIER[i][1],HIER[i][0]==1?HIER[i][1]:'h_trib',{'stroke-dasharray':'2 5'});
- T(g,0,-120,'QUI DOMINE LE COSMOS ?','big');}
+/* ---------- MAP 6 : LES FAMILLES (généalogie relevée sur le wiki, content/family.json) ---------- */
+const CLANS=[['abs','LES ENTITÉS ABSTRAITES','#FFE500'],['cel','CÉLESTES ET PUISSANCES','#ffb21f'],['pow','FORCES ET ÉNERGIES','#ff7a3d'],['dark','LES TÉNÈBRES','#a58bd8'],['per','LES PERSONNAGES','#f3ead2'],['obj','OBJETS DE POUVOIR','#b98bff']];
+const FAMD=(window.DB||{}).FAM||{p:[],s:[]};
+function famOf(id){const P=[],K=[],S0=[];FAMD.p.forEach(([a,b,n])=>{if(b==id&&IDX[a])P.push([a,n]);if(a==id&&IDX[b])K.push([b,n])});FAMD.s.forEach(([a,b,n])=>{if(a==id&&IDX[b])S0.push([b,n]);if(b==id&&IDX[a])S0.push([a,n])});return{P,K,S:S0}}
+function buildFam(g){ctx(g);famDefs(g);const bg=E('g',{},g);g.insertBefore(bg,C.eL);const ids=Object.keys(IDX).filter(id=>IDX[id].m==5),dx=215,dy=255;
+ const par={},kid={};FAMD.p.forEach(([a,b])=>{if(IDX[a]&&IDX[b]&&IDX[a].m==5&&IDX[b].m==5){(par[b]=par[b]||[]).push(a);(kid[a]=kid[a]||[]).push(b)}});
+ const HI=new Set(HIER.map(h=>h[1])),pos={};let X0=0,Y0=0,rowH=0;const MAXW=5200;
+ CLANS.forEach(([cat,title,col])=>{const M=ids.filter(id=>IDX[id].cat==cat);if(!M.length)return;const inM=new Set(M),gen={};
+  const G=(id,seen=new Set())=>{if(gen[id]!=null)return gen[id];if(seen.has(id))return 0;seen.add(id);return gen[id]=Math.max(0,...(par[id]||[]).filter(q=>inM.has(q)).map(q=>G(q,seen)+1))};M.forEach(id=>G(id));
+  const fam=M.filter(id=>(par[id]||[]).some(q=>inM.has(q))||(kid[id]||[]).some(q=>inM.has(q))),solo=M.filter(id=>!fam.includes(id)).sort((a,b)=>(HI.has(b)-HI.has(a))||IDX[a].t.localeCompare(IDX[b].t));
+  const cols=Math.max(6,Math.ceil(Math.sqrt(M.length*2.2))),rows=[],gens=[...new Set(fam.map(id=>gen[id]))].sort((a,b)=>a-b);
+  const desc=id=>(kid[id]||[]).reduce((n,k)=>n+1+desc(k),0);
+  gens.forEach(k=>{let R=fam.filter(id=>gen[id]==k);if(!rows.length)R.sort((a,b)=>desc(b)-desc(a));else{const px={};rows.flat().forEach((id,j)=>px[id]=j);R.sort((a,b)=>{const m=id=>{const q=(par[id]||[]).filter(x=>px[x]!=null);return q.length?q.reduce((s,x)=>s+pos[x][0],0)/q.length:1e9};return m(a)-m(b)})}
+   for(let o=0;o<R.length;o+=cols){const part=R.slice(o,o+cols);rows.push(part);part.forEach((id,j)=>pos[id]=[j,rows.length-1])}});
+  const famRows=rows.length;for(let o=0;o<solo.length;o+=cols)rows.push(solo.slice(o,o+cols));
+  const W=cols*dx+140,H=rows.length*dy+(famRows&&solo.length?120:0)+170;if(X0+W>MAXW&&X0>0){X0=0;Y0+=rowH+120;rowH=0}
+  E('rect',{x:X0,y:Y0,width:W,height:H,rx:36,fill:rgrad(bg,[[0,col,.07],[1,col,.015]]),stroke:col,'stroke-opacity':.5,'stroke-width':2,'stroke-dasharray':'8 8'},bg);
+  const tt=T(bg,X0+W/2,Y0+64,title,'big');tt.style.cssText=`font-size:40px;fill:${col}`;
+  if(famRows&&solo.length){const ly=Y0+130+famRows*dy+30;E('line',{x1:X0+40,y1:ly,x2:X0+W-40,y2:ly,stroke:col,'stroke-opacity':.25,'stroke-dasharray':'3 9'},bg);T(bg,X0+W/2,ly+28,'SANS FAMILLE CONNUE DANS L’ATLAS','ax').style.cssText='font-size:15px;fill:'+col}
+  rows.forEach((R,ri)=>R.forEach((id,j)=>{const I=IDX[id],h=HI.has(id),r=h?52:40,x=X0+70+dx/2+j*dx+(cols-R.length)*dx/2,y=Y0+150+ri*dy+(ri>=famRows&&famRows?120:0)+r;
+   C.add({id,x,y,r,t:I.t,s:I.s,d:I.d,col:I.col,fs:h?.95:.8,k:'Les Familles : '+CATS[cat][0].toLowerCase(),tags:[CATS[cat][0]],draw:c=>orb(c,x,y,r,I.col,[...id].reduce((a,ch)=>a+ch.charCodeAt(0),0)%6)})}));
+  X0+=W+120;rowH=Math.max(rowH,H)});
+ FAMD.s.forEach(([a,b])=>{const A=C.nodes.find(n=>n.id==a),B=C.nodes.find(n=>n.id==b);if(A&&B)C.edge(a,b,{stroke:'#FFE500','stroke-width':2,'stroke-dasharray':'2 7',opacity:.6,class:'e sib'})});
+ FAMD.p.forEach(([a,b])=>famEdge(a,b));
+ const lg=E('g',{},bg),ly=-150;E('path',{d:`M0 ${ly}h90`,stroke:'#FFE500','stroke-width':3,'marker-end':'url(#famar)'},lg);T(lg,110,ly+8,'parent → enfant','ax','start').style.fontSize='18px';
+ E('line',{x1:330,y1:ly,x2:420,y2:ly,stroke:'#FFE500','stroke-width':2,'stroke-dasharray':'2 7'},lg);T(lg,440,ly+8,'fratrie','ax','start').style.fontSize='18px';
+ T(lg,560,ly+8,'Liens relevés dans les fiches du wiki Marvel (Parents, Fratrie, Descendance)','ax','start').style.cssText='font-size:15px;fill:#bfb8a5';
+ T(g,MAXW/2,-300,'THE COSMIC FAMILIES','big').classList.add('ttl')}
 
-/* ---------- MAP 7 : LE RÉSEAU (constellation de toutes les relations) ---------- */
-function buildNet(g){ctx(g);const ck=Object.keys(CATS),R=rng(3),ids=Object.keys(IDX).filter(id=>IDX[id].m<7&&!IDX[id].u&&!['omni','void','exo','superflow','hyper','micro'].includes(id)),N=ids.length,ix={};
- const P=ids.map((id,i)=>{ix[id]=i;const a=ck.indexOf(IDX[id].cat)/(ck.length-1)*TAU;return{id,a,x:Math.cos(a)*1000+R()*300-150,y:Math.sin(a)*1000+R()*300-150}}),L=[],deg=P.map(()=>0);
- ids.forEach(a=>(RELS[a]||[]).forEach(b=>{if(ix[b]!=null&&a<b){L.push([ix[a],ix[b]]);deg[ix[a]]++;deg[ix[b]]++}}));
- for(let it=0;it<360;it++){const T0=1-it/400;
-  for(let i=0;i<N;i++)for(let j=i+1;j<N;j++){const A=P[i],B=P[j],dx=A.x-B.x,dy=A.y-B.y,d2=dx*dx+dy*dy+1;if(d2>160000)continue;const f=Math.min(40,26000/d2)*T0;A.x+=dx*f/40;A.y+=dy*f/40;B.x-=dx*f/40;B.y-=dy*f/40}
-  L.forEach(([i,j])=>{const A=P[i],B=P[j],dx=B.x-A.x,dy=B.y-A.y,d=Math.hypot(dx,dy)+.1,f=(d-170)*.012*T0;A.x+=dx/d*f;A.y+=dy/d*f;B.x-=dx/d*f;B.y-=dy/d*f});
-  P.forEach(p=>{p.x+=(Math.cos(p.a)*1000-p.x)*.014;p.y+=(Math.sin(p.a)*1000-p.y)*.014})}
- const top=[...deg].sort((a,b)=>b-a)[18]||0;
- P.forEach((p,i)=>{const I=IDX[p.id],r=13+Math.min(deg[i],14)*2.1;C.add({id:p.id,x:p.x,y:p.y,r,t:I.t,s:I.s,d:I.d,col:I.col,k:'Le Réseau : '+CATS[I.cat][0].toLowerCase(),tags:[CATS[I.cat][0],deg[i]+' liens'],lab:'b',nosub:1,fs:Math.max(.5,Math.min(.9,r/36)),tour:deg[i]>top,draw:c=>orb(c,p.x,p.y,r,I.col,i%6)})});
- L.forEach(([i,j])=>C.edge(P[i].id,P[j].id,{stroke:'rgba(160,200,255,.22)','stroke-width':1}));
- ck.forEach(k=>{const M=P.filter(p=>IDX[p.id].cat==k);if(!M.length)return;const cx=M.reduce((a,p)=>a+p.x,0)/M.length,cy=Math.min(...M.map(p=>p.y))-90;
-  const t=T(g,cx,cy,CATS[k][0].toUpperCase(),'big');t.style.fill=CATS[k][1];t.style.fontSize='30px'});
-}
+/* ---------- MAP 7 : LES ROYAUMES (Yggdrasil et ses Dix Royaumes, la galaxie, les dimensions) ---------- */
+const REALMS=[['p_asgard',0,-820,74],['r_valhalla',-260,-980,42],['r_bifrost',-260,-560,40],['p_heven',-640,-900,54],['r_vanaheim',-560,-560,58],['r_alfheim',560,-600,58],['r_nidavellir',660,-200,54],
+ ['r_midgard',0,-90,70],['r_jotunheim',-660,-150,58],['x_yggdrasil',0,330,62],['r_svartalfheim',-600,330,54],['r_muspelheim',620,330,56],['r_niffleheim',330,720,54],['r_hel',-300,760,54]];
+const PLANETS=['p_hala','p_xandar','p_titan','p_knowhere','p_kyln','p_sakaar','p_bluearea'];
+function buildRealms(g){ctx(g);const bg=E('g',{},g);g.insertBefore(bg,C.eL);const ids=Object.keys(IDX).filter(id=>IDX[id].m==6);
+ const add=(id,x,y,r,k)=>{const I=IDX[id];if(!I||C.nodes.some(n=>n.id==id))return;C.add({id,x,y,r,t:I.t,s:I.s,d:I.d,col:I.col,fs:r>50?1:.85,k,tags:[CATS[I.cat][0]],draw:c=>orb(c,x,y,r,I.col,[...id].reduce((a,ch)=>a+ch.charCodeAt(0),0)%6)})};
+ /* Yggdrasil : ciel, racines, tronc et branches */
+ E('circle',{cx:0,cy:-150,r:1150,fill:rgrad(bg,[[0,'#ffd98a',.16],[.6,'#ff9b3d',.05],[1,'#000',0]])},bg);
+ const wood='#8a5a2b';[[-80,900,-420,1000],[80,900,420,1000],[0,900,0,1080],[-40,900,-250,1080],[40,900,250,1080]].forEach(([a,b,c,d])=>E('path',{d:`M${a} ${b-200}Q${(a+c)/2} ${b} ${c} ${d}`,stroke:wood,'stroke-width':26,fill:'none','stroke-linecap':'round',opacity:.7},bg));
+ E('path',{d:'M-70 760C-50 300 -60 -200 -20 -700L20 -700C60 -200 50 300 70 760Z',fill:wood,opacity:.85},bg);
+ REALMS.forEach(([id,x,y])=>{if(id=='x_yggdrasil')return;const sy=Math.max(-700,Math.min(700,y*.7));E('path',{d:`M0 ${sy}Q${x*.45} ${(sy+y)/2-60} ${x} ${y}`,stroke:wood,'stroke-width':14,fill:'none','stroke-linecap':'round',opacity:.6},bg)});
+ {const R=rng(7);for(let k=0;k<90;k++){const a=R()*TAU,d=380+R()*720,x=Math.cos(a)*d*1.05,y=-150+Math.sin(a)*d*.95;E('circle',{cx:x,cy:y,r:6+R()*14,fill:R()<.5?'#7fbf4d':'#d9b23f',opacity:.12+R()*.15},bg)}}
+ const tt=T(bg,0,-1180,'YGGDRASILL · THE TEN REALMS','big');tt.style.fontSize='44px';
+ REALMS.forEach(([id,x,y,r])=>add(id,x,y,r,'Les Dix Royaumes d’Yggdrasil'));
+ /* la galaxie et ses empires ; les dimensions */
+ const grid=(L,x0,y0,cols,title,col,k)=>{const dx=230,dy=250,rows=Math.ceil(L.length/cols),W=cols*dx+120,H=rows*dy+150;
+  E('rect',{x:x0,y:y0,width:W,height:H,rx:34,fill:rgrad(bg,[[0,col,.08],[1,col,.015]]),stroke:col,'stroke-opacity':.55,'stroke-width':2,'stroke-dasharray':'8 8'},bg);const t=T(bg,x0+W/2,y0+62,title,'big');t.style.cssText=`font-size:38px;fill:${col}`;
+  L.forEach((id,i)=>add(id,x0+60+dx/2+(i%cols)*dx,y0+160+Math.floor(i/cols)*dy+30,id.startsWith('p_')?50:42,k));return H};
+ const gal=[...PLANETS.filter(id=>IDX[id]),...ids.filter(id=>IDX[id].cat=='grp').sort((a,b)=>IDX[a].t.localeCompare(IDX[b].t))];
+ const dims=ids.filter(id=>IDX[id].cat=='pla'&&!PLANETS.includes(id)&&!REALMS.some(r=>r[0]==id));
+ const h1=grid(gal,1200,-1150,6,'THE GALAXY · EMPIRES & TEAMS','#ffa45c','La galaxie et ses empires');
+ grid(dims,1200,-1150+h1+120,6,'POCKET DIMENSIONS','#7fe0a0','Les dimensions de poche');
+ T(g,900,-1330,'THE REALMS','big').classList.add('ttl')}
+
 /* ---------- MAP 8 : LA CHRONOLOGIE ---------- */
 const ERAS=[[1958,1970,'Âge d’argent','#FFE500'],[1970,1985,'Âge de bronze','#ffa45c'],[1985,2000,'Âge moderne','#b98bff'],[2000,2012,'Renaissance cosmique','#7fe0a0'],[2012,2016,'Ère Hickman','#e2493f'],[2016,2025,'Ère Ewing et Cates','#fff503']];
-function buildTime(g,P){ctx(g);const X=y=>(y-1958)*54,Q=(a,b)=>P?[b,a]:[a,b],H=470;
+function buildTime(g,P){ctx(g);const X=y=>(y-1958)*54,Q=(a,b)=>P?[b,a]:[a,b],H=760;
  ERAS.forEach(([a,b,n,c])=>{const[x,y]=Q(X(a),-H),[w,h]=Q(X(b)-X(a),2*H);E('rect',{x,y,width:w,height:h,fill:c,opacity:.07},g);const[lx,ly]=Q(X(a)+14,-H+34);const t=T(g,lx,ly,n.toUpperCase(),'big','start');t.style.fill=c});
  const[x1,y1]=Q(0,0),[x2,y2]=Q(X(2025),0);E('line',{x1,y1,x2,y2,stroke:'#f3ead2','stroke-width':3,opacity:.6},g);
  for(let y=1960;y<=2025;y+=5){const[tx,ty]=Q(X(y),0);E('circle',{cx:tx,cy:ty,r:5,fill:'#f3ead2'},g);const[lx,ly]=Q(X(y),P?0:30);T(g,lx+(P?-14:0),ly+(P?5:0),y,'ax',P?'end':'middle')}
  DBT.forEach((r,i)=>{const side=i%2?1:-1,off=side*(150+(i>>1)%3*100),[x,y]=Q(X(r[0]),off),[ax,ay]=Q(X(r[0]),0),col=(ERAS.find(e=>r[0]>=e[0]&&r[0]<e[1])||ERAS[5])[3];
   E('line',{x1:ax,y1:ay,x2:x,y2:y,stroke:col,'stroke-width':1.5,'stroke-dasharray':'3 4',opacity:.7},C.eL);
   C.add({id:'e'+i,x,y,r:26,t:r[1],s:String(Math.floor(r[0])),d:r[2],col,k:'Publication, '+Math.floor(r[0]),tags:[String(Math.floor(r[0]))],lab:'b',fs:.95,draw:c=>orb(c,x,y,26,col,i%6)})});
+ /* les grands événements de l'encyclopédie, sous la frise (au-dessus en vertical) */
+ Object.keys(IDX).filter(id=>IDX[id].m==7&&!/^e\d+$/.test(id)).map(id=>[id,+((IDX[id].src||'').match(/\((\d{4})\)/)||[])[1]]).filter(x=>x[1]).sort((a,b)=>a[1]-b[1]).forEach(([id,yr],k)=>{
+  const I=IDX[id],off=(k%2?1:-1)*(560+(k>>1)%2*120),[x,y]=Q(X(yr),off),[ax,ay]=Q(X(yr),0);E('line',{x1:ax,y1:ay,x2:x,y2:y,stroke:'#fff503','stroke-width':1.2,'stroke-dasharray':'1 6',opacity:.45},C.eL);
+  C.add({id,x,y,r:34,t:I.t,s:String(yr),d:I.d,col:'#fff503',k:'Grand événement, '+yr,tags:[String(yr)],lab:'b',fs:.9,draw:c=>orb(c,x,y,34,'#e2493f',k%6,'#fff503')})});
 }
 
 /* ---------- enrichissements : sources, liens croisés, faits ---------- */
@@ -614,36 +662,44 @@ const EX={
  h_asp:['Ultimates² (2017)','c1 f0',''],h_gal:['Fantastic Four #48 (1966)','c6 f5',''],h_watch:['Fantastic Four #13 (1963)','',''],
  h_anti:['Defenders (2021) #4','c3 thaumiel',''],h_knull:['Thor: God of Thunder #6 (2013) · Venom #3 (2018)','gamaliel',''],h_oba:['Immortal Hulk #4 (2018)','thaumiel devil below','']};
 
+/* noms anglais (officiels) des nœuds construits dans ce fichier ; le nom français reste dans la fiche */
+const ENN={c1:'First Cosmos',c2:'Second Cosmos',c3:'Third Cosmos',c4:'Fourth Cosmos',c5:'Fifth Cosmos',c6:'Sixth Cosmos',c7:'Seventh Cosmos',bw:'Battleworld',c8:'Eighth Cosmos',
+ keter:'1. Keter: House of Ideas',chokmah:'2. Chokmah',binah:'3. Binah',daat:'Da’at: Couldn’t-Be-Shouldn’t-Be',chesed:'4. Chesed',gevurah:'5. Gevurah: Sphere of Judgment',tiferet:'6. Tiferet: White Hot Room',netzach:'7. Netzach: Far Beyond the Worlds',hod:'8. Hod: Overspace',yesod:'9. Yesod: The Beyond',malkuth:'10. Malkuth: Eighth Cosmos',
+ lilith:'Q10. Lilith: Limbo',gamaliel:'Q9. Gamaliel: Un-Beyond',samael:'Q8. Samael: Underspace',gharab:'Q7. Gharab Tzerek',tagiriron:'Q6. Tagiriron: Cold Black Room',golohab:'Q5. Golohab',agshe:'Q4. Agshekeloh',satariel:'Q3. Satariel',ghogiel:'Q2. Ghogiel',thaumiel:'Q1. Thaumiel: Below-Place',
+ eternity:'Eternity',powers:'The-Powers-That-Be',order:'Master Order',chaos:'Lord Chaos',tribunal:'Living Tribunal',infinity:'Infinity',natural:'The-Natural-Order-of-Things',oblivion:'Oblivion',
+ f0:'Singularity',f1:'Multiversity',f2:'The First Sentinel & the All-Void',f3:'The Archetypes',f4:'Magic',f5:'“Science”!!',f6:'Marvels',f7:'Marvels',f8:'Ruins',
+ god:'One-Above-All',omni:'Omniverse',void:'Outer Void',exo:'Exo-Space',multi:'Multiverse',superflow:'Superflow',overspace:'Overspace',univ:'Universe · Earth',hyper:'Hyperspace',micro:'Microverse',under:'Underspace',below:'Below-Place',devil:'One-Below-All',neg:'Negative Zone',beyond:'Beyond Realm',shore:'Far Shore',manif:'The Manifestations (Infinites)',
+ h_oaa:'One-Above-All',h_trib:'Living Tribunal',h_bey:'Beyonders',h_eter:'Eternity',h_inf:'Infinity',h_death:'Death',h_obl:'Oblivion',h_chaos:'Lord Chaos',h_order:'Master Order',h_phx:'Phoenix Force',h_omega:'Omega Force',h_enigma:'Enigma Force',h_uni:'Uni-Power',h_cel:'Celestials',h_asp:'Aspirants',h_gal:'Galactus',h_watch:'Watchers',h_anti:'Anti-All',h_knull:'Knull',h_oba:'One-Below-All'};
 /* ---------- registry ---------- */
 /* univers affiché : Marvel (défaut) ou DC (?u=dc) */
 const UNI=new URLSearchParams(location.search).get('u')==='dc'?'dc':'marvel',UNAME=UNI=='dc'?'Cosmologie DC':'Cosmologie Marvel',DCX=window.DBDC||{E:{},MAPS:[],IMG:{}};
 /* off : version officielle de la carte (publication d'origine du schéma) ; null = aucune version officielle publiée ; data = carte construite à partir des sources */
 const MAPS=[
- {n:'Les Cosmos',sub:'Du Premier au Huitième Cosmos',b:buildCosmos,dyn:1,off:{src:'Ultimates² (2016-2017) · Defenders (2021)'}},
+ {n:'Les Cosmos',sub:'Du Premier au Huitième Cosmos',b:buildCosmos,dyn:1,off:{src:'Ultimates² (2016-2017) · Defenders (2021)',img:'https://static.wikia.nocookie.net/marveldatabase/images/1/17/Arishem_%28First_Cosmos%29%2C_Beyonders%2C_First_Firmament_%28First_Cosmos%29%2C_Third_Cosmos_%28Multiverse%29%2C_and_Eternity_%28Multiverse%29_from_Ultimates_2_Vol_2_6_001.jpg/revision/latest?cb=20230821104010',cap:'l’histoire des cosmos racontée dans Ultimates² #6 (Marvel, 2017), Al Ewing et Travel Foreman'}},
  {n:'L’Arbre',sub:'Le Mystère & la Qlippoth',b:buildTree,off:{src:'Defenders: Beyond (2022) ; la Qlippoth est masquée (construction de fans)'}},
  {n:'Les Axes',sub:'Les huit Ur-Diviseurs',b:buildAxes,bounds:[-420,-400,840,820],off:null},
  {n:'Les Firmaments',sub:'Neuf firmaments, un seul récit',b:buildFir,off:{src:'Ultimates² (2017) · Defenders (2021)'}},
  {n:'L’Omnivers',sub:'Coupe de la réalité Marvel',b:buildOmni,off:{src:'Ultimates² (2017) · Defenders (2021)'}},
- {n:'La Hiérarchie',sub:'Qui domine le cosmos ?',b:buildHier,off:null},
- {n:'Le Réseau',sub:'Tout est lié',b:buildNet,off:{data:1}},
+ {n:'Les Familles',sub:'Parents, enfants et fratries du cosmos',b:buildFam,off:{data:1}},
+ {n:'Les Royaumes',sub:'Yggdrasil, la galaxie et les dimensions',b:buildRealms,off:{src:'War of the Realms #1 (2019) · Thor vol. 4 #7 (2015)',img:'https://static.wikia.nocookie.net/marveldatabase/images/d/da/Ten_Realms_from_War_of_the_Realms_Vol_1_1_001.jpg/revision/latest?cb=20200205023709',cap:'la carte des Dix Royaumes, War of the Realms #1 (Marvel, 2019), Jason Aaron et Russell Dauterman'}},
  {n:'La Chronologie',sub:'Soixante ans de cosmos',b:buildTime,dyn:1,off:{data:1}}];
-const DCOFF=[{src:'The Multiversity Guidebook #1 (2015)'},{src:'Justice League (2018-2020) · Dark Nights: Death Metal (2020-2021)'},{src:'Green Lantern (2005-2011) · Blackest Night (2009)'},{src:'The Sandman (1989-1996)'},{src:'New Gods (1971-1972)'},null,{data:1},{data:1}];
+const DCOFF=[{src:'The Multiversity Guidebook #1 (2015)',img:'https://static.wikia.nocookie.net/marvel_dc/images/6/6e/Map_of_the_Multiverse_002.png/revision/latest?cb=20141104181338',cap:'« The Map of the Multiverse », The Multiversity Guidebook #1 (DC Comics, 2015), Grant Morrison et Rian Hughes'},{src:'Justice League (2018-2020) · Dark Nights: Death Metal (2020-2021)'},{src:'Green Lantern (2005-2011) · Blackest Night (2009)'},{src:'The Sandman (1989-1996)'},{src:'New Gods (1971-1972)'},null,{data:1},{data:1}];
 if(UNI=='dc'){MAPS.length=0;DCX.MAPS.forEach((d,i)=>MAPS.push({n:d.n,sub:d.sub,hook:d.hook,b:dcBuilder(d,i),off:DCOFF[i]===undefined?null:DCOFF[i]}));Object.assign(window.IMG=window.IMG||{},DCX.IMG)}
 const CATS={cos:['Cosmos et firmaments','#ff6b5a'],abs:['Entités abstraites','#FFE500'],cel:['Célestes et puissances','#ffb21f'],pow:['Forces et énergies','#ff7a3d'],obj:['Objets de pouvoir','#b98bff'],pla:['Lieux et dimensions','#7fe0a0'],per:['Personnages','#f3ead2'],grp:['Groupes','#ffa45c'],dark:['Ténèbres','#a58bd8'],evt:['Événements','#fff503']};
 const CERT={c:['Canon','montré ou dit dans un comic, numéro et page vérifiés'],o:['Source officielle','guide ou manuel officiel Marvel'],d:['Interprétation','conclusion argumentée à partir de plusieurs comics'],t:['Théorie','hypothèse ou construction de fans, non officielle'],x:['Contesté','les sources se contredisent'],u:['À vérifier','première apparition relevée sur un wiki communautaire ; description pas encore confrontée aux comics']};
-const DBE=(window.DB||{}).E||{},DBT=(window.DB||{}).T||[],IDX={},RELS={},put=(id,m,o)=>IDX[id]=Object.assign({m},o);
+const DBE=(window.DB||{}).E||{},DBT=(window.DB||{}).T||[],IDX={},RELS={},put=(id,m,o)=>{const en=UNI!='dc'&&ENN[id];if(en){o.fr=o.t;o.t=en.replace(/^[\dQ]+\. /,'');o.en=o.t}IDX[id]=Object.assign({m},o)};
 if(UNI!='dc'){
 COS.forEach(r=>put(r[0],0,{t:r[1],s:r[2].replace('\n',' '),d:r[3],cat:'cos',col:r[0]=='bw'?'#8a6a4a':'#e2493f',cert:'u'}));
 TREE.forEach(r=>put(r[0],1,{t:r[4].replace(/^[\dQ]+\. /,''),s:r[5]||'',d:r[6]||'',cat:'pla',col:r[3]=='mv'?'#e2493f':r[3]||'#555',cert:!r[3]||r[2]>5?'t':'u',u:!r[3]}));
 UR.forEach(r=>put(r[0],2,{t:r[1],s:r[2],d:r[5],cat:'abs',col:r[4],cert:'d'}));
 FIR.forEach((r,i)=>put('f'+i,3,{t:(i+1)+(i?'ᵉ':'ᵉʳ')+' Firmament : '+r[0].replace('\n',' '),s:'',d:r[1],cat:'cos',col:r[2],cert:i==8?'t':'d'}));
-OM.forEach(r=>put(r[0],4,{t:r[1],s:r[2],d:r[3],cat:r[0]=='god'||r[0]=='devil'?'abs':'pla',col:r[7],cert:{manif:'t',shore:'d',hyper:'d',under:'d'}[r[0]]||'u'}));
+OM.forEach(r=>put(r[0],r[0]=='manif'?5:4,{t:r[1],s:r[2],d:r[3],cat:r[0]=='god'||r[0]=='devil'?'abs':'pla',col:r[7],cert:{manif:'t',shore:'d',hyper:'d',under:'d'}[r[0]]||'u'}));
 HIER.forEach(r=>put(r[1],5,{t:r[2],s:r[3],d:r[4],cat:['abs','abs','abs','pow','cel','dark'][r[0]],col:r[5],cert:'d'}));
-Object.entries(DBE).forEach(([id,r])=>put(id,6,{t:r[0],en:r[1],cat:r[2],s:r[3],d:r[4],src:r[5],cert:r[6],rel:r[7],fact:r[8],col:CATS[r[2]][1]}));
+Object.entries(DBE).forEach(([id,r])=>put(id,r[2]=='evt'?7:r[2]=='pla'||r[2]=='grp'?6:5,{t:r[1],fr:r[0],en:r[1],cat:r[2],s:r[3],d:r[4],src:r[5],cert:r[6],rel:r[7],fact:r[8],col:CATS[r[2]][1]}));
 DBT.forEach((r,i)=>put('e'+i,7,{t:r[1],s:String(Math.floor(r[0])),d:r[2],src:r[3],rel:r[4],cat:'evt',col:'#fff503',cert:'u',yr:r[0]}));
 }else{
- const first={};DCX.MAPS.forEach((d,m)=>[...(d.nodes||[]).map(n=>n[0]),...(d.wheel||[])].forEach(id=>first[id]??=m));
- Object.entries(DCX.E).forEach(([id,r])=>put(id,r[2]=='evt'?6:first[id]??7,{t:r[0],en:r[1],cat:r[2],s:r[3],d:r[4],src:r[5],cert:r[6],rel:r[7],fact:r[8],yr:r[9],col:CATS[r[2]][1]}));
+ const first={};DCX.MAPS.forEach((d,m)=>[...(d.nodes||[]).map(n=>n[0]),...(d.wheel||[]),...(d.orbits||[]).flatMap(o=>o.ids),...(d.spokes?d.spokes.ids.flat():[])].forEach(id=>first[id]??=m));
+ Object.entries(DCX.E).forEach(([id,r])=>put(id,r[2]=='evt'?6:first[id]??7,{t:r[1],fr:r[0],en:r[1],cat:r[2],s:r[3],d:r[4],src:r[5],cert:r[6],rel:r[7],fact:r[8],yr:r[9],col:CATS[r[2]][1]}));
  for(const k in WQ)delete WQ[k];
 }
 const link=(a,b)=>{if(a==b||!IDX[a]||!IDX[b])return;(RELS[a]=RELS[a]||new Set).add(b);(RELS[b]=RELS[b]||new Set).add(a)};
@@ -657,33 +713,75 @@ const capOn=()=>S.tour||S.fmt!='free'||body.classList.contains('clean');
 function home(){if(!bounds)return;const[a,b,w,h]=bounds;cam.tx=a+w/2;cam.ty=b+h/2+(capOn()&&S.tour?0:0);cam.tw=Math.max(w,h*aspect)*1.1}
 function focusT(n){let w=n.fw||n.r*(capOn()?(aspect<1?8.5:8):12);const mh=n.r*(capOn()?(aspect<1?5.5:8):7.5);if(w/aspect<mh)w=mh*aspect;const h=w/aspect;
  const ps=$('#panel').classList.contains('show'),mob=innerWidth<=760;cam.tw=w;cam.tx=n.x+(ps&&!mob?w*.17:capOn()&&aspect>1.3?-w*.14:0);cam.ty=n.y+(capOn()?h*(aspect<1?.2:.25):ps&&mob?h*.24:0)}
-/* cartes DC décrites par des données (data-dc.js) : anneaux, paliers, roue, frise ou réseau */
-function dcBuilder(d,mi){return function(g){ctx(g);const tex=id=>[...id].reduce((a,c)=>a+c.charCodeAt(0),0)%6,cat=id=>(IDX[id]||{}).cat||'cos';
- const add=(id,x,y,r,col)=>{r*=d.scale||1;const I=IDX[id];if(!I||C.nodes.some(n=>n.id==id))return;col=col||I.col;C.add({id,x,y,r,t:I.t,s:I.s,d:I.d,col,fs:r>48?1:.85,k:d.n,tags:[CATS[cat(id)][0]],draw:c=>orb(c,x,y,r,col,tex(id))})};
- (d.rings||[]).forEach(([r,l])=>{E('circle',{cx:0,cy:0,r,fill:'none',stroke:'rgba(255,229,0,.35)','stroke-width':2,'stroke-dasharray':'4 8'},g);T(g,0,-r-16,l.toUpperCase(),'ax').style.fontSize='18px'});
- (d.tiers||[]).forEach((t,k)=>{E('line',{x1:-560,y1:k*230-78,x2:560,y2:k*230-78,stroke:'rgba(255,229,0,.14)'},g);T(g,-590,k*230+6,t,'big','end')});
- if(d.wheel){const n=d.wheel.length,R0=d.wheelR||420;d.wheel.forEach((id,k)=>{const a=-Math.PI/2+k*TAU/n,x=Math.cos(a)*R0,y=Math.sin(a)*R0,c=d.wheelColors[k];E('line',{x1:0,y1:0,x2:x,y2:y,stroke:c,'stroke-opacity':.35,'stroke-width':3},g);add(id,x,y,48,c)});E('circle',{cx:0,cy:0,r:R0,fill:'none',stroke:'rgba(255,255,255,.12)'},g)}
- (d.nodes||[]).forEach(([id,x,y,r])=>add(id,x,y,r));
- if(d.timeline){const ev=Object.keys(IDX).filter(id=>IDX[id].yr).sort((a,b)=>IDX[a].yr-IDX[b].yr),y0=1984,X=y=>(y-y0)*95;
-  E('line',{x1:X(y0)-40,y1:0,x2:X(2025)+40,y2:0,stroke:'rgba(255,229,0,.5)','stroke-width':3},g);for(let y=1985;y<=2025;y+=5){E('line',{x1:X(y),y1:-12,x2:X(y),y2:12,stroke:'#FFE500'},g);T(g,X(y),40,String(y),'ax')}
-  ev.forEach((id,k)=>{const x=X(IDX[id].yr),y=(k%2?1:-1)*(150+(k%4>1?110:0));E('line',{x1:x,y1:0,x2:x,y2:y,stroke:'rgba(255,229,0,.25)'},g);add(id,x,y,40)})}
- if(d.network){const ids=Object.keys(IDX),ix={},R=rng(11),ck=Object.keys(CATS);const P=ids.map((id,k)=>{ix[id]=k;const a=ck.indexOf(cat(id))/(ck.length-1)*TAU;return{id,a,x:Math.cos(a)*700+R()*200-100,y:Math.sin(a)*700+R()*200-100}}),L=[];
+/* cartes DC décrites par des données (data-dc.js) : décor, orbites, rayons, paliers, frise ou réseau */
+let ARC=0;
+function arcLabel(g,r,txt,deg,col,fs,cx=0,cy=0){const id='al'+(++ARC),a=deg*Math.PI/180,sp=Math.min(1.4,txt.length*fs*.75/r),bot=Math.sin(a)>.3;
+ const a1=bot?a+sp/2:a-sp/2,a2=bot?a-sp/2:a+sp/2,P=t=>[cx+Math.cos(t)*r,cy+Math.sin(t)*r];const[x1,y1]=P(a1),[x2,y2]=P(a2);
+ E('path',{id,d:`M${x1} ${y1}A${r} ${r} 0 0 ${bot?0:1} ${x2} ${y2}`,fill:'none'},g);const t=E('text',{class:'arcl','text-anchor':'middle',dy:fs*.35},g);t.style.cssText=`font-size:${fs}px;fill:${col}`;
+ const tp=E('textPath',{href:'#'+id,startOffset:'50%'},t);tp.textContent=txt;return t}
+function ring(g,r1,r2,fill,op=1,cls){return E('path',{d:`M${-r2} 0A${r2} ${r2} 0 1 0 ${r2} 0A${r2} ${r2} 0 1 0 ${-r2} 0ZM${-r1} 0A${r1} ${r1} 0 1 1 ${r1} 0A${r1} ${r1} 0 1 1 ${-r1} 0Z`,fill,'fill-rule':'evenodd',opacity:op,class:cls||''},g)}
+function wedge(g,r1,r2,a1,a2,fill,op){const P=(r,a)=>`${Math.cos(a)*r} ${Math.sin(a)*r}`,lg=a2-a1>Math.PI?1:0;
+ return E('path',{d:`M${P(r1,a1)}L${P(r2,a1)}A${r2} ${r2} 0 ${lg} 1 ${P(r2,a2)}L${P(r1,a2)}A${r1} ${r1} 0 ${lg} 0 ${P(r1,a1)}Z`,fill,opacity:op},g)}
+let GID=0;function rgrad(g,stops){const id='rg'+(++GID),gr=E('radialGradient',{id},g);stops.forEach(([o,c,a=1])=>E('stop',{offset:o,'stop-color':c,'stop-opacity':a},gr));return`url(#${id})`}
+function deco(g,list){(list||[]).forEach(d=>{const p=d.plan?E('g',{class:'xpd'},g):g;
+ if(d.t=='band'){ring(p,d.r1,d.r2,rgrad(p,[[d.r1/d.r2,d.c[0],.9],[1,d.c[1]||d.c[0],.9]]));E('circle',{r:d.r2,fill:'none',stroke:'rgba(255,255,255,.35)','stroke-width':2},p);
+  if(d.label)[-90,90].forEach(a=>arcLabel(p,(d.r1+d.r2)/2,d.label,a,'#fff',Math.min(46,(d.r2-d.r1)*.4)))}
+ if(d.rainbow||d.t=='rainbow'){const n=72;for(let k=0;k<n;k++)wedge(p,d.r1,d.r2,k/n*TAU-Math.PI/2,(k+1.05)/n*TAU-Math.PI/2,`hsl(${k/n*360},85%,55%)`,.55);
+  ring(p,d.r1,d.r2,rgrad(p,[[d.r1/d.r2,'#000',.55],[.5+d.r1/d.r2/2,'#000',0],[1,'#fff',.25]]));
+  if(d.label)[-60,-120,60,120].forEach(a=>arcLabel(p,(d.r1+d.r2)/2,d.label,a,'#fff',44))}
+ if(d.t=='sectors')for(let k=0;k<d.n;k++){const a=(d.a0+k*360/d.n)*Math.PI/180;E('line',{x1:Math.cos(a)*d.r1,y1:Math.sin(a)*d.r1,x2:Math.cos(a)*d.r2,y2:Math.sin(a)*d.r2,stroke:d.c,'stroke-width':22,opacity:.75},p)}
+ if(d.t=='disk'){E('circle',{r:d.r*1.08,fill:d.c2,opacity:.35,filter:'url(#blur)'},p);E('circle',{r:d.r,fill:rgrad(p,[[0,d.c1,1],[.55,d.c2,.95],[1,d.c3||'#2a0508',1]])},p);if(d.label)arcLabel(p,d.r-30,d.label,-90,'#ffe9b0',30)}
+ if(d.t=='ring'){E('circle',{r:d.r,fill:'none',stroke:d.c,'stroke-width':d.w||2,'stroke-dasharray':d.dash||'',opacity:.85},p);if(d.label)arcLabel(p,d.r+(d.w||2)+18,d.label,d.la??-90,d.c,22)}
+ if(d.t=='glow'){E('circle',{cx:d.x,cy:d.y,r:d.r,fill:rgrad(p,[[0,d.c,.45],[.6,d.c,.12],[1,d.c,0]])},p)}
+ if(d.t=='text'){const t=T(p,d.x,d.y,d.s,'big');t.style.fontSize=(d.f||34)+'px'}
+ if(d.t=='panel'){E('rect',{x:d.x,y:d.y,width:d.w,height:d.h,rx:28,fill:'rgba(255,255,255,.035)',stroke:d.c||'rgba(255,229,0,.45)','stroke-width':2,'stroke-dasharray':'6 8'},p);
+  const t=T(p,d.x+d.w/2,d.y+52,d.title,'big');t.style.fontSize='30px';if(d.c)t.style.fill=d.c}
+ if(d.t=='tier')d.ys.forEach((y,k)=>{E('rect',{x:-d.w/2,y:y-125,width:d.w,height:250,rx:30,fill:k%2?'rgba(255,229,0,.035)':'rgba(255,255,255,.02)'},p);const t=T(p,-d.w/2+30,y-90,d.labels[k],'ax','start');t.style.cssText='font-size:20px;fill:#FFE500'})
+ if(d.t=='wheelbg'){const n=d.colors.length;d.colors.forEach((c,k)=>{const a=-Math.PI/2+k*TAU/n;wedge(p,d.r1,d.r2,a-TAU/n/2,a+TAU/n/2,rgrad(p,[[d.r1/d.r2,c,.5],[1,c,.05]]),1)})}
+ if(d.t=='arc'){const a1=d.a1*Math.PI/180,a2=d.a2*Math.PI/180,cy=d.cy||0;E('path',{d:`M${Math.cos(a1)*d.r} ${cy+Math.sin(a1)*d.r}A${d.r} ${d.r} 0 0 1 ${Math.cos(a2)*d.r} ${cy+Math.sin(a2)*d.r}`,fill:'none',stroke:d.c,'stroke-width':d.w,'stroke-linecap':'round',opacity:.5},p);
+  if(d.label)arcLabel(p,d.r,d.label,(d.a1+d.a2)/2,'#0b0b0b',18,0,cy)}})}
+/* lien de parenté : flèche dorée du parent vers l'enfant */
+function famEdge(a,b){const A=C.nodes.find(n=>n.id==a),B=C.nodes.find(n=>n.id==b);if(!A||!B)return;const dx=B.x-A.x,dy=B.y-A.y,d=Math.hypot(dx,dy)||1,far=d>1400,bend=far?.18:0;
+ const x1=A.x+dx/d*A.r,y1=A.y+dy/d*A.r,x2=B.x-dx/d*(B.r+10),y2=B.y-dy/d*(B.r+10),mx=(x1+x2)/2-dy*bend,my=(y1+y2)/2+dx*bend;
+ const el=E('path',{d:`M${x1} ${y1}Q${mx} ${my} ${x2} ${y2}`,class:'e fam',stroke:'#FFE500','stroke-width':far?2:3,fill:'none','marker-end':'url(#famar)',opacity:far?.28:.85},C.eL);C.edges.push({a,b,el,fam:1})}
+function famDefs(g){const m=E('marker',{id:'famar',viewBox:'0 0 10 10',refX:5,refY:5,markerWidth:5,markerHeight:5,orient:'auto-start-reverse'},E('defs',{},g));E('path',{d:'M0 0L10 5L0 10Z',fill:'#FFE500'},m)}
+function dcBuilder(d,mi){return function(g){ctx(g);famDefs(g);const tex=id=>[...id].reduce((a,c)=>a+c.charCodeAt(0),0)%6,cat=id=>(IDX[id]||{}).cat||'cos';
+ const bg=E('g',{},g);g.insertBefore(bg,C.eL);deco(bg,d.deco);
+ const add=(id,x,y,r,col,xp)=>{r*=d.scale||1;const I=IDX[id];if(!I||C.nodes.some(n=>n.id==id))return;col=col||I.col;C.add({id,x,y,r,t:I.t,s:I.s,d:I.d,col,xp:!!xp,fs:r>48?1.05:r>36?.9:.78,k:d.n,tags:[CATS[cat(id)][0]],draw:c=>orb(c,x,y,r,col,tex(id))})};
+ (d.rings||[]).forEach(([r,l])=>{E('circle',{cx:0,cy:0,r,fill:'none',stroke:'rgba(255,229,0,.35)','stroke-width':2,'stroke-dasharray':'4 8'},bg);arcLabel(bg,r+20,l.toUpperCase(),-90,'#FFE500',20)});
+ (d.tiers||[]).forEach((t,k)=>{E('line',{x1:-560,y1:k*230-78,x2:560,y2:k*230-78,stroke:'rgba(255,229,0,.14)'},bg);T(bg,-590,k*230+6,t,'big','end')});
+ if(d.wheel){const n=d.wheel.length,R0=d.wheelR||420;d.wheel.forEach((id,k)=>{const a=-Math.PI/2+k*TAU/n,x=Math.cos(a)*R0,y=Math.sin(a)*R0,c=d.wheelColors[k];E('line',{x1:0,y1:0,x2:x,y2:y,stroke:c,'stroke-opacity':.35,'stroke-width':3},bg);add(id,x,y,48,c)})}
+ if(d.spokes){const S0=d.spokes,n=S0.ids.length;S0.ids.forEach((row,k)=>{const a=-Math.PI/2+k*TAU/n,c=S0.colors[k];E('line',{x1:Math.cos(a)*170,y1:Math.sin(a)*170,x2:Math.cos(a)*S0.r[S0.r.length-1],y2:Math.sin(a)*S0.r[S0.r.length-1],stroke:c,'stroke-width':5,opacity:.55},bg);
+  row.forEach((id,j)=>add(id,Math.cos(a)*S0.r[j],Math.sin(a)*S0.r[j],S0.size[j],c))})}
+ (d.orbits||[]).forEach(o=>{const n=o.ids.length;o.ids.forEach((id,k)=>{const a=((o.a0??-90)+k*360/n)*Math.PI/180;add(id,Math.cos(a)*o.r,Math.sin(a)*o.r,o.size)})});
+ (d.nodes||[]).forEach(([id,x,y,r,f])=>add(id,x,y,r,null,f=='x'));
+ if(d.timeline){const ev=Object.keys(IDX).filter(id=>IDX[id].yr).sort((a,b)=>IDX[a].yr-IDX[b].yr),y0=1984,X=y=>(y-y0)*110;
+  E('rect',{x:X(y0)-80,y:-26,width:X(2026)-X(y0)+160,height:52,rx:26,fill:'rgba(255,229,0,.08)',stroke:'rgba(255,229,0,.5)'},bg);
+  [[1985,1986,'Crisis on Infinite Earths'],[2005,2009,'Les Crises Johns-Morrison'],[2011,2016,'New 52'],[2016,2020,'Rebirth'],[2020,2026,'Infinite Frontier et après']].forEach(([a,b,l],k)=>{E('rect',{x:X(a),y:-26,width:X(b)-X(a),height:52,fill:['#e2493f','#ff8a2a','#3f8fff','#3fcf5f','#c45bd1'][k],opacity:.35},bg);T(bg,(X(a)+X(b))/2,-40,l,'ax').style.fontSize='15px'});
+  for(let y=1985;y<=2025;y+=5)T(bg,X(y),62,String(y),'ax').style.fontSize='18px';
+  ev.forEach((id,k)=>{const x=X(IDX[id].yr)+(k%3-1)*14,y=(k%2?1:-1)*(190+(k%4>1?150:0));E('line',{x1:x,y1:0,x2:x,y2:y,stroke:'rgba(255,229,0,.35)','stroke-width':2},bg);add(id,x,y,48)})}
+ if(d.network){const ids=Object.keys(IDX),ix={},R=rng(11),ck=Object.keys(CATS);const P=ids.map((id,k)=>{ix[id]=k;const a=ck.indexOf(cat(id))/(ck.length-1)*TAU;return{id,a,x:Math.cos(a)*900+R()*200-100,y:Math.sin(a)*900+R()*200-100}}),L=[];
   ids.forEach(a=>(RELS[a]||[]).forEach(b=>{if(ix[b]!=null&&a<b)L.push([ix[a],ix[b]])}));
-  for(let it=0;it<300;it++){const T0=1-it/340;for(let a=0;a<P.length;a++)for(let b=a+1;b<P.length;b++){const A=P[a],B=P[b],dx=A.x-B.x,dy=A.y-B.y,d2=dx*dx+dy*dy+1;if(d2>120000)continue;const f=Math.min(40,22000/d2)*T0;A.x+=dx*f/40;A.y+=dy*f/40;B.x-=dx*f/40;B.y-=dy*f/40}
-   L.forEach(([a,b])=>{const A=P[a],B=P[b],dx=B.x-A.x,dy=B.y-A.y,dd=Math.hypot(dx,dy)+.1,f=(dd-160)*.012*T0;A.x+=dx/dd*f;A.y+=dy/dd*f;B.x-=dx/dd*f;B.y-=dy/dd*f});P.forEach(p=>{p.x+=(Math.cos(p.a)*700-p.x)*.012;p.y+=(Math.sin(p.a)*700-p.y)*.012})}
+  for(let it=0;it<300;it++){const T0=1-it/340;for(let a=0;a<P.length;a++)for(let b=a+1;b<P.length;b++){const A=P[a],B=P[b],dx=A.x-B.x,dy=A.y-B.y,d2=dx*dx+dy*dy+1;if(d2>120000)continue;const f=Math.min(40,26000/d2)*T0;A.x+=dx*f/40;A.y+=dy*f/40;B.x-=dx*f/40;B.y-=dy*f/40}
+   L.forEach(([a,b])=>{const A=P[a],B=P[b],dx=B.x-A.x,dy=B.y-A.y,dd=Math.hypot(dx,dy)+.1,f=(dd-170)*.012*T0;A.x+=dx/dd*f;A.y+=dy/dd*f;B.x-=dx/dd*f;B.y-=dy/dd*f});P.forEach(p=>{p.x+=(Math.cos(p.a)*900-p.x)*.012;p.y+=(Math.sin(p.a)*900-p.y)*.012})}
+  ck.forEach(k=>{const M=P.filter(p=>cat(p.id)==k);if(!M.length)return;const cx=M.reduce((a,p)=>a+p.x,0)/M.length,cy=M.reduce((a,p)=>a+p.y,0)/M.length;E('circle',{cx,cy,r:260,fill:rgrad(bg,[[0,CATS[k][1],.16],[1,CATS[k][1],0]])},bg);const t=T(bg,cx,Math.min(...M.map(p=>p.y))-70,CATS[k][0].toUpperCase(),'big');t.style.fill=CATS[k][1];t.style.fontSize='28px'});
   P.forEach(p=>add(p.id,p.x,p.y,22+Math.min((RELS[p.id]||new Set).size,10)*2.2));L.forEach(([a,b])=>C.edge(P[a].id,P[b].id,{stroke:'rgba(255,229,0,.16)','stroke-width':1}))}
- (d.edges||[]).forEach(([a,b])=>C.edge(a,b,{}));
- if(!d.network&&!d.timeline)C.nodes.forEach(n=>(RELS[n.id]||[]).forEach(b=>{if(n.id<b&&C.nodes.some(m=>m.id==b)&&!(d.edges||[]).some(e=>(e[0]==n.id&&e[1]==b)||(e[1]==n.id&&e[0]==b)))C.edge(n.id,b,{'stroke-dasharray':'2 6','stroke-opacity':.5})}));
- const ys=C.nodes.map(n=>n.y-n.r);T(g,0,Math.min(...ys,0)-120,d.title,'big').classList.add('ttl')}}
+ (d.edges||[]).forEach(([a,b])=>C.nodes.some(n=>n.id==a)&&C.nodes.some(n=>n.id==b)&&C.edge(a,b,{stroke:'rgba(255,255,255,.4)','stroke-width':2}));
+ (d.fam||[]).forEach(([a,b])=>famEdge(a,b));
+ if(!d.network&&!d.timeline&&!d.norel)C.nodes.forEach(n=>(RELS[n.id]||[]).forEach(b=>{if(n.id<b&&C.nodes.some(m=>m.id==b)&&!C.edges.some(e=>(e.a==n.id&&e.b==b)||(e.b==n.id&&e.a==b)))C.edge(n.id,b,{'stroke-dasharray':'2 6','stroke-opacity':.35,class:'e rel'})}));
+ const ys=C.nodes.map(n=>n.y-n.r);T(g,0,Math.min(...ys,0)-(d.deco?260:120),d.title,'big').classList.add('ttl')}}
 /* version : « Mon plan » (tout) ou « Version officielle » (sans les constructions de fans, avec la publication d'origine du schéma) */
 S.ver='plan';
 function isAxes(){return UNI!="dc"&&S.m==2}   /* carte des Axes (3D), propre à Marvel */
-function markVer(){C.nodes.forEach(n=>n.g.classList.toggle('th',(IDX[n.id]||{}).cert=='t'));C.edges.forEach(e=>e.el.classList.toggle('th',(IDX[e.a]||{}).cert=='t'||(IDX[e.b]||{}).cert=='t'));
+function markVer(){const th=id=>(IDX[id]||{}).cert=='t'||C.nodes.some(n=>n.id==id&&n.xp);C.nodes.forEach(n=>n.g.classList.toggle('th',th(n.id)));C.edges.forEach(e=>e.el.classList.toggle('th',th(e.a)||th(e.b)));
  const o=MAPS[S.m].off,b=$('#vbadge');document.body.classList.toggle('offv',S.ver=='off'&&!!o);
  b.textContent=S.ver!='off'?'':!o?'Aucune version officielle publiée : plan Primestone':o.data?'Carte construite à partir des sources':'Version officielle · d’après '+o.src;b.hidden=S.ver!='off';
+ const pl=$('#offplate'),show=S.ver=='off'&&o&&o.img;pl.hidden=!show;if(show){const im=pl.querySelector('img');if(im.getAttribute('src')!==o.img)im.src=o.img;pl.querySelector('figcaption').textContent='Planche officielle : '+o.cap+'. Image hébergée par le wiki '+(UNI=='dc'?'DC':'Marvel')+' (fandom).'}else pl.classList.remove('big');
  document.querySelectorAll('#vers button').forEach(x=>x.classList.toggle('on',x.dataset.v==S.ver))}
 function render(i,keep,fp){S.m=i;S.sel=-1;S.free=false;S.P=fp??frame.clientHeight>frame.clientWidth;
- svg.innerHTML=DEFS;const g=E('g',{},svg);MAPS[i].b(g,S.P);markVer();
+ svg.innerHTML=DEFS;const g=E('g',{},svg);MAPS[i].b(g,S.P);
+ if(UNI!='dc'&&i!=5&&i!=2){if(!svg.querySelector('#famar'))famDefs(g);FAMD.p.forEach(([a,b])=>C.nodes.some(n=>n.id==a)&&C.nodes.some(n=>n.id==b)&&!C.edges.some(e=>e.fam&&e.a==a&&e.b==b)&&famEdge(a,b))}
+ markVer();
  if(UNI!='dc'&&i==2){S.tYaw=S.tPitch=null;updAxes()}
  const bb=g.getBBox();bounds=MAPS[i].bounds||[bb.x,bb.y,bb.width,bb.height];
  document.querySelectorAll('#tabs button').forEach((b,k)=>b.classList.toggle('on',k==i));
@@ -695,6 +793,7 @@ function select(i){if(i<0||i>=C.nodes.length){S.sel=-1;svg.classList.remove('foc
  ensureKr(n);C.nodes.forEach((m,k)=>m.g.classList.toggle('on',k==i));C.edges.forEach(e=>e.el.classList.toggle('on',e.a==n.id||e.b==n.id));
  if(isAxes()){const[x,y,z]=n.p;let ty=Math.atan2(-x,z);while(ty-S.yaw>Math.PI)ty-=TAU;while(S.yaw-ty>Math.PI)ty+=TAU;S.tYaw=ty;S.tPitch=.55*Math.atan2(y,Math.SQRT2)}
  showInfo()}
+let BIOS=null,BIOP=null;function bioLoad(){return BIOS?Promise.resolve(BIOS):BIOP||(BIOP=fetch((window.SOLO!=null?'https://lukecage2003.github.io/marvel-primeston/':'')+'bios.json').then(r=>r.json()).then(j=>BIOS=j).catch(()=>BIOS={}))}
 function showInfo(){if(typeof C=="undefined"||!C)return;const n=C.nodes[S.sel],p=$('#panel'),cap=$('#cap');
  cap.classList.remove('show');$('#scrim').style.opacity=0;svg.classList.toggle('cap',!!n&&capOn());
  if(!n){p.classList.remove('show');return}
@@ -703,6 +802,8 @@ function showInfo(){if(typeof C=="undefined"||!C)return;const n=C.nodes[S.sel],p
   cap.classList.add('show');$('#scrim').style.opacity=1},380);return}
  p.querySelector('.k').textContent=n.k;const ce=CERT[n.cert],pc=p.querySelector('.cert');pc.className='cert '+(n.cert||'');pc.innerHTML=ce?`<b>${ce[0]}</b> : ${ce[1]}`:'';p.querySelector('h2').textContent=n.t;p.querySelector('.s').textContent=(n.u?'Sphère non cartographiée':n.s||'').replace(/\n/g,' ');
  p.querySelector('.d').textContent=n.d||'Cette sphère n’a pas encore été rattachée à un lieu connu de la cosmologie Marvel. Une case vide… pour une révélation future ?';
+ const dEl=p.querySelector('.d');dEl.classList.remove('bio');if(n.fr)p.querySelector('.s').textContent=(n.s?n.s.replace(/\n/g,' ')+' · ':'')+'en français : '+n.fr;
+ bioLoad().then(B=>{if(C.nodes[S.sel]!==n||!B[n.id])return;dEl.innerHTML=B[n.id];dEl.classList.add('bio')});
  const ob=p.querySelector('.orbp');ob.style.setProperty('--c',n.col||'#555');ob.style.background=n.img?`center/cover url(${n.img})`:'';$('#bimgr').style.display=USER[n.id]?'':'none';const wk=!USER[n.id]&&wikiOf(n.id);
  p.querySelector('.tags').innerHTML=(n.tags||[]).map(t=>`<span>${t}</span>`).join('');
  p.querySelector('.fact').textContent=n.fact||'';p.querySelector('.src').innerHTML=(IDX[n.id]&&IDX[n.id].m!==7&&!IDX[n.id].u?`<a class="full" href="${window.SOLO!=null?'https://lukecage2003.github.io/marvel-primeston/':''}fiche/${encodeURIComponent(n.id)}.html">Fiche complète, relations et comics →</a><br>`:'')+(n.src?'<b>Où le lire</b>'+srcHTML(n.src):'')+(wk?`<br><span class="imgcredit">Image : ${escH(wk.t)}, wiki Marvel</span>`:'');p.querySelector('.src').style.display=n.src||wk?'':'none';
@@ -847,7 +948,7 @@ const ease=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2,cl01=x=>Math.max(0,Math.min(1,
 function wrap(g,t,mw,max){const w=String(t||'').split(/\s+/),L=[];let l='';for(const x of w){const tt=l?l+' '+x:x;if(g.measureText(tt).width>mw&&l){L.push(l);l=x}else l=tt}l&&L.push(l);
  if(L.length>max){L.length=max;L[max-1]=L[max-1].replace(/\s*\S*$/,'')+'…'}return L}
 let V_IN=3.4,V_T=1.5,V_D=4.8,V_HOLD=1.2,V_OUT=4.5,VTK=false;
-const HOOKS=['Notre univers est le 8ᵉ. Que sont devenus les 7 autres ?','L’univers Marvel a la forme d’un arbre. Voici ses branches.','8 entités tiennent tout l’univers Marvel. Tu les connais ?','Avant Marvel, il y a eu d’autres réalités. Voici lesquelles.','Voici la carte complète de la réalité Marvel.','Qui est vraiment le plus puissant chez Marvel ?','Dans l’univers Marvel, tout est lié. La preuve.','60 ans de cosmos Marvel en une vidéo.'];
+const HOOKS=['Notre univers est le 8ᵉ. Que sont devenus les 7 autres ?','L’univers Marvel a la forme d’un arbre. Voici ses branches.','8 entités tiennent tout l’univers Marvel. Tu les connais ?','Avant Marvel, il y a eu d’autres réalités. Voici lesquelles.','Voici la carte complète de la réalité Marvel.','Qui est le parent de qui dans le cosmos Marvel ?','Les Dix Royaumes, la galaxie et les dimensions de Marvel.','60 ans de cosmos Marvel en une vidéo.'];
 const shortD=d=>{const w=String(d||'').split(/(?<=[.!?])\s/)[0].split(/\s+/);return(w.length>16?w.slice(0,15).join(' ')+'…':w.join(' '))};
 /* une scène = une carte (ou une catégorie) prête à animer */
 async function scene(m,o,W,H,P,msg){const A=W/H;if(S.m!==m||(MAPS[m].dyn&&S.P!==P))render(m,1,MAPS[m].dyn?P:undefined);await new Promise(r=>setTimeout(r,60));
@@ -1153,6 +1254,7 @@ $('#codex').addEventListener('click',e=>{const b=e.target.closest('button');if(!
  if(b.dataset.cat!=null){CX.cat=b.dataset.cat||null;codex(1)}else if(b.dataset.cert){CX.cert.has(b.dataset.cert)?CX.cert.delete(b.dataset.cert):CX.cert.add(b.dataset.cert);codex(1)}else if(b.dataset.go){codex(0);go(b.dataset.go)}});
 
 /* ---------- UI wiring ---------- */
+$('#offplate button').onclick=()=>$('#offplate').classList.toggle('big');
 $('#vers').onclick=e=>{const b=e.target.closest('[data-v]');if(!b)return;S.ver=b.dataset.v;markVer();if(S.ver=='off'&&!MAPS[S.m].off)toast('Pas de version officielle publiée pour cette carte : c’est un plan Primestone.')};
 if(UNI=='dc'){const bu=$('#buni');bu.href='explorer.html';bu.textContent='Marvel';document.title='Cosmologie DC · atlas interactif';const bt=document.querySelector('.brand div');if(bt&&bt.firstChild)bt.firstChild.nodeValue='Cosmologie DC';const bq=$('#bquiz');if(bq)bq.hidden=true}
 if(window.BRAND){document.querySelectorAll('img.bp').forEach(i=>i.src=BRAND.p);document.querySelectorAll('img.bw').forEach(i=>i.src=BRAND.word);const ic=document.createElement('link');ic.rel='icon';ic.href=BRAND.p;document.head.appendChild(ic)}
@@ -1177,6 +1279,10 @@ stars();setFmt(FMTS.some(f=>f[0]==q.get('format'))?q.get('format'):'free');rende
 $('#ql').innerHTML=Object.entries(IDX).filter(([id,x])=>SOLO==null||x.m==SOLO).map(([id,x])=>`<option value="${x.t}">${x.en&&x.en!=x.t?x.en+', ':''}${MAPS[x.m].n}</option>`).join('');
 $('#q').addEventListener('change',e=>{const v=e.target.value.toLowerCase().trim(),h=Object.entries(IDX).filter(([id,x])=>SOLO==null||x.m==SOLO).find(([id,x])=>x.t.toLowerCase()==v||(x.en||'').toLowerCase()==v)||Object.entries(IDX).find(([id,x])=>(x.t+' '+(x.en||'')).toLowerCase().includes(v));if(h){go(h[0]);e.target.value='';e.target.blur()}});
 $('#panel').addEventListener('click',e=>{const b=e.target.closest('[data-go]');b&&go(b.dataset.go)});
+/* survol : le nœud et ses liens s'éclairent */
+let HOV=null;svg.addEventListener('pointerover',e=>{const g=e.target.closest('.n');if(!g||g===HOV)return;HOV&&svg.querySelectorAll('.hov').forEach(x=>x.classList.remove('hov'));HOV=g;const n=C.nodes[+g.dataset.i];if(!n)return;
+ g.classList.add('hov');C.edges.forEach(x=>{if(x.a==n.id||x.b==n.id){x.el.classList.add('hov');const o=C.nodes.find(m=>m.id==(x.a==n.id?x.b:x.a));o&&o.g.classList.add('hov')}})});
+svg.addEventListener('pointerout',e=>{if(HOV&&!HOV.contains(e.relatedTarget)){svg.querySelectorAll('.hov').forEach(x=>x.classList.remove('hov'));HOV=null}});
 if(q.has('clean'))clean();if(q.has('tour'))setTimeout(tour,800);
 requestAnimationFrame(loop);
 </script>
