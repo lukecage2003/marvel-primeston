@@ -37,7 +37,7 @@ const initials = s => esc(String(s).replace(/^(L’|L'|La |Le |Les )/, '').slice
 /* ---------- biographies (texte composé à partir des fiches, des faits relevés et des apparitions) ---------- */
 const APP = fs.existsSync(path.join(ROOT, 'content/appearances.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'content/appearances.json'), 'utf8')).entries : {};
 const FAMJ = fs.existsSync(path.join(ROOT, 'content/family.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'content/family.json'), 'utf8')) : { parents: [], siblings: [] };
-const DCFAM = []; for (const m of (AD.mapsRaw || [])) for (const e of (m.fam || [])) DCFAM.push(e);
+if (fs.existsSync(path.join(ROOT, 'content/dc_family.json'))) { const D = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/dc_family.json'), 'utf8')); FAMJ.parents.push(...D.parents); FAMJ.siblings.push(...D.siblings); }
 const fin = t => /[.…!?]$/.test(t) ? t : t + '.';
 const liste = a => a.length < 2 ? (a[0] || '') : a.slice(0, -1).join(', ') + ' et ' + a[a.length - 1];
 const terre = s => String(s).replace(/\bEarth-(\d+)/g, 'Terre-$1');

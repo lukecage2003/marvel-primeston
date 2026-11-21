@@ -140,9 +140,27 @@
    "c"
   ],
   [
+   "x_sinifer",
+   "x_dormammu",
+   "géniteur, décédé",
+   "p"
+  ],
+  [
    "x_dormammu",
    "x_satannish",
    "fils",
+   "c"
+  ],
+  [
+   "x_mephisto",
+   "x_blackheart",
+   "fils",
+   "c"
+  ],
+  [
+   "x_mephisto",
+   "x_mephista",
+   "fille",
    "c"
   ],
   [
@@ -194,16 +212,46 @@
    "p"
   ],
   [
+   "x_demiurge",
+   "x_oshtur",
+   "père",
+   "p"
+  ],
+  [
+   "x_sinifer",
+   "x_umar",
+   "père, décédé",
+   "p"
+  ],
+  [
    "x_umar",
    "x_clea",
    "fille",
    "c"
   ],
   [
+   "x_demiurge",
+   "x_gaea",
+   "père",
+   "p"
+  ],
+  [
+   "x_demiurge",
+   "x_chthon",
+   "père",
+   "p"
+  ],
+  [
    "x_chthon",
    "o_darkhold",
    "",
    "c"
+  ],
+  [
+   "x_demiurge",
+   "x_set",
+   "père",
+   "p"
   ],
   [
    "x_thanos",
@@ -240,6 +288,42 @@
    "g_timekeepers",
    "création",
    "c"
+  ],
+  [
+   "h_oaa",
+   "h_trib",
+   "créateur",
+   "p"
+  ],
+  [
+   "x_odin",
+   "x_loki",
+   "père adoptif",
+   "p"
+  ],
+  [
+   "h_obl",
+   "d_mikaboshi",
+   "créateur/true self",
+   "p"
+  ],
+  [
+   "x_marduk",
+   "x_hellstrom",
+   "fils",
+   "c"
+  ],
+  [
+   "x_marduk",
+   "x_satana",
+   "fille",
+   "c"
+  ],
+  [
+   "x_wanda",
+   "x_wiccan",
+   "mère biologique",
+   "p"
   ],
   [
    "h_eter",
@@ -365,6 +449,16 @@
    "x_gamora",
    "x_nebula",
    "sœur adoptive"
+  ],
+  [
+   "x_hellstrom",
+   "x_satana",
+   "sœur"
+  ],
+  [
+   "x_blackheart",
+   "x_mephista",
+   "sœur"
   ]
  ]
 }

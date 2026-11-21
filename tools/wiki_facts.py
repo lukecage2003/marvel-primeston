@@ -18,7 +18,7 @@ FIELDS = [('ReleaseDate', 'Parution', 1), ('Year', 'Année', 1), ('MainAlias', '
           ('Reality', 'Réalité', 2), ('Universe', 'Univers', 1), ('Occupation', 'Fonction', 2), ('Affiliation', 'Affiliations', 4),
           ('Parents', 'Parents', 3), ('Siblings', 'Fratrie', 3), ('Children', 'Descendance', 3), ('BaseOfOperations', 'Base', 2),
           ('Galaxy', 'Galaxie', 1), ('Locale', 'Lieu', 2), ('Type', 'Type', 1), ('Material', 'Matériau', 1), ('CurrentOwner', 'Détenteur', 1),
-          ('Leaders', 'Dirigeants', 3), ('Relatives', 'Proches', 8), ('Creators', 'Créateurs', 4), ('First', 'Première apparition', 1)]
+          ('Leaders', 'Dirigeants', 3), ('Relatives', 'Proches', 40), ('Creators', 'Créateurs', 4), ('First', 'Première apparition', 1)]
 KEYS = {k for k, _, _ in FIELDS}
 
 

@@ -31,11 +31,11 @@ FAM, SIB, seen = [], [], set()
 BAD = {('x_kang', 'x_reed'), ('x_loki', 'x_america'), ('h_phx', 'h_thor')}
 FR = [(r'\bfoster\b|\badopted\b|\badoptive\b', 'adoptif'), (r'\bfather\b', 'père'), (r'\bmother\b', 'mère'), (r'\b(oldest |youngest )?son\b', 'fils'), (r'\bdaughter\b', 'fille'),
       (r'\bcreators?\b', 'créateur'), (r'\bcreations?\b', 'création'), (r'\bbrother\b', 'frère'), (r'\bsister\b', 'sœur'), (r'\btwin\b', 'jumeau'), (r'\bdeceased\b', 'décédé'),
-      (r'\boffspring\b', 'descendance'), (r'\bprogenitor\b', 'géniteur'), (r'\bcounterpart\b', 'contrepartie'), (r'\bsibling\b', ''), (r'\bwith\b', 'avec')]
+      (r'\boffspring\b', 'descendance'), (r'\bgenitor\b', 'géniteur'), (r'\bbirth\b', 'biologique'), (r'\bprogenitor\b', 'géniteur'), (r'\bcounterpart\b', 'contrepartie'), (r'\bsibling\b', ''), (r'\bwith\b', 'avec')]
 def fr(n):
     n = re.sub(r'\b(paternal|maternal)\b', '', n)
     for a, b in FR: n = re.sub(a, b, n)
-    for a, b in [('adoptif sœur', 'sœur adoptive'), ('adoptif frère', 'frère adoptif'), ('adoptif fille', 'fille adoptive'), ('adoptif père', 'père adoptif'), ('adoptif mère', 'mère adoptive'), ('jumeau sœur', 'sœur jumelle')]: n = n.replace(a, b)
+    for a, b in [('adoptif sœur', 'sœur adoptive'), ('adoptif frère', 'frère adoptif'), ('adoptif fille', 'fille adoptive'), ('adoptif père', 'père adoptif'), ('adoptif mère', 'mère adoptive'), ('jumeau sœur', 'sœur jumelle'), ('biologique mère', 'mère biologique'), ('biologique père', 'père biologique')]: n = n.replace(a, b)
     return re.sub(r'\s+', ' ', n.replace('"', '')).strip(' ,/')
 def addp(p, c, how, side='p'):
     if p == c or (p, c) in seen or (p, c) in BAD or SKIP(p) or SKIP(c): return
@@ -51,6 +51,23 @@ for i, w in W.items():
                 if lab == 'Parents': addp(j, me, note)
                 elif lab == 'Descendance': addp(me, j, note, 'c')
                 elif lab == 'Fratrie' and not SKIP(j) and not SKIP(me) and (j, me) not in {tuple(x[:2]) for x in SIB}: SIB.append([me, j, fr(note)])
+# champ « Relatives » (Proches) : « Nom (rôle) » ; seuls les liens directs sont gardés
+ROLE_P, ROLE_C, ROLE_S = r'\b(mother|father|creator|genitor|parent|"father")\b', r'\b(son|daughter|child|children|offspring)\b', r'\b(brother|sister|sisters|brothers|sibling|siblings|twin)\b'
+for i, w in W.items():
+    me = ALIAS.get(i, i)
+    if SKIP(me): continue
+    for lab, vals in w['facts']:
+        if lab != 'Proches': continue
+        for v in vals:
+            m = re.match(r'^(.*?)\s*\(([^()]*)\)\s*$', v.strip())
+            if not m: continue
+            role = m.group(2).lower().replace('"', '')
+            if re.search(r'grand|great|in-law|step|niece|nephew|uncle|aunt|cousin|ancestor|descendant|alleged|apparent|quasi|kin|memory|soul fragment|indirect|counterpart|former|ex-', role): continue
+            j, raw = find(re.sub(r'\s*\(.*?\)', '', m.group(1)).split(',')[0])
+            if not j or j == me: continue
+            if re.search(ROLE_P, role): addp(j, me, role)
+            elif re.search(ROLE_C, role): addp(me, j, role, 'c')
+            elif re.search(ROLE_S, role) and not SKIP(j) and not any({me, j} == {a, b} for a, b, _ in SIB): SIB.append([me, j, fr(role)])
 # liens vérifiés à la main (citations dans data.js ou les fiches du wiki)
 FAM_MANUAL = [['h_eter', 'manif', 'manifestation (lecture de fans)'], ['x_love', 'manif', 'manifestation (lecture de fans)'], ['x_hate', 'manif', 'manifestation (lecture de fans)'], ['h_chaos', 'x_inbetween', 'création commune avec Master Order'], ['h_order', 'x_inbetween', 'création commune avec Lord Chaos'],
               ['x_kronos', 'x_mentor', ''], ['x_mentor', 'x_thanos', ''], ['x_mentor', 'x_starfox', ''], ['h_eter', 'x_entropy', '']]

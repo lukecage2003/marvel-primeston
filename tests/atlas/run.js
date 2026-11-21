@@ -25,9 +25,9 @@ let pass=0,fail=0;const ok=(c,m)=>{c?pass++:fail++;console.log((c?'  ✓ ':'  �
  {const r=require('child_process').spawnSync('node',[path.join(ROOT,'tools/comics.js'),'--check']);ok(r.status===0,'comics.json à jour (sinon : node tools/comics.js)')}
  {const n=await p.evaluate(async()=>{const u=Object.values(window.IMG);const r=await Promise.all(u.map(x=>fetch(x).then(r=>r.ok).catch(()=>false)));return r.filter(Boolean).length});ok(n==Object.keys(await p.evaluate(()=>window.IMG)).length,'portraits img/*.webp accessibles ('+n+')')}
  L('Cartes et formats');
- for(const f of ['free','916','169','45','11'])for(let m=0;m<8;m++){await p.evaluate(([f,m])=>{setFmt(f);render(m);select(0);select(-1)},[f,m])}
- ok(!errs.length,'8 cartes × 5 formats sans erreur JS');
- const counts=[];for(let m=0;m<8;m++)counts.push(await p.evaluate(m=>{render(m);return svg.querySelectorAll('*').length},m));
+ for(const f of ['free','916','169','45','11'])for(let m=0;m<9;m++){await p.evaluate(([f,m])=>{setFmt(f);render(m);select(0);select(-1)},[f,m])}
+ ok(!errs.length,'9 cartes Marvel × 5 formats sans erreur JS');
+ const counts=[];for(let m=0;m<9;m++)counts.push(await p.evaluate(m=>{render(m);return svg.querySelectorAll('*').length},m));
  ok(Math.max(...counts)<6000,'budget SVG < 6000 éléments par carte : '+counts.join(' '));
  L('Codex et recherche');
  await p.evaluate(()=>codex(1));await p.fill('#cxq','galactus');await p.waitForTimeout(200);ok(await p.locator('#cxg .cxe').count()>3,'recherche FR « galactus »');
@@ -66,7 +66,7 @@ let pass=0,fail=0;const ok=(c,m)=>{c?pass++:fail++;console.log((c?'  ✓ ':'  �
  {const cp=require('child_process');for(const [cmd,args,lbl] of [['python3',[path.join(ROOT,'tools/dc_build.py'),'--check'],'data-dc.js à jour (sinon : python3 tools/dc_build.py)'],['node',[path.join(ROOT,'tools/snapshot.js'),'dc','--check'],'content/atlas-dc.json à jour (sinon : node tools/snapshot.js dc)']]){const r=cp.spawnSync(cmd,args);ok(r.status===0,lbl)}}
  {const q=await b.newPage({viewport:{width:1280,height:800}}),pe=[];q.on('pageerror',e=>pe.push(e.message));await q.goto(URL+'?u=dc');await q.waitForFunction(()=>typeof IDX!=='undefined'&&C);
   const r=await q.evaluate(()=>{const n=MAPS.map((m,i)=>{render(i);return C.nodes.length});return {maps:MAPS.length,idx:Object.keys(IDX).length,n,brand:document.title,quiz:$('#bquiz').hidden}});
-  ok(r.maps==8&&r.idx>=100&&r.n.every(x=>x>5),`8 cartes DC (${r.n.join(' ')} nœuds, ${r.idx} fiches)`);ok(r.quiz,'quiz masqué en mode DC');
+  ok(r.maps==10&&r.idx>=200&&r.n.every(x=>x>5),`10 cartes DC (${r.n.join(' ')} nœuds, ${r.idx} fiches)`);ok(r.quiz,'quiz masqué en mode DC');
   for(const f of ['916','169']){await q.evaluate(f=>{setFmt(f);render(0);select(2);select(-1)},f)}ok(!pe.length,'cartes DC sans erreur JS '+pe.slice(0,2));
   const v=await q.evaluate(()=>{render(0);S.ver='off';markVer();return [$('#vbadge').textContent,!$('#vbadge').hidden]});ok(v[1]&&v[0].includes('Multiversity'),'version officielle DC : source affichée ('+v[0]+')');await q.close()}
  {const q=await b.newPage({viewport:{width:1280,height:800}});await q.goto(URL);await q.waitForFunction(()=>typeof IDX!=='undefined'&&C);

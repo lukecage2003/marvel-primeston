@@ -6,23 +6,23 @@
   },
   {
    "name": "La Création",
-   "sub": "Des Mains à la Terre"
+   "sub": "Du Survide à la Terre"
   },
   {
    "name": "Le Spectre émotionnel",
    "sub": "Neuf lumières, leurs entités et leurs Corps"
   },
   {
-   "name": "Les Éternels",
-   "sub": "Les sept Endless et leurs royaumes"
+   "name": "Les Endless",
+   "sub": "Night, Time, leurs sept enfants et le Rêve"
   },
   {
    "name": "Le Quatrième Monde",
-   "sub": "New Genesis et Apokolips"
+   "sub": "New Genesis, Apokolips et leurs familles"
   },
   {
-   "name": "Forces et magie",
-   "sub": "Vitesse, Ordre et Chaos, le Vert et les dimensions"
+   "name": "La Magie",
+   "sub": "L'Ordre et le Chaos, les colères divines, les magiciens"
   },
   {
    "name": "Les Crises",
@@ -31,6 +31,14 @@
   {
    "name": "Le Réseau DC",
    "sub": "Tout est lié"
+  },
+  {
+   "name": "Les Forces",
+   "sub": "La Speed Force, le Vert, le Rouge et la Pourriture, les dimensions"
+  },
+  {
+   "name": "Le Ciel et l'Enfer",
+   "sub": "La Présence, ses anges, Lucifer et Elaine Belloc"
   }
  ],
  "cats": {
@@ -303,7 +311,41 @@
   "dc_carol": "Carol Ferris (New Earth)",
   "dc_ganthet": "Ganthet (New Earth)",
   "dc_zamarons": "Zamarons",
-  "dc_emeraldspace": "Emerald Space"
+  "dc_emeraldspace": "Emerald Space",
+  "dc_night": "Night (New Earth)",
+  "dc_time": "Time (New Earth)",
+  "dc_orpheus": "Orpheus (New Earth)",
+  "dc_calliope": "Calliope (New Earth)",
+  "dc_danielhall": "Daniel Hall (New Earth)",
+  "dc_lucien": "Lucien (New Earth)",
+  "dc_corinthian": "Corinthian (New Earth)",
+  "dc_matthew": "Matthew Cable (New Earth)",
+  "dc_cain": "Cain (New Earth)",
+  "dc_abel": "Abel (New Earth)",
+  "dc_fiddlersgreen": "Fiddler's Green (New Earth)",
+  "dc_elaine": "Elaine Belloc (New Earth)",
+  "dc_mazikeen": "Mazikeen (New Earth)",
+  "dc_lilith": "Lilith (New Earth)",
+  "dc_sandalphon": "Sandalphon (New Earth)",
+  "dc_writer": "Grant Morrison (New Earth)",
+  "dc_zatanna": "Zatanna Zatara (New Earth)",
+  "dc_constantine": "John Constantine (New Earth)",
+  "dc_etrigan": "Etrigan (New Earth)",
+  "dc_xanadu": "Nimue Inwudu (New Earth)",
+  "dc_klarion": "Klarion Bleak (New Earth)",
+  "dc_occult": "Richard Occult (New Earth)",
+  "dc_timhunter": "Timothy Hunter (New Earth)",
+  "dc_jld": "Justice League Dark (Prime Earth)",
+  "dc_trinitysin": "Trinity of Sin (Prime Earth)",
+  "dc_otherkind": "Otherkind",
+  "dc_gemworld": "Gemworld",
+  "dc_kalibak": "Kalibak (New Earth)",
+  "dc_scottfree": "Scott Free (New Earth)",
+  "dc_barda": "Big Barda (New Earth)",
+  "dc_steppenwolf": "Steppenwolf (New Earth)",
+  "dc_heggra": "Heggra (New Earth)",
+  "dc_granny": "Granny Goodness (New Earth)",
+  "dc_desaad": "Desaad (New Earth)"
  },
  "img": {
   "dc_presence": "https://static.wikia.nocookie.net/marvel_dc/images/1/17/Presence_01.jpg/revision/latest?cb=20100212043239",
@@ -506,7 +548,41 @@
   "dc_carol": "https://static.wikia.nocookie.net/marvel_dc/images/c/cc/Star_Sapphire_008.jpg/revision/latest?cb=20110303024250",
   "dc_ganthet": "https://static.wikia.nocookie.net/marvel_dc/images/d/d8/Green_Lantern_Ganthet_01.jpg/revision/latest?cb=20100103183612",
   "dc_zamarons": "https://static.wikia.nocookie.net/marvel_dc/images/2/20/Zamarons_003.jpg/revision/latest?cb=20131225035220",
-  "dc_emeraldspace": "https://static.wikia.nocookie.net/marvel_dc/images/8/8b/Emerald_Space_01.jpg/revision/latest/scale-to-width-down/900?cb=20191017231440"
+  "dc_emeraldspace": "https://static.wikia.nocookie.net/marvel_dc/images/8/8b/Emerald_Space_01.jpg/revision/latest/scale-to-width-down/900?cb=20191017231440",
+  "dc_night": "https://static.wikia.nocookie.net/marvel_dc/images/d/d1/Night_New_Earth_0001.jpg/revision/latest?cb=20191019232856",
+  "dc_time": "https://static.wikia.nocookie.net/marvel_dc/images/8/81/Time_New_Earth_001.jpg/revision/latest?cb=20221206172129",
+  "dc_orpheus": "https://static.wikia.nocookie.net/marvel_dc/images/e/e3/Orpheus_son_of_Dream_001.jpg/revision/latest?cb=20130420083320",
+  "dc_calliope": "https://static.wikia.nocookie.net/marvel_dc/images/b/b6/Calliope_0001.jpg/revision/latest?cb=20150724115301",
+  "dc_danielhall": "https://static.wikia.nocookie.net/marvel_dc/images/c/c9/Daniel_Hall_001.jpg/revision/latest?cb=20080322180543",
+  "dc_lucien": "https://static.wikia.nocookie.net/marvel_dc/images/8/86/Lucien_%26_Rover.png/revision/latest/scale-to-width-down/900?cb=20201018113746",
+  "dc_corinthian": "https://static.wikia.nocookie.net/marvel_dc/images/0/0b/TheCorinthian.jpg/revision/latest/scale-to-width-down/446?cb=20070218220907",
+  "dc_matthew": "https://static.wikia.nocookie.net/marvel_dc/images/9/9b/Matthew_the_Raven_001.jpg/revision/latest/scale-to-width-down/626?cb=20091109044911",
+  "dc_cain": "https://static.wikia.nocookie.net/marvel_dc/images/9/96/Cain_New_Earth_003.jpg/revision/latest/scale-to-width-down/603?cb=20190728230858",
+  "dc_abel": "https://static.wikia.nocookie.net/marvel_dc/images/9/91/Abel_001.jpg/revision/latest/scale-to-width-down/773?cb=20200726123413",
+  "dc_fiddlersgreen": "https://static.wikia.nocookie.net/marvel_dc/images/e/ec/Gilbert_New_Earth_Ghost.jpg/revision/latest?cb=20160516222155",
+  "dc_elaine": "https://static.wikia.nocookie.net/marvel_dc/images/2/21/Lucifer_Vol_1_47_Textless.jpg/revision/latest?cb=20160602164249",
+  "dc_mazikeen": "https://static.wikia.nocookie.net/marvel_dc/images/a/a9/Mazikeen_0001.jpg/revision/latest/scale-to-width-down/585?cb=20151224221054",
+  "dc_lilith": "https://static.wikia.nocookie.net/marvel_dc/images/4/49/Lucifer_Vol_1_57_Textless.jpg/revision/latest/scale-to-width-down/561?cb=20160808170544",
+  "dc_sandalphon": "https://static.wikia.nocookie.net/marvel_dc/images/e/e2/Sandalphon.png/revision/latest?cb=20110509172818",
+  "dc_writer": "https://static.wikia.nocookie.net/marvel_dc/images/2/2b/Writer_001.jpg/revision/latest?cb=20130830112830",
+  "dc_zatanna": "https://static.wikia.nocookie.net/marvel_dc/images/e/e7/Zatanna_Vol_2_1_Textless.jpg/revision/latest/scale-to-width-down/594?cb=20110516224914",
+  "dc_constantine": "https://static.wikia.nocookie.net/marvel_dc/images/c/cc/John_Constantine_0010.jpg/revision/latest/scale-to-width-down/597?cb=20120227070728",
+  "dc_etrigan": "https://static.wikia.nocookie.net/marvel_dc/images/4/4e/Etrigan_0001.jpg/revision/latest/scale-to-width-down/597?cb=20111001101849",
+  "dc_xanadu": "https://static.wikia.nocookie.net/marvel_dc/images/5/5e/Nimue_Inwudu_0005.jpg/revision/latest/scale-to-width-down/471?cb=20250705190206",
+  "dc_klarion": "https://static.wikia.nocookie.net/marvel_dc/images/0/06/Klarion_Bleak_%28New_Earth%29_022.jpg/revision/latest?cb=20110724234656",
+  "dc_occult": "https://static.wikia.nocookie.net/marvel_dc/images/2/2d/Doctor_Occult_0001.jpg/revision/latest/scale-to-width-down/435?cb=20201012140022",
+  "dc_timhunter": "https://static.wikia.nocookie.net/marvel_dc/images/2/29/Hunter_The_Age_of_Magic_Vol_1_1_Textless.jpg/revision/latest?cb=20130502153526",
+  "dc_jld": "https://static.wikia.nocookie.net/marvel_dc/images/c/cb/Justice_League_Dark_Vol_2_1_Variant_Textless.jpg/revision/latest/scale-to-width-down/586?cb=20180725172014",
+  "dc_trinitysin": "https://static.wikia.nocookie.net/marvel_dc/images/1/11/Trinity_of_Sin_Vol_1_1_Textless.jpg/revision/latest/scale-to-width-down/592?cb=20141015075809",
+  "dc_otherkind": "https://static.wikia.nocookie.net/marvel_dc/images/5/57/Otherkind_001.jpg/revision/latest/scale-to-width-down/900?cb=20190515031110",
+  "dc_gemworld": "https://static.wikia.nocookie.net/marvel_dc/images/c/ca/Gemworld_001.jpg/revision/latest/scale-to-width-down/672?cb=20130728191801",
+  "dc_kalibak": "https://static.wikia.nocookie.net/marvel_dc/images/8/83/Kalibak_01.jpg/revision/latest?cb=20080603010242",
+  "dc_scottfree": "https://static.wikia.nocookie.net/marvel_dc/images/a/ab/Mister_Miracle_Scott_Free_0003.jpg/revision/latest/scale-to-width-down/631?cb=20091029025125",
+  "dc_barda": "https://static.wikia.nocookie.net/marvel_dc/images/9/98/Big_Barda_0005.jpg/revision/latest/scale-to-width-down/625?cb=20240610135246",
+  "dc_steppenwolf": "https://static.wikia.nocookie.net/marvel_dc/images/6/6e/Steppenwolf_0001.jpg/revision/latest/scale-to-width-down/422?cb=20240115134531",
+  "dc_heggra": "https://static.wikia.nocookie.net/marvel_dc/images/9/90/Heggra_001.jpg/revision/latest?cb=20100416171738",
+  "dc_granny": "https://static.wikia.nocookie.net/marvel_dc/images/1/1a/Granny_Goodness_003.jpg/revision/latest/scale-to-width-down/582?cb=20100413201501",
+  "dc_desaad": "https://static.wikia.nocookie.net/marvel_dc/images/3/34/DeSaad_001.jpg/revision/latest?cb=20080602235444"
  },
  "nodes": {
   "dc_presence": {
@@ -521,12 +597,15 @@
    "fact": "Dans les récits de Vertigo, Lucifer abandonne l'Enfer en partie pour échapper à l'ordre voulu par la Présence.",
    "rel": [
     "dc_darkness",
+    "dc_elaine",
     "dc_lucifer",
     "dc_michael",
+    "dc_sandalphon",
     "dc_silvercity",
     "dc_source",
     "dc_spectre",
-    "dc_stranger"
+    "dc_stranger",
+    "dc_writer"
    ]
   },
   "dc_source": {
@@ -675,7 +754,7 @@
    ]
   },
   "dc_spectre": {
-   "map": 3,
+   "map": 5,
    "name": "The Spectre",
    "fr": "Le Spectre",
    "sub": "l'Esprit de la vengeance divine",
@@ -692,7 +771,7 @@
    ]
   },
   "dc_stranger": {
-   "map": 3,
+   "map": 5,
    "name": "Phantom Stranger",
    "fr": "L'Étranger fantôme",
    "sub": "le témoin errant",
@@ -703,11 +782,13 @@
    "rel": [
     "dc_fate",
     "dc_presence",
-    "dc_spectre"
+    "dc_spectre",
+    "dc_timhunter",
+    "dc_trinitysin"
    ]
   },
   "dc_lucifer": {
-   "map": 3,
+   "map": 9,
    "name": "Lucifer Morningstar",
    "sub": "l'ange déchu",
    "desc": "Ancien souverain de l'Enfer, qui abandonne son trône dans The Sandman et poursuit ensuite sa propre quête de liberté hors de la Création.",
@@ -717,14 +798,17 @@
    "fact": "Il remet les clés de l'Enfer à Dream.",
    "rel": [
     "dc_dream",
+    "dc_elaine",
     "dc_hell",
+    "dc_lilith",
+    "dc_mazikeen",
     "dc_michael",
     "dc_presence",
     "dc_silvercity"
    ]
   },
   "dc_michael": {
-   "map": 3,
+   "map": 9,
    "name": "Michael Demiurgos",
    "fr": "Michel Demiurgos",
    "sub": "l'archange démiurge",
@@ -733,8 +817,10 @@
    "cert": "u",
    "src": "Arkham Asylum: A Serious House on Serious Earth",
    "rel": [
+    "dc_elaine",
     "dc_lucifer",
     "dc_presence",
+    "dc_sandalphon",
     "dc_silvercity"
    ]
   },
@@ -749,12 +835,19 @@
    "src": "Sandman vol. 2 #1 (1989)",
    "fact": "Sa captivité de près d'un siècle ouvre la série The Sandman (1989).",
    "rel": [
+    "dc_calliope",
+    "dc_corinthian",
+    "dc_danielhall",
     "dc_death",
     "dc_desire",
     "dc_destiny",
     "dc_dreaming",
     "dc_endless",
-    "dc_lucifer"
+    "dc_fiddlersgreen",
+    "dc_lucien",
+    "dc_lucifer",
+    "dc_matthew",
+    "dc_orpheus"
    ]
   },
   "dc_death": {
@@ -854,6 +947,7 @@
    "cert": "u",
    "src": "Sandman vol. 2 #8 (1989)",
    "rel": [
+    "dc_danielhall",
     "dc_death",
     "dc_delirium",
     "dc_desire",
@@ -861,7 +955,9 @@
     "dc_destiny",
     "dc_destruction",
     "dc_dream",
-    "dc_dreaming"
+    "dc_dreaming",
+    "dc_night",
+    "dc_time"
    ]
   },
   "dc_nekron": {
@@ -1073,11 +1169,16 @@
     "dc_absolute",
     "dc_antilife",
     "dc_apokolips",
+    "dc_desaad",
     "dc_finalcrisis",
+    "dc_granny",
+    "dc_heggra",
     "dc_highfather",
     "dc_imperiex",
+    "dc_kalibak",
     "dc_orion",
     "dc_source",
+    "dc_steppenwolf",
     "dc_yugakhan"
    ]
   },
@@ -1095,6 +1196,7 @@
     "dc_newgenesis",
     "dc_orion",
     "dc_quintessence",
+    "dc_scottfree",
     "dc_source"
    ]
   },
@@ -1123,7 +1225,9 @@
    "rel": [
     "dc_darkseid",
     "dc_highfather",
-    "dc_newgenesis"
+    "dc_kalibak",
+    "dc_newgenesis",
+    "dc_scottfree"
    ]
   },
   "dc_mobius": {
@@ -1189,7 +1293,7 @@
    ]
   },
   "dc_stillforce": {
-   "map": 5,
+   "map": 8,
    "name": "Still Force",
    "fr": "La Still Force",
    "sub": "l'immobilité",
@@ -1202,7 +1306,7 @@
    ]
   },
   "dc_sageforce": {
-   "map": 5,
+   "map": 8,
    "name": "Sage Force",
    "fr": "La Sage Force",
    "sub": "la sagesse",
@@ -1215,7 +1319,7 @@
    ]
   },
   "dc_strengthforce": {
-   "map": 5,
+   "map": 8,
    "name": "Strength Force",
    "fr": "La Strength Force",
    "sub": "la force physique",
@@ -1337,9 +1441,13 @@
    "cert": "u",
    "src": "New Gods #1 (1971)",
    "rel": [
+    "dc_barda",
     "dc_darkseid",
+    "dc_desaad",
+    "dc_kalibak",
     "dc_newgenesis",
     "dc_source",
+    "dc_steppenwolf",
     "dc_yugakhan"
    ]
   },
@@ -1501,8 +1609,15 @@
    "cert": "u",
    "src": "The Flash #176 (1968)",
    "rel": [
+    "dc_abel",
+    "dc_cain",
+    "dc_corinthian",
+    "dc_danielhall",
     "dc_dream",
     "dc_endless",
+    "dc_fiddlersgreen",
+    "dc_lucien",
+    "dc_matthew",
     "dc_sphere"
    ]
   },
@@ -1516,6 +1631,7 @@
    "cert": "u",
    "src": "Whiz Comics #72 (1946)",
    "rel": [
+    "dc_etrigan",
     "dc_lucifer",
     "dc_sphere",
     "dc_trigon",
@@ -1532,9 +1648,11 @@
    "cert": "u",
    "src": "The Books of Magic #1 (1990)",
    "rel": [
+    "dc_elaine",
     "dc_lucifer",
     "dc_michael",
     "dc_presence",
+    "dc_sandalphon",
     "dc_sphere"
    ]
   },
@@ -1580,7 +1698,8 @@
     "dc_monitor",
     "dc_monsphere",
     "dc_multiverse",
-    "dc_multiversity"
+    "dc_multiversity",
+    "dc_writer"
    ]
   },
   "dc_omniverse": {
@@ -1861,6 +1980,7 @@
    "rel": [
     "dc_apokolips",
     "dc_darkseid",
+    "dc_heggra",
     "dc_sourcewall"
    ]
   },
@@ -2699,7 +2819,8 @@
     "dc_earthprime",
     "dc_multiverse",
     "dc_orrery",
-    "dc_ultracomics"
+    "dc_ultracomics",
+    "dc_writer"
    ]
   },
   "dc_e34": {
@@ -3069,7 +3190,7 @@
    ]
   },
   "dc_mamaragan": {
-   "map": 7,
+   "map": 5,
    "name": "Mamaragan (Shazam)",
    "fr": "Le sorcier Shazam",
    "sub": "le gardien du Rocher",
@@ -3209,7 +3330,9 @@
    "cert": "u",
    "src": "Justice League Dark vol. 2 #1 (2018)",
    "rel": [
-    "dc_darkmulti"
+    "dc_darkmulti",
+    "dc_jld",
+    "dc_otherkind"
    ]
   },
   "dc_darkknights": {
@@ -3327,7 +3450,7 @@
    ]
   },
   "dc_green": {
-   "map": 5,
+   "map": 8,
    "name": "The Green",
    "fr": "Le Vert",
    "sub": "la force de la vie végétale",
@@ -3336,6 +3459,7 @@
    "cert": "u",
    "src": "Swamp Thing vol. 2 #47 (1986)",
    "rel": [
+    "dc_constantine",
     "dc_grey",
     "dc_parliament",
     "dc_red",
@@ -3343,7 +3467,7 @@
    ]
   },
   "dc_red": {
-   "map": 5,
+   "map": 8,
    "name": "The Red",
    "fr": "Le Rouge",
    "sub": "la force de la vie animale",
@@ -3357,7 +3481,7 @@
    ]
   },
   "dc_rot": {
-   "map": 5,
+   "map": 8,
    "name": "The Rot (The Black)",
    "fr": "La Pourriture",
    "sub": "la force de la mort et de la décomposition",
@@ -3371,7 +3495,7 @@
    ]
   },
   "dc_grey": {
-   "map": 5,
+   "map": 8,
    "name": "The Grey",
    "fr": "Le Gris",
    "sub": "la force des champignons",
@@ -3384,7 +3508,7 @@
    ]
   },
   "dc_parliament": {
-   "map": 5,
+   "map": 8,
    "name": "Parliament of Trees",
    "fr": "Le Parlement des arbres",
    "sub": "les anciens avatars du Vert",
@@ -3652,6 +3776,483 @@
    "src": "Hal Jordan and the Green Lantern Corps #9 (2017)",
    "rel": [
     "dc_glcorps"
+   ]
+  },
+  "dc_night": {
+   "map": 3,
+   "name": "Night (Mother Night)",
+   "fr": "Night",
+   "sub": "la mère des Endless",
+   "desc": "Entité primordiale de la nuit, mère des sept Endless, qui apparaît dans The Sandman: Overture.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Sandman: Overture #2 (2014)",
+   "rel": [
+    "dc_endless",
+    "dc_time"
+   ]
+  },
+  "dc_time": {
+   "map": 3,
+   "name": "Time (Father Time)",
+   "fr": "Time",
+   "sub": "le père des Endless",
+   "desc": "Entité du temps, père des sept Endless. Ses enfants ne le voient que rarement.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Strange Adventures #72 (1956)",
+   "rel": [
+    "dc_endless",
+    "dc_night"
+   ]
+  },
+  "dc_orpheus": {
+   "map": 3,
+   "name": "Orpheus",
+   "fr": "Orphée",
+   "sub": "le fils de Dream",
+   "desc": "Fils de Dream et de la muse Calliope. Après la mort d'Eurydice, il descend aux Enfers ; démembré par les Bacchantes, sa tête survit des siècles, jusqu'à ce que son père lui accorde enfin la mort.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Strange Adventures #19 (1952)",
+   "fact": "Dream tue son fils à sa demande dans The Sandman #49 : un acte qui scelle son propre destin.",
+   "rel": [
+    "dc_calliope",
+    "dc_dream"
+   ]
+  },
+  "dc_calliope": {
+   "map": 3,
+   "name": "Calliope",
+   "sub": "la muse, ex-épouse de Dream",
+   "desc": "Muse de la poésie épique, fille de Zeus et de Mnémosyne, ex-épouse de Dream et mère d'Orphée. Captive d'un écrivain, elle est libérée par Dream.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Sandman vol. 2 #17 (1990)",
+   "rel": [
+    "dc_dream",
+    "dc_orpheus"
+   ]
+  },
+  "dc_danielhall": {
+   "map": 3,
+   "name": "Dream (Daniel Hall)",
+   "fr": "Daniel Hall",
+   "sub": "le nouveau Dream",
+   "desc": "Fils d'Hector et de Lyta Hall, conçu dans le Rêve. À la mort de Morpheus, il devient le nouveau Dream des Endless.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Sandman vol. 2 #22 (1991)",
+   "rel": [
+    "dc_dream",
+    "dc_dreaming",
+    "dc_endless"
+   ]
+  },
+  "dc_lucien": {
+   "map": 3,
+   "name": "Lucien",
+   "sub": "le bibliothécaire du Rêve",
+   "desc": "Bibliothécaire du Rêve, gardien des livres qui n'ont jamais été écrits.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Weird Mystery Tales #18 (1975)",
+   "rel": [
+    "dc_dream",
+    "dc_dreaming"
+   ]
+  },
+  "dc_corinthian": {
+   "map": 3,
+   "name": "The Corinthian",
+   "fr": "Le Corinthien",
+   "sub": "le cauchemar de Dream",
+   "desc": "Cauchemar créé par Dream, dont les yeux sont remplacés par des bouches ; détruit pour ses crimes, puis recréé.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Sandman vol. 2 #10 (1989)",
+   "rel": [
+    "dc_dream",
+    "dc_dreaming"
+   ]
+  },
+  "dc_matthew": {
+   "map": 3,
+   "name": "Matthew the Raven (Matthew Cable)",
+   "fr": "Matthew",
+   "sub": "le corbeau de Dream",
+   "desc": "Matt Cable, ancien personnage de Swamp Thing, devenu après sa mort le corbeau et le confident de Dream.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Swamp Thing #1 (1972)",
+   "rel": [
+    "dc_dream",
+    "dc_dreaming"
+   ]
+  },
+  "dc_cain": {
+   "map": 3,
+   "name": "Cain",
+   "fr": "Caïn",
+   "sub": "la Maison des mystères",
+   "desc": "Le premier meurtrier, gardien de la Maison des mystères dans le Rêve ; il tue régulièrement son frère Abel.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Picture Stories from the Bible Old Testament #3 (1943)",
+   "rel": [
+    "dc_abel",
+    "dc_dreaming"
+   ]
+  },
+  "dc_abel": {
+   "map": 3,
+   "name": "Abel",
+   "sub": "la Maison des secrets",
+   "desc": "Frère de Caïn, gardien de la Maison des secrets dans le Rêve.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Picture Stories from the Bible Old Testament #3 (1943)",
+   "rel": [
+    "dc_cain",
+    "dc_dreaming"
+   ]
+  },
+  "dc_fiddlersgreen": {
+   "map": 3,
+   "name": "Fiddler's Green",
+   "sub": "un lieu du Rêve",
+   "desc": "Un lieu du Rêve, qui prend parfois forme humaine sous les traits d'un gentleman nommé Gilbert.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Sandman vol. 2 #10 (1989)",
+   "rel": [
+    "dc_dream",
+    "dc_dreaming"
+   ]
+  },
+  "dc_elaine": {
+   "map": 1,
+   "name": "Elaine Belloc",
+   "sub": "la fille de Michael, devenue Dieu",
+   "desc": "Fille de l'archange Michael, élevée comme une humaine. Quand la Présence abdique, c'est elle qui succède au trône du Ciel, dans la série Lucifer.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Lucifer #4 (2000)",
+   "fact": "Elle devient la nouvelle créatrice à la fin de la série Lucifer de Mike Carey.",
+   "rel": [
+    "dc_lucifer",
+    "dc_michael",
+    "dc_presence",
+    "dc_silvercity"
+   ]
+  },
+  "dc_mazikeen": {
+   "map": 9,
+   "name": "Mazikeen",
+   "sub": "l’alliée de Lucifer",
+   "desc": "Fille de Lilith, Lilim au visage à moitié masqué, alliée la plus fidèle de Lucifer.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Sandman vol. 2 #22 (1991)",
+   "rel": [
+    "dc_lilith",
+    "dc_lucifer"
+   ]
+  },
+  "dc_lilith": {
+   "map": 9,
+   "name": "Lilith",
+   "sub": "la mère des Lilim",
+   "desc": "La première femme d'Adam, mère des Lilim et de Mazikeen.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Sandman vol. 2 #40 (1992)",
+   "rel": [
+    "dc_lucifer",
+    "dc_mazikeen"
+   ]
+  },
+  "dc_sandalphon": {
+   "map": 9,
+   "name": "Sandalphon",
+   "sub": "un ange de la Cité d’Argent",
+   "desc": "Ange de la Cité d'Argent, créé par Dieu, qui cherche à engendrer des enfants avec des humaines.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Lucifer #10 (2001)",
+   "rel": [
+    "dc_michael",
+    "dc_presence",
+    "dc_silvercity"
+   ]
+  },
+  "dc_writer": {
+   "map": 1,
+   "name": "The Writer (Grant Morrison)",
+   "fr": "L'Écrivain",
+   "sub": "l’auteur dans le récit",
+   "desc": "Le scénariste Grant Morrison, devenu personnage dans Animal Man : il explique à son héros qu'il réécrit sa réalité. Dans le plan Primestone, l'auteur se tient au-dessus de toute la création.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Animal Man #14 (1989)",
+   "fact": "Animal Man #26 (1990) met en scène la rencontre du héros et de son scénariste.",
+   "rel": [
+    "dc_e33",
+    "dc_overvoid",
+    "dc_presence"
+   ]
+  },
+  "dc_zatanna": {
+   "map": 5,
+   "name": "Zatanna Zatara",
+   "fr": "Zatanna",
+   "sub": "la magicienne",
+   "desc": "Magicienne qui lance ses sorts en prononçant les mots à l'envers, fille du magicien Zatara.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Hawkman #4 (1964)",
+   "rel": [
+    "dc_constantine",
+    "dc_jld"
+   ]
+  },
+  "dc_constantine": {
+   "map": 5,
+   "name": "John Constantine",
+   "sub": "le mage de Hellblazer",
+   "desc": "Mage et escroc de Liverpool apparu dans Swamp Thing, héros de Hellblazer chez Vertigo.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Swamp Thing vol. 2 #37 (1985)",
+   "rel": [
+    "dc_green",
+    "dc_jld",
+    "dc_timhunter",
+    "dc_zatanna"
+   ]
+  },
+  "dc_etrigan": {
+   "map": 5,
+   "name": "Etrigan the Demon",
+   "fr": "Etrigan",
+   "sub": "le démon qui rime",
+   "desc": "Démon rimeur, fils de Belial et demi-frère de Merlin, lié au chevalier immortel Jason Blood.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "The Demon #1 (1972)",
+   "rel": [
+    "dc_hell",
+    "dc_jld",
+    "dc_klarion"
+   ]
+  },
+  "dc_xanadu": {
+   "map": 5,
+   "name": "Madame Xanadu (Nimue Inwudu)",
+   "fr": "Madame Xanadu",
+   "sub": "la voyante",
+   "desc": "Nimue, sœur de Morgane, devenue la voyante Madame Xanadu.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Doorway to Nightmare #1 (1978)",
+   "rel": [
+    "dc_jld"
+   ]
+  },
+  "dc_klarion": {
+   "map": 5,
+   "name": "Klarion the Witch Boy",
+   "fr": "Klarion",
+   "sub": "le sorcier-enfant",
+   "desc": "Le sorcier-enfant de Limbo Town, accompagné de son familier, le chat Teekl.",
+   "cat": "per",
+   "cert": "u",
+   "src": "The Demon #7 (1973)",
+   "rel": [
+    "dc_etrigan"
+   ]
+  },
+  "dc_occult": {
+   "map": 5,
+   "name": "Doctor Occult (Richard Occult)",
+   "fr": "Doctor Occult",
+   "sub": "le détective du surnaturel",
+   "desc": "Détective du surnaturel, l'un des tout premiers personnages créés par Jerry Siegel et Joe Shuster.",
+   "cat": "per",
+   "cert": "u",
+   "src": "New Fun Comics #6 (1935)",
+   "rel": [
+    "dc_timhunter"
+   ]
+  },
+  "dc_timhunter": {
+   "map": 5,
+   "name": "Timothy Hunter",
+   "fr": "Tim Hunter",
+   "sub": "le futur grand magicien",
+   "desc": "Adolescent britannique destiné à devenir le plus grand magicien de son époque, guidé par le Phantom Stranger, Constantine, Doctor Occult et Mister E.",
+   "cat": "per",
+   "cert": "u",
+   "src": "The Books of Magic #1 (1990)",
+   "rel": [
+    "dc_constantine",
+    "dc_occult",
+    "dc_stranger"
+   ]
+  },
+  "dc_jld": {
+   "map": 5,
+   "name": "Justice League Dark",
+   "fr": "La Justice League Dark",
+   "sub": "l’équipe de la magie",
+   "desc": "L'équipe des héros de la magie : Zatanna, Constantine, Madame Xanadu, Etrigan, Swamp Thing…",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Justice League Dark #1 (2011)",
+   "rel": [
+    "dc_constantine",
+    "dc_etrigan",
+    "dc_otherkind",
+    "dc_upsidedown",
+    "dc_xanadu",
+    "dc_zatanna"
+   ]
+  },
+  "dc_trinitysin": {
+   "map": 5,
+   "name": "Trinity of Sin",
+   "fr": "La Trinité du péché",
+   "sub": "Pandora, le Stranger, la Question",
+   "desc": "Pandora, le Phantom Stranger et la Question, condamnés pour leurs fautes originelles.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "The New 52: FCBD Special Edition #1 (2012)",
+   "rel": [
+    "dc_stranger"
+   ]
+  },
+  "dc_otherkind": {
+   "map": 5,
+   "name": "Otherkind",
+   "fr": "Les Otherkind",
+   "sub": "au-delà de la magie",
+   "desc": "Créatures venues d'au-delà de la magie, liées à l'Homme à l'envers.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Justice League Dark vol. 2 #1 (2018)",
+   "rel": [
+    "dc_jld",
+    "dc_upsidedown"
+   ]
+  },
+  "dc_gemworld": {
+   "map": 5,
+   "name": "Gemworld",
+   "sub": "le monde des gemmes",
+   "desc": "Monde magique organisé en maisons de gemmes, royaume de la princesse Amethyst.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Legion of Super-Heroes vol. 2 #298 (1983)",
+   "rel": []
+  },
+  "dc_kalibak": {
+   "map": 4,
+   "name": "Kalibak",
+   "sub": "le fils aîné de Darkseid",
+   "desc": "Fils de Darkseid et de Suli, brute armée de la massue Beta, jaloux de son demi-frère Orion.",
+   "cat": "per",
+   "cert": "u",
+   "src": "New Gods #1 (1971)",
+   "rel": [
+    "dc_apokolips",
+    "dc_darkseid",
+    "dc_orion"
+   ]
+  },
+  "dc_scottfree": {
+   "map": 4,
+   "name": "Mister Miracle (Scott Free)",
+   "fr": "Scott Free",
+   "sub": "le roi de l’évasion",
+   "desc": "Fils de Highfather, échangé enfant contre Orion pour sceller la paix ; élevé à Apokolips, il s'en évade et devient Mister Miracle.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Mister Miracle #1 (1971)",
+   "fact": "L'échange des fils de Highfather et de Darkseid est le pacte fondateur du Quatrième Monde.",
+   "rel": [
+    "dc_barda",
+    "dc_granny",
+    "dc_highfather",
+    "dc_orion"
+   ]
+  },
+  "dc_barda": {
+   "map": 4,
+   "name": "Big Barda",
+   "sub": "la guerrière d’Apokolips",
+   "desc": "Ancienne cheffe des Furies d'Apokolips, épouse de Scott Free.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Mister Miracle #4 (1971)",
+   "rel": [
+    "dc_apokolips",
+    "dc_granny",
+    "dc_scottfree"
+   ]
+  },
+  "dc_steppenwolf": {
+   "map": 4,
+   "name": "Steppenwolf",
+   "sub": "l’oncle de Darkseid",
+   "desc": "Frère d'Heggra et oncle de Darkseid, général des armées d'Apokolips.",
+   "cat": "per",
+   "cert": "u",
+   "src": "New Gods #7 (1972)",
+   "rel": [
+    "dc_apokolips",
+    "dc_darkseid",
+    "dc_heggra"
+   ]
+  },
+  "dc_heggra": {
+   "map": 4,
+   "name": "Heggra",
+   "sub": "la mère de Darkseid",
+   "desc": "Ancienne reine d'Apokolips, épouse de Yuga Khan et mère de Darkseid.",
+   "cat": "per",
+   "cert": "u",
+   "src": "New Gods #7 (1972)",
+   "rel": [
+    "dc_darkseid",
+    "dc_steppenwolf",
+    "dc_yugakhan"
+   ]
+  },
+  "dc_granny": {
+   "map": 4,
+   "name": "Granny Goodness",
+   "sub": "la dresseuse d’orphelins",
+   "desc": "Elle dresse les orphelins d'Apokolips et commande les Furies.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Mister Miracle #2 (1971)",
+   "rel": [
+    "dc_barda",
+    "dc_darkseid",
+    "dc_scottfree"
+   ]
+  },
+  "dc_desaad": {
+   "map": 4,
+   "name": "Desaad",
+   "sub": "le tortionnaire de Darkseid",
+   "desc": "Le maître tortionnaire de Darkseid.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Forever People #2 (1971)",
+   "rel": [
+    "dc_apokolips",
+    "dc_darkseid"
    ]
   }
  },

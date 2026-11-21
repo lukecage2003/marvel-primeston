@@ -4374,6 +4374,425 @@
   },
   "dc_emeraldspace": {
    "n": 2
+  },
+  "p_limbo": {
+   "n": 224,
+   "first": [
+    "Uncanny X-Men #160",
+    "Magik (Illyana and Storm Limited Series) #1",
+    "Magik (Illyana and Storm Limited Series) #2",
+    "Magik (Illyana and Storm Limited Series) #3"
+   ],
+   "last": [
+    "Queen in Black: Defenders of Light and Dark #3",
+    "Ultimate Wolverine #16",
+    "Ultimate Wolverine #15",
+    "Sorcerer Supreme #3"
+   ]
+  },
+  "x_demiurge": {
+   "n": 6,
+   "first": [
+    "Thor Annual #10",
+    "Silver Surfer Annual #2",
+    "Immortal Thor #5",
+    "Immortal Thor #8"
+   ],
+   "last": [
+    "Wiccan: Witches' Road #2",
+    "Immortal Thor #23",
+    "Immortal Thor #8",
+    "Immortal Thor #5"
+   ]
+  },
+  "x_sinifer": {
+   "n": 1,
+   "first": [
+    "Doctor Strange, Sorcerer Supreme #22"
+   ],
+   "last": [
+    "Doctor Strange, Sorcerer Supreme #22"
+   ]
+  },
+  "x_wanda": {
+   "n": 1420,
+   "first": [
+    "X-Men #4",
+    "X-Men #5",
+    "X-Men #6",
+    "X-Men #7"
+   ],
+   "last": [
+    "Infernal Hulk vs. Spider-Man #1",
+    "Amazing Venom #2",
+    "Amazing Spider-Man vol. 7 #1001",
+    "Sorcerer Supreme #10"
+   ]
+  },
+  "x_witchcraft": {
+   "n": 2,
+   "first": [
+    "Scarlet Witch vol. 2 #14",
+    "Scarlet Witch vol. 4 #10"
+   ],
+   "last": [
+    "Scarlet Witch vol. 4 #10",
+    "Scarlet Witch vol. 2 #14"
+   ]
+  },
+  "x_wyn": {
+   "n": 15,
+   "first": [
+    "Free Comic Book Day 2023: Avengers/X-Men #1",
+    "X-Men: Hellfire Gala 2023 #1",
+    "Doctor Strange vol. 6 #6",
+    "Amazing Spider-Man vol. 6 #32"
+   ],
+   "last": [
+    "G.O.D.S.: One World Under Doom #1",
+    "Giant-Size Amazing Spider-Man vol. 2 #1",
+    "G.O.D.S. #8",
+    "G.O.D.S. #7"
+   ]
+  },
+  "x_ancient": {
+   "n": 142,
+   "first": [
+    "Amazing Adventures #1",
+    "Strange Tales #110",
+    "Strange Tales #111",
+    "Strange Tales #114"
+   ],
+   "last": [
+    "Beastly Buddies Infinity Comic #5",
+    "Strange Academy: Finals #6",
+    "Strange Academy: Finals #5",
+    "Strange Academy: Finals #4"
+   ]
+  },
+  "x_mordo": {
+   "n": 119,
+   "first": [
+    "Strange Tales #111",
+    "Strange Tales #114",
+    "Strange Tales #115",
+    "Strange Tales #117"
+   ],
+   "last": [
+    "One World Under Doom #3",
+    "One World Under Doom #2",
+    "Doctor Strange vol. 6 #18",
+    "Doctor Strange vol. 6 #17"
+   ]
+  },
+  "x_belasco": {
+   "n": 52,
+   "first": [
+    "Fear #22",
+    "Ka-Zar the Savage #11",
+    "Ka-Zar the Savage #12",
+    "Uncanny X-Men #160"
+   ],
+   "last": [
+    "Iron Man vol. 6 #10",
+    "Iron Man vol. 6 #9",
+    "Iron Man vol. 6 #3",
+    "Realm of X #3"
+   ]
+  },
+  "x_magik": {
+   "n": 733,
+   "first": [
+    "Giant-Size X-Men #1",
+    "Uncanny X-Men #146",
+    "Uncanny X-Men #148",
+    "Uncanny X-Men #153"
+   ],
+   "last": [
+    "X-Orcists #1",
+    "DNX #5",
+    "X-Men vol. 7 #41",
+    "DNX #4"
+   ]
+  },
+  "o_vishanti": {
+   "n": 69,
+   "first": [
+    "Strange Tales #116",
+    "Strange Tales #147",
+    "Strange Tales #148",
+    "Strange Tales #150"
+   ],
+   "last": [
+    "Amazing Spider-Man vol. 6 #70",
+    "Amazing Spider-Man vol. 6 #68.DEATHS",
+    "Strange Academy: Amazing Spider-Man #1",
+    "X-Cellent vol. 2 #3"
+   ]
+  },
+  "p_kamartaj": {
+   "n": 89,
+   "first": [
+    "Strange Tales #110",
+    "Strange Tales #111",
+    "Strange Tales #114",
+    "Strange Tales #115"
+   ],
+   "last": [
+    "Marvel Mangaverse: Web of Blood #1"
+   ]
+  },
+  "p_sanctum": {
+   "n": 1061,
+   "first": [
+    "Strange Tales #110",
+    "Strange Tales #111",
+    "Strange Tales #114",
+    "Strange Tales #116"
+   ],
+   "last": [
+    "Amazing Venom #2",
+    "Amazing Spider-Man vol. 7 #1001",
+    "Sorcerer Supreme #10",
+    "Godzilla Conquers the Multiverse #3"
+   ]
+  },
+  "x_marduk": {
+   "n": 44,
+   "first": [
+    "Marvel Spotlight #13",
+    "Marvel Spotlight #15",
+    "Haunt of Horror vol. 2 #2",
+    "Haunt of Horror vol. 2 #4"
+   ],
+   "last": [
+    "Weapon X vol. 3 #27",
+    "Weapon X vol. 3 #26",
+    "Spirits of Vengeance #5",
+    "Spirits of Vengeance #4"
+   ]
+  },
+  "x_hellstrom": {
+   "n": 283,
+   "first": [
+    "Ghost Rider vol. 2 #1",
+    "Ghost Rider vol. 2 #2",
+    "Marvel Spotlight #12",
+    "Ghost Rider vol. 2 #3"
+   ],
+   "last": [
+    "Uncanny X-Men vol. 6 #17",
+    "TVA #2",
+    "Sensational She-Hulk vol. 2 #5",
+    "Hellcat vol. 2 #5"
+   ]
+  },
+  "x_satana": {
+   "n": 98,
+   "first": [
+    "Vampire Tales #2",
+    "Marvel Spotlight #13",
+    "Vampire Tales #3",
+    "Haunt of Horror vol. 2 #2"
+   ],
+   "last": [
+    "Blood Hunters #4",
+    "Blade vol. 6 #10",
+    "Blade vol. 6 #9",
+    "Blade vol. 6 #8"
+   ]
+  },
+  "x_blackheart": {
+   "n": 90,
+   "first": [
+    "Daredevil #270",
+    "Daredevil #278",
+    "Daredevil #279",
+    "Daredevil #281"
+   ],
+   "last": [
+    "Avengers Academy: Marvel's Voices Infinity Comic #59",
+    "Avengers Academy: Marvel's Voices Infinity Comic #58",
+    "Avengers Academy: Marvel's Voices Infinity Comic #57",
+    "Avengers Academy: Marvel's Voices Infinity Comic #53"
+   ]
+  },
+  "x_mephista": {
+   "n": 17,
+   "first": [
+    "Doctor Strange, Sorcerer Supreme #6",
+    "Doctor Strange, Sorcerer Supreme #7",
+    "Doctor Strange, Sorcerer Supreme #8",
+    "Doctor Strange, Sorcerer Supreme #29"
+   ],
+   "last": [
+    "X-Factor vol. 3 #258",
+    "X-Factor vol. 3 #256",
+    "X-Factor vol. 3 #255",
+    "X-Factor vol. 3 #254"
+   ]
+  },
+  "x_zarathos": {
+   "n": 190,
+   "first": [
+    "Marvel Two-In-One #8",
+    "Ghost Rider vol. 2 #11",
+    "Ghost Rider vol. 2 #12",
+    "Ghost Rider vol. 2 #13"
+   ],
+   "last": [
+    "Spirits of Violence #5",
+    "Spirits of Violence #4",
+    "DC/Marvel: Batman/Deadpool #1",
+    "Spirits of Violence #2"
+   ]
+  },
+  "x_agatha": {
+   "n": 175,
+   "first": [
+    "Fantastic Four #94",
+    "Fantastic Four #103",
+    "Fantastic Four #107",
+    "Fantastic Four #109"
+   ],
+   "last": [
+    "Sorcerer Supreme #10",
+    "Sorcerer Supreme #9",
+    "Sorcerer Supreme #6",
+    "Sorcerer Supreme #5"
+   ]
+  },
+  "x_drumm": {
+   "n": 290,
+   "first": [
+    "Strange Tales #169",
+    "Strange Tales #170",
+    "Strange Tales #171",
+    "Strange Tales #172"
+   ],
+   "last": [
+    "Sorcerer Supreme #10",
+    "Infernal Hulk #10",
+    "Infernal Hulk #9",
+    "Infernal Hulk #8"
+   ]
+  },
+  "g_twilight": {
+   "n": 12,
+   "first": [
+    "Timeless vol. 2 #1",
+    "Avengers vol. 9 #7",
+    "Avengers vol. 9 #8",
+    "Avengers vol. 9 #9"
+   ],
+   "last": [
+    "Avengers vol. 9 #36",
+    "Avengers vol. 9 #35",
+    "Avengers vol. 9 #34",
+    "Avengers vol. 9 #33"
+   ]
+  },
+  "dc_night": {
+   "n": 3
+  },
+  "dc_time": {
+   "n": 5
+  },
+  "dc_orpheus": {
+   "n": 8
+  },
+  "dc_calliope": {
+   "n": 4
+  },
+  "dc_danielhall": {
+   "n": 35
+  },
+  "dc_lucien": {
+   "n": 77
+  },
+  "dc_corinthian": {
+   "n": 50
+  },
+  "dc_matthew": {
+   "n": 137
+  },
+  "dc_cain": {
+   "n": 293
+  },
+  "dc_abel": {
+   "n": 201
+  },
+  "dc_fiddlersgreen": {
+   "n": 12
+  },
+  "dc_elaine": {
+   "n": 49
+  },
+  "dc_mazikeen": {
+   "n": 81
+  },
+  "dc_lilith": {
+   "n": 37
+  },
+  "dc_sandalphon": {
+   "n": 10
+  },
+  "dc_writer": {
+   "n": 8
+  },
+  "dc_zatanna": {
+   "n": 533
+  },
+  "dc_constantine": {
+   "n": 37
+  },
+  "dc_etrigan": {
+   "n": 331
+  },
+  "dc_xanadu": {
+   "n": 146
+  },
+  "dc_klarion": {
+   "n": 68
+  },
+  "dc_occult": {
+   "n": 141
+  },
+  "dc_timhunter": {
+   "n": 131
+  },
+  "dc_jld": {
+   "n": 190
+  },
+  "dc_trinitysin": {
+   "n": 17
+  },
+  "dc_otherkind": {
+   "n": 8
+  },
+  "dc_gemworld": {
+   "n": 132
+  },
+  "dc_kalibak": {
+   "n": 112
+  },
+  "dc_scottfree": {
+   "n": 340
+  },
+  "dc_barda": {
+   "n": 281
+  },
+  "dc_steppenwolf": {
+   "n": 40
+  },
+  "dc_heggra": {
+   "n": 15
+  },
+  "dc_granny": {
+   "n": 148
+  },
+  "dc_desaad": {
+   "n": 215
   }
  }
 }

@@ -12,6 +12,17 @@
  },
  {
   "type": "issue",
+  "series": "New Fun Comics",
+  "volume": 1,
+  "issue": "6",
+  "year": "1935",
+  "label": "New Fun Comics #6",
+  "citedBy": [
+   "dc_occult"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Ka-Zar",
   "volume": 1,
   "issue": "1",
@@ -104,6 +115,18 @@
  },
  {
   "type": "issue",
+  "series": "Picture Stories from the Bible Old Testament",
+  "volume": 1,
+  "issue": "3",
+  "year": "1943",
+  "label": "Picture Stories from the Bible Old Testament #3",
+  "citedBy": [
+   "dc_cain",
+   "dc_abel"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Wonder Woman",
   "volume": 1,
   "issue": "4",
@@ -192,6 +215,17 @@
  },
  {
   "type": "issue",
+  "series": "Strange Adventures",
+  "volume": 1,
+  "issue": "19",
+  "year": "1952",
+  "label": "Strange Adventures #19",
+  "citedBy": [
+   "dc_orpheus"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "The Phantom Stranger",
   "volume": 1,
   "issue": "1",
@@ -199,6 +233,17 @@
   "label": "The Phantom Stranger #1",
   "citedBy": [
    "dc_stranger"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Strange Adventures",
+  "volume": 1,
+  "issue": "72",
+  "year": "1956",
+  "label": "Strange Adventures #72",
+  "citedBy": [
+   "dc_time"
   ]
  },
  {
@@ -258,6 +303,17 @@
   "citedBy": [
    "x_reed",
    "g_skrulls"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Amazing Adventures",
+  "volume": 1,
+  "issue": "1",
+  "year": "1961",
+  "label": "Amazing Adventures #1",
+  "citedBy": [
+   "x_ancient"
   ]
  },
  {
@@ -452,7 +508,20 @@
   "citedBy": [
    "x_dreams",
    "x_strange",
-   "x_nightmare"
+   "x_nightmare",
+   "p_kamartaj",
+   "p_sanctum"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Strange Tales",
+  "volume": 1,
+  "issue": "111",
+  "year": "1963",
+  "label": "Strange Tales #111",
+  "citedBy": [
+   "x_mordo"
   ]
  },
  {
@@ -464,7 +533,8 @@
   "label": "Strange Tales #116",
   "citedBy": [
    "x_hoggoth",
-   "g_vishanti"
+   "g_vishanti",
+   "o_vishanti"
   ]
  },
  {
@@ -498,6 +568,17 @@
   "label": "Avengers #8",
   "citedBy": [
    "x_kang"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Hawkman",
+  "volume": 1,
+  "issue": "4",
+  "year": "1964",
+  "label": "Hawkman #4",
+  "citedBy": [
+   "dc_zatanna"
   ]
  },
  {
@@ -557,6 +638,17 @@
   "label": "Strange Tales #127",
   "citedBy": [
    "o_eye"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "X-Men",
+  "volume": 1,
+  "issue": "4",
+  "year": "1964",
+  "label": "X-Men #4",
+  "citedBy": [
+   "x_wanda"
   ]
  },
  {
@@ -823,6 +915,17 @@
  },
  {
   "type": "issue",
+  "series": "Fantastic Four",
+  "volume": 1,
+  "issue": "94",
+  "year": "1969",
+  "label": "Fantastic Four #94",
+  "citedBy": [
+   "x_agatha"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Silver Surfer",
   "volume": 1,
   "issue": "12",
@@ -869,11 +972,55 @@
   "type": "issue",
   "series": "Forever People",
   "volume": 1,
+  "issue": "2",
+  "year": "1971",
+  "label": "Forever People #2",
+  "citedBy": [
+   "dc_desaad"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Forever People",
+  "volume": 1,
   "issue": "5",
   "year": "1971",
   "label": "Forever People #5",
   "citedBy": [
    "dc_antilife"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Mister Miracle",
+  "volume": 1,
+  "issue": "1",
+  "year": "1971",
+  "label": "Mister Miracle #1",
+  "citedBy": [
+   "dc_scottfree"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Mister Miracle",
+  "volume": 1,
+  "issue": "2",
+  "year": "1971",
+  "label": "Mister Miracle #2",
+  "citedBy": [
+   "dc_granny"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Mister Miracle",
+  "volume": 1,
+  "issue": "4",
+  "year": "1971",
+  "label": "Mister Miracle #4",
+  "citedBy": [
+   "dc_barda"
   ]
  },
  {
@@ -890,7 +1037,8 @@
    "dc_orion",
    "dc_mobius",
    "dc_newgenesis",
-   "dc_apokolips"
+   "dc_apokolips",
+   "dc_kalibak"
   ]
  },
  {
@@ -963,6 +1111,51 @@
  },
  {
   "type": "issue",
+  "series": "Marvel Spotlight",
+  "volume": 1,
+  "issue": "5",
+  "year": "1972",
+  "label": "Marvel Spotlight #5",
+  "citedBy": [
+   "x_zarathos"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "New Gods",
+  "volume": 1,
+  "issue": "7",
+  "year": "1972",
+  "label": "New Gods #7",
+  "citedBy": [
+   "dc_steppenwolf",
+   "dc_heggra"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Swamp Thing",
+  "volume": 1,
+  "issue": "1",
+  "year": "1972",
+  "label": "Swamp Thing #1",
+  "citedBy": [
+   "dc_matthew"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "The Demon",
+  "volume": 1,
+  "issue": "1",
+  "year": "1972",
+  "label": "The Demon #1",
+  "citedBy": [
+   "dc_etrigan"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Weird Mystery Tales",
   "volume": 1,
   "issue": "1",
@@ -996,6 +1189,17 @@
  },
  {
   "type": "issue",
+  "series": "Ghost Rider",
+  "volume": 2,
+  "issue": "1",
+  "year": "1973",
+  "label": "Ghost Rider vol. 2 #1",
+  "citedBy": [
+   "x_hellstrom"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Iron Man",
   "volume": 1,
   "issue": "55",
@@ -1019,6 +1223,50 @@
   "label": "Marvel Premiere #9",
   "citedBy": [
    "d_shuma"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Marvel Spotlight",
+  "volume": 1,
+  "issue": "13",
+  "year": "1973",
+  "label": "Marvel Spotlight #13",
+  "citedBy": [
+   "x_marduk"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Strange Tales",
+  "volume": 1,
+  "issue": "169",
+  "year": "1973",
+  "label": "Strange Tales #169",
+  "citedBy": [
+   "x_drumm"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "The Demon",
+  "volume": 1,
+  "issue": "7",
+  "year": "1973",
+  "label": "The Demon #7",
+  "citedBy": [
+   "dc_klarion"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Vampire Tales",
+  "volume": 1,
+  "issue": "2",
+  "year": "1973",
+  "label": "Vampire Tales #2",
+  "citedBy": [
+   "x_satana"
   ]
  },
  {
@@ -1134,6 +1382,17 @@
  },
  {
   "type": "issue",
+  "series": "Giant-Size X-Men",
+  "volume": 1,
+  "issue": "1",
+  "year": "1975",
+  "label": "Giant-Size X-Men #1",
+  "citedBy": [
+   "x_magik"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Marvel Chillers",
   "volume": 1,
   "issue": "1",
@@ -1185,6 +1444,17 @@
   "label": "Warlock #9",
   "citedBy": [
    "x_inbetween"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Weird Mystery Tales",
+  "volume": 1,
+  "issue": "18",
+  "year": "1975",
+  "label": "Weird Mystery Tales #18",
+  "citedBy": [
+   "dc_lucien"
   ]
  },
  {
@@ -1420,6 +1690,17 @@
  },
  {
   "type": "issue",
+  "series": "Doorway to Nightmare",
+  "volume": 1,
+  "issue": "1",
+  "year": "1978",
+  "label": "Doorway to Nightmare #1",
+  "citedBy": [
+   "dc_xanadu"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Green Lantern",
   "volume": 2,
   "issue": "100",
@@ -1498,6 +1779,17 @@
  },
  {
   "type": "issue",
+  "series": "Ka-Zar the Savage",
+  "volume": 1,
+  "issue": "11",
+  "year": "1981",
+  "label": "Ka-Zar the Savage #11",
+  "citedBy": [
+   "x_belasco"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Tales of the Green Lantern Corps",
   "volume": 1,
   "issue": "2",
@@ -1566,6 +1858,28 @@
  },
  {
   "type": "issue",
+  "series": "Thor Annual",
+  "volume": 1,
+  "issue": "10",
+  "year": "1982",
+  "label": "Thor Annual #10",
+  "citedBy": [
+   "x_demiurge"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Uncanny X-Men",
+  "volume": 1,
+  "issue": "160",
+  "year": "1982",
+  "label": "Uncanny X-Men #160",
+  "citedBy": [
+   "p_limbo"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Daredevils",
   "volume": 1,
   "issue": "6",
@@ -1584,6 +1898,17 @@
   "label": "Fantastic Four #262",
   "citedBy": [
    "e_trial"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Legion of Super-Heroes",
+  "volume": 2,
+  "issue": "298",
+  "year": "1983",
+  "label": "Legion of Super-Heroes vol. 2 #298",
+  "citedBy": [
+   "dc_gemworld"
   ]
  },
  {
@@ -1764,6 +2089,17 @@
  },
  {
   "type": "issue",
+  "series": "Swamp Thing",
+  "volume": 2,
+  "issue": "37",
+  "year": "1985",
+  "label": "Swamp Thing vol. 2 #37",
+  "citedBy": [
+   "dc_constantine"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Star Brand",
   "volume": 1,
   "issue": "1",
@@ -1907,6 +2243,39 @@
  },
  {
   "type": "issue",
+  "series": "Animal Man",
+  "volume": 1,
+  "issue": "14",
+  "year": "1989",
+  "label": "Animal Man #14",
+  "citedBy": [
+   "dc_writer"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Daredevil",
+  "volume": 1,
+  "issue": "270",
+  "year": "1989",
+  "label": "Daredevil #270",
+  "citedBy": [
+   "x_blackheart"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Doctor Strange, Sorcerer Supreme",
+  "volume": 1,
+  "issue": "6",
+  "year": "1989",
+  "label": "Doctor Strange, Sorcerer Supreme #6",
+  "citedBy": [
+   "x_mephista"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Sandman",
   "volume": 2,
   "issue": "1",
@@ -1925,7 +2294,9 @@
   "label": "Sandman vol. 2 #10",
   "citedBy": [
    "dc_desire",
-   "dc_despair"
+   "dc_despair",
+   "dc_corinthian",
+   "dc_fiddlersgreen"
   ]
  },
  {
@@ -1964,6 +2335,17 @@
  },
  {
   "type": "issue",
+  "series": "Doctor Strange, Sorcerer Supreme",
+  "volume": 1,
+  "issue": "22",
+  "year": "1990",
+  "label": "Doctor Strange, Sorcerer Supreme #22",
+  "citedBy": [
+   "x_sinifer"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "New Gods",
   "volume": 3,
   "issue": "17",
@@ -1971,6 +2353,17 @@
   "label": "New Gods vol. 3 #17",
   "citedBy": [
    "dc_yugakhan"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Sandman",
+  "volume": 2,
+  "issue": "17",
+  "year": "1990",
+  "label": "Sandman vol. 2 #17",
+  "citedBy": [
+   "dc_calliope"
   ]
  },
  {
@@ -2014,7 +2407,8 @@
   "year": "1990",
   "label": "The Books of Magic #1",
   "citedBy": [
-   "dc_silvercity"
+   "dc_silvercity",
+   "dc_timhunter"
   ]
  },
  {
@@ -2062,6 +2456,18 @@
  },
  {
   "type": "issue",
+  "series": "Sandman",
+  "volume": 2,
+  "issue": "22",
+  "year": "1991",
+  "label": "Sandman vol. 2 #22",
+  "citedBy": [
+   "dc_danielhall",
+   "dc_mazikeen"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Captain America",
   "volume": 1,
   "issue": "398",
@@ -2080,6 +2486,17 @@
   "label": "Infinity War #1",
   "citedBy": [
    "e_infwar"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Sandman",
+  "volume": 2,
+  "issue": "40",
+  "year": "1992",
+  "label": "Sandman vol. 2 #40",
+  "citedBy": [
+   "dc_lilith"
   ]
  },
  {
@@ -2282,6 +2699,17 @@
  },
  {
   "type": "issue",
+  "series": "Lucifer",
+  "volume": 1,
+  "issue": "4",
+  "year": "2000",
+  "label": "Lucifer #4",
+  "citedBy": [
+   "dc_elaine"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Sentry",
   "volume": 1,
   "issue": "1",
@@ -2333,6 +2761,17 @@
   "label": "Just Imagine: Batman #1",
   "citedBy": [
    "dc_e6"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Lucifer",
+  "volume": 1,
+  "issue": "10",
+  "year": "2001",
+  "label": "Lucifer #10",
+  "citedBy": [
+   "dc_sandalphon"
   ]
  },
  {
@@ -2853,6 +3292,17 @@
  },
  {
   "type": "issue",
+  "series": "Justice League Dark",
+  "volume": 1,
+  "issue": "1",
+  "year": "2011",
+  "label": "Justice League Dark #1",
+  "citedBy": [
+   "dc_jld"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Thanos Imperative: Devastation",
   "volume": 1,
   "issue": "1",
@@ -2929,6 +3379,17 @@
   "label": "Earth 2 #1",
   "citedBy": [
    "dc_e2"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "The New 52: FCBD Special Edition",
+  "volume": 1,
+  "issue": "1",
+  "year": "2012",
+  "label": "The New 52: FCBD Special Edition #1",
+  "citedBy": [
+   "dc_trinitysin"
   ]
  },
  {
@@ -3082,6 +3543,17 @@
  },
  {
   "type": "issue",
+  "series": "Sandman: Overture",
+  "volume": 1,
+  "issue": "2",
+  "year": "2014",
+  "label": "Sandman: Overture #2",
+  "citedBy": [
+   "dc_night"
+  ]
+ },
+ {
+  "type": "issue",
   "series": "Silver Surfer (2014)",
   "volume": 1,
   "issue": "1",
@@ -3161,6 +3633,17 @@
   "label": "New Avengers (2015) #2",
   "citedBy": [
    "x_omnimax"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Scarlet Witch",
+  "volume": 2,
+  "issue": "1",
+  "year": "2015",
+  "label": "Scarlet Witch vol. 2 #1",
+  "citedBy": [
+   "x_witchcraft"
   ]
  },
  {
@@ -3442,7 +3925,8 @@
   "year": "2018",
   "label": "Justice League Dark vol. 2 #1",
   "citedBy": [
-   "dc_upsidedown"
+   "dc_upsidedown",
+   "dc_otherkind"
   ]
  },
  {
@@ -3659,6 +4143,28 @@
    "x_loki",
    "x_defenders",
    "x_omegac"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Timeless",
+  "volume": 2,
+  "issue": "1",
+  "year": "2022",
+  "label": "Timeless vol. 2 #1",
+  "citedBy": [
+   "g_twilight"
+  ]
+ },
+ {
+  "type": "issue",
+  "series": "Free Comic Book Day 2023: Avengers/X-Men",
+  "volume": 1,
+  "issue": "1",
+  "year": "2023",
+  "label": "Free Comic Book Day 2023: Avengers/X-Men #1",
+  "citedBy": [
+   "x_wyn"
   ]
  },
  {

@@ -31,6 +31,10 @@
   {
    "name": "La Chronologie",
    "sub": "Soixante ans de cosmos"
+  },
+  {
+   "name": "La Magie",
+   "sub": "Dieux anciens, Vishanti, seigneurs des dimensions et démons"
   }
  ],
  "cats": {
@@ -317,6 +321,28 @@
   "p_weirdworld": "Weirdworld (Planet)",
   "p_cancerverse": "Earth-10011",
   "p_heven": "Heven",
+  "x_demiurge": "Demiurge Primordial (Earth-616)",
+  "x_sinifer": "Sinifer (Earth-616)",
+  "x_wanda": "Wanda Maximoff (Earth-616)",
+  "x_witchcraft": "Witchcraft (Earth-616)",
+  "x_wyn": "Reddwyn (Earth-616)",
+  "x_ancient": "Yao (Earth-616)",
+  "x_mordo": "Karl Mordo (Earth-616)",
+  "p_limbo": "Limbo (Otherplace)",
+  "x_belasco": "Belasco (Earth-616)",
+  "x_magik": "Illyana Rasputina (Earth-616)",
+  "o_vishanti": "Book of the Vishanti",
+  "p_kamartaj": "Kamar-Taj",
+  "p_sanctum": "Sanctum Sanctorum",
+  "x_marduk": "Marduk Kurios (Earth-616)",
+  "x_hellstrom": "Daimon Hellstrom (Earth-616)",
+  "x_satana": "Satana Hellstrom (Earth-616)",
+  "x_blackheart": "Blackheart (Earth-616)",
+  "x_mephista": "Mephista (Earth-616)",
+  "x_zarathos": "Zarathos (Earth-616)",
+  "x_agatha": "Agatha Harkness (Earth-616)",
+  "x_drumm": "Jericho Drumm (Earth-616)",
+  "g_twilight": "Twilight Court (Earth-616)",
   "r_vanaheim": "Vanaheim (Ten Realms)",
   "r_alfheim": "Alfheim",
   "r_nidavellir": "Nidavellir",
@@ -866,7 +892,9 @@
    "cert": "d",
    "src": "Doctor Strange (Jed MacKay, 2023) #6",
    "rel": [
-    "eternity"
+    "eternity",
+    "x_witchcraft",
+    "x_wyn"
    ]
   },
   "order": {
@@ -947,7 +975,8 @@
    "src": "G.O.D.S. #2 (Jonathan Hickman, 2023)",
    "rel": [
     "oblivion",
-    "x_entropy"
+    "x_entropy",
+    "x_wyn"
    ]
   },
   "oblivion": {
@@ -2264,7 +2293,7 @@
    ]
   },
   "x_darkdim": {
-   "map": 6,
+   "map": 8,
    "name": "Dark Dimension",
    "fr": "La Dimension Noire",
    "sub": "le royaume de Dormammu",
@@ -2328,7 +2357,7 @@
    ]
   },
   "x_dreams": {
-   "map": 6,
+   "map": 8,
    "name": "Dream Dimension",
    "fr": "Le Royaume des Rêves",
    "sub": "le domaine de Cauchemar",
@@ -2519,7 +2548,7 @@
    ]
   },
   "x_strange": {
-   "map": 5,
+   "map": 8,
    "name": "Doctor Strange",
    "sub": "le Sorcier Suprême",
    "desc": "Gardien mystique de la Terre, témoin de nombreuses entités abstraites.",
@@ -2531,13 +2560,19 @@
     "e2",
     "eternity",
     "o_eye",
+    "o_vishanti",
     "o_watoomb",
+    "p_kamartaj",
+    "p_sanctum",
     "x_agamotto",
+    "x_ancient",
     "x_clea",
     "x_cyttorak",
     "x_darkdim",
     "x_dormammu",
     "x_dreams",
+    "x_drumm",
+    "x_mordo",
     "x_nightmare",
     "x_omnimax",
     "x_wiccan",
@@ -2545,7 +2580,7 @@
    ]
   },
   "x_dormammu": {
-   "map": 5,
+   "map": 8,
    "name": "Dormammu",
    "sub": "le seigneur de la Dimension Noire",
    "desc": "Faltinien avide de conquérir la Terre.",
@@ -2554,7 +2589,9 @@
    "src": "Strange Tales #126 (1964) — 1ʳᵉ apparition concordante avec marvel.fandom.com (wiki communautaire)",
    "rel": [
     "x_darkdim",
+    "x_mordo",
     "x_satannish",
+    "x_sinifer",
     "x_strange",
     "x_umar"
    ]
@@ -2625,7 +2662,7 @@
    ]
   },
   "x_mephisto": {
-   "map": 5,
+   "map": 8,
    "name": "Mephisto",
    "fr": "Méphisto",
    "sub": "le seigneur d’un enfer",
@@ -2636,7 +2673,10 @@
    "rel": [
     "below",
     "lilith",
-    "x_satannish"
+    "x_blackheart",
+    "x_mephista",
+    "x_satannish",
+    "x_zarathos"
    ]
   },
   "x_loki": {
@@ -3597,7 +3637,7 @@
    ]
   },
   "x_agamotto": {
-   "map": 5,
+   "map": 8,
    "name": "Agamotto",
    "sub": "membre des Vishanti",
    "desc": "Entité mystique, l’un des Vishanti, dont l’Œil guide les Sorciers suprêmes.",
@@ -3613,7 +3653,7 @@
    ]
   },
   "x_oshtur": {
-   "map": 5,
+   "map": 8,
    "name": "Oshtur",
    "sub": "membre des Vishanti",
    "desc": "Divinité mystique bienveillante, membre des Vishanti.",
@@ -3622,11 +3662,12 @@
    "src": "Marvel Premiere #5 (1972) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
    "rel": [
     "g_vishanti",
-    "x_agamotto"
+    "x_agamotto",
+    "x_demiurge"
    ]
   },
   "x_hoggoth": {
-   "map": 5,
+   "map": 8,
    "name": "Hoggoth",
    "sub": "membre des Vishanti",
    "desc": "Divinité mystique, membre des Vishanti, invoquée par les sorciers.",
@@ -3639,7 +3680,7 @@
    ]
   },
   "x_cyttorak": {
-   "map": 5,
+   "map": 8,
    "name": "Cyttorak",
    "sub": "la force du Fléau",
    "desc": "Divinité de la Crimson Cosmos qui confère ses pouvoirs au Fléau.",
@@ -3651,7 +3692,7 @@
    ]
   },
   "x_satannish": {
-   "map": 5,
+   "map": 8,
    "name": "Satannish",
    "sub": "le démon des pactes",
    "desc": "Seigneur démoniaque qui accorde ses pouvoirs aux sorciers en échange de leur âme.",
@@ -3664,7 +3705,7 @@
    ]
   },
   "x_umar": {
-   "map": 5,
+   "map": 8,
    "name": "Umar",
    "sub": "la sœur de Dormammu",
    "desc": "Faltine, sœur de Dormammu et mère de Clea, qui règne parfois sur la Dimension noire.",
@@ -3674,11 +3715,12 @@
    "rel": [
     "x_clea",
     "x_darkdim",
-    "x_dormammu"
+    "x_dormammu",
+    "x_sinifer"
    ]
   },
   "x_nightmare": {
-   "map": 5,
+   "map": 8,
    "name": "Nightmare",
    "fr": "Cauchemar",
    "sub": "le maître des rêves",
@@ -3693,7 +3735,7 @@
    ]
   },
   "x_zom": {
-   "map": 5,
+   "map": 8,
    "name": "Zom",
    "sub": "la puissance emprisonnée",
    "desc": "Entité mystique d’une puissance redoutable, emprisonnée jadis par le Tribunal vivant.",
@@ -3706,7 +3748,7 @@
    ]
   },
   "x_gaea": {
-   "map": 5,
+   "map": 8,
    "name": "Gaea",
    "fr": "Gaïa",
    "sub": "l’esprit de la Terre",
@@ -3715,7 +3757,8 @@
    "cert": "u",
    "src": "Doctor Strange vol. 2 #6 (1974) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
    "rel": [
-    "x_chthon"
+    "x_chthon",
+    "x_demiurge"
    ]
   },
   "x_magus": {
@@ -3772,7 +3815,7 @@
    ]
   },
   "d_shuma": {
-   "map": 5,
+   "map": 8,
    "name": "Shuma-Gorath",
    "sub": "l’Ancien aux tentacules",
    "desc": "Ancien Dieu tentaculaire, l’une des plus vieilles menaces de la Terre et d’autres dimensions.",
@@ -3785,7 +3828,7 @@
    ]
   },
   "x_chthon": {
-   "map": 5,
+   "map": 8,
    "name": "Chthon",
    "sub": "l’auteur du Darkhold",
    "desc": "Ancien Dieu de la magie noire, auteur du Darkhold.",
@@ -3796,12 +3839,14 @@
     "d_mikaboshi",
     "d_shuma",
     "o_darkhold",
+    "x_demiurge",
     "x_gaea",
-    "x_set"
+    "x_set",
+    "x_wanda"
    ]
   },
   "d_mikaboshi": {
-   "map": 5,
+   "map": 8,
    "name": "Amatsu-Mikaboshi",
    "sub": "le Néant originel",
    "desc": "Dieu japonais du mal, identifié au néant d’avant la création ; il menace tous les panthéons.",
@@ -3813,7 +3858,7 @@
    ]
   },
   "d_dweller": {
-   "map": 5,
+   "map": 8,
    "name": "Dweller-in-Darkness",
    "fr": "L’Habitant des ténèbres",
    "sub": "le dieu de la peur",
@@ -3898,7 +3943,7 @@
    ]
   },
   "o_darkhold": {
-   "map": 5,
+   "map": 8,
    "name": "Darkhold",
    "fr": "Le Darkhold",
    "sub": "le livre des péchés",
@@ -3907,11 +3952,13 @@
    "cert": "u",
    "src": "Marvel Spotlight #4 (1972) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
    "rel": [
+    "o_vishanti",
+    "x_agatha",
     "x_chthon"
    ]
   },
   "o_eye": {
-   "map": 5,
+   "map": 8,
    "name": "Eye of Agamotto (Knowledge)",
    "fr": "L’Œil d’Agamotto",
    "sub": "l’amulette du Sorcier suprême",
@@ -3965,7 +4012,7 @@
    ]
   },
   "x_set": {
-   "map": 5,
+   "map": 8,
    "name": "Set",
    "sub": "le dieu-serpent",
    "desc": "Ancien Dieu serpent, lié à la Couronne du Serpent.",
@@ -3974,11 +4021,12 @@
    "src": "Marvel Tales #96 (1950) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
    "rel": [
     "o_serpent",
-    "x_chthon"
+    "x_chthon",
+    "x_demiurge"
    ]
   },
   "o_watoomb": {
-   "map": 5,
+   "map": 8,
    "name": "Wand of Watoomb",
    "fr": "La Baguette de Watoomb",
    "sub": "l’arme mystique",
@@ -4468,7 +4516,7 @@
    ]
   },
   "g_vishanti": {
-   "map": 6,
+   "map": 8,
    "name": "Vishanti (Earth-616)",
    "fr": "Les Vishanti",
    "sub": "la trinité mystique",
@@ -4477,6 +4525,7 @@
    "cert": "u",
    "src": "Strange Tales #116 (1963) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
    "rel": [
+    "o_vishanti",
     "x_agamotto",
     "x_hoggoth",
     "x_oshtur"
@@ -4788,7 +4837,7 @@
    ]
   },
   "x_hela": {
-   "map": 5,
+   "map": 8,
    "name": "Hela",
    "sub": "déesse de la mort asgardienne",
    "desc": "Souveraine de Hel et Niflheim.",
@@ -4852,7 +4901,7 @@
    ]
   },
   "x_wiccan": {
-   "map": 5,
+   "map": 8,
    "name": "Wiccan",
    "sub": "le futur Démiurge",
    "desc": "Billy Kaplan, sorcier destiné à devenir le Démiurge.",
@@ -4860,11 +4909,12 @@
    "cert": "u",
    "src": "Young Avengers #1 (2005) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
    "rel": [
-    "x_strange"
+    "x_strange",
+    "x_wanda"
    ]
   },
   "x_clea": {
-   "map": 5,
+   "map": 8,
    "name": "Clea",
    "sub": "la Sorcière suprême",
    "desc": "Faltine, fille d’Umar, Sorcière suprême de la Dimension noire.",
@@ -4875,6 +4925,307 @@
     "x_strange",
     "x_umar"
    ]
+  },
+  "x_demiurge": {
+   "map": 8,
+   "name": "Demiurge",
+   "fr": "Le Demiurge",
+   "sub": "le père des dieux anciens",
+   "desc": "Entité primordiale née de la vie sur Terre, père des dieux anciens : Chthon, Gaea, Oshtur, Set… Il est aussi à l’origine des panthéons terrestres.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Thor Annual #10 (1982) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_chthon",
+    "x_gaea",
+    "x_oshtur",
+    "x_set"
+   ]
+  },
+  "x_sinifer": {
+   "map": 8,
+   "name": "Sinifer",
+   "sub": "le géniteur de Dormammu et Umar",
+   "desc": "Être de la dimension des Faltines, dont l’énergie a donné naissance aux jumeaux Dormammu et Umar.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Doctor Strange, Sorcerer Supreme #22 (1990) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_dormammu",
+    "x_umar"
+   ]
+  },
+  "x_wanda": {
+   "map": 8,
+   "name": "Scarlet Witch (Wanda Maximoff)",
+   "fr": "La Sorcière Rouge",
+   "sub": "la sorcière du chaos",
+   "desc": "Wanda Maximoff, mutante et sorcière liée à la magie du chaos de Chthon ; mère de Wiccan et Speed. Elle est la championne de la déesse Witchcraft.",
+   "cat": "per",
+   "cert": "u",
+   "src": "X-Men #4 (1964) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_agatha",
+    "x_chthon",
+    "x_wiccan",
+    "x_witchcraft"
+   ]
+  },
+  "x_witchcraft": {
+   "map": 8,
+   "name": "Witchcraft",
+   "sub": "la déesse de la sorcellerie",
+   "desc": "Déesse de la sorcellerie qui accorde son pouvoir à la Sorcière Rouge.",
+   "cat": "abs",
+   "cert": "u",
+   "src": "Scarlet Witch vol. 2 #1 (2015) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "powers",
+    "x_wanda"
+   ]
+  },
+  "x_wyn": {
+   "map": 8,
+   "name": "Wyn (Reddwyn)",
+   "fr": "Wyn",
+   "sub": "l’avatar des Pouvoirs-Qui-Sont",
+   "desc": "Reddwyn, avatar de The-Powers-That-Be, chargé d’entretenir l’équilibre entre magie et science (G.O.D.S.).",
+   "cat": "per",
+   "cert": "u",
+   "src": "Free Comic Book Day 2023: Avengers/X-Men #1 (2023) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "natural",
+    "powers"
+   ]
+  },
+  "x_ancient": {
+   "map": 8,
+   "name": "The Ancient One (Yao)",
+   "fr": "L’Ancien",
+   "sub": "le maître de Doctor Strange",
+   "desc": "Yao, Sorcier Suprême de Kamar-Taj, maître de Doctor Strange et de Mordo.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Amazing Adventures #1 (1961) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "p_kamartaj",
+    "x_mordo",
+    "x_strange"
+   ]
+  },
+  "x_mordo": {
+   "map": 8,
+   "name": "Baron Mordo (Karl Mordo)",
+   "fr": "Baron Mordo",
+   "sub": "le rival de Doctor Strange",
+   "desc": "Disciple de l’Ancien, jaloux de Strange et allié de Dormammu.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Strange Tales #111 (1963) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_ancient",
+    "x_dormammu",
+    "x_strange"
+   ]
+  },
+  "p_limbo": {
+   "map": 8,
+   "name": "Limbo (Otherplace)",
+   "fr": "Limbo",
+   "sub": "l’Autre-Lieu",
+   "desc": "Dimension démoniaque de Belasco puis de Magik, où le temps s’écoule autrement.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Uncanny X-Men #160 (1982) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_belasco",
+    "x_magik"
+   ]
+  },
+  "x_belasco": {
+   "map": 8,
+   "name": "Belasco",
+   "sub": "le seigneur de Limbo",
+   "desc": "Sorcier démoniaque qui règne sur Limbo et enlève la jeune Illyana Rasputina.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Ka-Zar the Savage #11 (1981) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "p_limbo",
+    "x_magik"
+   ]
+  },
+  "x_magik": {
+   "map": 8,
+   "name": "Magik (Illyana Rasputina)",
+   "fr": "Magik",
+   "sub": "la sorcière suprême de Limbo",
+   "desc": "Illyana Rasputina, enlevée enfant par Belasco, devenue maîtresse de Limbo et de l’Épée-âme.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Giant-Size X-Men #1 (1975) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "p_limbo",
+    "x_belasco"
+   ]
+  },
+  "o_vishanti": {
+   "map": 8,
+   "name": "Book of the Vishanti",
+   "fr": "Le Livre des Vishanti",
+   "sub": "le grimoire de la magie blanche",
+   "desc": "Le grimoire de la magie blanche des Vishanti, contrepoids du Darkhold.",
+   "cat": "obj",
+   "cert": "u",
+   "src": "Strange Tales #116 (1964) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "g_vishanti",
+    "o_darkhold",
+    "x_strange"
+   ]
+  },
+  "p_kamartaj": {
+   "map": 8,
+   "name": "Kamar-Taj",
+   "sub": "le temple de l’Ancien",
+   "desc": "Le temple himalayen où l’Ancien forme les sorciers.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Strange Tales #110 (1963) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_ancient",
+    "x_strange"
+   ]
+  },
+  "p_sanctum": {
+   "map": 8,
+   "name": "Sanctum Sanctorum",
+   "fr": "Le Sanctum Sanctorum",
+   "sub": "la maison de Doctor Strange",
+   "desc": "La demeure de Doctor Strange à Greenwich Village, gardienne d’artefacts magiques.",
+   "cat": "pla",
+   "cert": "u",
+   "src": "Strange Tales #110 (1963) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_strange"
+   ]
+  },
+  "x_marduk": {
+   "map": 8,
+   "name": "Marduk Kurios (Satan)",
+   "fr": "Marduk Kurios",
+   "sub": "le père des Hellstrom",
+   "desc": "Seigneur démoniaque se faisant appeler Satan, père de Daimon et de Satana Hellstrom.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Marvel Spotlight #13 (1973) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_hellstrom",
+    "x_satana"
+   ]
+  },
+  "x_hellstrom": {
+   "map": 8,
+   "name": "Hellstrom (Daimon Hellstrom)",
+   "fr": "Daimon Hellstrom",
+   "sub": "le fils de Satan",
+   "desc": "Fils de Marduk Kurios, exorciste et Son of Satan.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Ghost Rider vol. 2 #1 (1973) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_marduk",
+    "x_satana"
+   ]
+  },
+  "x_satana": {
+   "map": 8,
+   "name": "Satana Hellstrom",
+   "fr": "Satana",
+   "sub": "la fille de Satan",
+   "desc": "Fille de Marduk Kurios et sœur de Daimon Hellstrom, succube et sorcière.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Vampire Tales #2 (1973) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_hellstrom",
+    "x_marduk"
+   ]
+  },
+  "x_blackheart": {
+   "map": 8,
+   "name": "Blackheart",
+   "sub": "le fils de Méphisto",
+   "desc": "Démon né du mal accumulé dans une ville, considéré comme le fils de Méphisto.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Daredevil #270 (1989) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_mephista",
+    "x_mephisto"
+   ]
+  },
+  "x_mephista": {
+   "map": 8,
+   "name": "Mephista",
+   "sub": "la fille de Méphisto",
+   "desc": "Fille de Méphisto et sœur de Blackheart.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Doctor Strange, Sorcerer Supreme #6 (1989) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_blackheart",
+    "x_mephisto"
+   ]
+  },
+  "x_zarathos": {
+   "map": 8,
+   "name": "Zarathos",
+   "sub": "le démon du Ghost Rider",
+   "desc": "Démon ancien lié à Johnny Blaze, l’esprit de vengeance originel du Ghost Rider.",
+   "cat": "dark",
+   "cert": "u",
+   "src": "Marvel Spotlight #5 (1972) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_mephisto"
+   ]
+  },
+  "x_agatha": {
+   "map": 8,
+   "name": "Agatha Harkness",
+   "sub": "la sorcière de New Salem",
+   "desc": "Sorcière ancienne, préceptrice de la Sorcière Rouge et mère de Nicholas Scratch.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Fantastic Four #94 (1969) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "o_darkhold",
+    "x_wanda"
+   ]
+  },
+  "x_drumm": {
+   "map": 8,
+   "name": "Brother Voodoo (Jericho Drumm)",
+   "fr": "Brother Voodoo",
+   "sub": "le Sorcier Suprême vaudou",
+   "desc": "Jericho Drumm, houngan qui fut un temps Sorcier Suprême, lié à l’esprit de son frère jumeau Daniel.",
+   "cat": "per",
+   "cert": "u",
+   "src": "Strange Tales #169 (1973) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": [
+    "x_strange"
+   ]
+  },
+  "g_twilight": {
+   "map": 8,
+   "name": "Twilight Court",
+   "fr": "La Cour du Crépuscule",
+   "sub": "les gardiens de l’ombre",
+   "desc": "Société secrète cosmique qui agit dans l’ombre de l’histoire du multivers.",
+   "cat": "grp",
+   "cert": "u",
+   "src": "Timeless vol. 2 #1 (2022) — 1ʳᵉ apparition selon marvel.fandom.com (wiki communautaire)",
+   "rel": []
   },
   "x_korvac": {
    "map": 5,

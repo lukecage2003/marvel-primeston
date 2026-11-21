@@ -997,7 +997,17 @@
       "Kazantra (second wife)",
       "Thanos (oldest son)",
       "Eros (youngest son)",
-      "Titans (creations)"
+      "Titans (creations)",
+      "Thane (grandson)",
+      "Rot (\"grandson\", deceased)",
+      "Gamora (foster granddaughter)",
+      "Nebula (foster granddaughter)",
+      "Unnamed grandchildren (deceased)",
+      "Unnamed Titanian Eternal descendants",
+      "Cybele (sister-in-law)",
+      "Uranos (uncle)",
+      "Oceanus (uncle)",
+      "Thena (niece)"
      ]
     ],
     [
@@ -2500,7 +2510,19 @@
       "Eon",
       "Empathy",
       "Enmity",
-      "Epiphany"
+      "Epiphany",
+      "Eulogy",
+      "Expediency",
+      "Explosion",
+      "Gravitation",
+      "Now",
+      "Then",
+      "Entropy (offspring and previous incarnation)",
+      "Epoch",
+      "Era (grandchildren)",
+      "Multiversal Eternity (full-self)",
+      "Chaos King (counterpart)",
+      "Galactus (figurative relative)"
      ]
     ],
     [
@@ -2719,7 +2741,8 @@
       "Life",
       "Living Tribunal",
       "Mirage (daughter)",
-      "Amatsu-Mikaboshi (aspect)"
+      "Amatsu-Mikaboshi (aspect)",
+      "Galactus (figurative relative)"
      ]
     ],
     [
@@ -3172,6 +3195,41 @@
    "issue": false
   },
   "lilith": {
+   "title": "Limbo (Otherplace)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/b/b3/Limbo_%28Otherplace%29_from_New_X-Men_Vol_2_37_001.jpg/revision/latest/scale-to-width-down/900?cb=20161110091853",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Blackspring",
+      "Demonic Limbo",
+      "Pocket Universe",
+      "Otherplace"
+     ]
+    ],
+    [
+     "Lieu",
+     [
+      "Nexus of All Realities"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Chris Claremont",
+      "Brent Anderson"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Uncanny X-Men #160 (1982)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "p_limbo": {
    "title": "Limbo (Otherplace)",
    "img": "https://static.wikia.nocookie.net/marveldatabase/images/b/b3/Limbo_%28Otherplace%29_from_New_X-Men_Vol_2_37_001.jpg/revision/latest/scale-to-width-down/900?cb=20161110091853",
    "facts": [
@@ -3681,7 +3739,8 @@
       "Oblivion (sibling)",
       "Life (sibling)",
       "Rot (son)",
-      "Teen Death (alleged son)"
+      "Teen Death (alleged son)",
+      "Galan (figurative relative)"
      ]
     ],
     [
@@ -4152,7 +4211,10 @@
       "Void Knight",
       "All-Black",
       "Symbiote Armor",
-      "Grendel"
+      "Grendel",
+      "Seraphim (creations, deceased)",
+      "Big Mother (creation and genetic recipient)",
+      "God of Light (counterpart)"
      ]
     ],
     [
@@ -4645,7 +4707,26 @@
       "A'Lars (Mentor) (son)",
       "Azura (Thena) (granddaughter)",
       "Thanos (grandson)",
-      "Eros (Starfox) (grandson)"
+      "Eros (Starfox) (grandson)",
+      "Deborah & Donald Ritter (great-grandchildren)",
+      "Joey Eliot (great-grandson)",
+      "Thane (great-grandson)",
+      "Rot (great-grandchild, deceased)",
+      "Gamora (foster great-granddaughter)",
+      "Nebula (foster great-granddaughter)",
+      "Virako (nephew)",
+      "Valkin (nephew)",
+      "Rakar (nephew)",
+      "Veron (nephew)",
+      "Ikaris (grandnephew)",
+      "Druig (grandnephew)",
+      "Ajak (grandniece)",
+      "Arex (grandnephew)",
+      "Makkari (grandniece)",
+      "Icarus (great-grandnephew)",
+      "Cybele (daughter-in-law)",
+      "Sui-San (daughter-in-law)",
+      "Kazantra (daughter-in-law)"
      ]
     ],
     [
@@ -4801,7 +4882,22 @@
       "Empathy",
       "Enmity",
       "Epiphany",
-      "Eulogy"
+      "Eulogy",
+      "Expediency",
+      "Explosion",
+      "Gravitation",
+      "Now",
+      "and Then",
+      "Uncles",
+      "Death",
+      "Galactus",
+      "Infinity",
+      "Oblivion",
+      "----",
+      "Nieces & Nephews",
+      "Adam Blackveil",
+      "Epoch",
+      "and Era"
      ]
     ],
     [
@@ -6255,7 +6351,17 @@
       "Thena (cousin)",
       "Deborah & Donald Ritter (first cousins once removed)",
       "Joey Eliot (first cousin once removed)",
-      "Virako (first cousin once removed)"
+      "Virako (first cousin once removed)",
+      "Valkin (first cousin once removed)",
+      "Rakar (first cousin once removed)",
+      "Veron (first cousin once removed)",
+      "Ikaris (second cousin)",
+      "Druig (second cousin)",
+      "Ajak (second cousin)",
+      "Arex (second cousin)",
+      "Makkari (second cousin)",
+      "Icarus (second cousin once removed, deceased)",
+      "Terraxia (creation, deceased)"
      ]
     ],
     [
@@ -6421,7 +6527,8 @@
       "Frankenstein's Monster (duplicate, deceased)",
       "Fennan Radd (parental half-brother, possibly deceased)",
       "Dawn Greenwood (wife, deceased)",
-      "Eve Greenwood (sister-in-law)"
+      "Eve Greenwood (sister-in-law)",
+      "Regina Prado (niece-in-law)"
      ]
     ],
     [
@@ -6640,7 +6747,21 @@
       "Cassandra Richards (stepmother, deceased)",
       "Arthur Richards (half-brother)",
       "Tara Richards (half-sister)",
-      "Joanna Jeffers (half-sister)"
+      "Joanna Jeffers (half-sister)",
+      "Kristoff Vernard (alleged half-brother)",
+      "Sue Storm-Richards (wife)",
+      "Franklin Richards (son)",
+      "Valeria Richards (daughter)",
+      "Mr. Ourobouros (clone, deceased)",
+      "Franklin Storm (father-in-law, deceased)",
+      "Mary Storm (mother-in-law, deceased)",
+      "Johnny Storm (brother-in-law)",
+      "Ted Richards (uncle, deceased)",
+      "Hamish Richards (cousin)",
+      "Angus Richards (cousin once removed)",
+      "A.U.N.T.I.E. (creation)",
+      "H.E.R.B.I.E. (creation)",
+      "H.U.B.E.R.T. (creation)"
      ]
     ],
     [
@@ -6746,7 +6867,20 @@
       "Franklin Storm (maternal grandfather, deceased)",
       "Mary Storm (maternal grandmother, deceased)",
       "Sue Storm-Richards (mother)",
-      "Reed Richards (father)"
+      "Reed Richards (father)",
+      "Valeria Richards (sister)",
+      "Ted Richards (great-uncle, deceased)",
+      "Marygay Jewel Dinkins (great-aunt)",
+      "Johnny Storm (uncle)",
+      "Tara Richards (half-aunt)",
+      "Arthur Richards (half-uncle)",
+      "Joanna Jeffers (half-aunt)",
+      "Kristoff Vernard (alleged half-uncle)",
+      "Bones (cousin once removed)",
+      "Hamish Richards (cousin once removed)",
+      "Angus Richards (second cousin)",
+      "Ben Grimm (godfather)",
+      "Alicia Grimm (godmother)"
      ]
     ],
     [
@@ -6925,7 +7059,8 @@
       "Pazuzu (son, possibly with Aura)",
       "Clea (niece)",
       "Donna (niece)",
-      "Tiboro (brother-in-law)"
+      "Tiboro (brother-in-law)",
+      "Doctor Strange (nephew-in-law)"
      ]
     ],
     [
@@ -7026,7 +7161,39 @@
       "Charles Grey (ancestor, deceased)",
       "Malkin Grey (ancestor, deceased)",
       "Eleanor Grey (ancestor, deceased)",
-      "Lady Jean Grey (ancestor, deceased)"
+      "Lady Jean Grey (ancestor, deceased)",
+      "Elaine Grey (mother, deceased)",
+      "John Grey (father, deceased)",
+      "Madelyne Pryor (clone)",
+      "Sara Grey-Bailey (sister, deceased)",
+      "Julia Grey (sister, deceased)",
+      "Roger Grey (brother, deceased)",
+      "Liam Grey (brother, deceased)",
+      "Scott Summers (husband)",
+      "Nathan Summers (stepson/genetic son)",
+      "Stryfe (stepson/genetic son's clone)",
+      "Rachel Summers (alternate reality daughter)",
+      "Rachel Summers (Mother Askani) (alternate reality daughter, deceased)",
+      "Nate Grey (alternate reality son)",
+      "Tyler Dayspring (step-grandson, deceased)",
+      "Hope Summers (adoptive step-granddaughter, deceased)",
+      "William Knoblach (alleged distant relative)",
+      "Brian Grey (uncle, deceased)",
+      "Phyllis Dennefer (aunt, deceased)",
+      "Roy Dennefer (uncle, deceased)",
+      "Fred Harriman (paternal relative, deceased)",
+      "Derry Campbell (niece, deceased)",
+      "Julian Grey (nephew, deceased)",
+      "Joey Bailey (nephew, deceased)",
+      "Gailyn Bailey (niece, deceased)",
+      "Bekka Wallis (niece, deceased)",
+      "Mary-Margaret Grey (niece, deceased)",
+      "Kindra Grey (niece, deceased)",
+      "Terry Maguire (relative, deceased)",
+      "younger Maguire (relative, apparently deceased)",
+      "Summers and Grey Family Tree (more relatives)",
+      "Katherine Summers (mother-in-law, deceased)",
+      "Christopher Summers (father-in-law)"
      ]
     ],
     [
@@ -7132,7 +7299,29 @@
       "Unnamed paternal grandmother (presumed deceased)",
       "Bruce Banner I (paternal grandfather, presumed deceased)",
       "Rebecca Banner (mother, deceased)",
-      "Brian Banner (father, deceased)"
+      "Brian Banner (father, deceased)",
+      "Behemoth (clone, deceased)",
+      "Bruce Banner (Doom) (clone, deceased)",
+      "Bruce Banner (Home Base) (clone, deceased)",
+      "Betty Ross (first wife, estranged)",
+      "Caiera the Oldstrong (second wife, deceased)",
+      "Skaar (son)",
+      "Hiro-Kala (son, deceased)",
+      "Lyra (daughter)",
+      "Bruce Chan (alleged son)",
+      "Carmilla Black (alleged daughter)",
+      "Eight unnamed grandchildren",
+      "Uncles and Aunts",
+      "Susan Banner (paternal aunt)",
+      "Elaine Banner-Walters (paternal aunt, deceased)",
+      "Morris Walters (uncle-by-marriage)",
+      "Cousins and Others",
+      "Jennifer Walters (paternal cousin)",
+      "Juno (first daughter-in-law)",
+      "Myrren (second daughter-in-law, deceased)",
+      "Thorn (third daughter-in-law)",
+      "Elara (fourth daughter-in-law)",
+      "Ovaki Unali (fifth daughter-in-law)"
      ]
     ],
     [
@@ -7229,7 +7418,18 @@
       "Sleeper (\"son\")",
       "Bedlam's Child (symbiote spawn)",
       "Martha Brock (paternal aunt, deceased)",
-      "Mary (aunt)"
+      "Mary (aunt)",
+      "Michael Brock (paternal uncle, deceased)",
+      "Mike Brock Jr. (cousin, deceased)",
+      "Temporal Counterparts",
+      "Bedlam (alternate self)",
+      "Bedlam II (alternate self, deceased)",
+      "Eddie Brock II (alternate past self, deceased)",
+      "Eventuality (possible future self)",
+      "Finnegan (alternate past self, deceased)",
+      "Meridius (alternate future self, deceased)",
+      "Tyro (alternate future self, deceased)",
+      "Wilde (alternate future self, deceased)"
      ]
     ],
     [
@@ -7391,7 +7591,10 @@
       "John Priest (son)",
       "Tommy Maximoff (soul fragment/\"son\", deceased)",
       "Billy Maximoff (soul fragment/\"son\", deceased)",
-      "M'kraan (\"granddaughter\")"
+      "M'kraan (\"granddaughter\")",
+      "Halphas (distant cousin)",
+      "Squadron Supreme of America (creations)",
+      "Bagra-ghul (creation)"
      ]
     ],
     [
@@ -7477,7 +7680,39 @@
       "Bor (paternal adoptive grandfather, deceased)",
       "Farbauti (mother, deceased)",
       "Laufey (father, deceased)",
-      "Freyja (adoptive mother)"
+      "Freyja (adoptive mother)",
+      "Odin (adoptive father)",
+      "Byleistr (brother)",
+      "Helblindi (brother)",
+      "Thor (paternal adoptive brother)",
+      "Balder (paternal adoptive brother)",
+      "Hermod (paternal adoptive brother, deceased)",
+      "Vidar (paternal adoptive brother)",
+      "Tyr (paternal adoptive brother)",
+      "Aldrif (paternal adoptive sister)",
+      "Laussa (paternal adoptive sister)",
+      "Sigyn (wife, deceased)",
+      "Fenris Wolf (son)",
+      "Jörmungandr (son)",
+      "Hela (adopted daughter)",
+      "Narvi (son, deceased)",
+      "Sleipnir (son)",
+      "Son of Satan (son)",
+      "Vali Halfling (son, deceased)",
+      "Tess Black (daughter)",
+      "Sirens (alleged daughters)",
+      "Hoarfen (grandson)",
+      "Sturm (grandson)",
+      "Drang (grandson, deceased)",
+      "Hrimhari (grandson, deceased)",
+      "Tier Sinclair (great-grandson, deceased)",
+      "Wolf Gods (descendants)",
+      "Mimir (paternal adoptive great-uncle)",
+      "Njord (paternal adoptive great-uncle)",
+      "Cul (paternal adoptive uncle, deceased)",
+      "Vili (paternal adoptive uncle, deceased)",
+      "Ve (paternal adoptive uncle, deceased)",
+      "Arkin (cousin)"
      ]
     ],
     [
@@ -7653,7 +7888,11 @@
       "Javier Santana (adoptive father)",
       "Cecilia Santana (adoptive mother)",
       "Catalina Chavez (sister)",
-      "Nico Minoru (foster sister)"
+      "Nico Minoru (foster sister)",
+      "Alberto Santana (adoptive brother)",
+      "Unnamed sister-in-law (adoptive sister-in-law)",
+      "J.J. Santana (adoptive nephew)",
+      "Marta (adoptive aunt)"
      ]
     ],
     [
@@ -8577,7 +8816,9 @@
       "Ve Borson (paternal uncle/maternal 1st cousin once removed, deceased)",
       "Zeus Panhellenios (nephew/3rd cousin once removed)",
       "Tier Sinclair (adopted great-great-nephew)",
-      "Hoder Vilison (paternal cousin, deceased)"
+      "Hoder Vilison (paternal cousin, deceased)",
+      "\"Brandy\" Selby (goddaughter, deceased)",
+      "Numerous family members through Gaea and Loki"
      ]
     ],
     [
@@ -10041,7 +10282,16 @@
       "Isuus (aunts)",
       "Set",
       "Chthon",
-      "Hyppus"
+      "Hyppus",
+      "Tiwaz (uncles)",
+      "Bor (deceased)",
+      "Mimir",
+      "Njord (cousins)",
+      "Cul (deceased)",
+      "Odin (deceased)",
+      "Vili (deceased)",
+      "Ve (deceased) (1st cousins once removed)",
+      "Thor (1st cousin twice removed)"
      ]
     ],
     [
@@ -10124,7 +10374,11 @@
       "Hyppus",
       "Set",
       "Toranos",
-      "Utgard-Loki (brothers)"
+      "Utgard-Loki (brothers)",
+      "Agamotto (son)",
+      "Ammut",
+      "Bird-Men of Akah Ma'at (creations)",
+      "Storm (Ororo Munroe) (descendant)"
      ]
     ],
     [
@@ -10287,7 +10541,10 @@
       "Cyntros (son)",
       "Callix (son)",
       "Cyperion (son)",
-      "Cradios (son)"
+      "Cradios (son)",
+      "Two other unnamed children",
+      "Xorak",
+      "elf-like beings (creations)"
      ]
     ],
     [
@@ -11031,7 +11288,33 @@
       "Hyppus",
       "Set",
       "Toranos",
-      "Tiwaz"
+      "Tiwaz",
+      "Utgard-Loki (brothers)",
+      "Victoria Montesi (daughter)",
+      "\"Offspring\"/Creations",
+      "Darkhold Dwarf",
+      "Dragonus",
+      "Hellhound",
+      "Kierrok",
+      "Midwife",
+      "Nezaral",
+      "Monstrosity",
+      "The N'Garai (including Y'Bsgloth, Y'Garon, Y'Griarth)",
+      "Ape-Men",
+      "Ape Lords",
+      "Wolf-Men",
+      "Man-Bats of Ur-Xanarrh",
+      "Harpies",
+      "Goblins",
+      "Troids Shadow demons",
+      "Unnamed mother of Diabolique",
+      "Van Ripper's Demon",
+      "Whisperer",
+      "Wish-Demon",
+      "Broodlings of Chthon",
+      "Nightgaunts",
+      "Bricklayer",
+      "Elder Gods' offsprings (relatives)"
      ]
     ],
     [
@@ -12435,6 +12718,1517 @@
      "Première apparition",
      [
       "Guardians of the Galaxy vol. 3 #7 (2013)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_demiurge": {
+   "title": "Demiurge Primordial (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/7/75/Demiurge_Primordial_%28Earth-616%29_from_Immortal_Thor_Vol_1_5_001.jpg/revision/latest/scale-to-width-down/585?cb=20260124002743",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Demiurge Primordial"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Demiurge",
+      "First among Skyfathers",
+      "Godcreator",
+      "Nun (Egyptian name)"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "Cosmic Being"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "One Above All (indirect creator)",
+      "Ammah (daughter)",
+      "Chthon (son)",
+      "Gaea (daughter)",
+      "Hyppus (son, deceased)",
+      "Isuus (daughter)",
+      "Kemur (son)",
+      "Mejed (son)",
+      "Nrgl (son)",
+      "Nommo (son)",
+      "Oshtur (daughter)",
+      "Set (son)",
+      "Tiwaz (son)",
+      "Toranos (son, deceased)",
+      "\"Utgard-Loki\" (son)",
+      "other Elder Gods (children)",
+      "Demogorge (Atum) (son by Gaea)",
+      "Thoth (son by Gaea)",
+      "Demiurge-To-Come (creation)",
+      "Large extended family via Gaea",
+      "Oshtur",
+      "Chthon",
+      "Set",
+      "Tiwaz",
+      "and Demogorge"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Alan Zelenetz",
+      "Bob Hall"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Thor Annual #10 (1982)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_sinifer": {
+   "title": "Sinifer (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/d/d6/Sinifer_%28Earth-616%29_from_Doctor_Strange%2C_Sorcerer_Supreme_Vol_1_22_0001.jpg/revision/latest?cb=20220730183300",
+   "facts": [
+    [
+     "Nature",
+     [
+      "Faltine"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Descendance",
+     [
+      "Dormammu (scion)",
+      "Umar (scion)"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Faltine Dimension"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Pharnovion (kin-being)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Roy Thomas",
+      "Dann Thomas"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Doctor Strange, Sorcerer Supreme #22 (1990)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_wanda": {
+   "title": "Wanda Maximoff (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/f/fb/Sorcerer_Supreme_Vol_1_10_Dauterman_Variant_Textless.jpg/revision/latest/scale-to-width-down/593?cb=20260728152219",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Scarlet Witch"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Hero to the Hopeless",
+      "Ana Maximoff",
+      "Emperor of Magic",
+      "Hex Witch"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "Human Mutate"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Adventurer",
+      "Shopkeeper"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Queen of Nevers (Multiverse)",
+      "Avengers",
+      "Romany",
+      "Strange Academy staff"
+     ]
+    ],
+    [
+     "Parents",
+     [
+      "Natalya Maximoff (mother, deceased)",
+      "Django Maximoff (maternal uncle and foster father, deceased)",
+      "Marya Maximoff (maternal aunt and foster mother)"
+     ]
+    ],
+    [
+     "Fratrie",
+     [
+      "Pietro Maximoff (twin brother)",
+      "Luminous (alleged sister)",
+      "Ana Maximoff (cousin and adoptive sister, deceased)"
+     ]
+    ],
+    [
+     "Descendance",
+     [
+      "Tommy Maximoff (son, deceased)",
+      "Billy Maximoff (son, deceased)",
+      "Tommy Shepherd (reincarnated son)"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Jarvis Lounge, Manhattan, New York City, New York",
+      "Emporium, Lotkill, New York"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Luna Maximoff (niece)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Stan Lee",
+      "Jack Kirby"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "X-Men #4 (1964)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_witchcraft": {
+   "title": "Witchcraft (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/4/42/Witchcraft_%28Earth-616%29_from_Scarlet_Witch_Vol_2_14_001.jpg/revision/latest/scale-to-width-down/521?cb=20241102064702",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Goddess of All Witches"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "Abstract Entity"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Cosmic Being",
+      "Deity"
+     ]
+    ],
+    [
+     "Descendance",
+     [
+      "Aaf Capmi Piap (daughter)"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Witches' Road"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "James Robinson",
+      "Shawn Crystal"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Scarlet Witch vol. 2 #1 (2015)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_wyn": {
+   "title": "Reddwyn (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/4/45/G.O.D.S._Vol_1_1_Virgin_Variant.jpg/revision/latest/scale-to-width-down/585?cb=20231005190950",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Wyn"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Avatar",
+      "The Avatar of The-Powers-That-Be",
+      "Ser Reddwyn",
+      "Ser Reddwyn of the World Tree"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "Human who became the Avatar of The-Powers-That-Be"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Avatar of The-Powers-That-Be"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "The-Powers-That-Be (master)",
+      "Mia DiMaria (Chained Apprentice)",
+      "Dimitri Krakov (Chained Apprentice)"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Aiko Maki (wife, estranged)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Jonathan Hickman",
+      "Valerio Schiti"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Free Comic Book Day 2023: Avengers/X-Men #1 (2023)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_ancient": {
+   "title": "Yao (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/d/de/Yao_%28Earth-616%29_from_New_Avengers_Vol_2_3_001.jpg/revision/latest/scale-to-width-down/585?cb=20260612054236",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Ancient One"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Btsan Saa",
+      "High Lama",
+      "Master",
+      "Mystic"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "Human, Sorcerer"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Mystic mentor",
+      "apprentice doctor"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Strange Academy staff",
+      "Teacher of Doctor Strange",
+      "Baron Mordo",
+      "one time ally of the Black Rider"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Lang Kah, Tibet"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Leung (wife, deceased)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Larry Lieber",
+      "Jack Kirby",
+      "Stan Lee",
+      "Steve Ditko"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Amazing Adventures #1 (1961)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_mordo": {
+   "title": "Karl Mordo (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/4/44/Secret_Empire_Vol_1_7_Villain_Variant_Textless.jpg/revision/latest/scale-to-width-down/593?cb=20170418160718",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Baron Mordo"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "Human magician trained by the Ancient One"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Sorcerer"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Servant of Dormammu",
+      "Legion Accursed",
+      "Offenders (unwilling and unknowing)",
+      "Circle Sinister"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Castle Mordo, Transylvania",
+      "Kamar-Taj, Himalayas"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Viscount Heinrich Krowler (grandfather, deceased)",
+      "Baroness Sara Mordo (mother, deceased)",
+      "Baron Nikolai Mordo (father, deceased)",
+      "Lilia Murgo (half-sister)",
+      "Astrid Mordo (daughter/grand-niece)",
+      "Lilia Calderu (half-niece)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Stan Lee",
+      "Steve Ditko"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Strange Tales #111 (1963)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_belasco": {
+   "title": "Belasco (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/8/84/Belasco_%28Earth-616%29_from_Mary_Jane_%26_Black_Cat_Vol_1_1_001.jpg/revision/latest/scale-to-width-down/585?cb=20241231133221",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Lord Belasco of the Corrupted",
+      "Lucas",
+      "Master of Worlds within Worlds",
+      "Red King"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "13th century human sorcerer transformed into a demon"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Sorcerer",
+      "Ruler of the Limbo"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Demons of Limbo",
+      "S'ym",
+      "Magik",
+      "N'Astirh"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Limbo",
+      "Republic of Florence, Italy"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Witchfire (Ananym) (alleged daughter)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Steve Gerber",
+      "Rich Buckler",
+      "Luis Dominguez",
+      "John Romita"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Ka-Zar the Savage #11 (1981)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_magik": {
+   "title": "Illyana Rasputina (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/5/54/X-Men_Vol_7_2_Magik_Virgin_Variant.jpg/revision/latest/scale-to-width-down/593?cb=20240811043500",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Magik"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Darkchild Archimage",
+      "Darkchylde",
+      "Illyana Nikolievna Rasputin",
+      "Lightchylde"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "Mutant, became a sorceress while in Limbo. Later died of Legacy Virus…"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Former Sorceress Supreme of Limbo",
+      "X-Men captain"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "X-Men (Alaska Team)",
+      "Strange Academy staff",
+      "New Mutants",
+      "Great Captains of Krakoa"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Factory, Merle, Alaska",
+      "Krakoa, Pacific Ocean"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Efim Rasputin (paternal great-great-grandfather, deceased)",
+      "Grigory Rasputin (paternal great-grandfather, deceased)",
+      "Elena (paternal great-grandmother, deceased)",
+      "Grigory Rasputin (paternal grandfather, deceased)",
+      "Unnamed grandmother (presumably deceased)",
+      "Nikolai Rasputin (father, deceased)",
+      "Alexandra Rasputina (mother, deceased)",
+      "Mikhail Rasputin (brother, deceased)",
+      "Piotr Rasputin (Colossus) (brother)",
+      "Mr. Mishchenko (paternal uncle-in-law, deceased)",
+      "Tra-Mai-A-Zath (sister-in-law, deceased)",
+      "Ivan (paternal great-great-uncle)",
+      "unnamed paternal aunt (deceased)",
+      "Vladimir Rasputin (paternal uncle, deceased)",
+      "Anatoly Rasputin (paternal uncle)",
+      "Peter Jr. (nephew)",
+      "Konstantin Rasputin (paternal cousin, deceased)",
+      "Klara Rasputina (paternal cousin, deceased)",
+      "Dimitriy Rasputin (paternal cousin, deceased)",
+      "Larisa Mishchenko (paternal cousin, deceased)",
+      "Pavel Plotnick (paternal distant relative)",
+      "Lamar Plotnick (paternal distant relative)",
+      "Lavinia Plotnick (paternal distant relative)",
+      "Grisha (paternal distant relative)",
+      "Yuri (paternal distant relative, deceased)",
+      "Rasputin Family (other relatives)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Len Wein",
+      "Dave Cockrum"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Giant-Size X-Men #1 (1975)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "o_vishanti": {
+   "title": "Book of the Vishanti",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/8/82/Book_of_the_Vishanti_from_Doctor_Strange%2C_Sorcerer_Supreme_Vol_1_6_001.jpg/revision/latest/scale-to-width-down/585?cb=20210306173630",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Book of Vishanti",
+      "Scroll of the Vishanti"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "Magical"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Type",
+     [
+      "Magical Book"
+     ]
+    ],
+    [
+     "Détenteur",
+     [
+      "Doctor Strange"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Stan Lee",
+      "Steve Ditko"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Strange Tales #116 (1964)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "p_kamartaj": {
+   "title": "Kamar-Taj",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/9/92/Kamar-Taj_from_Strange_Tales_Vol_1_148_001.png/revision/latest?cb=20130623113651",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Ancient One's Temple",
+      "----",
+      "Tamir-Kaj (error)"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Galaxie",
+     [
+      "Milky Way"
+     ]
+    ],
+    [
+     "Lieu",
+     [
+      "Himalayas"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Stan Lee",
+      "Steve Ditko"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Strange Tales #110 (1963)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "p_sanctum": {
+   "title": "Sanctum Sanctorum",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/2/24/Sanctum_Sanctorum_from_Official_Handbook_of_the_Marvel_Universe_Vol_1_3_0001.jpg/revision/latest?cb=20210306060258",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Doctor Strange's Mansion",
+      "The Sanctum",
+      "Sorcerer's Sanctum",
+      "Doctor Strange's Townhouse"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Galaxie",
+     [
+      "Milky Way"
+     ]
+    ],
+    [
+     "Lieu",
+     [
+      "Manhattan"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Stan Lee",
+      "Steve Ditko"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Strange Tales #110 (1963)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_marduk": {
+   "title": "Marduk Kurios (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/9/95/Marduk_Kurios_%28Earth-616%29_from_Spirits_of_Vengeance_Vol_1_4_001.png/revision/latest?cb=20180331053009",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "The Devil"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Lord Marduk the Morningstar",
+      "Lucifer",
+      "Lord Marduk",
+      "Great Red Dragon"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "Arch Demon formed from primeval energies and/or fallen angel turned in…"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "lord of a realm of Hell",
+      "president of Consolidated Electronics"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Hell Lords",
+      "Lord of the Infernal Armies of Hell",
+      "Lords of the Splinter Realms",
+      "Six-Fingered Hand"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Hell",
+      "Heaven."
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Sinifer (alleged great-great-grandfather)",
+      "Dormammu (alleged great-grandfather)",
+      "Satannish (alleged grandfather)",
+      "Victoria Wingate Hellstrom (former wife)",
+      "Daimon Hellstrom (son)",
+      "Satana Hellstrom (daughter)",
+      "Demona (granddaughter)",
+      "Other Hell-lords (brethren) and their offspring"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Mike Friedrich",
+      "Herb Trimpe"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Marvel Spotlight #13 (1973)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_hellstrom": {
+   "title": "Daimon Hellstrom (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/f/f6/Daimon_Hellstrom_%28Earth-616%29_from_TVA_Vol_1_2_001.jpg/revision/latest/scale-to-width-down/303?cb=20250125152750",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Hellstorm"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Antichrist",
+      "Black Halo",
+      "Devil",
+      "King of Hell"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "Human/Demon hybridCategory:Human/Demon Hybrids"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Lord of Hell",
+      "adventurer"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Strange Academy (Earth-616) staff",
+      "Strikeforce",
+      "Savage Avengers",
+      "Masters of Evil"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Hell",
+      "Hoboken, New Jersey"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Dormammu (alleged grandfather)",
+      "Marduk Kurios (father)",
+      "Victoria Wingate Hellstrom (mother, deceased)",
+      "Asmodeus (apparent quasi-father)",
+      "Beelzeboul (apparent quasi-father)",
+      "Lucifer (apparent quasi-father)",
+      "Mephisto (apparent quasi-father)",
+      "Satannish (apparent quasi-father)",
+      "Thog the Nether-Spawn (apparent quasi-father)",
+      "Other Hell-Lords (apparent quasi-fathers)",
+      "Satana Hellstrom (sister)",
+      "Blackheart (apparent quasi-half brother)",
+      "Hellfire (apparent quasi-half brother)",
+      "Mephista (apparent quasi-half sister)",
+      "Hellcat (Patsy Walker) (ex-wife)",
+      "Jaine Cutter (consort)",
+      "Demona Hellstrom (daughter)",
+      "Unnamed son with LaVoisin"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Gary Friedrich",
+      "Tom Sutton"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Ghost Rider vol. 2 #1 (1973)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_satana": {
+   "title": "Satana Hellstrom (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/1/15/Satana_Hellstrom_%28Earth-616%29_from_Blood_Hunters_Vol_1_4_001.jpg/revision/latest/scale-to-width-down/404?cb=20240720161719",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Satana"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Devil's Daughter",
+      "Judith Chambers",
+      "Julia",
+      "Queen of Hell"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "Human/Demon hybrid"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Succubus",
+      "sorceress"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Masters of Evil West Coast",
+      "Hell Lords",
+      "Avengers of the Supernatural",
+      "Thunderbolts"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Mobile"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Dormammu (alleged grandfather)",
+      "Marduk Kurios, a.k.a. \"Satan\" (father)",
+      "Victoria Wingate Hellstrom (mother, deceased)",
+      "Hellstorm (Daimon Hellstrom) (brother)",
+      "Deadpool (ex-husband)",
+      "Demona Hellstrom (niece)",
+      "Hellcat (Patsy Walker) (ex-sister-in-law)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Roy Thomas",
+      "John Romita Sr."
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Vampire Tales #2 (1973)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_blackheart": {
+   "title": "Blackheart (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/d/d1/Blackheart_%28Earth-616%29_from_Ghost_Rider_Vol_9_5_001.jpg/revision/latest/scale-to-width-down/585?cb=20220502151110",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Blackheart"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Legion",
+      "Voice",
+      "The Demon of Christ's Crown",
+      "Gabriel Housman"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "Demon turned human by his father Mephisto"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Prince of Hell",
+      "former King of Hell"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Avengers Academy",
+      "Hell Lords",
+      "Hellfire Club",
+      "Spirits of Vengeance (Blackheart)"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Mephisto's Realm"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Mephisto (father)",
+      "Abigail Housman (The first sin absorbed in Christ Crown's Hill/mother)",
+      "Mephista (sister)",
+      "Greylight (brother, deceased)",
+      "Tommy Maximoff (brother)",
+      "Billy Maximoff (brother)",
+      "John Priest (half-brother)",
+      "Daimon Hellstrom (quasi-brother)",
+      "Satana Hellstrom (quasi-sister)",
+      "Mikal Drakonmegas (quasi-brother)",
+      "Relationship through Mephisto to the other Hell-Lord and their offspri…"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Ann Nocenti",
+      "John Romita Jr."
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Daredevil #270 (1989)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_mephista": {
+   "title": "Mephista (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/7/71/Mephista_%28Earth-616%29_X-Factor_Vol_3_234.png/revision/latest/scale-to-width-down/561?cb=20120419011738",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Jezebel"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Devil's Daughter"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "Demoness daughter of Mephisto and a demon or a humanCategory:Human/Dem…"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Demoness"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Allied with X-Factor Investigations",
+      "the Isolationist",
+      "Morrigan",
+      "Allied with Strong Guy"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Mobile",
+      "Hell"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Mephisto (father)",
+      "Unidentified human or demon (mother)",
+      "Blackheart (brother)",
+      "Greylight (brother)",
+      "John Priest (half-brother)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Roy Thomas",
+      "Dann Thomas",
+      "Jackson Guice"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Doctor Strange, Sorcerer Supreme #6 (1989)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_zarathos": {
+   "title": "Zarathos (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/c/cc/Ghost_Rider_Vol_10_2_Textless.jpg/revision/latest/scale-to-width-down/593?cb=20220319192114",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Ravager of Souls",
+      "Living Spirit of Vengeance",
+      "Ghost Rider",
+      "Sparky"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "Archangel of Justice"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Demon"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Ghost Rider (Blaze)",
+      "Leader of the Fallen (Earth-616)",
+      "Agent of LuciferCategory:Lucifer's Agents (Earth-616)/Members and Meph…",
+      "Cult of Zarathos"
+     ]
+    ],
+    [
+     "Descendance",
+     [
+      "Unidentified child"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Mobile"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Gary Friedrich",
+      "Mike Ploog"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Marvel Spotlight #5 (1972)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_agatha": {
+   "title": "Agatha Harkness (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/0/02/Agatha_Harkness_%28Earth-616%29_from_Sorcerer_Supreme_Vol_1_1_001.jpg/revision/latest/scale-to-width-down/703?cb=20251231121737",
+   "facts": [
+    [
+     "Autres noms",
+     [
+      "Prof. Emeritus Harkness",
+      "True Sorcerer Supreme"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "Human magic user"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Sorcerer Supreme of the Vishanti",
+      "Witch"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Nexus Nine (Earth-616)/Nexus Nine (Earth-616) of the Sorcerer Supreme",
+      "Vishanti (bound by Uroath)",
+      "Strange Academy",
+      "Daughters of Liberty"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Strange Academy",
+      "New Salem"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Nicholas Scratch (son)",
+      "Darkhold (creation)",
+      "Brutacus (grandson)",
+      "Hydron (grandson)",
+      "Thornn (grandson)",
+      "Vakume (grandson)",
+      "Gazelle (granddaughter)",
+      "Reptilla (granddaughter)",
+      "Vertigo (granddaughter)",
+      "Abigail Harkness (unspecified relative, deceased)",
+      "Baron Harkness (unspecified relative)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Stan Lee",
+      "Jack Kirby"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Fantastic Four #94 (1969)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "x_drumm": {
+   "title": "Jericho Drumm (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/b/b6/Jericho_Drumm_%28Earth-616%29_from_Storm_Earth%27s_Mightiest_Mutant_Vol_1_3_001.jpg/revision/latest/scale-to-width-down/612?cb=20260423111055",
+   "facts": [
+    [
+     "Nom actuel",
+     [
+      "Avatar of Death"
+     ]
+    ],
+    [
+     "Autres noms",
+     [
+      "Babaaláwo Extraordinaire",
+      "Gunner of God",
+      "He-Who-Has-Died-Twice",
+      "Houngan Supreme"
+     ]
+    ],
+    [
+     "Nature",
+     [
+      "Human sorcerer"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Fonction",
+     [
+      "Psychologist",
+      "Houngan (voodoo priest)"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Doom Academy",
+      "Strange Academy",
+      "Avengers Unity Division",
+      "Midnight Sons"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Mobile",
+      "Avengers Mansion, Manhattan, New York City, New York"
+     ]
+    ],
+    [
+     "Proches",
+     [
+      "Daniel Drumm (twin brother, deceased)",
+      "Matilda Drumm (aunt)",
+      "Collette Drumm (niece)"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Stan Lee",
+      "Len Wein",
+      "John Romita Sr."
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Strange Tales #169 (1973)"
+     ]
+    ]
+   ],
+   "issue": false
+  },
+  "g_twilight": {
+   "title": "Twilight Court (Earth-616)",
+   "img": "https://static.wikia.nocookie.net/marveldatabase/images/0/07/Twilight_Court_%28Earth-616%29_from_Timeless_Vol_2_1_001.jpg/revision/latest/scale-to-width-down/585?cb=20230203193033",
+   "facts": [
+    [
+     "Nature",
+     [
+      "A group of superhumans created by the cryptic Myrddin to serve as a te…"
+     ]
+    ],
+    [
+     "Réalité",
+     [
+      "Earth-616"
+     ]
+    ],
+    [
+     "Affiliations",
+     [
+      "Myrddin (creator)"
+     ]
+    ],
+    [
+     "Base",
+     [
+      "Glasshouse"
+     ]
+    ],
+    [
+     "Dirigeants",
+     [
+      "Artur the King"
+     ]
+    ],
+    [
+     "Créateurs",
+     [
+      "Jed MacKay",
+      "Daniel Acuña"
+     ]
+    ],
+    [
+     "Première apparition",
+     [
+      "Timeless vol. 2 #1 (2022)"
      ]
     ]
    ],
@@ -14449,7 +16243,8 @@
       "Thanos (foster father)",
       "Unnamed brother",
       "Unnamed sister",
-      "Gamora (foster sister)"
+      "Gamora (foster sister)",
+      "Eros (foster uncle)"
      ]
     ],
     [
@@ -14622,7 +16417,26 @@
       "Thanos (brother)",
       "Genis-Vell (adoptive son)",
       "Uranos (great-uncle)",
-      "Oceanus (great-uncle)"
+      "Oceanus (great-uncle)",
+      "Zuras (uncle)",
+      "Cybele (aunt)",
+      "Thena (cousin)",
+      "Deborah & Donald Ritter (first cousins once removed)",
+      "Joey Eliot (first cousin once removed)",
+      "Virako (first cousin once removed)",
+      "Valkin (first cousin once removed)",
+      "Rakar (first cousin once removed)",
+      "Veron (first cousin once removed)",
+      "Ikaris (second cousin)",
+      "Druig (second cousin)",
+      "Ajak (second cousin)",
+      "Arex (second cousin)",
+      "Makkari (second cousin)",
+      "Icarus (second cousin once removed, deceased)",
+      "Terraxia (creation, deceased)",
+      "Thane (nephew)",
+      "Gamora (foster niece)",
+      "Nebula (foster niece)"
      ]
     ],
     [
@@ -14722,7 +16536,21 @@
       "Victor von Doom (alleged ancestor)",
       "Ramades (son)",
       "Marcus Kang (I-XXII) (son, Scarlet Centurion, deceased)",
-      "Marcus Kang XXIII (son, Scarlet Centurion, deceased)"
+      "Marcus Kang XXIII (son, Scarlet Centurion, deceased)",
+      "Uriel (adopted son, deceased)",
+      "Eimin (adopted daughter, deceased)",
+      "Huntara (distant relative)",
+      "Reed Richards (distant relative)",
+      "Franklin Richards (distant relative)",
+      "Valeria Richards (distant relative)",
+      "Iron Lad (temporal counterpart)",
+      "Kid Immortus (temporal counterpart)",
+      "Rama-Tut (temporal counterpart)",
+      "Scarlet Centurion (temporal counterpart)",
+      "Mister Gryphon (temporal counterpart)",
+      "Immortus (temporal counterpart)",
+      "Doctor Doom (temporal counterpart)",
+      "Ravonna Renslayer (consort)"
      ]
     ],
     [
@@ -14811,7 +16639,16 @@
       "Victor von Doom (alleged ancestor)",
       "Ravonna Renslayer (consort, deceased)",
       "Ramades (son, deceased)",
-      "Marcus Immortus (son, deceased)"
+      "Marcus Immortus (son, deceased)",
+      "Huntara (distant relative)",
+      "Reed Richards (distant relative)",
+      "Franklin Richards (distant relative)",
+      "Valeria Richards (distant relative)",
+      "Iron Lad (temporal counterpart)",
+      "Kid Immortus (temporal counterpart)",
+      "Rama-Tut (temporal counterpart)",
+      "Scarlet Centurion (temporal counterpart)",
+      "Kang the Conqueror (temporal counterpart)"
      ]
     ],
     [
@@ -15052,7 +16889,38 @@
       "Vili (brother, deceased)",
       "Ve (brother, deceased)",
       "Cul (brother, deceased)",
-      "Freyja (wife, separated/1st cousin once removed)"
+      "Freyja (wife, separated/1st cousin once removed)",
+      "Thor (son)",
+      "Vidar (son)",
+      "Tyr (son)",
+      "Balder (son)",
+      "Hermod (son)",
+      "Bragi (son)",
+      "Honir (son)",
+      "Ullr (son)",
+      "Aldrif (daughter)",
+      "Laussa (daughter)",
+      "Roger Norvell (adoptive son, deceased)",
+      "Loki (adoptive son, deceased)",
+      "Kid Loki (reincarnated adoptive son, deceased)",
+      "Loki (Ikol) (reincarnated adoptive child)",
+      "Gaea (paternal great aunt)",
+      "Oshtur (paternal great aunt)",
+      "Chthon (paternal great uncle)",
+      "Set (paternal great uncle)",
+      "Toranos (paternal great uncle)",
+      "Utgard-Loki (paternal great uncle)",
+      "Mimir (paternal uncle)",
+      "Skadi (paternal aunt)",
+      "Hoder (nephew)",
+      "Aske (creation, deceased)",
+      "Embla (creation, deceased)",
+      "Donald Blake (creation)",
+      "Large extended family by Loki and others",
+      "Atum (believed previous incarnation)",
+      "Frey (father-in-law/paternal cousin)",
+      "Njord (paternal uncle/grandfather-in-law)",
+      "Gullveig (sister-in-law/1st cousin once removed)"
      ]
     ],
     [
@@ -15153,7 +17021,23 @@
       "Loki Laufeyson (adoptive father, deceased)",
       "Angerboda (adoptive mother, deceased)",
       "Fenris Wolf (adoptive brother)",
-      "Jormungand (adoptive brother, deceased)"
+      "Jormungand (adoptive brother, deceased)",
+      "Narvi (adoptive brother, deceased)",
+      "Sleipnir (adoptive brother)",
+      "Son of Satan (adoptive brother)",
+      "Vali Halfling (adoptive brother, deceased)",
+      "Tess Black (adoptive sister)",
+      "Karnilla (wife, deceased)",
+      "Uncles and Aunts",
+      "Byleistr",
+      "Helblindi (adoptive uncles)",
+      "Thor Odinson (paternal adoptive uncle)",
+      "Aldrif Odinsdottir (paternal adoptive aunt)",
+      "Laussa Odinsdottir (paternal adoptive aunt)",
+      "Balder Odinson (paternal adoptive uncle, ex-fiancé)",
+      "Hermod (paternal adoptive uncle)",
+      "Vidar Odinson (paternal adoptive uncle)",
+      "Tyr Odinson (paternal adoptive uncle)"
      ]
     ],
     [
@@ -15323,7 +17207,12 @@
       "Druig (paternal cousin/adoptive brother)",
       "Unnamed wife (deceased)",
       "Icarus (son, deceased)",
-      "Arex (second cousin once removed)"
+      "Arex (second cousin once removed)",
+      "Ajak (second cousin once removed)",
+      "Makkari (second couns once removed)",
+      "Sprite (cousin)",
+      "Sersi (cousin)",
+      "Thanos (2nd Cousin)"
      ]
     ],
     [
@@ -15600,7 +17489,25 @@
       "Marya Maximoff (previous incarnation's \"maternal adoptive grandmother/…",
       "Ultron (previous incarnation's \"paternal grandfather\")",
       "Pietro Maximoff (previous incarnation's \"maternal uncle\")",
-      "Ana Maximoff (previous incarnation's \"maternal adoptive aunt/first cou…"
+      "Ana Maximoff (previous incarnation's \"maternal adoptive aunt/first cou…",
+      "Mateo Maximoff (previous incarnation's \"maternal adoptive uncle/first…",
+      "Vision (\"birth father\")",
+      "Virginia (\"step-mother\", deceased)",
+      "Vivian (\"half-sister\")",
+      "Vivian 2.0 (\"half-sister\", deceased)",
+      "Vin (\"half-brother,\" deceased)",
+      "Wanda Maximoff (\"birth mother\")",
+      "Natalya Maximoff (\"maternal grandmother\")",
+      "Talia Josephine Wagner (alternate reality half-sister)",
+      "Mephisto (previous incarnation's soul source)",
+      "Crystalia Amaquelin Maximoff (previous incarnation's former \"maternal…",
+      "Alkhema (previous incarnation's \"paternal aunt\")",
+      "Jocasta (previous incarnation's \"paternal aunt/former grandmother\")",
+      "Victor Mancha (previous incarnation's \"paternal uncle\")",
+      "Simon Williams (previous incarnation's \"paternal uncle\")",
+      "William Maximoff (previous incarnation, deceased)",
+      "Thomas Maximoff (previous incarnation's \"brother\", deceased)",
+      "Luna Maximoff (previous incarnation's \"maternal cousin\")"
      ]
     ],
     [
@@ -15667,7 +17574,15 @@
       "Umar (mother)",
       "Orini (father, deceased)",
       "Tiboro (stepfather)",
-      "Donna (maternal half-sister)"
+      "Donna (maternal half-sister)",
+      "Stephen Strange (husband)",
+      "Dormammu (uncle)",
+      "Doyle Dormammu (cousin)",
+      "Ardina (creation)",
+      "Victor Strange (brother-in-law, deceased)",
+      "Donna Strange (sister-in-law, deceased)",
+      "Eugene Strange (father-in-law, deceased)",
+      "Beverly Strange (mother-in-law, deceased)"
      ]
     ],
     [

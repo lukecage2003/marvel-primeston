@@ -18,9 +18,10 @@ jobs = []
 for site, f, pre in (('marvel', 'content/wiki.json', ''), ('dc', 'content/dc_wiki.json', 'dc_')):
     for i, w in json.loads((ROOT / f).read_text())['entries'].items():
         if not w.get('issue') and not w['title'].startswith('Glossary:'): jobs.append((site, pre + i, w['title']))
+OLD = json.loads((ROOT / 'content/appearances.json').read_text())['entries'] if (ROOT / 'content/appearances.json').exists() and '--all' not in __import__('sys').argv else {}
 out = {}
 for site in ('marvel', 'dc'):
-    J = [j for j in jobs if j[0] == site]
+    J = [j for j in jobs if j[0] == site and j[1] not in OLD]  # relevé incrémental (--all : tout relever)
     for k in range(0, len(J), 40):  # nombre d'apparitions, par lots
         b = J[k:k + 40]
         q = api(site, {'action': 'query', 'prop': 'categoryinfo', 'titles': '|'.join('Category:' + t + '/Appearances' for _, _, t in b)}).get('query', {})
@@ -40,5 +41,6 @@ for site in ('marvel', 'dc'):
             r[d] = [label(m['title']) for m in q.get('query', {}).get('categorymembers', []) if ' Vol ' in m['title']][:4]
             time.sleep(.25)
         out[i].update(first=r['ascending'], last=r['descending']); del out[i]['cat']
+out = {**OLD, **out}
 (ROOT / 'content/appearances.json').write_text(json.dumps({'source': "Catégories « Appearances » de marvel.fandom.com et dc.fandom.com ; sur le wiki DC, ces catégories sont triées par ordre alphabétique : seul le nombre d'apparitions est repris", 'entries': out}, ensure_ascii=False, indent=1) + '\n')
 print(len(out), 'fiches avec apparitions')

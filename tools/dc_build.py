@@ -48,8 +48,40 @@ for m in dc.MAPS:
                 if x not in dc.E: err.append(m['n'] + ' : rayon inconnu ' + x)
         m['spokes']['ids'] = [[P(x) for x in row] for row in m['spokes']['ids']]
     maps.append(m)
+
+# ——— liens de parenté DC, déduits du champ « Relatives » des fiches du wiki (rôle entre parenthèses)
+def key(x): return re.sub(r'[^a-z0-9]', '', x.lower())
+names = {}
+for i, v in dc.E.items():
+    for n in (v[1], re.sub(r'\s*\(.*?\)', '', v[1]), v[0], re.sub(r'\s*\(.*?\)', '', (W.get(i) or {}).get('title', ''))):
+        if n and len(key(n)) > 2: names.setdefault(key(n), i)
+for a in ('God', 'Yahweh', 'The Presence'): names[key(a)] = 'presence'
+ROLE_P, ROLE_C, ROLE_S = r'\b(mother|father|creator|parent)\b', r'\b(son|daughter|child|children)\b', r'\b(brother|sister|sibling|siblings|twin)\b'
+FRN = [(r'adoptive|adopted|foster', 'adoptif'), (r'half-(brother|sister)', 'demi-frère ou demi-sœur'), (r'twin', 'jumeau'), (r'mother', 'mère'), (r'father', 'père'), (r'creator', 'créateur'), (r'daughter', 'fille'), (r'\bson\b', 'fils'), (r'deceased', 'décédé')]
+def frn(r):
+    out = [b for a, b in FRN if re.search(a, r)]
+    return ', '.join(dict.fromkeys(out))
+FAMP, FAMS, seen = [], [], set()
+for me, (fr, en, *_ ) in dc.E.items():
+    for lab, vals in (W.get(me) or {}).get('facts', []):
+        if lab != 'Proches': continue
+        for v in vals:
+            m = re.match(r'^(.*?)\s*\(([^()]*)\)\s*$', v.strip())
+            if not m: continue
+            nm, role = re.sub(r'\s*\(.*?\)', '', m.group(1)).strip(' "'), m.group(2).lower()
+            j = names.get(key(nm))
+            if not j or j == me or re.search(r'grand|great|in-law|step|niece|nephew|uncle|aunt|cousin|ancestor|spiritual', role): continue
+            if re.search(ROLE_P, role): pair, side = (j, me), 'p'
+            elif re.search(ROLE_C, role): pair, side = (me, j), 'c'
+            elif re.search(ROLE_S, role):
+                if frozenset((me, j)) not in seen: seen.add(frozenset((me, j))); FAMS.append([P(me), P(j), frn(role)])
+                continue
+            else: continue
+            if pair not in seen: seen.add(pair); FAMP.append([P(pair[0]), P(pair[1]), frn(role), side])
+FAMS = [x for x in FAMS if not any({x[0], x[1]} == {a, b} for a, b, *_ in FAMP)]
+(ROOT / 'content/dc_family.json').write_text(json.dumps({'source': 'Champ Relatives des fiches de dc.fandom.com (content/dc_wiki.json)', 'parents': FAMP, 'siblings': FAMS}, ensure_ascii=False, indent=1) + '\n')
 if err: sys.exit('Données DC incohérentes :\n- ' + '\n- '.join(err))
-js = '/* Univers DC de l\'explorateur : généré par tools/dc_build.py (ne pas modifier à la main). */\nwindow.DBDC=' + json.dumps({'E': E, 'MAPS': maps, 'IMG': IMG, 'WIKI': WT}, ensure_ascii=False, separators=(',', ':')) + ';\n'
+js = '/* Univers DC de l\'explorateur : généré par tools/dc_build.py (ne pas modifier à la main). */\nwindow.DBDC=' + json.dumps({'E': E, 'MAPS': maps, 'IMG': IMG, 'WIKI': WT, 'FAM': {'p': FAMP, 's': FAMS}}, ensure_ascii=False, separators=(',', ':')) + ';\n'
 if '--check' in sys.argv:
     ok = (ROOT / 'data-dc.js').exists() and (ROOT / 'data-dc.js').read_text() == js
     print('data-dc.js à jour' if ok else 'data-dc.js périmé : python3 tools/dc_build.py'); sys.exit(0 if ok else 1)
