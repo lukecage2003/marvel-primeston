@@ -1,4 +1,4 @@
-/* Générateur de Marvel Primestone : produit les pages statiques à partir des données.
+/* Générateur du site Cosmologies Marvel & DC : produit les pages statiques à partir des données.
    Sources : content/atlas.json (fiches et cartes, via tools/snapshot.js), comics.json (tools/comics.js), content/dossiers/*.md
    Sortie  : index.html, encyclopedie.html, cosmos.html, structures.html, chronologie.html, archive.html,
              dossiers.html, dossier/*.html, recherche.html, fiche/*.html, search.json
@@ -112,9 +112,9 @@ function page({ file, title, desc, body, active }) {
 <html lang="fr" data-base="${base}">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>${esc(title)} · Primestone</title>
+<title>${esc(title)} · Cosmologies Marvel &amp; DC</title>
 <meta name="description" content="${esc(desc)}">
-<meta property="og:title" content="${esc(title)} · Primestone"><meta property="og:description" content="${esc(desc)}">
+<meta property="og:title" content="${esc(title)} · Cosmologies Marvel &amp; DC"><meta property="og:description" content="${esc(desc)}">
 <meta property="og:image" content="${SITE}og.png"><meta property="og:url" content="${SITE}${esc(file)}"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b0b0b"><meta name="referrer" content="no-referrer">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -124,7 +124,7 @@ function page({ file, title, desc, body, active }) {
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
 <header class="top"><div class="wrap">
- <a class="brand" href="${base}index.html">Primestone<small> · Cosmologies Marvel &amp; DC</small></a>
+ <a class="brand" href="${base}index.html">Cosmologies<small> · Marvel &amp; DC</small></a>
  <nav class="nav" aria-label="Navigation principale">${NAV.map(([h, l]) => `<a href="${base}${h}"${cur(h)}>${l}</a>`).join('')}</nav>
  <form class="qbox" action="${base}recherche.html" role="search"><label class="skip" for="q">Rechercher</label><input id="q" name="q" type="search" list="qlist" placeholder="Rechercher…" autocomplete="off"><datalist id="qlist"></datalist></form>
 </div></header>
@@ -132,7 +132,7 @@ function page({ file, title, desc, body, active }) {
 ${body}
 </div></main>
 <footer class="foot"><div class="wrap">
- <p><b>Primestone</b> · Au-delà des héros. Projet indépendant de fans, non commercial, consacré à l’analyse des comics Marvel. Personnages, noms et images © Marvel et © DC. Illustrations et fiches d’identité : marvel.fandom.com et dc.fandom.com. Les niveaux de fiabilité sont expliqués dans le <a href="${base}dossier/methode.html">dossier Méthode</a>.</p>
+ <p><b>Cosmologies Marvel &amp; DC</b> · Au-delà des héros. Projet indépendant de fans, non commercial, consacré à l’analyse des comics Marvel. Personnages, noms et images © Marvel et © DC. Illustrations et fiches d’identité : marvel.fandom.com et dc.fandom.com. Les niveaux de fiabilité sont expliqués dans le <a href="${base}dossier/methode.html">dossier Méthode</a>.</p>
 </div></footer>
 <nav class="tabbar" aria-label="Navigation rapide">${TAB.map(([h, l]) => `<a href="${base}${h}"${cur(h)}>${l}</a>`).join('')}</nav>
 <script src="${base}assets/site.js" defer></script>
@@ -365,7 +365,7 @@ function buildHome(dos) {
 <section style="padding:24px 0 8px">
  <span class="kicker">Au-delà des héros</span>
  <h1>Les plans des cosmologies Marvel et DC</h1>
- <p class="lead">Ce site est réservé aux plans : les cartes de la cosmologie Marvel et de la cosmologie DC, interactives, en version Primestone ou en version officielle quand elle existe. Cliquez sur un personnage ou un lieu pour lire sa biographie, sa famille et ses apparitions.</p>
+ <p class="lead">Ce site est réservé aux plans : les cartes de la cosmologie Marvel et de la cosmologie DC, interactives, en version personnelle ou en version officielle quand elle existe. Cliquez sur un personnage ou un lieu pour lire sa biographie, sa famille et ses apparitions.</p>
  <p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn primary" href="explorer.html">Plans Marvel</a><a class="btn primary" href="explorer.html?u=dc" style="background:#2f7bff;border-color:#2f7bff;color:#fff">Plans DC</a><a class="btn ghost" href="encyclopedie.html">Toutes les fiches (${ENTRIES.length})</a></p>
 </section>
 <section><h2>Les plans Marvel</h2><div class="grid four maps">${A.maps.map((_, m) => mapCard('marvel', m, m)).join('')}</div></section>

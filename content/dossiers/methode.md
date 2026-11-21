@@ -1,10 +1,10 @@
-title: Méthode : comment Primestone source ses fiches
+title: Méthode : comment les fiches sont sourcées
 category: Méthode
 status: u
 summary: Ce que signifient les niveaux de fiabilité, d’où viennent les sources, et pourquoi aucune fiche n’est encore classée Canon.
 ---
 ## Une encyclopédie qui montre ses preuves
-Chaque fiche de Marvel Primestone cite les comics qui la documentent. L’objectif est simple : qu’on puisse toujours remonter d’une affirmation à la publication qui la fonde.
+Chaque fiche de l’atlas cite les comics qui la documentent. L’objectif est simple : qu’on puisse toujours remonter d’une affirmation à la publication qui la fonde.
 
 ## Les six niveaux de fiabilité
 - **Canon** : montré ou dit explicitement dans un comic Marvel, numéro et page vérifiés.

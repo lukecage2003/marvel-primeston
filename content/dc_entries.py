@@ -1,4 +1,4 @@
-# Fiches DC : textes rédigés pour Primestone (aucun texte repris du wiki).
+# Fiches DC : textes rédigés pour l'atlas (aucun texte repris du wiki).
 # id: (nom FR, nom EN, catégorie, sous-titre, présentation, relations, fait marquant)
 # Les sources (première apparition, créateurs) et les images viennent de content/dc_wiki.json (tools/wiki_facts.py dc).
 E = {
@@ -237,7 +237,7 @@ E.update({
  'mazikeen': ('Mazikeen', 'Mazikeen', 'per', 'l’alliée de Lucifer', "Fille de Lilith, Lilim au visage à moitié masqué, alliée la plus fidèle de Lucifer.", 'lilith lucifer', ''),
  'lilith': ('Lilith', 'Lilith', 'dark', 'la mère des Lilim', "La première femme d'Adam, mère des Lilim et de Mazikeen.", 'mazikeen lucifer', ''),
  'sandalphon': ('Sandalphon', 'Sandalphon', 'per', 'un ange de la Cité d’Argent', "Ange de la Cité d'Argent, créé par Dieu, qui cherche à engendrer des enfants avec des humaines.", 'silvercity presence michael', ''),
- 'writer': ("L'Écrivain", 'The Writer (Grant Morrison)', 'abs', 'l’auteur dans le récit', "Le scénariste Grant Morrison, devenu personnage dans Animal Man : il explique à son héros qu'il réécrit sa réalité. Dans le plan Primestone, l'auteur se tient au-dessus de toute la création.", 'overvoid e33 presence', "Animal Man #26 (1990) met en scène la rencontre du héros et de son scénariste."),
+ 'writer': ("L'Écrivain", 'The Writer (Grant Morrison)', 'abs', 'l’auteur dans le récit', "Le scénariste Grant Morrison, devenu personnage dans Animal Man : il explique à son héros qu'il réécrit sa réalité. Dans ce plan, l'auteur se tient au-dessus de toute la création.", 'overvoid e33 presence', "Animal Man #26 (1990) met en scène la rencontre du héros et de son scénariste."),
  'zatanna': ('Zatanna', 'Zatanna Zatara', 'per', 'la magicienne', "Magicienne qui lance ses sorts en prononçant les mots à l'envers, fille du magicien Zatara.", 'jld constantine', ''),
  'constantine': ('John Constantine', 'John Constantine', 'per', 'le mage de Hellblazer', "Mage et escroc de Liverpool apparu dans Swamp Thing, héros de Hellblazer chez Vertigo.", 'jld zatanna green', ''),
  'etrigan': ('Etrigan', 'Etrigan the Demon', 'dark', 'le démon qui rime', "Démon rimeur, fils de Belial et demi-frère de Merlin, lié au chevalier immortel Jason Blood.", 'jld hell', ''),
@@ -265,7 +265,7 @@ E.update({
 })
 E['xanadu'] = E['xanadu'][:5] + ('jld', '')
 
-# cartes de l'explorateur DC. nodes : [id, x, y, rayon] (+ 'x' = propre au plan Primestone, masqué en version officielle)
+# cartes de l'explorateur DC. nodes : [id, x, y, rayon] (+ 'x' = propre au plan personnel, masqué en version officielle)
 # orbits : nœuds répartis sur un cercle ; deco : décor (bandes, anneaux, disques, panneaux) ; fam : liens de parenté (flèches dorées)
 E1 = ['primeearth'] + ['e%d' % n for n in range(1, 12)] + ['e12']
 MAPS = [
